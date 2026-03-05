@@ -200,21 +200,53 @@
         .app-nav {
           flex-direction: column;
           align-items: center;
+          gap: 0.5rem;
+          padding: 0.5rem;
+        }
+        
+        .app-nav button {
+          width: 100%;
+          max-width: 200px;
+          text-align: center;
         }
         
         .app-content {
           padding: 1rem;
         }
         
+        .card {
+          padding: 1rem;
+        }
+        
+        .card h2 {
+          font-size: 1.2rem;
+          text-align: center;
+        }
+        
+        /* 表格响应式处理 */
+        .table-container {
+          overflow-x: auto;
+          margin-top: 1rem;
+        }
+        
         table {
-          font-size: 0.9rem;
+          font-size: 0.8rem;
+          min-width: 600px;
         }
         
         th, td {
-          padding: 0.6rem;
+          padding: 0.5rem;
+          font-size: 0.8rem;
         }
         
+        /* 过滤器响应式 */
         .player-filters {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.5rem;
+        }
+        
+        .schedule-filters {
           flex-direction: column;
           align-items: flex-start;
           gap: 0.5rem;
@@ -223,10 +255,35 @@
         .search-input {
           width: 100%;
           margin-right: 0;
+          font-size: 0.9rem;
+          padding: 0.6rem;
         }
         
         .position-filter {
           width: 100%;
+          font-size: 0.9rem;
+          padding: 0.6rem;
+        }
+        
+        .filter-buttons {
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 0.5rem;
+        }
+        
+        .filter-buttons button {
+          font-size: 0.8rem;
+          padding: 0.5rem 0.8rem;
+        }
+        
+        .stats-tabs {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        
+        .stats-tabs button {
+          font-size: 0.8rem;
+          padding: 0.5rem 0.8rem;
         }
       }
     </style>
@@ -488,36 +545,38 @@
                 </button>
               </div>
             </div>
-            <table>
-              <thead>
-                <tr>
-                  <th>轮次</th>
-                  <th>日期</th>
-                  <th>时间</th>
-                  <th>主队</th>
-                  <th>客队</th>
-                  <th>场地</th>
-                  <th>城市</th>
-                  <th>赛果</th>
-                  <th>状态</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredSchedule.map(match => (
-                  <tr key={match.id}>
-                    <td>{match.round}</td>
-                    <td>{match.date}</td>
-                    <td>{match.time}</td>
-                    <td>{match.homeTeam}</td>
-                    <td>{match.awayTeam}</td>
-                    <td>{match.venue}</td>
-                    <td>{match.city}</td>
-                    <td>{match.result}</td>
-                    <td>{match.status}</td>
+            <div className="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>轮次</th>
+                    <th>日期</th>
+                    <th>时间</th>
+                    <th>主队</th>
+                    <th>客队</th>
+                    <th>场地</th>
+                    <th>城市</th>
+                    <th>赛果</th>
+                    <th>状态</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {filteredSchedule.map(match => (
+                    <tr key={match.id}>
+                      <td>{match.round}</td>
+                      <td>{match.date}</td>
+                      <td>{match.time}</td>
+                      <td>{match.homeTeam}</td>
+                      <td>{match.awayTeam}</td>
+                      <td>{match.venue}</td>
+                      <td>{match.city}</td>
+                      <td>{match.result}</td>
+                      <td>{match.status}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         );
       };
@@ -558,32 +617,34 @@
                 ))}
               </select>
             </div>
-            <table>
-              <thead>
-                <tr>
-                  <th>号码</th>
-                  <th>姓名</th>
-                  <th>位置</th>
-                  <th>年龄</th>
-                  <th>国籍</th>
-                  <th>身高</th>
-                  <th>体重</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredPlayers.map(player => (
-                  <tr key={player.id}>
-                    <td>{player.number}</td>
-                    <td>{player.name}</td>
-                    <td>{player.position}</td>
-                    <td>{player.age}</td>
-                    <td>{player.nationality}</td>
-                    <td>{player.height}</td>
-                    <td>{player.weight}</td>
+            <div className="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>号码</th>
+                    <th>姓名</th>
+                    <th>位置</th>
+                    <th>年龄</th>
+                    <th>国籍</th>
+                    <th>身高</th>
+                    <th>体重</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {filteredPlayers.map(player => (
+                    <tr key={player.id}>
+                      <td>{player.number}</td>
+                      <td>{player.name}</td>
+                      <td>{player.position}</td>
+                      <td>{player.age}</td>
+                      <td>{player.nationality}</td>
+                      <td>{player.height}</td>
+                      <td>{player.weight}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         );
       };
@@ -593,38 +654,40 @@
         return (
           <div className="card">
             <h2>历史赛季成绩</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>赛季</th>
-                  <th>联赛</th>
-                  <th>排名</th>
-                  <th>比赛</th>
-                  <th>胜</th>
-                  <th>平</th>
-                  <th>负</th>
-                  <th>进球</th>
-                  <th>失球</th>
-                  <th>积分</th>
-                </tr>
-              </thead>
-              <tbody>
-                {seasonsData.map(season => (
-                  <tr key={season.id}>
-                    <td>{season.season}</td>
-                    <td>{season.league}</td>
-                    <td>{season.rank}</td>
-                    <td>{season.matches}</td>
-                    <td>{season.wins}</td>
-                    <td>{season.draws}</td>
-                    <td>{season.losses}</td>
-                    <td>{season.goalsFor}</td>
-                    <td>{season.goalsAgainst}</td>
-                    <td>{season.points}</td>
+            <div className="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>赛季</th>
+                    <th>联赛</th>
+                    <th>排名</th>
+                    <th>比赛</th>
+                    <th>胜</th>
+                    <th>平</th>
+                    <th>负</th>
+                    <th>进球</th>
+                    <th>失球</th>
+                    <th>积分</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {seasonsData.map(season => (
+                    <tr key={season.id}>
+                      <td>{season.season}</td>
+                      <td>{season.league}</td>
+                      <td>{season.rank}</td>
+                      <td>{season.matches}</td>
+                      <td>{season.wins}</td>
+                      <td>{season.draws}</td>
+                      <td>{season.losses}</td>
+                      <td>{season.goalsFor}</td>
+                      <td>{season.goalsAgainst}</td>
+                      <td>{season.points}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         );
       };
@@ -652,61 +715,65 @@
             </div>
             
             {activeTab === 'players' && (
-              <table>
-                <thead>
-                  <tr>
-                    <th>球员</th>
-                    <th>位置</th>
-                    <th>出场</th>
-                    <th>进球</th>
-                    <th>助攻</th>
-                    <th>黄牌</th>
-                    <th>红牌</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {playerStatsData.map(player => (
-                    <tr key={player.id}>
-                      <td>{player.name}</td>
-                      <td>{player.position}</td>
-                      <td>{player.matches}</td>
-                      <td>{player.goals}</td>
-                      <td>{player.assists}</td>
-                      <td>{player.yellowCards}</td>
-                      <td>{player.redCards}</td>
+              <div className="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>球员</th>
+                      <th>位置</th>
+                      <th>出场</th>
+                      <th>进球</th>
+                      <th>助攻</th>
+                      <th>黄牌</th>
+                      <th>红牌</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {playerStatsData.map(player => (
+                      <tr key={player.id}>
+                        <td>{player.name}</td>
+                        <td>{player.position}</td>
+                        <td>{player.matches}</td>
+                        <td>{player.goals}</td>
+                        <td>{player.assists}</td>
+                        <td>{player.yellowCards}</td>
+                        <td>{player.redCards}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             )}
             
             {activeTab === 'team' && (
-              <table>
-                <thead>
-                  <tr>
-                    <th>类别</th>
-                    <th>比赛</th>
-                    <th>胜</th>
-                    <th>平</th>
-                    <th>负</th>
-                    <th>进球</th>
-                    <th>失球</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {teamStatsData.map((team, index) => (
-                    <tr key={index}>
-                      <td>{team.category}</td>
-                      <td>{team.matches}</td>
-                      <td>{team.wins}</td>
-                      <td>{team.draws}</td>
-                      <td>{team.losses}</td>
-                      <td>{team.goalsFor}</td>
-                      <td>{team.goalsAgainst}</td>
+              <div className="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>类别</th>
+                      <th>比赛</th>
+                      <th>胜</th>
+                      <th>平</th>
+                      <th>负</th>
+                      <th>进球</th>
+                      <th>失球</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {teamStatsData.map((team, index) => (
+                      <tr key={index}>
+                        <td>{team.category}</td>
+                        <td>{team.matches}</td>
+                        <td>{team.wins}</td>
+                        <td>{team.draws}</td>
+                        <td>{team.losses}</td>
+                        <td>{team.goalsFor}</td>
+                        <td>{team.goalsAgainst}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             )}
           </div>
         );
