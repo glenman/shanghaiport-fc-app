@@ -227,17 +227,33 @@
         .table-container {
           overflow-x: auto;
           margin-top: 1rem;
+          -webkit-overflow-scrolling: touch; /* 增加触摸设备的滚动体验 */
         }
         
         table {
-          font-size: 0.8rem;
-          min-width: 600px;
+          font-size: 0.75rem;
+          min-width: 800px; /* 增加最小宽度，确保所有列都能正常显示 */
+          table-layout: fixed; /* 固定表格布局，防止列宽不一致 */
         }
         
         th, td {
-          padding: 0.5rem;
-          font-size: 0.8rem;
+          padding: 0.4rem;
+          font-size: 0.75rem;
+          white-space: nowrap; /* 禁止内容换行 */
+          overflow: hidden;
+          text-overflow: ellipsis; /* 超出部分显示省略号 */
         }
+        
+        /* 调整列宽，确保关键信息优先显示 */
+        th:nth-child(1), td:nth-child(1) { width: 60px; } /* 轮次 */
+        th:nth-child(2), td:nth-child(2) { width: 80px; } /* 日期 */
+        th:nth-child(3), td:nth-child(3) { width: 60px; } /* 时间 */
+        th:nth-child(4), td:nth-child(4) { width: 100px; } /* 主队 */
+        th:nth-child(5), td:nth-child(5) { width: 100px; } /* 客队 */
+        th:nth-child(6), td:nth-child(6) { width: 120px; } /* 场地 */
+        th:nth-child(7), td:nth-child(7) { width: 60px; } /* 城市 */
+        th:nth-child(8), td:nth-child(8) { width: 50px; } /* 赛果 */
+        th:nth-child(9), td:nth-child(9) { width: 60px; } /* 状态 */
         
         /* 过滤器响应式 */
         .player-filters {
