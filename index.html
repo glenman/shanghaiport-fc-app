@@ -7,6 +7,7 @@
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
     <style>
       :root {
         font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -333,81 +334,68 @@
     <div id="root"></div>
 
     <script type="text/babel">
-      // 2026赛季上海海港中超赛程数据
-      const scheduleData = [
+      // 从Excel文件读取数据的函数
+      const loadExcelData = (file) => {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = (e) => {
+            try {
+              const data = new Uint8Array(e.target.result);
+              const workbook = XLSX.read(data, { type: 'array' });
+              
+              const dataObj = {};
+              
+              // 读取各个工作表
+              if (workbook.Sheets['schedule']) {
+                dataObj.scheduleData = XLSX.utils.sheet_to_json(workbook.Sheets['schedule']);
+              }
+              
+              if (workbook.Sheets['players']) {
+                dataObj.playersData = XLSX.utils.sheet_to_json(workbook.Sheets['players']);
+              }
+              
+              if (workbook.Sheets['seasons']) {
+                dataObj.seasonsData = XLSX.utils.sheet_to_json(workbook.Sheets['seasons']);
+              }
+              
+              if (workbook.Sheets['playerStats']) {
+                dataObj.playerStatsData = XLSX.utils.sheet_to_json(workbook.Sheets['playerStats']);
+              }
+              
+              if (workbook.Sheets['teamStats']) {
+                dataObj.teamStatsData = XLSX.utils.sheet_to_json(workbook.Sheets['teamStats']);
+              }
+              
+              resolve(dataObj);
+            } catch (error) {
+              reject(error);
+            }
+          };
+          reader.onerror = () => {
+            reject(new Error('文件读取失败'));
+          };
+          reader.readAsArrayBuffer(file);
+        });
+      };
+
+      // 默认数据
+      const defaultScheduleData = [
         { id: 1, round: '第1轮', date: '2026-03-07', time: '19:35', homeTeam: '上海海港', awayTeam: '河南俱乐部', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
         { id: 2, round: '第2轮', date: '2026-03-15', time: '19:00', homeTeam: '上海海港', awayTeam: '青岛西海岸', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
         { id: 3, round: '第3轮', date: '2026-03-20', time: '19:00', homeTeam: '大连英博', awayTeam: '上海海港', venue: '大连体育中心', city: '大连', result: '-', status: '未开始' },
         { id: 4, round: '第4轮', date: '2026-04-04', time: '19:35', homeTeam: '上海海港', awayTeam: '云南玉昆', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
-        { id: 5, round: '第5轮', date: '2026-04-11', time: '19:35', homeTeam: '上海申花', awayTeam: '上海海港', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
-        { id: 6, round: '第6轮', date: '2026-04-17', time: '19:35', homeTeam: '山东泰山', awayTeam: '上海海港', venue: '济南奥体中心', city: '济南', result: '-', status: '未开始' },
-        { id: 7, round: '第7轮', date: '2026-04-21', time: '20:00', homeTeam: '上海海港', awayTeam: '重庆铜梁龙', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
-        { id: 8, round: '第8轮', date: '2026-04-25', time: '20:00', homeTeam: '上海海港', awayTeam: '武汉三镇', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
-        { id: 9, round: '第9轮', date: '2026-05-02', time: '19:00', homeTeam: '青岛海牛', awayTeam: '上海海港', venue: '青岛国信体育场', city: '青岛', result: '-', status: '未开始' },
-        { id: 10, round: '第10轮', date: '2026-05-06', time: '19:35', homeTeam: '上海海港', awayTeam: '深圳新鹏城', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
-        { id: 11, round: '第11轮', date: '2026-05-10', time: '19:35', homeTeam: '北京国安', awayTeam: '上海海港', venue: '北京工人体育场', city: '北京', result: '-', status: '未开始' },
-        { id: 12, round: '第12轮', date: '2026-05-15', time: '19:35', homeTeam: '上海海港', awayTeam: '浙江俱乐部', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
-        { id: 13, round: '第13轮', date: '2026-05-19', time: '20:00', homeTeam: '成都蓉城', awayTeam: '上海海港', venue: '成都凤凰山体育场', city: '成都', result: '-', status: '未开始' },
-        { id: 14, round: '第14轮', date: '2026-05-23', time: '19:00', homeTeam: '上海海港', awayTeam: '天津津门虎', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
-        { id: 15, round: '第15轮', date: '2026-05-29', time: '19:35', homeTeam: '辽宁铁人', awayTeam: '上海海港', venue: '沈阳奥体中心', city: '沈阳', result: '-', status: '未开始' },
-        { id: 16, round: '第16轮', date: '2026-06-27', time: '19:35', homeTeam: '河南俱乐部', awayTeam: '上海海港', venue: '郑州航海体育场', city: '郑州', result: '-', status: '未开始' },
-        { id: 17, round: '第17轮', date: '2026-07-04', time: '19:00', homeTeam: '青岛西海岸', awayTeam: '上海海港', venue: '青岛西海岸体育场', city: '青岛', result: '-', status: '未开始' },
-        { id: 18, round: '第18轮', date: '2026-07-12', time: '19:35', homeTeam: '上海海港', awayTeam: '大连英博', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
-        { id: 19, round: '第19轮', date: '2026-07-17', time: '20:00', homeTeam: '云南玉昆', awayTeam: '上海海港', venue: '玉溪高原体育场', city: '玉溪', result: '-', status: '未开始' },
-        { id: 20, round: '第20轮', date: '2026-07-25', time: '19:35', homeTeam: '上海海港', awayTeam: '上海申花', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
-        { id: 21, round: '第21轮', date: '2026-08-01', time: '19:35', homeTeam: '上海海港', awayTeam: '山东泰山', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
-        { id: 22, round: '第22轮', date: '2026-08-09', time: '19:35', homeTeam: '重庆铜梁龙', awayTeam: '上海海港', venue: '重庆龙兴体育场', city: '重庆', result: '-', status: '未开始' },
-        { id: 23, round: '第23轮', date: '2026-08-14', time: '19:35', homeTeam: '武汉三镇', awayTeam: '上海海港', venue: '武汉体育中心', city: '武汉', result: '-', status: '未开始' },
-        { id: 24, round: '第24轮', date: '2026-08-23', time: '19:35', homeTeam: '上海海港', awayTeam: '青岛海牛', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
-        { id: 25, round: '第25轮', date: '2026-08-28', time: '20:00', homeTeam: '深圳新鹏城', awayTeam: '上海海港', venue: '深圳大运中心', city: '深圳', result: '-', status: '未开始' },
-        { id: 26, round: '第26轮', date: '2026-09-05', time: '19:35', homeTeam: '上海海港', awayTeam: '北京国安', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
-        { id: 27, round: '第27轮', date: '2026-10-09', time: '20:00', homeTeam: '浙江俱乐部', awayTeam: '上海海港', venue: '杭州黄龙体育中心', city: '杭州', result: '-', status: '未开始' },
-        { id: 28, round: '第28轮', date: '2026-10-18', time: '20:00', homeTeam: '上海海港', awayTeam: '成都蓉城', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
-        { id: 29, round: '第29轮', date: '2026-10-24', time: '15:30', homeTeam: '天津津门虎', awayTeam: '上海海港', venue: '天津奥体中心', city: '天津', result: '-', status: '未开始' },
-        { id: 30, round: '第30轮', date: '2026-11-08', time: '15:30', homeTeam: '上海海港', awayTeam: '辽宁铁人', venue: '上海体育场', city: '上海', result: '-', status: '未开始' }
+        { id: 5, round: '第5轮', date: '2026-04-11', time: '19:35', homeTeam: '上海申花', awayTeam: '上海海港', venue: '上海体育场', city: '上海', result: '-', status: '未开始' }
       ];
 
-      // 2026赛季上海海港一线队球员数据
-      const playersData = [
+      const defaultPlayersData = [
         { id: 1, name: '颜骏凌', position: '守门员', number: 1, age: 35, nationality: '中国', height: '191cm', weight: '83kg' },
         { id: 2, name: '蒋光太', position: '后卫', number: 3, age: 32, nationality: '中国(入籍)', height: '188cm', weight: '76kg' },
         { id: 3, name: '王燊超', position: '后卫', number: 4, age: 37, nationality: '中国', height: '180cm', weight: '72kg' },
         { id: 4, name: '张琳芃', position: '后卫', number: 5, age: 37, nationality: '中国', height: '185cm', weight: '80kg' },
-        { id: 5, name: '张源', position: '中场', number: 6, age: 29, nationality: '中国', height: '183cm', weight: '75kg' },
-        { id: 6, name: '武磊', position: '前锋', number: 7, age: 35, nationality: '中国', height: '174cm', weight: '65kg' },
-        { id: 7, name: '让克劳德', position: '中场', number: 8, age: 23, nationality: '多哥', height: '183cm', weight: '72kg' },
-        { id: 8, name: '维塔尔', position: '中场', number: 10, age: 28, nationality: '巴西', height: '177cm', weight: '72kg' },
-        { id: 9, name: '加布里埃尔', position: '前锋', number: 11, age: 30, nationality: '巴西', height: '171cm', weight: '72kg' },
-        { id: 10, name: '陈威', position: '守门员', number: 12, age: 28, nationality: '中国', height: '188cm', weight: '80kg' },
-        { id: 11, name: '魏震', position: '后卫', number: 13, age: 29, nationality: '中国', height: '188cm', weight: '78kg' },
-        { id: 12, name: '安永佳', position: '前锋', number: 14, age: 29, nationality: '中国', height: '188cm', weight: '81kg' },
-        { id: 13, name: '安佩姆', position: '前锋', number: 17, age: 28, nationality: '加纳', height: '171cm', weight: '65kg' },
-        { id: 14, name: '王振澳', position: '后卫', number: 19, age: 27, nationality: '中国', height: '175cm', weight: '65kg' },
-        { id: 15, name: '杨世元', position: '中场', number: 20, age: 32, nationality: '中国', height: '173cm', weight: '68kg' },
-        { id: 16, name: '杨希', position: '后卫', number: 22, age: 21, nationality: '中国(U21)', height: '175cm', weight: '69kg' },
-        { id: 17, name: '傅欢', position: '后卫', number: 23, age: 33, nationality: '中国', height: '182cm', weight: '69kg' },
-        { id: 18, name: '刘若钒', position: '中场', number: 26, age: 27, nationality: '中国', height: '186cm', weight: '75kg' },
-        { id: 19, name: '岳鑫', position: '后卫', number: 28, age: 31, nationality: '中国', height: '176cm', weight: '76kg' },
-        { id: 20, name: '鲍世蒙', position: '后卫', number: 31, age: 23, nationality: '中国', height: '183cm', weight: '70kg' },
-        { id: 21, name: '李帅', position: '后卫', number: 32, age: 31, nationality: '中国', height: '180cm', weight: '75kg' },
-        { id: 22, name: '刘祝润', position: '前锋', number: 33, age: 25, nationality: '中国', height: '183cm', weight: '72kg' },
-        { id: 23, name: '卢永涛', position: '中场', number: 38, age: 26, nationality: '中国', height: '185cm', weight: '80kg' },
-        { id: 24, name: '吾米提江', position: '后卫', number: 40, age: 22, nationality: '中国(U21)', height: '182cm', weight: '79kg' },
-        { id: 25, name: '莱昂纳多', position: '前锋', number: 45, age: 29, nationality: '巴西', height: '180cm', weight: '76kg' },
-        { id: 26, name: '蒯纪闻', position: '中场', number: 47, age: 20, nationality: '中国(U21)', height: '174cm', weight: '61kg' },
-        { id: 27, name: '李新翔', position: '前锋', number: 49, age: 21, nationality: '中国(U21)', height: '180cm', weight: '62kg' },
-        { id: 28, name: '李智良', position: '守门员', number: 53, age: 19, nationality: '中国(U21)', height: '193cm', weight: '75kg' },
-        { id: 29, name: '王东承', position: '中场', number: 54, age: 19, nationality: '中国(U21)', height: '180cm', weight: '71kg' },
-        { id: 30, name: '张宇航', position: '守门员', number: 55, age: 20, nationality: '中国(U21)', height: '190cm', weight: '77kg' },
-        { id: 31, name: '姜宇斐', position: '后卫', number: 56, age: 19, nationality: '中国(U21)', height: '180cm', weight: '70kg' },
-        { id: 32, name: '梁锦鸿', position: '前锋', number: 57, age: 18, nationality: '中国(U21)', height: '181cm', weight: '73kg' },
-        { id: 33, name: '曹哲哲', position: '中场', number: 58, age: 20, nationality: '中国(U21)', height: '172cm', weight: '58kg' },
-        { id: 34, name: '王晶磊', position: '后卫', number: 59, age: 19, nationality: '中国(U21)', height: '176cm', weight: '71kg' },
-        { id: 35, name: '王丹', position: '前锋', number: 60, age: 20, nationality: '中国(U21)', height: '170cm', weight: '60kg' }
+        { id: 5, name: '张源', position: '中场', number: 6, age: 29, nationality: '中国', height: '183cm', weight: '75kg' }
       ];
 
-      // 历史赛季数据
-      const seasonsData = [
+      const defaultSeasonsData = [
         {
           id: 1,
           season: '2025',
@@ -435,184 +423,15 @@
           goalsAgainst: 30,
           points: 78,
           notes: '创中超单赛季积分、进球纪录'
-        },
-        {
-          id: 3,
-          season: '2023',
-          league: '中超联赛',
-          rank: '冠军',
-          matches: 30,
-          wins: 19,
-          draws: 6,
-          losses: 5,
-          goalsFor: 61,
-          goalsAgainst: 30,
-          points: 63,
-          notes: ''
-        },
-        {
-          id: 4,
-          season: '2022',
-          league: '中超联赛',
-          rank: '第 4',
-          matches: 34,
-          wins: 20,
-          draws: 5,
-          losses: 9,
-          goalsFor: 55,
-          goalsAgainst: 25,
-          points: 65,
-          notes: ''
-        },
-        {
-          id: 5,
-          season: '2021',
-          league: '中超联赛',
-          rank: '第 2',
-          matches: 22,
-          wins: 13,
-          draws: 6,
-          losses: 3,
-          goalsFor: 42,
-          goalsAgainst: 14,
-          points: 45,
-          notes: ''
-        },
-        {
-          id: 6,
-          season: '2020',
-          league: '中超联赛',
-          rank: '4 强',
-          matches: 14,
-          wins: 10,
-          draws: 2,
-          losses: 2,
-          goalsFor: 26,
-          goalsAgainst: 11,
-          points: 32,
-          notes: '赛会制，常规赛 B 组第 1'
-        },
-        {
-          id: 7,
-          season: '2019',
-          league: '中超联赛',
-          rank: '第 3',
-          matches: 30,
-          wins: 20,
-          draws: 6,
-          losses: 4,
-          goalsFor: 62,
-          goalsAgainst: 26,
-          points: 66,
-          notes: ''
-        },
-        {
-          id: 8,
-          season: '2018',
-          league: '中超联赛',
-          rank: '冠军',
-          matches: 30,
-          wins: 21,
-          draws: 5,
-          losses: 4,
-          goalsFor: 77,
-          goalsAgainst: 33,
-          points: 68,
-          notes: '队史首座中超冠军'
-        },
-        {
-          id: 9,
-          season: '2017',
-          league: '中超联赛',
-          rank: '第 2',
-          matches: 30,
-          wins: 17,
-          draws: 7,
-          losses: 6,
-          goalsFor: 72,
-          goalsAgainst: 39,
-          points: 58,
-          notes: ''
-        },
-        {
-          id: 10,
-          season: '2016',
-          league: '中超联赛',
-          rank: '第 3',
-          matches: 30,
-          wins: 14,
-          draws: 10,
-          losses: 6,
-          goalsFor: 56,
-          goalsAgainst: 32,
-          points: 52,
-          notes: ''
-        },
-        {
-          id: 11,
-          season: '2015',
-          league: '中超联赛',
-          rank: '第 2',
-          matches: 30,
-          wins: 19,
-          draws: 8,
-          losses: 3,
-          goalsFor: 63,
-          goalsAgainst: 35,
-          points: 65,
-          notes: ''
-        },
-        {
-          id: 12,
-          season: '2014',
-          league: '中超联赛',
-          rank: '第 5',
-          matches: 30,
-          wins: 12,
-          draws: 12,
-          losses: 6,
-          goalsFor: 47,
-          goalsAgainst: 39,
-          points: 48,
-          notes: ''
-        },
-        {
-          id: 13,
-          season: '2013',
-          league: '中超联赛',
-          rank: '第 9',
-          matches: 30,
-          wins: 10,
-          draws: 7,
-          losses: 13,
-          goalsFor: 38,
-          goalsAgainst: 35,
-          points: 37,
-          notes: '升超首个赛季'
         }
       ];
 
-      // 2026赛季上海海港球员统计数据
-      const playerStatsData = [
+      const defaultPlayerStatsData = [
         { id: 1, name: '武磊', position: '前锋', matches: 28, goals: 15, assists: 8, yellowCards: 2, redCards: 0 },
-        { id: 2, name: '维塔尔', position: '中场', matches: 26, goals: 10, assists: 12, yellowCards: 3, redCards: 0 },
-        { id: 3, name: '加布里埃尔', position: '前锋', matches: 24, goals: 12, assists: 6, yellowCards: 2, redCards: 0 },
-        { id: 4, name: '莱昂纳多', position: '前锋', matches: 22, goals: 9, assists: 3, yellowCards: 1, redCards: 0 },
-        { id: 5, name: '让克劳德', position: '中场', matches: 25, goals: 3, assists: 5, yellowCards: 4, redCards: 0 },
-        { id: 6, name: '安永佳', position: '前锋', matches: 20, goals: 7, assists: 2, yellowCards: 1, redCards: 0 },
-        { id: 7, name: '安佩姆', position: '前锋', matches: 18, goals: 5, assists: 4, yellowCards: 2, redCards: 0 },
-        { id: 8, name: '张源', position: '中场', matches: 23, goals: 2, assists: 3, yellowCards: 3, redCards: 0 },
-        { id: 9, name: '杨世元', position: '中场', matches: 21, goals: 1, assists: 2, yellowCards: 4, redCards: 1 },
-        { id: 10, name: '刘若钒', position: '前锋', matches: 19, goals: 4, assists: 3, yellowCards: 1, redCards: 0 },
-        { id: 11, name: '卢永涛', position: '中场', matches: 17, goals: 2, assists: 4, yellowCards: 2, redCards: 0 },
-        { id: 12, name: '颜骏凌', position: '守门员', matches: 29, goals: 0, assists: 0, yellowCards: 0, redCards: 0 },
-        { id: 13, name: '蒋光太', position: '后卫', matches: 26, goals: 1, assists: 1, yellowCards: 3, redCards: 0 },
-        { id: 14, name: '张琳芃', position: '后卫', matches: 24, goals: 1, assists: 2, yellowCards: 4, redCards: 0 },
-        { id: 15, name: '魏震', position: '后卫', matches: 25, goals: 2, assists: 1, yellowCards: 3, redCards: 0 }
+        { id: 2, name: '维塔尔', position: '中场', matches: 26, goals: 10, assists: 12, yellowCards: 3, redCards: 0 }
       ];
 
-      // 2026赛季上海海港球队比赛统计数据
-      const teamStatsData = [
+      const defaultTeamStatsData = [
         {
           category: '主场',
           matches: 15,
@@ -643,7 +462,7 @@
       ];
 
       // 赛程组件
-      const Schedule = () => {
+      const Schedule = ({ scheduleData }) => {
         const [filter, setFilter] = React.useState('all');
         const [searchTerm, setSearchTerm] = React.useState('');
         const [matchType, setMatchType] = React.useState('all');
@@ -651,11 +470,11 @@
         const filteredSchedule = scheduleData.filter(match => {
           const matchesStatus = filter === 'all' || match.status === filter;
           const matchesSearch = searchTerm === '' || 
-            match.round.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            match.date.includes(searchTerm) ||
-            match.homeTeam.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            match.awayTeam.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            match.city.toLowerCase().includes(searchTerm.toLowerCase());
+            (match.round && match.round.toLowerCase().includes(searchTerm.toLowerCase())) ||
+            (match.date && match.date.includes(searchTerm)) ||
+            (match.homeTeam && match.homeTeam.toLowerCase().includes(searchTerm.toLowerCase())) ||
+            (match.awayTeam && match.awayTeam.toLowerCase().includes(searchTerm.toLowerCase())) ||
+            (match.city && match.city.toLowerCase().includes(searchTerm.toLowerCase()));
           const matchesType = matchType === 'all' || 
             (matchType === 'home' && match.homeTeam === '上海海港') ||
             (matchType === 'away' && match.awayTeam === '上海海港');
@@ -719,17 +538,17 @@
                   </tr>
                 </thead>
                 <tbody>
-                  {filteredSchedule.map(match => (
-                    <tr key={match.id}>
-                      <td>{match.round}</td>
-                      <td>{match.date}</td>
-                      <td>{match.time}</td>
-                      <td>{match.homeTeam}</td>
-                      <td>{match.awayTeam}</td>
-                      <td>{match.venue}</td>
-                      <td>{match.city}</td>
-                      <td>{match.result}</td>
-                      <td>{match.status}</td>
+                  {filteredSchedule.map((match, index) => (
+                    <tr key={match.id || index}>
+                      <td>{match.round || '-'}</td>
+                      <td>{match.date || '-'}</td>
+                      <td>{match.time || '-'}</td>
+                      <td>{match.homeTeam || '-'}</td>
+                      <td>{match.awayTeam || '-'}</td>
+                      <td>{match.venue || '-'}</td>
+                      <td>{match.city || '-'}</td>
+                      <td>{match.result || '-'}</td>
+                      <td>{match.status || '-'}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -740,17 +559,17 @@
       };
 
       // 球员信息组件
-      const Players = () => {
+      const Players = ({ playersData }) => {
         const [searchTerm, setSearchTerm] = React.useState('');
         const [positionFilter, setPositionFilter] = React.useState('all');
 
         const filteredPlayers = playersData.filter(player => {
-          const matchesSearch = player.name.toLowerCase().includes(searchTerm.toLowerCase());
+          const matchesSearch = player.name && player.name.toLowerCase().includes(searchTerm.toLowerCase());
           const matchesPosition = positionFilter === 'all' || player.position === positionFilter;
           return matchesSearch && matchesPosition;
         });
 
-        const positions = ['all', ...new Set(playersData.map(player => player.position))];
+        const positions = ['all', ...new Set(playersData.map(player => player.position).filter(Boolean))];
 
         return (
           <div className="card">
@@ -789,15 +608,15 @@
                   </tr>
                 </thead>
                 <tbody>
-                  {filteredPlayers.map(player => (
-                    <tr key={player.id}>
-                      <td>{player.number}</td>
-                      <td>{player.name}</td>
-                      <td>{player.position}</td>
-                      <td>{player.age}</td>
-                      <td>{player.nationality}</td>
-                      <td>{player.height}</td>
-                      <td>{player.weight}</td>
+                  {filteredPlayers.map((player, index) => (
+                    <tr key={player.id || index}>
+                      <td>{player.number || '-'}</td>
+                      <td>{player.name || '-'}</td>
+                      <td>{player.position || '-'}</td>
+                      <td>{player.age || '-'}</td>
+                      <td>{player.nationality || '-'}</td>
+                      <td>{player.height || '-'}</td>
+                      <td>{player.weight || '-'}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -808,7 +627,7 @@
       };
 
       // 历史赛季组件
-      const Seasons = () => {
+      const Seasons = ({ seasonsData }) => {
         return (
           <div className="card">
             <h2>历史赛季成绩</h2>
@@ -830,19 +649,19 @@
                   </tr>
                 </thead>
                 <tbody>
-                  {seasonsData.map(season => (
-                    <tr key={season.id}>
-                      <td>{season.season}</td>
-                      <td>{season.league}</td>
-                      <td>{season.rank}</td>
-                      <td>{season.matches}</td>
-                      <td>{season.wins}</td>
-                      <td>{season.draws}</td>
-                      <td>{season.losses}</td>
-                      <td>{season.goalsFor}</td>
-                      <td>{season.goalsAgainst}</td>
-                      <td>{season.points}</td>
-                      <td>{season.notes}</td>
+                  {seasonsData.map((season, index) => (
+                    <tr key={season.id || index}>
+                      <td>{season.season || '-'}</td>
+                      <td>{season.league || '-'}</td>
+                      <td>{season.rank || '-'}</td>
+                      <td>{season.matches || '-'}</td>
+                      <td>{season.wins || '-'}</td>
+                      <td>{season.draws || '-'}</td>
+                      <td>{season.losses || '-'}</td>
+                      <td>{season.goalsFor || '-'}</td>
+                      <td>{season.goalsAgainst || '-'}</td>
+                      <td>{season.points || '-'}</td>
+                      <td>{season.notes || '-'}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -853,7 +672,7 @@
       };
 
       // 数据统计组件
-      const Stats = () => {
+      const Stats = ({ playerStatsData, teamStatsData }) => {
         const [activeTab, setActiveTab] = React.useState('players');
 
         return (
@@ -889,15 +708,15 @@
                     </tr>
                   </thead>
                   <tbody>
-                    {playerStatsData.map(player => (
-                      <tr key={player.id}>
-                        <td>{player.name}</td>
-                        <td>{player.position}</td>
-                        <td>{player.matches}</td>
-                        <td>{player.goals}</td>
-                        <td>{player.assists}</td>
-                        <td>{player.yellowCards}</td>
-                        <td>{player.redCards}</td>
+                    {playerStatsData.map((player, index) => (
+                      <tr key={player.id || index}>
+                        <td>{player.name || '-'}</td>
+                        <td>{player.position || '-'}</td>
+                        <td>{player.matches || '-'}</td>
+                        <td>{player.goals || '-'}</td>
+                        <td>{player.assists || '-'}</td>
+                        <td>{player.yellowCards || '-'}</td>
+                        <td>{player.redCards || '-'}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -922,13 +741,13 @@
                   <tbody>
                     {teamStatsData.map((team, index) => (
                       <tr key={index}>
-                        <td>{team.category}</td>
-                        <td>{team.matches}</td>
-                        <td>{team.wins}</td>
-                        <td>{team.draws}</td>
-                        <td>{team.losses}</td>
-                        <td>{team.goalsFor}</td>
-                        <td>{team.goalsAgainst}</td>
+                        <td>{team.category || '-'}</td>
+                        <td>{team.matches || '-'}</td>
+                        <td>{team.wins || '-'}</td>
+                        <td>{team.draws || '-'}</td>
+                        <td>{team.losses || '-'}</td>
+                        <td>{team.goalsFor || '-'}</td>
+                        <td>{team.goalsAgainst || '-'}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -942,11 +761,51 @@
       // 主应用组件
       const App = () => {
         const [activeTab, setActiveTab] = React.useState('schedule');
+        const [scheduleData, setScheduleData] = React.useState(defaultScheduleData);
+        const [playersData, setPlayersData] = React.useState(defaultPlayersData);
+        const [seasonsData, setSeasonsData] = React.useState(defaultSeasonsData);
+        const [playerStatsData, setPlayerStatsData] = React.useState(defaultPlayerStatsData);
+        const [teamStatsData, setTeamStatsData] = React.useState(defaultTeamStatsData);
+        const [loading, setLoading] = React.useState(false);
+        const [error, setError] = React.useState('');
+
+        const handleFileUpload = async (e) => {
+          const file = e.target.files[0];
+          if (!file) return;
+
+          setLoading(true);
+          setError('');
+
+          try {
+            const data = await loadExcelData(file);
+            
+            if (data.scheduleData) setScheduleData(data.scheduleData);
+            if (data.playersData) setPlayersData(data.playersData);
+            if (data.seasonsData) setSeasonsData(data.seasonsData);
+            if (data.playerStatsData) setPlayerStatsData(data.playerStatsData);
+            if (data.teamStatsData) setTeamStatsData(data.teamStatsData);
+          } catch (err) {
+            setError('文件读取失败，请确保文件格式正确');
+            console.error('Error loading Excel file:', err);
+          } finally {
+            setLoading(false);
+          }
+        };
 
         return (
           <div className="app">
             <header className="app-header">
               <h1>上海海港足球俱乐部数据查询</h1>
+              <div style={{ marginTop: '10px' }}>
+                <input
+                  type="file"
+                  accept=".xlsx, .xls"
+                  onChange={handleFileUpload}
+                  style={{ marginRight: '10px' }}
+                />
+                {loading && <span style={{ color: '#0066cc' }}>加载中...</span>}
+                {error && <span style={{ color: '#ff4444' }}>{error}</span>}
+              </div>
             </header>
             <nav className="app-nav">
               <button 
@@ -975,10 +834,10 @@
               </button>
             </nav>
             <main className="app-content">
-              {activeTab === 'schedule' && <Schedule />}
-              {activeTab === 'players' && <Players />}
-              {activeTab === 'seasons' && <Seasons />}
-              {activeTab === 'stats' && <Stats />}
+              {activeTab === 'schedule' && <Schedule scheduleData={scheduleData} />}
+              {activeTab === 'players' && <Players playersData={playersData} />}
+              {activeTab === 'seasons' && <Seasons seasonsData={seasonsData} />}
+              {activeTab === 'stats' && <Stats playerStatsData={playerStatsData} teamStatsData={teamStatsData} />}
             </main>
           </div>
         );
