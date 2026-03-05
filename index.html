@@ -245,6 +245,7 @@
         }
         
         /* 调整列宽，确保关键信息优先显示 */
+        /* 赛程表格列宽 */
         th:nth-child(1), td:nth-child(1) { width: 60px; } /* 轮次 */
         th:nth-child(2), td:nth-child(2) { width: 80px; } /* 日期 */
         th:nth-child(3), td:nth-child(3) { width: 60px; } /* 时间 */
@@ -254,6 +255,30 @@
         th:nth-child(7), td:nth-child(7) { width: 60px; } /* 城市 */
         th:nth-child(8), td:nth-child(8) { width: 50px; } /* 赛果 */
         th:nth-child(9), td:nth-child(9) { width: 60px; } /* 状态 */
+        
+        /* 历史赛季表格列宽 */
+        .card:nth-child(3) table th:nth-child(1),
+        .card:nth-child(3) table td:nth-child(1) { width: 60px; } /* 赛季 */
+        .card:nth-child(3) table th:nth-child(2),
+        .card:nth-child(3) table td:nth-child(2) { width: 80px; } /* 联赛 */
+        .card:nth-child(3) table th:nth-child(3),
+        .card:nth-child(3) table td:nth-child(3) { width: 60px; } /* 排名 */
+        .card:nth-child(3) table th:nth-child(4),
+        .card:nth-child(3) table td:nth-child(4) { width: 60px; } /* 比赛 */
+        .card:nth-child(3) table th:nth-child(5),
+        .card:nth-child(3) table td:nth-child(5) { width: 40px; } /* 胜 */
+        .card:nth-child(3) table th:nth-child(6),
+        .card:nth-child(3) table td:nth-child(6) { width: 40px; } /* 平 */
+        .card:nth-child(3) table th:nth-child(7),
+        .card:nth-child(3) table td:nth-child(7) { width: 40px; } /* 负 */
+        .card:nth-child(3) table th:nth-child(8),
+        .card:nth-child(3) table td:nth-child(8) { width: 50px; } /* 进球 */
+        .card:nth-child(3) table th:nth-child(9),
+        .card:nth-child(3) table td:nth-child(9) { width: 50px; } /* 失球 */
+        .card:nth-child(3) table th:nth-child(10),
+        .card:nth-child(3) table td:nth-child(10) { width: 50px; } /* 积分 */
+        .card:nth-child(3) table th:nth-child(11),
+        .card:nth-child(3) table td:nth-child(11) { width: 150px; } /* 备注 */
         
         /* 过滤器响应式 */
         .player-filters {
@@ -381,72 +406,189 @@
         { id: 35, name: '王丹', position: '前锋', number: 60, age: 20, nationality: '中国(U21)', height: '170cm', weight: '60kg' }
       ];
 
-      // 模拟历史赛季数据
+      // 历史赛季数据
       const seasonsData = [
         {
           id: 1,
-          season: '2023',
+          season: '2025',
           league: '中超联赛',
-          rank: 2,
+          rank: '冠军',
           matches: 30,
-          wins: 18,
-          draws: 7,
-          losses: 5,
-          goalsFor: 61,
-          goalsAgainst: 28,
-          points: 61
+          wins: 20,
+          draws: 6,
+          losses: 4,
+          goalsFor: 72,
+          goalsAgainst: 44,
+          points: 66,
+          notes: '实现中超三连冠'
         },
         {
           id: 2,
-          season: '2022',
+          season: '2024',
           league: '中超联赛',
-          rank: 4,
-          matches: 34,
-          wins: 17,
-          draws: 8,
-          losses: 9,
-          goalsFor: 65,
-          goalsAgainst: 45,
-          points: 59
+          rank: '冠军',
+          matches: 30,
+          wins: 25,
+          draws: 3,
+          losses: 2,
+          goalsFor: 96,
+          goalsAgainst: 30,
+          points: 78,
+          notes: '创中超单赛季积分、进球纪录'
         },
         {
           id: 3,
-          season: '2021',
+          season: '2023',
           league: '中超联赛',
-          rank: 1,
-          matches: 22,
-          wins: 17,
-          draws: 3,
-          losses: 2,
-          goalsFor: 42,
-          goalsAgainst: 14,
-          points: 54
+          rank: '冠军',
+          matches: 30,
+          wins: 19,
+          draws: 6,
+          losses: 5,
+          goalsFor: 61,
+          goalsAgainst: 30,
+          points: 63,
+          notes: ''
         },
         {
           id: 4,
-          season: '2020',
+          season: '2022',
           league: '中超联赛',
-          rank: 4,
-          matches: 20,
-          wins: 9,
+          rank: '第 4',
+          matches: 34,
+          wins: 20,
           draws: 5,
-          losses: 6,
-          goalsFor: 32,
-          goalsAgainst: 26,
-          points: 32
+          losses: 9,
+          goalsFor: 55,
+          goalsAgainst: 25,
+          points: 65,
+          notes: ''
         },
         {
           id: 5,
+          season: '2021',
+          league: '中超联赛',
+          rank: '第 2',
+          matches: 22,
+          wins: 13,
+          draws: 6,
+          losses: 3,
+          goalsFor: 42,
+          goalsAgainst: 14,
+          points: 45,
+          notes: ''
+        },
+        {
+          id: 6,
+          season: '2020',
+          league: '中超联赛',
+          rank: '4 强',
+          matches: 14,
+          wins: 10,
+          draws: 2,
+          losses: 2,
+          goalsFor: 26,
+          goalsAgainst: 11,
+          points: 32,
+          notes: '赛会制，常规赛 B 组第 1'
+        },
+        {
+          id: 7,
           season: '2019',
           league: '中超联赛',
-          rank: 1,
+          rank: '第 3',
           matches: 30,
-          wins: 25,
-          draws: 2,
-          losses: 3,
+          wins: 20,
+          draws: 6,
+          losses: 4,
+          goalsFor: 62,
+          goalsAgainst: 26,
+          points: 66,
+          notes: ''
+        },
+        {
+          id: 8,
+          season: '2018',
+          league: '中超联赛',
+          rank: '冠军',
+          matches: 30,
+          wins: 21,
+          draws: 5,
+          losses: 4,
+          goalsFor: 77,
+          goalsAgainst: 33,
+          points: 68,
+          notes: '队史首座中超冠军'
+        },
+        {
+          id: 9,
+          season: '2017',
+          league: '中超联赛',
+          rank: '第 2',
+          matches: 30,
+          wins: 17,
+          draws: 7,
+          losses: 6,
           goalsFor: 72,
-          goalsAgainst: 29,
-          points: 77
+          goalsAgainst: 39,
+          points: 58,
+          notes: ''
+        },
+        {
+          id: 10,
+          season: '2016',
+          league: '中超联赛',
+          rank: '第 3',
+          matches: 30,
+          wins: 14,
+          draws: 10,
+          losses: 6,
+          goalsFor: 56,
+          goalsAgainst: 32,
+          points: 52,
+          notes: ''
+        },
+        {
+          id: 11,
+          season: '2015',
+          league: '中超联赛',
+          rank: '第 2',
+          matches: 30,
+          wins: 19,
+          draws: 8,
+          losses: 3,
+          goalsFor: 63,
+          goalsAgainst: 35,
+          points: 65,
+          notes: ''
+        },
+        {
+          id: 12,
+          season: '2014',
+          league: '中超联赛',
+          rank: '第 5',
+          matches: 30,
+          wins: 12,
+          draws: 12,
+          losses: 6,
+          goalsFor: 47,
+          goalsAgainst: 39,
+          points: 48,
+          notes: ''
+        },
+        {
+          id: 13,
+          season: '2013',
+          league: '中超联赛',
+          rank: '第 9',
+          matches: 30,
+          wins: 10,
+          draws: 7,
+          losses: 13,
+          goalsFor: 38,
+          goalsAgainst: 35,
+          points: 37,
+          notes: '升超首个赛季'
         }
       ];
 
@@ -684,6 +826,7 @@
                     <th>进球</th>
                     <th>失球</th>
                     <th>积分</th>
+                    <th>备注</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -699,6 +842,7 @@
                       <td>{season.goalsFor}</td>
                       <td>{season.goalsAgainst}</td>
                       <td>{season.points}</td>
+                      <td>{season.notes}</td>
                     </tr>
                   ))}
                 </tbody>
