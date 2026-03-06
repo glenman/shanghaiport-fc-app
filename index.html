@@ -40,6 +40,7 @@
       .app {
         display: flex;
         min-height: 100vh;
+        overflow: hidden;
       }
 
       /* 侧边菜单 */
@@ -50,6 +51,7 @@
         transition: width 0.3s ease;
         position: relative;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+        flex-shrink: 0;
       }
 
       .sidebar.collapsed {
@@ -167,6 +169,7 @@
         flex: 1;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
       }
 
       .app-header {
@@ -175,6 +178,7 @@
         text-align: center;
         border-bottom: 3px solid #80000c;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        flex-shrink: 0;
       }
 
       .app-header h1 {
@@ -199,6 +203,8 @@
         max-width: 1200px;
         margin: 0 auto;
         width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
       }
 
       .card {
