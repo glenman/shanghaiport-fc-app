@@ -210,6 +210,8 @@
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         border-left: 4px solid #c00010;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
       }
 
       .card:hover {
@@ -231,6 +233,43 @@
       .card h2::before {
         content: '⚽';
         font-size: 1.2rem;
+      }
+
+      .card-header {
+        margin-bottom: 1.5rem;
+      }
+
+      .card-content {
+        flex: 1;
+        overflow: hidden;
+      }
+
+      .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 100%;
+        scrollbar-width: thin;
+        scrollbar-color: #c00010 #333;
+      }
+
+      .table-container::-webkit-scrollbar {
+        height: 6px;
+      }
+
+      .table-container::-webkit-scrollbar-track {
+        background: #333;
+        border-radius: 3px;
+      }
+
+      .table-container::-webkit-scrollbar-thumb {
+        background: #c00010;
+        border-radius: 3px;
+      }
+
+      .table-container::-webkit-scrollbar-thumb:hover {
+        background: #a0000e;
       }
 
       table {
@@ -881,76 +920,80 @@
 
         return (
           <div className="card">
-            <h2>2026赛季球队赛程</h2>
-            <div className="schedule-filters">
-              <input
-                type="text"
-                placeholder="搜索轮次、日期、对手或城市..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="search-input"
-              />
-              <select
-                value={matchType}
-                onChange={(e) => setMatchType(e.target.value)}
-                className="position-filter"
-              >
-                <option value="all">全部比赛</option>
-                <option value="home">主场比赛</option>
-                <option value="away">客场比赛</option>
-              </select>
-              <div className="filter-buttons">
-                <button 
-                  className={filter === 'all' ? 'active' : ''}
-                  onClick={() => setFilter('all')}
+            <div className="card-header">
+              <h2>2026赛季球队赛程</h2>
+              <div className="schedule-filters">
+                <input
+                  type="text"
+                  placeholder="搜索轮次、日期、对手或城市..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="search-input"
+                />
+                <select
+                  value={matchType}
+                  onChange={(e) => setMatchType(e.target.value)}
+                  className="position-filter"
                 >
-                  全部
-                </button>
-                <button 
-                  className={filter === '已结束' ? 'active' : ''}
-                  onClick={() => setFilter('已结束')}
-                >
-                  已结束
-                </button>
-                <button 
-                  className={filter === '未开始' ? 'active' : ''}
-                  onClick={() => setFilter('未开始')}
-                >
-                  未开始
-                </button>
+                  <option value="all">全部比赛</option>
+                  <option value="home">主场比赛</option>
+                  <option value="away">客场比赛</option>
+                </select>
+                <div className="filter-buttons">
+                  <button 
+                    className={filter === 'all' ? 'active' : ''}
+                    onClick={() => setFilter('all')}
+                  >
+                    全部
+                  </button>
+                  <button 
+                    className={filter === '已结束' ? 'active' : ''}
+                    onClick={() => setFilter('已结束')}
+                  >
+                    已结束
+                  </button>
+                  <button 
+                    className={filter === '未开始' ? 'active' : ''}
+                    onClick={() => setFilter('未开始')}
+                  >
+                    未开始
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="table-container">
-              <table>
-                <thead>
-                  <tr>
-                    <th>轮次</th>
-                    <th>日期</th>
-                    <th>时间</th>
-                    <th>主队</th>
-                    <th>客队</th>
-                    <th>场地</th>
-                    <th>城市</th>
-                    <th>赛果</th>
-                    <th>状态</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {filteredSchedule.map((match, index) => (
-                    <tr key={match.id || index}>
-                      <td>{match.round || '-'}</td>
-                      <td>{match.date || '-'}</td>
-                      <td>{match.time || '-'}</td>
-                      <td>{match.homeTeam || '-'}</td>
-                      <td>{match.awayTeam || '-'}</td>
-                      <td>{match.venue || '-'}</td>
-                      <td>{match.city || '-'}</td>
-                      <td>{match.result || '-'}</td>
-                      <td>{match.status || '-'}</td>
+            <div className="card-content">
+              <div className="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>轮次</th>
+                      <th>日期</th>
+                      <th>时间</th>
+                      <th>主队</th>
+                      <th>客队</th>
+                      <th>场地</th>
+                      <th>城市</th>
+                      <th>赛果</th>
+                      <th>状态</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {filteredSchedule.map((match, index) => (
+                      <tr key={match.id || index}>
+                        <td>{match.round || '-'}</td>
+                        <td>{match.date || '-'}</td>
+                        <td>{match.time || '-'}</td>
+                        <td>{match.homeTeam || '-'}</td>
+                        <td>{match.awayTeam || '-'}</td>
+                        <td>{match.venue || '-'}</td>
+                        <td>{match.city || '-'}</td>
+                        <td>{match.result || '-'}</td>
+                        <td>{match.status || '-'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         );
@@ -971,54 +1014,58 @@
 
         return (
           <div className="card">
-            <h2>球员信息</h2>
-            <div className="player-filters">
-              <input
-                type="text"
-                placeholder="搜索球员..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="search-input"
-              />
-              <select
-                value={positionFilter}
-                onChange={(e) => setPositionFilter(e.target.value)}
-                className="position-filter"
-              >
-                {positions.map(position => (
-                  <option key={position} value={position}>
-                    {position === 'all' ? '全部位置' : position}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className="table-container">
-              <table>
-                <thead>
-                  <tr>
-                    <th>号码</th>
-                    <th>姓名</th>
-                    <th>位置</th>
-                    <th>年龄</th>
-                    <th>国籍</th>
-                    <th>身高</th>
-                    <th>体重</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {filteredPlayers.map((player, index) => (
-                    <tr key={player.id || index}>
-                      <td>{player.number || '-'}</td>
-                      <td>{player.name || '-'}</td>
-                      <td>{player.position || '-'}</td>
-                      <td>{player.age || '-'}</td>
-                      <td>{player.nationality || '-'}</td>
-                      <td>{player.height || '-'}</td>
-                      <td>{player.weight || '-'}</td>
-                    </tr>
+            <div className="card-header">
+              <h2>球员信息</h2>
+              <div className="player-filters">
+                <input
+                  type="text"
+                  placeholder="搜索球员..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="search-input"
+                />
+                <select
+                  value={positionFilter}
+                  onChange={(e) => setPositionFilter(e.target.value)}
+                  className="position-filter"
+                >
+                  {positions.map(position => (
+                    <option key={position} value={position}>
+                      {position === 'all' ? '全部位置' : position}
+                    </option>
                   ))}
-                </tbody>
-              </table>
+                </select>
+              </div>
+            </div>
+            <div className="card-content">
+              <div className="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>号码</th>
+                      <th>姓名</th>
+                      <th>位置</th>
+                      <th>年龄</th>
+                      <th>国籍</th>
+                      <th>身高</th>
+                      <th>体重</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {filteredPlayers.map((player, index) => (
+                      <tr key={player.id || index}>
+                        <td>{player.number || '-'}</td>
+                        <td>{player.name || '-'}</td>
+                        <td>{player.position || '-'}</td>
+                        <td>{player.age || '-'}</td>
+                        <td>{player.nationality || '-'}</td>
+                        <td>{player.height || '-'}</td>
+                        <td>{player.weight || '-'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         );
@@ -1028,42 +1075,46 @@
       const Seasons = ({ seasonsData }) => {
         return (
           <div className="card">
-            <h2>历史赛季成绩</h2>
-            <div className="table-container">
-              <table>
-                <thead>
-                  <tr>
-                    <th>赛季</th>
-                    <th>联赛</th>
-                    <th>排名</th>
-                    <th>比赛</th>
-                    <th>胜</th>
-                    <th>平</th>
-                    <th>负</th>
-                    <th>进球</th>
-                    <th>失球</th>
-                    <th>积分</th>
-                    <th>备注</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {seasonsData.map((season, index) => (
-                    <tr key={season.id || index}>
-                      <td>{season.season || '-'}</td>
-                      <td>{season.league || '-'}</td>
-                      <td>{season.rank || '-'}</td>
-                      <td>{season.matches || '-'}</td>
-                      <td>{season.wins || '-'}</td>
-                      <td>{season.draws || '-'}</td>
-                      <td>{season.losses || '-'}</td>
-                      <td>{season.goalsFor || '-'}</td>
-                      <td>{season.goalsAgainst || '-'}</td>
-                      <td>{season.points || '-'}</td>
-                      <td>{season.notes || '-'}</td>
+            <div className="card-header">
+              <h2>历史赛季成绩</h2>
+            </div>
+            <div className="card-content">
+              <div className="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>赛季</th>
+                      <th>联赛</th>
+                      <th>排名</th>
+                      <th>比赛</th>
+                      <th>胜</th>
+                      <th>平</th>
+                      <th>负</th>
+                      <th>进球</th>
+                      <th>失球</th>
+                      <th>积分</th>
+                      <th>备注</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {seasonsData.map((season, index) => (
+                      <tr key={season.id || index}>
+                        <td>{season.season || '-'}</td>
+                        <td>{season.league || '-'}</td>
+                        <td>{season.rank || '-'}</td>
+                        <td>{season.matches || '-'}</td>
+                        <td>{season.wins || '-'}</td>
+                        <td>{season.draws || '-'}</td>
+                        <td>{season.losses || '-'}</td>
+                        <td>{season.goalsFor || '-'}</td>
+                        <td>{season.goalsAgainst || '-'}</td>
+                        <td>{season.points || '-'}</td>
+                        <td>{season.notes || '-'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         );
@@ -1115,82 +1166,86 @@
 
         return (
           <div className="card">
-            <h2>历史数据统计</h2>
-            <div style={{ marginBottom: '1.5rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <select 
-                value={selectedSeason} 
-                onChange={(e) => setSelectedSeason(e.target.value)}
-                style={{ 
-                  padding: '0.8rem', 
-                  borderRadius: '25px', 
-                  border: '1px solid #444', 
-                  backgroundColor: 'rgba(30, 30, 30, 0.8)', 
-                  color: '#fff', 
-                  fontSize: '1rem'
-                }}
-              >
-                {seasons.map(season => (
-                  <option key={season} value={season}>{season}赛季</option>
-                ))}
-              </select>
-              <div style={{ display: 'flex', gap: '0.5rem' }}>
-                <button 
-                  onClick={() => setStatisticsType('goals')}
-                  style={{
-                    padding: '0.8rem 1.2rem',
-                    borderRadius: '20px',
-                    border: '1px solid #444',
-                    backgroundColor: statisticsType === 'goals' ? 'rgba(192, 0, 16, 0.8)' : 'rgba(40, 40, 40, 0.8)',
-                    color: '#fff',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease'
+            <div className="card-header">
+              <h2>历史数据统计</h2>
+              <div style={{ marginBottom: '1.5rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                <select 
+                  value={selectedSeason} 
+                  onChange={(e) => setSelectedSeason(e.target.value)}
+                  style={{ 
+                    padding: '0.8rem', 
+                    borderRadius: '25px', 
+                    border: '1px solid #444', 
+                    backgroundColor: 'rgba(30, 30, 30, 0.8)', 
+                    color: '#fff', 
+                    fontSize: '1rem'
                   }}
                 >
-                  进球榜
-                </button>
-                <button 
-                  onClick={() => setStatisticsType('assists')}
-                  style={{
-                    padding: '0.8rem 1.2rem',
-                    borderRadius: '20px',
-                    border: '1px solid #444',
-                    backgroundColor: statisticsType === 'assists' ? 'rgba(192, 0, 16, 0.8)' : 'rgba(40, 40, 40, 0.8)',
-                    color: '#fff',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease'
-                  }}
-                >
-                  助攻榜
-                </button>
+                  {seasons.map(season => (
+                    <option key={season} value={season}>{season}赛季</option>
+                  ))}
+                </select>
+                <div style={{ display: 'flex', gap: '0.5rem' }}>
+                  <button 
+                    onClick={() => setStatisticsType('goals')}
+                    style={{
+                      padding: '0.8rem 1.2rem',
+                      borderRadius: '20px',
+                      border: '1px solid #444',
+                      backgroundColor: statisticsType === 'goals' ? 'rgba(192, 0, 16, 0.8)' : 'rgba(40, 40, 40, 0.8)',
+                      color: '#fff',
+                      cursor: 'pointer',
+                      transition: 'all 0.3s ease'
+                    }}
+                  >
+                    进球榜
+                  </button>
+                  <button 
+                    onClick={() => setStatisticsType('assists')}
+                    style={{
+                      padding: '0.8rem 1.2rem',
+                      borderRadius: '20px',
+                      border: '1px solid #444',
+                      backgroundColor: statisticsType === 'assists' ? 'rgba(192, 0, 16, 0.8)' : 'rgba(40, 40, 40, 0.8)',
+                      color: '#fff',
+                      cursor: 'pointer',
+                      transition: 'all 0.3s ease'
+                    }}
+                  >
+                    助攻榜
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="table-container">
-              <table>
-                <thead>
-                  <tr>
-                    <th>排名</th>
-                    <th>姓名</th>
-                    <th>中超联赛</th>
-                    <th>足协杯</th>
-                    <th>超级杯</th>
-                    <th>亚冠联赛(含资格赛)</th>
-                    <th>合计</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {currentData.map((player, index) => (
-                    <tr key={index}>
-                      <td>{player.rank}</td>
-                      <td>{player.name}</td>
-                      <td>{player.league}</td>
-                      <td>{player.faCup}</td>
-                      <td>{player.superCup}</td>
-                      <td>{player.afc}</td>
-                      <td>{player.total}</td>
+            <div className="card-content">
+              <div className="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>排名</th>
+                      <th>姓名</th>
+                      <th>中超联赛</th>
+                      <th>足协杯</th>
+                      <th>超级杯</th>
+                      <th>亚冠联赛(含资格赛)</th>
+                      <th>合计</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {currentData.map((player, index) => (
+                      <tr key={index}>
+                        <td>{player.rank}</td>
+                        <td>{player.name}</td>
+                        <td>{player.league}</td>
+                        <td>{player.faCup}</td>
+                        <td>{player.superCup}</td>
+                        <td>{player.afc}</td>
+                        <td>{player.total}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         );
