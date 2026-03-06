@@ -287,6 +287,7 @@
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        min-width: 800px;
       }
 
       th, td {
@@ -294,6 +295,7 @@
         text-align: left;
         border-bottom: 1px solid #444;
         transition: background-color 0.3s ease;
+        white-space: nowrap;
       }
 
       th {
@@ -540,6 +542,14 @@
             font-size: 0.7rem;
           }
           
+          /* 球员信息表格移动端列宽调整 */
+          .players-card table th:nth-child(4),
+          .players-card table td:nth-child(4) { width: 40px !important; } /* 年龄 */
+          .players-card table th:nth-child(6),
+          .players-card table td:nth-child(6) { width: 50px !important; } /* 身高 */
+          .players-card table th:nth-child(7),
+          .players-card table td:nth-child(7) { width: 50px !important; } /* 体重 */
+          
           /* 统计页面控件优化 */
           select {
             font-size: 0.9rem !important;
@@ -587,6 +597,34 @@
         .card:nth-child(3) table td:nth-child(10) { width: 50px; } /* 积分 */
         .card:nth-child(3) table th:nth-child(11),
         .card:nth-child(3) table td:nth-child(11) { width: 150px; } /* 备注 */
+        
+        /* 球员信息表格自适应宽度 */
+        .players-card table {
+          table-layout: auto;
+        }
+        
+        .players-card table th,
+        .players-card table td {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        
+        /* 为关键列设置最小宽度 */
+        .players-card table th:nth-child(1),
+        .players-card table td:nth-child(1) { min-width: 50px; } /* 号码 */
+        .players-card table th:nth-child(2),
+        .players-card table td:nth-child(2) { min-width: 80px; } /* 姓名 */
+        .players-card table th:nth-child(3),
+        .players-card table td:nth-child(3) { min-width: 70px; } /* 位置 */
+        .players-card table th:nth-child(4),
+        .players-card table td:nth-child(4) { min-width: 40px; } /* 年龄 */
+        .players-card table th:nth-child(5),
+        .players-card table td:nth-child(5) { min-width: 100px; } /* 国籍 */
+        .players-card table th:nth-child(6),
+        .players-card table td:nth-child(6) { min-width: 50px; } /* 身高 */
+        .players-card table th:nth-child(7),
+        .players-card table td:nth-child(7) { min-width: 50px; } /* 体重 */
         
         /* 统计表格列宽 */
         .card:nth-child(4) table th:nth-child(1),
@@ -1036,7 +1074,7 @@
         const positions = ['all', ...new Set(playersData.map(player => player.position).filter(Boolean))];
 
         return (
-          <div className="card">
+          <div className="card players-card">
             <div className="card-header">
               <h2>球员信息</h2>
               <div className="player-filters">
