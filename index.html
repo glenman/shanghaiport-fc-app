@@ -55,7 +55,7 @@
       }
 
       .sidebar.collapsed {
-        width: 80px;
+        width: 60px;
       }
 
       .sidebar-header {
@@ -112,6 +112,7 @@
         justify-content: center;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         transition: transform 0.3s ease;
+        z-index: 10;
       }
 
       .toggle-btn:hover {
@@ -418,9 +419,9 @@
 
 
       @media (max-width: 768px) {
-        /* 侧边栏在移动端自动折叠 */
+        /* 侧边栏在移动端自动折叠到最小 */
         .sidebar {
-          width: 80px;
+          width: 60px;
         }
         
         .sidebar-title {
@@ -1433,8 +1434,7 @@
             {/* 侧边栏 */}
             <aside className={`sidebar ${isSidebarCollapsed ? 'collapsed' : ''}`}>
               <div className="sidebar-header">
-                <img src="images/shanghaiport-logo.png" alt="上海海港队徽" className="sidebar-logo" />
-                <h2 className="sidebar-title">上海海港</h2>
+                <h2 className="sidebar-title">菜单</h2>
               </div>
               <button className="toggle-btn" onClick={toggleSidebar}>
                 {isSidebarCollapsed ? '→' : '←'}
@@ -1474,8 +1474,13 @@
             {/* 主内容区域 */}
             <div className="main-content">
               <header className="app-header">
-                <h1>上海海港足球俱乐部数据查询</h1>
-                <h2>Shanghai Port FC Data Query</h2>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
+                  <img src="images/shanghaiport-logo.png" alt="上海海港队徽" style={{ width: '60px', height: '60px', borderRadius: '50%', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)' }} />
+                  <div>
+                    <h1>上海海港足球俱乐部数据查询</h1>
+                    <h2>Shanghai Port FC Data Query</h2>
+                  </div>
+                </div>
               </header>
               <main className="app-content">
                 {activeTab === 'schedule' && <Schedule scheduleData={scheduleData} />}
