@@ -587,6 +587,22 @@
         .card:nth-child(3) table th:nth-child(11),
         .card:nth-child(3) table td:nth-child(11) { width: 150px; } /* 备注 */
         
+        /* 统计表格列宽 */
+        .card:nth-child(4) table th:nth-child(1),
+        .card:nth-child(4) table td:nth-child(1) { width: 60px; } /* 排名 */
+        .card:nth-child(4) table th:nth-child(2),
+        .card:nth-child(4) table td:nth-child(2) { width: 100px; } /* 姓名 */
+        .card:nth-child(4) table th:nth-child(3),
+        .card:nth-child(4) table td:nth-child(3) { width: 80px; } /* 中超联赛 */
+        .card:nth-child(4) table th:nth-child(4),
+        .card:nth-child(4) table td:nth-child(4) { width: 80px; } /* 足协杯 */
+        .card:nth-child(4) table th:nth-child(5),
+        .card:nth-child(4) table td:nth-child(5) { width: 80px; } /* 超级杯 */
+        .card:nth-child(4) table th:nth-child(6),
+        .card:nth-child(4) table td:nth-child(6) { width: 120px; } /* 亚冠联赛 */
+        .card:nth-child(4) table th:nth-child(7),
+        .card:nth-child(4) table td:nth-child(7) { width: 60px; } /* 合计 */
+        
         /* 过滤器响应式 */
         .player-filters {
           flex-direction: column;
@@ -1130,45 +1146,164 @@
       const Statistics = () => {
         const [selectedSeason, setSelectedSeason] = React.useState('2025');
         const [statisticsType, setStatisticsType] = React.useState('goals'); // goals or assists
+        const [data, setData] = React.useState([]);
+        const [loading, setLoading] = React.useState(true);
+        const [error, setError] = React.useState(null);
 
-        // 模拟数据 - 实际项目中应该从数据库获取
-        const mockStatisticsData = {
-          '2025': {
-            goals: [
-              { rank: 1, name: '武磊', league: 25, faCup: 3, superCup: 1, afc: 4, total: 33 },
-              { rank: 2, name: '莱昂纳多', league: 18, faCup: 2, superCup: 0, afc: 3, total: 23 },
-              { rank: 3, name: '加布里埃尔', league: 15, faCup: 1, superCup: 1, afc: 2, total: 19 },
-              { rank: 4, name: '维塔尔', league: 12, faCup: 3, superCup: 0, afc: 2, total: 17 },
-              { rank: 5, name: '李新翔', league: 8, faCup: 1, superCup: 0, afc: 0, total: 9 }
-            ],
-            assists: [
-              { rank: 1, name: '维塔尔', league: 12, faCup: 4, superCup: 1, afc: 3, total: 20 },
-              { rank: 2, name: '王燊超', league: 8, faCup: 2, superCup: 1, afc: 2, total: 13 },
-              { rank: 3, name: '武磊', league: 7, faCup: 2, superCup: 0, afc: 3, total: 12 },
-              { rank: 4, name: '张源', league: 6, faCup: 2, superCup: 0, afc: 1, total: 9 },
-              { rank: 5, name: '加布里埃尔', league: 5, faCup: 1, superCup: 1, afc: 2, total: 9 }
-            ]
-          },
-          '2024': {
-            goals: [
-              { rank: 1, name: '武磊', league: 30, faCup: 4, superCup: 1, afc: 5, total: 40 },
-              { rank: 2, name: '奥斯卡', league: 15, faCup: 3, superCup: 0, afc: 4, total: 22 },
-              { rank: 3, name: '巴尔加斯', league: 12, faCup: 2, superCup: 1, afc: 3, total: 18 },
-              { rank: 4, name: '吕文君', league: 10, faCup: 1, superCup: 0, afc: 2, total: 13 },
-              { rank: 5, name: '王燊超', league: 5, faCup: 0, superCup: 0, afc: 1, total: 6 }
-            ],
-            assists: [
-              { rank: 1, name: '奥斯卡', league: 20, faCup: 5, superCup: 1, afc: 4, total: 30 },
-              { rank: 2, name: '巴尔加斯', league: 15, faCup: 3, superCup: 1, afc: 3, total: 22 },
-              { rank: 3, name: '武磊', league: 10, faCup: 2, superCup: 0, afc: 3, total: 15 },
-              { rank: 4, name: '王燊超', league: 8, faCup: 1, superCup: 0, afc: 2, total: 11 },
-              { rank: 5, name: '吕文君', league: 6, faCup: 1, superCup: 0, afc: 1, total: 8 }
-            ]
-          }
+        // 从JSON文件加载数据
+        React.useEffect(() => {
+          fetch('data/goal_details.json')
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.json();
+            })
+            .then(data => {
+              setData(data);
+              setLoading(false);
+            })
+            .catch(error => {
+              console.error('Error loading data:', error);
+              setError('加载数据失败，请刷新页面重试');
+              setLoading(false);
+            });
+        }, []);
+
+        // 处理数据统计
+        const processStatistics = () => {
+          if (loading || error) return { seasons: [], currentData: [] };
+
+          // 提取所有赛季
+          const seasonsSet = new Set(data.map(item => item.season));
+          const seasons = Array.from(seasonsSet).sort().reverse();
+
+          // 按赛季和类型统计
+          const statsBySeason = {};
+          
+          seasons.forEach(season => {
+            statsBySeason[season] = {
+              goals: [],
+              assists: []
+            };
+          });
+
+          // 统计进球
+          const goalStats = {};
+          data.forEach(item => {
+            const player = item.goal_player;
+            const season = item.season;
+            const matchType = item.match_type;
+            
+            if (!goalStats[player]) {
+              goalStats[player] = {};
+            }
+            if (!goalStats[player][season]) {
+              goalStats[player][season] = {
+                league: 0,
+                faCup: 0,
+                superCup: 0,
+                afc: 0,
+                total: 0
+              };
+            }
+            
+            // 根据比赛类型统计
+            if (matchType.includes('中超')) {
+              goalStats[player][season].league += 1;
+            } else if (matchType.includes('足协杯')) {
+              goalStats[player][season].faCup += 1;
+            } else if (matchType.includes('超级杯')) {
+              goalStats[player][season].superCup += 1;
+            } else if (matchType.includes('亚冠')) {
+              goalStats[player][season].afc += 1;
+            }
+            goalStats[player][season].total += 1;
+          });
+
+          // 统计助攻
+          const assistStats = {};
+          data.forEach(item => {
+            const player = item.assist_player;
+            if (!player || player === '—' || player === '？') return;
+            
+            const season = item.season;
+            const matchType = item.match_type;
+            
+            if (!assistStats[player]) {
+              assistStats[player] = {};
+            }
+            if (!assistStats[player][season]) {
+              assistStats[player][season] = {
+                league: 0,
+                faCup: 0,
+                superCup: 0,
+                afc: 0,
+                total: 0
+              };
+            }
+            
+            // 根据比赛类型统计
+            if (matchType.includes('中超')) {
+              assistStats[player][season].league += 1;
+            } else if (matchType.includes('足协杯')) {
+              assistStats[player][season].faCup += 1;
+            } else if (matchType.includes('超级杯')) {
+              assistStats[player][season].superCup += 1;
+            } else if (matchType.includes('亚冠')) {
+              assistStats[player][season].afc += 1;
+            }
+            assistStats[player][season].total += 1;
+          });
+
+          // 转换为排名格式
+          seasons.forEach(season => {
+            // 进球排名
+            const seasonGoalStats = [];
+            Object.entries(goalStats).forEach(([player, stats]) => {
+              if (stats[season]) {
+                seasonGoalStats.push({
+                  name: player,
+                  ...stats[season]
+                });
+              }
+            });
+            
+            // 按总进球数排序
+            seasonGoalStats.sort((a, b) => b.total - a.total);
+            // 添加排名
+            statsBySeason[season].goals = seasonGoalStats.map((item, index) => ({
+              rank: index + 1,
+              ...item
+            }));
+
+            // 助攻排名
+            const seasonAssistStats = [];
+            Object.entries(assistStats).forEach(([player, stats]) => {
+              if (stats[season]) {
+                seasonAssistStats.push({
+                  name: player,
+                  ...stats[season]
+                });
+              }
+            });
+            
+            // 按总助攻数排序
+            seasonAssistStats.sort((a, b) => b.total - a.total);
+            // 添加排名
+            statsBySeason[season].assists = seasonAssistStats.map((item, index) => ({
+              rank: index + 1,
+              ...item
+            }));
+          });
+
+          return {
+            seasons,
+            currentData: statsBySeason[selectedSeason]?.[statisticsType] || []
+          };
         };
 
-        const seasons = Object.keys(mockStatisticsData).sort().reverse();
-        const currentData = mockStatisticsData[selectedSeason]?.[statisticsType] || [];
+        const { seasons, currentData } = processStatistics();
 
         return (
           <div className="card">
@@ -1178,13 +1313,15 @@
                 <select 
                   value={selectedSeason} 
                   onChange={(e) => setSelectedSeason(e.target.value)}
+                  disabled={loading}
                   style={{ 
                     padding: '0.8rem', 
                     borderRadius: '25px', 
                     border: '1px solid #444', 
-                    backgroundColor: 'rgba(30, 30, 30, 0.8)', 
+                    backgroundColor: loading ? 'rgba(50, 50, 50, 0.8)' : 'rgba(30, 30, 30, 0.8)', 
                     color: '#fff', 
-                    fontSize: '1rem'
+                    fontSize: '1rem',
+                    cursor: loading ? 'not-allowed' : 'pointer'
                   }}
                 >
                   {seasons.map(season => (
@@ -1194,13 +1331,14 @@
                 <div style={{ display: 'flex', gap: '0.5rem' }}>
                   <button 
                     onClick={() => setStatisticsType('goals')}
+                    disabled={loading}
                     style={{
                       padding: '0.8rem 1.2rem',
                       borderRadius: '20px',
                       border: '1px solid #444',
-                      backgroundColor: statisticsType === 'goals' ? 'rgba(192, 0, 16, 0.8)' : 'rgba(40, 40, 40, 0.8)',
+                      backgroundColor: loading ? 'rgba(50, 50, 50, 0.8)' : (statisticsType === 'goals' ? 'rgba(192, 0, 16, 0.8)' : 'rgba(40, 40, 40, 0.8)'),
                       color: '#fff',
-                      cursor: 'pointer',
+                      cursor: loading ? 'not-allowed' : 'pointer',
                       transition: 'all 0.3s ease'
                     }}
                   >
@@ -1208,13 +1346,14 @@
                   </button>
                   <button 
                     onClick={() => setStatisticsType('assists')}
+                    disabled={loading}
                     style={{
                       padding: '0.8rem 1.2rem',
                       borderRadius: '20px',
                       border: '1px solid #444',
-                      backgroundColor: statisticsType === 'assists' ? 'rgba(192, 0, 16, 0.8)' : 'rgba(40, 40, 40, 0.8)',
+                      backgroundColor: loading ? 'rgba(50, 50, 50, 0.8)' : (statisticsType === 'assists' ? 'rgba(192, 0, 16, 0.8)' : 'rgba(40, 40, 40, 0.8)'),
                       color: '#fff',
-                      cursor: 'pointer',
+                      cursor: loading ? 'not-allowed' : 'pointer',
                       transition: 'all 0.3s ease'
                     }}
                   >
@@ -1224,34 +1363,52 @@
               </div>
             </div>
             <div className="card-content">
-              <div className="table-container">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>排名</th>
-                      <th>姓名</th>
-                      <th>中超联赛</th>
-                      <th>足协杯</th>
-                      <th>超级杯</th>
-                      <th>亚冠联赛(含资格赛)</th>
-                      <th>合计</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {currentData.map((player, index) => (
-                      <tr key={index}>
-                        <td>{player.rank}</td>
-                        <td>{player.name}</td>
-                        <td>{player.league}</td>
-                        <td>{player.faCup}</td>
-                        <td>{player.superCup}</td>
-                        <td>{player.afc}</td>
-                        <td>{player.total}</td>
+              {loading ? (
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '300px' }}>
+                  <div style={{ fontSize: '1.2rem', color: '#c00010' }}>加载数据中...</div>
+                </div>
+              ) : error ? (
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '300px' }}>
+                  <div style={{ fontSize: '1.2rem', color: '#ff4444' }}>{error}</div>
+                </div>
+              ) : (
+                <div className="table-container" style={{ marginTop: '1.5rem' }}>
+                  <table style={{ minWidth: '800px' }}>
+                    <thead>
+                      <tr>
+                        <th>排名</th>
+                        <th>姓名</th>
+                        <th>中超联赛</th>
+                        <th>足协杯</th>
+                        <th>超级杯</th>
+                        <th>亚冠联赛(含资格赛)</th>
+                        <th>合计</th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+                    </thead>
+                    <tbody>
+                      {currentData.length > 0 ? (
+                        currentData.map((player, index) => (
+                          <tr key={index}>
+                            <td>{player.rank}</td>
+                            <td>{player.name}</td>
+                            <td>{player.league}</td>
+                            <td>{player.faCup}</td>
+                            <td>{player.superCup}</td>
+                            <td>{player.afc}</td>
+                            <td>{player.total}</td>
+                          </tr>
+                        ))
+                      ) : (
+                        <tr>
+                          <td colSpan="7" style={{ textAlign: 'center', padding: '2rem', color: '#ccc' }}>
+                            该赛季暂无数据
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                </div>
+              )}
             </div>
           </div>
         );
@@ -1261,7 +1418,7 @@
 
       // 主应用组件
       const App = () => {
-        const [activeTab, setActiveTab] = React.useState('schedule');
+        const [activeTab, setActiveTab] = React.useState('statistics');
         const [isSidebarCollapsed, setIsSidebarCollapsed] = React.useState(false);
         const [scheduleData, setScheduleData] = React.useState(defaultScheduleData);
         const [playersData, setPlayersData] = React.useState(defaultPlayersData);
