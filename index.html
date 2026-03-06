@@ -431,20 +431,79 @@
           -webkit-overflow-scrolling: touch;
           border-radius: 8px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          max-width: 100%;
+          scrollbar-width: thin;
+          scrollbar-color: #c00010 #333;
+        }
+        
+        .table-container::-webkit-scrollbar {
+          height: 6px;
+        }
+        
+        .table-container::-webkit-scrollbar-track {
+          background: #333;
+          border-radius: 3px;
+        }
+        
+        .table-container::-webkit-scrollbar-thumb {
+          background: #c00010;
+          border-radius: 3px;
+        }
+        
+        .table-container::-webkit-scrollbar-thumb:hover {
+          background: #a0000e;
         }
         
         table {
-          font-size: 0.8rem;
-          min-width: 800px;
+          font-size: 0.75rem;
+          min-width: 700px;
           table-layout: fixed;
         }
         
         th, td {
-          padding: 0.8rem;
-          font-size: 0.8rem;
+          padding: 0.6rem 0.8rem;
+          font-size: 0.75rem;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+        }
+        
+        /* 移动端竖屏优化 */
+        @media (max-width: 480px) {
+          .app-content {
+            padding: 0.8rem;
+          }
+          
+          .card {
+            padding: 1.2rem;
+            margin-bottom: 1.2rem;
+          }
+          
+          .card h2 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+          }
+          
+          table {
+            font-size: 0.7rem;
+            min-width: 600px;
+          }
+          
+          th, td {
+            padding: 0.5rem 0.7rem;
+            font-size: 0.7rem;
+          }
+          
+          /* 统计页面控件优化 */
+          select {
+            font-size: 0.9rem !important;
+            padding: 0.6rem !important;
+          }
+          
+          button {
+            font-size: 0.8rem !important;
+            padding: 0.6rem 1rem !important;
+          }
         }
         
         /* 调整列宽，确保关键信息优先显示 */
@@ -1010,6 +1069,133 @@
         );
       };
 
+      // 历史数据统计组件
+      const Statistics = () => {
+        const [selectedSeason, setSelectedSeason] = React.useState('2025');
+        const [statisticsType, setStatisticsType] = React.useState('goals'); // goals or assists
+
+        // 模拟数据 - 实际项目中应该从数据库获取
+        const mockStatisticsData = {
+          '2025': {
+            goals: [
+              { rank: 1, name: '武磊', league: 25, faCup: 3, superCup: 1, afc: 4, total: 33 },
+              { rank: 2, name: '莱昂纳多', league: 18, faCup: 2, superCup: 0, afc: 3, total: 23 },
+              { rank: 3, name: '加布里埃尔', league: 15, faCup: 1, superCup: 1, afc: 2, total: 19 },
+              { rank: 4, name: '维塔尔', league: 12, faCup: 3, superCup: 0, afc: 2, total: 17 },
+              { rank: 5, name: '李新翔', league: 8, faCup: 1, superCup: 0, afc: 0, total: 9 }
+            ],
+            assists: [
+              { rank: 1, name: '维塔尔', league: 12, faCup: 4, superCup: 1, afc: 3, total: 20 },
+              { rank: 2, name: '王燊超', league: 8, faCup: 2, superCup: 1, afc: 2, total: 13 },
+              { rank: 3, name: '武磊', league: 7, faCup: 2, superCup: 0, afc: 3, total: 12 },
+              { rank: 4, name: '张源', league: 6, faCup: 2, superCup: 0, afc: 1, total: 9 },
+              { rank: 5, name: '加布里埃尔', league: 5, faCup: 1, superCup: 1, afc: 2, total: 9 }
+            ]
+          },
+          '2024': {
+            goals: [
+              { rank: 1, name: '武磊', league: 30, faCup: 4, superCup: 1, afc: 5, total: 40 },
+              { rank: 2, name: '奥斯卡', league: 15, faCup: 3, superCup: 0, afc: 4, total: 22 },
+              { rank: 3, name: '巴尔加斯', league: 12, faCup: 2, superCup: 1, afc: 3, total: 18 },
+              { rank: 4, name: '吕文君', league: 10, faCup: 1, superCup: 0, afc: 2, total: 13 },
+              { rank: 5, name: '王燊超', league: 5, faCup: 0, superCup: 0, afc: 1, total: 6 }
+            ],
+            assists: [
+              { rank: 1, name: '奥斯卡', league: 20, faCup: 5, superCup: 1, afc: 4, total: 30 },
+              { rank: 2, name: '巴尔加斯', league: 15, faCup: 3, superCup: 1, afc: 3, total: 22 },
+              { rank: 3, name: '武磊', league: 10, faCup: 2, superCup: 0, afc: 3, total: 15 },
+              { rank: 4, name: '王燊超', league: 8, faCup: 1, superCup: 0, afc: 2, total: 11 },
+              { rank: 5, name: '吕文君', league: 6, faCup: 1, superCup: 0, afc: 1, total: 8 }
+            ]
+          }
+        };
+
+        const seasons = Object.keys(mockStatisticsData).sort().reverse();
+        const currentData = mockStatisticsData[selectedSeason]?.[statisticsType] || [];
+
+        return (
+          <div className="card">
+            <h2>历史数据统计</h2>
+            <div style={{ marginBottom: '1.5rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+              <select 
+                value={selectedSeason} 
+                onChange={(e) => setSelectedSeason(e.target.value)}
+                style={{ 
+                  padding: '0.8rem', 
+                  borderRadius: '25px', 
+                  border: '1px solid #444', 
+                  backgroundColor: 'rgba(30, 30, 30, 0.8)', 
+                  color: '#fff', 
+                  fontSize: '1rem'
+                }}
+              >
+                {seasons.map(season => (
+                  <option key={season} value={season}>{season}赛季</option>
+                ))}
+              </select>
+              <div style={{ display: 'flex', gap: '0.5rem' }}>
+                <button 
+                  onClick={() => setStatisticsType('goals')}
+                  style={{
+                    padding: '0.8rem 1.2rem',
+                    borderRadius: '20px',
+                    border: '1px solid #444',
+                    backgroundColor: statisticsType === 'goals' ? 'rgba(192, 0, 16, 0.8)' : 'rgba(40, 40, 40, 0.8)',
+                    color: '#fff',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease'
+                  }}
+                >
+                  进球榜
+                </button>
+                <button 
+                  onClick={() => setStatisticsType('assists')}
+                  style={{
+                    padding: '0.8rem 1.2rem',
+                    borderRadius: '20px',
+                    border: '1px solid #444',
+                    backgroundColor: statisticsType === 'assists' ? 'rgba(192, 0, 16, 0.8)' : 'rgba(40, 40, 40, 0.8)',
+                    color: '#fff',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease'
+                  }}
+                >
+                  助攻榜
+                </button>
+              </div>
+            </div>
+            <div className="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>排名</th>
+                    <th>姓名</th>
+                    <th>中超联赛</th>
+                    <th>足协杯</th>
+                    <th>超级杯</th>
+                    <th>亚冠联赛(含资格赛)</th>
+                    <th>合计</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {currentData.map((player, index) => (
+                    <tr key={index}>
+                      <td>{player.rank}</td>
+                      <td>{player.name}</td>
+                      <td>{player.league}</td>
+                      <td>{player.faCup}</td>
+                      <td>{player.superCup}</td>
+                      <td>{player.afc}</td>
+                      <td>{player.total}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        );
+      };
+
 
 
       // 主应用组件
@@ -1057,6 +1243,13 @@
                   <span className="menu-icon">🏆</span>
                   <span className="menu-text">历史赛季排名</span>
                 </div>
+                <div 
+                  className={`menu-item ${activeTab === 'statistics' ? 'active' : ''}`}
+                  onClick={() => setActiveTab('statistics')}
+                >
+                  <span className="menu-icon">📊</span>
+                  <span className="menu-text">历史数据统计</span>
+                </div>
               </nav>
             </aside>
             
@@ -1070,6 +1263,7 @@
                 {activeTab === 'schedule' && <Schedule scheduleData={scheduleData} />}
                 {activeTab === 'players' && <Players playersData={playersData} />}
                 {activeTab === 'seasons' && <Seasons seasonsData={seasonsData} />}
+                {activeTab === 'statistics' && <Statistics />}
               </main>
               <div className="app-footer">
                 <div className="stars-container">
