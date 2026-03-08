@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>上海海港 vs 河南俱乐部 - 赛事报告</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        font-family: 'Noto Sans SC', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        line-height: 1.4;
+        font-weight: 400;
+        color-scheme: light dark;
+        color: rgba(255, 255, 255, 0.87);
+        background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      }
+
+      .app {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      .app-header {
+        background: linear-gradient(90deg, #c00010 0%, #a0000e 100%);
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 3px solid #80000c;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .app-header h1 {
+        font-size: 1.5rem;
+        color: #ffffff;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 0.3rem;
+      }
+
+      .app-header h2 {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 400;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin: 0;
+      }
+
+      .app-content {
+        flex: 1;
+        padding: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+        overflow-y: auto;
+      }
+
+      .card {
+        background: rgba(40, 40, 40, 0.8);
+        backdrop-filter: blur(10px);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        border-left: 4px solid #c00010;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+      }
+
+      .card h2 {
+        margin-bottom: 1rem;
+        color: #c00010;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .card h2::before {
+        content: '⚽';
+        font-size: 1rem;
+      }
+
+      .card h3 {
+        margin: 1rem 0 0.6rem 0;
+        color: #c00010;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      .card h5 {
+        margin: 0.6rem 0 0.3rem 0;
+        color: #c00010;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+
+      .match-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .match-info-item {
+        flex: 1;
+        min-width: 180px;
+        font-size: 0.9rem;
+      }
+
+      .match-info-item strong {
+        color: #c00010;
+      }
+
+      .match-summary {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        font-size: 0.95rem;
+      }
+
+      .match-summary p {
+        margin-bottom: 0.5rem;
+      }
+
+      .match-highlights {
+        margin-bottom: 1rem;
+      }
+
+      .match-highlights ul {
+        list-style: disc;
+        padding-left: 1.5rem;
+      }
+
+      .match-highlights li {
+        margin-bottom: 0.5rem;
+        line-height: 1.4;
+        font-size: 0.95rem;
+      }
+
+      .lineups {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .lineup {
+        flex: 1;
+        min-width: 280px;
+      }
+
+      .lineup h4 {
+        margin-bottom: 0.6rem;
+        color: #c00010;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .lineup p {
+        margin-bottom: 0.4rem;
+        font-size: 0.9rem;
+      }
+
+      .lineup ul {
+        list-style: none;
+        padding-left: 0.5rem;
+      }
+
+      .lineup li {
+        margin-bottom: 0.3rem;
+        line-height: 1.3;
+        font-size: 0.9rem;
+      }
+
+      .statistics table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 0.6rem;
+        font-size: 0.9rem;
+      }
+
+      .statistics th, .statistics td {
+        padding: 0.6rem 0.8rem;
+        text-align: left;
+        border-bottom: 1px solid #444;
+      }
+
+      .statistics th {
+        background: linear-gradient(90deg, #c00010, #a0000e);
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 0.85rem;
+      }
+
+      .statistics tr:hover {
+        background-color: rgba(60, 60, 60, 0.6);
+      }
+
+      .key-factors ul {
+        list-style: disc;
+        padding-left: 1.5rem;
+      }
+
+      .key-factors li {
+        margin-bottom: 0.4rem;
+        line-height: 1.4;
+        font-size: 0.95rem;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.6rem 1.2rem;
+        background: linear-gradient(90deg, #c00010, #a0000e);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        font-size: 0.9rem;
+      }
+
+      .back-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      }
+
+      @media (max-width: 768px) {
+        .app-content {
+          padding: 0.8rem;
+        }
+
+        .card {
+          padding: 0.8rem;
+        }
+
+        .match-info {
+          flex-direction: column;
+          gap: 0.6rem;
+        }
+
+        .lineups {
+          flex-direction: column;
+        }
+
+        .statistics table {
+          font-size: 0.85rem;
+        }
+
+        .statistics th, .statistics td {
+          padding: 0.5rem 0.6rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <h1>上海海港 vs 河南俱乐部</h1>
+        <h2>2026赛季中超联赛 - 第1轮</h2>
+      </header>
+      <main class="app-content">
+        <div class="card">
+          <h2>赛事报告</h2>
+          
+          <div class="match-info" id="match-info">
+            <!-- 比赛信息将通过 JavaScript 动态填充 -->
+          </div>
+
+          <h3>比赛摘要</h3>
+          <div class="match-summary" id="match-summary">
+            <!-- 比赛摘要将通过 JavaScript 动态填充 -->
+          </div>
+
+          <h3>比赛亮点</h3>
+          <div class="match-highlights" id="match-highlights">
+            <!-- 比赛亮点将通过 JavaScript 动态填充 -->
+          </div>
+
+          <h3>阵容</h3>
+          <div class="lineups" id="match-lineups">
+            <!-- 阵容将通过 JavaScript 动态填充 -->
+          </div>
+
+          <h3>比赛统计</h3>
+          <div class="statistics" id="match-statistics">
+            <!-- 比赛统计将通过 JavaScript 动态填充 -->
+          </div>
+
+          <h3>关键因素</h3>
+          <div class="key-factors" id="key-factors">
+            <!-- 关键因素将通过 JavaScript 动态填充 -->
+          </div>
+
+          <script>
+            // 加载赛事报告数据
+            fetch('data/match_report.json')
+              .then(response => response.json())
+              .then(data => {
+                // 填充比赛信息
+                const matchInfo = document.getElementById('match-info');
+                matchInfo.innerHTML = `
+                  <div class="match-info-item">
+                    <strong>比赛时间:</strong> ${data.match.date} ${data.match.time}
+                  </div>
+                  <div class="match-info-item">
+                    <strong>比赛地点:</strong> ${data.match.venue}
+                  </div>
+                  <div class="match-info-item">
+                    <strong>比赛城市:</strong> ${data.match.city}
+                  </div>
+                  <div class="match-info-item">
+                    <strong>比赛结果:</strong> ${data.match.homeTeam} ${data.match.result} ${data.match.awayTeam}
+                  </div>
+                `;
+
+                // 填充比赛摘要
+                const matchSummary = document.getElementById('match-summary');
+                // 将摘要文本按句号分割成段落
+                const summaryParagraphs = data.summary.split('。').filter(p => p.trim() !== '');
+                let summaryHTML = '';
+                summaryParagraphs.forEach(paragraph => {
+                  summaryHTML += `<p>${paragraph}。</p>`;
+                });
+                matchSummary.innerHTML = summaryHTML;
+
+                // 填充比赛亮点
+                const matchHighlights = document.getElementById('match-highlights');
+                let highlightsHTML = '<ul>';
+                data.highlights.forEach(highlight => {
+                  highlightsHTML += `<li><strong>${highlight.time}</strong> - ${highlight.description}</li>`;
+                });
+                highlightsHTML += '</ul>';
+                matchHighlights.innerHTML = highlightsHTML;
+
+                // 填充阵容
+                const matchLineups = document.getElementById('match-lineups');
+                let lineupsHTML = `
+                  <div class="lineup">
+                    <h4>${data.lineups.home.name} (${data.lineups.home.formation})</h4>
+                    <p><strong>主教练:</strong> ${data.lineups.home.manager}</p>
+                    <p><strong>队长:</strong> ${data.lineups.home.captain}</p>
+                    <ul>
+                      ${data.lineups.home.players.map(player => 
+                        `<li><strong>${player.number}.</strong> ${player.name} (${player.position}, ${player.nationality})</li>`
+                      ).join('')}
+                    </ul>
+                    <h5>替补:</h5>
+                    <ul>
+                      ${data.lineups.home.substitutes.map(sub => 
+                        `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>`
+                      ).join('')}
+                    </ul>
+                  </div>
+                  <div class="lineup">
+                    <h4>${data.lineups.away.name} (${data.lineups.away.formation})</h4>
+                    <p><strong>主教练:</strong> ${data.lineups.away.manager}</p>
+                    <p><strong>队长:</strong> ${data.lineups.away.captain}</p>
+                    <ul>
+                      ${data.lineups.away.players.map(player => 
+                        `<li><strong>${player.number}.</strong> ${player.name} (${player.position}, ${player.nationality})</li>`
+                      ).join('')}
+                    </ul>
+                    <h5>替补:</h5>
+                    <ul>
+                      ${data.lineups.away.substitutes.map(sub => 
+                        `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>`
+                      ).join('')}
+                    </ul>
+                  </div>
+                `;
+                matchLineups.innerHTML = lineupsHTML;
+
+                // 填充比赛统计
+                const matchStatistics = document.getElementById('match-statistics');
+                let statisticsHTML = `
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>统计项</th>
+                        <th>${data.match.homeTeam}</th>
+                        <th>${data.match.awayTeam}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${data.statistics.map(stat => `
+                        <tr>
+                          <td>${stat.name}</td>
+                          <td>${stat.home}</td>
+                          <td>${stat.away}</td>
+                        </tr>
+                      `).join('')}
+                    </tbody>
+                  </table>
+                `;
+                matchStatistics.innerHTML = statisticsHTML;
+
+                // 填充关键因素
+                const keyFactors = document.getElementById('key-factors');
+                if (data.keyFactors && data.keyFactors.length > 0) {
+                  let keyFactorsHTML = '<ul>';
+                  data.keyFactors.forEach(factor => {
+                    keyFactorsHTML += `<li>${factor}</li>`;
+                  });
+                  keyFactorsHTML += '</ul>';
+                  keyFactors.innerHTML = keyFactorsHTML;
+                } else {
+                  keyFactors.innerHTML = '<p>暂无关键因素分析</p>';
+                }
+
+                // 更新页面标题
+                document.title = `${data.match.homeTeam} vs ${data.match.awayTeam} - 赛事报告`;
+                document.querySelector('.app-header h1').textContent = `${data.match.homeTeam} vs ${data.match.awayTeam}`;
+                document.querySelector('.app-header h2').textContent = `2026赛季中超联赛 - ${data.match.round}`;
+              })
+              .catch(error => {
+                console.error('加载赛事报告数据失败:', error);
+                document.getElementById('match-info').innerHTML = '<p>加载赛事报告数据失败，请刷新页面重试。</p>';
+              });
+          </script>
+
+          <a href="index.html" class="back-link">返回赛程</a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
