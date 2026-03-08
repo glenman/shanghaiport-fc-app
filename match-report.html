@@ -319,130 +319,156 @@
           </div>
 
           <script>
+            // 从URL参数中获取比赛信息
+            function getUrlParams() {
+              const params = {};
+              const urlParams = new URLSearchParams(window.location.search);
+              for (const [key, value] of urlParams.entries()) {
+                params[key] = value;
+              }
+              return params;
+            }
+
             // 加载赛事报告数据
-            fetch('data/match_report.json')
-              .then(response => response.json())
-              .then(data => {
-                // 填充比赛信息
-                const matchInfo = document.getElementById('match-info');
-                matchInfo.innerHTML = `
-                  <div class="match-info-item">
-                    <strong>比赛时间:</strong> ${data.match.date} ${data.match.time}
-                  </div>
-                  <div class="match-info-item">
-                    <strong>比赛地点:</strong> ${data.match.venue}
-                  </div>
-                  <div class="match-info-item">
-                    <strong>比赛城市:</strong> ${data.match.city}
-                  </div>
-                  <div class="match-info-item">
-                    <strong>比赛结果:</strong> ${data.match.homeTeam} ${data.match.result} ${data.match.awayTeam}
-                  </div>
-                `;
+            const params = getUrlParams();
+            const { date, type, round } = params;
 
-                // 填充比赛摘要
-                const matchSummary = document.getElementById('match-summary');
-                // 将摘要文本按句号分割成段落
-                const summaryParagraphs = data.summary.split('。').filter(p => p.trim() !== '');
-                let summaryHTML = '';
-                summaryParagraphs.forEach(paragraph => {
-                  summaryHTML += `<p>${paragraph}。</p>`;
-                });
-                matchSummary.innerHTML = summaryHTML;
+            if (!date || !type || !round) {
+              document.getElementById('match-info').innerHTML = '<p>缺少比赛信息参数，请从赛程页面进入。</p>';
+            } else {
+              // 构建JSON文件路径
+              const fileName = `${date}-${type}-${round}.json`;
+              const filePath = `data/${fileName}`;
 
-                // 填充比赛亮点
-                const matchHighlights = document.getElementById('match-highlights');
-                let highlightsHTML = '<ul>';
-                data.highlights.forEach(highlight => {
-                  highlightsHTML += `<li><strong>${highlight.time}</strong> - ${highlight.description}</li>`;
-                });
-                highlightsHTML += '</ul>';
-                matchHighlights.innerHTML = highlightsHTML;
+              fetch(filePath)
+                .then(response => {
+                  if (!response.ok) {
+                    throw new Error('找不到对应的赛事报告');
+                  }
+                  return response.json();
+                })
+                .then(data => {
+                  // 填充比赛信息
+                  const matchInfo = document.getElementById('match-info');
+                  matchInfo.innerHTML = `
+                    <div class="match-info-item">
+                      <strong>比赛时间:</strong> ${data.match.date} ${data.match.time}
+                    </div>
+                    <div class="match-info-item">
+                      <strong>比赛地点:</strong> ${data.match.venue}
+                    </div>
+                    <div class="match-info-item">
+                      <strong>比赛城市:</strong> ${data.match.city}
+                    </div>
+                    <div class="match-info-item">
+                      <strong>比赛结果:</strong> ${data.match.homeTeam} ${data.match.result} ${data.match.awayTeam}
+                    </div>
+                  `;
 
-                // 填充阵容
-                const matchLineups = document.getElementById('match-lineups');
-                let lineupsHTML = `
-                  <div class="lineup">
-                    <h4>${data.lineups.home.name} (${data.lineups.home.formation})</h4>
-                    <p><strong>主教练:</strong> ${data.lineups.home.manager}</p>
-                    <p><strong>队长:</strong> ${data.lineups.home.captain}</p>
-                    <ul>
-                      ${data.lineups.home.players.map(player => 
-                        `<li><strong>${player.number}.</strong> ${player.name} (${player.position}, ${player.nationality})</li>`
-                      ).join('')}
-                    </ul>
-                    <h5>替补:</h5>
-                    <ul>
-                      ${data.lineups.home.substitutes.map(sub => 
-                        `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>`
-                      ).join('')}
-                    </ul>
-                  </div>
-                  <div class="lineup">
-                    <h4>${data.lineups.away.name} (${data.lineups.away.formation})</h4>
-                    <p><strong>主教练:</strong> ${data.lineups.away.manager}</p>
-                    <p><strong>队长:</strong> ${data.lineups.away.captain}</p>
-                    <ul>
-                      ${data.lineups.away.players.map(player => 
-                        `<li><strong>${player.number}.</strong> ${player.name} (${player.position}, ${player.nationality})</li>`
-                      ).join('')}
-                    </ul>
-                    <h5>替补:</h5>
-                    <ul>
-                      ${data.lineups.away.substitutes.map(sub => 
-                        `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>`
-                      ).join('')}
-                    </ul>
-                  </div>
-                `;
-                matchLineups.innerHTML = lineupsHTML;
-
-                // 填充比赛统计
-                const matchStatistics = document.getElementById('match-statistics');
-                let statisticsHTML = `
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>统计项</th>
-                        <th>${data.match.homeTeam}</th>
-                        <th>${data.match.awayTeam}</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      ${data.statistics.map(stat => `
-                        <tr>
-                          <td>${stat.name}</td>
-                          <td>${stat.home}</td>
-                          <td>${stat.away}</td>
-                        </tr>
-                      `).join('')}
-                    </tbody>
-                  </table>
-                `;
-                matchStatistics.innerHTML = statisticsHTML;
-
-                // 填充关键因素
-                const keyFactors = document.getElementById('key-factors');
-                if (data.keyFactors && data.keyFactors.length > 0) {
-                  let keyFactorsHTML = '<ul>';
-                  data.keyFactors.forEach(factor => {
-                    keyFactorsHTML += `<li>${factor}</li>`;
+                  // 填充比赛摘要
+                  const matchSummary = document.getElementById('match-summary');
+                  // 将摘要文本按句号分割成段落
+                  const summaryParagraphs = data.summary.split('。').filter(p => p.trim() !== '');
+                  let summaryHTML = '';
+                  summaryParagraphs.forEach(paragraph => {
+                    summaryHTML += `<p>${paragraph}。</p>`;
                   });
-                  keyFactorsHTML += '</ul>';
-                  keyFactors.innerHTML = keyFactorsHTML;
-                } else {
-                  keyFactors.innerHTML = '<p>暂无关键因素分析</p>';
-                }
+                  matchSummary.innerHTML = summaryHTML;
 
-                // 更新页面标题
-                document.title = `${data.match.homeTeam} vs ${data.match.awayTeam} - 赛事报告`;
-                document.querySelector('.app-header h1').textContent = `${data.match.homeTeam} vs ${data.match.awayTeam}`;
-                document.querySelector('.app-header h2').textContent = `2026赛季中超联赛 - ${data.match.round}`;
-              })
-              .catch(error => {
-                console.error('加载赛事报告数据失败:', error);
-                document.getElementById('match-info').innerHTML = '<p>加载赛事报告数据失败，请刷新页面重试。</p>';
-              });
+                  // 填充比赛亮点
+                  const matchHighlights = document.getElementById('match-highlights');
+                  let highlightsHTML = '<ul>';
+                  data.highlights.forEach(highlight => {
+                    highlightsHTML += `<li><strong>${highlight.time}</strong> - ${highlight.description}</li>`;
+                  });
+                  highlightsHTML += '</ul>';
+                  matchHighlights.innerHTML = highlightsHTML;
+
+                  // 填充阵容
+                  const matchLineups = document.getElementById('match-lineups');
+                  let lineupsHTML = `
+                    <div class="lineup">
+                      <h4>${data.lineups.home.name} (${data.lineups.home.formation})</h4>
+                      <p><strong>主教练:</strong> ${data.lineups.home.manager}</p>
+                      <p><strong>队长:</strong> ${data.lineups.home.captain}</p>
+                      <ul>
+                        ${data.lineups.home.players.map(player => 
+                          `<li><strong>${player.number}.</strong> ${player.name} (${player.position}, ${player.nationality})</li>`
+                        ).join('')}
+                      </ul>
+                      <h5>替补:</h5>
+                      <ul>
+                        ${data.lineups.home.substitutes.map(sub => 
+                          `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>`
+                        ).join('')}
+                      </ul>
+                    </div>
+                    <div class="lineup">
+                      <h4>${data.lineups.away.name} (${data.lineups.away.formation})</h4>
+                      <p><strong>主教练:</strong> ${data.lineups.away.manager}</p>
+                      <p><strong>队长:</strong> ${data.lineups.away.captain}</p>
+                      <ul>
+                        ${data.lineups.away.players.map(player => 
+                          `<li><strong>${player.number}.</strong> ${player.name} (${player.position}, ${player.nationality})</li>`
+                        ).join('')}
+                      </ul>
+                      <h5>替补:</h5>
+                      <ul>
+                        ${data.lineups.away.substitutes.map(sub => 
+                          `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>`
+                        ).join('')}
+                      </ul>
+                    </div>
+                  `;
+                  matchLineups.innerHTML = lineupsHTML;
+
+                  // 填充比赛统计
+                  const matchStatistics = document.getElementById('match-statistics');
+                  let statisticsHTML = `
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>统计项</th>
+                          <th>${data.match.homeTeam}</th>
+                          <th>${data.match.awayTeam}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        ${data.statistics.map(stat => `
+                          <tr>
+                            <td>${stat.name}</td>
+                            <td>${stat.home}</td>
+                            <td>${stat.away}</td>
+                          </tr>
+                        `).join('')}
+                      </tbody>
+                    </table>
+                  `;
+                  matchStatistics.innerHTML = statisticsHTML;
+
+                  // 填充关键因素
+                  const keyFactors = document.getElementById('key-factors');
+                  if (data.keyFactors && data.keyFactors.length > 0) {
+                    let keyFactorsHTML = '<ul>';
+                    data.keyFactors.forEach(factor => {
+                      keyFactorsHTML += `<li>${factor}</li>`;
+                    });
+                    keyFactorsHTML += '</ul>';
+                    keyFactors.innerHTML = keyFactorsHTML;
+                  } else {
+                    keyFactors.innerHTML = '<p>暂无关键因素分析</p>';
+                  }
+
+                  // 更新页面标题
+                  document.title = `${data.match.homeTeam} vs ${data.match.awayTeam} - 赛事报告`;
+                  document.querySelector('.app-header h1').textContent = `${data.match.homeTeam} vs ${data.match.awayTeam}`;
+                  document.querySelector('.app-header h2').textContent = `2026赛季${type}联赛 - ${round}`;
+                })
+                .catch(error => {
+                  console.error('加载赛事报告数据失败:', error);
+                  document.getElementById('match-info').innerHTML = '<p>加载赛事报告数据失败，请刷新页面重试。</p>';
+                });
+            }
           </script>
 
           <a href="index.html" class="back-link">返回赛程</a>
