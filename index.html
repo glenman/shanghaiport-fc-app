@@ -700,7 +700,7 @@
       // 默认数据
       // 2026赛季上海海港中超赛程数据
       const defaultScheduleData = [
-        { id: 1, round: '第1轮', date: '2026-03-07', time: '19:35', homeTeam: '上海海港', awayTeam: '河南俱乐部', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
+        { id: 1, round: '第1轮', date: '2026-03-07', time: '19:35', homeTeam: '上海海港', awayTeam: '河南俱乐部', venue: '上海体育场', city: '上海', result: '1-2', status: '已结束' },
         { id: 2, round: '第2轮', date: '2026-03-15', time: '19:00', homeTeam: '上海海港', awayTeam: '青岛西海岸', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
         { id: 3, round: '第3轮', date: '2026-03-20', time: '19:00', homeTeam: '大连英博', awayTeam: '上海海港', venue: '大连体育中心', city: '大连', result: '-', status: '未开始' },
         { id: 4, round: '第4轮', date: '2026-04-04', time: '19:35', homeTeam: '上海海港', awayTeam: '云南玉昆', venue: '上海体育场', city: '上海', result: '-', status: '未开始' },
@@ -1048,7 +1048,15 @@
                         <td>{match.awayTeam || '-'}</td>
                         <td>{match.venue || '-'}</td>
                         <td>{match.city || '-'}</td>
-                        <td>{match.result || '-'}</td>
+                        <td>
+                          {match.status === '已结束' ? (
+                            <a href="match-report.html" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
+                              {match.result}
+                            </a>
+                          ) : (
+                            match.result
+                          )}
+                        </td>
                         <td>{match.status || '-'}</td>
                       </tr>
                     ))}

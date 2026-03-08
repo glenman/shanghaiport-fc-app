@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // 模拟赛程数据
 const scheduleData = [
@@ -104,7 +105,15 @@ const Schedule: React.FC = () => {
               <td>{match.homeTeam}</td>
               <td>{match.awayTeam}</td>
               <td>{match.venue}</td>
-              <td>{match.result}</td>
+              <td>
+                {match.status === '已结束' ? (
+                  <Link to={`/match/${match.id}`} style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
+                    {match.result}
+                  </Link>
+                ) : (
+                  match.result
+                )}
+              </td>
               <td>{match.status}</td>
             </tr>
           ))}
