@@ -1,63 +1,50 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
-
-// 模拟赛事报告数据
-const matchReports = {
-  '1': {
-    id: 1,
-    round: '第1轮',
-    date: '2026-03-07',
-    time: '19:35',
-    homeTeam: '上海海港',
-    awayTeam: '河南俱乐部',
-    venue: '上海体育场',
-    city: '上海',
-    result: '1-2',
-    status: '已结束',
-    report: {
-      summary: '上海海港在主场1-2不敌河南俱乐部，遭遇赛季开门黑。',
-      highlights: [
-        '第25分钟，河南俱乐部球员张三破门，0-1',
-        '第45分钟，上海海港球员李四扳平比分，1-1',
-        '第85分钟，河南俱乐部球员王五打进绝杀球，1-2'
-      ],
-      lineups: {
-        home: [
-          '门将: 颜骏凌',
-          '后卫: 王燊超, 蒋光太, 张琳芃, 李帅',
-          '中场: 张源, 让克劳德, 维塔尔',
-          '前锋: 武磊, 加布里埃尔, 莱昂纳多'
-        ],
-        away: [
-          '门将: 王五',
-          '后卫: 赵六, 钱七, 孙八, 周九',
-          '中场: 吴十, 郑一, 王二',
-          '前锋: 张三, 李四'
-        ]
-      },
-      statistics: {
-        possession: '58% - 42%',
-        shots: '15 - 8',
-        shotsOnTarget: '6 - 4',
-        corners: '8 - 3',
-        fouls: '12 - 15',
-        yellowCards: '2 - 3',
-        redCards: '0 - 0'
-      }
-    }
-  }
-};
 
 const MatchReport: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const history = useHistory();
-  const match = matchReports[id as keyof typeof matchReports];
+  const [match, setMatch] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-  if (!match) {
+  useEffect(() => {
+    const fetchMatchData = async () => {
+      try {
+        setLoading(true);
+        // 从 JSON 文件中获取数据
+        const response = await fetch('/data/2026-03-07-中超-第1轮.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch match data');
+        }
+        const data = await response.json();
+        setMatch(data);
+        setError(null);
+      } catch (err) {
+        setError('无法加载赛事数据');
+        console.error('Error fetching match data:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchMatchData();
+  }, [id]);
+
+  if (loading) {
     return (
       <div className="card">
         <h2>赛事报告</h2>
-        <p>未找到该比赛的赛事报告</p>
+        <p>加载中...</p>
+      </div>
+    );
+  }
+
+  if (error || !match) {
+    return (
+      <div className="card">
+        <h2>赛事报告</h2>
+        <p>{error || '未找到该比赛的赛事报告'}</p>
         <button 
           onClick={() => history.goBack()}
           style={{
@@ -82,25 +69,25 @@ const MatchReport: React.FC = () => {
       <h2>赛事报告</h2>
       <div style={{ marginBottom: '2rem' }}>
         <h3 style={{ color: '#c00010', marginBottom: '1rem' }}>
-          {match.homeTeam} {match.result} {match.awayTeam}
+          {match.match.homeTeam} {match.match.result} {match.match.awayTeam}
         </h3>
-        <p><strong>轮次:</strong> {match.round}</p>
-        <p><strong>日期:</strong> {match.date}</p>
-        <p><strong>时间:</strong> {match.time}</p>
-        <p><strong>场地:</strong> {match.venue}</p>
-        <p><strong>城市:</strong> {match.city}</p>
+        <p><strong>轮次:</strong> {match.match.round}</p>
+        <p><strong>日期:</strong> {match.match.date}</p>
+        <p><strong>时间:</strong> {match.match.time}</p>
+        <p><strong>场地:</strong> {match.match.venue}</p>
+        <p><strong>城市:</strong> {match.match.city}</p>
       </div>
 
       <div style={{ marginBottom: '2rem' }}>
         <h3 style={{ color: '#c00010', marginBottom: '1rem' }}>比赛 summary</h3>
-        <p>{match.report.summary}</p>
+        <p>{match.summary}</p>
       </div>
 
       <div style={{ marginBottom: '2rem' }}>
         <h3 style={{ color: '#c00010', marginBottom: '1rem' }}>比赛亮点</h3>
         <ul style={{ listStyle: 'disc', paddingLeft: '2rem' }}>
-          {match.report.highlights.map((highlight, index) => (
-            <li key={index} style={{ marginBottom: '0.5rem' }}>{highlight}</li>
+          {match.highlights.map((highlight: any, index: number) => (
+            <li key={index} style={{ marginBottom: '0.5rem' }}>{highlight.description}</li>
           ))}
         </ul>
       </div>
@@ -109,18 +96,22 @@ const MatchReport: React.FC = () => {
         <h3 style={{ color: '#c00010', marginBottom: '1rem' }}>阵容</h3>
         <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
           <div>
-            <h4 style={{ marginBottom: '0.5rem' }}>{match.homeTeam}</h4>
+            <h4 style={{ marginBottom: '0.5rem' }}>{match.match.homeTeam}</h4>
             <ul style={{ listStyle: 'none', paddingLeft: '1rem' }}>
-              {match.report.lineups.home.map((player, index) => (
-                <li key={index} style={{ marginBottom: '0.3rem' }}>{player}</li>
+              {match.lineups.home.players.map((player: any, index: number) => (
+                <li key={index} style={{ marginBottom: '0.3rem' }}>
+                  {player.position}: {player.name}
+                </li>
               ))}
             </ul>
           </div>
           <div>
-            <h4 style={{ marginBottom: '0.5rem' }}>{match.awayTeam}</h4>
+            <h4 style={{ marginBottom: '0.5rem' }}>{match.match.awayTeam}</h4>
             <ul style={{ listStyle: 'none', paddingLeft: '1rem' }}>
-              {match.report.lineups.away.map((player, index) => (
-                <li key={index} style={{ marginBottom: '0.3rem' }}>{player}</li>
+              {match.lineups.away.players.map((player: any, index: number) => (
+                <li key={index} style={{ marginBottom: '0.3rem' }}>
+                  {player.position}: {player.name}
+                </li>
               ))}
             </ul>
           </div>
@@ -133,46 +124,18 @@ const MatchReport: React.FC = () => {
           <thead>
             <tr>
               <th style={{ textAlign: 'left', padding: '0.5rem', borderBottom: '1px solid #444' }}>统计项</th>
-              <th style={{ textAlign: 'left', padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.homeTeam}</th>
-              <th style={{ textAlign: 'left', padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.awayTeam}</th>
+              <th style={{ textAlign: 'left', padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.match.homeTeam}</th>
+              <th style={{ textAlign: 'left', padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.match.awayTeam}</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>控球率</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.possession.split(' - ')[0]}</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.possession.split(' - ')[1]}</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>射门</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.shots.split(' - ')[0]}</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.shots.split(' - ')[1]}</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>射正</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.shotsOnTarget.split(' - ')[0]}</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.shotsOnTarget.split(' - ')[1]}</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>角球</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.corners.split(' - ')[0]}</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.corners.split(' - ')[1]}</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>犯规</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.fouls.split(' - ')[0]}</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.fouls.split(' - ')[1]}</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>黄牌</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.yellowCards.split(' - ')[0]}</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.yellowCards.split(' - ')[1]}</td>
-            </tr>
-            <tr>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>红牌</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.redCards.split(' - ')[0]}</td>
-              <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{match.report.statistics.redCards.split(' - ')[1]}</td>
-            </tr>
+            {match.statistics.map((stat: any, index: number) => (
+              <tr key={index}>
+                <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{stat.name}</td>
+                <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{stat.home}</td>
+                <td style={{ padding: '0.5rem', borderBottom: '1px solid #444' }}>{stat.away}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

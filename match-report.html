@@ -282,8 +282,8 @@
   <body>
     <div class="app">
       <header class="app-header">
-        <h1>上海海港 vs 河南俱乐部</h1>
-        <h2>2026赛季中超联赛 - 第1轮</h2>
+        <h1>加载中...</h1>
+        <h2>比赛信息加载中...</h2>
       </header>
       <main class="app-content">
         <div class="card">
@@ -331,16 +331,31 @@
 
             // 加载赛事报告数据
             const params = getUrlParams();
-            const { date, type, round } = params;
+            const { date, type, round, source } = params;
 
             if (!date || !type || !round) {
               document.getElementById('match-info').innerHTML = '<p>缺少比赛信息参数，请从赛程页面进入。</p>';
             } else {
               // 构建JSON文件路径
-              const fileName = `${date}-${type}-${round}.json`;
-              const filePath = `data/${fileName}`;
+              let filePath;
+              // 处理type参数，将"中超联赛"转换为"中超"
+              const processedType = type.replace('联赛', '');
+              if (source === 'h') {
+                // 历史比赛，从history目录读取
+                const year = date.substring(0, 4);
+                const fileName = `${date}-${processedType}-${round}.json`;
+                filePath = `data/history/${year}/${fileName}`;
+              } else {
+                // 当前赛季，从data目录读取
+                const fileName = `${date}-${processedType}-${round}.json`;
+                filePath = `data/${fileName}`;
+              }
 
-              fetch(filePath)
+              // 添加时间戳参数避免浏览器缓存
+              const timestamp = new Date().getTime();
+              const urlWithCacheBust = `${filePath}?t=${timestamp}`;
+              
+              fetch(urlWithCacheBust)
                 .then(response => {
                   if (!response.ok) {
                     throw new Error('找不到对应的赛事报告');
@@ -462,7 +477,7 @@
                   // 更新页面标题
                   document.title = `${data.match.homeTeam} vs ${data.match.awayTeam} - 赛事报告`;
                   document.querySelector('.app-header h1').textContent = `${data.match.homeTeam} vs ${data.match.awayTeam}`;
-                  document.querySelector('.app-header h2').textContent = `2026赛季${type}联赛 - ${round}`;
+                  document.querySelector('.app-header h2').textContent = `${date.substring(0, 4)}赛季${type}联赛 - ${round}`;
                 })
                 .catch(error => {
                   console.error('加载赛事报告数据失败:', error);
@@ -471,7 +486,7 @@
             }
           </script>
 
-          <a href="index.html" class="back-link">返回赛程</a>
+          <a href="/" class="back-link">返回赛程</a>
         </div>
       </main>
     </div>

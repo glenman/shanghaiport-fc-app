@@ -1650,7 +1650,7 @@
                             <td style={{ textAlign: 'center' }}>{match.round || '-'}</td>
                             <td style={{ textAlign: 'center' }}>{match.date || '-'}</td>
                             <td style={{ textAlign: 'center' }}>{match.home_team}</td>
-                            <td style={{ textAlign: 'center', color: '#c00010', fontWeight: 'bold' }}>{match.result}</td>
+                            <td style={{ textAlign: 'center', color: '#c00010', fontWeight: 'bold' }}><a href={`match-report.html?date=${match.date}&type=${match.match_type}&round=${match.round}&source=h`} style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>{match.result}</a></td>
                             <td style={{ textAlign: 'center' }}>{match.away_team}</td>
                             <td style={{ textAlign: 'center', fontWeight: 'bold' }}>{match.win_loss || '-'}</td>
                           </tr>
