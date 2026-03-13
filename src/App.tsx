@@ -6,6 +6,7 @@ import Players from './components/Players';
 import Seasons from './components/Seasons';
 import Stats from './components/Stats';
 import MatchReport from './components/MatchReport';
+import History from './components/History';
 
 function App() {
   const [activeTab, setActiveTab] = useState('schedule');
@@ -57,6 +58,8 @@ function App() {
             <Route path="/seasons" component={Seasons} />
             <Route path="/stats" component={Stats} />
             <Route path="/match/:id" component={MatchReport} />
+            <Route path="/match/report" component={MatchReport} />
+            <Route path="/history" component={History} />
           </Switch>
         </main>
       </div>
