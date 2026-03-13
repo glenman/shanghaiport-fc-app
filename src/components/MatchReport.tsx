@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 
 const MatchReport: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
   const history = useHistory();
+  const location = useLocation();
   const [match, setMatch] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -12,8 +12,23 @@ const MatchReport: React.FC = () => {
     const fetchMatchData = async () => {
       try {
         setLoading(true);
+        // 从 URL 参数中获取比赛信息
+        const params = new URLSearchParams(location.search);
+        const date = params.get('date');
+        const type = params.get('type');
+        const round = params.get('round');
+
+        if (!date || !type || !round) {
+          throw new Error('缺少比赛信息参数');
+        }
+
+        // 构建 JSON 文件路径
+        const year = date.substring(0, 4);
+        const fileName = `${date}-${type}-${round}.json`;
+        const filePath = `/data/history/${year}/${fileName}`;
+
         // 从 JSON 文件中获取数据
-        const response = await fetch('/data/2026-03-07-中超-第1轮.json');
+        const response = await fetch(filePath);
         if (!response.ok) {
           throw new Error('Failed to fetch match data');
         }
@@ -29,7 +44,7 @@ const MatchReport: React.FC = () => {
     };
 
     fetchMatchData();
-  }, [id]);
+  }, [location.search]);
 
   if (loading) {
     return (
@@ -152,7 +167,7 @@ const MatchReport: React.FC = () => {
           transition: 'all 0.3s ease'
         }}
       >
-        返回赛程
+        返回
       </button>
     </div>
   );
