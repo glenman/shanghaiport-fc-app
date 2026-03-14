@@ -1,171 +1,155 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
+interface HistoryMatch {
+  season: string;
+  match_type: string;
+  match_name: string;
+  round: string;
+  date: string;
+  home_team: string;
+  away_team: string;
+  result: string;
+  win_loss: string;
+}
 
 const History: React.FC = () => {
-  const [matches, setMatches] = useState<any[]>([]);
+  const [historyData, setHistoryData] = useState<HistoryMatch[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [season, setSeason] = useState('2025');
-  const [matchType, setMatchType] = useState('all');
+  const [expandedSeasons, setExpandedSeasons] = useState<Set<string>>(new Set(['2025']));
 
-  // 加载历史比赛数据
   useEffect(() => {
-    console.log('History component: Loading matches...');
-    const loadMatches = async () => {
+    const fetchHistoryData = async () => {
       try {
-        setLoading(true);
-        setError(null);
-        console.log('History component: Fetching data...');
-        const response = await fetch('/data/history_schedule_2025.json');
+        const response = await fetch('data/history_schedule.json');
         if (!response.ok) {
-          throw new Error('Failed to fetch history schedule');
+          throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        console.log('History component: Loaded matches:', data.length);
-        // 过滤出2025赛季的中超比赛
-        const filtered2025 = data.filter((match: any) => match.season === '2025' && match.match_type === '中超联赛');
-        console.log('History component: 2025中超比赛数量:', filtered2025.length);
-        setMatches(data);
-      } catch (err) {
-        console.error('History component: Error loading matches:', err);
-        setError('加载历史比赛数据失败');
-      } finally {
+        setHistoryData(data);
         setLoading(false);
-        console.log('History component: Loading complete');
+      } catch (error) {
+        console.error('Error loading history data:', error);
+        setError('加载历史数据失败，请刷新页面重试');
+        setLoading(false);
       }
     };
 
-    loadMatches();
+    fetchHistoryData();
   }, []);
 
-  // 过滤比赛数据
-  const filteredMatches = matches.filter(match => {
-    const seasonMatch = match.season === season;
-    const typeMatch = matchType === 'all' || match.match_type === matchType;
-    return seasonMatch && typeMatch;
-  });
-  
-  // 调试信息
-  console.log('Season:', season);
-  console.log('Match type:', matchType);
-  console.log('Filtered matches:', filteredMatches.length);
-  if (filteredMatches.length > 0) {
-    console.log('First match:', filteredMatches[0]);
-  }
+  // 按赛季分组
+  const groupedBySeason = historyData.reduce((groups, match) => {
+    const season = match.season;
+    if (!groups[season]) {
+      groups[season] = [];
+    }
+    groups[season].push(match);
+    return groups;
+  }, {} as Record<string, HistoryMatch[]>);
 
-  // 获取所有赛季
-  const seasons = [...new Set(matches.map(match => match.season))].sort((a, b) => parseInt(b) - parseInt(a));
+  // 按赛季降序排序
+  const seasons = Object.keys(groupedBySeason).sort((a, b) => parseInt(b) - parseInt(a));
 
-  // 获取所有比赛类型
-  const matchTypes = ['all', ...new Set(matches.map(match => match.match_type))];
-
-  // 生成赛事报告链接
-  const generateReportLink = (match: any) => {
-    // 从match对象中提取日期、赛事类型和轮次，添加默认值
-    const date = match.date || '';
-    const match_type = match.match_type || '';
-    const round = match.round || '';
-    // 转换赛事类型为简短名称
-    const typeMap: Record<string, string> = {
-      '中超联赛': '中超',
-      '中甲联赛': '中甲',
-      '中乙南区预赛': '中乙',
-      '中乙北区预赛': '中乙',
-      '中乙总决赛': '中乙',
-      '足协杯': '足协杯'
-    };
-    const shortType = typeMap[match_type] || match_type;
-    // 生成链接参数
-    return `/match/report?date=${date}&type=${shortType}&round=${round}`;
+  // 切换赛季展开/折叠
+  const toggleSeason = (season: string) => {
+    const newExpandedSeasons = new Set(expandedSeasons);
+    if (newExpandedSeasons.has(season)) {
+      newExpandedSeasons.delete(season);
+    } else {
+      newExpandedSeasons.add(season);
+    }
+    setExpandedSeasons(newExpandedSeasons);
   };
-
-  if (loading) {
-    return <div className="card"><h2>历史比赛</h2><p>加载中...</p></div>;
-  }
-
-  if (error) {
-    return <div className="card"><h2>历史比赛</h2><p>{error}</p></div>;
-  }
 
   return (
     <div className="card">
-      <h2>历史比赛</h2>
-      <div className="filter-buttons">
-        <select 
-          value={season} 
-          onChange={(e) => setSeason(e.target.value)}
-          style={{ marginRight: '1rem', padding: '0.5rem' }}
-        >
-          {seasons.map(s => (
-            <option key={s} value={s}>{s}赛季</option>
-          ))}
-        </select>
-        <select 
-          value={matchType} 
-          onChange={(e) => setMatchType(e.target.value)}
-          style={{ padding: '0.5rem' }}
-        >
-          {matchTypes.map(type => (
-            <option key={type} value={type}>
-              {type === 'all' ? '所有类型' : type}
-            </option>
-          ))}
-        </select>
+      <div className="card-header">
+        <h2>历史比赛</h2>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>日期</th>
-            <th>赛事类型</th>
-            <th>轮次</th>
-            <th>主队</th>
-            <th>客队</th>
-            <th>比分</th>
-            <th>结果</th>
-            <th>赛事报告</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredMatches.map((match, index) => {
-            console.log('History component: Rendering match:', match);
-            console.log('History component: Match result:', match.result);
-            console.log('History component: Should show link:', match.result && match.result !== '-');
-            return (
-              <tr key={index}>
-                <td>{match.date}</td>
-                <td>{match.match_type}</td>
-                <td>{match.round}</td>
-                <td>{match.home_team}</td>
-                <td>{match.away_team}</td>
-                <td>
-                  <Link 
-                    to={generateReportLink(match)} 
-                    style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}
-                  >
-                    {match.result}
-                  </Link>
-                </td>
-                <td>{match.win_loss}</td>
-                <td>
-                  <Link 
-                    to={generateReportLink(match)} 
-                    style={{ 
-                      textDecoration: 'none', 
-                      color: '#0066cc', 
-                      fontWeight: 'bold',
-                      padding: '0.2rem 0.5rem',
-                      borderRadius: '4px',
-                      backgroundColor: 'rgba(0, 102, 204, 0.1)'
+      <div className="card-content">
+        {loading ? (
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '300px' }}>
+            <div style={{ fontSize: '1.2rem', color: '#c00010' }}>加载数据中...</div>
+          </div>
+        ) : error ? (
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '300px' }}>
+            <div style={{ fontSize: '1.2rem', color: '#ff4444' }}>{error}</div>
+          </div>
+        ) : seasons.length > 0 ? (
+          <div>
+            {seasons.map(season => {
+              const matches = groupedBySeason[season];
+              const isExpanded = expandedSeasons.has(season);
+              
+              return (
+                <div key={season} style={{ marginBottom: '1rem' }}>
+                  <div 
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      padding: '0.8rem',
+                      backgroundColor: '#444',
+                      borderRadius: '8px',
+                      cursor: 'pointer',
+                      marginBottom: '0.5rem'
                     }}
+                    onClick={() => toggleSeason(season)}
                   >
-                    查看赛事报告
-                  </Link>
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+                    <h3 style={{ margin: 0, color: '#c00010' }}>{season}赛季</h3>
+                    <span style={{ fontSize: '1.2rem' }}>{isExpanded ? '▼' : '▶'}</span>
+                  </div>
+                  
+                  {isExpanded && (
+                    <div className="table-container">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>日期</th>
+                            <th>类型</th>
+                            <th>轮次</th>
+                            <th>主队</th>
+                            <th>客队</th>
+                            <th>赛果</th>
+                            <th>状态</th>
+                            <th>赛事报告</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {matches.map((match, index) => (
+                            <tr key={index}>
+                              <td>{match.date || '-'}</td>
+                              <td>{match.match_type || '-'}</td>
+                              <td>{match.round || '-'}</td>
+                              <td>{match.home_team || '-'}</td>
+                              <td>{match.away_team || '-'}</td>
+                              <td>{match.result || '-'}</td>
+                              <td>{match.win_loss || '-'}</td>
+                              <td>
+                                <a 
+                                  href={`match-report.html?date=${match.date}&type=${encodeURIComponent(match.match_type)}&round=${encodeURIComponent(match.round)}&source=h`}
+                                  style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}
+                                >
+                                  查看
+                                </a>
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '300px' }}>
+            <div style={{ fontSize: '1.2rem', color: '#888' }}>暂无历史比赛数据</div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

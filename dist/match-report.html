@@ -319,6 +319,9 @@
           </div>
 
           <script>
+            // 添加调试信息
+            console.log('match-report.html 加载');
+            
             // 从URL参数中获取比赛信息
             function getUrlParams() {
               const params = {};
@@ -331,11 +334,14 @@
 
             // 加载赛事报告数据
             const params = getUrlParams();
+            console.log('URL参数:', params);
             const { date, type, round, source } = params;
 
             if (!date || !type || !round) {
+              console.log('缺少比赛信息参数');
               document.getElementById('match-info').innerHTML = '<p>缺少比赛信息参数，请从赛程页面进入。</p>';
             } else {
+              console.log('参数完整，开始加载数据');
               // 构建JSON文件路径
               let filePath;
               // 处理type参数，将"中超联赛"转换为"中超"
@@ -351,18 +357,23 @@
                 filePath = `data/${fileName}`;
               }
 
+              console.log('文件路径:', filePath);
+
               // 添加时间戳参数避免浏览器缓存
               const timestamp = new Date().getTime();
               const urlWithCacheBust = `${filePath}?t=${timestamp}`;
+              console.log('请求URL:', urlWithCacheBust);
               
               fetch(urlWithCacheBust)
                 .then(response => {
+                  console.log('响应状态:', response.status);
                   if (!response.ok) {
                     throw new Error('找不到对应的赛事报告');
                   }
                   return response.json();
                 })
                 .then(data => {
+                  console.log('成功加载数据:', data);
                   // 填充比赛信息
                   const matchInfo = document.getElementById('match-info');
                   matchInfo.innerHTML = `
@@ -481,7 +492,7 @@
                 })
                 .catch(error => {
                   console.error('加载赛事报告数据失败:', error);
-                  document.getElementById('match-info').innerHTML = '<p>加载赛事报告数据失败，请刷新页面重试。</p>';
+                  document.getElementById('match-info').innerHTML = `<p>加载赛事报告数据失败: ${error.message}</p>`;
                 });
             }
           </script>

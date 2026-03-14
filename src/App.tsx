@@ -1,70 +1,131 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
-import Schedule from './components/Schedule';
 import Players from './components/Players';
+import Schedule from './components/Schedule';
 import Seasons from './components/Seasons';
-import Stats from './components/Stats';
-import MatchReport from './components/MatchReport';
+import Statistics from './components/Statistics';
 import History from './components/History';
 
-function App() {
-  const [activeTab, setActiveTab] = useState('schedule');
+interface Player {
+  id: number;
+  name: string;
+  position: string;
+  number: number;
+  age: number;
+  nationality: string;
+  height?: string;
+  weight?: string;
+}
+
+interface Match {
+  id: number;
+  round: string;
+  date: string;
+  time: string;
+  homeTeam: string;
+  awayTeam: string;
+  venue: string;
+  city: string;
+  result: string;
+  status: string;
+}
+
+interface Season {
+  id: number;
+  season: string;
+  league: string;
+  rank: string;
+  matches: number;
+  wins: number;
+  draws: number;
+  losses: number;
+  goalsFor: number;
+  goalsAgainst: number;
+  points: number;
+  notes: string;
+}
+
+const App: React.FC = () => {
+  const [activeTab, setActiveTab] = useState('statistics');
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarCollapsed(!isSidebarCollapsed);
+  };
 
   return (
-    <Router>
-      <div className="app">
-        <header className="app-header">
-          <h1>上海海港足球俱乐部数据查询</h1>
-        </header>
-        <nav className="app-nav">
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <button 
-              className={activeTab === 'schedule' ? 'active' : ''}
-              onClick={() => setActiveTab('schedule')}
-            >
-              球队赛程
-            </button>
-          </Link>
-          <Link to="/players" style={{ textDecoration: 'none' }}>
-            <button 
-              className={activeTab === 'players' ? 'active' : ''}
-              onClick={() => setActiveTab('players')}
-            >
-              球员信息
-            </button>
-          </Link>
-          <Link to="/seasons" style={{ textDecoration: 'none' }}>
-            <button 
-              className={activeTab === 'seasons' ? 'active' : ''}
-              onClick={() => setActiveTab('seasons')}
-            >
-              历史赛季
-            </button>
-          </Link>
-          <Link to="/stats" style={{ textDecoration: 'none' }}>
-            <button 
-              className={activeTab === 'stats' ? 'active' : ''}
-              onClick={() => setActiveTab('stats')}
-            >
-              数据统计
-            </button>
-          </Link>
+    <div className="app">
+      <aside className={`sidebar ${isSidebarCollapsed ? 'collapsed' : ''}`}>
+        <div className="sidebar-header">
+          <h2 className="sidebar-title">菜单</h2>
+        </div>
+        <button className="toggle-btn" onClick={toggleSidebar}>
+          {isSidebarCollapsed ? '→' : '←'}
+        </button>
+        <nav className="sidebar-menu">
+          <div 
+            className={`menu-item ${activeTab === 'players' ? 'active' : ''}`}
+            onClick={() => setActiveTab('players')}
+          >
+            <span className="menu-icon">👥</span>
+            <span className="menu-text">球队信息</span>
+          </div>
+          <div 
+            className={`menu-item ${activeTab === 'schedule' ? 'active' : ''}`}
+            onClick={() => setActiveTab('schedule')}
+          >
+            <span className="menu-icon">⚽</span>
+            <span className="menu-text">球队赛程</span>
+          </div>
+          <div 
+            className={`menu-item ${activeTab === 'seasons' ? 'active' : ''}`}
+            onClick={() => setActiveTab('seasons')}
+          >
+            <span className="menu-icon">🏆</span>
+            <span className="menu-text">历史赛季排名</span>
+          </div>
+          <div 
+            className={`menu-item ${activeTab === 'statistics' ? 'active' : ''}`}
+            onClick={() => setActiveTab('statistics')}
+          >
+            <span className="menu-icon">📊</span>
+            <span className="menu-text">进球助攻榜</span>
+          </div>
+          <div 
+            className={`menu-item ${activeTab === 'history' ? 'active' : ''}`}
+            onClick={() => setActiveTab('history')}
+          >
+            <span className="menu-icon">📅</span>
+            <span className="menu-text">历史比赛</span>
+          </div>
         </nav>
+      </aside>
+      
+      <div className="main-content">
+        <header className="app-header">
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
+            <img src="/images/shanghaiport-logo.png" alt="上海海港队徽" style={{ width: '60px', height: '60px', borderRadius: '50%', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)' }} />
+            <div>
+              <h1>上海海港足球俱乐部数据查询</h1>
+              <h2>Shanghai Port FC Data Query</h2>
+            </div>
+          </div>
+        </header>
         <main className="app-content">
-          <Switch>
-            <Route exact path="/" component={Schedule} />
-            <Route path="/players" component={Players} />
-            <Route path="/seasons" component={Seasons} />
-            <Route path="/stats" component={Stats} />
-            <Route path="/match/:id" component={MatchReport} />
-            <Route path="/match/report" component={MatchReport} />
-            <Route path="/history" component={History} />
-          </Switch>
+          {activeTab === 'schedule' && <Schedule />}
+          {activeTab === 'players' && <Players />}
+          {activeTab === 'seasons' && <Seasons />}
+          {activeTab === 'statistics' && <Statistics />}
+          {activeTab === 'history' && <History />}
         </main>
+        <div className="app-footer">
+          <div className="stars-container">
+            <img src="/images/shanghaiport-4star.jpg" alt="上海海港四星" className="stars-image" />
+          </div>
+        </div>
       </div>
-    </Router>
+    </div>
   );
-}
+};
 
 export default App;
