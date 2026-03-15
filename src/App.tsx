@@ -104,7 +104,7 @@ const App: React.FC = () => {
       <div className="main-content">
         <header className="app-header">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
-            <img src="/images/shanghaiport-logo.png" alt="上海海港队徽" style={{ width: '60px', height: '60px', borderRadius: '50%', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)' }} />
+            <img src="images/shanghaiport-logo.png" alt="上海海港队徽" style={{ width: '60px', height: '60px', borderRadius: '50%', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)' }} />
             <div>
               <h1>上海海港足球俱乐部数据查询</h1>
               <h2>Shanghai Port FC Data Query</h2>
@@ -120,7 +120,7 @@ const App: React.FC = () => {
         </main>
         <div className="app-footer">
           <div className="stars-container">
-            <img src="/images/shanghaiport-4star.jpg" alt="上海海港四星" className="stars-image" />
+            <img src="images/shanghaiport-4star.jpg" alt="上海海港四星" className="stars-image" />
           </div>
         </div>
       </div>
