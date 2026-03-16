@@ -41,6 +41,7 @@ const copyDataPlugin = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/shanghaiport-fc-app/',
   plugins: [react(), copyDataPlugin],
   build: {
     rollupOptions: {

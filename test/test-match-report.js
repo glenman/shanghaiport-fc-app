@@ -31,7 +31,7 @@ if (!date || !type || !round) {
   // 模拟 fetch 请求
   const fs = require('fs');
   const path = require('path');
-  const fullPath = path.join(__dirname, 'public', filePath);
+  const fullPath = path.join(__dirname, '..', 'public', filePath);
   console.log('完整路径:', fullPath);
 
   try {
