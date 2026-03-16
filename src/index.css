@@ -190,7 +190,7 @@ body {
   margin: 0 auto;
   width: 100%;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 .card {
@@ -204,6 +204,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
+  overflow: visible;
 }
 
 .card:hover {
@@ -233,7 +234,8 @@ body {
 
 .card-content {
   flex: 1;
-  overflow: hidden;
+  overflow-x: auto;
+  width: 100%;
 }
 
 .table-container {
@@ -242,22 +244,25 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 100%;
+  width: 100%;
   scrollbar-width: thin;
   scrollbar-color: #c00010 #333;
+  position: relative;
 }
 
 .table-container::-webkit-scrollbar {
-  height: 6px;
+  height: 8px;
+  width: 8px;
 }
 
 .table-container::-webkit-scrollbar-track {
   background: #333;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .table-container::-webkit-scrollbar-thumb {
   background: #c00010;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .table-container::-webkit-scrollbar-thumb:hover {
@@ -273,6 +278,7 @@ table {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   min-width: 800px;
+  table-layout: auto;
 }
 
 th, td {
@@ -456,27 +462,31 @@ tr:hover {
   
   .table-container {
     overflow-x: auto;
+    overflow-y: visible;
     margin-top: 1.2rem;
     -webkit-overflow-scrolling: touch;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 100%;
+    width: 100%;
     scrollbar-width: thin;
     scrollbar-color: #c00010 #333;
+    position: relative;
   }
   
   .table-container::-webkit-scrollbar {
-    height: 6px;
+    height: 8px;
+    width: 8px;
   }
   
   .table-container::-webkit-scrollbar-track {
     background: #333;
-    border-radius: 3px;
+    border-radius: 4px;
   }
   
   .table-container::-webkit-scrollbar-thumb {
     background: #c00010;
-    border-radius: 3px;
+    border-radius: 4px;
   }
   
   .table-container::-webkit-scrollbar-thumb:hover {
@@ -486,16 +496,15 @@ tr:hover {
   table {
     font-size: 0.75rem;
     min-width: 700px;
-    table-layout: fixed;
+    table-layout: auto;
+    width: 100%;
   }
   
   th, td {
-    padding: 0.6rem 0.8px;
+    padding: 0.6rem 0.8rem;
     font-size: 0.75rem;
     text-align: center;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   
   .player-filters {
@@ -570,11 +579,14 @@ tr:hover {
   table {
     font-size: 0.7rem;
     min-width: 600px;
+    table-layout: auto;
+    width: 100%;
   }
   
   th, td {
-    padding: 0.5rem 0.6px;
+    padding: 0.5rem 0.6rem;
     font-size: 0.7rem;
+    white-space: nowrap;
   }
   
   .search-input {
@@ -609,11 +621,14 @@ tr:hover {
   table {
     font-size: 0.65rem;
     min-width: 550px;
+    table-layout: auto;
+    width: 100%;
   }
   
   th, td {
-    padding: 0.4rem 0.5px;
+    padding: 0.4rem 0.5rem;
     font-size: 0.65rem;
+    white-space: nowrap;
   }
   
   .search-input {

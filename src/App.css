@@ -229,8 +229,31 @@
 .table-container {
   width: 100%;
   overflow-x: auto;
+  overflow-y: visible;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: #c00010 #333;
+}
+
+.table-container::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #333;
+  border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #c00010;
+  border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #a0000e;
 }
 
 /* 表格样式 */
@@ -239,6 +262,7 @@ table {
   border-collapse: collapse;
   margin-top: 1rem;
   min-width: 800px;
+  table-layout: auto;
 }
 
 th, td {
@@ -246,6 +270,7 @@ th, td {
   text-align: center !important;
   vertical-align: middle !important;
   border-bottom: 1px solid #444;
+  white-space: nowrap;
 }
 
 /* 确保表格内容居中对齐 */
@@ -326,10 +351,13 @@ tr:hover {
   
   table {
     font-size: 0.9rem;
+    table-layout: auto;
+    width: 100%;
   }
   
   th, td {
     padding: 0.6rem;
+    white-space: nowrap;
   }
   
   .player-filters {
