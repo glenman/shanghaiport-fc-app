@@ -175,8 +175,16 @@
     right: 10px;
   }
   
+  .sidebar.collapsed .toggle-btn {
+    position: fixed;
+    left: 10px;
+    right: auto;
+    z-index: 1001;
+  }
+  
   .main-content {
     margin-left: 0;
+    width: 100%;
   }
   
   .app-content {
