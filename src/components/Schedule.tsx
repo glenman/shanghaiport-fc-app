@@ -13,8 +13,12 @@ interface Match {
   status: string;
 }
 
+type TeamTab = 'first' | 'b';
+
 const Schedule: React.FC = () => {
-  const [scheduleData, setScheduleData] = useState<Match[]>([]);
+  const [firstTeamSchedule, setFirstTeamSchedule] = useState<Match[]>([]);
+  const [bTeamSchedule, setBTeamSchedule] = useState<Match[]>([]);
+  const [activeTab, setActiveTab] = useState<TeamTab>('first');
   const [filter, setFilter] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
   const [matchType, setMatchType] = useState('all');
@@ -24,12 +28,20 @@ const Schedule: React.FC = () => {
   useEffect(() => {
     const fetchScheduleData = async () => {
       try {
-        const response = await fetch('data/schedule.json');
-        if (!response.ok) {
+        const [firstTeamResponse, bTeamResponse] = await Promise.all([
+          fetch('data/schedule.json'),
+          fetch('data/schedule_b.json')
+        ]);
+        
+        if (!firstTeamResponse.ok || !bTeamResponse.ok) {
           throw new Error('Network response was not ok');
         }
-        const data = await response.json();
-        setScheduleData(data);
+        
+        const firstTeamData = await firstTeamResponse.json();
+        const bTeamData = await bTeamResponse.json();
+        
+        setFirstTeamSchedule(firstTeamData);
+        setBTeamSchedule(bTeamData);
         setLoading(false);
       } catch (error) {
         console.error('Error loading schedule data:', error);
@@ -41,7 +53,9 @@ const Schedule: React.FC = () => {
     fetchScheduleData();
   }, []);
 
-  const filteredSchedule = scheduleData.filter(match => {
+  const currentSchedule = activeTab === 'first' ? firstTeamSchedule : bTeamSchedule;
+
+  const filteredSchedule = currentSchedule.filter(match => {
     const matchesStatus = filter === 'all' || match.status === filter;
     const matchesSearch = searchTerm === '' || 
       (match.round && match.round.toLowerCase().includes(searchTerm.toLowerCase())) ||
@@ -49,16 +63,38 @@ const Schedule: React.FC = () => {
       (match.homeTeam && match.homeTeam.toLowerCase().includes(searchTerm.toLowerCase())) ||
       (match.awayTeam && match.awayTeam.toLowerCase().includes(searchTerm.toLowerCase())) ||
       (match.city && match.city.toLowerCase().includes(searchTerm.toLowerCase()));
+    const teamName = activeTab === 'first' ? '上海海港' : '上海海港B队';
     const matchesType = matchType === 'all' || 
-      (matchType === 'home' && match.homeTeam === '上海海港') ||
-      (matchType === 'away' && match.awayTeam === '上海海港');
+      (matchType === 'home' && match.homeTeam === teamName) ||
+      (matchType === 'away' && match.awayTeam === teamName);
     return matchesStatus && matchesSearch && matchesType;
   });
+
+  const handleTabChange = (tab: TeamTab) => {
+    setActiveTab(tab);
+    setFilter('all');
+    setSearchTerm('');
+    setMatchType('all');
+  };
 
   return (
     <div className="card">
       <div className="card-header">
-        <h2>2026赛季球队赛程</h2>
+        <h2>球队赛程</h2>
+        <div className="team-tabs">
+          <button
+            className={`team-tab ${activeTab === 'first' ? 'active' : ''}`}
+            onClick={() => handleTabChange('first')}
+          >
+            一线队 ({firstTeamSchedule.length}场)
+          </button>
+          <button
+            className={`team-tab ${activeTab === 'b' ? 'active' : ''}`}
+            onClick={() => handleTabChange('b')}
+          >
+            B队 ({bTeamSchedule.length}场)
+          </button>
+        </div>
         <div className="schedule-filters">
           <input
             type="text"
@@ -108,55 +144,106 @@ const Schedule: React.FC = () => {
             <div style={{ fontSize: '1.2rem', color: '#ff4444' }}>{error}</div>
           </div>
         ) : (
-          <div className="table-container">
-            <table>
-              <thead>
-                <tr>
-                  <th>轮次</th>
-                  <th>日期</th>
-                  <th>星期</th>
-                  <th>时间</th>
-                  <th>主队</th>
-                  <th>赛果</th>
-                  <th>客队</th>
-                  <th>城市</th>
-                  <th>状态</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredSchedule.map((match, index) => {
-                  // 计算星期几，只显示最后一个字
-                  const getDayOfWeek = (dateString: string) => {
-                    const date = new Date(dateString);
-                    const days = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
-                    return days[date.getDay()].substring(1);
-                  };
-                  
-                  return (
-                    <tr key={match.id || index}>
-                      <td>{match.round || '-'}</td>
-                      <td>{match.date || '-'}</td>
-                      <td>{match.date ? getDayOfWeek(match.date) : '-'}</td>
-                      <td>{match.time || '-'}</td>
-                      <td>{match.homeTeam || '-'}</td>
-                      <td>
-                        {match.status === '已结束' ? (
-                          <a href={`match-report.html?date=${match.date}&type=${encodeURIComponent('中超')}&round=${encodeURIComponent(match.round)}`} style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
-                            {match.result}
-                          </a>
-                        ) : (
-                          match.result
-                        )}
-                      </td>
-                      <td>{match.awayTeam || '-'}</td>
-                      <td>{match.city || '-'}</td>
-                      <td>{match.status || '-'}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
+          <>
+            {activeTab === 'first' && (
+              <div className="team-section">
+                <h3 className="team-title">2026赛季中超联赛</h3>
+                <div className="table-container">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>轮次</th>
+                        <th>日期</th>
+                        <th>星期</th>
+                        <th>时间</th>
+                        <th>主队</th>
+                        <th>赛果</th>
+                        <th>客队</th>
+                        <th>城市</th>
+                        <th>状态</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {filteredSchedule.map((match, index) => {
+                        const getDayOfWeek = (dateString: string) => {
+                          const date = new Date(dateString);
+                          const days = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+                          return days[date.getDay()].substring(1);
+                        };
+                        
+                        return (
+                          <tr key={match.id || index}>
+                            <td>{match.round || '-'}</td>
+                            <td>{match.date || '-'}</td>
+                            <td>{match.date ? getDayOfWeek(match.date) : '-'}</td>
+                            <td>{match.time || '-'}</td>
+                            <td>{match.homeTeam || '-'}</td>
+                            <td>
+                              {match.status === '已结束' ? (
+                                <a href={`match-report.html?date=${match.date}&type=${encodeURIComponent('中超')}&round=${encodeURIComponent(match.round)}`} style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
+                                  {match.result}
+                                </a>
+                              ) : (
+                                match.result
+                              )}
+                            </td>
+                            <td>{match.awayTeam || '-'}</td>
+                            <td>{match.city || '-'}</td>
+                            <td>{match.status || '-'}</td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+            {activeTab === 'b' && (
+              <div className="team-section">
+                <h3 className="team-title">2025赛季中乙联赛</h3>
+                <div className="table-container">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>轮次</th>
+                        <th>日期</th>
+                        <th>星期</th>
+                        <th>时间</th>
+                        <th>主队</th>
+                        <th>赛果</th>
+                        <th>客队</th>
+                        <th>城市</th>
+                        <th>状态</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {filteredSchedule.map((match, index) => {
+                        const getDayOfWeek = (dateString: string) => {
+                          const date = new Date(dateString);
+                          const days = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+                          return days[date.getDay()].substring(1);
+                        };
+                        
+                        return (
+                          <tr key={match.id || index}>
+                            <td>{match.round || '-'}</td>
+                            <td>{match.date || '-'}</td>
+                            <td>{match.date ? getDayOfWeek(match.date) : '-'}</td>
+                            <td>{match.time || '-'}</td>
+                            <td>{match.homeTeam || '-'}</td>
+                            <td>{match.result || '-'}</td>
+                            <td>{match.awayTeam || '-'}</td>
+                            <td>{match.city || '-'}</td>
+                            <td>{match.status || '-'}</td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+          </>
         )}
       </div>
     </div>
