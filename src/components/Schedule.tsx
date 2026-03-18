@@ -200,7 +200,7 @@ const Schedule: React.FC = () => {
             )}
             {activeTab === 'b' && (
               <div className="team-section">
-                <h3 className="team-title">2025赛季中乙联赛</h3>
+                <h3 className="team-title">2026赛季中乙联赛</h3>
                 <div className="table-container">
                   <table>
                     <thead>
