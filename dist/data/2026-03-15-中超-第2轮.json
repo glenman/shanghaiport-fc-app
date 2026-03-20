@@ -1,0 +1,617 @@
+{
+  "match": {
+    "id": 2,
+    "round": "第2轮",
+    "date": "2026-03-15",
+    "time": "19:00",
+    "homeTeam": "上海海港",
+    "awayTeam": "青岛西海岸",
+    "venue": "上汽浦东足球场",
+    "city": "上海",
+    "result": "4-1",
+    "status": "已结束",
+    "attendance": "18,533",
+    "referee": "何凯",
+    "weather": "未知"
+  },
+  "summary": "上海海港主场4-1大胜青岛西海岸，取得新赛季首胜。武磊替补登场梅开二度，莱昂纳多和让克劳德各入一球，展现强大攻击力。海港控球率68%完全掌控比赛，青岛西海岸仅由萨米尔·梅米谢维奇打入安慰球。",
+  "highlights": [
+    {
+      "time": "47'",
+      "description": "上海海港让克劳德破门得分，助攻：李帅，1-0",
+      "type": "goal",
+      "team": "home",
+      "player": "让克劳德",
+      "assist": "李帅"
+    },
+    {
+      "time": "61'",
+      "description": "上海海港莱昂纳多扩大比分，助攻：蒯纪闻，2-0",
+      "type": "goal",
+      "team": "home",
+      "player": "莱昂纳多",
+      "assist": "蒯纪闻"
+    },
+    {
+      "time": "70'",
+      "description": "上海海港武磊替补登场后破门得分，3-0",
+      "type": "goal",
+      "team": "home",
+      "player": "武磊"
+    },
+    {
+      "time": "78'",
+      "description": "上海海港武磊梅开二度，助攻：安佩姆，4-0",
+      "type": "goal",
+      "team": "home",
+      "player": "武磊",
+      "assist": "安佩姆"
+    },
+    {
+      "time": "80'",
+      "description": "青岛西海岸萨米尔·梅米谢维奇扳回一球，助攻：戴维森·达卢斯·佩雷拉，4-1",
+      "type": "goal",
+      "team": "away",
+      "player": "萨米尔·梅米谢维奇",
+      "assist": "戴维森·达卢斯·佩雷拉"
+    },
+    {
+      "time": "57'",
+      "description": "青岛西海岸方海洋获得黄牌",
+      "type": "card",
+      "team": "away",
+      "player": "方海洋",
+      "cardType": "yellow"
+    },
+    {
+      "time": "64'",
+      "description": "青岛西海岸丁海峰获得黄牌",
+      "type": "card",
+      "team": "away",
+      "player": "丁海峰",
+      "cardType": "yellow"
+    },
+    {
+      "time": "85'",
+      "description": "青岛西海岸王鹏获得黄牌",
+      "type": "card",
+      "team": "away",
+      "player": "王鹏",
+      "cardType": "yellow"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "name": "上海海港",
+      "formation": "4-2-3-1",
+      "manager": "凯文·穆斯卡特",
+      "captain": "颜骏凌",
+      "players": [
+        {
+          "number": 1,
+          "name": "颜骏凌",
+          "position": "守门员",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 22,
+          "name": "杨希",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 13,
+          "name": "魏震",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 40,
+          "name": "吾米提江",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 32,
+          "name": "李帅",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 82,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 8,
+          "name": "让克劳德",
+          "position": "中场",
+          "nationality": "多哥",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "维塔尔",
+          "position": "中场",
+          "nationality": "巴西",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 17,
+          "name": "安佩姆",
+          "position": "前锋",
+          "nationality": "加纳",
+          "minutes": 77,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 11,
+          "name": "加布里埃尔",
+          "position": "前锋",
+          "nationality": "巴西",
+          "minutes": 69,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 47,
+          "name": "蒯纪闻",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 77,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 45,
+          "name": "莱昂纳多",
+          "position": "前锋",
+          "nationality": "巴西",
+          "minutes": 69,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 7,
+          "name": "武磊",
+          "position": "前锋",
+          "substitutedAt": 70,
+          "substitutedFor": "莱昂纳多"
+        },
+        {
+          "number": 33,
+          "name": "刘祝润",
+          "position": "前锋",
+          "substitutedAt": 70,
+          "substitutedFor": "加布里埃尔"
+        },
+        {
+          "number": 6,
+          "name": "张源",
+          "position": "中场",
+          "substitutedAt": 78,
+          "substitutedFor": "安佩姆"
+        },
+        {
+          "number": 49,
+          "name": "李新翔",
+          "position": "前锋",
+          "substitutedAt": 78,
+          "substitutedFor": "蒯纪闻"
+        },
+        {
+          "number": 28,
+          "name": "岳鑫",
+          "position": "后卫",
+          "substitutedAt": 83,
+          "substitutedFor": "李帅"
+        }
+      ]
+    },
+    "away": {
+      "name": "青岛西海岸",
+      "formation": "4-1-4-1",
+      "manager": "郑智",
+      "captain": "戴维森·达卢斯·佩雷拉",
+      "players": [
+        {
+          "number": 16,
+          "name": "李昊",
+          "position": "门将",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 13,
+          "name": "宋浩宇",
+          "position": "右后卫",
+          "nationality": "中国",
+          "minutes": 89,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 5,
+          "name": "萨米尔·梅米谢维奇",
+          "position": "中后卫",
+          "nationality": "波黑",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 15,
+          "name": "王鹏",
+          "position": "中后卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 32,
+          "name": "丁海峰",
+          "position": "左后卫",
+          "nationality": "中国",
+          "minutes": 68,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 23,
+          "name": "雷森德",
+          "position": "后腰",
+          "nationality": "巴西",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 45,
+          "name": "刘小龙",
+          "position": "右前卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 30,
+          "name": "杨展鹏",
+          "position": "中前卫",
+          "nationality": "中国",
+          "minutes": 45,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 18,
+          "name": "巴拉克·布朗施泰因",
+          "position": "中前卫",
+          "nationality": "以色列",
+          "minutes": 68,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 11,
+          "name": "戴维森·达卢斯·佩雷拉",
+          "position": "左前卫",
+          "nationality": "巴西",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 9,
+          "name": "阿卜杜勒-阿齐兹·雅库布",
+          "position": "前锋",
+          "nationality": "加纳",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 58,
+          "name": "方海洋",
+          "position": "中场",
+          "substitutedAt": 46,
+          "substitutedFor": "杨展鹏"
+        },
+        {
+          "number": 3,
+          "name": "赵宏略",
+          "position": "后卫",
+          "substitutedAt": 69,
+          "substitutedFor": "丁海峰"
+        },
+        {
+          "number": 29,
+          "name": "贾伟伟",
+          "position": "中场",
+          "substitutedAt": 69,
+          "substitutedFor": "巴拉克·布朗施泰因"
+        },
+        {
+          "number": 36,
+          "name": "孙捷",
+          "position": "后卫",
+          "substitutedAt": 78,
+          "substitutedFor": "方海洋"
+        },
+        {
+          "number": 19,
+          "name": "董宇",
+          "position": "后卫",
+          "substitutedAt": 90,
+          "substitutedFor": "宋浩宇"
+        }
+      ]
+    }
+  },
+  "statistics": [
+    {
+      "name": "控球率",
+      "home": "68%",
+      "away": "32%"
+    },
+    {
+      "name": "射门",
+      "home": "16",
+      "away": "16"
+    },
+    {
+      "name": "射正",
+      "home": "8",
+      "away": "6"
+    },
+    {
+      "name": "射门准确率",
+      "home": "50%",
+      "away": "38%"
+    },
+    {
+      "name": "扑救",
+      "home": "5",
+      "away": "5"
+    },
+    {
+      "name": "扑救成功率",
+      "home": "83.3%",
+      "away": "55.6%"
+    },
+    {
+      "name": "犯规",
+      "home": "20",
+      "away": "9"
+    },
+    {
+      "name": "角球",
+      "home": "12",
+      "away": "7"
+    },
+    {
+      "name": "传中",
+      "home": "28",
+      "away": "13"
+    },
+    {
+      "name": "拦截",
+      "home": "4",
+      "away": "14"
+    },
+    {
+      "name": "越位",
+      "home": "2",
+      "away": "2"
+    },
+    {
+      "name": "黄牌",
+      "home": "0",
+      "away": "3"
+    },
+    {
+      "name": "红牌",
+      "home": "0",
+      "away": "0"
+    }
+  ],
+  "playerStats": {
+    "home": [
+      {
+        "player": "武磊",
+        "goals": 2,
+        "assists": 0,
+        "shots": 3,
+        "shotsOnTarget": 3,
+        "passes": 0,
+        "passAccuracy": "0%",
+        "dribbles": 0,
+        "dribbleSuccess": 0,
+        "foulsWon": 0,
+        "foulsCommitted": 1,
+        "yellowCards": 1,
+        "rating": 8.5
+      },
+      {
+        "player": "莱昂纳多",
+        "goals": 1,
+        "assists": 0,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "passes": 0,
+        "passAccuracy": "0%",
+        "dribbles": 0,
+        "dribbleSuccess": 0,
+        "foulsWon": 1,
+        "foulsCommitted": 0,
+        "yellowCards": 0,
+        "rating": 7.8
+      },
+      {
+        "player": "让克劳德",
+        "goals": 1,
+        "assists": 0,
+        "shots": 2,
+        "shotsOnTarget": 1,
+        "passes": 0,
+        "passAccuracy": "0%",
+        "dribbles": 0,
+        "dribbleSuccess": 0,
+        "foulsWon": 3,
+        "foulsCommitted": 4,
+        "yellowCards": 0,
+        "rating": 7.5
+      },
+      {
+        "player": "颜骏凌",
+        "goals": 0,
+        "assists": 0,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passes": 0,
+        "passAccuracy": "0%",
+        "dribbles": 0,
+        "dribbleSuccess": 0,
+        "foulsWon": 0,
+        "foulsCommitted": 0,
+        "yellowCards": 0,
+        "rating": 7.0
+      }
+    ],
+    "away": [
+      {
+        "player": "萨米尔·梅米谢维奇",
+        "goals": 1,
+        "assists": 0,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "passes": 0,
+        "passAccuracy": "0%",
+        "dribbles": 0,
+        "dribbleSuccess": 0,
+        "foulsWon": 4,
+        "foulsCommitted": 1,
+        "yellowCards": 0,
+        "rating": 7.2
+      },
+      {
+        "player": "戴维森·达卢斯·佩雷拉",
+        "goals": 0,
+        "assists": 1,
+        "shots": 7,
+        "shotsOnTarget": 3,
+        "passes": 0,
+        "passAccuracy": "0%",
+        "dribbles": 0,
+        "dribbleSuccess": 0,
+        "foulsWon": 2,
+        "foulsCommitted": 1,
+        "yellowCards": 0,
+        "rating": 6.8
+      },
+      {
+        "player": "李昊",
+        "goals": 0,
+        "assists": 0,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "passes": 0,
+        "passAccuracy": "0%",
+        "dribbles": 0,
+        "dribbleSuccess": 0,
+        "foulsWon": 2,
+        "foulsCommitted": 0,
+        "yellowCards": 0,
+        "rating": 6.0
+      },
+      {
+        "player": "雷森德",
+        "goals": 0,
+        "assists": 0,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "passes": 0,
+        "passAccuracy": "0%",
+        "dribbles": 0,
+        "dribbleSuccess": 0,
+        "foulsWon": 2,
+        "foulsCommitted": 0,
+        "yellowCards": 0,
+        "rating": 6.5
+      }
+    ]
+  },
+  "keyFactors": [
+    "上海海港控球率68%完全掌控比赛节奏",
+    "武磊替补登场梅开二度，展现出色状态",
+    "海港射门效率高，8次射正打入4球",
+    "青岛西海岸防守漏洞明显，犯规次数较少但失球多",
+    "海港门将颜骏凌扑救成功率83.3%，表现稳定"
+  ]
+}
