@@ -125,17 +125,19 @@
 }
 
 .app-header h1 {
-  font-size: 1.8rem;
+  font-size: clamp(1rem, 3vw, 1.8rem);
   color: #ffffff;
   margin: 0 0 0.5rem 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
 }
 
 .app-header h2 {
-  font-size: 1.2rem;
+  font-size: clamp(0.7rem, 1.8vw, 1.2rem);
   color: #cccccc;
   margin: 0;
   font-weight: normal;
+  white-space: nowrap;
 }
 
 .app-content {
