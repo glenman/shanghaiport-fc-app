@@ -157,8 +157,9 @@ const Schedule: React.FC = () => {
                         <th>星期</th>
                         <th>时间</th>
                         <th>主队</th>
-                        <th>赛果</th>
+                        <th>比分</th>
                         <th>客队</th>
+                        <th>赛果</th>
                         <th>城市</th>
                         <th>状态</th>
                       </tr>
@@ -169,6 +170,29 @@ const Schedule: React.FC = () => {
                           const date = new Date(dateString);
                           const days = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
                           return days[date.getDay()].substring(1);
+                        };
+                        
+                        const getResultStatus = (match: Match) => {
+                          if (match.status !== '已结束' || match.result === '-') return '-';
+                          const [homeGoals, awayGoals] = match.result.split('-').map(Number);
+                          const isHome = match.homeTeam === '上海海港';
+                          if (isHome) {
+                            if (homeGoals > awayGoals) return '胜';
+                            if (homeGoals < awayGoals) return '负';
+                            return '平';
+                          } else {
+                            if (awayGoals > homeGoals) return '胜';
+                            if (awayGoals < homeGoals) return '负';
+                            return '平';
+                          }
+                        };
+                        
+                        const resultStatus = getResultStatus(match);
+                        const getResultColor = (status: string) => {
+                          if (status === '胜') return '#dc3545';
+                          if (status === '平') return '#ffffff';
+                          if (status === '负') return '#28a745';
+                          return 'inherit';
                         };
                         
                         return (
@@ -188,6 +212,7 @@ const Schedule: React.FC = () => {
                               )}
                             </td>
                             <td>{match.awayTeam || '-'}</td>
+                            <td style={{ color: getResultColor(resultStatus), fontWeight: resultStatus !== '-' ? 'bold' : 'normal' }}>{resultStatus}</td>
                             <td>{match.city || '-'}</td>
                             <td>{match.status || '-'}</td>
                           </tr>
@@ -210,8 +235,9 @@ const Schedule: React.FC = () => {
                         <th>星期</th>
                         <th>时间</th>
                         <th>主队</th>
-                        <th>赛果</th>
+                        <th>比分</th>
                         <th>客队</th>
+                        <th>赛果</th>
                         <th>城市</th>
                         <th>状态</th>
                       </tr>
@@ -224,6 +250,29 @@ const Schedule: React.FC = () => {
                           return days[date.getDay()].substring(1);
                         };
                         
+                        const getResultStatus = (match: Match) => {
+                          if (match.status !== '已结束' || match.result === '-') return '-';
+                          const [homeGoals, awayGoals] = match.result.split('-').map(Number);
+                          const isHome = match.homeTeam === '上海海港B队';
+                          if (isHome) {
+                            if (homeGoals > awayGoals) return '胜';
+                            if (homeGoals < awayGoals) return '负';
+                            return '平';
+                          } else {
+                            if (awayGoals > homeGoals) return '胜';
+                            if (awayGoals < homeGoals) return '负';
+                            return '平';
+                          }
+                        };
+                        
+                        const resultStatus = getResultStatus(match);
+                        const getResultColor = (status: string) => {
+                          if (status === '胜') return '#dc3545';
+                          if (status === '平') return '#ffffff';
+                          if (status === '负') return '#28a745';
+                          return 'inherit';
+                        };
+                        
                         return (
                           <tr key={match.id || index}>
                             <td>{match.round || '-'}</td>
@@ -233,6 +282,7 @@ const Schedule: React.FC = () => {
                             <td>{match.homeTeam || '-'}</td>
                             <td>{match.result || '-'}</td>
                             <td>{match.awayTeam || '-'}</td>
+                            <td style={{ color: getResultColor(resultStatus), fontWeight: resultStatus !== '-' ? 'bold' : 'normal' }}>{resultStatus}</td>
                             <td>{match.city || '-'}</td>
                             <td>{match.status || '-'}</td>
                           </tr>
