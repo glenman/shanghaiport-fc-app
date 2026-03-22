@@ -288,7 +288,15 @@ const Schedule: React.FC = () => {
                             <td>{match.date ? getDayOfWeek(match.date) : '-'}</td>
                             <td>{match.time || '-'}</td>
                             <td>{match.homeTeam || '-'}</td>
-                            <td>{match.result || '-'}</td>
+                            <td>
+                              {match.status === '已结束' ? (
+                                <a href={`match-report.html?date=${match.date}&type=${encodeURIComponent('中乙')}&round=${encodeURIComponent(match.round)}`} style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
+                                  {match.result}
+                                </a>
+                              ) : (
+                                match.result
+                              )}
+                            </td>
                             <td>{match.awayTeam || '-'}</td>
                             <td style={{ color: getResultColor(resultStatus), fontWeight: resultStatus !== '-' ? 'bold' : 'normal' }}>{resultStatus}</td>
                             <td>{match.city || '-'}</td>
