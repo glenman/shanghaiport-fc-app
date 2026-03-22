@@ -1,0 +1,865 @@
+{
+  "match": {
+    "id": 6,
+    "round": "第6轮",
+    "date": "2024-04-14",
+    "time": "19:35",
+    "homeTeam": "上海海港",
+    "awayTeam": "山东泰山",
+    "venue": "SAIC Motor Pudong Arena, Shanghai",
+    "city": "上海",
+    "result": "0-0",
+    "status": "已结束",
+    "attendance": "21,713",
+    "referee": "\"",
+    "weather": "未知",
+    "competition": "中国足球协会超级联赛",
+    "matchweek": 6,
+    "season": "2024"
+  },
+  "matchDetails": {
+    "stadiumCapacity": "未知",
+    "pitchCondition": "良好",
+    "temperature": "未知",
+    "kickoffTime": "19:35",
+    "halftimeScore": "0-0",
+    "fulltimeScore": "0-0"
+  },
+  "officials": {
+    "referee": "\"",
+    "assistantReferee1": "未知",
+    "assistantReferee2": "未知",
+    "fourthOfficial": "未知",
+    "VAR": "未知"
+  },
+  "seasonRecords": {
+    "home": {
+      "currentPosition": "未知",
+      "matchesPlayed": 0,
+      "record": "0胜0平0负",
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "form": ""
+    },
+    "away": {
+      "currentPosition": "未知",
+      "matchesPlayed": 0,
+      "record": "0胜0平0负",
+      "points": 0,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "form": ""
+    }
+  },
+  "lineups": {
+    "home": {
+      "name": "上海海港",
+      "formation": "4-2-3-1",
+      "manager": ": Kevin Muscat",
+      "captain": "Oscar",
+      "players": [
+        {
+          "name": "Gustavo",
+          "number": 9,
+          "position": "前锋",
+          "nationality": "BRA",
+          "age": "30-092",
+          "minutes": 75,
+          "goals": 0,
+          "assists": 1,
+          "shots": 1,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Feng Jing",
+          "number": 27,
+          "position": "FW,MF",
+          "nationality": "CHN",
+          "age": "30-320",
+          "minutes": 15,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1,
+          "shotsOnTarget": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Matías Vargas",
+          "number": 10,
+          "position": "攻击型中场",
+          "nationality": "ARG",
+          "age": "27-052",
+          "minutes": 86,
+          "goals": 0,
+          "assists": 2,
+          "shots": 2,
+          "shotsOnTarget": 2,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Lü Wenjun",
+          "number": 11,
+          "position": "DF,FW",
+          "nationality": "CHN",
+          "age": "35-110",
+          "minutes": 4,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1,
+          "shotsOnTarget": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Oscar",
+          "number": 8,
+          "position": "攻击型中场",
+          "nationality": "BRA",
+          "age": "32-294",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 3,
+          "shotsOnTarget": 2,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Wu Lei",
+          "number": 7,
+          "position": "攻击型中场",
+          "nationality": "CHN",
+          "age": "32-223",
+          "minutes": 86,
+          "goals": 3,
+          "assists": 0,
+          "shots": 7,
+          "shotsOnTarget": 6,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Li Shenglong",
+          "number": 14,
+          "position": "前锋",
+          "nationality": "CHN",
+          "age": "31-335",
+          "minutes": 4,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1,
+          "shotsOnTarget": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Jussa",
+          "number": 22,
+          "position": "后腰",
+          "nationality": "BRA",
+          "age": "28-099",
+          "minutes": 89,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 2,
+          "redCards": 1
+        },
+        {
+          "name": "Léo Cittadini",
+          "number": 18,
+          "position": "后腰",
+          "nationality": "BRA",
+          "age": "30-123",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Fu Huan",
+          "number": 23,
+          "position": "左后卫",
+          "nationality": "CHN",
+          "age": "30-353",
+          "minutes": 60,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Bao Shimeng",
+          "number": 31,
+          "position": "后卫",
+          "nationality": "CHN",
+          "age": "20-363",
+          "minutes": 30,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "Wei Zhen",
+          "number": 13,
+          "position": "中后卫",
+          "nationality": "CHN",
+          "age": "27-138",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Tyias Browning",
+          "number": 3,
+          "position": "中后卫",
+          "nationality": "CHN",
+          "age": "30-033",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Wang Shenchao",
+          "number": 4,
+          "position": "右后卫",
+          "nationality": "CHN",
+          "age": "35-142",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Yan Junling",
+          "number": 1,
+          "position": "门将",
+          "nationality": "CHN",
+          "age": "33-153",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "15 Players",
+          "number": 989,
+          "position": "3",
+          "nationality": "3",
+          "age": "0",
+          "minutes": 0,
+          "goals": 17,
+          "assists": 13,
+          "shots": 13,
+          "shotsOnTarget": 12,
+          "yellowCards": 6,
+          "redCards": 27
+        }
+      ]
+    },
+    "away": {
+      "name": "山东泰山",
+      "formation": "4-2-3-1",
+      "manager": ": Jordi Vinyals",
+      "captain": "Franko Andrijašević",
+      "players": [
+        {
+          "name": "Leo",
+          "number": 45,
+          "position": "前锋",
+          "nationality": "BRA",
+          "age": "27-032",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "shots": 1,
+          "shotsOnTarget": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Jean Evrard Kouassi",
+          "number": 17,
+          "position": "攻击型中场",
+          "nationality": "CIV",
+          "age": "29-278",
+          "minutes": 69,
+          "goals": 0,
+          "assists": 0,
+          "shots": 3,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Yao Junsheng",
+          "number": 6,
+          "position": "中场",
+          "nationality": "CHN",
+          "age": "28-244",
+          "minutes": 21,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Franko Andrijašević",
+          "number": 11,
+          "position": "攻击型中场",
+          "nationality": "CRO",
+          "age": "33-007",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 3,
+          "shotsOnTarget": 2,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Deabeas Owusu Sekyere",
+          "number": 7,
+          "position": "攻击型中场",
+          "nationality": "NED",
+          "age": "24-238",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 2,
+          "shotsOnTarget": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Alexander N'Doumbou",
+          "number": 8,
+          "position": "后腰",
+          "nationality": "GAB",
+          "age": "32-177",
+          "minutes": 13,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Cheng Jin",
+          "number": 22,
+          "position": "中场",
+          "nationality": "CHN",
+          "age": "29-132",
+          "minutes": 77,
+          "goals": 0,
+          "assists": 0,
+          "shots": 4,
+          "shotsOnTarget": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Li Tixiang",
+          "number": 10,
+          "position": "后腰",
+          "nationality": "CHN",
+          "age": "34-302",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Yue Xin",
+          "number": 28,
+          "position": "左后卫",
+          "nationality": "CHN",
+          "age": "28-232",
+          "minutes": 45,
+          "goals": 0,
+          "assists": 1,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Sun Guowen",
+          "number": 26,
+          "position": "DF,MF",
+          "nationality": "CHN",
+          "age": "30-273",
+          "minutes": 45,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Lucas Possignolo",
+          "number": 36,
+          "position": "中后卫",
+          "nationality": "POR",
+          "age": "30-049",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1,
+          "shotsOnTarget": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "Liu Haofan",
+          "number": 5,
+          "position": "中后卫",
+          "nationality": "CHN",
+          "age": "20-250",
+          "minutes": 77,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Leung Nok Hang",
+          "number": 2,
+          "position": "后卫",
+          "nationality": "HKG",
+          "age": "29-228",
+          "minutes": 13,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Dong Yu",
+          "number": 19,
+          "position": "右后卫",
+          "nationality": "CHN",
+          "age": "29-350",
+          "minutes": 45,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "Wang Dongsheng",
+          "number": 20,
+          "position": "后卫",
+          "nationality": "CHN",
+          "age": "27-048",
+          "minutes": 45,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1,
+          "shotsOnTarget": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "name": "Zhao Bo",
+          "number": 33,
+          "position": "门将",
+          "nationality": "CHN",
+          "age": "30-286",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shotsOnTarget": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "name": "16 Players",
+          "number": 990,
+          "position": "1",
+          "nationality": "1",
+          "age": "0",
+          "minutes": 0,
+          "goals": 16,
+          "assists": 5,
+          "shots": 12,
+          "shotsOnTarget": 13,
+          "yellowCards": 4,
+          "redCards": 17
+        }
+      ]
+    }
+  },
+  "detailedPlayerStats": {
+    "home": [
+      {
+        "player": "Gustavo",
+        "number": 9,
+        "position": "前锋",
+        "age": "30-092",
+        "minutes": 75,
+        "shots": 1,
+        "shotsOnTarget": 0,
+        "goals": 0,
+        "assists": 1,
+        "keyPasses": 0,
+        "crosses": 0,
+        "tacklesWon": 0,
+        "interceptions": 0,
+        "foulsCommitted": 0,
+        "foulsWon": 0,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      },
+      {
+        "player": "Feng Jing",
+        "number": 27,
+        "position": "FW,MF",
+        "age": "30-320",
+        "minutes": 15,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "goals": 0,
+        "assists": 0,
+        "keyPasses": 0,
+        "crosses": 0,
+        "tacklesWon": 0,
+        "interceptions": 0,
+        "foulsCommitted": 0,
+        "foulsWon": 0,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      },
+      {
+        "player": "Matías Vargas",
+        "number": 10,
+        "position": "攻击型中场",
+        "age": "27-052",
+        "minutes": 86,
+        "shots": 2,
+        "shotsOnTarget": 2,
+        "goals": 0,
+        "assists": 2,
+        "keyPasses": 0,
+        "crosses": 0,
+        "tacklesWon": 0,
+        "interceptions": 0,
+        "foulsCommitted": 0,
+        "foulsWon": 0,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      },
+      {
+        "player": "Lü Wenjun",
+        "number": 11,
+        "position": "DF,FW",
+        "age": "35-110",
+        "minutes": 4,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "goals": 0,
+        "assists": 0,
+        "keyPasses": 0,
+        "crosses": 0,
+        "tacklesWon": 0,
+        "interceptions": 0,
+        "foulsCommitted": 0,
+        "foulsWon": 0,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      },
+      {
+        "player": "Oscar",
+        "number": 8,
+        "position": "攻击型中场",
+        "age": "32-294",
+        "minutes": 90,
+        "shots": 3,
+        "shotsOnTarget": 2,
+        "goals": 0,
+        "assists": 0,
+        "keyPasses": 0,
+        "crosses": 0,
+        "tacklesWon": 0,
+        "interceptions": 0,
+        "foulsCommitted": 0,
+        "foulsWon": 0,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      }
+    ],
+    "away": [
+      {
+        "player": "Leo",
+        "number": 45,
+        "position": "前锋",
+        "age": "27-032",
+        "minutes": 90,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "goals": 1,
+        "assists": 0,
+        "keyPasses": 0,
+        "crosses": 0,
+        "tacklesWon": 0,
+        "interceptions": 0,
+        "foulsCommitted": 0,
+        "foulsWon": 0,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      },
+      {
+        "player": "Jean Evrard Kouassi",
+        "number": 17,
+        "position": "攻击型中场",
+        "age": "29-278",
+        "minutes": 69,
+        "shots": 3,
+        "shotsOnTarget": 0,
+        "goals": 0,
+        "assists": 0,
+        "keyPasses": 0,
+        "crosses": 0,
+        "tacklesWon": 0,
+        "interceptions": 0,
+        "foulsCommitted": 0,
+        "foulsWon": 0,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      },
+      {
+        "player": "Yao Junsheng",
+        "number": 6,
+        "position": "中场",
+        "age": "28-244",
+        "minutes": 21,
+        "shots": 0,
+        "shotsOnTarget": 0,
+        "goals": 0,
+        "assists": 0,
+        "keyPasses": 0,
+        "crosses": 0,
+        "tacklesWon": 0,
+        "interceptions": 0,
+        "foulsCommitted": 0,
+        "foulsWon": 0,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      },
+      {
+        "player": "Franko Andrijašević",
+        "number": 11,
+        "position": "攻击型中场",
+        "age": "33-007",
+        "minutes": 90,
+        "shots": 3,
+        "shotsOnTarget": 2,
+        "goals": 0,
+        "assists": 0,
+        "keyPasses": 0,
+        "crosses": 0,
+        "tacklesWon": 0,
+        "interceptions": 0,
+        "foulsCommitted": 0,
+        "foulsWon": 0,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      },
+      {
+        "player": "Deabeas Owusu Sekyere",
+        "number": 7,
+        "position": "攻击型中场",
+        "age": "24-238",
+        "minutes": 90,
+        "shots": 2,
+        "shotsOnTarget": 1,
+        "goals": 0,
+        "assists": 0,
+        "keyPasses": 0,
+        "crosses": 0,
+        "tacklesWon": 0,
+        "interceptions": 0,
+        "foulsCommitted": 0,
+        "foulsWon": 0,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      }
+    ]
+  },
+  "matchTimeline": [],
+  "tacticalAnalysis": {
+    "homeFormation": "4-2-3-1",
+    "awayFormation": "4-2-3-1",
+    "possession": {
+      "home": 51,
+      "away": 51
+    },
+    "attackDirection": {
+      "home": "未知",
+      "away": "未知"
+    },
+    "defensiveLine": {
+      "home": "未知",
+      "away": "未知"
+    },
+    "playingStyle": {
+      "home": "未知",
+      "away": "未知"
+    }
+  },
+  "statistics": [
+    {
+      "name": "控球率",
+      "home": "51%",
+      "away": "51%"
+    },
+    {
+      "name": "射门",
+      "home": "0",
+      "away": "0"
+    },
+    {
+      "name": "射正",
+      "home": "0",
+      "away": "0"
+    }
+  ],
+  "keyMetrics": {
+    "expectedGoals": {
+      "home": 0,
+      "away": 0
+    },
+    "bigChances": {
+      "home": 0,
+      "away": 0
+    },
+    "passAccuracy": {
+      "home": "未知",
+      "away": "未知"
+    },
+    "aerialDuelsWon": {
+      "home": "未知",
+      "away": "未知"
+    },
+    "successfulDribbles": {
+      "home": 0,
+      "away": 0
+    },
+    "keyPasses": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "playerRatings": {
+    "manOfTheMatch": "未知",
+    "homeBestPlayer": "未知",
+    "awayBestPlayer": "未知",
+    "topPerformers": []
+  },
+  "headToHead": {
+    "totalMatches": 0,
+    "homeWins": 0,
+    "awayWins": 0,
+    "draws": 0,
+    "lastMeeting": "未知",
+    "trend": "未知"
+  },
+  "socialMedia": {
+    "hashtags": [],
+    "fanSentiment": {
+      "home": "未知",
+      "away": "未知"
+    },
+    "matchTrending": false
+  },
+  "summary": "比赛报告生成中...",
+  "keyFactors": [],
+  "highlights": [],
+  "matchAnalysis": {
+    "tacticalSummary": "未知",
+    "keyMoments": [],
+    "teamPerformance": {
+      "home": {
+        "strengths": [],
+        "weaknesses": []
+      },
+      "away": {
+        "strengths": [],
+        "weaknesses": []
+      }
+    }
+  },
+  "postMatchComments": {
+    "homeManager": "",
+    "awayManager": "",
+    "manOfTheMatchComment": ""
+  },
+  "nextMatches": {
+    "home": {
+      "opponent": "待定",
+      "date": "待定",
+      "venue": "待定"
+    },
+    "away": {
+      "opponent": "待定",
+      "date": "待定",
+      "venue": "待定"
+    }
+  }
+}

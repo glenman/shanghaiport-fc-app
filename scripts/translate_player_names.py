@@ -1,214 +1,202 @@
 import os
 import json
 import csv
+import re
 
-# 创建球员姓名映射（包括上海海港和其他球队）
-def create_player_mapping():
-    mapping = {}
-    
-    # 上海海港球员
-    mapping['Yan Junling'] = '颜骏凌'
-    mapping['Li Ang'] = '李昂'
-    mapping['Tyias Browning'] = '蒋光太'
-    mapping['Wang Shenchao'] = '王燊超'
-    mapping['Zhang Linpeng'] = '张琳芃'
-    mapping['Xu Xin'] = '徐新'
-    mapping['Wu Lei'] = '武磊'
-    mapping['Gustavo'] = '古斯塔沃'
-    mapping['Mateus Vital'] = '维塔尔'
-    mapping['Lv Wenjun'] = '吕文君'
-    mapping['Chen Wei'] = '陈威'
-    mapping['Wei Zhen'] = '魏震'
-    mapping['Li Shenglong'] = '李圣龙'
-    mapping['Ming Tian'] = '明天'
-    mapping['Shen Zigui'] = '沈子贵'
-    mapping['Aifeierding Aisikaer'] = '艾菲尔丁'
-    mapping['Feierding Aisikaer'] = '艾菲尔丁'
-    mapping['Wang Zhen\'ao'] = '王振澳'
-    mapping['Yang Shiyuan'] = '杨世元'
-    mapping['Matheus Jussa'] = '马修斯·尤萨'
-    mapping['Jussa'] = '马修斯·尤萨'
-    mapping['Fu Huan'] = '傅欢'
-    mapping['Du Jia'] = '杜佳'
-    mapping['Liu Ruofan'] = '刘若钒'
-    mapping['Feng Jing'] = '冯劲'
-    mapping['Gabriel'] = '加布里埃尔'
-    mapping['Li Shuai'] = '李帅'
-    mapping['Abraham Halik'] = '阿布拉汗·哈力克'
-    mapping['Leonardo'] = '莱昂纳多'
-    mapping['Leo'] = '莱昂纳多'
-    
-    # 其他球队球员（常见中文名）
-    mapping['Tiago'] = '蒂亚戈'
-    mapping['Edu Garcia'] = '埃杜·加西亚'
-    mapping['Manprit Sarkaria'] = '曼普利特·萨尔卡利亚'
-    mapping['Baihelamu Abuduwaili'] = '拜合拉木·阿卜杜瓦伊力'
-    mapping['Matthew Orr'] = '马修·奥尔'
-    mapping['Jiang Zhipeng'] = '姜至鹏'
-    mapping['Eden Karzev'] = '伊登·卡泽夫'
-    mapping['Zhang Yudong'] = '张宇东'
-    mapping['Zhang Wei'] = '张威'
-    mapping['Zhang Yujie'] = '张裕杰'
-    mapping['Yang Yiming'] = '杨一鸣'
-    mapping['Yu Rui'] = '于睿'
-    mapping['Zhang Xiaobin'] = '张晓彬'
-    mapping['Zhao Shi'] = '赵石'
-    
-    return mapping
+HISTORY_2025_DIR = '../public/data/history/2025'
+ROSTER_PATH = '../datafile/上海海港2025一线队大名单.csv'
 
-# 创建其他英文信息的映射
-def create_other_mapping():
-    mapping = {}
+PLAYER_TRANSLATIONS = {
+    'Gabriel Airton de Souza': '加布里埃尔',
+    'Gabriel': '加布里埃尔',
+    'Lü Wenjun': '吕文君',
+    'Lu Wenjun': '吕文君',
+    'Li Xinxiang': '李新翔',
+    'Wumitijiang Yusupu': '吾米提江',
+    'Kuai Jiwen': '蒯纪闻',
+    'Yan Junling': '颜骏凌',
+    'Li Ang': '李昂',
+    'Jiang Guangtai': '蒋光太',
+    'Wang Shenchao': '王燊超',
+    'Zhang Linpeng': '张琳芃',
+    'Xu Xin': '徐新',
+    'Wu Lei': '武磊',
+    'Gustavo': '古斯塔沃',
+    'Vital': '维塔尔',
+    'Lü Wenjun': '吕文君',
+    'Chen Wei': '陈威',
+    'Wei Zhen': '魏震',
+    'Li Shenglong': '李圣龙',
+    'Ming Tian': '明天',
+    'Shen Zigui': '沈子贵',
+    'Ai Feierding': '艾菲尔丁',
+    'Wang Zhen\'ao': '王振澳',
+    'Wang Zhenao': '王振澳',
+    'Yang Shiyuan': '杨世元',
+    'Matheus Jussa': '马修斯·尤萨',
+    'Mateus Jussa': '马修斯·尤萨',
+    'Fu Huan': '傅欢',
+    'Du Jia': '杜佳',
+    'Liu Ruofan': '刘若钒',
+    'Feng Jin': '冯劲',
+    'Li Shuai': '李帅',
+    'Abulahan Halike': '阿布拉汗·哈力克',
+    'Leonardo': '莱昂纳多',
+    'Wumitijiang': '吾米提江',
+    'Liu Lei': '刘磊',
+    'Wang Yiwei': '王逸伟',
+    'Liu Tiecheng': '刘铁诚',
+    'Meng Jingchao': '孟敬朝',
+    'Li Zhiliang': '李智良',
     
-    # 位置映射
-    mapping['FW'] = '前锋'
-    mapping['MF'] = '中场'
-    mapping['DF'] = '后卫'
-    mapping['GK'] = '门将'
-    mapping['RB'] = '右后卫'
-    mapping['LB'] = '左后卫'
-    mapping['CB'] = '中后卫'
-    mapping['DM'] = '后腰'
-    mapping['CM'] = '中前卫'
-    mapping['AM'] = '前腰'
-    mapping['RW'] = '右边锋'
-    mapping['LW'] = '左边锋'
-    mapping['CF'] = '中锋'
-    
-    # 国籍映射
-    mapping['br BRA'] = '巴西'
-    mapping['cn CHN'] = '中国'
-    mapping['es ESP'] = '西班牙'
-    mapping['at AUT'] = '奥地利'
-    mapping['hk HKG'] = '中国香港'
-    mapping['il ISR'] = '以色列'
-    
-    # 其他常见英文词汇
-    mapping['Unknown'] = '未知'
-    
-    return mapping
+    'Cephas Malele': '马莱莱',
+    'Yang Mingrui': '杨明睿',
+    'Daniel Penha': '丹尼尔·彭哈',
+    'Zhu Pengyu': '朱鹏宇',
+    'Lü Peng': '吕鹏',
+    'Liao Jintao': '廖锦涛',
+    'Mao Weijie': '毛伟杰',
+    'Zakaria Labyad': '扎卡里亚·拉布亚德',
+    'Isnik Alimi': '伊斯尼克·阿利米',
+    'Wen Jiabao': '温家宝',
+    'Cao Haiqing': '曹海清',
+    'Jin Pengxiang': '晋鹏翔',
+    'Bi Jinhao': '毕津浩',
+    'Mamadou Traoré': '马马杜·特拉奥雷',
+    'Lu Zhuoyi': '吕焯毅',
+    'Huang Zihao': '黄子豪',
+    'Alexander Jojo': '亚历山大·乔乔',
+    'Yago Cariello': '雅戈·卡列洛',
+    'Alexandru Mitriță': '米特里策',
+    'Franko Andrijašević': '弗兰科·安德里亚舍维奇',
+    'Alexander N\'Doumbou': '亚历山大·恩杜姆布',
+    'Yao Junsheng': '姚均晟',
+    'Cheng Jin': '程进',
+    'Tao Qianglong': '陶强龙',
+    'Deabeas Owusu Sekyere': '奥乌苏',
+    'Li Tixiang': '李提香',
+    'Sun Guowen': '孙国文',
+    'Lucas Possignolo': '卢卡斯·波西尼奥洛',
+    'Liu Haofan': '刘浩帆',
+    'Tong Lei': '童磊',
+    'Wang Shiqin': '王世鑫',
+    'Zhao Bo': '赵博',
+    'Zeca': '泽卡',
+    'Valeri Qazaishvili': '瓦列里·卡扎伊什维利',
+    'Crysan': '克雷桑',
+    'Liu Yang': '刘洋',
+    'Wu Xinghan': '吴兴涵',
+    'Guilherme Madruga': '吉列尔梅·马德鲁加',
+    'Huang Zhengyu': '黄政宇',
+    'Raphaël Merkies': '拉斐尔·梅西斯',
+}
 
-# 处理球员姓名
-def process_player_names(data, player_mapping):
-    # 处理主队球员
-    for player in data['lineups']['home']['players']:
-        if player['name'] in player_mapping:
-            player['name'] = player_mapping[player['name']]
-    
-    # 处理主队替补球员
-    for player in data['lineups']['home']['substitutes']:
-        if player['name'] in player_mapping:
-            player['name'] = player_mapping[player['name']]
-    
-    # 处理客队球员
-    for player in data['lineups']['away']['players']:
-        if player['name'] in player_mapping:
-            player['name'] = player_mapping[player['name']]
-    
-    # 处理客队替补球员
-    for player in data['lineups']['away']['substitutes']:
-        if player['name'] in player_mapping:
-            player['name'] = player_mapping[player['name']]
-    
-    # 处理球员统计
-    if 'playerStats' in data:
-        if 'home' in data['playerStats']:
-            for player_stat in data['playerStats']['home']:
-                if player_stat['player'] in player_mapping:
-                    player_stat['player'] = player_mapping[player_stat['player']]
-        if 'away' in data['playerStats']:
-            for player_stat in data['playerStats']['away']:
-                if player_stat['player'] in player_mapping:
-                    player_stat['player'] = player_mapping[player_stat['player']]
+def load_roster():
+    roster = {}
+    with open(ROSTER_PATH, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            number = row.get('号码', '').strip()
+            name = row.get('姓名', '').strip()
+            if number and name:
+                roster[number] = name
+    return roster
 
-# 处理其他英文信息
-def process_other_info(data, other_mapping):
-    # 处理位置信息
-    for player in data['lineups']['home']['players']:
-        if 'position' in player and player['position'] in other_mapping:
-            player['position'] = other_mapping[player['position']]
-        elif 'position' in player and ',' in player['position']:
-            # 处理复合位置
-            positions = player['position'].split(',')
-            translated_positions = []
-            for pos in positions:
-                if pos in other_mapping:
-                    translated_positions.append(other_mapping[pos])
-                else:
-                    translated_positions.append(pos)
-            player['position'] = ','.join(translated_positions)
+def pinyin_to_chinese(name):
+    if name in PLAYER_TRANSLATIONS:
+        return PLAYER_TRANSLATIONS[name]
     
-    for player in data['lineups']['home']['substitutes']:
-        if 'position' in player and player['position'] in other_mapping:
-            player['position'] = other_mapping[player['position']]
+    for eng, chn in PLAYER_TRANSLATIONS.items():
+        if eng.lower() == name.lower():
+            return chn
     
-    for player in data['lineups']['away']['players']:
-        if 'position' in player and player['position'] in other_mapping:
-            player['position'] = other_mapping[player['position']]
-        elif 'position' in player and ',' in player['position']:
-            # 处理复合位置
-            positions = player['position'].split(',')
-            translated_positions = []
-            for pos in positions:
-                if pos in other_mapping:
-                    translated_positions.append(other_mapping[pos])
-                else:
-                    translated_positions.append(pos)
-            player['position'] = ','.join(translated_positions)
-    
-    for player in data['lineups']['away']['substitutes']:
-        if 'position' in player and player['position'] in other_mapping:
-            player['position'] = other_mapping[player['position']]
-    
-    # 处理国籍信息
-    for player in data['lineups']['home']['players']:
-        if 'nationality' in player and player['nationality'] in other_mapping:
-            player['nationality'] = other_mapping[player['nationality']]
-    
-    for player in data['lineups']['home']['substitutes']:
-        if 'nationality' in player and player['nationality'] in other_mapping:
-            player['nationality'] = other_mapping[player['nationality']]
-    
-    for player in data['lineups']['away']['players']:
-        if 'nationality' in player and player['nationality'] in other_mapping:
-            player['nationality'] = other_mapping[player['nationality']]
-    
-    for player in data['lineups']['away']['substitutes']:
-        if 'nationality' in player and player['nationality'] in other_mapping:
-            player['nationality'] = other_mapping[player['nationality']]
+    return None
 
-# 处理单个JSON文件
-def process_json_file(file_path, player_mapping, other_mapping):
-    with open(file_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
+def update_player_names(data, roster):
+    changes = []
     
-    # 处理球员姓名
-    process_player_names(data, player_mapping)
+    if 'lineups' in data:
+        for side in ['home', 'away']:
+            if side in data['lineups']:
+                lineup = data['lineups'][side]
+                
+                if 'captain' in lineup:
+                    captain = lineup['captain']
+                    translated = pinyin_to_chinese(captain)
+                    if translated:
+                        lineup['captain'] = translated
+                        changes.append(f'{side}.captain: {captain} -> {translated}')
+                
+                if 'players' in lineup:
+                    for player in lineup['players']:
+                        if 'name' in player:
+                            old_name = player['name']
+                            
+                            if re.match(r'^[\u4e00-\u9fff]', old_name):
+                                continue
+                            
+                            translated = pinyin_to_chinese(old_name)
+                            
+                            if not translated and 'number' in player:
+                                number = player['number']
+                                if number in roster:
+                                    translated = roster[number]
+                            
+                            if translated and translated != old_name:
+                                player['name'] = translated
+                                changes.append(f'{side}.player: {old_name} -> {translated}')
+                
+                if 'substitutes' in lineup:
+                    for sub in lineup['substitutes']:
+                        if 'name' in sub:
+                            old_name = sub['name']
+                            
+                            if re.match(r'^[\u4e00-\u9fff]', old_name):
+                                continue
+                            
+                            translated = pinyin_to_chinese(old_name)
+                            
+                            if not translated and 'number' in sub:
+                                number = sub['number']
+                                if number in roster:
+                                    translated = roster[number]
+                            
+                            if translated and translated != old_name:
+                                sub['name'] = translated
+                                changes.append(f'{side}.substitute: {old_name} -> {translated}')
     
-    # 处理其他英文信息
-    process_other_info(data, other_mapping)
-    
-    # 保存修改后的数据
-    with open(file_path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    return changes
 
-# 处理所有JSON文件
-def process_all_json_files(directory, player_mapping, other_mapping):
-    for filename in os.listdir(directory):
-        if filename.endswith('.json'):
-            file_path = os.path.join(directory, filename)
-            print(f'处理文件: {filename}')
-            process_json_file(file_path, player_mapping, other_mapping)
+def main():
+    roster = load_roster()
+    print(f"加载球员名单: {len(roster)} 人\n")
+    
+    files = sorted([f for f in os.listdir(HISTORY_2025_DIR) if f.endswith('.json')])
+    
+    total_changes = 0
+    files_updated = 0
+    
+    for filename in files:
+        filepath = os.path.join(HISTORY_2025_DIR, filename)
+        
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        changes = update_player_names(data, roster)
+        
+        if changes:
+            files_updated += 1
+            total_changes += len(changes)
+            print(f"\n📄 {filename}")
+            for change in changes:
+                print(f"   ✓ {change}")
+            
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+    
+    print(f"\n\n=== 完成 ===")
+    print(f"更新文件: {files_updated} 个")
+    print(f"共更新: {total_changes} 处")
 
 if __name__ == '__main__':
-    # 定义文件路径
-    json_directory = 'data/history/2025'
-    
-    # 创建映射
-    player_mapping = create_player_mapping()
-    other_mapping = create_other_mapping()
-    
-    # 处理所有JSON文件
-    process_all_json_files(json_directory, player_mapping, other_mapping)
-    
-    print('处理完成！')
+    main()

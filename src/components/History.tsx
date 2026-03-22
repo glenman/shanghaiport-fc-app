@@ -96,9 +96,11 @@ const History: React.FC = () => {
 
   const headToHeadMatches = useMemo(() => {
     if (!selectedOpponent) return [];
-    return historyData.filter(match => 
-      match.home_team === selectedOpponent || match.away_team === selectedOpponent
-    );
+    return historyData
+      .filter(match => 
+        match.home_team === selectedOpponent || match.away_team === selectedOpponent
+      )
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   }, [historyData, selectedOpponent]);
 
   const headToHeadStats = useMemo(() => {
@@ -292,69 +294,147 @@ const History: React.FC = () => {
 
         {showHeadToHead && selectedOpponent && headToHeadStats && (
           <div style={{ 
-            marginBottom: '1.5rem', 
-            padding: '1.2rem', 
+            marginBottom: '1rem', 
+            padding: '0.75rem', 
             backgroundColor: '#2a2a2a', 
             borderRadius: '8px',
             border: '1px solid #c00010'
           }}>
-            <h3 style={{ 
-              margin: '0 0 1rem 0', 
-              color: '#c00010',
-              fontSize: '1.1rem',
-              borderBottom: '1px solid #444',
-              paddingBottom: '0.5rem'
-            }}>
-              与 {selectedOpponent} 的历史交锋统计
-            </h3>
-            
             <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', 
-              gap: '1rem',
-              marginBottom: '1rem'
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'space-between',
+              marginBottom: '0.5rem'
             }}>
-              <div style={{ textAlign: 'center', padding: '0.8rem', backgroundColor: '#333', borderRadius: '6px' }}>
-                <div style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.3rem' }}>总场次</div>
-                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#fff' }}>{headToHeadStats.total}</div>
-              </div>
-              <div style={{ textAlign: 'center', padding: '0.8rem', backgroundColor: '#1a4d1a', borderRadius: '6px' }}>
-                <div style={{ fontSize: '0.85rem', color: '#88cc88', marginBottom: '0.3rem' }}>胜</div>
-                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#4caf50' }}>{headToHeadStats.wins}</div>
-              </div>
-              <div style={{ textAlign: 'center', padding: '0.8rem', backgroundColor: '#4d4d1a', borderRadius: '6px' }}>
-                <div style={{ fontSize: '0.85rem', color: '#cccc88', marginBottom: '0.3rem' }}>平</div>
-                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#ffc107' }}>{headToHeadStats.draws}</div>
-              </div>
-              <div style={{ textAlign: 'center', padding: '0.8rem', backgroundColor: '#4d1a1a', borderRadius: '6px' }}>
-                <div style={{ fontSize: '0.85rem', color: '#cc8888', marginBottom: '0.3rem' }}>负</div>
-                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#f44336' }}>{headToHeadStats.losses}</div>
-              </div>
+              <span style={{ color: '#c00010', fontWeight: 'bold', fontSize: '0.95rem' }}>
+                vs {selectedOpponent}
+              </span>
+              <span style={{ color: '#888', fontSize: '0.85rem' }}>
+                {headToHeadStats.total}场
+              </span>
             </div>
-
-            <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', 
-              gap: '1rem'
-            }}>
-              <div style={{ textAlign: 'center', padding: '0.8rem', backgroundColor: '#333', borderRadius: '6px' }}>
-                <div style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.3rem' }}>进球队</div>
-                <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#4caf50' }}>{headToHeadStats.goalsFor}</div>
-              </div>
-              <div style={{ textAlign: 'center', padding: '0.8rem', backgroundColor: '#333', borderRadius: '6px' }}>
-                <div style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.3rem' }}>失球队</div>
-                <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#f44336' }}>{headToHeadStats.goalsAgainst}</div>
-              </div>
-              <div style={{ textAlign: 'center', padding: '0.8rem', backgroundColor: '#333', borderRadius: '6px' }}>
-                <div style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.3rem' }}>主场战绩</div>
-                <div style={{ fontSize: '1rem', fontWeight: 'bold', color: '#fff' }}>
-                  {headToHeadStats.home.wins}胜 {headToHeadStats.home.draws}平 {headToHeadStats.home.losses}负
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+              <div style={{ display: 'flex', gap: '0.35rem' }}>
+                <div style={{ 
+                  flex: 1, 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center',
+                  padding: '0.4rem 0.3rem', 
+                  backgroundColor: '#1a4d1a', 
+                  borderRadius: '4px',
+                  gap: '0.3rem'
+                }}>
+                  <span style={{ fontSize: '0.75rem', color: '#88cc88' }}>胜</span>
+                  <span style={{ fontSize: '1rem', fontWeight: 'bold', color: '#4caf50' }}>{headToHeadStats.wins}</span>
+                </div>
+                <div style={{ 
+                  flex: 1, 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center',
+                  padding: '0.4rem 0.3rem', 
+                  backgroundColor: '#4d4d1a', 
+                  borderRadius: '4px',
+                  gap: '0.3rem'
+                }}>
+                  <span style={{ fontSize: '0.75rem', color: '#cccc88' }}>平</span>
+                  <span style={{ fontSize: '1rem', fontWeight: 'bold', color: '#ffc107' }}>{headToHeadStats.draws}</span>
+                </div>
+                <div style={{ 
+                  flex: 1, 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center',
+                  padding: '0.4rem 0.3rem', 
+                  backgroundColor: '#4d1a1a', 
+                  borderRadius: '4px',
+                  gap: '0.3rem'
+                }}>
+                  <span style={{ fontSize: '0.75rem', color: '#cc8888' }}>负</span>
+                  <span style={{ fontSize: '1rem', fontWeight: 'bold', color: '#f44336' }}>{headToHeadStats.losses}</span>
                 </div>
               </div>
-              <div style={{ textAlign: 'center', padding: '0.8rem', backgroundColor: '#333', borderRadius: '6px' }}>
-                <div style={{ fontSize: '0.85rem', color: '#888', marginBottom: '0.3rem' }}>客场战绩</div>
-                <div style={{ fontSize: '1rem', fontWeight: 'bold', color: '#fff' }}>
-                  {headToHeadStats.away.wins}胜 {headToHeadStats.away.draws}平 {headToHeadStats.away.losses}负
+
+              <div style={{ display: 'flex', gap: '0.35rem' }}>
+                <div style={{ 
+                  flex: 1, 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center',
+                  padding: '0.4rem 0.3rem', 
+                  backgroundColor: '#333', 
+                  borderRadius: '4px',
+                  gap: '0.3rem'
+                }}>
+                  <span style={{ fontSize: '0.75rem', color: '#888' }}>进球</span>
+                  <span style={{ fontSize: '1rem', fontWeight: 'bold', color: '#4caf50' }}>{headToHeadStats.goalsFor}</span>
+                </div>
+                <div style={{ 
+                  flex: 1, 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center',
+                  padding: '0.4rem 0.3rem', 
+                  backgroundColor: '#333', 
+                  borderRadius: '4px',
+                  gap: '0.3rem'
+                }}>
+                  <span style={{ fontSize: '0.75rem', color: '#888' }}>失球</span>
+                  <span style={{ fontSize: '1rem', fontWeight: 'bold', color: '#f44336' }}>{headToHeadStats.goalsAgainst}</span>
+                </div>
+                <div style={{ 
+                  flex: 1, 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center',
+                  padding: '0.4rem 0.3rem', 
+                  backgroundColor: '#333', 
+                  borderRadius: '4px',
+                  gap: '0.3rem'
+                }}>
+                  <span style={{ fontSize: '0.75rem', color: '#888' }}>净胜</span>
+                  <span style={{ 
+                    fontSize: '1rem', 
+                    fontWeight: 'bold', 
+                    color: headToHeadStats.goalsFor - headToHeadStats.goalsAgainst >= 0 ? '#4caf50' : '#f44336'
+                  }}>
+                    {headToHeadStats.goalsFor - headToHeadStats.goalsAgainst >= 0 ? '+' : ''}{headToHeadStats.goalsFor - headToHeadStats.goalsAgainst}
+                  </span>
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', gap: '0.35rem' }}>
+                <div style={{ 
+                  flex: 1, 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center',
+                  padding: '0.4rem 0.3rem', 
+                  backgroundColor: '#333', 
+                  borderRadius: '4px',
+                  gap: '0.25rem'
+                }}>
+                  <span style={{ fontSize: '0.7rem', color: '#888' }}>主场</span>
+                  <span style={{ fontSize: '0.85rem', fontWeight: 'bold', color: '#4caf50' }}>{headToHeadStats.home.wins}</span>
+                  <span style={{ fontSize: '0.85rem', color: '#ffc107' }}>{headToHeadStats.home.draws}</span>
+                  <span style={{ fontSize: '0.85rem', color: '#f44336' }}>{headToHeadStats.home.losses}</span>
+                </div>
+                <div style={{ 
+                  flex: 1, 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center',
+                  padding: '0.4rem 0.3rem', 
+                  backgroundColor: '#333', 
+                  borderRadius: '4px',
+                  gap: '0.25rem'
+                }}>
+                  <span style={{ fontSize: '0.7rem', color: '#888' }}>客场</span>
+                  <span style={{ fontSize: '0.85rem', fontWeight: 'bold', color: '#4caf50' }}>{headToHeadStats.away.wins}</span>
+                  <span style={{ fontSize: '0.85rem', color: '#ffc107' }}>{headToHeadStats.away.draws}</span>
+                  <span style={{ fontSize: '0.85rem', color: '#f44336' }}>{headToHeadStats.away.losses}</span>
                 </div>
               </div>
             </div>
@@ -372,6 +452,68 @@ const History: React.FC = () => {
         ) : showHeadToHead && selectedOpponent && headToHeadMatches.length === 0 ? (
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px' }}>
             <div style={{ fontSize: '1.2rem', color: '#888' }}>暂无与 {selectedOpponent} 的交锋记录</div>
+          </div>
+        ) : showHeadToHead && selectedOpponent && headToHeadMatches.length > 0 ? (
+          <div className="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>日期</th>
+                  <th>赛季</th>
+                  <th>类型</th>
+                  <th>轮次</th>
+                  <th>主队</th>
+                  <th>客队</th>
+                  <th>比分</th>
+                  <th>结果</th>
+                  <th>报告</th>
+                </tr>
+              </thead>
+              <tbody>
+                {headToHeadMatches.map((match, index) => {
+                  const isOurTeamHome = OUR_TEAM_NAMES.includes(match.home_team);
+                  const isOurTeamAway = OUR_TEAM_NAMES.includes(match.away_team);
+                  
+                  return (
+                    <tr key={index}>
+                      <td style={{ whiteSpace: 'nowrap' }}>{match.date || '-'}</td>
+                      <td>{match.season || '-'}</td>
+                      <td style={{ fontSize: '0.85rem' }}>{match.match_type || '-'}</td>
+                      <td style={{ fontSize: '0.85rem' }}>{match.round || '-'}</td>
+                      <td style={{ 
+                        fontWeight: isOurTeamHome ? 'bold' : 'normal',
+                        color: isOurTeamHome ? '#c00010' : 'inherit'
+                      }}>
+                        {match.home_team || '-'}
+                      </td>
+                      <td style={{ 
+                        fontWeight: isOurTeamAway ? 'bold' : 'normal',
+                        color: isOurTeamAway ? '#c00010' : 'inherit'
+                      }}>
+                        {match.away_team || '-'}
+                      </td>
+                      <td style={{ fontWeight: 'bold' }}>{match.result || '-'}</td>
+                      <td style={{
+                        fontWeight: 'bold',
+                        color: match.win_loss === '胜' ? '#4caf50' : 
+                               match.win_loss === '负' ? '#f44336' : 
+                               match.win_loss === '平' ? '#ffc107' : 'inherit'
+                      }}>
+                        {match.win_loss || '-'}
+                      </td>
+                      <td>
+                        <a 
+                          href={`match-report.html?date=${match.date}&type=${encodeURIComponent(match.match_type)}&round=${encodeURIComponent(match.round)}&source=h`}
+                          style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold', fontSize: '0.85rem' }}
+                        >
+                          查看
+                        </a>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
           </div>
         ) : seasons.length > 0 ? (
           <div>
@@ -394,14 +536,7 @@ const History: React.FC = () => {
                     }}
                     onClick={() => toggleSeason(season)}
                   >
-                    <h3 style={{ margin: 0, color: '#c00010' }}>
-                      {season}赛季
-                      {showHeadToHead && selectedOpponent && (
-                        <span style={{ fontSize: '0.85rem', color: '#888', marginLeft: '0.5rem', fontWeight: 'normal' }}>
-                          ({matches.length}场)
-                        </span>
-                      )}
-                    </h3>
+                    <h3 style={{ margin: 0, color: '#c00010' }}>{season}赛季</h3>
                     <span style={{ fontSize: '1.2rem' }}>{isExpanded ? '▼' : '▶'}</span>
                   </div>
                   

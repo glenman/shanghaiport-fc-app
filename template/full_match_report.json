@@ -1,0 +1,839 @@
+{
+  "match": {
+    "id": 2,
+    "round": "第3轮",
+    "date": "2026-03-20",
+    "time": "19:00",
+    "homeTeam": "大连英博",
+    "awayTeam": "上海海港",
+    "venue": "大连梭鱼湾足球场",
+    "city": "大连",
+    "result": "1-0",
+    "status": "已结束",
+    "attendance": "未知",
+    "referee": "王竞",
+    "weather": "未知",
+    "competition": "中国足球协会超级联赛",
+    "matchweek": 3,
+    "season": "2026"
+  },
+  "matchDetails": {
+    "stadiumCapacity": "63000",
+    "pitchCondition": "良好",
+    "temperature": "12°C",
+    "kickoffTime": "19:00",
+    "halftimeScore": "0-0",
+    "fulltimeScore": "1-0"
+  },
+  "officials": {
+    "referee": "王竞",
+    "assistantReferee1": "胡成军",
+    "assistantReferee2": "王宇",
+    "fourthOfficial": "马运坤",
+    "VAR": "甘树然"
+  },
+  "seasonRecords": {
+    "home": {
+      "currentPosition": "未知",
+      "matchesPlayed": 3,
+      "record": "1胜0平2负",
+      "points": 3,
+      "goalsFor": 4,
+      "goalsAgainst": 5,
+      "form": "LWL"
+    },
+    "away": {
+      "currentPosition": "未知",
+      "matchesPlayed": 3,
+      "record": "1胜0平2负",
+      "points": 3,
+      "goalsFor": 3,
+      "goalsAgainst": 4,
+      "form": "LWL"
+    }
+  },
+  "lineups": {
+    "home": {
+      "name": "大连英博",
+      "formation": "4-3-2-1",
+      "manager": "李国旭",
+      "captain": "塞法斯·马莱莱",
+      "players": [
+        {
+          "number": 26,
+          "name": "黄子豪",
+          "position": "门将",
+          "nationality": "中国",
+          "age": "24-284",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 38,
+          "name": "卢卓毅",
+          "position": "右后卫",
+          "nationality": "中国",
+          "age": "24-338",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 24,
+          "name": "毕津浩",
+          "position": "中后卫",
+          "nationality": "中国",
+          "age": "35-074",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 2,
+          "name": "马马杜·特拉奥雷",
+          "position": "中后卫",
+          "nationality": "马里",
+          "age": "31-168",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 22,
+          "name": "毛伟杰",
+          "position": "左后卫",
+          "nationality": "中国",
+          "age": "20-296",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 40,
+          "name": "廖锦涛",
+          "position": "后腰",
+          "nationality": "中国",
+          "age": "26-024",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 4,
+          "name": "伊斯尼克·阿利米",
+          "position": "后腰",
+          "nationality": "北马其顿",
+          "age": "32-046",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 30,
+          "name": "弗兰克·阿切姆蓬",
+          "position": "攻击型中场",
+          "nationality": "加纳",
+          "age": "32-155",
+          "minutes": 80,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "尼古拉耶·斯坦丘",
+          "position": "攻击型中场",
+          "nationality": "罗马尼亚",
+          "age": "32-317",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 27,
+          "name": "杨明瑞",
+          "position": "攻击型中场",
+          "nationality": "中国",
+          "age": "18-349",
+          "minutes": 70,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 11,
+          "name": "塞法斯·马莱莱",
+          "position": "前锋",
+          "nationality": "瑞士",
+          "age": "32-071",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 7,
+          "name": "罗靖",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "32-136",
+          "substitutedAt": 71,
+          "substitutedFor": "杨明瑞"
+        },
+        {
+          "number": 23,
+          "name": "黄山",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "19-362",
+          "substitutedAt": 81,
+          "substitutedFor": "弗兰克·阿切姆蓬"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海海港",
+      "formation": "4-2-3-1",
+      "manager": "凯文·穆斯卡特",
+      "captain": "颜骏凌",
+      "players": [
+        {
+          "number": 1,
+          "name": "颜骏凌",
+          "position": "门将",
+          "nationality": "中国",
+          "age": "35-051",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 22,
+          "name": "杨希",
+          "position": "右后卫",
+          "nationality": "中国",
+          "age": "20-280",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 13,
+          "name": "魏震",
+          "position": "中后卫",
+          "nationality": "中国",
+          "age": "29-036",
+          "minutes": 45,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 40,
+          "name": "吾米提江",
+          "position": "中后卫",
+          "nationality": "中国",
+          "age": "22-020",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 32,
+          "name": "李帅",
+          "position": "左后卫",
+          "nationality": "中国",
+          "age": "30-275",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 8,
+          "name": "让克劳德",
+          "position": "后腰",
+          "nationality": "多哥",
+          "age": "22-096",
+          "minutes": 79,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "维塔尔",
+          "position": "后腰",
+          "nationality": "巴西",
+          "age": "28-036",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 47,
+          "name": "蒯纪闻",
+          "position": "右边锋",
+          "nationality": "中国",
+          "age": "20-020",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 11,
+          "name": "加布里埃尔",
+          "position": "攻击型中场",
+          "nationality": "巴西",
+          "age": "29-356",
+          "minutes": 79,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 17,
+          "name": "安佩姆",
+          "position": "左边锋",
+          "nationality": "加纳",
+          "age": "27-341",
+          "minutes": 79,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 45,
+          "name": "莱昂纳多",
+          "position": "前锋",
+          "nationality": "巴西",
+          "age": "28-296",
+          "minutes": 69,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 5,
+          "name": "张琳芃",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "36-315",
+          "substitutedAt": 46,
+          "substitutedFor": "魏震"
+        },
+        {
+          "number": 7,
+          "name": "武磊",
+          "position": "前锋",
+          "nationality": "中国",
+          "age": "34-121",
+          "substitutedAt": 70,
+          "substitutedFor": "莱昂纳多"
+        },
+        {
+          "number": 33,
+          "name": "刘祝润",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "24-165",
+          "substitutedAt": 80,
+          "substitutedFor": "安佩姆"
+        },
+        {
+          "number": 38,
+          "name": "卢永涛",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "26-067",
+          "substitutedAt": 80,
+          "substitutedFor": "让克劳德"
+        },
+        {
+          "number": 49,
+          "name": "李新翔",
+          "position": "前锋",
+          "nationality": "中国",
+          "age": "20-110",
+          "substitutedAt": 80,
+          "substitutedFor": "加布里埃尔"
+        }
+      ]
+    }
+  },
+  "detailedPlayerStats": {
+    "home": [
+      {
+        "player": "弗兰克·阿切姆蓬",
+        "number": 30,
+        "position": "DM",
+        "age": "32-155",
+        "minutes": 80,
+        "shots": 2,
+        "shotsOnTarget": 1,
+        "goals": 1,
+        "assists": 0,
+        "keyPasses": 0,
+        "crosses": 3,
+        "tacklesWon": 1,
+        "interceptions": 1,
+        "foulsCommitted": 0,
+        "foulsWon": 2,
+        "offsides": 4,
+        "yellowCards": 0,
+        "redCards": 0
+      },
+      {
+        "player": "塞法斯·马莱莱",
+        "number": 11,
+        "position": "FW",
+        "age": "32-071",
+        "minutes": 90,
+        "shots": 2,
+        "shotsOnTarget": 0,
+        "goals": 0,
+        "assists": 1,
+        "keyPasses": 1,
+        "crosses": 1,
+        "tacklesWon": 0,
+        "interceptions": 0,
+        "foulsCommitted": 6,
+        "foulsWon": 2,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      }
+    ],
+    "away": [
+      {
+        "player": "让克劳德",
+        "number": 8,
+        "position": "DM",
+        "age": "22-096",
+        "minutes": 79,
+        "shots": 2,
+        "shotsOnTarget": 1,
+        "goals": 0,
+        "assists": 0,
+        "keyPasses": 0,
+        "crosses": 0,
+        "tacklesWon": 3,
+        "interceptions": 0,
+        "foulsCommitted": 1,
+        "foulsWon": 0,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      },
+      {
+        "player": "维塔尔",
+        "number": 10,
+        "position": "DM",
+        "age": "28-036",
+        "minutes": 90,
+        "shots": 2,
+        "shotsOnTarget": 0,
+        "goals": 0,
+        "assists": 0,
+        "keyPasses": 4,
+        "crosses": 4,
+        "tacklesWon": 1,
+        "interceptions": 0,
+        "foulsCommitted": 0,
+        "foulsWon": 3,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      }
+    ]
+  },
+  "matchTimeline": [
+    {
+      "minute": 22,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "吾米提江",
+      "description": "上海海港吾米提江获得黄牌"
+    },
+    {
+      "minute": 46,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "张琳芃",
+      "playerOut": "魏震",
+      "description": "上海海港张琳芃替换魏震上场"
+    },
+    {
+      "minute": 47,
+      "type": "goal",
+      "team": "home",
+      "scorer": "弗兰克·阿切姆蓬",
+      "assist": "塞法斯·马莱莱",
+      "description": "大连英博1-0领先"
+    },
+    {
+      "minute": 57,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "毕津浩",
+      "description": "大连英博毕津浩获得黄牌"
+    },
+    {
+      "minute": 64,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "卢卓毅",
+      "description": "大连英博卢卓毅获得黄牌"
+    },
+    {
+      "minute": 70,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "武磊",
+      "playerOut": "莱昂纳多",
+      "description": "上海海港武磊替换莱昂纳多上场"
+    },
+    {
+      "minute": 71,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "罗靖",
+      "playerOut": "杨明瑞",
+      "description": "大连英博罗靖替换杨明瑞上场"
+    },
+    {
+      "minute": 80,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "刘祝润",
+      "playerOut": "安佩姆",
+      "description": "上海海港刘祝润替换安佩姆上场"
+    },
+    {
+      "minute": 81,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "黄山",
+      "playerOut": "弗兰克·阿切姆蓬",
+      "description": "大连英博黄山替换弗兰克·阿切姆蓬上场"
+    },
+    {
+      "minute": 82,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "刘祝润",
+      "description": "上海海港刘祝润获得黄牌"
+    }
+  ],
+  "tacticalAnalysis": {
+    "homeFormation": "4-3-2-1",
+    "awayFormation": "4-2-3-1",
+    "possession": {
+      "home": 32,
+      "away": 68
+    },
+    "attackDirection": {
+      "home": "防守反击",
+      "away": "控球进攻"
+    },
+    "defensiveLine": {
+      "home": "中位防守",
+      "away": "高位压迫"
+    },
+    "playingStyle": {
+      "home": "快速反击，利用边路传中",
+      "away": "控球主导，阵地进攻"
+    }
+  },
+  "statistics": [
+    {
+      "name": "控球率",
+      "home": "32%",
+      "away": "68%"
+    },
+    {
+      "name": "射门",
+      "home": "10",
+      "away": "8"
+    },
+    {
+      "name": "射正",
+      "home": "1",
+      "away": "1"
+    },
+    {
+      "name": "射门准确率",
+      "home": "10%",
+      "away": "13%"
+    },
+    {
+      "name": "扑救",
+      "home": "1",
+      "away": "0"
+    },
+    {
+      "name": "扑救成功率",
+      "home": "100%",
+      "away": "0%"
+    },
+    {
+      "name": "犯规",
+      "home": "13",
+      "away": "11"
+    },
+    {
+      "name": "角球",
+      "home": "6",
+      "away": "6"
+    },
+    {
+      "name": "传中",
+      "home": "15",
+      "away": "23"
+    },
+    {
+      "name": "拦截",
+      "home": "4",
+      "away": "2"
+    },
+    {
+      "name": "越位",
+      "home": "4",
+      "away": "1"
+    },
+    {
+      "name": "黄牌",
+      "home": "2",
+      "away": "2"
+    },
+    {
+      "name": "红牌",
+      "home": "0",
+      "away": "0"
+    }
+  ],
+  "keyMetrics": {
+    "expectedGoals": {
+      "home": 0.8,
+      "away": 1.2
+    },
+    "bigChances": {
+      "home": 1,
+      "away": 2
+    },
+    "passAccuracy": {
+      "home": "78%",
+      "away": "85%"
+    },
+    "aerialDuelsWon": {
+      "home": "45%",
+      "away": "55%"
+    },
+    "successfulDribbles": {
+      "home": 8,
+      "away": 12
+    },
+    "keyPasses": {
+      "home": 4,
+      "away": 8
+    }
+  },
+  "playerRatings": {
+    "manOfTheMatch": "弗兰克·阿切姆蓬",
+    "homeBestPlayer": "弗兰克·阿切姆蓬",
+    "awayBestPlayer": "让克劳德",
+    "topPerformers": [
+      {
+        "name": "弗兰克·阿切姆蓬",
+        "team": "home",
+        "rating": 8.5,
+        "summary": "打入制胜球，全场表现活跃，防守进攻俱佳"
+      },
+      {
+        "name": "黄子豪",
+        "team": "home",
+        "rating": 8.0,
+        "summary": "门将表现稳健，完成关键扑救力保球门不失"
+      },
+      {
+        "name": "让克劳德",
+        "team": "away",
+        "rating": 7.5,
+        "summary": "中场控制力强，射门威胁较大"
+      }
+    ]
+  },
+  "headToHead": {
+    "totalMatches": 15,
+    "homeWins": 6,
+    "awayWins": 7,
+    "draws": 2,
+    "lastMeeting": "2025-10-15 上海海港2-1大连英博",
+    "trend": "上海海港稍占优势"
+  },
+  "socialMedia": {
+    "hashtags": ["#大连英博VS上海海港", "#中超2026"],
+    "fanSentiment": {
+      "home": "积极",
+      "away": "失望"
+    },
+    "matchTrending": true
+  },
+  "summary": "大连英博主场1-0小胜上海海港，弗兰克·阿切姆蓬在第47分钟打入制胜球，助攻来自塞法斯·马莱莱。上海海港控球率占优（68%），但进攻效率低下，仅1次射正；大连英博防守稳固，门将黄子豪完成1次扑救。",
+  "keyFactors": [
+    "大连英博防守反击战术成功，虽然控球率只有32%但效率更高",
+    "弗兰克·阿切姆蓬的关键进球决定了比赛结果",
+    "上海海港控球率占优但射门效率低下，仅1次射正",
+    "大连英博门将黄子豪扑救成功率100%，力保球门不失",
+    "上海海港进攻组织缺乏有效性，传中23次但效果不佳"
+  ],
+  "highlights": [
+    {
+      "time": "22'",
+      "description": "上海海港吾米提江获得黄牌",
+      "type": "card",
+      "team": "away",
+      "player": "吾米提江",
+      "cardType": "yellow"
+    },
+    {
+      "time": "47'",
+      "description": "大连英博弗兰克·阿切姆蓬进球，助攻塞法斯·马莱莱",
+      "type": "goal",
+      "team": "home",
+      "player": "弗兰克·阿切姆蓬",
+      "assist": "塞法斯·马莱莱"
+    },
+    {
+      "time": "57'",
+      "description": "大连英博毕津浩获得黄牌",
+      "type": "card",
+      "team": "home",
+      "player": "毕津浩",
+      "cardType": "yellow"
+    },
+    {
+      "time": "64'",
+      "description": "大连英博卢卓毅获得黄牌",
+      "type": "card",
+      "team": "home",
+      "player": "卢卓毅",
+      "cardType": "yellow"
+    },
+    {
+      "time": "70'",
+      "description": "上海海港武磊替换莱昂纳多上场",
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "武磊",
+      "playerOut": "莱昂纳多"
+    },
+    {
+      "time": "71'",
+      "description": "大连英博罗靖替换杨明瑞上场",
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "罗靖",
+      "playerOut": "杨明瑞"
+    },
+    {
+      "time": "80'",
+      "description": "上海海港刘祝润替换安佩姆上场",
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "刘祝润",
+      "playerOut": "安佩姆"
+    },
+    {
+      "time": "81'",
+      "description": "大连英博黄山替换弗兰克·阿切姆蓬上场",
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "黄山",
+      "playerOut": "弗兰克·阿切姆蓬"
+    },
+    {
+      "time": "82'",
+      "description": "上海海港刘祝润获得黄牌",
+      "type": "card",
+      "team": "away",
+      "player": "刘祝润",
+      "cardType": "yellow"
+    }
+  ],
+  "matchAnalysis": {
+    "tacticalSummary": "大连英博采用防守反击战术，在控球率仅32%的情况下依靠高效反击取胜。上海海港控球占优但进攻效率低下，未能将控球优势转化为进球。",
+    "keyMoments": [
+      "第47分钟弗兰克·阿切姆蓬的进球是比赛转折点",
+      "上海海港全场23次传中但效果不佳",
+      "大连英博门将黄子豪的关键扑救确保胜利"
+    ],
+    "teamPerformance": {
+      "home": {
+        "strengths": ["防守组织严密", "反击效率高", "门将表现稳定"],
+        "weaknesses": ["控球能力不足", "进攻机会有限"]
+      },
+      "away": {
+        "strengths": ["控球优势明显", "传中次数多", "中场控制力强"],
+        "weaknesses": ["射门效率低下", "进攻转化率差", "防守漏洞明显"]
+      }
+    }
+  },
+  "postMatchComments": {
+    "homeManager": "李国旭：球队展现了顽强的防守和高效的反击，对球员们的表现感到满意。",
+    "awayManager": "凯文·穆斯卡特：控球占优但效率不足，需要改进进攻端的表现。",
+    "manOfTheMatchComment": "弗兰克·阿切姆蓬：很高兴能为球队贡献进球，这是团队努力的结果。"
+  },
+  "nextMatches": {
+    "home": {
+      "opponent": "待定",
+      "date": "2026-03-27",
+      "venue": "客场"
+    },
+    "away": {
+      "opponent": "待定", 
+      "date": "2026-03-27",
+      "venue": "主场"
+    }
+  }
+}
