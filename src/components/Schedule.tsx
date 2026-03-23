@@ -11,6 +11,7 @@ interface Match {
   city: string;
   result: string;
   status: string;
+  type: string;
 }
 
 type TeamTab = 'first' | 'b';
@@ -147,7 +148,7 @@ const Schedule: React.FC = () => {
           <>
             {activeTab === 'first' && (
               <div className="team-section">
-                <h3 className="team-title">2026赛季中超联赛</h3>
+                <h3 className="team-title">2026-2027赛季</h3>
                 <div style={{ marginBottom: '15px', fontSize: '0.95rem', color: '#666' }}>
                   <span style={{ marginRight: '30px' }}>主教练：凯文·穆斯卡特</span>
                   <span>助理教练：托尼·维德马</span>
@@ -156,9 +157,10 @@ const Schedule: React.FC = () => {
                   <table>
                     <thead>
                       <tr>
-                        <th>轮次</th>
                         <th>日期</th>
                         <th>星期</th>
+                        <th>比赛类型</th>
+                        <th>轮次</th>
                         <th>时间</th>
                         <th>主队</th>
                         <th>比分</th>
@@ -201,14 +203,15 @@ const Schedule: React.FC = () => {
                         
                         return (
                           <tr key={match.id || index}>
-                            <td>{match.round || '-'}</td>
                             <td>{match.date || '-'}</td>
                             <td>{match.date ? getDayOfWeek(match.date) : '-'}</td>
+                            <td>{match.type || '-'}</td>
+                            <td>{match.round || '-'}</td>
                             <td>{match.time || '-'}</td>
                             <td>{match.homeTeam || '-'}</td>
                             <td>
                               {match.status === '已结束' ? (
-                                <a href={`match-report-v2.html?date=${match.date}&type=${encodeURIComponent('中超')}&round=${encodeURIComponent(match.round)}`} style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
+                                <a href={`match-report-v2.html?date=${match.date}&type=${encodeURIComponent(match.type)}&round=${encodeURIComponent(match.round)}`} style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
                                   {match.result}
                                 </a>
                               ) : (
@@ -229,7 +232,7 @@ const Schedule: React.FC = () => {
             )}
             {activeTab === 'b' && (
               <div className="team-section">
-                <h3 className="team-title">2026赛季中乙联赛</h3>
+                <h3 className="team-title">2026赛季</h3>
                 <div style={{ marginBottom: '15px', fontSize: '0.95rem', color: '#666' }}>
                   <span style={{ marginRight: '30px' }}>主教练：成耀东</span>
                   <span>助理教练：于海</span>
@@ -238,9 +241,10 @@ const Schedule: React.FC = () => {
                   <table>
                     <thead>
                       <tr>
-                        <th>轮次</th>
                         <th>日期</th>
                         <th>星期</th>
+                        <th>比赛类型</th>
+                        <th>轮次</th>
                         <th>时间</th>
                         <th>主队</th>
                         <th>比分</th>
@@ -283,14 +287,15 @@ const Schedule: React.FC = () => {
                         
                         return (
                           <tr key={match.id || index}>
-                            <td>{match.round || '-'}</td>
                             <td>{match.date || '-'}</td>
                             <td>{match.date ? getDayOfWeek(match.date) : '-'}</td>
+                            <td>{match.type || '-'}</td>
+                            <td>{match.round || '-'}</td>
                             <td>{match.time || '-'}</td>
                             <td>{match.homeTeam || '-'}</td>
                             <td>
                               {match.status === '已结束' ? (
-                                <a href={`match-report.html?date=${match.date}&type=${encodeURIComponent('中乙')}&round=${encodeURIComponent(match.round)}`} style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
+                                <a href={`match-report.html?date=${match.date}&type=${encodeURIComponent(match.type)}&round=${encodeURIComponent(match.round)}`} style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
                                   {match.result}
                                 </a>
                               ) : (
