@@ -74,7 +74,7 @@ const Seasons: React.FC = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [isMobile]);
 
   const filteredSeasons = seasonsData.filter(season => {
     const matchesSearch = searchTerm === '' || 
@@ -103,9 +103,49 @@ const Seasons: React.FC = () => {
     if (seasonsData.length === 0) return null;
     
     const sortedSeasons = [...seasonsData].sort((a, b) => parseInt(a.season) - parseInt(b.season));
-    const maxPoints = Math.max(...sortedSeasons.map(s => s.points));
-    const minPoints = Math.min(...sortedSeasons.map(s => s.points));
-    const pointsRange = maxPoints - minPoints || 1;
+    
+    // 将排名转换为数值
+    const getRankValue = (rank: string): number => {
+      // 调试：检查2006年的排名转换
+      if (rank === '南区第 7') {
+        console.log('2006年排名:', rank);
+        console.log('替换后:', rank.replace('南区第', ''));
+        console.log('trim后:', rank.replace('南区第', '').trim());
+        console.log('转换数值:', parseInt(rank.replace('南区第', '').trim()));
+      }
+      
+      if (rank === '冠军') return 1;
+      if (rank === '亚军') return 2;
+      if (rank === '季军') return 3;
+      // 处理"南区第 X"格式
+      if (rank.includes('南区第')) {
+        const num = parseInt(rank.replace('南区第', '').trim());
+        console.log('南区排名转换:', rank, '->', num);
+        return isNaN(num) ? 16 : num;
+      }
+      // 处理"第 X"格式（带空格）
+      if (rank.includes('第') && !rank.includes('名')) {
+        const num = parseInt(rank.replace('第', '').trim());
+        return isNaN(num) ? 16 : num;
+      }
+      // 处理"第X名"格式
+      if (rank.includes('第') && rank.includes('名')) {
+        const num = parseInt(rank.replace('第', '').replace('名', ''));
+        return isNaN(num) ? 16 : num;
+      }
+      // 处理"X 强"格式
+      if (rank.includes('强')) {
+        const num = parseInt(rank.split(' ')[0]);
+        return isNaN(num) ? 16 : num;
+      }
+      console.log('未处理的排名:', rank);
+      return 16; // 默认值
+    };
+    
+    // Y轴固定为1-16的范围，排名1在最上方，排名16在最下方
+    const minRank = 1;
+    const maxRank = 16;
+    const rankRange = maxRank - minRank || 1;
 
     const chartHeight = 200;
     const padding = 40;
@@ -114,7 +154,9 @@ const Seasons: React.FC = () => {
 
     const points = sortedSeasons.map((season, index) => {
       const x = padding + (index / (sortedSeasons.length - 1)) * effectiveWidth;
-      const y = padding + effectiveHeight - ((season.points - minPoints) / pointsRange) * effectiveHeight;
+      const rankValue = getRankValue(season.rank);
+      // 排名越小越好，所以y坐标需要反转
+      const y = padding + ((rankValue - minRank) / rankRange) * effectiveHeight;
       return { x, y, season };
     });
 
@@ -157,6 +199,52 @@ const Seasons: React.FC = () => {
             stroke="#555"
             strokeWidth={Math.max(0.5, 1 * scale)}
           />
+          
+          {/* 冠军线（排名1） */}
+          <line
+            x1={padding}
+            y1={padding}
+            x2={chartWidth - padding}
+            y2={padding}
+            stroke="#c0392b"
+            strokeWidth={Math.max(1, 2 * scale)}
+            strokeDasharray="5,5"
+          />
+          
+          {/* 亚冠区（前4名） */}
+          <rect
+            x={padding}
+            y={padding}
+            width={chartWidth - padding * 2}
+            height={((4 - minRank) / rankRange) * effectiveHeight}
+            fill="#3498db"
+            opacity={0.1}
+          />
+          
+          {/* 保级线（排名13） */}
+          <line
+            x1={padding}
+            y1={padding + ((13 - minRank) / rankRange) * effectiveHeight}
+            x2={chartWidth - padding}
+            y2={padding + ((13 - minRank) / rankRange) * effectiveHeight}
+            stroke="#f39c12"
+            strokeWidth={Math.max(1, 2 * scale)}
+            strokeDasharray="10,5"
+          />
+          
+          {/* Y轴刻度标签（1-16） */}
+          {Array.from({ length: maxRank - minRank + 1 }, (_, i) => minRank + i).map(rank => (
+            <text
+              key={rank}
+              x={padding - 10}
+              y={padding + ((rank - minRank) / rankRange) * effectiveHeight + 5}
+              textAnchor="end"
+              fill="#888"
+              fontSize={Math.max(8, 10 * scale)}
+            >
+              {rank}
+            </text>
+          ))}
 
           <path
             d={pathD}
@@ -170,6 +258,7 @@ const Seasons: React.FC = () => {
           {points.map((p, i) => {
             const seasonData = sortedSeasons[i];
             const icon = getRankIcon(seasonData.rank);
+            const rankValue = getRankValue(seasonData.rank);
             return (
               <g key={i}>
                 <circle
@@ -180,6 +269,7 @@ const Seasons: React.FC = () => {
                   stroke="#fff"
                   strokeWidth={Math.max(1, 2 * scale)}
                 />
+                {/* 名次数值标签 */}
                 <text
                   x={p.x}
                   y={p.y - textOffset}
@@ -188,7 +278,7 @@ const Seasons: React.FC = () => {
                   fontSize={fontSize}
                   fontWeight="bold"
                 >
-                  {seasonData.points}分
+                  {rankValue}
                 </text>
                 <text
                   x={p.x}

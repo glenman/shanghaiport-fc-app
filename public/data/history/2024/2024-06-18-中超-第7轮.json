@@ -1,246 +1,602 @@
 {
-  "match": {
-    "id": 15,
-    "round": "第7轮",
+  "match_info": {
+    "match_id": "7bc61277",
     "date": "2024-06-18",
-    "time": "19:35",
-    "homeTeam": "梅州客家",
-    "awayTeam": "上海海港",
-    "venue": null,
-    "city": "未知",
-    "result": "1-2",
-    "status": "已结束",
-    "attendance": null,
-    "referee": null,
-    "weather": "未知",
-    "competition": "中国足球协会超级联赛",
-    "matchweek": 7,
-    "season": "2024"
-  },
-  "matchDetails": {
-    "stadiumCapacity": "未知",
-    "pitchCondition": "良好",
-    "temperature": "未知",
-    "kickoffTime": "19:35",
-    "halftimeScore": null,
-    "fulltimeScore": null
-  },
-  "officials": {
-    "referee": null,
-    "assistantReferee1": "未知",
-    "assistantReferee2": "未知",
-    "fourthOfficial": "未知",
-    "VAR": "未知"
-  },
-  "seasonRecords": {
-    "home": {
-      "currentPosition": "未知",
-      "matchesPlayed": 0,
-      "record": "未知",
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "form": ""
+    "time": "20:00",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2024",
+      "round": "Matchweek 15"
     },
-    "away": {
-      "currentPosition": "未知",
-      "matchesPlayed": 0,
-      "record": "未知",
-      "points": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "form": ""
+    "venue": {
+      "name": "上汽浦东足球场",
+      "city": "上海",
+      "attendance": 0
+    },
+    "referee": {
+      "name": "待补充",
+      "country": "China"
     }
   },
-  "lineups": {
+  "teams": {
     "home": {
-      "name": "梅州客家",
-      "formation": "4-3-3",
-      "manager": "未知",
-      "captain": "未知",
-      "players": [],
-      "substitutes": []
+      "name": "Meizhou Hakka",
+      "full_name": "Meizhou Hakka",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "3-4-3",
+      "coach": "待补充",
+      "captain": "待补充",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 18,
+          "name": "Cheng Yuelei",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 5,
+          "name": "Ziyi Tian",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 6,
+          "name": "Liao Junjian",
+          "country": "中国"
+        },
+        {
+          "position": "FW",
+          "number": 7,
+          "name": "Ye Chugui",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 8,
+          "name": "Tyrone Conraad",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 9,
+          "name": "Rooney Wankewai",
+          "country": "中国"
+        },
+        {
+          "position": "FW",
+          "number": 11,
+          "name": "Darick Kobie Morris",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 13,
+          "name": "Shi Liang",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 15,
+          "name": "Chen Zhechao",
+          "country": "中国"
+        },
+        {
+          "position": "FW",
+          "number": 27,
+          "name": "Nebojša Kosović",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 29,
+          "name": "Yue Tze Nam",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "GK",
+          "number": 1,
+          "name": "Mai Gaoling",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 41,
+          "name": "Guo Quanbo",
+          "country": "中国"
+        },
+        {
+          "position": "FW",
+          "number": 10,
+          "name": "Yin Hongbo",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 12,
+          "name": "Yin Congyao",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 14,
+          "name": "Ning Li",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 16,
+          "name": "Yang Chaosheng",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 17,
+          "name": "Yang Yihu",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 20,
+          "name": "Wang Jianan",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 25,
+          "name": "Rodrigo",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 36,
+          "name": "Zhang Xie",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 38,
+          "name": "Li Yongjia",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 42,
+          "name": "Wei Zhiwei",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 74,
+          "player_out": "Tyrone Conraad",
+          "player_in": "Yang Chaosheng"
+        },
+        {
+          "minute": 85,
+          "player_out": "Yue Tze Nam",
+          "player_in": "Rodrigo"
+        },
+        {
+          "minute": 85,
+          "player_out": "Rooney Wankewai",
+          "player_in": "Li Yongjia"
+        },
+        {
+          "minute": 86,
+          "player_out": "Shi Liang",
+          "player_in": "Wang Jianan"
+        },
+        {
+          "minute": 90,
+          "player_out": "Ziyi Tian",
+          "player_in": "Ning Li"
+        }
+      ]
     },
     "away": {
-      "name": "上海海港",
-      "formation": "4-3-3",
-      "manager": "未知",
-      "captain": "未知",
-      "players": [],
-      "substitutes": []
+      "name": "Shanghai Port",
+      "full_name": "上海海港足球俱乐部",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "4-2-3-1",
+      "coach": "待补充",
+      "captain": "待补充",
+      "lineup": [
+        {
+          "position": "GK",
+          "number": 1,
+          "name": "颜骏凌",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 3,
+          "name": "蒋光太",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 4,
+          "name": "王燊超",
+          "country": "中国"
+        },
+        {
+          "position": "FW",
+          "number": 7,
+          "name": "武磊",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 8,
+          "name": "奥斯卡",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 9,
+          "name": "古斯塔沃",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 13,
+          "name": "魏震",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 18,
+          "name": "莱奥·奇塔迪尼",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 22,
+          "name": "马修斯·尤萨",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 32,
+          "name": "李帅",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 33,
+          "name": "刘祝润",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "",
+          "number": 12,
+          "name": "陈威",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 2,
+          "name": "李昂",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 5,
+          "name": "张琳芃",
+          "country": "中国"
+        },
+        {
+          "position": "FW",
+          "number": 11,
+          "name": "吕文君",
+          "country": "中国"
+        },
+        {
+          "position": "",
+          "number": 14,
+          "name": "李圣龙",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 16,
+          "name": "徐新",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 17,
+          "name": "沈子贵",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 19,
+          "name": "王振澳",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 20,
+          "name": "杨世元",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 23,
+          "name": "傅欢",
+          "country": "中国"
+        },
+        {
+          "position": "FW",
+          "number": 27,
+          "name": "冯劲",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 31,
+          "name": "鲍世蒙",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "player_out": "王燊超",
+          "player_in": "包世萌"
+        },
+        {
+          "minute": 46,
+          "player_out": "刘祝润",
+          "player_in": "冯劲"
+        },
+        {
+          "minute": 80,
+          "player_out": "奇塔迪尼",
+          "player_in": "徐新"
+        },
+        {
+          "minute": 80,
+          "player_out": "武磊",
+          "player_in": "吕文君"
+        },
+        {
+          "minute": 90,
+          "player_out": "Li Shuai",
+          "player_in": "王振澳"
+        }
+      ]
     }
   },
-  "detailedPlayerStats": {
+  "events": [
+    {
+      "minute": 18,
+      "minute_extra": null,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Tyrone Conraad",
+      "description": "Tyrone Conraad 获得黄牌"
+    },
+    {
+      "minute": 46,
+      "minute_extra": null,
+      "type": "substitution",
+      "team": "away",
+      "player": "包世萌",
+      "player2": "王燊超",
+      "description": "Wang Shenchao 被换下，Bao Shimeng 替补登场"
+    },
+    {
+      "minute": 46,
+      "minute_extra": null,
+      "type": "substitution",
+      "team": "away",
+      "player": "冯劲",
+      "player2": "刘祝润",
+      "description": "Liu Zhurun 被换下，Feng Jing 替补登场"
+    },
+    {
+      "minute": 54,
+      "minute_extra": null,
+      "type": "goal",
+      "team": "away",
+      "player": "奇塔迪尼",
+      "player2": null,
+      "description": "Léo Cittadini 进球"
+    },
+    {
+      "minute": 62,
+      "minute_extra": null,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Ye Chugui",
+      "description": "Ye Chugui 获得黄牌"
+    },
+    {
+      "minute": 66,
+      "minute_extra": null,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Shi Liang",
+      "description": "Shi Liang 获得黄牌"
+    },
+    {
+      "minute": 66,
+      "minute_extra": null,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Nebojša Kosović",
+      "description": "Nebojša Kosović 获得黄牌"
+    },
+    {
+      "minute": 67,
+      "minute_extra": null,
+      "type": "goal",
+      "team": "away",
+      "player": "武磊",
+      "player2": "Oscar",
+      "description": "Wu Lei 进球 (助攻: Oscar)"
+    },
+    {
+      "minute": 72,
+      "minute_extra": null,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Ye Chugui",
+      "description": "Ye Chugui 获得黄牌"
+    },
+    {
+      "minute": 74,
+      "minute_extra": null,
+      "type": "substitution",
+      "team": "home",
+      "player": "Yang Chaosheng",
+      "player2": "Tyrone Conraad",
+      "description": "Tyrone Conraad 被换下，Yang Chaosheng 替补登场"
+    },
+    {
+      "minute": 80,
+      "minute_extra": null,
+      "type": "substitution",
+      "team": "away",
+      "player": "徐新",
+      "player2": "奇塔迪尼",
+      "description": "Léo Cittadini 被换下，Xu Xin 替补登场"
+    },
+    {
+      "minute": 80,
+      "minute_extra": null,
+      "type": "substitution",
+      "team": "away",
+      "player": "吕文君",
+      "player2": "武磊",
+      "description": "Wu Lei 被换下，Lü Wenjun 替补登场"
+    },
+    {
+      "minute": 84,
+      "minute_extra": null,
+      "type": "goal",
+      "team": "home",
+      "player": "Nebojša Kosović",
+      "player2": "Yang Chaosheng",
+      "description": "Nebojša Kosović 进球 (助攻: Yang Chaosheng)"
+    },
+    {
+      "minute": 85,
+      "minute_extra": null,
+      "type": "substitution",
+      "team": "home",
+      "player": "Rodrigo",
+      "player2": "Yue Tze Nam",
+      "description": "Yue Tze Nam 被换下，Rodrigo 替补登场"
+    },
+    {
+      "minute": 85,
+      "minute_extra": null,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Yongjia",
+      "player2": "Rooney Wankewai",
+      "description": "Rooney Wankewai 被换下，Li Yongjia 替补登场"
+    },
+    {
+      "minute": 86,
+      "minute_extra": null,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wang Jianan",
+      "player2": "Shi Liang",
+      "description": "Shi Liang 被换下，Wang Jianan 替补登场"
+    },
+    {
+      "minute": 90,
+      "minute_extra": null,
+      "type": "substitution",
+      "team": "home",
+      "player": "Ning Li",
+      "player2": "Ziyi Tian",
+      "description": "Ziyi Tian 被换下，Ning Li 替补登场"
+    },
+    {
+      "minute": 90,
+      "minute_extra": null,
+      "type": "substitution",
+      "team": "away",
+      "player": "王振澳",
+      "player2": "Li Shuai",
+      "description": "Li Shuai 被换下，Wang Zhen'ao 替补登场"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 5,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "王振澳",
+      "description": "Wang Zhen'ao 获得黄牌"
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": 36,
+      "away": 64
+    },
+    "shots_on_target": {
+      "home": 2,
+      "away": 11
+    },
+    "saves": {
+      "home": 9,
+      "away": 1
+    },
+    "fouls": {
+      "home": 13,
+      "away": 16
+    },
+    "corners": {
+      "home": 5,
+      "away": 6
+    },
+    "crosses": {
+      "home": 22,
+      "away": 34
+    },
+    "interceptions": {
+      "home": 12,
+      "away": 8
+    },
+    "offsides": {
+      "home": 4,
+      "away": 2
+    },
+    "shots": {
+      "home": 2,
+      "away": 11
+    },
+    "yellow_cards": {
+      "home": 5,
+      "away": 1
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "player_stats": {
     "home": [],
     "away": []
   },
-  "matchTimeline": [],
-  "tacticalAnalysis": {
-    "homeFormation": "4-3-3",
-    "awayFormation": "4-3-3",
-    "possession": {
-      "home": 50,
-      "away": 50
-    },
-    "attackDirection": {
-      "home": "未知",
-      "away": "未知"
-    },
-    "defensiveLine": {
-      "home": "未知",
-      "away": "未知"
-    },
-    "playingStyle": {
-      "home": "未知",
-      "away": "未知"
-    }
-  },
-  "statistics": [
-    {
-      "name": "控球率",
-      "home": "50%",
-      "away": "50%"
-    },
-    {
-      "name": "射门",
-      "home": "0",
-      "away": "0"
-    },
-    {
-      "name": "射正",
-      "home": "0",
-      "away": "0"
-    },
-    {
-      "name": "射门准确率",
-      "home": "0%",
-      "away": "0%"
-    },
-    {
-      "name": "扑救",
-      "home": "0",
-      "away": "0"
-    },
-    {
-      "name": "扑救成功率",
-      "home": "0%",
-      "away": "0%"
-    },
-    {
-      "name": "犯规",
-      "home": "0",
-      "away": "0"
-    },
-    {
-      "name": "角球",
-      "home": "0",
-      "away": "0"
-    },
-    {
-      "name": "传中",
-      "home": "0",
-      "away": "0"
-    },
-    {
-      "name": "拦截",
-      "home": "0",
-      "away": "0"
-    },
-    {
-      "name": "越位",
-      "home": "0",
-      "away": "0"
-    },
-    {
-      "name": "黄牌",
-      "home": "0",
-      "away": "0"
-    },
-    {
-      "name": "红牌",
-      "home": "0",
-      "away": "0"
-    }
-  ],
-  "keyMetrics": {
-    "expectedGoals": {
-      "home": 0,
-      "away": 0
-    },
-    "bigChances": {
-      "home": 0,
-      "away": 0
-    },
-    "passAccuracy": {
-      "home": "0%",
-      "away": "0%"
-    },
-    "aerialDuelsWon": {
-      "home": "0%",
-      "away": "0%"
-    },
-    "successfulDribbles": {
-      "home": 0,
-      "away": 0
-    },
-    "keyPasses": {
-      "home": 0,
-      "away": 0
-    }
-  },
-  "playerRatings": {
-    "manOfTheMatch": "未知",
-    "homeBestPlayer": "未知",
-    "awayBestPlayer": "未知",
-    "topPerformers": []
-  },
-  "headToHead": {
-    "totalMatches": 0,
-    "homeWins": 0,
-    "awayWins": 0,
-    "draws": 0,
-    "lastMeeting": "未知",
-    "trend": "未知"
-  },
-  "socialMedia": {
-    "hashtags": [],
-    "fanSentiment": {
-      "home": "未知",
-      "away": "未知"
-    },
-    "matchTrending": false
-  },
-  "summary": "梅州客家与上海海港的比赛以None结束。数据来源于FBref网站快照，需要手动补充详细信息。",
-  "highlights": [],
-  "matchAnalysis": {
-    "tacticalSummary": "数据来源于FBref网站快照，需要手动补充战术分析。",
-    "keyMoments": [],
-    "teamPerformance": {
-      "home": {
-        "strengths": [],
-        "weaknesses": []
-      },
-      "away": {
-        "strengths": [],
-        "weaknesses": []
-      }
-    }
-  },
-  "postMatchComments": {
-    "homeManager": "未知",
-    "awayManager": "未知",
-    "manOfTheMatchComment": "未知"
-  },
-  "nextMatches": {
-    "home": {
-      "opponent": "待定",
-      "date": "未知",
-      "venue": "未知"
-    },
-    "away": {
-      "opponent": "待定",
-      "date": "未知",
-      "venue": "未知"
-    }
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/7bc61277/Meizhou-Hakka-Shanghai-Port-June-18-2024-Chinese-Super-League",
+    "scraped_at": "2026-03-24T22:36:00",
+    "version": "3.0"
   }
 }

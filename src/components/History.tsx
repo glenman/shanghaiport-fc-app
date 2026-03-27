@@ -502,12 +502,21 @@ const History: React.FC = () => {
                         {match.win_loss || '-'}
                       </td>
                       <td>
-                        <a 
-                          href={`match-report.html?date=${match.date}&type=${encodeURIComponent(match.match_type)}&round=${encodeURIComponent(match.round)}&source=h`}
-                          style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold', fontSize: '0.85rem' }}
-                        >
-                          查看
-                        </a>
+                        {match.season === '2024' ? (
+                          <a 
+                            href={`history-match-report.html?date=${match.date}&type=${encodeURIComponent(match.match_type)}&round=${encodeURIComponent(match.round)}`}
+                            style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold', fontSize: '0.85rem' }}
+                          >
+                            查看
+                          </a>
+                        ) : (
+                          <a 
+                            href={`match-report.html?date=${match.date}&type=${encodeURIComponent(match.match_type)}&round=${encodeURIComponent(match.round)}&source=h`}
+                            style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold', fontSize: '0.85rem' }}
+                          >
+                            查看
+                          </a>
+                        )}
                       </td>
                     </tr>
                   );
@@ -587,12 +596,23 @@ const History: React.FC = () => {
                                   {match.win_loss || '-'}
                                 </td>
                                 <td>
-                                  <a 
-                                    href={`match-report.html?date=${match.date}&type=${encodeURIComponent(match.match_type)}&round=${encodeURIComponent(match.round)}&source=h`}
-                                    style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}
-                                  >
-                                    查看
-                                  </a>
+                                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                    {match.season === '2024' ? (
+                                      <a 
+                                        href={`history-match-report.html?date=${match.date}&type=${encodeURIComponent(match.match_type)}&round=${encodeURIComponent(match.round)}`}
+                                        style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold', fontSize: '0.9rem' }}
+                                      >
+                                        查看
+                                      </a>
+                                    ) : (
+                                      <a 
+                                        href={`match-report.html?date=${match.date}&type=${encodeURIComponent(match.match_type)}&round=${encodeURIComponent(match.round)}&source=h`}
+                                        style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold', fontSize: '0.9rem' }}
+                                      >
+                                        查看
+                                      </a>
+                                    )}
+                                  </div>
                                 </td>
                               </tr>
                             );

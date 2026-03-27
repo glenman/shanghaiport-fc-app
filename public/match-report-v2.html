@@ -773,12 +773,22 @@
                 <div class="substitutes-section">
                   <h5>替补出场</h5>
                   <ul class="player-list">
-                    ${subs.map(s => `
-                      <li>
-                        <span><span class="player-number">${s.number}.</span><span class="player-name">${s.name}</span></span>
-                        <span class="player-position">${s.substitutedAt}' 换下 ${s.substitutedFor}</span>
-                      </li>
-                    `).join('')}
+                    ${subs.map(s => {
+                      let position = '';
+                      if (s.substitutedAt && s.substitutedFor) {
+                        position = `${s.substitutedAt}' 换下 ${s.substitutedFor}`;
+                      } else if (s.substitutedAt) {
+                        position = `${s.substitutedAt}' 替补出场`;
+                      } else {
+                        position = s.position || '';
+                      }
+                      return `
+                        <li>
+                          <span><span class="player-number">${s.number}.</span><span class="player-name">${s.name}</span></span>
+                          <span class="player-position">${position}</span>
+                        </li>
+                      `;
+                    }).join('')}
                   </ul>
                 </div>
               `;
