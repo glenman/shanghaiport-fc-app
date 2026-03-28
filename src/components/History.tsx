@@ -502,7 +502,7 @@ const History: React.FC = () => {
                         {match.win_loss || '-'}
                       </td>
                       <td>
-                        {match.season === '2024' ? (
+                        {(match.season === '2024' || match.season === '2025') ? (
                           <a 
                             href={`history-match-report.html?date=${match.date}&type=${encodeURIComponent(match.match_type)}&round=${encodeURIComponent(match.round)}`}
                             style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold', fontSize: '0.85rem' }}
@@ -597,7 +597,7 @@ const History: React.FC = () => {
                                 </td>
                                 <td>
                                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                    {match.season === '2024' ? (
+                                    {(match.season === '2024' || match.season === '2025') ? (
                                       <a 
                                         href={`history-match-report.html?date=${match.date}&type=${encodeURIComponent(match.match_type)}&round=${encodeURIComponent(match.round)}`}
                                         style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold', fontSize: '0.9rem' }}
