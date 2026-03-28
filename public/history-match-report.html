@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>比赛报告 - 新格式</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        font-family: 'Noto Sans SC', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        line-height: 1.4;
+        font-weight: 400;
+        color-scheme: light dark;
+        color: rgba(255, 255, 255, 0.87);
+        background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      }
+
+      .app {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      .app-header {
+        background: linear-gradient(90deg, #c00010 0%, #a0000e 100%);
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 3px solid #80000c;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .app-header h1 {
+        font-size: 1.5rem;
+        color: #ffffff;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 0.3rem;
+      }
+
+      .app-header h2 {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 400;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin: 0;
+      }
+
+      .app-content {
+        flex: 1;
+        padding: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+        overflow-y: auto;
+      }
+
+      .scoreboard {
+        background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        text-align: center;
+      }
+
+      .scoreboard-teams {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .team-name {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #fff;
+        min-width: 120px;
+      }
+
+      .team-name.home {
+        text-align: right;
+      }
+
+      .team-name.away {
+        text-align: left;
+      }
+
+      .score-display {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #c00010;
+        min-width: 100px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .scoreboard-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .scoreboard-info span {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+      }
+
+      .card {
+        background: rgba(40, 40, 40, 0.8);
+        backdrop-filter: blur(10px);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        border-left: 4px solid #c00010;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+      }
+
+      .card h2 {
+        margin-bottom: 1rem;
+        color: #c00010;
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .card h3 {
+        margin: 1rem 0 0.6rem 0;
+        color: #c00010;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      .card h4 {
+        margin: 0.8rem 0 0.4rem 0;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .timeline {
+        position: relative;
+        padding-left: 2rem;
+      }
+
+      .timeline::before {
+        content: '';
+        position: absolute;
+        left: 0.5rem;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(180deg, #c00010, #80000c);
+      }
+
+      .timeline-item {
+        position: relative;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+      }
+
+      .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: -1.6rem;
+        top: 0.3rem;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #c00010;
+        border: 2px solid #fff;
+      }
+
+      .timeline-item.goal::before {
+        background: #28a745;
+      }
+
+      .timeline-item.card::before {
+        background: #ffc107;
+      }
+
+      .timeline-item.substitution::before {
+        background: #17a2b8;
+      }
+
+      .timeline-time {
+        font-weight: 700;
+        color: #c00010;
+        margin-right: 0.5rem;
+      }
+
+      .timeline-content {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .lineups {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .lineups {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .lineup-team {
+        background: rgba(50, 50, 50, 0.5);
+        border-radius: 8px;
+        padding: 1rem;
+      }
+
+      .lineup-team h4 {
+        color: #c00010;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .lineup-team .formation {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 400;
+      }
+
+      .lineup-team .manager-captain {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 0.8rem;
+      }
+
+      .lineup-team .manager-captain span {
+        margin-right: 1rem;
+      }
+
+      .player-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .player-list li {
+        padding: 0.4rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .player-list li:last-child {
+        border-bottom: none;
+      }
+
+      .player-number {
+        color: #c00010;
+        font-weight: 700;
+        min-width: 25px;
+      }
+
+      .player-name {
+        flex: 1;
+        margin-left: 0.5rem;
+      }
+
+      .player-position {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.8rem;
+      }
+
+      .substitutes-section {
+        margin-top: 1rem;
+        padding-top: 0.8rem;
+        border-top: 1px dashed rgba(255, 255, 255, 0.2);
+      }
+
+      .substitutes-section h5 {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 0.5rem;
+      }
+
+      .statistics-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 0.5rem;
+      }
+
+      .statistics-table th,
+      .statistics-table td {
+        padding: 0.6rem 0.8rem;
+        text-align: center;
+        border-bottom: 1px solid #444;
+      }
+
+      .statistics-table th {
+        background: linear-gradient(90deg, #c00010, #a0000e);
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 0.85rem;
+      }
+
+      .statistics-table tr:hover {
+        background-color: rgba(60, 60, 60, 0.6);
+      }
+
+      .possession-bar {
+        display: flex;
+        height: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0.5rem 0;
+      }
+
+      .possession-home {
+        background: linear-gradient(90deg, #c00010, #ff4757);
+      }
+
+      .possession-away {
+        background: linear-gradient(90deg, #2ed573, #1e90ff);
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.6rem 1.2rem;
+        background: linear-gradient(90deg, #c00010, #a0000e);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        font-size: 0.9rem;
+      }
+
+      .back-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      }
+
+      .loading {
+        text-align: center;
+        padding: 2rem;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      @media (max-width: 768px) {
+        .app-content {
+          padding: 0.8rem;
+        }
+
+        .card {
+          padding: 0.8rem;
+        }
+
+        .scoreboard {
+          padding: 1rem;
+        }
+
+        .scoreboard-teams {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        .team-name {
+          font-size: 1.1rem;
+        }
+
+        .score-display {
+          font-size: 2rem;
+        }
+
+        .statistics-table {
+          font-size: 0.85rem;
+        }
+
+        .statistics-table th,
+        .statistics-table td {
+          padding: 0.5rem 0.4rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <h1>加载中...</h1>
+        <h2>比赛信息加载中...</h2>
+      </header>
+      <main class="app-content">
+        <div id="content">
+          <div class="loading">正在加载赛事报告...</div>
+        </div>
+
+        <script>
+          // 获取URL参数
+          function getUrlParams() {
+            const params = {};
+            const urlParams = new URLSearchParams(window.location.search);
+            for (const [key, value] of urlParams.entries()) {
+              params[key] = value;
+            }
+            return params;
+          }
+
+          // 加载比赛数据
+          async function loadMatchData() {
+            const params = getUrlParams();
+            console.log('URL参数:', params);
+            
+            const { date, type, round } = params;
+            
+            if (!date || !type || !round) {
+              document.getElementById('content').innerHTML = '<div class="card"><p>缺少比赛信息参数，请从赛程页面进入。</p></div>';
+              return;
+            }
+            
+            try {
+              const year = date.substring(0, 4);
+              const processedType = type.replace('联赛', '');
+              const fileName = `${date}-${processedType}-${round}.json`;
+              const filePath = `data/history/${year}/${fileName}`;
+              
+              console.log('文件路径:', filePath);
+              
+              const response = await fetch(filePath);
+              if (!response.ok) {
+                throw new Error('找不到对应的比赛报告');
+              }
+              const matchData = await response.json();
+              renderMatchReport(matchData);
+            } catch (error) {
+              document.getElementById('content').innerHTML = `<div class="card"><p>加载比赛数据失败: ${error.message}</p></div>`;
+            }
+          }
+
+          // 显示比赛数据
+          function renderMatchReport(data) {
+            const matchInfo = data.match_info;
+            const homeTeam = data.teams.home;
+            const awayTeam = data.teams.away;
+
+            document.title = `${homeTeam.full_name} vs ${awayTeam.full_name} - 比赛报告`;
+            document.querySelector('.app-header h1').textContent = `${homeTeam.full_name} vs ${awayTeam.full_name}`;
+            document.querySelector('.app-header h2').textContent = `${matchInfo.competition.season}赛季${matchInfo.competition.name} - ${matchInfo.competition.round}`;
+
+            let html = '';
+
+            html += renderScoreboard(data);
+            html += renderEvents(data);
+            html += renderLineups(data);
+            html += renderStatistics(data);
+
+            html += '<a href="javascript:window.history.back()" class="back-link">返回</a>';
+
+            document.getElementById('content').innerHTML = html;
+          }
+
+          function renderScoreboard(data) {
+            const matchInfo = data.match_info;
+            const homeTeam = data.teams.home;
+            const awayTeam = data.teams.away;
+            
+            const date = new Date(matchInfo.date);
+            const formattedDate = date.toLocaleDateString('zh-CN', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+              weekday: 'long'
+            });
+
+            return `
+              <div class="scoreboard">
+                <div class="scoreboard-teams">
+                  <div class="team-name home">${homeTeam.full_name}</div>
+                  <div class="score-display">${homeTeam.score} - ${awayTeam.score}</div>
+                  <div class="team-name away">${awayTeam.full_name}</div>
+                </div>
+                <div class="scoreboard-info">
+                  <span>📅 ${formattedDate} ${matchInfo.time}</span>
+                  <span>🏟️ ${matchInfo.venue.name}</span>
+                  <span>📍 ${matchInfo.venue.city}</span>
+                  <span>👥 ${matchInfo.venue.attendance}</span>
+                  <span>⏱️ 半场: ${homeTeam.score_ht} - ${awayTeam.score_ht}</span>
+                </div>
+              </div>
+            `;
+          }
+
+          function renderEvents(data) {
+            const events = data.events;
+            if (!events || events.length === 0) return '';
+
+            let html = '<div class="card"><h2>⏱️ 比赛事件</h2><div class="timeline">';
+            
+            events.forEach(event => {
+              const minute = event.minute;
+              const minuteExtra = event.minute_extra;
+              const type = event.type;
+              let cssClass = '';
+              
+              if (type === 'goal') cssClass = 'goal';
+              else if (type === 'yellow_card') cssClass = 'card';
+              else if (type === 'red_card') cssClass = 'card';
+              else if (type === 'substitution') cssClass = 'substitution';
+
+              const teamName = event.team === 'home' ? data.teams.home.full_name : data.teams.away.full_name;
+              const timeDisplay = minuteExtra ? `${minute}+${minuteExtra}'` : `${minute}'`;
+
+              let content = '';
+              if (type === 'goal' && event.player) {
+                content = `${teamName}: ${event.player}${event.player2 ? ` (助攻: ${event.player2})` : ''}`;
+              } else {
+                content = event.description || `${teamName}: ${event.player}${event.player2 ? ` (助攻: ${event.player2})` : ''}`;
+              }
+              
+              html += `
+                <div class="timeline-item ${cssClass}">
+                  <span class="timeline-time">${timeDisplay}</span>
+                  <span class="timeline-content">
+                    ${content}
+                  </span>
+                </div>
+              `;
+            });
+
+            html += '</div></div>';
+            return html;
+          }
+
+          function renderLineups(data) {
+            const homeTeam = data.teams.home;
+            const awayTeam = data.teams.away;
+
+            function renderPlayerList(players) {
+              return players.map(p => `
+                <li>
+                  <span><span class="player-number">${p.number}.</span><span class="player-name">${p.name}</span></span>
+                  <span class="player-position">${p.position}</span>
+                </li>
+              `).join('');
+            }
+
+            function renderSubstitutes(subs, substitutions) {
+              if (!subs || subs.length === 0) return '';
+              
+              return `
+                <div class="substitutes-section">
+                  <h5>替补球员</h5>
+                  <ul class="player-list">
+                    ${subs.map(s => `
+                      <li>
+                        <span><span class="player-number">${s.number}.</span><span class="player-name">${s.name}</span></span>
+                        <span class="player-position">${s.position}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                  ${renderSubstitutionDetails(substitutions)}
+                </div>
+              `;
+            }
+            
+            function renderSubstitutionDetails(substitutions) {
+              if (!substitutions || substitutions.length === 0) return '';
+              
+              return `
+                <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed rgba(255, 255, 255, 0.2);">
+                  <h5 style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); margin-bottom: 0.5rem;">换人信息</h5>
+                  <ul class="player-list">
+                    ${substitutions.map(sub => `
+                      <li>
+                        <span><span class="player-number">${sub.minute}'</span><span class="player-name">${sub.player_out} <span style="color: #dc3545; font-weight: bold;">↓</span> <span style="color: #28a745; font-weight: bold;">↑</span> ${sub.player_in}</span></span>
+                        <span class="player-position">换人</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                </div>
+              `;
+            }
+
+            return `
+              <div class="card">
+                <h2>👥 首发阵容</h2>
+                <div class="lineups">
+                  <div class="lineup-team">
+                    <h4>${homeTeam.full_name} <span class="formation">${homeTeam.formation}</span></h4>
+                    <div class="manager-captain">
+                      <span>主教练: ${homeTeam.coach}</span>
+                      <span>队长: ${homeTeam.captain}</span>
+                    </div>
+                    <ul class="player-list">
+                      ${renderPlayerList(homeTeam.lineup)}
+                    </ul>
+                    ${renderSubstitutes(homeTeam.substitutes, homeTeam.substitutions)}
+                  </div>
+                  <div class="lineup-team">
+                    <h4>${awayTeam.full_name} <span class="formation">${awayTeam.formation}</span></h4>
+                    <div class="manager-captain">
+                      <span>主教练: ${awayTeam.coach}</span>
+                      <span>队长: ${awayTeam.captain}</span>
+                    </div>
+                    <ul class="player-list">
+                      ${renderPlayerList(awayTeam.lineup)}
+                    </ul>
+                    ${renderSubstitutes(awayTeam.substitutes, awayTeam.substitutions)}
+                  </div>
+                </div>
+              </div>
+            `;
+          }
+
+          function renderStatistics(data) {
+            const stats = data.statistics;
+            if (!stats) return '';
+
+            const possessionHtml = `
+              <div style="margin-bottom: 1rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
+                  <span>${stats.possession.home}%</span>
+                  <span>控球率</span>
+                  <span>${stats.possession.away}%</span>
+                </div>
+                <div class="possession-bar">
+                  <div class="possession-home" style="width: ${stats.possession.home}%"></div>
+                  <div class="possession-away" style="width: ${stats.possession.away}%"></div>
+                </div>
+              </div>
+            `;
+
+            return `
+              <div class="card">
+                <h2>📊 比赛统计</h2>
+                ${possessionHtml}
+                <table class="statistics-table">
+                  <thead>
+                    <tr>
+                      <th>${data.teams.home.full_name}</th>
+                      <th>统计项</th>
+                      <th>${data.teams.away.full_name}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>${stats.shots.home}</td>
+                      <td>射门次数</td>
+                      <td>${stats.shots.away}</td>
+                    </tr>
+                    <tr>
+                      <td>${stats.shots_on_target.home}</td>
+                      <td>射正次数</td>
+                      <td>${stats.shots_on_target.away}</td>
+                    </tr>
+                    <tr>
+                      <td>${stats.saves.home}</td>
+                      <td>扑救次数</td>
+                      <td>${stats.saves.away}</td>
+                    </tr>
+                    <tr>
+                      <td>${stats.corners.home}</td>
+                      <td>角球次数</td>
+                      <td>${stats.corners.away}</td>
+                    </tr>
+                    <tr>
+                      <td>${stats.fouls.home}</td>
+                      <td>犯规次数</td>
+                      <td>${stats.fouls.away}</td>
+                    </tr>
+                    <tr>
+                      <td>${stats.crosses.home}</td>
+                      <td>传中次数</td>
+                      <td>${stats.crosses.away}</td>
+                    </tr>
+                    <tr>
+                      <td>${stats.interceptions.home}</td>
+                      <td>拦截次数</td>
+                      <td>${stats.interceptions.away}</td>
+                    </tr>
+                    <tr>
+                      <td>${stats.offsides.home}</td>
+                      <td>越位次数</td>
+                      <td>${stats.offsides.away}</td>
+                    </tr>
+                    <tr>
+                      <td>${stats.yellow_cards.home}</td>
+                      <td>黄牌</td>
+                      <td>${stats.yellow_cards.away}</td>
+                    </tr>
+                    <tr>
+                      <td>${stats.red_cards.home}</td>
+                      <td>红牌</td>
+                      <td>${stats.red_cards.away}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            `;
+          }
+
+          // 页面加载时加载数据
+          window.addEventListener('DOMContentLoaded', loadMatchData);
+        </script>
+      </main>
+    </div>
+  </body>
+</html>
