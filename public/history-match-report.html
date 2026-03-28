@@ -454,7 +454,7 @@
               const year = date.substring(0, 4);
               const processedType = type.replace('联赛', '');
               const fileName = `${date}-${processedType}-${round}.json`;
-              const filePath = `data/history/${year}/${fileName}`;
+              const filePath = `${getBaseURldirname() ? '' : '/shanghaiport-fc-app/'}data/history/${year}/${fileName}`;
               
               console.log('文件路径:', filePath);
               
