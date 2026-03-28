@@ -322,12 +322,12 @@ const History: React.FC = () => {
                   alignItems: 'center', 
                   justifyContent: 'center',
                   padding: '0.4rem 0.3rem', 
-                  backgroundColor: '#1a4d1a', 
+                  backgroundColor: '#4d1a1a', 
                   borderRadius: '4px',
                   gap: '0.3rem'
                 }}>
-                  <span style={{ fontSize: '0.75rem', color: '#88cc88' }}>胜</span>
-                  <span style={{ fontSize: '1rem', fontWeight: 'bold', color: '#4caf50' }}>{headToHeadStats.wins}</span>
+                  <span style={{ fontSize: '0.75rem', color: '#cc8888' }}>胜</span>
+                  <span style={{ fontSize: '1rem', fontWeight: 'bold', color: '#f44336' }}>{headToHeadStats.wins}</span>
                 </div>
                 <div style={{ 
                   flex: 1, 
@@ -340,7 +340,7 @@ const History: React.FC = () => {
                   gap: '0.3rem'
                 }}>
                   <span style={{ fontSize: '0.75rem', color: '#cccc88' }}>平</span>
-                  <span style={{ fontSize: '1rem', fontWeight: 'bold', color: '#ffc107' }}>{headToHeadStats.draws}</span>
+                  <span style={{ fontSize: '1rem', fontWeight: 'bold', color: '#ffffff' }}>{headToHeadStats.draws}</span>
                 </div>
                 <div style={{ 
                   flex: 1, 
@@ -348,12 +348,12 @@ const History: React.FC = () => {
                   alignItems: 'center', 
                   justifyContent: 'center',
                   padding: '0.4rem 0.3rem', 
-                  backgroundColor: '#4d1a1a', 
+                  backgroundColor: '#1a4d1a', 
                   borderRadius: '4px',
                   gap: '0.3rem'
                 }}>
-                  <span style={{ fontSize: '0.75rem', color: '#cc8888' }}>负</span>
-                  <span style={{ fontSize: '1rem', fontWeight: 'bold', color: '#f44336' }}>{headToHeadStats.losses}</span>
+                  <span style={{ fontSize: '0.75rem', color: '#88cc88' }}>负</span>
+                  <span style={{ fontSize: '1rem', fontWeight: 'bold', color: '#4caf50' }}>{headToHeadStats.losses}</span>
                 </div>
               </div>
 
@@ -417,9 +417,9 @@ const History: React.FC = () => {
                   gap: '0.25rem'
                 }}>
                   <span style={{ fontSize: '0.7rem', color: '#888' }}>主场</span>
-                  <span style={{ fontSize: '0.85rem', fontWeight: 'bold', color: '#4caf50' }}>{headToHeadStats.home.wins}</span>
-                  <span style={{ fontSize: '0.85rem', color: '#ffc107' }}>{headToHeadStats.home.draws}</span>
-                  <span style={{ fontSize: '0.85rem', color: '#f44336' }}>{headToHeadStats.home.losses}</span>
+                  <span style={{ fontSize: '0.85rem', fontWeight: 'bold', color: '#f44336' }}>{headToHeadStats.home.wins}</span>
+                  <span style={{ fontSize: '0.85rem', color: '#ffffff' }}>{headToHeadStats.home.draws}</span>
+                  <span style={{ fontSize: '0.85rem', color: '#4caf50' }}>{headToHeadStats.home.losses}</span>
                 </div>
                 <div style={{ 
                   flex: 1, 
@@ -432,9 +432,9 @@ const History: React.FC = () => {
                   gap: '0.25rem'
                 }}>
                   <span style={{ fontSize: '0.7rem', color: '#888' }}>客场</span>
-                  <span style={{ fontSize: '0.85rem', fontWeight: 'bold', color: '#4caf50' }}>{headToHeadStats.away.wins}</span>
-                  <span style={{ fontSize: '0.85rem', color: '#ffc107' }}>{headToHeadStats.away.draws}</span>
-                  <span style={{ fontSize: '0.85rem', color: '#f44336' }}>{headToHeadStats.away.losses}</span>
+                  <span style={{ fontSize: '0.85rem', fontWeight: 'bold', color: '#f44336' }}>{headToHeadStats.away.wins}</span>
+                  <span style={{ fontSize: '0.85rem', color: '#ffffff' }}>{headToHeadStats.away.draws}</span>
+                  <span style={{ fontSize: '0.85rem', color: '#4caf50' }}>{headToHeadStats.away.losses}</span>
                 </div>
               </div>
             </div>
@@ -495,9 +495,9 @@ const History: React.FC = () => {
                       <td style={{ fontWeight: 'bold' }}>{match.result || '-'}</td>
                       <td style={{
                         fontWeight: 'bold',
-                        color: match.win_loss === '胜' ? '#4caf50' : 
-                               match.win_loss === '负' ? '#f44336' : 
-                               match.win_loss === '平' ? '#ffc107' : 'inherit'
+                        color: match.win_loss === '胜' ? '#f44336' : 
+                               match.win_loss === '负' ? '#4caf50' : 
+                               match.win_loss === '平' ? '#ffffff' : 'inherit'
                       }}>
                         {match.win_loss || '-'}
                       </td>
@@ -589,9 +589,9 @@ const History: React.FC = () => {
                                 <td>{match.result || '-'}</td>
                                 <td style={{
                                   fontWeight: 'bold',
-                                  color: match.win_loss === '胜' ? '#4caf50' : 
-                                         match.win_loss === '负' ? '#f44336' : 
-                                         match.win_loss === '平' ? '#ffc107' : 'inherit'
+                                  color: match.win_loss === '胜' ? '#f44336' : 
+                                         match.win_loss === '负' ? '#4caf50' : 
+                                         match.win_loss === '平' ? '#ffffff' : 'inherit'
                                 }}>
                                   {match.win_loss || '-'}
                                 </td>

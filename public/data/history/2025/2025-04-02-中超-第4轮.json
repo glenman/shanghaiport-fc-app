@@ -1,590 +1,541 @@
 {
-  "match": {
-    "id": 4,
-    "round": "第4轮",
+  "match_info": {
+    "match_id": "20250104",
     "date": "2025-04-02",
     "time": "19:35",
-    "homeTeam": "上海海港",
-    "awayTeam": "梅州客家",
-    "venue": "未知",
-    "city": "上海",
-    "result": "2-1",
-    "status": "已结束",
-    "attendance": "未知",
-    "referee": "未知",
-    "weather": "未知"
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2025",
+      "round": "Matchweek 4"
+    },
+    "venue": {
+      "name": "上汽浦东足球场",
+      "city": "上海",
+      "attendance": 0
+    },
+    "referee": {
+      "name": "待补充",
+      "country": "China"
+    }
   },
-  "summary": "上海海港与梅州客家的比赛以2-1结束。",
-  "highlights": [],
-  "lineups": {
+  "teams": {
     "home": {
-      "name": "上海海港",
+      "name": "Shanghai Port",
+      "full_name": "上海海港足球俱乐部",
+      "score": 2,
+      "score_ht": 0,
       "formation": "4-2-3-1",
-      "manager": "凯文·穆斯卡特",
+      "coach": "凯文·穆斯卡特",
       "captain": "颜骏凌",
-      "players": [
+      "lineup": [
         {
-          "number": "9",
-          "name": "古斯塔沃",
-          "position": "前锋",
-          "nationality": "巴西",
-          "minutes": "24",
-          "goals": "1",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "14",
-          "name": "李圣龙",
-          "position": "前锋",
-          "nationality": "中国",
-          "minutes": "66",
-          "goals": "1",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "49",
-          "name": "李新翔",
-          "position": "左边锋",
-          "nationality": "中国",
-          "minutes": "56",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "27",
-          "name": "冯劲",
-          "position": "前锋,中场",
-          "nationality": "中国",
-          "minutes": "34",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "10",
-          "name": "维塔尔",
-          "position": "前腰",
-          "nationality": "巴西",
-          "minutes": "90",
-          "goals": "0",
-          "assists": "1",
-          "yellowCards": "1",
-          "redCards": "0"
-        },
-        {
-          "number": "45",
-          "name": "莱昂纳多",
-          "position": "前腰",
-          "nationality": "巴西",
-          "minutes": "90",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "26",
-          "name": "刘若钒",
-          "position": "右边锋",
-          "nationality": "中国",
-          "minutes": "56",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "30",
-          "name": "加布里埃尔",
-          "position": "前锋,中场",
-          "nationality": "巴西",
-          "minutes": "34",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "22",
-          "name": "马修斯·尤萨",
-          "position": "后腰",
-          "nationality": "巴西",
-          "minutes": "90",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "32",
-          "name": "李帅",
-          "position": "左后卫",
-          "nationality": "中国",
-          "minutes": "79",
-          "goals": "0",
-          "assists": "1",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "4",
-          "name": "王燊超",
-          "position": "后卫,中场",
-          "nationality": "中国",
-          "minutes": "11",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "13",
-          "name": "魏震",
-          "position": "中后卫",
-          "nationality": "中国",
-          "minutes": "90",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "40",
-          "name": "吾米提江",
-          "position": "中后卫",
-          "nationality": "中国",
-          "minutes": "90",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "19",
-          "name": "王振澳",
-          "position": "右后卫",
-          "nationality": "中国",
-          "minutes": "45",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "15",
-          "name": "明天",
-          "position": "后卫",
-          "nationality": "中国",
-          "minutes": "45",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "1",
+          "position": "GK",
+          "number": 1,
           "name": "颜骏凌",
-          "position": "门将",
-          "nationality": "中国",
-          "minutes": "90",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 32,
+          "name": "李帅",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 13,
+          "name": "魏震",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 40,
+          "name": "吾米提江",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 19,
+          "name": "王振澳",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 22,
+          "name": "马修斯·尤萨",
+          "country": "巴西"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "维塔尔",
+          "country": "巴西"
+        },
+        {
+          "position": "MF",
+          "number": 49,
+          "name": "李新翔",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 45,
+          "name": "莱昂纳多",
+          "country": "巴西"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "刘若钒",
+          "country": "中国"
+        },
+        {
+          "position": "FW",
+          "number": 9,
+          "name": "古斯塔沃",
+          "country": "巴西"
         }
       ],
-      "substitutes": []
+      "substitutes": [
+        {
+          "position": "DF",
+          "number": 4,
+          "name": "王燊超",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 15,
+          "name": "明天",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 27,
+          "name": "冯劲",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 30,
+          "name": "加布里埃尔",
+          "country": "巴西"
+        },
+        {
+          "position": "FW",
+          "number": 14,
+          "name": "李圣龙",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 24,
+          "player_out": "古斯塔沃",
+          "player_in": "李圣龙"
+        },
+        {
+          "minute": 34,
+          "player_out": "冯劲",
+          "player_in": "加布里埃尔"
+        },
+        {
+          "minute": 45,
+          "player_out": "王振澳",
+          "player_in": "明天"
+        },
+        {
+          "minute": 56,
+          "player_out": "李新翔",
+          "player_in": "冯劲"
+        },
+        {
+          "minute": 56,
+          "player_out": "刘若钒",
+          "player_in": "冯劲"
+        },
+        {
+          "minute": 79,
+          "player_out": "李帅",
+          "player_in": "王燊超"
+        }
+      ]
     },
     "away": {
-      "name": "梅州客家",
+      "name": "Meizhou Hakka",
+      "full_name": "梅州客家足球俱乐部",
+      "score": 1,
+      "score_ht": 0,
       "formation": "4-3-3",
-      "manager": "未知",
-      "captain": "未知",
-      "players": [
+      "coach": "待补充",
+      "captain": "待补充",
+      "lineup": [
         {
-          "number": "16",
-          "name": "杨超盛",
-          "position": "前锋",
-          "nationality": "中国",
-          "minutes": "72",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "9",
-          "name": "米歇尔·切夸",
-          "position": "前锋",
-          "nationality": "cm CMR",
-          "minutes": "18",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "8",
-          "name": "杰罗姆·恩戈姆·姆贝克利",
-          "position": "前腰",
-          "nationality": "cm CMR",
-          "minutes": "90",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "1",
-          "redCards": "0"
-        },
-        {
-          "number": "10",
-          "name": "罗德里戈",
-          "position": "前腰",
-          "nationality": "巴西",
-          "minutes": "72",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "1",
-          "redCards": "0"
-        },
-        {
-          "number": "24",
-          "name": "张昊",
-          "position": "前锋",
-          "nationality": "中国",
-          "minutes": "18",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "26",
-          "name": "刘云",
-          "position": "前腰",
-          "nationality": "中国",
-          "minutes": "60",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "14",
-          "name": "季胜攀",
-          "position": "中场",
-          "nationality": "中国",
-          "minutes": "30",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "4",
-          "name": "布拉尼米尔·乔契奇",
-          "position": "后腰",
-          "nationality": "rs SRB",
-          "minutes": "90",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "18",
-          "name": "魏志伟",
-          "position": "后腰",
-          "nationality": "中国",
-          "minutes": "79",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "1",
-          "redCards": "0"
-        },
-        {
-          "number": "37",
-          "name": "奕先龙",
-          "position": "中场",
-          "nationality": "中国",
-          "minutes": "11",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "20",
-          "name": "王建南",
-          "position": "左后卫",
-          "nationality": "中国",
-          "minutes": "90",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "6",
-          "name": "廖俊坚",
-          "position": "中后卫",
-          "nationality": "中国",
-          "minutes": "60",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "31",
-          "name": "饶伟辉",
-          "position": "后卫",
-          "nationality": "中国",
-          "minutes": "30",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "5",
-          "name": "田梓一",
-          "position": "中后卫",
-          "nationality": "中国",
-          "minutes": "90",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "1",
-          "redCards": "0"
-        },
-        {
-          "number": "29",
-          "name": "余子铨",
-          "position": "右后卫",
-          "nationality": "中国香港",
-          "minutes": "90",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
-        },
-        {
-          "number": "41",
+          "position": "GK",
+          "number": 41,
           "name": "郭全博",
-          "position": "门将",
-          "nationality": "中国",
-          "minutes": "90",
-          "goals": "0",
-          "assists": "0",
-          "yellowCards": "0",
-          "redCards": "0"
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 20,
+          "name": "王建南",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 6,
+          "name": "廖俊坚",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 5,
+          "name": "田梓一",
+          "country": "中国"
+        },
+        {
+          "position": "DF",
+          "number": 29,
+          "name": "余子铨",
+          "country": "中国香港"
+        },
+        {
+          "position": "MF",
+          "number": 18,
+          "name": "魏志伟",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 4,
+          "name": "布拉尼米尔·乔契奇",
+          "country": "塞尔维亚"
+        },
+        {
+          "position": "MF",
+          "number": 8,
+          "name": "杰罗姆·恩戈姆·姆贝克利",
+          "country": "喀麦隆"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "刘云",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "罗德里戈",
+          "country": "巴西"
+        },
+        {
+          "position": "FW",
+          "number": 16,
+          "name": "杨超盛",
+          "country": "中国"
         }
       ],
-      "substitutes": []
+      "substitutes": [
+        {
+          "position": "DF",
+          "number": 31,
+          "name": "饶伟辉",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 14,
+          "name": "季胜攀",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 37,
+          "name": "奕先龙",
+          "country": "中国"
+        },
+        {
+          "position": "FW",
+          "number": 9,
+          "name": "米歇尔·切夸",
+          "country": "喀麦隆"
+        },
+        {
+          "position": "FW",
+          "number": 24,
+          "name": "张昊",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 18,
+          "player_out": "杨超盛",
+          "player_in": "米歇尔·切夸"
+        },
+        {
+          "minute": 60,
+          "player_out": "廖俊坚",
+          "player_in": "饶伟辉"
+        },
+        {
+          "minute": 60,
+          "player_out": "刘云",
+          "player_in": "季胜攀"
+        },
+        {
+          "minute": 72,
+          "player_out": "米歇尔·切夸",
+          "player_in": "张昊"
+        },
+        {
+          "minute": 72,
+          "player_out": "罗德里戈",
+          "player_in": "奕先龙"
+        },
+        {
+          "minute": 79,
+          "player_out": "魏志伟",
+          "player_in": "奕先龙"
+        }
+      ]
     }
   },
-  "statistics": [
+  "events": [
     {
-      "name": "控球率",
-      "home": "50%",
-      "away": "50%"
+      "minute": null,
+      "minute_extra": null,
+      "type": "goal",
+      "team": "home",
+      "player": "古斯塔沃",
+      "description": "古斯塔沃 进球"
     },
     {
-      "name": "射门",
-      "home": "10",
-      "away": "10"
+      "minute": null,
+      "minute_extra": null,
+      "type": "goal",
+      "team": "home",
+      "player": "李圣龙",
+      "description": "李圣龙 进球"
     },
     {
-      "name": "射正",
-      "home": "5",
-      "away": "5"
+      "minute": null,
+      "minute_extra": null,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "维塔尔",
+      "description": "维塔尔 获得黄牌"
     },
     {
-      "name": "射门准确率",
-      "home": "50%",
-      "away": "50%"
+      "minute": null,
+      "minute_extra": null,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "杰罗姆·恩戈姆·姆贝克利",
+      "description": "杰罗姆·恩戈姆·姆贝克利 获得黄牌"
     },
     {
-      "name": "扑救",
-      "home": "5",
-      "away": "5"
+      "minute": null,
+      "minute_extra": null,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "罗德里戈",
+      "description": "罗德里戈 获得黄牌"
     },
     {
-      "name": "扑救成功率",
-      "home": "50%",
-      "away": "50%"
+      "minute": null,
+      "minute_extra": null,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "魏志伟",
+      "description": "魏志伟 获得黄牌"
     },
     {
-      "name": "犯规",
-      "home": "10",
-      "away": "10"
-    },
-    {
-      "name": "角球",
-      "home": "5",
-      "away": "5"
-    },
-    {
-      "name": "传中",
-      "home": "20",
-      "away": "20"
-    },
-    {
-      "name": "拦截",
-      "home": "10",
-      "away": "10"
-    },
-    {
-      "name": "越位",
-      "home": "2",
-      "away": "2"
-    },
-    {
-      "name": "黄牌",
-      "home": "2",
-      "away": "2"
-    },
-    {
-      "name": "红牌",
-      "home": "0",
-      "away": "0"
+      "minute": null,
+      "minute_extra": null,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "田梓一",
+      "description": "田梓一 获得黄牌"
     }
   ],
-  "playerStats": {
+  "statistics": {
+    "possession": {
+      "home": 50,
+      "away": 50
+    },
+    "shots": {
+      "home": 10,
+      "away": 10
+    },
+    "shots_on_target": {
+      "home": 5,
+      "away": 5
+    },
+    "saves": {
+      "home": 5,
+      "away": 5
+    },
+    "fouls": {
+      "home": 10,
+      "away": 10
+    },
+    "corners": {
+      "home": 5,
+      "away": 5
+    },
+    "crosses": {
+      "home": 20,
+      "away": 20
+    },
+    "interceptions": {
+      "home": 10,
+      "away": 10
+    },
+    "offsides": {
+      "home": 2,
+      "away": 2
+    },
+    "yellow_cards": {
+      "home": 1,
+      "away": 4
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "player_stats": {
     "home": [
       {
         "player": "古斯塔沃",
-        "goals": "1",
-        "assists": "0",
-        "shots": "0",
-        "shotsOnTarget": "0",
-        "passes": "0",
-        "passAccuracy": "0%",
-        "dribbles": "0",
-        "dribbleSuccess": "0",
-        "foulsWon": "0",
-        "foulsCommitted": "0",
-        "yellowCards": "0",
+        "goals": 1,
+        "assists": 0,
+        "shots": 0,
+        "shots_on_target": 0,
+        "passes": 0,
+        "pass_accuracy": "0%",
+        "dribbles": 0,
+        "dribble_success": 0,
+        "fouls_won": 0,
+        "fouls_committed": 0,
+        "yellow_cards": 0,
         "rating": "7.0"
       },
       {
         "player": "李圣龙",
-        "goals": "1",
-        "assists": "0",
-        "shots": "0",
-        "shotsOnTarget": "0",
-        "passes": "0",
-        "passAccuracy": "0%",
-        "dribbles": "0",
-        "dribbleSuccess": "0",
-        "foulsWon": "0",
-        "foulsCommitted": "0",
-        "yellowCards": "0",
+        "goals": 1,
+        "assists": 0,
+        "shots": 0,
+        "shots_on_target": 0,
+        "passes": 0,
+        "pass_accuracy": "0%",
+        "dribbles": 0,
+        "dribble_success": 0,
+        "fouls_won": 0,
+        "fouls_committed": 0,
+        "yellow_cards": 0,
         "rating": "7.0"
       },
       {
-        "player": "Li Xinxiang",
-        "goals": "0",
-        "assists": "0",
-        "shots": "0",
-        "shotsOnTarget": "0",
-        "passes": "0",
-        "passAccuracy": "0%",
-        "dribbles": "0",
-        "dribbleSuccess": "0",
-        "foulsWon": "0",
-        "foulsCommitted": "0",
-        "yellowCards": "0",
+        "player": "李新翔",
+        "goals": 0,
+        "assists": 0,
+        "shots": 0,
+        "shots_on_target": 0,
+        "passes": 0,
+        "pass_accuracy": "0%",
+        "dribbles": 0,
+        "dribble_success": 0,
+        "fouls_won": 0,
+        "fouls_committed": 0,
+        "yellow_cards": 0,
         "rating": "7.0"
       },
       {
         "player": "冯劲",
-        "goals": "0",
-        "assists": "0",
-        "shots": "0",
-        "shotsOnTarget": "0",
-        "passes": "0",
-        "passAccuracy": "0%",
-        "dribbles": "0",
-        "dribbleSuccess": "0",
-        "foulsWon": "0",
-        "foulsCommitted": "0",
-        "yellowCards": "0",
+        "goals": 0,
+        "assists": 0,
+        "shots": 0,
+        "shots_on_target": 0,
+        "passes": 0,
+        "pass_accuracy": "0%",
+        "dribbles": 0,
+        "dribble_success": 0,
+        "fouls_won": 0,
+        "fouls_committed": 0,
+        "yellow_cards": 0,
         "rating": "7.0"
       }
     ],
     "away": [
       {
-        "player": "Yang Chaosheng",
-        "goals": "0",
-        "assists": "0",
-        "shots": "0",
-        "shotsOnTarget": "0",
-        "passes": "0",
-        "passAccuracy": "0%",
-        "dribbles": "0",
-        "dribbleSuccess": "0",
-        "foulsWon": "0",
-        "foulsCommitted": "0",
-        "yellowCards": "0",
+        "player": "杨超盛",
+        "goals": 0,
+        "assists": 0,
+        "shots": 0,
+        "shots_on_target": 0,
+        "passes": 0,
+        "pass_accuracy": "0%",
+        "dribbles": 0,
+        "dribble_success": 0,
+        "fouls_won": 0,
+        "fouls_committed": 0,
+        "yellow_cards": 0,
         "rating": "7.0"
       },
       {
-        "player": "Michael Cheukoua",
-        "goals": "0",
-        "assists": "0",
-        "shots": "0",
-        "shotsOnTarget": "0",
-        "passes": "0",
-        "passAccuracy": "0%",
-        "dribbles": "0",
-        "dribbleSuccess": "0",
-        "foulsWon": "0",
-        "foulsCommitted": "0",
-        "yellowCards": "0",
+        "player": "米歇尔·切夸",
+        "goals": 0,
+        "assists": 0,
+        "shots": 0,
+        "shots_on_target": 0,
+        "passes": 0,
+        "pass_accuracy": "0%",
+        "dribbles": 0,
+        "dribble_success": 0,
+        "fouls_won": 0,
+        "fouls_committed": 0,
+        "yellow_cards": 0,
         "rating": "7.0"
       },
       {
-        "player": "Jerome Ngom Mbekeli",
-        "goals": "0",
-        "assists": "0",
-        "shots": "0",
-        "shotsOnTarget": "0",
-        "passes": "0",
-        "passAccuracy": "0%",
-        "dribbles": "0",
-        "dribbleSuccess": "0",
-        "foulsWon": "0",
-        "foulsCommitted": "0",
-        "yellowCards": "1",
+        "player": "杰罗姆·恩戈姆·姆贝克利",
+        "goals": 0,
+        "assists": 0,
+        "shots": 0,
+        "shots_on_target": 0,
+        "passes": 0,
+        "pass_accuracy": "0%",
+        "dribbles": 0,
+        "dribble_success": 0,
+        "fouls_won": 0,
+        "fouls_committed": 0,
+        "yellow_cards": 1,
         "rating": "7.0"
       },
       {
-        "player": "Rodrigo",
-        "goals": "0",
-        "assists": "0",
-        "shots": "0",
-        "shotsOnTarget": "0",
-        "passes": "0",
-        "passAccuracy": "0%",
-        "dribbles": "0",
-        "dribbleSuccess": "0",
-        "foulsWon": "0",
-        "foulsCommitted": "0",
-        "yellowCards": "1",
+        "player": "罗德里戈",
+        "goals": 0,
+        "assists": 0,
+        "shots": 0,
+        "shots_on_target": 0,
+        "passes": 0,
+        "pass_accuracy": "0%",
+        "dribbles": 0,
+        "dribble_success": 0,
+        "fouls_won": 0,
+        "fouls_committed": 0,
+        "yellow_cards": 1,
         "rating": "7.0"
       }
     ]
   },
-  "keyFactors": [
-    "上海海港与梅州客家的比赛以2-1结束",
-    "双方球员表现出色",
-    "比赛过程激烈",
-    "最终结果反映了双方的实力"
-  ]
+  "metadata": {
+    "source": "manual",
+    "url": "",
+    "scraped_at": "2025-04-02T19:35:00",
+    "version": "3.0"
+  }
 }
