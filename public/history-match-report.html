@@ -714,7 +714,7 @@
               }).join('');
             }
 
-            function renderSubstitutes(subs, substitutions, teamName) {
+            function renderSubstitutes(subs, events, teamName) {
               if (!subs || subs.length === 0) return '';
               
               return `
@@ -732,24 +732,34 @@
                       `;
                     }).join('')}
                   </ul>
-                  ${renderSubstitutionDetails(substitutions)}
+                  ${renderSubstitutionDetails(events, teamName)}
                 </div>
               `;
             }
             
-            function renderSubstitutionDetails(substitutions) {
-              if (!substitutions || substitutions.length === 0) return '';
+            function renderSubstitutionDetails(events, teamName) {
+              const teamKey = teamName === '上海海港' ? 'home' : 'away';
+              const substitutionEvents = events.filter(event => 
+                event.type === 'substitution' && event.team === teamKey
+              );
+              
+              if (!substitutionEvents || substitutionEvents.length === 0) return '';
               
               return `
                 <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed rgba(255, 255, 255, 0.2);">
                   <h5 style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); margin-bottom: 0.5rem;">换人信息</h5>
                   <ul class="player-list">
-                    ${substitutions.map(sub => `
-                      <li>
-                        <span><span class="player-number">${sub.minute}'</span><span class="player-name">${sub.player_out} <span style="color: #dc3545; font-weight: bold;">↓</span> <span style="color: #28a745; font-weight: bold;">↑</span> ${sub.player_in}</span></span>
-                        <span class="player-position">换人</span>
-                      </li>
-                    `).join('')}
+                    ${substitutionEvents.map(event => {
+                      const minute = event.minute;
+                      const minuteExtra = event.minute_extra;
+                      const timeDisplay = minuteExtra ? `${minute}+${minuteExtra}'` : `${minute}'`;
+                      return `
+                        <li>
+                          <span><span class="player-number">${timeDisplay}</span><span class="player-name">${event.player_out} <span style="color: #dc3545; font-weight: bold;">↓</span> <span style="color: #28a745; font-weight: bold;">↑</span> ${event.player}</span></span>
+                          <span class="player-position">换人</span>
+                        </li>
+                      `;
+                    }).join('')}
                   </ul>
                 </div>
               `;
@@ -768,7 +778,7 @@
                     <ul class="player-list">
                       ${renderPlayerList(homeTeam.lineup, homeTeam.name)}
                     </ul>
-                    ${renderSubstitutes(homeTeam.substitutes, homeTeam.substitutions, homeTeam.name)}
+                    ${renderSubstitutes(homeTeam.substitutes, data.events, homeTeam.name)}
                   </div>
                   <div class="lineup-team">
                     <h4>${awayTeam.name} <span class="formation">${awayTeam.formation}</span></h4>
@@ -779,7 +789,7 @@
                     <ul class="player-list">
                       ${renderPlayerList(awayTeam.lineup, awayTeam.name)}
                     </ul>
-                    ${renderSubstitutes(awayTeam.substitutes, awayTeam.substitutions, awayTeam.name)}
+                    ${renderSubstitutes(awayTeam.substitutes, data.events, awayTeam.name)}
                   </div>
                 </div>
               </div>
