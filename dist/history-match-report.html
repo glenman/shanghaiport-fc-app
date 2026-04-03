@@ -453,38 +453,53 @@
             try {
               const year = date.substring(0, 4);
               const processedType = type.replace('联赛', '');
-              const fileName = `${date}-${processedType}-${round}.json`;
+              // 容错处理：去掉轮次中的"（补赛）"标记
+              const processedRound = round.replace('（补赛）', '').replace('(补赛)', '');
+              const fileName = `${date}-${processedType}-${processedRound}.json`;
               const filePath = `data/history/${year}/${fileName}`;
               
               console.log('文件路径:', filePath);
               
-              const response = await fetch(filePath);
-              if (!response.ok) {
+              // 并行加载比赛数据和球员数据
+              const [matchResponse, playersResponse] = await Promise.all([
+                fetch(filePath),
+                fetch('data/history/2025/players.json')
+              ]);
+              
+              if (!matchResponse.ok) {
                 throw new Error('找不到对应的比赛报告');
               }
-              const matchData = await response.json();
-              renderMatchReport(matchData);
+              
+              const matchData = await matchResponse.json();
+              let playersData = null;
+              
+              if (playersResponse.ok) {
+                playersData = await playersResponse.json();
+              }
+              
+              renderMatchReport(matchData, playersData);
             } catch (error) {
               document.getElementById('content').innerHTML = `<div class="card"><p>加载比赛数据失败: ${error.message}</p></div>`;
             }
           }
 
           // 显示比赛数据
-          function renderMatchReport(data) {
+          function renderMatchReport(data, playersData) {
             const matchInfo = data.match_info;
             const homeTeam = data.teams.home;
             const awayTeam = data.teams.away;
 
-            document.title = `${homeTeam.full_name} vs ${awayTeam.full_name} - 比赛报告`;
-            document.querySelector('.app-header h1').textContent = `${homeTeam.full_name} vs ${awayTeam.full_name}`;
+            document.title = `${homeTeam.name} vs ${awayTeam.name} - 比赛报告`;
+            document.querySelector('.app-header h1').textContent = `${homeTeam.name} vs ${awayTeam.name}`;
             document.querySelector('.app-header h2').textContent = `${matchInfo.competition.season}赛季${matchInfo.competition.name} - ${matchInfo.competition.round}`;
 
             let html = '';
 
             html += renderScoreboard(data);
-            html += renderEvents(data);
-            html += renderLineups(data);
+            html += renderGoalRecords(data);
+            html += renderLineups(data, playersData);
             html += renderStatistics(data);
+            html += renderCards(data);
 
             html += '<a href="javascript:window.history.back()" class="back-link">返回</a>';
 
@@ -495,6 +510,7 @@
             const matchInfo = data.match_info;
             const homeTeam = data.teams.home;
             const awayTeam = data.teams.away;
+            const events = data.events || [];
             
             const date = new Date(matchInfo.date);
             const formattedDate = date.toLocaleDateString('zh-CN', {
@@ -504,19 +520,90 @@
               weekday: 'long'
             });
 
+            // 统计上半场进球（minute <= 45的进球事件）
+            const goalEvents = events.filter(event => 
+              (event.type === 'goal' || event.type === 'own_goal') && 
+              event.minute <= 45
+            );
+            
+            const homeFirstHalfGoals = goalEvents.filter(event => event.team === 'home').length;
+            const awayFirstHalfGoals = goalEvents.filter(event => event.team === 'away').length;
+
             return `
               <div class="scoreboard">
                 <div class="scoreboard-teams">
-                  <div class="team-name home">${homeTeam.full_name}</div>
+                  <div class="team-name home">${homeTeam.name}</div>
                   <div class="score-display">${homeTeam.score} - ${awayTeam.score}</div>
-                  <div class="team-name away">${awayTeam.full_name}</div>
+                  <div class="team-name away">${awayTeam.name}</div>
                 </div>
                 <div class="scoreboard-info">
                   <span>📅 ${formattedDate} ${matchInfo.time}</span>
                   <span>🏟️ ${matchInfo.venue.name}</span>
-                  <span>📍 ${matchInfo.venue.city}</span>
+                  ${matchInfo.venue.city ? `<span>📍 ${matchInfo.venue.city}</span>` : ''}
                   <span>👥 ${matchInfo.venue.attendance}</span>
-                  <span>⏱️ 半场: ${homeTeam.score_ht} - ${awayTeam.score_ht}</span>
+                  <span>⏱️ 半场: ${homeFirstHalfGoals} - ${awayFirstHalfGoals}</span>
+                </div>
+              </div>
+            `;
+          }
+
+          function renderGoalRecords(data) {
+            const events = data.events;
+            if (!events || events.length === 0) return '';
+            
+            const goalEvents = events.filter(event => 
+              event.type === 'goal' || event.type === 'own_goal'
+            );
+            if (goalEvents.length === 0) return '';
+            
+            const homeGoals = goalEvents.filter(event => event.team === 'home');
+            const awayGoals = goalEvents.filter(event => event.team === 'away');
+            
+            function renderGoalList(goals, teamName) {
+              if (goals.length === 0) return '';
+              
+              let html = `
+                <div style="margin-bottom: 1rem;">
+                  <h4 style="color: #c00010; font-size: 1.1rem; margin-bottom: 0.5rem;">${teamName}</h4>
+                  <ul style="list-style: none; padding: 0;">
+              `;
+              
+              goals.forEach((goal, index) => {
+                const minute = goal.minute;
+                const minuteExtra = goal.minute_extra;
+                const timeDisplay = minuteExtra ? `${minute}+${minuteExtra}'` : `${minute}'`;
+                
+                let specialMark = '';
+                let ballIcon = '⚽';
+                if (goal.goal_type === 'own_goal') {
+                  ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
+                  specialMark = ' <span style="color: #ff6b6b; font-weight: bold;">(OG)</span>';
+                } else if (goal.goal_type === 'penalty_goal') {
+                  specialMark = ' <span style="color: #4ecdc4; font-weight: bold;">(P)</span>';
+                }
+                
+                html += `
+                  <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between;">
+                    <span>
+                      <span style="color: #c00010; font-weight: 700; min-width: 40px;">${index + 1}.</span>
+                      <span>${ballIcon} ${goal.player}</span>${specialMark}
+                      ${goal.player2 ? `<span style="color: rgba(255, 255, 255, 0.6); font-size: 0.85rem;"> (助攻: ${goal.player2})</span>` : ''}
+                    </span>
+                    <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">${timeDisplay}</span>
+                  </li>
+                `;
+              });
+              
+              html += '</ul></div>';
+              return html;
+            }
+            
+            return `
+              <div class="card">
+                <h2>⚽ 进球记录</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                  ${renderGoalList(homeGoals, data.teams.home.name)}
+                  ${renderGoalList(awayGoals, data.teams.away.name)}
                 </div>
               </div>
             `;
@@ -542,6 +629,12 @@
               const teamName = event.team === 'home' ? data.teams.home.full_name : data.teams.away.full_name;
               const timeDisplay = minuteExtra ? `${minute}+${minuteExtra}'` : `${minute}'`;
 
+              let icon = '';
+              if (type === 'goal') icon = '⚽';
+              else if (type === 'yellow_card') icon = '🟨';
+              else if (type === 'red_card') icon = '🟥';
+              else if (type === 'substitution') icon = '🔄';
+              
               let content = '';
               if (type === 'goal' && event.player) {
                 content = `${teamName}: ${event.player}${event.player2 ? ` (助攻: ${event.player2})` : ''}`;
@@ -551,7 +644,7 @@
               
               html += `
                 <div class="timeline-item ${cssClass}">
-                  <span class="timeline-time">${timeDisplay}</span>
+                  <span class="timeline-time">${icon} ${timeDisplay}</span>
                   <span class="timeline-content">
                     ${content}
                   </span>
@@ -563,32 +656,81 @@
             return html;
           }
 
-          function renderLineups(data) {
+          function renderLineups(data, playersData) {
             const homeTeam = data.teams.home;
             const awayTeam = data.teams.away;
-
-            function renderPlayerList(players) {
-              return players.map(p => `
-                <li>
-                  <span><span class="player-number">${p.number}.</span><span class="player-name">${p.name}</span></span>
-                  <span class="player-position">${p.position}</span>
-                </li>
-              `).join('');
+            
+            // 获取所有红黄牌事件
+            const cardEvents = data.events.filter(event => 
+              event.type === 'yellow_card' || event.type === 'red_card'
+            );
+            
+            // 获取球员的红黄牌状态
+            function getPlayerCards(playerName) {
+              const playerCardEvents = cardEvents.filter(event => event.player === playerName);
+              const hasYellowCard = playerCardEvents.some(event => event.type === 'yellow_card');
+              const hasRedCard = playerCardEvents.some(event => event.type === 'red_card');
+              
+              let cardIcons = '';
+              if (hasRedCard) {
+                cardIcons += ' 🟥';
+              } else if (hasYellowCard) {
+                cardIcons += ' 🟨';
+              }
+              return cardIcons;
             }
 
-            function renderSubstitutes(subs, substitutions) {
+            // 获取球员位置信息（只给上海海港队的球员获取位置信息）
+            function getPlayerPosition(player, teamName) {
+              // 只给上海海港队的球员显示位置信息
+              if (teamName !== '上海海港') {
+                return null;
+              }
+              
+              if (player.position) {
+                return player.position;
+              }
+              
+              if (playersData && playersData.playersByNumber) {
+                const playerInfo = playersData.playersByNumber[player.number];
+                if (playerInfo && playerInfo.中文位置) {
+                  return playerInfo.中文位置;
+                }
+              }
+              
+              return null;
+            }
+
+            function renderPlayerList(players, teamName) {
+              return players.map(p => {
+                const cardIcons = getPlayerCards(p.name);
+                const position = getPlayerPosition(p, teamName);
+                return `
+                  <li>
+                    <span><span class="player-number">${p.number}.</span><span class="player-name">${p.name}${cardIcons}</span></span>
+                    ${position ? `<span class="player-position">${position}</span>` : ''}
+                  </li>
+                `;
+              }).join('');
+            }
+
+            function renderSubstitutes(subs, substitutions, teamName) {
               if (!subs || subs.length === 0) return '';
               
               return `
                 <div class="substitutes-section">
                   <h5>替补球员</h5>
                   <ul class="player-list">
-                    ${subs.map(s => `
-                      <li>
-                        <span><span class="player-number">${s.number}.</span><span class="player-name">${s.name}</span></span>
-                        <span class="player-position">${s.position}</span>
-                      </li>
-                    `).join('')}
+                    ${subs.map(s => {
+                      const cardIcons = getPlayerCards(s.name);
+                      const position = getPlayerPosition(s, teamName);
+                      return `
+                        <li>
+                          <span><span class="player-number">${s.number}.</span><span class="player-name">${s.name}${cardIcons}</span></span>
+                          ${position ? `<span class="player-position">${position}</span>` : ''}
+                        </li>
+                      `;
+                    }).join('')}
                   </ul>
                   ${renderSubstitutionDetails(substitutions)}
                 </div>
@@ -618,26 +760,26 @@
                 <h2>👥 首发阵容</h2>
                 <div class="lineups">
                   <div class="lineup-team">
-                    <h4>${homeTeam.full_name} <span class="formation">${homeTeam.formation}</span></h4>
+                    <h4>${homeTeam.name} <span class="formation">${homeTeam.formation}</span></h4>
                     <div class="manager-captain">
                       <span>主教练: ${homeTeam.coach}</span>
                       <span>队长: ${homeTeam.captain}</span>
                     </div>
                     <ul class="player-list">
-                      ${renderPlayerList(homeTeam.lineup)}
+                      ${renderPlayerList(homeTeam.lineup, homeTeam.name)}
                     </ul>
-                    ${renderSubstitutes(homeTeam.substitutes, homeTeam.substitutions)}
+                    ${renderSubstitutes(homeTeam.substitutes, homeTeam.substitutions, homeTeam.name)}
                   </div>
                   <div class="lineup-team">
-                    <h4>${awayTeam.full_name} <span class="formation">${awayTeam.formation}</span></h4>
+                    <h4>${awayTeam.name} <span class="formation">${awayTeam.formation}</span></h4>
                     <div class="manager-captain">
                       <span>主教练: ${awayTeam.coach}</span>
                       <span>队长: ${awayTeam.captain}</span>
                     </div>
                     <ul class="player-list">
-                      ${renderPlayerList(awayTeam.lineup)}
+                      ${renderPlayerList(awayTeam.lineup, awayTeam.name)}
                     </ul>
-                    ${renderSubstitutes(awayTeam.substitutes, awayTeam.substitutions)}
+                    ${renderSubstitutes(awayTeam.substitutes, awayTeam.substitutions, awayTeam.name)}
                   </div>
                 </div>
               </div>
@@ -648,24 +790,51 @@
             const stats = data.statistics;
             if (!stats) return '';
 
-            const possessionHtml = `
-              <div style="margin-bottom: 1rem;">
-                <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
-                  <span>${stats.possession.home}%</span>
-                  <span>控球率</span>
-                  <span>${stats.possession.away}%</span>
+            let possessionHtml = '';
+            if (stats.possession) {
+              const homePoss = stats.possession.home || '0';
+              const awayPoss = stats.possession.away || '0';
+              possessionHtml = `
+                <div style="margin-bottom: 1rem;">
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
+                    <span>${homePoss}</span>
+                    <span>控球率</span>
+                    <span>${awayPoss}</span>
+                  </div>
+                  <div class="possession-bar">
+                    <div class="possession-home" style="width: ${parseInt(homePoss)}%"></div>
+                    <div class="possession-away" style="width: ${parseInt(awayPoss)}%"></div>
+                  </div>
                 </div>
-                <div class="possession-bar">
-                  <div class="possession-home" style="width: ${stats.possession.home}%"></div>
-                  <div class="possession-away" style="width: ${stats.possession.away}%"></div>
-                </div>
-              </div>
-            `;
+              `;
+            }
+
+            function renderStatRow(statObj, label) {
+              if (!statObj) return '';
+              return `<tr><td>${statObj.home || '-'}</td><td>${label}</td><td>${statObj.away || '-'}</td></tr>`;
+            }
+
+            
+            const statsRows = [
+              renderStatRow(stats.shots, '射门次数'),
+              renderStatRow(stats.shots_on_target, '射正次数'),
+              renderStatRow(stats.saves, '扑救次数'),
+              renderStatRow(stats.corners, '角球次数'),
+              renderStatRow(stats.fouls, '犯规次数'),
+              renderStatRow(stats.crosses, '传中次数'),
+              renderStatRow(stats.interceptions, '拦截次数'),
+              renderStatRow(stats.offsides, '越位次数'),
+              renderStatRow(stats.yellow_cards, '黄牌'),
+              renderStatRow(stats.red_cards, '红牌')
+            ].filter(row => row).join('');
+
+            if (!statsRows && !possessionHtml) return '';
 
             return `
               <div class="card">
                 <h2>📊 比赛统计</h2>
                 ${possessionHtml}
+                ${statsRows ? `
                 <table class="statistics-table">
                   <thead>
                     <tr>
@@ -675,58 +844,66 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>${stats.shots.home}</td>
-                      <td>射门次数</td>
-                      <td>${stats.shots.away}</td>
-                    </tr>
-                    <tr>
-                      <td>${stats.shots_on_target.home}</td>
-                      <td>射正次数</td>
-                      <td>${stats.shots_on_target.away}</td>
-                    </tr>
-                    <tr>
-                      <td>${stats.saves.home}</td>
-                      <td>扑救次数</td>
-                      <td>${stats.saves.away}</td>
-                    </tr>
-                    <tr>
-                      <td>${stats.corners.home}</td>
-                      <td>角球次数</td>
-                      <td>${stats.corners.away}</td>
-                    </tr>
-                    <tr>
-                      <td>${stats.fouls.home}</td>
-                      <td>犯规次数</td>
-                      <td>${stats.fouls.away}</td>
-                    </tr>
-                    <tr>
-                      <td>${stats.crosses.home}</td>
-                      <td>传中次数</td>
-                      <td>${stats.crosses.away}</td>
-                    </tr>
-                    <tr>
-                      <td>${stats.interceptions.home}</td>
-                      <td>拦截次数</td>
-                      <td>${stats.interceptions.away}</td>
-                    </tr>
-                    <tr>
-                      <td>${stats.offsides.home}</td>
-                      <td>越位次数</td>
-                      <td>${stats.offsides.away}</td>
-                    </tr>
-                    <tr>
-                      <td>${stats.yellow_cards.home}</td>
-                      <td>黄牌</td>
-                      <td>${stats.yellow_cards.away}</td>
-                    </tr>
-                    <tr>
-                      <td>${stats.red_cards.home}</td>
-                      <td>红牌</td>
-                      <td>${stats.red_cards.away}</td>
-                    </tr>
+                    ${statsRows}
                   </tbody>
                 </table>
+                ` : ''}
+              </div>
+            `;
+          }
+
+          function renderCards(data) {
+            const events = data.events;
+            if (!events || events.length === 0) return '';
+            
+            const cardEvents = events.filter(event => 
+              event.type === 'yellow_card' || event.type === 'red_card'
+            );
+            
+            if (cardEvents.length === 0) return '';
+            
+            const homeCards = cardEvents.filter(event => event.team === 'home');
+            const awayCards = cardEvents.filter(event => event.team === 'away');
+            
+            function renderCardList(cards, teamName) {
+              if (cards.length === 0) return '';
+              
+              let html = `
+                <div style="margin-bottom: 1rem;">
+                  <h4 style="color: #c00010; font-size: 1.1rem; margin-bottom: 0.5rem;">${teamName}</h4>
+                  <ul style="list-style: none; padding: 0;">
+              `;
+              
+              cards.forEach((card, index) => {
+                const minute = card.minute;
+                const minuteExtra = card.minute_extra;
+                const timeDisplay = minuteExtra ? `${minute}+${minuteExtra}'` : `${minute}'`;
+                
+                const icon = card.type === 'yellow_card' ? '🟨' : '🟥';
+                const cardType = card.type === 'yellow_card' ? '黄牌' : '红牌';
+                
+                html += `
+                  <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between;">
+                    <span>
+                      <span style="color: #c00010; font-weight: 700; min-width: 40px;">${index + 1}.</span>
+                      <span>${icon} ${card.player}</span>
+                    </span>
+                    <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">${timeDisplay}</span>
+                  </li>
+                `;
+              });
+              
+              html += '</ul></div>';
+              return html;
+            }
+            
+            return `
+              <div class="card">
+                <h2>🟨🟥 红黄牌记录</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                  ${renderCardList(homeCards, data.teams.home.full_name)}
+                  ${renderCardList(awayCards, data.teams.away.full_name)}
+                </div>
               </div>
             `;
           }

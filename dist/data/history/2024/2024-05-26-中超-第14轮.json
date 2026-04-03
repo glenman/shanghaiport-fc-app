@@ -20,7 +20,7 @@
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 4,
       "score_ht": 0,
@@ -198,8 +198,8 @@
       ]
     },
     "away": {
-      "name": "Cangzhou Mighty Lions",
-      "full_name": "Cangzhou Mighty Lions",
+      "name": "沧州雄狮",
+      "full_name": "沧州雄狮足球俱乐部",
       "score": 1,
       "score_ht": 0,
       "formation": "5-4-1",
@@ -221,7 +221,7 @@
         {
           "position": "FW",
           "number": 7,
-          "name": "Zheng Dalun",
+          "name": "郑大伦",
           "country": "中国"
         },
         {
@@ -233,7 +233,7 @@
         {
           "position": "MF",
           "number": 16,
-          "name": "Zheng Kaimu",
+          "name": "郑凯木",
           "country": "中国"
         },
         {
@@ -283,13 +283,13 @@
         {
           "position": "DF",
           "number": 5,
-          "name": "Yan Zihao",
+          "name": "闫梓豪",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 8,
-          "name": "Zhao Yingjie",
+          "name": "赵英杰",
           "country": "中国"
         },
         {
@@ -321,7 +321,7 @@
         {
           "minute": 46,
           "player_out": "Tudi Dilyimit",
-          "player_in": "Zhao Yingjie"
+          "player_in": "赵英杰"
         },
         {
           "minute": 59,
@@ -352,9 +352,9 @@
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Oscar",
-      "player2": "Gustavo",
-      "description": "Oscar 进球 (助攻: Gustavo)"
+      "player": "奥斯卡",
+      "player2": "古斯塔沃",
+      "description": "奥斯卡在13'进球，助攻球员：古斯塔沃"
     },
     {
       "minute": 30,
@@ -363,25 +363,26 @@
       "team": "away",
       "player": "Liu Xinyu",
       "player2": "Tudi Dilyimit",
-      "description": "Liu Xinyu 进球 (助攻: Tudi Dilyimit)"
+      "description": "Liu Xinyu在30'进球，助攻球员：Tudi Dilyimit"
     },
     {
       "minute": 46,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Zhao Yingjie",
-      "player2": "Tudi Dilyimit",
-      "description": "Tudi Dilyimit 被换下，Zhao Yingjie 替补登场"
+      "player": "赵英杰",
+      "player2": "",
+      "description": "Tudi Dilyimit被换下，赵英杰替补登场",
+      "player_out": "Tudi Dilyimit"
     },
     {
       "minute": 51,
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": "武磊",
-      "description": "Oscar 进球 (助攻: Wu Lei)"
+      "description": "奥斯卡在51'进球，助攻球员：武磊"
     },
     {
       "minute": 59,
@@ -389,8 +390,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Héber",
-      "player2": "Liu Xinyu",
-      "description": "Liu Xinyu 被换下，Héber 替补登场"
+      "player2": "",
+      "description": "Liu Xinyu被换下，Héber替补登场",
+      "player_out": "Liu Xinyu"
     },
     {
       "minute": 59,
@@ -398,8 +400,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Viv Solomon-Otabor",
-      "player2": "Ma Fuyu",
-      "description": "Ma Fuyu 被换下，Viv Solomon-Otabor 替补登场"
+      "player2": "",
+      "description": "Ma Fuyu被换下，Viv Solomon-Otabor替补登场",
+      "player_out": "Ma Fuyu"
     },
     {
       "minute": 67,
@@ -407,8 +410,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Han Feng",
-      "player2": "Sun Jianxiang",
-      "description": "Sun Jianxiang 被换下，Han Feng 替补登场"
+      "player2": "",
+      "description": "Sun Jianxiang被换下，Han Feng替补登场",
+      "player_out": "Sun Jianxiang"
     },
     {
       "minute": 67,
@@ -416,8 +420,9 @@
       "type": "substitution",
       "team": "home",
       "player": "朱萨",
-      "player2": "徐新",
-      "description": "Xu Xin 被换下，Jussa 替补登场"
+      "player2": "",
+      "description": "徐新被换下，朱萨替补登场",
+      "player_out": "徐新"
     },
     {
       "minute": 68,
@@ -425,8 +430,9 @@
       "type": "substitution",
       "team": "home",
       "player": "王振澳",
-      "player2": "王燊超",
-      "description": "Wang Shenchao 被换下，Wang Zhen'ao 替补登场"
+      "player2": "",
+      "description": "王燊超被换下，王振澳替补登场",
+      "player_out": "王燊超"
     },
     {
       "minute": 73,
@@ -435,7 +441,7 @@
       "team": "home",
       "player": "武磊",
       "player2": "巴尔加斯",
-      "description": "Wu Lei 进球 (助攻: Matías Vargas)"
+      "description": "武磊在73'进球，助攻球员：巴尔加斯"
     },
     {
       "minute": 76,
@@ -443,8 +449,9 @@
       "type": "substitution",
       "team": "home",
       "player": "吕文君",
-      "player2": "巴尔加斯",
-      "description": "Matías Vargas 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "巴尔加斯被换下，吕文君替补登场",
+      "player_out": "巴尔加斯"
     },
     {
       "minute": 76,
@@ -452,8 +459,9 @@
       "type": "substitution",
       "team": "home",
       "player": "冯劲",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "武磊被换下，冯劲替补登场",
+      "player_out": "武磊"
     },
     {
       "minute": 79,
@@ -461,8 +469,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Li Hong",
-      "player2": "Stoppila Sunzu",
-      "description": "Stoppila Sunzu 被换下，Li Hong 替补登场"
+      "player2": "",
+      "description": "Stoppila Sunzu被换下，Li Hong替补登场",
+      "player_out": "Stoppila Sunzu"
     },
     {
       "minute": 84,
@@ -470,25 +479,26 @@
       "type": "substitution",
       "team": "home",
       "player": "Cai Huikang",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Cai Huikang 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，Cai Huikang替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 90,
       "minute_extra": 2,
       "type": "goal",
       "team": "home",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": "朱萨",
-      "description": "Oscar 进球 (助攻: Jussa)"
+      "description": "奥斯卡在90+2'进球，助攻球员：朱萨"
     },
     {
       "minute": 90,
       "minute_extra": 3,
       "type": "yellow_card",
       "team": "away",
-      "player": "Zheng Kaimu",
-      "description": "Zheng Kaimu 获得黄牌"
+      "player": "郑凯木",
+      "description": "郑凯木获得黄牌"
     }
   ],
   "statistics": {

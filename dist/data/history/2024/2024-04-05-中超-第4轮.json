@@ -20,8 +20,8 @@
   },
   "teams": {
     "home": {
-      "name": "Beijing Guoan",
-      "full_name": "Beijing Guoan",
+      "name": "北京国安",
+      "full_name": "北京国安足球俱乐部",
       "score": 2,
       "score_ht": 0,
       "formation": "3-4-3",
@@ -31,7 +31,7 @@
         {
           "position": "",
           "number": 34,
-          "name": "Hou Sen",
+          "name": "侯森",
           "country": "中国"
         },
         {
@@ -43,7 +43,7 @@
         {
           "position": "DF",
           "number": 3,
-          "name": "He Yupeng",
+          "name": "何宇鹏",
           "country": "中国"
         },
         {
@@ -61,25 +61,25 @@
         {
           "position": "FW",
           "number": 10,
-          "name": "Zhang Xizhe",
+          "name": "张稀哲",
           "country": "中国"
         },
         {
           "position": "FW",
           "number": 11,
-          "name": "Lin Liangming",
+          "name": "林良铭",
           "country": "中国"
         },
         {
           "position": "DF",
           "number": 23,
-          "name": "Nico Yennaris",
+          "name": "李可",
           "country": "中国"
         },
         {
           "position": "",
           "number": 26,
-          "name": "Bai Yang",
+          "name": "白洋",
           "country": "中国"
         },
         {
@@ -91,7 +91,7 @@
         {
           "position": "",
           "number": 35,
-          "name": "Jiang Wenhao",
+          "name": "姜文浩",
           "country": "中国"
         }
       ],
@@ -99,73 +99,73 @@
         {
           "position": "GK",
           "number": 1,
-          "name": "Han Jiaqi",
+          "name": "韩佳奇",
           "country": "中国"
         },
         {
           "position": "",
           "number": 6,
-          "name": "Chi Zhongguo",
+          "name": "池忠国",
           "country": "中国"
         },
         {
           "position": "",
           "number": 9,
-          "name": "Zhang Yuning",
+          "name": "张玉宁",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 16,
-          "name": "Feng Boxuan",
+          "name": "冯博轩",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 17,
-          "name": "Yang Liyu",
+          "name": "杨立瑜",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 18,
-          "name": "Fang Hao",
+          "name": "方昊",
           "country": "中国"
         },
         {
           "position": "DF",
           "number": 19,
-          "name": "Naibijiang Mohemaiti",
+          "name": "乃比江·莫合买提",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 20,
-          "name": "Wang Ziming",
+          "name": "王梓铭",
           "country": "中国"
         },
         {
           "position": "",
           "number": 21,
-          "name": "Zhang Yuan",
+          "name": "张源",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 22,
-          "name": "Yu Dabao",
+          "name": "于大宝",
           "country": "中国"
         },
         {
           "position": "",
           "number": 24,
-          "name": "Samuel Adegbenro",
+          "name": "塞缪尔·阿德本罗",
           "country": "中国"
         },
         {
           "position": "",
           "number": 37,
-          "name": "Cao Yongjing",
+          "name": "曹永竞",
           "country": "中国"
         }
       ],
@@ -173,32 +173,32 @@
         {
           "minute": 14,
           "player_out": "Fábio Abreu",
-          "player_in": "Zhang Yuning"
+          "player_in": "张玉宁"
         },
         {
           "minute": 46,
-          "player_out": "Lin Liangming",
-          "player_in": "Samuel Adegbenro"
+          "player_out": "林良铭",
+          "player_in": "塞缪尔·阿德本罗"
         },
         {
           "minute": 64,
-          "player_out": "Zhang Xizhe",
-          "player_in": "Fang Hao"
+          "player_out": "张稀哲",
+          "player_in": "方昊"
         },
         {
           "minute": 75,
-          "player_out": "Jiang Wenhao",
-          "player_in": "Feng Boxuan"
+          "player_out": "姜文浩",
+          "player_in": "冯博轩"
         },
         {
           "minute": 75,
-          "player_out": "Nico Yennaris",
-          "player_in": "Zhang Yuan"
+          "player_out": "李可",
+          "player_in": "张源"
         }
       ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 2,
       "score_ht": 0,
@@ -351,7 +351,7 @@
         {
           "minute": 56,
           "player_out": "冯劲",
-          "player_in": "Gustavo"
+          "player_in": "古斯塔沃"
         },
         {
           "minute": 56,
@@ -361,7 +361,7 @@
         {
           "minute": 56,
           "player_out": "王振澳",
-          "player_in": "Li Shuai"
+          "player_in": "李帅"
         },
         {
           "minute": 86,
@@ -383,17 +383,18 @@
       "type": "goal",
       "team": "away",
       "player": "武磊",
-      "player2": "Oscar",
-      "description": "Wu Lei 进球 (助攻: Oscar)"
+      "player2": "奥斯卡",
+      "description": "武磊在10'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 14,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Zhang Yuning",
-      "player2": "Fábio Abreu",
-      "description": "Fábio Abreu 被换下，Zhang Yuning 替补登场"
+      "player": "张玉宁",
+      "player2": "",
+      "description": "Fábio Abreu被换下，张玉宁替补登场",
+      "player_out": "Fábio Abreu"
     },
     {
       "minute": 27,
@@ -401,8 +402,8 @@
       "type": "goal",
       "team": "home",
       "player": "Gonçalo Rodrigues",
-      "player2": "Bai Yang",
-      "description": "Gonçalo Rodrigues 进球 (助攻: Bai Yang)"
+      "player2": "白洋",
+      "description": "Gonçalo Rodrigues在27'进球，助攻球员：白洋"
     },
     {
       "minute": 45,
@@ -410,25 +411,27 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Gonçalo Rodrigues",
-      "description": "Gonçalo Rodrigues 获得黄牌"
+      "description": "Gonçalo Rodrigues获得黄牌"
     },
     {
       "minute": 46,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Samuel Adegbenro",
-      "player2": "Lin Liangming",
-      "description": "Lin Liangming 被换下，Samuel Adegbenro 替补登场"
+      "player": "塞缪尔·阿德本罗",
+      "player2": "",
+      "description": "林良铭被换下，塞缪尔·阿德本罗替补登场",
+      "player_out": "林良铭"
     },
     {
       "minute": 56,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Gustavo",
-      "player2": "冯劲",
-      "description": "Feng Jing 被换下，Gustavo 替补登场"
+      "player": "古斯塔沃",
+      "player2": "",
+      "description": "冯劲被换下，古斯塔沃替补登场",
+      "player_out": "冯劲"
     },
     {
       "minute": 56,
@@ -436,26 +439,29 @@
       "type": "substitution",
       "team": "away",
       "player": "朱萨",
-      "player2": "Cai Huikang",
-      "description": "Cai Huikang 被换下，Jussa 替补登场"
+      "player2": "",
+      "description": "Cai Huikang被换下，朱萨替补登场",
+      "player_out": "Cai Huikang"
     },
     {
       "minute": 56,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Li Shuai",
-      "player2": "王振澳",
-      "description": "Wang Zhen'ao 被换下，Li Shuai 替补登场"
+      "player": "李帅",
+      "player2": "",
+      "description": "王振澳被换下，李帅替补登场",
+      "player_out": "王振澳"
     },
     {
       "minute": 64,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Fang Hao",
-      "player2": "Zhang Xizhe",
-      "description": "Zhang Xizhe 被换下，Fang Hao 替补登场"
+      "player": "方昊",
+      "player2": "",
+      "description": "张稀哲被换下，方昊替补登场",
+      "player_out": "张稀哲"
     },
     {
       "minute": 72,
@@ -463,42 +469,44 @@
       "type": "yellow_card",
       "team": "away",
       "player": "王燊超",
-      "description": "Wang Shenchao 获得黄牌"
+      "description": "王燊超获得黄牌"
     },
     {
       "minute": 75,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Feng Boxuan",
-      "player2": "Jiang Wenhao",
-      "description": "Jiang Wenhao 被换下，Feng Boxuan 替补登场"
+      "player": "冯博轩",
+      "player2": "",
+      "description": "姜文浩被换下，冯博轩替补登场",
+      "player_out": "姜文浩"
     },
     {
       "minute": 75,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Zhang Yuan",
-      "player2": "Nico Yennaris",
-      "description": "Nico Yennaris 被换下，Zhang Yuan 替补登场"
+      "player": "张源",
+      "player2": "",
+      "description": "李可被换下，张源替补登场",
+      "player_out": "李可"
     },
     {
       "minute": 76,
       "minute_extra": null,
       "type": "yellow_card",
       "team": "away",
-      "player": "Li Shuai",
-      "description": "Li Shuai 获得黄牌"
+      "player": "李帅",
+      "description": "李帅获得黄牌"
     },
     {
       "minute": 82,
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Zhang Yuning",
+      "player": "张玉宁",
       "player2": null,
-      "description": "Zhang Yuning 进球"
+      "description": "张玉宁在82'进球"
     },
     {
       "minute": 86,
@@ -506,8 +514,9 @@
       "type": "substitution",
       "team": "away",
       "player": "唐金",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Will Donkin 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，唐金替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 86,
@@ -515,24 +524,25 @@
       "type": "substitution",
       "team": "away",
       "player": "吕文君",
-      "player2": "王燊超",
-      "description": "Wang Shenchao 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "王燊超被换下，吕文君替补登场",
+      "player_out": "王燊超"
     },
     {
       "minute": 90,
       "minute_extra": null,
       "type": "yellow_card",
       "team": "home",
-      "player": "Hou Sen",
-      "description": "Hou Sen 获得黄牌"
+      "player": "侯森",
+      "description": "侯森获得黄牌"
     },
     {
       "minute": 90,
       "minute_extra": 2,
       "type": "yellow_card",
       "team": "home",
-      "player": "Zhang Yuan",
-      "description": "Zhang Yuan 获得黄牌"
+      "player": "张源",
+      "description": "张源获得黄牌"
     },
     {
       "minute": 90,
@@ -541,7 +551,7 @@
       "team": "away",
       "player": "武磊",
       "player2": "唐金",
-      "description": "Wu Lei 进球 (助攻: Will Donkin)"
+      "description": "武磊在90+6'进球，助攻球员：唐金"
     }
   ],
   "statistics": {

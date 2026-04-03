@@ -20,8 +20,8 @@
   },
   "teams": {
     "home": {
-      "name": "Henan",
-      "full_name": "Henan",
+      "name": "河南队",
+      "full_name": "河南足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "5-4-1",
@@ -37,7 +37,7 @@
         {
           "position": "DF",
           "number": 2,
-          "name": "Yixin Liu",
+          "name": "刘易鑫",
           "country": "中国"
         },
         {
@@ -49,25 +49,25 @@
         {
           "position": "MF",
           "number": 8,
-          "name": "Đorđe Denić",
+          "name": "乔尔杰·德尼奇",
           "country": "中国"
         },
         {
           "position": "FW",
           "number": 10,
-          "name": "Huang Zichang",
+          "name": "黄紫昌",
           "country": "中国"
         },
         {
           "position": "FW",
           "number": 11,
-          "name": "Frank Acheampong",
+          "name": "弗兰克·阿奇姆彭",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 22,
-          "name": "Huang Ruifeng",
+          "name": "黄锐烽",
           "country": "中国"
         },
         {
@@ -91,7 +91,7 @@
         {
           "position": "",
           "number": 40,
-          "name": "Bruno Nazário",
+          "name": "布鲁诺·纳扎里奥",
           "country": "中国"
         }
       ],
@@ -99,7 +99,7 @@
         {
           "position": "",
           "number": 26,
-          "name": "Xu Jiamin",
+          "name": "徐嘉敏",
           "country": "中国"
         },
         {
@@ -123,13 +123,13 @@
         {
           "position": "",
           "number": 9,
-          "name": "Feng Boyuan",
+          "name": "冯伯元",
           "country": "中国"
         },
         {
           "position": "",
           "number": 13,
-          "name": "Xu Haofeng",
+          "name": "徐浩峰",
           "country": "中国"
         },
         {
@@ -153,7 +153,7 @@
         {
           "position": "MF",
           "number": 20,
-          "name": "Nemanja Čović",
+          "name": "内马尼亚·科维奇",
           "country": "中国"
         },
         {
@@ -172,8 +172,8 @@
       "substitutions": [
         {
           "minute": 60,
-          "player_out": "Huang Zichang",
-          "player_in": "Nemanja Čović"
+          "player_out": "黄紫昌",
+          "player_in": "内马尼亚·科维奇"
         },
         {
           "minute": 75,
@@ -182,18 +182,18 @@
         },
         {
           "minute": 75,
-          "player_out": "Frank Acheampong",
+          "player_out": "弗兰克·阿奇姆彭",
           "player_in": "Yang Yilin"
         },
         {
           "minute": 89,
-          "player_out": "Đorđe Denić",
-          "player_in": "Feng Boyuan"
+          "player_out": "乔尔杰·德尼奇",
+          "player_in": "冯伯元"
         }
       ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 1,
       "score_ht": 0,
@@ -345,7 +345,7 @@
       "substitutions": [
         {
           "minute": 61,
-          "player_out": "Li Shuai",
+          "player_out": "李帅",
           "player_in": "张琳芃"
         },
         {
@@ -367,26 +367,27 @@
       "minute_extra": null,
       "type": "yellow_card",
       "team": "away",
-      "player": "Li Shuai",
-      "description": "Li Shuai 获得黄牌"
+      "player": "李帅",
+      "description": "李帅获得黄牌"
     },
     {
       "minute": 44,
       "minute_extra": null,
       "type": "goal",
       "team": "away",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": null,
-      "description": "Oscar 进球"
+      "description": "奥斯卡在44'进球"
     },
     {
       "minute": 60,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Nemanja Čović",
-      "player2": "Huang Zichang",
-      "description": "Huang Zichang 被换下，Nemanja Čović 替补登场"
+      "player": "内马尼亚·科维奇",
+      "player2": "",
+      "description": "黄紫昌被换下，内马尼亚·科维奇替补登场",
+      "player_out": "黄紫昌"
     },
     {
       "minute": 61,
@@ -394,8 +395,9 @@
       "type": "substitution",
       "team": "away",
       "player": "张琳芃",
-      "player2": "Li Shuai",
-      "description": "Li Shuai 被换下，Zhang Linpeng 替补登场"
+      "player2": "",
+      "description": "李帅被换下，张琳芃替补登场",
+      "player_out": "李帅"
     },
     {
       "minute": 73,
@@ -403,8 +405,9 @@
       "type": "substitution",
       "team": "away",
       "player": "冯劲",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "武磊被换下，冯劲替补登场",
+      "player_out": "武磊"
     },
     {
       "minute": 75,
@@ -412,8 +415,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Zhong Yihao",
-      "player2": "Niu Ziyi",
-      "description": "Niu Ziyi 被换下，Zhong Yihao 替补登场"
+      "player2": "",
+      "description": "Niu Ziyi被换下，Zhong Yihao替补登场",
+      "player_out": "Niu Ziyi"
     },
     {
       "minute": 75,
@@ -421,17 +425,19 @@
       "type": "substitution",
       "team": "home",
       "player": "Yang Yilin",
-      "player2": "Frank Acheampong",
-      "description": "Frank Acheampong 被换下，Yang Yilin 替补登场"
+      "player2": "",
+      "description": "弗兰克·阿奇姆彭被换下，Yang Yilin替补登场",
+      "player_out": "弗兰克·阿奇姆彭"
     },
     {
       "minute": 89,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Feng Boyuan",
-      "player2": "Đorđe Denić",
-      "description": "Đorđe Denić 被换下，Feng Boyuan 替补登场"
+      "player": "冯伯元",
+      "player2": "",
+      "description": "乔尔杰·德尼奇被换下，冯伯元替补登场",
+      "player_out": "乔尔杰·德尼奇"
     },
     {
       "minute": 90,
@@ -439,16 +445,17 @@
       "type": "substitution",
       "team": "away",
       "player": "李昂",
-      "player2": "巴尔加斯",
-      "description": "Matías Vargas 被换下，Li Ang 替补登场"
+      "player2": "",
+      "description": "巴尔加斯被换下，李昂替补登场",
+      "player_out": "巴尔加斯"
     },
     {
       "minute": 90,
       "minute_extra": 3,
       "type": "yellow_card",
       "team": "away",
-      "player": "Gustavo",
-      "description": "Gustavo 获得黄牌"
+      "player": "古斯塔沃",
+      "description": "古斯塔沃获得黄牌"
     }
   ],
   "statistics": {

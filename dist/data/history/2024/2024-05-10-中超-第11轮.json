@@ -20,7 +20,7 @@
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 5,
       "score_ht": 0,
@@ -187,19 +187,19 @@
         },
         {
           "minute": 81,
-          "player_out": "Gustavo",
+          "player_out": "古斯塔沃",
           "player_in": "刘祝润"
         },
         {
           "minute": 88,
-          "player_out": "Li Shuai",
+          "player_out": "李帅",
           "player_in": "包世萌"
         }
       ]
     },
     "away": {
-      "name": "Changchun Yatai",
-      "full_name": "Changchun Yatai",
+      "name": "长春亚泰",
+      "full_name": "长春亚泰足球俱乐部",
       "score": 2,
       "score_ht": 0,
       "formation": "4-3-3",
@@ -221,7 +221,7 @@
         {
           "position": "FW",
           "number": 10,
-          "name": "Serginho",
+          "name": "塞尔吉尼奥",
           "country": "中国"
         },
         {
@@ -245,7 +245,7 @@
         {
           "position": "",
           "number": 29,
-          "name": "Tan Long",
+          "name": "谭龙",
           "country": "中国"
         },
         {
@@ -263,7 +263,7 @@
         {
           "position": "",
           "number": 40,
-          "name": "Guilherme",
+          "name": "吉尔赫梅",
           "country": "中国"
         },
         {
@@ -283,7 +283,7 @@
         {
           "position": "DF",
           "number": 23,
-          "name": "Wu Yake",
+          "name": "吴亚轲",
           "country": "中国"
         },
         {
@@ -325,7 +325,7 @@
         {
           "position": "MF",
           "number": 20,
-          "name": "Zhang Yufeng",
+          "name": "张宇峰",
           "country": "中国"
         },
         {
@@ -355,7 +355,7 @@
         },
         {
           "minute": 46,
-          "player_out": "Guilherme",
+          "player_out": "吉尔赫梅",
           "player_in": "Zhang Huachen"
         },
         {
@@ -370,8 +370,8 @@
         },
         {
           "minute": 85,
-          "player_out": "Serginho",
-          "player_in": "Zhang Yufeng"
+          "player_out": "塞尔吉尼奥",
+          "player_in": "张宇峰"
         }
       ]
     }
@@ -382,17 +382,17 @@
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Gustavo",
+      "player": "古斯塔沃",
       "player2": null,
-      "description": "Gustavo 进球"
+      "description": "古斯塔沃在10'进球"
     },
     {
       "minute": 12,
       "minute_extra": null,
       "type": "yellow_card",
       "team": "away",
-      "player": "Guilherme",
-      "description": "Guilherme 获得黄牌"
+      "player": "吉尔赫梅",
+      "description": "吉尔赫梅获得黄牌"
     },
     {
       "minute": 26,
@@ -400,8 +400,8 @@
       "type": "goal",
       "team": "home",
       "player": "武磊",
-      "player2": "Oscar",
-      "description": "Wu Lei 进球 (助攻: Oscar)"
+      "player2": "奥斯卡",
+      "description": "武磊在26'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 32,
@@ -410,7 +410,7 @@
       "team": "away",
       "player": "Guoliang Sun",
       "player2": null,
-      "description": "Guoliang Sun 进球"
+      "description": "Guoliang Sun在32'进球"
     },
     {
       "minute": 40,
@@ -418,8 +418,9 @@
       "type": "substitution",
       "team": "away",
       "player": "He Yiran",
-      "player2": "Liao Chengjian",
-      "description": "Liao Chengjian 被换下，He Yiran 替补登场"
+      "player2": "",
+      "description": "Liao Chengjian被换下，He Yiran替补登场",
+      "player_out": "Liao Chengjian"
     },
     {
       "minute": 44,
@@ -428,7 +429,7 @@
       "team": "home",
       "player": "巴尔加斯",
       "player2": "王振澳",
-      "description": "Matías Vargas 进球 (助攻: Wang Zhen'ao)"
+      "description": "巴尔加斯在44'进球，助攻球员：王振澳"
     },
     {
       "minute": 46,
@@ -436,8 +437,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Zhang Huachen",
-      "player2": "Guilherme",
-      "description": "Guilherme 被换下，Zhang Huachen 替补登场"
+      "player2": "",
+      "description": "吉尔赫梅被换下，Zhang Huachen替补登场",
+      "player_out": "吉尔赫梅"
     },
     {
       "minute": 49,
@@ -446,7 +448,7 @@
       "team": "home",
       "player": "武磊",
       "player2": "奇塔迪尼",
-      "description": "Wu Lei 进球 (助攻: Léo Cittadini)"
+      "description": "武磊在49'进球，助攻球员：奇塔迪尼"
     },
     {
       "minute": 58,
@@ -455,16 +457,16 @@
       "team": "away",
       "player": "Robert Berić",
       "player2": null,
-      "description": "Robert Berić 进球"
+      "description": "Robert Berić在58'进球"
     },
     {
       "minute": 72,
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Gustavo",
+      "player": "古斯塔沃",
       "player2": "武磊",
-      "description": "Gustavo 进球 (助攻: Wu Lei)"
+      "description": "古斯塔沃在72'进球，助攻球员：武磊"
     },
     {
       "minute": 78,
@@ -472,8 +474,9 @@
       "type": "substitution",
       "team": "home",
       "player": "王燊超",
-      "player2": "王振澳",
-      "description": "Wang Zhen'ao 被换下，Wang Shenchao 替补登场"
+      "player2": "",
+      "description": "王振澳被换下，王燊超替补登场",
+      "player_out": "王振澳"
     },
     {
       "minute": 78,
@@ -481,8 +484,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Wang Jinxian",
-      "player2": "Wang Yu",
-      "description": "Wang Yu 被换下，Wang Jinxian 替补登场"
+      "player2": "",
+      "description": "Wang Yu被换下，Wang Jinxian替补登场",
+      "player_out": "Wang Yu"
     },
     {
       "minute": 78,
@@ -490,8 +494,9 @@
       "type": "substitution",
       "team": "home",
       "player": "徐新",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，徐新替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 80,
@@ -499,8 +504,9 @@
       "type": "substitution",
       "team": "home",
       "player": "吕文君",
-      "player2": "巴尔加斯",
-      "description": "Matías Vargas 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "巴尔加斯被换下，吕文君替补登场",
+      "player_out": "巴尔加斯"
     },
     {
       "minute": 81,
@@ -508,8 +514,9 @@
       "type": "substitution",
       "team": "home",
       "player": "刘祝润",
-      "player2": "Gustavo",
-      "description": "Gustavo 被换下，Liu Zhurun 替补登场"
+      "player2": "",
+      "description": "古斯塔沃被换下，刘祝润替补登场",
+      "player_out": "古斯塔沃"
     },
     {
       "minute": 85,
@@ -517,17 +524,19 @@
       "type": "substitution",
       "team": "away",
       "player": "Tian Yuda",
-      "player2": "Robert Berić",
-      "description": "Robert Berić 被换下，Tian Yuda 替补登场"
+      "player2": "",
+      "description": "Robert Berić被换下，Tian Yuda替补登场",
+      "player_out": "Robert Berić"
     },
     {
       "minute": 85,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Zhang Yufeng",
-      "player2": "Serginho",
-      "description": "Serginho 被换下，Zhang Yufeng 替补登场"
+      "player": "张宇峰",
+      "player2": "",
+      "description": "塞尔吉尼奥被换下，张宇峰替补登场",
+      "player_out": "塞尔吉尼奥"
     },
     {
       "minute": 88,
@@ -535,8 +544,9 @@
       "type": "substitution",
       "team": "home",
       "player": "包世萌",
-      "player2": "Li Shuai",
-      "description": "Li Shuai 被换下，Bao Shimeng 替补登场"
+      "player2": "",
+      "description": "李帅被换下，包世萌替补登场",
+      "player_out": "李帅"
     },
     {
       "minute": 90,
@@ -544,7 +554,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "包世萌",
-      "description": "Bao Shimeng 获得黄牌"
+      "description": "包世萌获得黄牌"
     }
   ],
   "statistics": {

@@ -20,8 +20,8 @@
   },
   "teams": {
     "home": {
-      "name": "Zhejiang Professional",
-      "full_name": "Zhejiang Professional",
+      "name": "浙江队",
+      "full_name": "浙江足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "4-1-4-1",
@@ -43,19 +43,19 @@
         {
           "position": "FW",
           "number": 7,
-          "name": "Deabeas Owusu Sekyere",
+          "name": "迪贝亚斯·奥乌苏·塞克耶雷",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 8,
-          "name": "Alexander N'Doumbou",
+          "name": "亚历山大·恩杜姆布",
           "country": "中国"
         },
         {
           "position": "FW",
           "number": 10,
-          "name": "Li Tixiang",
+          "name": "李提香",
           "country": "中国"
         },
         {
@@ -73,13 +73,13 @@
         {
           "position": "MF",
           "number": 22,
-          "name": "Cheng Jin",
+          "name": "程进",
           "country": "中国"
         },
         {
           "position": "DF",
           "number": 28,
-          "name": "Yue Xin",
+          "name": "岳鑫",
           "country": "中国"
         },
         {
@@ -91,7 +91,7 @@
         {
           "position": "FW",
           "number": 45,
-          "name": "Leo",
+          "name": "莱奥",
           "country": "中国"
         }
       ],
@@ -123,7 +123,7 @@
         {
           "position": "",
           "number": 6,
-          "name": "Yao Junsheng",
+          "name": "姚均晟",
           "country": "中国"
         },
         {
@@ -141,64 +141,64 @@
         {
           "position": "MF",
           "number": 18,
-          "name": "Ablikim Abdulsalam",
+          "name": "阿不都海米提",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 20,
-          "name": "Wang Dongsheng",
+          "name": "王东升",
           "country": "中国"
         },
         {
           "position": "",
           "number": 29,
-          "name": "Zhang Jiaqi",
+          "name": "张佳祺",
           "country": "中国"
         },
         {
           "position": "DF",
           "number": 31,
-          "name": "Gu Bin",
+          "name": "顾斌",
           "country": "中国"
         },
         {
           "position": "",
           "number": 39,
-          "name": "Wang Yudong",
+          "name": "王宇东",
           "country": "中国"
         }
       ],
       "substitutions": [
         {
           "minute": 72,
-          "player_out": "Deabeas Owusu Sekyere",
-          "player_in": "Yao Junsheng"
+          "player_out": "迪贝亚斯·奥乌苏·塞克耶雷",
+          "player_in": "姚均晟"
         },
         {
           "minute": 83,
-          "player_out": "Yue Xin",
-          "player_in": "Wang Dongsheng"
+          "player_out": "岳鑫",
+          "player_in": "王东升"
         },
         {
           "minute": 83,
-          "player_out": "Li Tixiang",
-          "player_in": "Gu Bin"
+          "player_out": "李提香",
+          "player_in": "顾斌"
         },
         {
           "minute": 90,
-          "player_out": "Cheng Jin",
-          "player_in": "Zhang Jiaqi"
+          "player_out": "程进",
+          "player_in": "张佳祺"
         },
         {
           "minute": 90,
-          "player_out": "Alexander N'Doumbou",
-          "player_in": "Ablikim Abdulsalam"
+          "player_out": "亚历山大·恩杜姆布",
+          "player_in": "阿不都海米提"
         }
       ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 0,
       "score_ht": 0,
@@ -377,8 +377,8 @@
       "minute_extra": null,
       "type": "yellow_card",
       "team": "home",
-      "player": "Li Tixiang",
-      "description": "Li Tixiang 获得黄牌"
+      "player": "李提香",
+      "description": "李提香获得黄牌"
     },
     {
       "minute": 22,
@@ -386,7 +386,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "王振澳",
-      "description": "Wang Zhen'ao 获得黄牌"
+      "description": "王振澳获得黄牌"
     },
     {
       "minute": 46,
@@ -394,8 +394,9 @@
       "type": "substitution",
       "team": "away",
       "player": "奇塔迪尼",
-      "player2": "徐新",
-      "description": "Xu Xin 被换下，Léo Cittadini 替补登场"
+      "player2": "",
+      "description": "徐新被换下，奇塔迪尼替补登场",
+      "player_out": "徐新"
     },
     {
       "minute": 46,
@@ -403,8 +404,9 @@
       "type": "substitution",
       "team": "away",
       "player": "李圣龙",
-      "player2": "冯劲",
-      "description": "Feng Jing 被换下，Li Shenglong 替补登场"
+      "player2": "",
+      "description": "冯劲被换下，李圣龙替补登场",
+      "player_out": "冯劲"
     },
     {
       "minute": 65,
@@ -412,7 +414,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Dong Yu",
-      "description": "Dong Yu 获得黄牌"
+      "description": "Dong Yu获得黄牌"
     },
     {
       "minute": 72,
@@ -420,16 +422,17 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Sun Zheng'ao",
-      "description": "Sun Zheng'ao 获得黄牌"
+      "description": "Sun Zheng'ao获得黄牌"
     },
     {
       "minute": 72,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Yao Junsheng",
-      "player2": "Deabeas Owusu Sekyere",
-      "description": "Deabeas Owusu Sekyere 被换下，Yao Junsheng 替补登场"
+      "player": "姚均晟",
+      "player2": "",
+      "description": "迪贝亚斯·奥乌苏·塞克耶雷被换下，姚均晟替补登场",
+      "player_out": "迪贝亚斯·奥乌苏·塞克耶雷"
     },
     {
       "minute": 78,
@@ -437,26 +440,29 @@
       "type": "substitution",
       "team": "away",
       "player": "吕文君",
-      "player2": "巴尔加斯",
-      "description": "Matías Vargas 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "巴尔加斯被换下，吕文君替补登场",
+      "player_out": "巴尔加斯"
     },
     {
       "minute": 83,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Wang Dongsheng",
-      "player2": "Yue Xin",
-      "description": "Yue Xin 被换下，Wang Dongsheng 替补登场"
+      "player": "王东升",
+      "player2": "",
+      "description": "岳鑫被换下，王东升替补登场",
+      "player_out": "岳鑫"
     },
     {
       "minute": 83,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Gu Bin",
-      "player2": "Li Tixiang",
-      "description": "Li Tixiang 被换下，Gu Bin 替补登场"
+      "player": "顾斌",
+      "player2": "",
+      "description": "李提香被换下，顾斌替补登场",
+      "player_out": "李提香"
     },
     {
       "minute": 86,
@@ -464,34 +470,37 @@
       "type": "substitution",
       "team": "away",
       "player": "刘小龙",
-      "player2": "刘祝润",
-      "description": "Liu Zhurun 被换下，Liu Xiaolong 替补登场"
+      "player2": "",
+      "description": "刘祝润被换下，刘小龙替补登场",
+      "player_out": "刘祝润"
     },
     {
       "minute": 90,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Zhang Jiaqi",
-      "player2": "Cheng Jin",
-      "description": "Cheng Jin 被换下，Zhang Jiaqi 替补登场"
+      "player": "张佳祺",
+      "player2": "",
+      "description": "程进被换下，张佳祺替补登场",
+      "player_out": "程进"
     },
     {
       "minute": 90,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Ablikim Abdulsalam",
-      "player2": "Alexander N'Doumbou",
-      "description": "Alexander N'Doumbou 被换下，Ablikim Abdulsalam 替补登场"
+      "player": "阿不都海米提",
+      "player2": "",
+      "description": "亚历山大·恩杜姆布被换下，阿不都海米提替补登场",
+      "player_out": "亚历山大·恩杜姆布"
     },
     {
       "minute": 90,
       "minute_extra": 2,
       "type": "yellow_card",
       "team": "home",
-      "player": "Zhang Jiaqi",
-      "description": "Zhang Jiaqi 获得黄牌"
+      "player": "张佳祺",
+      "description": "张佳祺获得黄牌"
     },
     {
       "minute": 90,
@@ -499,7 +508,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "朱萨",
-      "description": "Jussa 获得黄牌"
+      "description": "朱萨获得黄牌"
     },
     {
       "minute": 90,
@@ -507,7 +516,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Sun Zheng'ao",
-      "description": "Sun Zheng'ao 获得黄牌"
+      "description": "Sun Zheng'ao获得黄牌"
     }
   ],
   "statistics": {

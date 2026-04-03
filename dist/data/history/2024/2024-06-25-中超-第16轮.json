@@ -20,8 +20,8 @@
   },
   "teams": {
     "home": {
-      "name": "Wuhan Three Towns",
-      "full_name": "Wuhan Three Towns",
+      "name": "武汉三镇",
+      "full_name": "武汉三镇足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "4-4-2",
@@ -55,7 +55,7 @@
         {
           "position": "",
           "number": 9,
-          "name": "Pedro",
+          "name": "佩德罗",
           "country": "中国"
         },
         {
@@ -67,13 +67,13 @@
         {
           "position": "",
           "number": 12,
-          "name": "Zhang Xiaobin",
+          "name": "张晓彬",
           "country": "中国"
         },
         {
           "position": "",
           "number": 21,
-          "name": "He Chao",
+          "name": "何超",
           "country": "中国"
         },
         {
@@ -123,7 +123,7 @@
         {
           "position": "MF",
           "number": 18,
-          "name": "Liu Yiming",
+          "name": "刘奕鸣",
           "country": "中国"
         },
         {
@@ -188,7 +188,7 @@
       ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 2,
       "score_ht": 0,
@@ -355,7 +355,7 @@
         },
         {
           "minute": 86,
-          "player_out": "Gustavo",
+          "player_out": "古斯塔沃",
           "player_in": "刘祝润"
         },
         {
@@ -372,17 +372,17 @@
       "minute_extra": null,
       "type": "goal",
       "team": "away",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": "朱萨",
-      "description": "Oscar 进球 (助攻: Jussa)"
+      "description": "奥斯卡在14'进球，助攻球员：朱萨"
     },
     {
       "minute": 33,
       "minute_extra": null,
       "type": "yellow_card",
       "team": "away",
-      "player": "Li Shuai",
-      "description": "Li Shuai 获得黄牌"
+      "player": "李帅",
+      "description": "李帅获得黄牌"
     },
     {
       "minute": 36,
@@ -390,8 +390,8 @@
       "type": "goal",
       "team": "away",
       "player": "巴尔加斯",
-      "player2": "Gustavo",
-      "description": "Matías Vargas 进球 (助攻: Gustavo)"
+      "player2": "古斯塔沃",
+      "description": "巴尔加斯在36'进球，助攻球员：古斯塔沃"
     },
     {
       "minute": 55,
@@ -399,7 +399,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "布朗宁",
-      "description": "Tyias Browning 获得黄牌"
+      "description": "布朗宁获得黄牌"
     },
     {
       "minute": 62,
@@ -407,8 +407,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Feierding Aisikaer",
-      "player2": "Tao Qianglong",
-      "description": "Tao Qianglong 被换下，Feierding Aisikaer 替补登场"
+      "player2": "",
+      "description": "Tao Qianglong被换下，Feierding Aisikaer替补登场",
+      "player_out": "Tao Qianglong"
     },
     {
       "minute": 64,
@@ -416,8 +417,9 @@
       "type": "substitution",
       "team": "away",
       "player": "王燊超",
-      "player2": "王振澳",
-      "description": "Wang Zhen'ao 被换下，Wang Shenchao 替补登场"
+      "player2": "",
+      "description": "王振澳被换下，王燊超替补登场",
+      "player_out": "王振澳"
     },
     {
       "minute": 66,
@@ -425,7 +427,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "魏震",
-      "description": "Wei Zhen 获得黄牌"
+      "description": "魏震获得黄牌"
     },
     {
       "minute": 74,
@@ -433,7 +435,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "王燊超",
-      "description": "Wang Shenchao 获得黄牌"
+      "description": "王燊超获得黄牌"
     },
     {
       "minute": 75,
@@ -441,8 +443,9 @@
       "type": "substitution",
       "team": "away",
       "player": "冯劲",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "武磊被换下，冯劲替补登场",
+      "player_out": "武磊"
     },
     {
       "minute": 75,
@@ -450,8 +453,9 @@
       "type": "substitution",
       "team": "away",
       "player": "徐新",
-      "player2": "朱萨",
-      "description": "Jussa 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "朱萨被换下，徐新替补登场",
+      "player_out": "朱萨"
     },
     {
       "minute": 84,
@@ -459,8 +463,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Luo Senwen",
-      "player2": "Darlan Mendes",
-      "description": "Darlan Mendes 被换下，Luo Senwen 替补登场"
+      "player2": "",
+      "description": "Darlan Mendes被换下，Luo Senwen替补登场",
+      "player_out": "Darlan Mendes"
     },
     {
       "minute": 84,
@@ -468,8 +473,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Liu Yue",
-      "player2": "Romário Baldé",
-      "description": "Romário Baldé 被换下，Liu Yue 替补登场"
+      "player2": "",
+      "description": "Romário Baldé被换下，Liu Yue替补登场",
+      "player_out": "Romário Baldé"
     },
     {
       "minute": 86,
@@ -477,8 +483,9 @@
       "type": "substitution",
       "team": "away",
       "player": "刘祝润",
-      "player2": "Gustavo",
-      "description": "Gustavo 被换下，Liu Zhurun 替补登场"
+      "player2": "",
+      "description": "古斯塔沃被换下，刘祝润替补登场",
+      "player_out": "古斯塔沃"
     },
     {
       "minute": 87,
@@ -486,8 +493,9 @@
       "type": "substitution",
       "team": "away",
       "player": "吕文君",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，吕文君替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 88,
@@ -495,7 +503,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Ren Hang",
-      "description": "Ren Hang 获得黄牌"
+      "description": "Ren Hang获得黄牌"
     }
   ],
   "statistics": {

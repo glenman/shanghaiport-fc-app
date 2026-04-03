@@ -1,20 +1,23 @@
 {
   "match_info": {
-    "match_id": "20250018",
+    "match_id": "060cb1c5",
     "date": "2025-07-26",
-    "time": "19:35",
+    "time": "19:00",
     "competition": {
       "name": "中国足球协会超级联赛",
       "season": "2025",
-      "round": "Matchweek 18"
+      "round": "第18轮"
     },
     "venue": {
-      "name": "待补充",
-      "city": "上海",
-      "attendance": 0
+      "name": "上汽浦东足球场",
+      "attendance": 22021
     },
     "referee": {
-      "name": "待补充",
+      "main": "孙盛宇",
+      "ar1": "孙凯",
+      "ar2": "王西红",
+      "fourth": "陶万",
+      "var": "贺凯",
       "country": "China"
     }
   },
@@ -26,165 +29,124 @@
       "score_ht": 0,
       "formation": "4-2-3-1",
       "coach": "凯文·穆斯卡特",
-      "captain": "颜骏凌",
+      "captain": "王燊超",
       "lineup": [
         {
-          "position": "FW",
-          "number": 45,
-          "name": "莱昂纳多",
-          "country": "巴西"
-        },
-        {
-          "position": "MF",
-          "number": 30,
-          "name": "加布里埃尔",
-          "country": "巴西"
-        },
-        {
-          "position": "MF",
-          "number": 6,
-          "name": "徐新",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 21,
-          "name": "Óscar Melendo",
-          "country": "西班牙"
-        },
-        {
-          "position": "MF",
-          "number": 47,
-          "name": "蒯纪闻",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 26,
-          "name": "刘若钒",
-          "country": "中国"
-        },
-        {
-          "position": "FW",
-          "number": 49,
-          "name": "李新翔",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 10,
-          "name": "维塔尔",
-          "country": "巴西"
-        },
-        {
-          "position": "MF",
-          "number": 27,
-          "name": "冯劲",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 22,
-          "name": "马修斯·尤萨",
-          "country": "巴西"
-        },
-        {
-          "position": "DF",
-          "number": 4,
-          "name": "王燊超",
-          "country": "中国"
-        },
-        {
-          "position": "DF",
-          "number": 32,
-          "name": "李帅",
-          "country": "中国"
-        },
-        {
-          "position": "DF",
-          "number": 5,
-          "name": "张琳芃",
-          "country": "中国"
-        },
-        {
-          "position": "DF",
-          "number": 3,
-          "name": "蒋光太",
-          "country": "中国"
-        },
-        {
-          "position": "DF",
-          "number": 40,
-          "name": "吾米提江",
-          "country": "中国"
-        },
-        {
-          "position": "GK",
-          "number": 1,
+          "number": "1",
           "name": "颜骏凌",
-          "country": "中国"
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "蒋光太",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "张琳芃",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "维塔尔",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "梅伦多",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "马修斯·尤萨",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "刘若钒",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "加布里埃尔",
+          "country": "Unknown"
+        },
+        {
+          "number": "40",
+          "name": "吾米提江·玉苏普",
+          "country": "Unknown"
+        },
+        {
+          "number": "45",
+          "name": "莱昂纳多",
+          "country": "Unknown"
         }
       ],
       "substitutes": [
         {
-          "position": "MF",
-          "number": 30,
-          "name": "加布里埃尔",
-          "country": "巴西"
+          "number": "12",
+          "name": "陈威",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 6,
+          "number": "2",
+          "name": "李昂",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
           "name": "徐新",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 21,
-          "name": "Óscar Melendo",
-          "country": "西班牙"
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 47,
-          "name": "蒯纪闻",
-          "country": "中国"
+          "number": "13",
+          "name": "魏震",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 26,
-          "name": "刘若钒",
-          "country": "中国"
+          "number": "14",
+          "name": "李圣龙",
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 49,
-          "name": "李新翔",
-          "country": "中国"
+          "number": "20",
+          "name": "杨世元",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 10,
-          "name": "维塔尔",
-          "country": "巴西"
-        },
-        {
-          "position": "MF",
-          "number": 27,
+          "number": "27",
           "name": "冯劲",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 4,
-          "name": "王燊超",
-          "country": "中国"
+          "number": "29",
+          "name": "亚历斯祖",
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 32,
+          "number": "32",
           "name": "李帅",
-          "country": "中国"
+          "country": "Unknown"
+        },
+        {
+          "number": "47",
+          "name": "蒯纪闻",
+          "country": "Unknown"
+        },
+        {
+          "number": "49",
+          "name": "李新翔",
+          "country": "Unknown"
         }
       ],
       "substitutions": []
@@ -194,167 +156,106 @@
       "full_name": "青岛西海岸足球俱乐部",
       "score": 2,
       "score_ht": 0,
-      "formation": "4-3-3",
-      "coach": "待补充",
-      "captain": "待补充",
+      "formation": "4-2-3-1",
+      "coach": "邵佳一",
+      "captain": "里奇埃利",
       "lineup": [
         {
-          "position": "FW",
-          "number": 9,
-          "name": "阿卜杜勒-阿齐兹·雅库布",
-          "country": "中国"
-        },
-        {
-          "position": "FW",
-          "number": 56,
-          "name": "高迪",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 11,
-          "name": "戴维森·达·卢斯·佩雷拉",
-          "country": "巴西"
-        },
-        {
-          "position": "MF",
-          "number": 23,
-          "name": "Índio",
-          "country": "巴西"
-        },
-        {
-          "position": "MF",
-          "number": 21,
-          "name": "穆塔利甫·伊明卡日",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 10,
-          "name": "内尔松",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 28,
-          "name": "张成栋",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 24,
-          "name": "段刘愚",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 6,
-          "name": "徐彬",
-          "country": "中国"
-        },
-        {
-          "position": "DF",
-          "number": 20,
-          "name": "何龙海",
-          "country": "中国"
-        },
-        {
-          "position": "DF",
-          "number": 19,
-          "name": "丁海峰",
-          "country": "中国"
-        },
-        {
-          "position": "DF",
-          "number": 15,
-          "name": "王鹏",
-          "country": "中国"
-        },
-        {
-          "position": "DF",
-          "number": 5,
-          "name": "里切利",
-          "country": "巴西"
-        },
-        {
-          "position": "DF",
-          "number": 22,
-          "name": "杨·亚历克斯",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 8,
-          "name": "张修维",
-          "country": "中国"
-        },
-        {
-          "position": "GK",
-          "number": 1,
+          "number": "1",
           "name": "李昊",
-          "country": "中国"
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "里奇埃利",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "徐斌",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "阿卜杜勒-阿齐兹·亚库布",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "戴维森·达卢斯·佩雷拉",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "王鹏",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "何龙海",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "木塔力甫·依明卡日",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "杨超声",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Índio",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "张呈栋",
+          "country": "Unknown"
         }
       ],
       "substitutes": [
         {
-          "position": "FW",
-          "number": 9,
-          "name": "阿卜杜勒-阿齐兹·雅库布",
-          "country": "中国"
+          "number": "37",
+          "name": "董航",
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 56,
-          "name": "高迪",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 21,
-          "name": "穆塔利甫·伊明卡日",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 10,
-          "name": "内尔松",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 28,
-          "name": "张成栋",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 24,
-          "name": "段刘愚",
-          "country": "中国"
-        },
-        {
-          "position": "DF",
-          "number": 20,
-          "name": "何龙海",
-          "country": "中国"
-        },
-        {
-          "position": "DF",
-          "number": 19,
-          "name": "丁海峰",
-          "country": "中国"
-        },
-        {
-          "position": "DF",
-          "number": 22,
-          "name": "杨·亚历克斯",
-          "country": "中国"
-        },
-        {
-          "position": "MF",
-          "number": 8,
+          "number": "8",
           "name": "张修维",
-          "country": "中国"
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Nelson",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "宋昊宇",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "陈柏良",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "丁海峰",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "段刘愚",
+          "country": "Unknown"
+        },
+        {
+          "number": "56",
+          "name": "高迪",
+          "country": "Unknown"
         }
       ],
       "substitutions": []
@@ -362,74 +263,244 @@
   },
   "events": [
     {
-      "minute": null,
-      "minute_extra": null,
+      "minute": 23,
+      "minute_extra": 0,
       "type": "yellow_card",
       "team": "home",
-      "player": "待补充",
-      "description": "获得黄牌"
+      "player": "张琳芃",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "张琳芃获得黄牌"
     },
     {
-      "minute": null,
-      "minute_extra": null,
+      "minute": 38,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "杨超声",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "杨超声获得黄牌"
+    },
+    {
+      "minute": 39,
+      "minute_extra": 0,
       "type": "yellow_card",
       "team": "home",
-      "player": "待补充",
-      "description": "获得黄牌"
+      "player": "莱昂纳多",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "莱昂纳多获得黄牌"
     },
     {
-      "minute": null,
-      "minute_extra": null,
-      "type": "yellow_card",
-      "team": "away",
-      "player": "待补充",
-      "description": "获得黄牌"
+      "minute": 45,
+      "minute_extra": 11,
+      "type": "goal",
+      "team": "home",
+      "player": "莱昂纳多",
+      "player2": "",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "莱昂纳多在45+11'进球"
     },
     {
-      "minute": null,
-      "minute_extra": null,
+      "minute": 57,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Nelson",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "木塔力甫·依明卡日",
+      "description": "木塔力甫·依明卡日被换下，Nelson替补登场"
+    },
+    {
+      "minute": 57,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "段刘愚",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "张呈栋",
+      "description": "张呈栋被换下，段刘愚替补登场"
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Nelson",
+      "player2": "段刘愚",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "Nelson在60+0'进球，助攻球员：段刘愚"
+    },
+    {
+      "minute": 62,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "加布里埃尔",
+      "player2": "",
+      "goal_type": "penalty_goal",
+      "player_out": "",
+      "description": "加布里埃尔在62+0'进球"
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "李新翔",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "刘若钒",
+      "description": "刘若钒被换下，李新翔替补登场"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "蒯纪闻",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "梅伦多",
+      "description": "梅伦多被换下，蒯纪闻替补登场"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "李帅",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "王燊超",
+      "description": "王燊超被换下，李帅替补登场"
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "高迪",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "阿卜杜勒-阿齐兹·亚库布",
+      "description": "阿卜杜勒-阿齐兹·亚库布被换下，高迪替补登场"
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "丁海峰",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "何龙海",
+      "description": "何龙海被换下，丁海峰替补登场"
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "高迪",
+      "player2": "徐斌",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "高迪在86+0'进球，助攻球员：徐斌"
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "张修维",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "杨超声",
+      "description": "杨超声被换下，张修维替补登场"
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "徐新",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "加布里埃尔",
+      "description": "加布里埃尔被换下，徐新替补登场"
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "冯劲",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "维塔尔",
+      "description": "维塔尔被换下，冯劲替补登场"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 11,
       "type": "yellow_card",
       "team": "away",
-      "player": "待补充",
-      "description": "获得黄牌"
+      "player": "丁海峰",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "丁海峰获得黄牌"
     }
   ],
   "statistics": {
     "possession": {
-      "home": 50,
-      "away": 50
-    },
-    "shots": {
-      "home": 10,
-      "away": 10
+      "home": "66%",
+      "away": "34%"
     },
     "shots_on_target": {
-      "home": 5,
-      "away": 5
+      "home": "4",
+      "away": "3"
+    },
+    "shots": {
+      "home": "14",
+      "away": "11"
+    },
+    "shots_accuracy": {
+      "home": "29%",
+      "away": "27%"
     },
     "saves": {
-      "home": 5,
-      "away": 5
+      "home": "1 of 3-33%",
+      "away": "2 of 4-50%"
     },
     "fouls": {
-      "home": 10,
-      "away": 10
+      "home": "9",
+      "away": "17"
     },
     "corners": {
-      "home": 5,
-      "away": 5
+      "home": "6",
+      "away": "2"
     },
     "crosses": {
-      "home": 20,
-      "away": 20
+      "home": "23",
+      "away": "7"
     },
     "interceptions": {
-      "home": 10,
-      "away": 10
+      "home": "11",
+      "away": "22"
     },
     "offsides": {
-      "home": 2,
-      "away": 2
+      "home": "3",
+      "away": "2"
     },
     "yellow_cards": {
       "home": 2,
@@ -440,136 +511,10 @@
       "away": 0
     }
   },
-  "player_stats": {
-    "home": [
-      {
-        "player": "莱昂纳多",
-        "goals": 1,
-        "assists": 0,
-        "shots": 0,
-        "shots_on_target": 0,
-        "passes": 0,
-        "pass_accuracy": "0%",
-        "dribbles": 0,
-        "dribble_success": 0,
-        "fouls_won": 0,
-        "fouls_committed": 0,
-        "yellow_cards": 0,
-        "rating": "7.0"
-      },
-      {
-        "player": "Gabriel Airton de Souza",
-        "goals": 1,
-        "assists": 0,
-        "shots": 0,
-        "shots_on_target": 0,
-        "passes": 0,
-        "pass_accuracy": "0%",
-        "dribbles": 0,
-        "dribble_success": 0,
-        "fouls_won": 0,
-        "fouls_committed": 0,
-        "yellow_cards": 0,
-        "rating": "7.0"
-      },
-      {
-        "player": "徐新",
-        "goals": 0,
-        "assists": 0,
-        "shots": 0,
-        "shots_on_target": 0,
-        "passes": 0,
-        "pass_accuracy": "0%",
-        "dribbles": 0,
-        "dribble_success": 0,
-        "fouls_won": 0,
-        "fouls_committed": 0,
-        "yellow_cards": 0,
-        "rating": "7.0"
-      },
-      {
-        "player": "Óscar Melendo",
-        "goals": 0,
-        "assists": 0,
-        "shots": 0,
-        "shots_on_target": 0,
-        "passes": 0,
-        "pass_accuracy": "0%",
-        "dribbles": 0,
-        "dribble_success": 0,
-        "fouls_won": 0,
-        "fouls_committed": 0,
-        "yellow_cards": 0,
-        "rating": "7.0"
-      }
-    ],
-    "away": [
-      {
-        "player": "Abdul-Aziz Yakubu",
-        "goals": 0,
-        "assists": 0,
-        "shots": 0,
-        "shots_on_target": 0,
-        "passes": 0,
-        "pass_accuracy": "0%",
-        "dribbles": 0,
-        "dribble_success": 0,
-        "fouls_won": 0,
-        "fouls_committed": 0,
-        "yellow_cards": 0,
-        "rating": "7.0"
-      },
-      {
-        "player": "Gao Di",
-        "goals": 1,
-        "assists": 0,
-        "shots": 0,
-        "shots_on_target": 0,
-        "passes": 0,
-        "pass_accuracy": "0%",
-        "dribbles": 0,
-        "dribble_success": 0,
-        "fouls_won": 0,
-        "fouls_committed": 0,
-        "yellow_cards": 0,
-        "rating": "7.0"
-      },
-      {
-        "player": "Davidson da Luz Pereira",
-        "goals": 0,
-        "assists": 0,
-        "shots": 0,
-        "shots_on_target": 0,
-        "passes": 0,
-        "pass_accuracy": "0%",
-        "dribbles": 0,
-        "dribble_success": 0,
-        "fouls_won": 0,
-        "fouls_committed": 0,
-        "yellow_cards": 0,
-        "rating": "7.0"
-      },
-      {
-        "player": "Índio",
-        "goals": 0,
-        "assists": 0,
-        "shots": 0,
-        "shots_on_target": 0,
-        "passes": 0,
-        "pass_accuracy": "0%",
-        "dribbles": 0,
-        "dribble_success": 0,
-        "fouls_won": 0,
-        "fouls_committed": 0,
-        "yellow_cards": 0,
-        "rating": "7.0"
-      }
-    ]
-  },
   "metadata": {
-    "source": "manual",
-    "url": "",
-    "scraped_at": "2025-07-26T19:35:00",
-    "version": "3.0"
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/060cb1c5/Shanghai-Port-Qingdao-West-Coast-July-26-2025-Chinese-Super-League",
+    "scraped_at": "2026-04-02T20:50:55",
+    "version": "9.5-safe"
   }
 }

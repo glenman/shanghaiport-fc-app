@@ -20,7 +20,7 @@
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 3,
       "score_ht": 0,
@@ -177,7 +177,7 @@
         },
         {
           "minute": 76,
-          "player_out": "Gustavo",
+          "player_out": "古斯塔沃",
           "player_in": "冯劲"
         },
         {
@@ -193,8 +193,8 @@
       ]
     },
     "away": {
-      "name": "Zhejiang Professional",
-      "full_name": "Zhejiang Professional",
+      "name": "浙江队",
+      "full_name": "浙江足球俱乐部",
       "score": 1,
       "score_ht": 0,
       "formation": "4-2-3-1",
@@ -216,19 +216,19 @@
         {
           "position": "FW",
           "number": 7,
-          "name": "Deabeas Owusu Sekyere",
+          "name": "迪贝亚斯·奥乌苏·塞克耶雷",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 8,
-          "name": "Alexander N'Doumbou",
+          "name": "亚历山大·恩杜姆布",
           "country": "中国"
         },
         {
           "position": "FW",
           "number": 10,
-          "name": "Li Tixiang",
+          "name": "李提香",
           "country": "中国"
         },
         {
@@ -252,7 +252,7 @@
         {
           "position": "DF",
           "number": 28,
-          "name": "Yue Xin",
+          "name": "岳鑫",
           "country": "中国"
         },
         {
@@ -264,7 +264,7 @@
         {
           "position": "FW",
           "number": 45,
-          "name": "Leo",
+          "name": "莱奥",
           "country": "中国"
         }
       ],
@@ -296,7 +296,7 @@
         {
           "position": "",
           "number": 6,
-          "name": "Yao Junsheng",
+          "name": "姚均晟",
           "country": "中国"
         },
         {
@@ -308,60 +308,60 @@
         {
           "position": "MF",
           "number": 20,
-          "name": "Wang Dongsheng",
+          "name": "王东升",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 22,
-          "name": "Cheng Jin",
+          "name": "程进",
           "country": "中国"
         },
         {
           "position": "",
           "number": 26,
-          "name": "Sun Guowen",
+          "name": "孙国文",
           "country": "中国"
         },
         {
           "position": "",
           "number": 29,
-          "name": "Zhang Jiaqi",
+          "name": "张佳祺",
           "country": "中国"
         },
         {
           "position": "DF",
           "number": 31,
-          "name": "Gu Bin",
+          "name": "顾斌",
           "country": "中国"
         },
         {
           "position": "",
           "number": 39,
-          "name": "Wang Yudong",
+          "name": "王宇东",
           "country": "中国"
         }
       ],
       "substitutions": [
         {
           "minute": 14,
-          "player_out": "Alexander N'Doumbou",
-          "player_in": "Cheng Jin"
+          "player_out": "亚历山大·恩杜姆布",
+          "player_in": "程进"
         },
         {
           "minute": 46,
           "player_out": "Dong Yu",
-          "player_in": "Wang Dongsheng"
+          "player_in": "王东升"
         },
         {
           "minute": 46,
-          "player_out": "Yue Xin",
-          "player_in": "Sun Guowen"
+          "player_out": "岳鑫",
+          "player_in": "孙国文"
         },
         {
           "minute": 70,
           "player_out": "Jean Evrard Kouassi",
-          "player_in": "Yao Junsheng"
+          "player_in": "姚均晟"
         },
         {
           "minute": 78,
@@ -378,16 +378,17 @@
       "type": "yellow_card",
       "team": "away",
       "player": "Lucas Possignolo",
-      "description": "Lucas Possignolo 获得黄牌"
+      "description": "Lucas Possignolo获得黄牌"
     },
     {
       "minute": 14,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Cheng Jin",
-      "player2": "Alexander N'Doumbou",
-      "description": "Alexander N'Doumbou 被换下，Cheng Jin 替补登场"
+      "player": "程进",
+      "player2": "",
+      "description": "亚历山大·恩杜姆布被换下，程进替补登场",
+      "player_out": "亚历山大·恩杜姆布"
     },
     {
       "minute": 19,
@@ -396,16 +397,16 @@
       "team": "home",
       "player": "武磊",
       "player2": "巴尔加斯",
-      "description": "Wu Lei 进球 (助攻: Matías Vargas)"
+      "description": "武磊在19'进球，助攻球员：巴尔加斯"
     },
     {
       "minute": 28,
       "minute_extra": null,
       "type": "goal",
       "team": "away",
-      "player": "Leo",
-      "player2": "Yue Xin",
-      "description": "Leo 进球 (助攻: Yue Xin)"
+      "player": "莱奥",
+      "player2": "岳鑫",
+      "description": "莱奥在28'进球，助攻球员：岳鑫"
     },
     {
       "minute": 30,
@@ -413,25 +414,27 @@
       "type": "yellow_card",
       "team": "home",
       "player": "朱萨",
-      "description": "Jussa 获得黄牌"
+      "description": "朱萨获得黄牌"
     },
     {
       "minute": 46,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Wang Dongsheng",
-      "player2": "Dong Yu",
-      "description": "Dong Yu 被换下，Wang Dongsheng 替补登场"
+      "player": "王东升",
+      "player2": "",
+      "description": "Dong Yu被换下，王东升替补登场",
+      "player_out": "Dong Yu"
     },
     {
       "minute": 46,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Sun Guowen",
-      "player2": "Yue Xin",
-      "description": "Yue Xin 被换下，Sun Guowen 替补登场"
+      "player": "孙国文",
+      "player2": "",
+      "description": "岳鑫被换下，孙国文替补登场",
+      "player_out": "岳鑫"
     },
     {
       "minute": 61,
@@ -439,16 +442,17 @@
       "type": "substitution",
       "team": "home",
       "player": "包世萌",
-      "player2": "傅欢",
-      "description": "Fu Huan 被换下，Bao Shimeng 替补登场"
+      "player2": "",
+      "description": "傅欢被换下，包世萌替补登场",
+      "player_out": "傅欢"
     },
     {
       "minute": 62,
       "minute_extra": null,
       "type": "yellow_card",
       "team": "away",
-      "player": "Wang Dongsheng",
-      "description": "Wang Dongsheng 获得黄牌"
+      "player": "王东升",
+      "description": "王东升获得黄牌"
     },
     {
       "minute": 67,
@@ -456,17 +460,18 @@
       "type": "goal",
       "team": "home",
       "player": "武磊",
-      "player2": "Gustavo",
-      "description": "Wu Lei 进球 (助攻: Gustavo)"
+      "player2": "古斯塔沃",
+      "description": "武磊在67'进球，助攻球员：古斯塔沃"
     },
     {
       "minute": 70,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Yao Junsheng",
-      "player2": "Jean Evrard Kouassi",
-      "description": "Jean Evrard Kouassi 被换下，Yao Junsheng 替补登场"
+      "player": "姚均晟",
+      "player2": "",
+      "description": "Jean Evrard Kouassi被换下，姚均晟替补登场",
+      "player_out": "Jean Evrard Kouassi"
     },
     {
       "minute": 76,
@@ -474,8 +479,9 @@
       "type": "substitution",
       "team": "home",
       "player": "冯劲",
-      "player2": "Gustavo",
-      "description": "Gustavo 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "古斯塔沃被换下，冯劲替补登场",
+      "player_out": "古斯塔沃"
     },
     {
       "minute": 78,
@@ -483,8 +489,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Leung Nok Hang",
-      "player2": "Liu Haofan",
-      "description": "Liu Haofan 被换下，Leung Nok Hang 替补登场"
+      "player2": "",
+      "description": "Liu Haofan被换下，Leung Nok Hang替补登场",
+      "player_out": "Liu Haofan"
     },
     {
       "minute": 82,
@@ -493,7 +500,7 @@
       "team": "home",
       "player": "武磊",
       "player2": "巴尔加斯",
-      "description": "Wu Lei 进球 (助攻: Matías Vargas)"
+      "description": "武磊在82'进球，助攻球员：巴尔加斯"
     },
     {
       "minute": 87,
@@ -501,8 +508,9 @@
       "type": "substitution",
       "team": "home",
       "player": "李圣龙",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Li Shenglong 替补登场"
+      "player2": "",
+      "description": "武磊被换下，李圣龙替补登场",
+      "player_out": "武磊"
     },
     {
       "minute": 87,
@@ -510,8 +518,9 @@
       "type": "substitution",
       "team": "home",
       "player": "吕文君",
-      "player2": "巴尔加斯",
-      "description": "Matías Vargas 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "巴尔加斯被换下，吕文君替补登场",
+      "player_out": "巴尔加斯"
     },
     {
       "minute": 90,
@@ -519,7 +528,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "朱萨",
-      "description": "Jussa 获得黄牌"
+      "description": "朱萨获得黄牌"
     }
   ],
   "statistics": {

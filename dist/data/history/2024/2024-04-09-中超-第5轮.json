@@ -20,8 +20,8 @@
   },
   "teams": {
     "home": {
-      "name": "Nantong Zhiyun",
-      "full_name": "Nantong Zhiyun",
+      "name": "南通支云",
+      "full_name": "南通支云足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "5-4-1",
@@ -198,7 +198,7 @@
       ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 3,
       "score_ht": 0,
@@ -350,7 +350,7 @@
       "substitutions": [
         {
           "minute": 61,
-          "player_out": "Li Shuai",
+          "player_out": "李帅",
           "player_in": "包世萌"
         },
         {
@@ -365,7 +365,7 @@
         },
         {
           "minute": 66,
-          "player_out": "Gustavo",
+          "player_out": "古斯塔沃",
           "player_in": "李圣龙"
         },
         {
@@ -383,16 +383,16 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Izuchuckwu Anthony",
-      "description": "Izuchuckwu Anthony 获得黄牌"
+      "description": "Izuchuckwu Anthony获得黄牌"
     },
     {
       "minute": 13,
       "minute_extra": null,
       "type": "goal",
       "team": "away",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": null,
-      "description": "Oscar 进球"
+      "description": "奥斯卡在13'进球"
     },
     {
       "minute": 45,
@@ -400,16 +400,16 @@
       "type": "red_card",
       "team": "home",
       "player": "Luo Xin",
-      "description": "Luo Xin 获得红牌"
+      "description": "Luo Xin获得红牌"
     },
     {
       "minute": 45,
       "minute_extra": 2,
       "type": "goal",
       "team": "away",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": null,
-      "description": "Oscar 进球"
+      "description": "奥斯卡在45+2'进球"
     },
     {
       "minute": 46,
@@ -417,8 +417,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Ye Daochi",
-      "player2": "Mayingila N'Zuzi Mata",
-      "description": "Mayingila N'Zuzi Mata 被换下，Ye Daochi 替补登场"
+      "player2": "",
+      "description": "Mayingila N'Zuzi Mata被换下，Ye Daochi替补登场",
+      "player_out": "Mayingila N'Zuzi Mata"
     },
     {
       "minute": 46,
@@ -426,8 +427,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Liao Lei",
-      "player2": "Ming-yang Yang",
-      "description": "Ming-yang Yang 被换下，Liao Lei 替补登场"
+      "player2": "",
+      "description": "Ming-yang Yang被换下，Liao Lei替补登场",
+      "player_out": "Ming-yang Yang"
     },
     {
       "minute": 46,
@@ -435,8 +437,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Lu Yongtao",
-      "player2": "Zheng Haoqian",
-      "description": "Zheng Haoqian 被换下，Lu Yongtao 替补登场"
+      "player2": "",
+      "description": "Zheng Haoqian被换下，Lu Yongtao替补登场",
+      "player_out": "Zheng Haoqian"
     },
     {
       "minute": 53,
@@ -445,7 +448,7 @@
       "team": "away",
       "player": "李昂",
       "player2": "布朗宁",
-      "description": "Li Ang 进球 (助攻: Tyias Browning)"
+      "description": "李昂在53'进球，助攻球员：布朗宁"
     },
     {
       "minute": 61,
@@ -453,8 +456,9 @@
       "type": "substitution",
       "team": "away",
       "player": "包世萌",
-      "player2": "Li Shuai",
-      "description": "Li Shuai 被换下，Bao Shimeng 替补登场"
+      "player2": "",
+      "description": "李帅被换下，包世萌替补登场",
+      "player_out": "李帅"
     },
     {
       "minute": 61,
@@ -462,8 +466,9 @@
       "type": "substitution",
       "team": "away",
       "player": "冯劲",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "武磊被换下，冯劲替补登场",
+      "player_out": "武磊"
     },
     {
       "minute": 61,
@@ -471,8 +476,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Cai Huikang",
-      "player2": "朱萨",
-      "description": "Jussa 被换下，Cai Huikang 替补登场"
+      "player2": "",
+      "description": "朱萨被换下，Cai Huikang替补登场",
+      "player_out": "朱萨"
     },
     {
       "minute": 66,
@@ -480,8 +486,9 @@
       "type": "substitution",
       "team": "away",
       "player": "李圣龙",
-      "player2": "Gustavo",
-      "description": "Gustavo 被换下，Li Shenglong 替补登场"
+      "player2": "",
+      "description": "古斯塔沃被换下，李圣龙替补登场",
+      "player_out": "古斯塔沃"
     },
     {
       "minute": 74,
@@ -489,8 +496,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Ji Shengpan",
-      "player2": "David Puclin",
-      "description": "David Puclin 被换下，Ji Shengpan 替补登场"
+      "player2": "",
+      "description": "David Puclin被换下，Ji Shengpan替补登场",
+      "player_out": "David Puclin"
     },
     {
       "minute": 77,
@@ -498,8 +506,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Zimin Nuali",
-      "player2": "Jiang Zilei",
-      "description": "Jiang Zilei 被换下，Zimin Nuali 替补登场"
+      "player2": "",
+      "description": "Jiang Zilei被换下，Zimin Nuali替补登场",
+      "player_out": "Jiang Zilei"
     },
     {
       "minute": 79,
@@ -507,8 +516,9 @@
       "type": "substitution",
       "team": "away",
       "player": "唐金",
-      "player2": "巴尔加斯",
-      "description": "Matías Vargas 被换下，Will Donkin 替补登场"
+      "player2": "",
+      "description": "巴尔加斯被换下，唐金替补登场",
+      "player_out": "巴尔加斯"
     },
     {
       "minute": 85,
@@ -516,7 +526,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "李圣龙",
-      "description": "Li Shenglong 获得黄牌"
+      "description": "李圣龙获得黄牌"
     }
   ],
   "statistics": {

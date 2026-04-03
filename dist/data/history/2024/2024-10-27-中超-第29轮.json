@@ -20,8 +20,8 @@
   },
   "teams": {
     "home": {
-      "name": "Cangzhou Mighty Lions",
-      "full_name": "Cangzhou Mighty Lions",
+      "name": "沧州雄狮",
+      "full_name": "沧州雄狮足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "5-4-1",
@@ -43,19 +43,19 @@
         {
           "position": "FW",
           "number": 7,
-          "name": "Zheng Dalun",
+          "name": "郑大伦",
           "country": "中国"
         },
         {
           "position": "",
           "number": 15,
-          "name": "Wang Peng",
+          "name": "王鹏",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 16,
-          "name": "Zheng Kaimu",
+          "name": "郑凯木",
           "country": "中国"
         },
         {
@@ -67,7 +67,7 @@
         {
           "position": "DF",
           "number": 19,
-          "name": "Georgy Zhukov",
+          "name": "格奥尔基·朱可夫",
           "country": "中国"
         },
         {
@@ -117,7 +117,7 @@
         {
           "position": "DF",
           "number": 5,
-          "name": "Yan Zihao",
+          "name": "闫梓豪",
           "country": "中国"
         },
         {
@@ -154,8 +154,8 @@
       "substitutions": [
         {
           "minute": 46,
-          "player_out": "Zheng Dalun",
-          "player_in": "Yan Zihao"
+          "player_out": "郑大伦",
+          "player_in": "闫梓豪"
         },
         {
           "minute": 55,
@@ -170,7 +170,7 @@
       ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 1,
       "score_ht": 0,
@@ -345,17 +345,18 @@
       "type": "goal",
       "team": "away",
       "player": "武磊",
-      "player2": "Oscar",
-      "description": "Wu Lei 进球 (助攻: Oscar)"
+      "player2": "奥斯卡",
+      "description": "武磊在14'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 46,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Yan Zihao",
-      "player2": "Zheng Dalun",
-      "description": "Zheng Dalun 被换下，Yan Zihao 替补登场"
+      "player": "闫梓豪",
+      "player2": "",
+      "description": "郑大伦被换下，闫梓豪替补登场",
+      "player_out": "郑大伦"
     },
     {
       "minute": 55,
@@ -363,16 +364,17 @@
       "type": "substitution",
       "team": "home",
       "player": "Yao Xuchen",
-      "player2": "Liu Xinyu",
-      "description": "Liu Xinyu 被换下，Yao Xuchen 替补登场"
+      "player2": "",
+      "description": "Liu Xinyu被换下，Yao Xuchen替补登场",
+      "player_out": "Liu Xinyu"
     },
     {
       "minute": 62,
       "minute_extra": null,
       "type": "yellow_card",
       "team": "home",
-      "player": "Georgy Zhukov",
-      "description": "Georgy Zhukov 获得黄牌"
+      "player": "格奥尔基·朱可夫",
+      "description": "格奥尔基·朱可夫获得黄牌"
     },
     {
       "minute": 69,
@@ -380,8 +382,9 @@
       "type": "substitution",
       "team": "away",
       "player": "王燊超",
-      "player2": "傅欢",
-      "description": "Fu Huan 被换下，Wang Shenchao 替补登场"
+      "player2": "",
+      "description": "傅欢被换下，王燊超替补登场",
+      "player_out": "傅欢"
     },
     {
       "minute": 69,
@@ -389,8 +392,9 @@
       "type": "substitution",
       "team": "away",
       "player": "徐新",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，徐新替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 81,
@@ -398,8 +402,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Sun Qinhan",
-      "player2": "Wen Da",
-      "description": "Wen Da 被换下，Sun Qinhan 替补登场"
+      "player2": "",
+      "description": "Wen Da被换下，Sun Qinhan替补登场",
+      "player_out": "Wen Da"
     },
     {
       "minute": 88,
@@ -407,8 +412,9 @@
       "type": "substitution",
       "team": "away",
       "player": "吕文君",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "武磊被换下，吕文君替补登场",
+      "player_out": "武磊"
     }
   ],
   "statistics": {

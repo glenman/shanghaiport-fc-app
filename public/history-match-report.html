@@ -491,7 +491,7 @@
 
             document.title = `${homeTeam.name} vs ${awayTeam.name} - 比赛报告`;
             document.querySelector('.app-header h1').textContent = `${homeTeam.name} vs ${awayTeam.name}`;
-            document.querySelector('.app-header h2').textContent = `${matchInfo.competition.season}赛季${matchInfo.competition.name} - 第${matchInfo.competition.round.replace('Matchweek ', '')}轮`;
+            document.querySelector('.app-header h2').textContent = `${matchInfo.competition.season}赛季${matchInfo.competition.name} - ${matchInfo.competition.round}`;
 
             let html = '';
 

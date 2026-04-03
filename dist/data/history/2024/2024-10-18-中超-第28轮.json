@@ -20,8 +20,8 @@
   },
   "teams": {
     "home": {
-      "name": "Chengdu Rongcheng",
-      "full_name": "Chengdu Rongcheng",
+      "name": "成都蓉城",
+      "full_name": "成都蓉城足球俱乐部",
       "score": 3,
       "score_ht": 0,
       "formation": "3-4-3",
@@ -198,7 +198,7 @@
       ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 1,
       "score_ht": 0,
@@ -374,7 +374,7 @@
       "team": "home",
       "player": "Tang Chuang",
       "player2": "Rômulo",
-      "description": "Tang Chuang 进球 (助攻: Rômulo)"
+      "description": "Tang Chuang在21'进球，助攻球员：Rômulo"
     },
     {
       "minute": 28,
@@ -383,7 +383,7 @@
       "team": "home",
       "player": "Tim Chow",
       "player2": "Manuel Palacios",
-      "description": "Tim Chow 进球 (助攻: Manuel Palacios)"
+      "description": "Tim Chow在28'进球，助攻球员：Manuel Palacios"
     },
     {
       "minute": 32,
@@ -392,7 +392,7 @@
       "team": "away",
       "player": "朱萨",
       "player2": "巴尔加斯",
-      "description": "Jussa 进球 (助攻: Matías Vargas)"
+      "description": "朱萨在32'进球，助攻球员：巴尔加斯"
     },
     {
       "minute": 43,
@@ -401,7 +401,7 @@
       "team": "home",
       "player": "Tang Chuang",
       "player2": null,
-      "description": "Tang Chuang 进球"
+      "description": "Tang Chuang在43'进球"
     },
     {
       "minute": 56,
@@ -409,8 +409,9 @@
       "type": "substitution",
       "team": "away",
       "player": "武磊",
-      "player2": "冯劲",
-      "description": "Feng Jing 被换下，Wu Lei 替补登场"
+      "player2": "",
+      "description": "冯劲被换下，武磊替补登场",
+      "player_out": "冯劲"
     },
     {
       "minute": 57,
@@ -418,7 +419,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Feng Zhuoyi",
-      "description": "Feng Zhuoyi 获得黄牌"
+      "description": "Feng Zhuoyi获得黄牌"
     },
     {
       "minute": 61,
@@ -426,8 +427,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Mirahmetjan Muzepper",
-      "player2": "Feng Zhuoyi",
-      "description": "Feng Zhuoyi 被换下，Mirahmetjan Muzepper 替补登场"
+      "player2": "",
+      "description": "Feng Zhuoyi被换下，Mirahmetjan Muzepper替补登场",
+      "player_out": "Feng Zhuoyi"
     },
     {
       "minute": 61,
@@ -435,8 +437,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Hu Hetao",
-      "player2": "Tang Miao",
-      "description": "Tang Miao 被换下，Hu Hetao 替补登场"
+      "player2": "",
+      "description": "Tang Miao被换下，Hu Hetao替补登场",
+      "player_out": "Tang Miao"
     },
     {
       "minute": 61,
@@ -444,8 +447,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Wei Shihao",
-      "player2": "Tang Chuang",
-      "description": "Tang Chuang 被换下，Wei Shihao 替补登场"
+      "player2": "",
+      "description": "Tang Chuang被换下，Wei Shihao替补登场",
+      "player_out": "Tang Chuang"
     },
     {
       "minute": 73,
@@ -453,7 +457,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Yahav Gurfinkel",
-      "description": "Yahav Gurfinkel 获得黄牌"
+      "description": "Yahav Gurfinkel获得黄牌"
     },
     {
       "minute": 75,
@@ -461,8 +465,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Felipe Sousa",
-      "player2": "Manuel Palacios",
-      "description": "Manuel Palacios 被换下，Felipe Sousa 替补登场"
+      "player2": "",
+      "description": "Manuel Palacios被换下，Felipe Sousa替补登场",
+      "player_out": "Manuel Palacios"
     },
     {
       "minute": 78,
@@ -470,8 +475,9 @@
       "type": "substitution",
       "team": "away",
       "player": "吕文君",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，吕文君替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 78,
@@ -479,8 +485,9 @@
       "type": "substitution",
       "team": "away",
       "player": "包世萌",
-      "player2": "傅欢",
-      "description": "Fu Huan 被换下，Bao Shimeng 替补登场"
+      "player2": "",
+      "description": "傅欢被换下，包世萌替补登场",
+      "player_out": "傅欢"
     },
     {
       "minute": 86,
@@ -488,8 +495,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Mutalifu Yimingkari",
-      "player2": "Rômulo",
-      "description": "Rômulo 被换下，Mutalifu Yimingkari 替补登场"
+      "player2": "",
+      "description": "Rômulo被换下，Mutalifu Yimingkari替补登场",
+      "player_out": "Rômulo"
     }
   ],
   "statistics": {
