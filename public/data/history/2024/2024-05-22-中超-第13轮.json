@@ -20,7 +20,7 @@
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 2,
       "score_ht": 0,
@@ -172,7 +172,7 @@
       "substitutions": [
         {
           "minute": 67,
-          "player_out": "Li Shuai",
+          "player_out": "李帅",
           "player_in": "王燊超"
         },
         {
@@ -182,7 +182,7 @@
         },
         {
           "minute": 77,
-          "player_out": "Gustavo",
+          "player_out": "古斯塔沃",
           "player_in": "冯劲"
         },
         {
@@ -193,8 +193,8 @@
       ]
     },
     "away": {
-      "name": "Chengdu Rongcheng",
-      "full_name": "Chengdu Rongcheng",
+      "name": "成都蓉城",
+      "full_name": "成都蓉城足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "5-3-2",
@@ -296,7 +296,7 @@
         {
           "position": "",
           "number": 9,
-          "name": "Elkeson",
+          "name": "埃尔克森",
           "country": "中国"
         },
         {
@@ -351,7 +351,7 @@
         {
           "minute": 71,
           "player_out": "Wei Shihao",
-          "player_in": "Elkeson"
+          "player_in": "埃尔克森"
         },
         {
           "minute": 71,
@@ -377,8 +377,8 @@
       "minute_extra": null,
       "type": "yellow_card",
       "team": "home",
-      "player": "Li Shuai",
-      "description": "Li Shuai 获得黄牌"
+      "player": "李帅",
+      "description": "李帅获得黄牌"
     },
     {
       "minute": 36,
@@ -386,7 +386,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "Yang Yiming",
-      "description": "Yang Yiming 获得黄牌"
+      "description": "Yang Yiming获得黄牌"
     },
     {
       "minute": 43,
@@ -394,7 +394,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "Felipe Sousa",
-      "description": "Felipe Sousa 获得黄牌"
+      "description": "Felipe Sousa获得黄牌"
     },
     {
       "minute": 62,
@@ -402,8 +402,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Rômulo",
-      "player2": "Mirahmetjan Muzepper",
-      "description": "Mirahmetjan Muzepper 被换下，Rômulo 替补登场"
+      "player2": "",
+      "description": "Mirahmetjan Muzepper被换下，Rômulo替补登场",
+      "player_out": "Mirahmetjan Muzepper"
     },
     {
       "minute": 64,
@@ -411,7 +412,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "魏震",
-      "description": "Wei Zhen 获得黄牌"
+      "description": "魏震获得黄牌"
     },
     {
       "minute": 66,
@@ -419,7 +420,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "奇塔迪尼",
-      "description": "Léo Cittadini 获得黄牌"
+      "description": "奇塔迪尼获得黄牌"
     },
     {
       "minute": 67,
@@ -427,17 +428,19 @@
       "type": "substitution",
       "team": "home",
       "player": "王燊超",
-      "player2": "Li Shuai",
-      "description": "Li Shuai 被换下，Wang Shenchao 替补登场"
+      "player2": "",
+      "description": "李帅被换下，王燊超替补登场",
+      "player_out": "李帅"
     },
     {
       "minute": 71,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Elkeson",
-      "player2": "Wei Shihao",
-      "description": "Wei Shihao 被换下，Elkeson 替补登场"
+      "player": "埃尔克森",
+      "player2": "",
+      "description": "Wei Shihao被换下，埃尔克森替补登场",
+      "player_out": "Wei Shihao"
     },
     {
       "minute": 71,
@@ -445,8 +448,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Hu Ruibao",
-      "player2": "Yang Shuai",
-      "description": "Yang Shuai 被换下，Hu Ruibao 替补登场"
+      "player2": "",
+      "description": "Yang Shuai被换下，Hu Ruibao替补登场",
+      "player_out": "Yang Shuai"
     },
     {
       "minute": 77,
@@ -454,8 +458,9 @@
       "type": "substitution",
       "team": "home",
       "player": "徐新",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，徐新替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 77,
@@ -463,17 +468,18 @@
       "type": "substitution",
       "team": "home",
       "player": "冯劲",
-      "player2": "Gustavo",
-      "description": "Gustavo 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "古斯塔沃被换下，冯劲替补登场",
+      "player_out": "古斯塔沃"
     },
     {
       "minute": 87,
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": null,
-      "description": "Oscar 进球"
+      "description": "奥斯卡在87'进球"
     },
     {
       "minute": 87,
@@ -481,7 +487,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "Hu Ruibao",
-      "description": "Hu Ruibao 获得黄牌"
+      "description": "Hu Ruibao获得黄牌"
     },
     {
       "minute": 88,
@@ -489,8 +495,9 @@
       "type": "substitution",
       "team": "away",
       "player": "武磊",
-      "player2": "Tim Chow",
-      "description": "Tim Chow 被换下，Wu Lei 替补登场"
+      "player2": "",
+      "description": "Tim Chow被换下，武磊替补登场",
+      "player_out": "Tim Chow"
     },
     {
       "minute": 88,
@@ -498,16 +505,17 @@
       "type": "substitution",
       "team": "away",
       "player": "Yan Dinghao",
-      "player2": "Hu Hetao",
-      "description": "Hu Hetao 被换下，Yan Dinghao 替补登场"
+      "player2": "",
+      "description": "Hu Hetao被换下，Yan Dinghao替补登场",
+      "player_out": "Hu Hetao"
     },
     {
       "minute": 90,
       "minute_extra": 1,
       "type": "yellow_card",
       "team": "home",
-      "player": "Oscar",
-      "description": "Oscar 获得黄牌"
+      "player": "奥斯卡",
+      "description": "奥斯卡获得黄牌"
     },
     {
       "minute": 90,
@@ -515,8 +523,9 @@
       "type": "substitution",
       "team": "home",
       "player": "吕文君",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "武磊被换下，吕文君替补登场",
+      "player_out": "武磊"
     },
     {
       "minute": 90,
@@ -525,7 +534,7 @@
       "team": "home",
       "player": "巴尔加斯",
       "player2": null,
-      "description": "Matías Vargas 进球"
+      "description": "巴尔加斯在90+12'进球"
     },
     {
       "minute": 90,
@@ -533,7 +542,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "李昂",
-      "description": "Li Ang 获得黄牌"
+      "description": "李昂获得黄牌"
     }
   ],
   "statistics": {

@@ -20,7 +20,7 @@
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 1,
       "score_ht": 0,
@@ -177,7 +177,7 @@
         },
         {
           "minute": 69,
-          "player_out": "Gustavo",
+          "player_out": "古斯塔沃",
           "player_in": "李圣龙"
         },
         {
@@ -198,8 +198,8 @@
       ]
     },
     "away": {
-      "name": "Shanghai Shenhua",
-      "full_name": "Shanghai Shenhua",
+      "name": "上海申花",
+      "full_name": "上海申花足球俱乐部",
       "score": 1,
       "score_ht": 0,
       "formation": "4-3-1-2",
@@ -215,13 +215,13 @@
         {
           "position": "DF",
           "number": 4,
-          "name": "Jiang Shenglong",
+          "name": "蒋圣龙",
           "country": "中国"
         },
         {
           "position": "DF",
           "number": 5,
-          "name": "Zhu Chenjie",
+          "name": "朱辰杰",
           "country": "中国"
         },
         {
@@ -257,7 +257,7 @@
         {
           "position": "",
           "number": 15,
-          "name": "Wu Xi",
+          "name": "吴曦",
           "country": "中国"
         },
         {
@@ -269,7 +269,7 @@
         {
           "position": "MF",
           "number": 17,
-          "name": "Gao Tianyi",
+          "name": "高天意",
           "country": "中国"
         }
       ],
@@ -331,7 +331,7 @@
         {
           "position": "MF",
           "number": 33,
-          "name": "Wang Haijian",
+          "name": "王海港",
           "country": "中国"
         },
         {
@@ -355,7 +355,7 @@
         },
         {
           "minute": 60,
-          "player_out": "Gao Tianyi",
+          "player_out": "高天意",
           "player_in": "Dai Wai-tsun"
         },
         {
@@ -366,7 +366,7 @@
         {
           "minute": 80,
           "player_out": "Ibrahim Amadou",
-          "player_in": "Wang Haijian"
+          "player_in": "王海港"
         }
       ]
     }
@@ -377,8 +377,8 @@
       "minute_extra": null,
       "type": "yellow_card",
       "team": "away",
-      "player": "Gao Tianyi",
-      "description": "Gao Tianyi 获得黄牌"
+      "player": "高天意",
+      "description": "高天意获得黄牌"
     },
     {
       "minute": 16,
@@ -386,7 +386,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "王振澳",
-      "description": "Wang Zhen'ao 获得黄牌"
+      "description": "王振澳获得黄牌"
     },
     {
       "minute": 43,
@@ -394,16 +394,16 @@
       "type": "yellow_card",
       "team": "home",
       "player": "李昂",
-      "description": "Li Ang 获得黄牌"
+      "description": "李昂获得黄牌"
     },
     {
       "minute": 59,
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Gustavo",
+      "player": "古斯塔沃",
       "player2": "李昂",
-      "description": "Gustavo 进球 (助攻: Li Ang)"
+      "description": "古斯塔沃在59'进球，助攻球员：李昂"
     },
     {
       "minute": 60,
@@ -411,8 +411,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Xie Pengfei",
-      "player2": "Cephas Malele",
-      "description": "Cephas Malele 被换下，Xie Pengfei 替补登场"
+      "player2": "",
+      "description": "Cephas Malele被换下，Xie Pengfei替补登场",
+      "player_out": "Cephas Malele"
     },
     {
       "minute": 60,
@@ -420,8 +421,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Dai Wai-tsun",
-      "player2": "Gao Tianyi",
-      "description": "Gao Tianyi 被换下，Dai Wai-tsun 替补登场"
+      "player2": "",
+      "description": "高天意被换下，Dai Wai-tsun替补登场",
+      "player_out": "高天意"
     },
     {
       "minute": 61,
@@ -429,7 +431,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "朱萨",
-      "description": "Jussa 获得黄牌"
+      "description": "朱萨获得黄牌"
     },
     {
       "minute": 68,
@@ -437,8 +439,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Cai Huikang",
-      "player2": "朱萨",
-      "description": "Jussa 被换下，Cai Huikang 替补登场"
+      "player2": "",
+      "description": "朱萨被换下，Cai Huikang替补登场",
+      "player_out": "朱萨"
     },
     {
       "minute": 69,
@@ -446,8 +449,9 @@
       "type": "substitution",
       "team": "home",
       "player": "李圣龙",
-      "player2": "Gustavo",
-      "description": "Gustavo 被换下，Li Shenglong 替补登场"
+      "player2": "",
+      "description": "古斯塔沃被换下，李圣龙替补登场",
+      "player_out": "古斯塔沃"
     },
     {
       "minute": 75,
@@ -455,17 +459,19 @@
       "type": "substitution",
       "team": "away",
       "player": "Yu Hanchao",
-      "player2": "Xu Haoyang",
-      "description": "Xu Haoyang 被换下，Yu Hanchao 替补登场"
+      "player2": "",
+      "description": "Xu Haoyang被换下，Yu Hanchao替补登场",
+      "player_out": "Xu Haoyang"
     },
     {
       "minute": 80,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Wang Haijian",
-      "player2": "Ibrahim Amadou",
-      "description": "Ibrahim Amadou 被换下，Wang Haijian 替补登场"
+      "player": "王海港",
+      "player2": "",
+      "description": "Ibrahim Amadou被换下，王海港替补登场",
+      "player_out": "Ibrahim Amadou"
     },
     {
       "minute": 81,
@@ -473,8 +479,9 @@
       "type": "substitution",
       "team": "home",
       "player": "徐新",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，徐新替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 81,
@@ -482,8 +489,9 @@
       "type": "substitution",
       "team": "home",
       "player": "王燊超",
-      "player2": "王振澳",
-      "description": "Wang Zhen'ao 被换下，Wang Shenchao 替补登场"
+      "player2": "",
+      "description": "王振澳被换下，王燊超替补登场",
+      "player_out": "王振澳"
     },
     {
       "minute": 82,
@@ -491,7 +499,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "Yang Zexiang",
-      "description": "Yang Zexiang 获得黄牌"
+      "description": "Yang Zexiang获得黄牌"
     },
     {
       "minute": 89,
@@ -499,8 +507,9 @@
       "type": "substitution",
       "team": "home",
       "player": "张琳芃",
-      "player2": "李昂",
-      "description": "Li Ang 被换下，Zhang Linpeng 替补登场"
+      "player2": "",
+      "description": "李昂被换下，张琳芃替补登场",
+      "player_out": "李昂"
     },
     {
       "minute": 90,
@@ -509,7 +518,7 @@
       "team": "away",
       "player": "João Carlos Teixeira",
       "player2": "André Luis",
-      "description": "João Carlos Teixeira 进球 (助攻: André Luis)"
+      "description": "João Carlos Teixeira在90'进球，助攻球员：André Luis"
     },
     {
       "minute": 90,
@@ -517,7 +526,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "颜骏凌",
-      "description": "Yan Junling 获得黄牌"
+      "description": "颜骏凌获得黄牌"
     },
     {
       "minute": 90,
@@ -525,7 +534,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "李圣龙",
-      "description": "Li Shenglong 获得黄牌"
+      "description": "李圣龙获得黄牌"
     }
   ],
   "statistics": {

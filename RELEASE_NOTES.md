@@ -1,5 +1,43 @@
 # Release Notes
 
+## Version 1.2.0 (2026-04-03)
+
+### 功能更新
+1. **2025赛季数据全面汉化**
+   - 将2025赛季所有30场比赛的JSON文件进行全面汉化处理
+   - 球员名字、教练名字、球队名称、球场名称等所有英文内容翻译为中文
+   - 修复特殊空格字符（\u00A0）导致的翻译匹配问题
+
+2. **球员名字翻译统一**
+   - "Gabriel Airton de Souza" 统一翻译为 "加布里埃尔"
+   - "Oscar Melendo"/"Óscar Melendo" 统一翻译为 "梅伦多"
+   - "Alexander Jojo" 统一翻译为 "亚历斯祖"
+   - "Matheus Jussa" 统一翻译为 "马修斯·尤萨"
+   - "Abduhamit Abdugheni" 统一翻译为 "阿不都海米提"
+
+3. **测试脚本创建与验证**
+   - 创建进球记录测试脚本 `scripts/test-goals.js`
+   - 验证JSON文件与CSV数据的进球记录一致性
+   - 测试成功率达到100%，确保数据准确性
+
+4. **players.json数据更新**
+   - 在 `public/data/history/2025/players.json` 中补充亚历斯祖的信息
+   - 添加号码29的球员数据，包含出生日期、年龄、位置等信息
+
+5. **赛事报告页面优化**
+   - 修改球队名称显示从 `full_name` 改为 `name`
+   - 添加半场比分计算逻辑，统计45分钟内的进球
+   - 添加点球(P)和乌龙球(OG)标记显示
+   - 隐藏对手球队的位置信息（数据不完整）
+
+### 文件更改
+- `scripts/translate-2025.js`: 添加完整的中英文翻译映射表
+- `scripts/test-goals.js`: 创建进球记录测试脚本
+- `scripts/generate-players-json.js`: 生成球员JSON数据脚本
+- `public/data/history/2025/*.json`: 30个比赛文件全面汉化
+- `public/data/history/2025/players.json`: 更新球员数据
+- `public/history-match-report.html`: 优化赛事报告页面显示
+
 ## Version 1.1.0 (2026-03-08)
 
 ### 功能更新

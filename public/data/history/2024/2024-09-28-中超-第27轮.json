@@ -20,7 +20,7 @@
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 2,
       "score_ht": 0,
@@ -178,7 +178,7 @@
         {
           "minute": 46,
           "player_out": "王燊超",
-          "player_in": "Li Shuai"
+          "player_in": "李帅"
         },
         {
           "minute": 68,
@@ -198,8 +198,8 @@
       ]
     },
     "away": {
-      "name": "Qingdao West Coast",
-      "full_name": "Qingdao West Coast",
+      "name": "青岛西海岸",
+      "full_name": "青岛西海岸足球俱乐部",
       "score": 1,
       "score_ht": 0,
       "formation": "4-2-3-1",
@@ -233,13 +233,13 @@
         {
           "position": "FW",
           "number": 10,
-          "name": "Nelson",
+          "name": "内尔森",
           "country": "中国"
         },
         {
           "position": "",
           "number": 14,
-          "name": "Feng Gang",
+          "name": "冯刚",
           "country": "中国"
         },
         {
@@ -355,7 +355,7 @@
         },
         {
           "minute": 46,
-          "player_out": "Feng Gang",
+          "player_out": "冯刚",
           "player_in": "Duan Liuyu"
         },
         {
@@ -373,7 +373,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "Piao Shihao",
-      "description": "Piao Shihao 获得黄牌"
+      "description": "Piao Shihao获得黄牌"
     },
     {
       "minute": 35,
@@ -381,8 +381,9 @@
       "type": "substitution",
       "team": "home",
       "player": "吕文君",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "武磊被换下，吕文君替补登场",
+      "player_out": "武磊"
     },
     {
       "minute": 37,
@@ -390,26 +391,28 @@
       "type": "substitution",
       "team": "away",
       "player": "He Longhai",
-      "player2": "Piao Shihao",
-      "description": "Piao Shihao 被换下，He Longhai 替补登场"
+      "player2": "",
+      "description": "Piao Shihao被换下，He Longhai替补登场",
+      "player_out": "Piao Shihao"
     },
     {
       "minute": 43,
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": null,
-      "description": "Oscar 进球"
+      "description": "奥斯卡在43'进球"
     },
     {
       "minute": 46,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Li Shuai",
-      "player2": "王燊超",
-      "description": "Wang Shenchao 被换下，Li Shuai 替补登场"
+      "player": "李帅",
+      "player2": "",
+      "description": "王燊超被换下，李帅替补登场",
+      "player_out": "王燊超"
     },
     {
       "minute": 46,
@@ -417,17 +420,18 @@
       "type": "substitution",
       "team": "away",
       "player": "Duan Liuyu",
-      "player2": "Feng Gang",
-      "description": "Feng Gang 被换下，Duan Liuyu 替补登场"
+      "player2": "",
+      "description": "冯刚被换下，Duan Liuyu替补登场",
+      "player_out": "冯刚"
     },
     {
       "minute": 53,
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Oscar",
-      "player2": "Gustavo",
-      "description": "Oscar 进球 (助攻: Gustavo)"
+      "player": "奥斯卡",
+      "player2": "古斯塔沃",
+      "description": "奥斯卡在53'进球，助攻球员：古斯塔沃"
     },
     {
       "minute": 68,
@@ -435,8 +439,9 @@
       "type": "substitution",
       "team": "home",
       "player": "奇塔迪尼",
-      "player2": "徐新",
-      "description": "Xu Xin 被换下，Léo Cittadini 替补登场"
+      "player2": "",
+      "description": "徐新被换下，奇塔迪尼替补登场",
+      "player_out": "徐新"
     },
     {
       "minute": 74,
@@ -445,7 +450,7 @@
       "team": "away",
       "player": "Zhang Xiuwei",
       "player2": "Jean-David Beauguel",
-      "description": "Zhang Xiuwei 进球 (助攻: Jean-David Beauguel)"
+      "description": "Zhang Xiuwei在74'进球，助攻球员：Jean-David Beauguel"
     },
     {
       "minute": 79,
@@ -453,8 +458,9 @@
       "type": "substitution",
       "team": "home",
       "player": "刘祝润",
-      "player2": "冯劲",
-      "description": "Feng Jing 被换下，Liu Zhurun 替补登场"
+      "player2": "",
+      "description": "冯劲被换下，刘祝润替补登场",
+      "player_out": "冯劲"
     },
     {
       "minute": 79,
@@ -462,8 +468,9 @@
       "type": "substitution",
       "team": "home",
       "player": "包世萌",
-      "player2": "傅欢",
-      "description": "Fu Huan 被换下，Bao Shimeng 替补登场"
+      "player2": "",
+      "description": "傅欢被换下，包世萌替补登场",
+      "player_out": "傅欢"
     },
     {
       "minute": 83,
@@ -471,7 +478,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "包世萌",
-      "description": "Bao Shimeng 获得黄牌"
+      "description": "包世萌获得黄牌"
     },
     {
       "minute": 85,
@@ -479,8 +486,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Osmanjan Abduhelil",
-      "player2": "Zhang Xiuwei",
-      "description": "Zhang Xiuwei 被换下，Osmanjan Abduhelil 替补登场"
+      "player2": "",
+      "description": "Zhang Xiuwei被换下，Osmanjan Abduhelil替补登场",
+      "player_out": "Zhang Xiuwei"
     },
     {
       "minute": 90,
@@ -488,7 +496,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "Jean-David Beauguel",
-      "description": "Jean-David Beauguel 获得黄牌"
+      "description": "Jean-David Beauguel获得黄牌"
     },
     {
       "minute": 90,
@@ -496,7 +504,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "Zhao Honglüe",
-      "description": "Zhao Honglüe 获得黄牌"
+      "description": "Zhao Honglüe获得黄牌"
     }
   ],
   "statistics": {

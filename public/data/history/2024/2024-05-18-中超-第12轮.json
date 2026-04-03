@@ -20,8 +20,8 @@
   },
   "teams": {
     "home": {
-      "name": "Qingdao West Coast",
-      "full_name": "Qingdao West Coast",
+      "name": "青岛西海岸",
+      "full_name": "青岛西海岸足球俱乐部",
       "score": 3,
       "score_ht": 0,
       "formation": "4-5-1",
@@ -43,7 +43,7 @@
         {
           "position": "FW",
           "number": 10,
-          "name": "Nelson",
+          "name": "内尔森",
           "country": "中国"
         },
         {
@@ -129,7 +129,7 @@
         {
           "position": "",
           "number": 14,
-          "name": "Feng Gang",
+          "name": "冯刚",
           "country": "中国"
         },
         {
@@ -172,7 +172,7 @@
       "substitutions": [
         {
           "minute": 38,
-          "player_out": "Nelson",
+          "player_out": "内尔森",
           "player_in": "Osmanjan Abduhelil"
         },
         {
@@ -198,7 +198,7 @@
       ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 5,
       "score_ht": 0,
@@ -350,7 +350,7 @@
       "substitutions": [
         {
           "minute": 71,
-          "player_out": "Li Shuai",
+          "player_out": "李帅",
           "player_in": "王燊超"
         },
         {
@@ -365,7 +365,7 @@
         },
         {
           "minute": 83,
-          "player_out": "Gustavo",
+          "player_out": "古斯塔沃",
           "player_in": "李圣龙"
         },
         {
@@ -383,7 +383,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Varazdat Haroyan",
-      "description": "Varazdat Haroyan 获得黄牌"
+      "description": "Varazdat Haroyan获得黄牌"
     },
     {
       "minute": 24,
@@ -392,16 +392,16 @@
       "team": "away",
       "player": "武磊",
       "player2": "奇塔迪尼",
-      "description": "Wu Lei 进球 (助攻: Léo Cittadini)"
+      "description": "武磊在24'进球，助攻球员：奇塔迪尼"
     },
     {
       "minute": 31,
       "minute_extra": null,
       "type": "goal",
       "team": "away",
-      "player": "Gustavo",
+      "player": "古斯塔沃",
       "player2": null,
-      "description": "Gustavo 进球"
+      "description": "古斯塔沃在31'进球"
     },
     {
       "minute": 35,
@@ -409,8 +409,8 @@
       "type": "goal",
       "team": "home",
       "player": "Alan Carvalho",
-      "player2": "Nelson",
-      "description": "Alan Carvalho 进球 (助攻: Nelson)"
+      "player2": "内尔森",
+      "description": "Alan Carvalho在35'进球，助攻球员：内尔森"
     },
     {
       "minute": 38,
@@ -418,17 +418,18 @@
       "type": "substitution",
       "team": "home",
       "player": "Osmanjan Abduhelil",
-      "player2": "Nelson",
-      "description": "Nelson 被换下，Osmanjan Abduhelil 替补登场"
+      "player2": "",
+      "description": "内尔森被换下，Osmanjan Abduhelil替补登场",
+      "player_out": "内尔森"
     },
     {
       "minute": 43,
       "minute_extra": null,
       "type": "goal",
       "team": "away",
-      "player": "Gustavo",
-      "player2": "Oscar",
-      "description": "Gustavo 进球 (助攻: Oscar)"
+      "player": "古斯塔沃",
+      "player2": "奥斯卡",
+      "description": "古斯塔沃在43'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 45,
@@ -436,8 +437,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Ji Jiabao",
-      "player2": "Yeerjieti Yeerzhati",
-      "description": "Yeerjieti Yeerzhati 被换下，Ji Jiabao 替补登场"
+      "player2": "",
+      "description": "Yeerjieti Yeerzhati被换下，Ji Jiabao替补登场",
+      "player_out": "Yeerjieti Yeerzhati"
     },
     {
       "minute": 45,
@@ -445,7 +447,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "巴尔加斯",
-      "description": "Matías Vargas 获得黄牌"
+      "description": "巴尔加斯获得黄牌"
     },
     {
       "minute": 46,
@@ -453,8 +455,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Chen Xiangyu",
-      "player2": "Tan Kaiyuan",
-      "description": "Tan Kaiyuan 被换下，Chen Xiangyu 替补登场"
+      "player2": "",
+      "description": "Tan Kaiyuan被换下，Chen Xiangyu替补登场",
+      "player_out": "Tan Kaiyuan"
     },
     {
       "minute": 46,
@@ -462,8 +465,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Chen Po-liang",
-      "player2": "Pei Shuai",
-      "description": "Pei Shuai 被换下，Chen Po-liang 替补登场"
+      "player2": "",
+      "description": "Pei Shuai被换下，Chen Po-liang替补登场",
+      "player_out": "Pei Shuai"
     },
     {
       "minute": 51,
@@ -471,8 +475,8 @@
       "type": "goal",
       "team": "away",
       "player": "巴尔加斯",
-      "player2": "Oscar",
-      "description": "Matías Vargas 进球 (助攻: Oscar)"
+      "player2": "奥斯卡",
+      "description": "巴尔加斯在51'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 55,
@@ -480,7 +484,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "布朗宁",
-      "description": "Tyias Browning 获得黄牌"
+      "description": "布朗宁获得黄牌"
     },
     {
       "minute": 56,
@@ -489,7 +493,7 @@
       "team": "home",
       "player": "Alan Carvalho",
       "player2": "Duan Liuyu",
-      "description": "Alan Carvalho 进球 (助攻: Duan Liuyu)"
+      "description": "Alan Carvalho在56'进球，助攻球员：Duan Liuyu"
     },
     {
       "minute": 62,
@@ -505,7 +509,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Chen Po-liang",
-      "description": "Chen Po-liang 获得黄牌"
+      "description": "Chen Po-liang获得黄牌"
     },
     {
       "minute": 70,
@@ -513,7 +517,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "奇塔迪尼",
-      "description": "Léo Cittadini 获得黄牌"
+      "description": "奇塔迪尼获得黄牌"
     },
     {
       "minute": 71,
@@ -521,8 +525,9 @@
       "type": "substitution",
       "team": "away",
       "player": "王燊超",
-      "player2": "Li Shuai",
-      "description": "Li Shuai 被换下，Wang Shenchao 替补登场"
+      "player2": "",
+      "description": "李帅被换下，王燊超替补登场",
+      "player_out": "李帅"
     },
     {
       "minute": 71,
@@ -530,8 +535,9 @@
       "type": "substitution",
       "team": "away",
       "player": "徐新",
-      "player2": "朱萨",
-      "description": "Jussa 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "朱萨被换下，徐新替补登场",
+      "player_out": "朱萨"
     },
     {
       "minute": 71,
@@ -539,8 +545,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Zhao Honglüe",
-      "player2": "Abduklim Merdanjan",
-      "description": "Abduklim Merdanjan 被换下，Zhao Honglüe 替补登场"
+      "player2": "",
+      "description": "Abduklim Merdanjan被换下，Zhao Honglüe替补登场",
+      "player_out": "Abduklim Merdanjan"
     },
     {
       "minute": 71,
@@ -548,7 +555,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Piao Shihao",
-      "description": "Piao Shihao 获得黄牌"
+      "description": "Piao Shihao获得黄牌"
     },
     {
       "minute": 80,
@@ -557,7 +564,7 @@
       "team": "away",
       "player": "武磊",
       "player2": "奇塔迪尼",
-      "description": "Wu Lei 进球 (助攻: Léo Cittadini)"
+      "description": "武磊在80'进球，助攻球员：奇塔迪尼"
     },
     {
       "minute": 83,
@@ -565,8 +572,9 @@
       "type": "substitution",
       "team": "away",
       "player": "冯劲",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "武磊被换下，冯劲替补登场",
+      "player_out": "武磊"
     },
     {
       "minute": 83,
@@ -574,8 +582,9 @@
       "type": "substitution",
       "team": "away",
       "player": "李圣龙",
-      "player2": "Gustavo",
-      "description": "Gustavo 被换下，Li Shenglong 替补登场"
+      "player2": "",
+      "description": "古斯塔沃被换下，李圣龙替补登场",
+      "player_out": "古斯塔沃"
     },
     {
       "minute": 90,
@@ -583,8 +592,9 @@
       "type": "substitution",
       "team": "away",
       "player": "魏震",
-      "player2": "布朗宁",
-      "description": "Tyias Browning 被换下，Wei Zhen 替补登场"
+      "player2": "",
+      "description": "布朗宁被换下，魏震替补登场",
+      "player_out": "布朗宁"
     }
   ],
   "statistics": {

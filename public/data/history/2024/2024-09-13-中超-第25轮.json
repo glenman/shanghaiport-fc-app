@@ -20,7 +20,7 @@
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 2,
       "score_ht": 0,
@@ -172,7 +172,7 @@
       "substitutions": [
         {
           "minute": 46,
-          "player_out": "Gustavo",
+          "player_out": "古斯塔沃",
           "player_in": "冯劲"
         },
         {
@@ -187,7 +187,7 @@
         },
         {
           "minute": 86,
-          "player_out": "Li Shuai",
+          "player_out": "李帅",
           "player_in": "包世萌"
         },
         {
@@ -199,7 +199,7 @@
     },
     "away": {
       "name": "Shenzhen Peng City",
-      "full_name": "Shenzhen Peng City",
+      "full_name": "Shenzhen Peng City足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "5-4-1",
@@ -215,7 +215,7 @@
         {
           "position": "DF",
           "number": 2,
-          "name": "Zhang Wei",
+          "name": "张伟",
           "country": "中国"
         },
         {
@@ -233,13 +233,13 @@
         {
           "position": "FW",
           "number": 7,
-          "name": "Thiago",
+          "name": "蒂亚戈",
           "country": "中国"
         },
         {
           "position": "",
           "number": 12,
-          "name": "Tiago",
+          "name": "蒂亚戈",
           "country": "中国"
         },
         {
@@ -307,7 +307,7 @@
         {
           "position": "",
           "number": 24,
-          "name": "Wang Hao",
+          "name": "王浩",
           "country": "中国"
         },
         {
@@ -319,7 +319,7 @@
         {
           "position": "DF",
           "number": 28,
-          "name": "Zhang Yudong",
+          "name": "张煜东",
           "country": "中国"
         },
         {
@@ -355,7 +355,7 @@
         },
         {
           "minute": 80,
-          "player_out": "Thiago",
+          "player_out": "蒂亚戈",
           "player_in": "Baihelamu Abuduwaili"
         },
         {
@@ -371,7 +371,7 @@
         {
           "minute": 86,
           "player_out": "Hu Ruibao",
-          "player_in": "Zhang Yudong"
+          "player_in": "张煜东"
         }
       ]
     }
@@ -384,7 +384,7 @@
       "team": "home",
       "player": "武磊",
       "player2": null,
-      "description": "Wu Lei 进球"
+      "description": "武磊在18'进球"
     },
     {
       "minute": 46,
@@ -392,8 +392,9 @@
       "type": "substitution",
       "team": "home",
       "player": "冯劲",
-      "player2": "Gustavo",
-      "description": "Gustavo 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "古斯塔沃被换下，冯劲替补登场",
+      "player_out": "古斯塔沃"
     },
     {
       "minute": 58,
@@ -401,7 +402,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "Tian Yinong",
-      "description": "Tian Yinong 获得黄牌"
+      "description": "Tian Yinong获得黄牌"
     },
     {
       "minute": 67,
@@ -409,8 +410,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Nizamdin Ependi",
-      "player2": "Li Zhi",
-      "description": "Li Zhi 被换下，Nizamdin Ependi 替补登场"
+      "player2": "",
+      "description": "Li Zhi被换下，Nizamdin Ependi替补登场",
+      "player_out": "Li Zhi"
     },
     {
       "minute": 72,
@@ -418,8 +420,9 @@
       "type": "substitution",
       "team": "home",
       "player": "杨世元",
-      "player2": "徐新",
-      "description": "Xu Xin 被换下，Yang Shiyuan 替补登场"
+      "player2": "",
+      "description": "徐新被换下，杨世元替补登场",
+      "player_out": "徐新"
     },
     {
       "minute": 72,
@@ -427,8 +430,9 @@
       "type": "substitution",
       "team": "home",
       "player": "傅欢",
-      "player2": "王燊超",
-      "description": "Wang Shenchao 被换下，Fu Huan 替补登场"
+      "player2": "",
+      "description": "王燊超被换下，傅欢替补登场",
+      "player_out": "王燊超"
     },
     {
       "minute": 75,
@@ -436,7 +440,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "武磊",
-      "description": "Wu Lei 获得黄牌"
+      "description": "武磊获得黄牌"
     },
     {
       "minute": 80,
@@ -444,8 +448,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Baihelamu Abuduwaili",
-      "player2": "Thiago",
-      "description": "Thiago 被换下，Baihelamu Abuduwaili 替补登场"
+      "player2": "",
+      "description": "蒂亚戈被换下，Baihelamu Abuduwaili替补登场",
+      "player_out": "蒂亚戈"
     },
     {
       "minute": 80,
@@ -453,8 +458,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Zhu Baojie",
-      "player2": "Dai Wai-tsun",
-      "description": "Dai Wai-tsun 被换下，Zhu Baojie 替补登场"
+      "player2": "",
+      "description": "Dai Wai-tsun被换下，Zhu Baojie替补登场",
+      "player_out": "Dai Wai-tsun"
     },
     {
       "minute": 82,
@@ -463,7 +469,7 @@
       "team": "home",
       "player": "冯劲",
       "player2": "巴尔加斯",
-      "description": "Feng Jing 进球 (助攻: Matías Vargas)"
+      "description": "冯劲在82'进球，助攻球员：巴尔加斯"
     },
     {
       "minute": 86,
@@ -471,8 +477,9 @@
       "type": "substitution",
       "team": "home",
       "player": "包世萌",
-      "player2": "Li Shuai",
-      "description": "Li Shuai 被换下，Bao Shimeng 替补登场"
+      "player2": "",
+      "description": "李帅被换下，包世萌替补登场",
+      "player_out": "李帅"
     },
     {
       "minute": 86,
@@ -480,17 +487,19 @@
       "type": "substitution",
       "team": "away",
       "player": "Matthew Orr",
-      "player2": "Eden Karzev",
-      "description": "Eden Karzev 被换下，Matthew Orr 替补登场"
+      "player2": "",
+      "description": "Eden Karzev被换下，Matthew Orr替补登场",
+      "player_out": "Eden Karzev"
     },
     {
       "minute": 86,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Zhang Yudong",
-      "player2": "Hu Ruibao",
-      "description": "Hu Ruibao 被换下，Zhang Yudong 替补登场"
+      "player": "张煜东",
+      "player2": "",
+      "description": "Hu Ruibao被换下，张煜东替补登场",
+      "player_out": "Hu Ruibao"
     },
     {
       "minute": 89,
@@ -498,8 +507,9 @@
       "type": "substitution",
       "team": "home",
       "player": "吕文君",
-      "player2": "巴尔加斯",
-      "description": "Matías Vargas 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "巴尔加斯被换下，吕文君替补登场",
+      "player_out": "巴尔加斯"
     }
   ],
   "statistics": {

@@ -20,8 +20,8 @@
   },
   "teams": {
     "home": {
-      "name": "Changchun Yatai",
-      "full_name": "Changchun Yatai",
+      "name": "长春亚泰",
+      "full_name": "长春亚泰足球俱乐部",
       "score": 3,
       "score_ht": 0,
       "formation": "4-3-3",
@@ -61,7 +61,7 @@
         {
           "position": "FW",
           "number": 10,
-          "name": "Serginho",
+          "name": "塞尔吉尼奥",
           "country": "中国"
         },
         {
@@ -85,7 +85,7 @@
         {
           "position": "",
           "number": 29,
-          "name": "Tan Long",
+          "name": "谭龙",
           "country": "中国"
         },
         {
@@ -129,7 +129,7 @@
         {
           "position": "MF",
           "number": 20,
-          "name": "Zhang Yufeng",
+          "name": "张宇峰",
           "country": "中国"
         },
         {
@@ -165,7 +165,7 @@
         {
           "position": "",
           "number": 36,
-          "name": "Jiang Wenhao",
+          "name": "姜文浩",
           "country": "中国"
         }
       ],
@@ -178,7 +178,7 @@
         {
           "minute": 63,
           "player_out": "Liao Chengjian",
-          "player_in": "Zhang Yufeng"
+          "player_in": "张宇峰"
         },
         {
           "minute": 72,
@@ -193,12 +193,12 @@
         {
           "minute": 82,
           "player_out": "Abduhamit Abdugheni",
-          "player_in": "Jiang Wenhao"
+          "player_in": "姜文浩"
         }
       ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 4,
       "score_ht": 0,
@@ -380,9 +380,9 @@
       "minute_extra": null,
       "type": "goal",
       "team": "away",
-      "player": "Gustavo",
-      "player2": "Oscar",
-      "description": "Gustavo 进球 (助攻: Oscar)"
+      "player": "古斯塔沃",
+      "player2": "奥斯卡",
+      "description": "古斯塔沃在10'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 16,
@@ -391,7 +391,7 @@
       "team": "home",
       "player": "Robert Berić",
       "player2": "Tudi Dilyimit",
-      "description": "Robert Berić 进球 (助攻: Tudi Dilyimit)"
+      "description": "Robert Berić在16'进球，助攻球员：Tudi Dilyimit"
     },
     {
       "minute": 29,
@@ -400,7 +400,7 @@
       "team": "away",
       "player": "武磊",
       "player2": null,
-      "description": "Wu Lei 进球"
+      "description": "武磊在29'进球"
     },
     {
       "minute": 38,
@@ -408,7 +408,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Tudi Dilyimit",
-      "description": "Tudi Dilyimit 获得黄牌"
+      "description": "Tudi Dilyimit获得黄牌"
     },
     {
       "minute": 46,
@@ -416,35 +416,37 @@
       "type": "substitution",
       "team": "home",
       "player": "Yuan Mincheng",
-      "player2": "Stoppila Sunzu",
-      "description": "Stoppila Sunzu 被换下，Yuan Mincheng 替补登场"
+      "player2": "",
+      "description": "Stoppila Sunzu被换下，Yuan Mincheng替补登场",
+      "player_out": "Stoppila Sunzu"
     },
     {
       "minute": 48,
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Tan Long",
+      "player": "谭龙",
       "player2": "Robert Berić",
-      "description": "Tan Long 进球 (助攻: Robert Berić)"
+      "description": "谭龙在48'进球，助攻球员：Robert Berić"
     },
     {
       "minute": 51,
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Tan Long",
+      "player": "谭龙",
       "player2": "Robert Berić",
-      "description": "Tan Long 进球 (助攻: Robert Berić)"
+      "description": "谭龙在51'进球，助攻球员：Robert Berić"
     },
     {
       "minute": 63,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Zhang Yufeng",
-      "player2": "Liao Chengjian",
-      "description": "Liao Chengjian 被换下，Zhang Yufeng 替补登场"
+      "player": "张宇峰",
+      "player2": "",
+      "description": "Liao Chengjian被换下，张宇峰替补登场",
+      "player_out": "Liao Chengjian"
     },
     {
       "minute": 70,
@@ -452,8 +454,9 @@
       "type": "substitution",
       "team": "away",
       "player": "傅欢",
-      "player2": "王燊超",
-      "description": "Wang Shenchao 被换下，Fu Huan 替补登场"
+      "player2": "",
+      "description": "王燊超被换下，傅欢替补登场",
+      "player_out": "王燊超"
     },
     {
       "minute": 72,
@@ -461,8 +464,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Abdusalam Sabit",
-      "player2": "Tudi Dilyimit",
-      "description": "Tudi Dilyimit 被换下，Abdusalam Sabit 替补登场"
+      "player2": "",
+      "description": "Tudi Dilyimit被换下，Abdusalam Sabit替补登场",
+      "player_out": "Tudi Dilyimit"
     },
     {
       "minute": 82,
@@ -470,25 +474,27 @@
       "type": "substitution",
       "team": "home",
       "player": "Tian Yuda",
-      "player2": "Zhang Huachen",
-      "description": "Zhang Huachen 被换下，Tian Yuda 替补登场"
+      "player2": "",
+      "description": "Zhang Huachen被换下，Tian Yuda替补登场",
+      "player_out": "Zhang Huachen"
     },
     {
       "minute": 82,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Jiang Wenhao",
-      "player2": "Abduhamit Abdugheni",
-      "description": "Abduhamit Abdugheni 被换下，Jiang Wenhao 替补登场"
+      "player": "姜文浩",
+      "player2": "",
+      "description": "Abduhamit Abdugheni被换下，姜文浩替补登场",
+      "player_out": "Abduhamit Abdugheni"
     },
     {
       "minute": 83,
       "minute_extra": null,
       "type": "yellow_card",
       "team": "home",
-      "player": "Jiang Wenhao",
-      "description": "Jiang Wenhao 获得黄牌"
+      "player": "姜文浩",
+      "description": "姜文浩获得黄牌"
     },
     {
       "minute": 84,
@@ -497,7 +503,7 @@
       "team": "away",
       "player": "武磊",
       "player2": "巴尔加斯",
-      "description": "Wu Lei 进球 (助攻: Matías Vargas)"
+      "description": "武磊在84'进球，助攻球员：巴尔加斯"
     },
     {
       "minute": 88,
@@ -505,16 +511,17 @@
       "type": "substitution",
       "team": "away",
       "player": "杨世元",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Yang Shiyuan 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，杨世元替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 90,
       "minute_extra": 4,
       "type": "yellow_card",
       "team": "away",
-      "player": "Gustavo",
-      "description": "Gustavo 获得黄牌"
+      "player": "古斯塔沃",
+      "description": "古斯塔沃获得黄牌"
     },
     {
       "minute": 90,
@@ -522,7 +529,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Abdusalam Sabit",
-      "description": "Abdusalam Sabit 获得黄牌"
+      "description": "Abdusalam Sabit获得黄牌"
     },
     {
       "minute": 90,
@@ -530,8 +537,9 @@
       "type": "substitution",
       "team": "away",
       "player": "冯劲",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "武磊被换下，冯劲替补登场",
+      "player_out": "武磊"
     }
   ],
   "statistics": {

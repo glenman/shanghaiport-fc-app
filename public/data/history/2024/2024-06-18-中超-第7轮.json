@@ -20,8 +20,8 @@
   },
   "teams": {
     "home": {
-      "name": "Meizhou Hakka",
-      "full_name": "Meizhou Hakka",
+      "name": "梅州客家",
+      "full_name": "梅州客家足球俱乐部",
       "score": 1,
       "score_ht": 0,
       "formation": "3-4-3",
@@ -79,7 +79,7 @@
         {
           "position": "",
           "number": 15,
-          "name": "Chen Zhechao",
+          "name": "陈哲超",
           "country": "中国"
         },
         {
@@ -105,7 +105,7 @@
         {
           "position": "DF",
           "number": 41,
-          "name": "Guo Quanbo",
+          "name": "郭全博",
           "country": "中国"
         },
         {
@@ -141,13 +141,13 @@
         {
           "position": "MF",
           "number": 20,
-          "name": "Wang Jianan",
+          "name": "王建安",
           "country": "中国"
         },
         {
           "position": "",
           "number": 25,
-          "name": "Rodrigo",
+          "name": "罗德里戈",
           "country": "中国"
         },
         {
@@ -178,7 +178,7 @@
         {
           "minute": 85,
           "player_out": "Yue Tze Nam",
-          "player_in": "Rodrigo"
+          "player_in": "罗德里戈"
         },
         {
           "minute": 85,
@@ -188,7 +188,7 @@
         {
           "minute": 86,
           "player_out": "Shi Liang",
-          "player_in": "Wang Jianan"
+          "player_in": "王建安"
         },
         {
           "minute": 90,
@@ -198,7 +198,7 @@
       ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 2,
       "score_ht": 0,
@@ -370,7 +370,7 @@
         },
         {
           "minute": 90,
-          "player_out": "Li Shuai",
+          "player_out": "李帅",
           "player_in": "王振澳"
         }
       ]
@@ -383,7 +383,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Tyrone Conraad",
-      "description": "Tyrone Conraad 获得黄牌"
+      "description": "Tyrone Conraad获得黄牌"
     },
     {
       "minute": 46,
@@ -391,8 +391,9 @@
       "type": "substitution",
       "team": "away",
       "player": "包世萌",
-      "player2": "王燊超",
-      "description": "Wang Shenchao 被换下，Bao Shimeng 替补登场"
+      "player2": "",
+      "description": "王燊超被换下，包世萌替补登场",
+      "player_out": "王燊超"
     },
     {
       "minute": 46,
@@ -400,8 +401,9 @@
       "type": "substitution",
       "team": "away",
       "player": "冯劲",
-      "player2": "刘祝润",
-      "description": "Liu Zhurun 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "刘祝润被换下，冯劲替补登场",
+      "player_out": "刘祝润"
     },
     {
       "minute": 54,
@@ -410,7 +412,7 @@
       "team": "away",
       "player": "奇塔迪尼",
       "player2": null,
-      "description": "Léo Cittadini 进球"
+      "description": "奇塔迪尼在54'进球"
     },
     {
       "minute": 62,
@@ -418,7 +420,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Ye Chugui",
-      "description": "Ye Chugui 获得黄牌"
+      "description": "Ye Chugui获得黄牌"
     },
     {
       "minute": 66,
@@ -426,7 +428,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Shi Liang",
-      "description": "Shi Liang 获得黄牌"
+      "description": "Shi Liang获得黄牌"
     },
     {
       "minute": 66,
@@ -434,7 +436,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Nebojša Kosović",
-      "description": "Nebojša Kosović 获得黄牌"
+      "description": "Nebojša Kosović获得黄牌"
     },
     {
       "minute": 67,
@@ -442,8 +444,8 @@
       "type": "goal",
       "team": "away",
       "player": "武磊",
-      "player2": "Oscar",
-      "description": "Wu Lei 进球 (助攻: Oscar)"
+      "player2": "奥斯卡",
+      "description": "武磊在67'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 72,
@@ -451,7 +453,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Ye Chugui",
-      "description": "Ye Chugui 获得黄牌"
+      "description": "Ye Chugui获得黄牌"
     },
     {
       "minute": 74,
@@ -459,8 +461,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Yang Chaosheng",
-      "player2": "Tyrone Conraad",
-      "description": "Tyrone Conraad 被换下，Yang Chaosheng 替补登场"
+      "player2": "",
+      "description": "Tyrone Conraad被换下，Yang Chaosheng替补登场",
+      "player_out": "Tyrone Conraad"
     },
     {
       "minute": 80,
@@ -468,8 +471,9 @@
       "type": "substitution",
       "team": "away",
       "player": "徐新",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，徐新替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 80,
@@ -477,8 +481,9 @@
       "type": "substitution",
       "team": "away",
       "player": "吕文君",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "武磊被换下，吕文君替补登场",
+      "player_out": "武磊"
     },
     {
       "minute": 84,
@@ -487,16 +492,17 @@
       "team": "home",
       "player": "Nebojša Kosović",
       "player2": "Yang Chaosheng",
-      "description": "Nebojša Kosović 进球 (助攻: Yang Chaosheng)"
+      "description": "Nebojša Kosović在84'进球，助攻球员：Yang Chaosheng"
     },
     {
       "minute": 85,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Rodrigo",
-      "player2": "Yue Tze Nam",
-      "description": "Yue Tze Nam 被换下，Rodrigo 替补登场"
+      "player": "罗德里戈",
+      "player2": "",
+      "description": "Yue Tze Nam被换下，罗德里戈替补登场",
+      "player_out": "Yue Tze Nam"
     },
     {
       "minute": 85,
@@ -504,17 +510,19 @@
       "type": "substitution",
       "team": "home",
       "player": "Li Yongjia",
-      "player2": "Rooney Wankewai",
-      "description": "Rooney Wankewai 被换下，Li Yongjia 替补登场"
+      "player2": "",
+      "description": "Rooney Wankewai被换下，Li Yongjia替补登场",
+      "player_out": "Rooney Wankewai"
     },
     {
       "minute": 86,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Wang Jianan",
-      "player2": "Shi Liang",
-      "description": "Shi Liang 被换下，Wang Jianan 替补登场"
+      "player": "王建安",
+      "player2": "",
+      "description": "Shi Liang被换下，王建安替补登场",
+      "player_out": "Shi Liang"
     },
     {
       "minute": 90,
@@ -522,8 +530,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Ning Li",
-      "player2": "Ziyi Tian",
-      "description": "Ziyi Tian 被换下，Ning Li 替补登场"
+      "player2": "",
+      "description": "Ziyi Tian被换下，Ning Li替补登场",
+      "player_out": "Ziyi Tian"
     },
     {
       "minute": 90,
@@ -531,8 +540,9 @@
       "type": "substitution",
       "team": "away",
       "player": "王振澳",
-      "player2": "Li Shuai",
-      "description": "Li Shuai 被换下，Wang Zhen'ao 替补登场"
+      "player2": "",
+      "description": "李帅被换下，王振澳替补登场",
+      "player_out": "李帅"
     },
     {
       "minute": 90,
@@ -540,7 +550,7 @@
       "type": "yellow_card",
       "team": "away",
       "player": "王振澳",
-      "description": "Wang Zhen'ao 获得黄牌"
+      "description": "王振澳获得黄牌"
     }
   ],
   "statistics": {

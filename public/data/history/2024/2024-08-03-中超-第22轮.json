@@ -20,8 +20,8 @@
   },
   "teams": {
     "home": {
-      "name": "Shandong Taishan",
-      "full_name": "Shandong Taishan",
+      "name": "山东泰山",
+      "full_name": "山东泰山足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "4-4-2",
@@ -43,7 +43,7 @@
         {
           "position": "",
           "number": 9,
-          "name": "Crysan",
+          "name": "克里桑",
           "country": "中国"
         },
         {
@@ -55,31 +55,31 @@
         {
           "position": "FW",
           "number": 11,
-          "name": "Liu Yang",
+          "name": "刘洋",
           "country": "中国"
         },
         {
           "position": "",
           "number": 13,
-          "name": "Zhang Chi",
+          "name": "张弛",
           "country": "中国"
         },
         {
           "position": "",
           "number": 21,
-          "name": "Liu Binbin",
+          "name": "刘彬彬",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 22,
-          "name": "Li Yuanyi",
+          "name": "李源一",
           "country": "中国"
         },
         {
           "position": "",
           "number": 25,
-          "name": "Peng Xinli",
+          "name": "彭欣力",
           "country": "中国"
         },
         {
@@ -117,7 +117,7 @@
         {
           "position": "",
           "number": 6,
-          "name": "Wang Tong",
+          "name": "王彤",
           "country": "中国"
         },
         {
@@ -141,7 +141,7 @@
         {
           "position": "FW",
           "number": 27,
-          "name": "Shi Ke",
+          "name": "石柯",
           "country": "中国"
         },
         {
@@ -153,7 +153,7 @@
         {
           "position": "",
           "number": 29,
-          "name": "Chen Pu",
+          "name": "陈蒲",
           "country": "中国"
         },
         {
@@ -172,18 +172,18 @@
       "substitutions": [
         {
           "minute": 17,
-          "player_out": "Liu Yang",
+          "player_out": "刘洋",
           "player_in": "Zheng Zheng"
         },
         {
           "minute": 58,
-          "player_out": "Liu Binbin",
-          "player_in": "Wang Tong"
+          "player_out": "刘彬彬",
+          "player_in": "王彤"
         },
         {
           "minute": 58,
-          "player_out": "Zhang Chi",
-          "player_in": "Chen Pu"
+          "player_out": "张弛",
+          "player_in": "陈蒲"
         },
         {
           "minute": 76,
@@ -192,13 +192,13 @@
         },
         {
           "minute": 76,
-          "player_out": "Peng Xinli",
+          "player_out": "彭欣力",
           "player_in": "Pedro Delgado"
         }
       ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 1,
       "score_ht": 0,
@@ -383,7 +383,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "Huang Zhengyu",
-      "description": "Huang Zhengyu 获得黄牌"
+      "description": "Huang Zhengyu获得黄牌"
     },
     {
       "minute": 17,
@@ -391,8 +391,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Zheng Zheng",
-      "player2": "Liu Yang",
-      "description": "Liu Yang 被换下，Zheng Zheng 替补登场"
+      "player2": "",
+      "description": "刘洋被换下，Zheng Zheng替补登场",
+      "player_out": "刘洋"
     },
     {
       "minute": 46,
@@ -400,26 +401,29 @@
       "type": "substitution",
       "team": "away",
       "player": "傅欢",
-      "player2": "王燊超",
-      "description": "Wang Shenchao 被换下，Fu Huan 替补登场"
+      "player2": "",
+      "description": "王燊超被换下，傅欢替补登场",
+      "player_out": "王燊超"
     },
     {
       "minute": 58,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Wang Tong",
-      "player2": "Liu Binbin",
-      "description": "Liu Binbin 被换下，Wang Tong 替补登场"
+      "player": "王彤",
+      "player2": "",
+      "description": "刘彬彬被换下，王彤替补登场",
+      "player_out": "刘彬彬"
     },
     {
       "minute": 58,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Chen Pu",
-      "player2": "Zhang Chi",
-      "description": "Zhang Chi 被换下，Chen Pu 替补登场"
+      "player": "陈蒲",
+      "player2": "",
+      "description": "张弛被换下，陈蒲替补登场",
+      "player_out": "张弛"
     },
     {
       "minute": 66,
@@ -427,8 +431,8 @@
       "type": "goal",
       "team": "away",
       "player": "武磊",
-      "player2": "Oscar",
-      "description": "Wu Lei 进球 (助攻: Oscar)"
+      "player2": "奥斯卡",
+      "description": "武磊在66'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 76,
@@ -436,8 +440,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Maiwulang Mijiti",
-      "player2": "Huang Zhengyu",
-      "description": "Huang Zhengyu 被换下，Maiwulang Mijiti 替补登场"
+      "player2": "",
+      "description": "Huang Zhengyu被换下，Maiwulang Mijiti替补登场",
+      "player_out": "Huang Zhengyu"
     },
     {
       "minute": 76,
@@ -445,8 +450,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Pedro Delgado",
-      "player2": "Peng Xinli",
-      "description": "Peng Xinli 被换下，Pedro Delgado 替补登场"
+      "player2": "",
+      "description": "彭欣力被换下，Pedro Delgado替补登场",
+      "player_out": "彭欣力"
     },
     {
       "minute": 79,
@@ -454,8 +460,9 @@
       "type": "substitution",
       "team": "away",
       "player": "冯劲",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "武磊被换下，冯劲替补登场",
+      "player_out": "武磊"
     },
     {
       "minute": 79,
@@ -463,8 +470,9 @@
       "type": "substitution",
       "team": "away",
       "player": "张琳芃",
-      "player2": "布朗宁",
-      "description": "Tyias Browning 被换下，Zhang Linpeng 替补登场"
+      "player2": "",
+      "description": "布朗宁被换下，张琳芃替补登场",
+      "player_out": "布朗宁"
     },
     {
       "minute": 90,
@@ -472,8 +480,9 @@
       "type": "substitution",
       "team": "away",
       "player": "徐新",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，徐新替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 90,
@@ -481,8 +490,9 @@
       "type": "substitution",
       "team": "away",
       "player": "吕文君",
-      "player2": "巴尔加斯",
-      "description": "Matías Vargas 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "巴尔加斯被换下，吕文君替补登场",
+      "player_out": "巴尔加斯"
     }
   ],
   "statistics": {

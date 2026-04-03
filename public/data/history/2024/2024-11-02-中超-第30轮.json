@@ -20,7 +20,7 @@
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 5,
       "score_ht": 0,
@@ -172,12 +172,12 @@
       "substitutions": [
         {
           "minute": 79,
-          "player_out": "Gustavo",
+          "player_out": "古斯塔沃",
           "player_in": "冯劲"
         },
         {
           "minute": 79,
-          "player_out": "Li Shuai",
+          "player_out": "李帅",
           "player_in": "王燊超"
         },
         {
@@ -198,8 +198,8 @@
       ]
     },
     "away": {
-      "name": "Tianjin Jinmen Tiger",
-      "full_name": "Tianjin Jinmen Tiger",
+      "name": "天津津门虎",
+      "full_name": "天津津门虎足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "4-2-3-1",
@@ -215,7 +215,7 @@
         {
           "position": "",
           "number": 6,
-          "name": "Han Pengfei",
+          "name": "韩鹏飞",
           "country": "中国"
         },
         {
@@ -227,37 +227,37 @@
         {
           "position": "MF",
           "number": 8,
-          "name": "Xadas",
+          "name": "哈达斯",
           "country": "中国"
         },
         {
           "position": "FW",
           "number": 11,
-          "name": "Xie Weijun",
+          "name": "谢维军",
           "country": "中国"
         },
         {
           "position": "",
           "number": 15,
-          "name": "Ming Tian",
+          "name": "明天",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 16,
-          "name": "Yang Zihao",
+          "name": "杨梓豪",
           "country": "中国"
         },
         {
           "position": "",
           "number": 21,
-          "name": "Mile Škorić",
+          "name": "米莱·斯科里奇",
           "country": "中国"
         },
         {
           "position": "",
           "number": 29,
-          "name": "Ba Dun",
+          "name": "巴顿",
           "country": "中国"
         },
         {
@@ -301,7 +301,7 @@
         {
           "position": "",
           "number": 9,
-          "name": "Andrea Compagno",
+          "name": "安德烈亚·孔帕尼奥",
           "country": "中国"
         },
         {
@@ -325,53 +325,53 @@
         {
           "position": "DF",
           "number": 23,
-          "name": "Qian Yumiao",
+          "name": "钱宇淼",
           "country": "中国"
         },
         {
           "position": "DF",
           "number": 32,
-          "name": "Su Yuanjie",
+          "name": "苏缘杰",
           "country": "中国"
         },
         {
           "position": "",
           "number": 36,
-          "name": "Guo Hao",
+          "name": "郭皓",
           "country": "中国"
         },
         {
           "position": "",
           "number": 40,
-          "name": "Shi Yan",
+          "name": "史岩",
           "country": "中国"
         }
       ],
       "substitutions": [
         {
           "minute": 45,
-          "player_out": "Xie Weijun",
-          "player_in": "Andrea Compagno"
+          "player_out": "谢维军",
+          "player_in": "安德烈亚·孔帕尼奥"
         },
         {
           "minute": 46,
-          "player_out": "Ming Tian",
-          "player_in": "Qian Yumiao"
+          "player_out": "明天",
+          "player_in": "钱宇淼"
         },
         {
           "minute": 46,
-          "player_out": "Yang Zihao",
-          "player_in": "Su Yuanjie"
+          "player_out": "杨梓豪",
+          "player_in": "苏缘杰"
         },
         {
           "minute": 69,
-          "player_out": "Mile Škorić",
-          "player_in": "Guo Hao"
+          "player_out": "米莱·斯科里奇",
+          "player_in": "郭皓"
         },
         {
           "minute": 80,
-          "player_out": "Ba Dun",
-          "player_in": "Shi Yan"
+          "player_out": "巴顿",
+          "player_in": "史岩"
         }
       ]
     }
@@ -384,7 +384,7 @@
       "team": "home",
       "player": "奇塔迪尼",
       "player2": "武磊",
-      "description": "Léo Cittadini 进球 (助攻: Wu Lei)"
+      "description": "奇塔迪尼在4'进球，助攻球员：武磊"
     },
     {
       "minute": 34,
@@ -393,43 +393,46 @@
       "team": "home",
       "player": "巴尔加斯",
       "player2": "武磊",
-      "description": "Matías Vargas 进球 (助攻: Wu Lei)"
+      "description": "巴尔加斯在34'进球，助攻球员：武磊"
     },
     {
       "minute": 45,
       "minute_extra": 1,
       "type": "substitution",
       "team": "away",
-      "player": "Andrea Compagno",
-      "player2": "Xie Weijun",
-      "description": "Xie Weijun 被换下，Andrea Compagno 替补登场"
+      "player": "安德烈亚·孔帕尼奥",
+      "player2": "",
+      "description": "谢维军被换下，安德烈亚·孔帕尼奥替补登场",
+      "player_out": "谢维军"
     },
     {
       "minute": 46,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Qian Yumiao",
-      "player2": "Ming Tian",
-      "description": "Ming Tian 被换下，Qian Yumiao 替补登场"
+      "player": "钱宇淼",
+      "player2": "",
+      "description": "明天被换下，钱宇淼替补登场",
+      "player_out": "明天"
     },
     {
       "minute": 46,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Su Yuanjie",
-      "player2": "Yang Zihao",
-      "description": "Yang Zihao 被换下，Su Yuanjie 替补登场"
+      "player": "苏缘杰",
+      "player2": "",
+      "description": "杨梓豪被换下，苏缘杰替补登场",
+      "player_out": "杨梓豪"
     },
     {
       "minute": 55,
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": null,
-      "description": "Oscar 进球"
+      "description": "奥斯卡在55'进球"
     },
     {
       "minute": 56,
@@ -437,17 +440,18 @@
       "type": "goal",
       "team": "home",
       "player": "武磊",
-      "player2": "Oscar",
-      "description": "Wu Lei 进球 (助攻: Oscar)"
+      "player2": "奥斯卡",
+      "description": "武磊在56'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 69,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Guo Hao",
-      "player2": "Mile Škorić",
-      "description": "Mile Škorić 被换下，Guo Hao 替补登场"
+      "player": "郭皓",
+      "player2": "",
+      "description": "米莱·斯科里奇被换下，郭皓替补登场",
+      "player_out": "米莱·斯科里奇"
     },
     {
       "minute": 71,
@@ -455,7 +459,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "武磊",
-      "description": "Wu Lei 获得黄牌"
+      "description": "武磊获得黄牌"
     },
     {
       "minute": 79,
@@ -463,8 +467,9 @@
       "type": "substitution",
       "team": "home",
       "player": "冯劲",
-      "player2": "Gustavo",
-      "description": "Gustavo 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "古斯塔沃被换下，冯劲替补登场",
+      "player_out": "古斯塔沃"
     },
     {
       "minute": 79,
@@ -472,17 +477,19 @@
       "type": "substitution",
       "team": "home",
       "player": "王燊超",
-      "player2": "Li Shuai",
-      "description": "Li Shuai 被换下，Wang Shenchao 替补登场"
+      "player2": "",
+      "description": "李帅被换下，王燊超替补登场",
+      "player_out": "李帅"
     },
     {
       "minute": 80,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Shi Yan",
-      "player2": "Ba Dun",
-      "description": "Ba Dun 被换下，Shi Yan 替补登场"
+      "player": "史岩",
+      "player2": "",
+      "description": "巴顿被换下，史岩替补登场",
+      "player_out": "巴顿"
     },
     {
       "minute": 81,
@@ -491,7 +498,7 @@
       "team": "home",
       "player": "武磊",
       "player2": "王燊超",
-      "description": "Wu Lei 进球 (助攻: Wang Shenchao)"
+      "description": "武磊在81'进球，助攻球员：王燊超"
     },
     {
       "minute": 84,
@@ -499,8 +506,9 @@
       "type": "substitution",
       "team": "home",
       "player": "魏震",
-      "player2": "李昂",
-      "description": "Li Ang 被换下，Wei Zhen 替补登场"
+      "player2": "",
+      "description": "李昂被换下，魏震替补登场",
+      "player_out": "李昂"
     },
     {
       "minute": 85,
@@ -508,8 +516,9 @@
       "type": "substitution",
       "team": "home",
       "player": "徐新",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，徐新替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 85,
@@ -517,8 +526,9 @@
       "type": "substitution",
       "team": "home",
       "player": "吕文君",
-      "player2": "巴尔加斯",
-      "description": "Matías Vargas 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "巴尔加斯被换下，吕文君替补登场",
+      "player_out": "巴尔加斯"
     }
   ],
   "statistics": {

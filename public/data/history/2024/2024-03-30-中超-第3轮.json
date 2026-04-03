@@ -20,7 +20,7 @@
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 3,
       "score_ht": 0,
@@ -178,12 +178,12 @@
         {
           "minute": 64,
           "player_out": "吕文君",
-          "player_in": "Oscar"
+          "player_in": "奥斯卡"
         },
         {
           "minute": 79,
           "player_out": "杨世元",
-          "player_in": "Gustavo"
+          "player_in": "古斯塔沃"
         },
         {
           "minute": 80,
@@ -198,8 +198,8 @@
       ]
     },
     "away": {
-      "name": "Henan",
-      "full_name": "Henan",
+      "name": "河南队",
+      "full_name": "河南足球俱乐部",
       "score": 1,
       "score_ht": 0,
       "formation": "4-4-2",
@@ -209,49 +209,49 @@
         {
           "position": "",
           "number": 26,
-          "name": "Xu Jiamin",
+          "name": "徐嘉敏",
           "country": "中国"
         },
         {
           "position": "DF",
           "number": 2,
-          "name": "Yixin Liu",
+          "name": "刘易鑫",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 8,
-          "name": "Đorđe Denić",
+          "name": "乔尔杰·德尼奇",
           "country": "中国"
         },
         {
           "position": "FW",
           "number": 10,
-          "name": "Huang Zichang",
+          "name": "黄紫昌",
           "country": "中国"
         },
         {
           "position": "FW",
           "number": 11,
-          "name": "Frank Acheampong",
+          "name": "弗兰克·阿奇姆彭",
           "country": "中国"
         },
         {
           "position": "",
           "number": 13,
-          "name": "Xu Haofeng",
+          "name": "徐浩峰",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 20,
-          "name": "Nemanja Čović",
+          "name": "内马尼亚·科维奇",
           "country": "中国"
         },
         {
           "position": "MF",
           "number": 22,
-          "name": "Huang Ruifeng",
+          "name": "黄锐烽",
           "country": "中国"
         },
         {
@@ -269,7 +269,7 @@
         {
           "position": "",
           "number": 40,
-          "name": "Bruno Nazário",
+          "name": "布鲁诺·纳扎里奥",
           "country": "中国"
         }
       ],
@@ -295,7 +295,7 @@
         {
           "position": "",
           "number": 6,
-          "name": "Wang Shangyuan",
+          "name": "王上源",
           "country": "中国"
         },
         {
@@ -307,7 +307,7 @@
         {
           "position": "",
           "number": 9,
-          "name": "Feng Boyuan",
+          "name": "冯伯元",
           "country": "中国"
         },
         {
@@ -350,23 +350,23 @@
       "substitutions": [
         {
           "minute": 64,
-          "player_out": "Huang Zichang",
+          "player_out": "黄紫昌",
           "player_in": "Yang Yilin"
         },
         {
           "minute": 74,
-          "player_out": "Frank Acheampong",
+          "player_out": "弗兰克·阿奇姆彭",
           "player_in": "Zhong Yihao"
         },
         {
           "minute": 74,
-          "player_out": "Huang Ruifeng",
-          "player_in": "Wang Shangyuan"
+          "player_out": "黄锐烽",
+          "player_in": "王上源"
         },
         {
           "minute": 90,
-          "player_out": "Bruno Nazário",
-          "player_in": "Feng Boyuan"
+          "player_out": "布鲁诺·纳扎里奥",
+          "player_in": "冯伯元"
         }
       ]
     }
@@ -378,8 +378,9 @@
       "type": "substitution",
       "team": "home",
       "player": "王燊超",
-      "player2": "包世萌",
-      "description": "Bao Shimeng 被换下，Wang Shenchao 替补登场"
+      "player2": "",
+      "description": "包世萌被换下，王燊超替补登场",
+      "player_out": "包世萌"
     },
     {
       "minute": 56,
@@ -388,7 +389,7 @@
       "team": "home",
       "player": "武磊",
       "player2": null,
-      "description": "Wu Lei 进球"
+      "description": "武磊在56'进球"
     },
     {
       "minute": 57,
@@ -396,16 +397,17 @@
       "type": "yellow_card",
       "team": "home",
       "player": "杨世元",
-      "description": "Yang Shiyuan 获得黄牌"
+      "description": "杨世元获得黄牌"
     },
     {
       "minute": 64,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Oscar",
-      "player2": "吕文君",
-      "description": "Lü Wenjun 被换下，Oscar 替补登场"
+      "player": "奥斯卡",
+      "player2": "",
+      "description": "吕文君被换下，奥斯卡替补登场",
+      "player_out": "吕文君"
     },
     {
       "minute": 64,
@@ -413,8 +415,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Yang Yilin",
-      "player2": "Huang Zichang",
-      "description": "Huang Zichang 被换下，Yang Yilin 替补登场"
+      "player2": "",
+      "description": "黄紫昌被换下，Yang Yilin替补登场",
+      "player_out": "黄紫昌"
     },
     {
       "minute": 74,
@@ -422,34 +425,37 @@
       "type": "substitution",
       "team": "away",
       "player": "Zhong Yihao",
-      "player2": "Frank Acheampong",
-      "description": "Frank Acheampong 被换下，Zhong Yihao 替补登场"
+      "player2": "",
+      "description": "弗兰克·阿奇姆彭被换下，Zhong Yihao替补登场",
+      "player_out": "弗兰克·阿奇姆彭"
     },
     {
       "minute": 74,
       "minute_extra": null,
       "type": "substitution",
       "team": "away",
-      "player": "Wang Shangyuan",
-      "player2": "Huang Ruifeng",
-      "description": "Huang Ruifeng 被换下，Wang Shangyuan 替补登场"
+      "player": "王上源",
+      "player2": "",
+      "description": "黄锐烽被换下，王上源替补登场",
+      "player_out": "黄锐烽"
     },
     {
       "minute": 77,
       "minute_extra": null,
       "type": "yellow_card",
       "team": "away",
-      "player": "Xu Haofeng",
-      "description": "Xu Haofeng 获得黄牌"
+      "player": "徐浩峰",
+      "description": "徐浩峰获得黄牌"
     },
     {
       "minute": 79,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Gustavo",
-      "player2": "杨世元",
-      "description": "Yang Shiyuan 被换下，Gustavo 替补登场"
+      "player": "古斯塔沃",
+      "player2": "",
+      "description": "杨世元被换下，古斯塔沃替补登场",
+      "player_out": "杨世元"
     },
     {
       "minute": 80,
@@ -457,8 +463,9 @@
       "type": "substitution",
       "team": "home",
       "player": "徐新",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "武磊被换下，徐新替补登场",
+      "player_out": "武磊"
     },
     {
       "minute": 80,
@@ -466,17 +473,18 @@
       "type": "substitution",
       "team": "home",
       "player": "唐金",
-      "player2": "冯劲",
-      "description": "Feng Jing 被换下，Will Donkin 替补登场"
+      "player2": "",
+      "description": "冯劲被换下，唐金替补登场",
+      "player_out": "冯劲"
     },
     {
       "minute": 84,
       "minute_extra": null,
       "type": "goal",
       "team": "away",
-      "player": "Nemanja Čović",
-      "player2": "Bruno Nazário",
-      "description": "Nemanja Čović 进球 (助攻: Bruno Nazário)"
+      "player": "内马尼亚·科维奇",
+      "player2": "布鲁诺·纳扎里奥",
+      "description": "内马尼亚·科维奇在84'进球，助攻球员：布鲁诺·纳扎里奥"
     },
     {
       "minute": 89,
@@ -485,16 +493,17 @@
       "team": "home",
       "player": "张琳芃",
       "player2": "巴尔加斯",
-      "description": "Zhang Linpeng 进球 (助攻: Matías Vargas)"
+      "description": "张琳芃在89'进球，助攻球员：巴尔加斯"
     },
     {
       "minute": 90,
       "minute_extra": 2,
       "type": "substitution",
       "team": "away",
-      "player": "Feng Boyuan",
-      "player2": "Bruno Nazário",
-      "description": "Bruno Nazário 被换下，Feng Boyuan 替补登场"
+      "player": "冯伯元",
+      "player2": "",
+      "description": "布鲁诺·纳扎里奥被换下，冯伯元替补登场",
+      "player_out": "布鲁诺·纳扎里奥"
     },
     {
       "minute": 90,
@@ -503,7 +512,7 @@
       "team": "home",
       "player": "巴尔加斯",
       "player2": null,
-      "description": "Matías Vargas 进球"
+      "description": "巴尔加斯在90+7'进球"
     },
     {
       "minute": 90,
@@ -511,7 +520,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "巴尔加斯",
-      "description": "Matías Vargas 获得黄牌"
+      "description": "巴尔加斯获得黄牌"
     }
   ],
   "statistics": {

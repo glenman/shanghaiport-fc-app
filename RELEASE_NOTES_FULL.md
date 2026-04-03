@@ -6,7 +6,7 @@
 ## 主要功能
 
 ### 1. 赛程管理
-- 展示2026赛季完整中超赛程
+- 展示2025赛季完整中超赛程
 - 支持按比赛状态、类型和对手搜索
 - 动态生成赛事报告链接
 - 实时更新比赛结果和状态
@@ -51,19 +51,36 @@
 
 ### 项目结构
 ```
-├── data/                 # 数据文件
-│   ├── 2026-03-07-中超-第1轮.json  # 赛事报告
-│   ├── goal_details.json  # 进球详情
-│   └── match_report.json  # 赛事报告模板
-├── images/               # 图片资源
-├── public/               # 静态文件
-├── src/                  # React源代码
-│   └── components/       # 组件目录
-├── index.html            # 主应用页面
-└── match-report.html     # 赛事报告页面
+├── index.html                    # 主应用文件
+├── public/
+│   ├── history-match-report.html # 赛事报告页面
+│   └── data/
+│       └── history/
+│           └── 2025/             # 2025赛季数据
+│               ├── players.json  # 球员数据
+│               └── *.json        # 30场比赛数据文件
+├── scripts/
+│   ├── translate-2025.js         # 2025赛季汉化脚本
+│   ├── test-goals.js             # 进球记录测试脚本
+│   └── generate-players-json.js  # 球员数据生成脚本
+├── datafile/                     # 原始数据文件
+│   ├── 上海海港2025中超联赛对阵结果.csv
+│   └── 上海海港2025一线队大名单.csv
+├── README.md                     # 项目说明文件
+├── RELEASE_NOTES.md              # 版本更新记录
+├── RELEASE_NOTES_FULL.md         # 完整版本更新记录
+└── .gitignore                    # Git忽略文件配置
 ```
 
 ## 最近更新
+
+### Version 1.2.0 (2026-04-03)
+- **2025赛季数据全面汉化**：将所有30场比赛的JSON文件进行全面汉化处理
+- **球员名字翻译统一**：统一翻译"Gabriel Airton de Souza"为"加布里埃尔"，"Oscar Melendo"为"梅伦多"，"Alexander Jojo"为"亚历斯祖"等
+- **测试脚本创建**：创建进球记录测试脚本，验证JSON文件与CSV数据的一致性
+- **数据准确性验证**：测试成功率达到100%，确保数据准确性
+- **players.json数据更新**：补充亚历斯祖等球员信息
+- **赛事报告页面优化**：添加半场比分计算、点球和乌龙球标记显示
 
 ### Version 1.1.0 (2026-03-08)
 - **实现动态赛事报告加载**：根据URL参数自动加载对应比赛的报告

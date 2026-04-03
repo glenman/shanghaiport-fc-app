@@ -20,7 +20,7 @@
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 8,
       "score_ht": 0,
@@ -187,7 +187,7 @@
         },
         {
           "minute": 79,
-          "player_out": "Gustavo",
+          "player_out": "古斯塔沃",
           "player_in": "吕文君"
         },
         {
@@ -198,8 +198,8 @@
       ]
     },
     "away": {
-      "name": "Nantong Zhiyun",
-      "full_name": "Nantong Zhiyun",
+      "name": "南通支云",
+      "full_name": "南通支云足球俱乐部",
       "score": 1,
       "score_ht": 0,
       "formation": "4-4-1-1",
@@ -376,9 +376,9 @@
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Gustavo",
+      "player": "古斯塔沃",
       "player2": null,
-      "description": "Gustavo 进球"
+      "description": "古斯塔沃在6'进球"
     },
     {
       "minute": 11,
@@ -386,16 +386,16 @@
       "type": "yellow_card",
       "team": "away",
       "player": "Liang Shaowen",
-      "description": "Liang Shaowen 获得黄牌"
+      "description": "Liang Shaowen获得黄牌"
     },
     {
       "minute": 14,
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Gustavo",
+      "player": "古斯塔沃",
       "player2": "奇塔迪尼",
-      "description": "Gustavo 进球 (助攻: Léo Cittadini)"
+      "description": "古斯塔沃在14'进球，助攻球员：奇塔迪尼"
     },
     {
       "minute": 38,
@@ -403,7 +403,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "朱萨",
-      "description": "Jussa 获得黄牌"
+      "description": "朱萨获得黄牌"
     },
     {
       "minute": 39,
@@ -412,7 +412,7 @@
       "team": "home",
       "player": "朱萨",
       "player2": "奇塔迪尼",
-      "description": "Jussa 进球 (助攻: Léo Cittadini)"
+      "description": "朱萨在39'进球，助攻球员：奇塔迪尼"
     },
     {
       "minute": 42,
@@ -421,7 +421,7 @@
       "team": "home",
       "player": "巴尔加斯",
       "player2": "武磊",
-      "description": "Matías Vargas 进球 (助攻: Wu Lei)"
+      "description": "巴尔加斯在42'进球，助攻球员：武磊"
     },
     {
       "minute": 46,
@@ -429,8 +429,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Jia Boyan",
-      "player2": "Jesús Godínez",
-      "description": "Jesús Godínez 被换下，Jia Boyan 替补登场"
+      "player2": "",
+      "description": "Jesús Godínez被换下，Jia Boyan替补登场",
+      "player_out": "Jesús Godínez"
     },
     {
       "minute": 46,
@@ -438,8 +439,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Song Haoyu",
-      "player2": "Wei Lai",
-      "description": "Wei Lai 被换下，Song Haoyu 替补登场"
+      "player2": "",
+      "description": "Wei Lai被换下，Song Haoyu替补登场",
+      "player_out": "Wei Lai"
     },
     {
       "minute": 51,
@@ -448,7 +450,7 @@
       "team": "home",
       "player": "武磊",
       "player2": null,
-      "description": "Wu Lei 进球"
+      "description": "武磊在51'进球"
     },
     {
       "minute": 55,
@@ -457,7 +459,7 @@
       "team": "away",
       "player": "Zheng Haoqian",
       "player2": "Jia Boyan",
-      "description": "Zheng Haoqian 进球 (助攻: Jia Boyan)"
+      "description": "Zheng Haoqian在55'进球，助攻球员：Jia Boyan"
     },
     {
       "minute": 62,
@@ -465,8 +467,9 @@
       "type": "substitution",
       "team": "home",
       "player": "冯劲",
-      "player2": "巴尔加斯",
-      "description": "Matías Vargas 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "巴尔加斯被换下，冯劲替补登场",
+      "player_out": "巴尔加斯"
     },
     {
       "minute": 65,
@@ -474,8 +477,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Luo Xin",
-      "player2": "Farley Vieira Rosa",
-      "description": "Farley Vieira Rosa 被换下，Luo Xin 替补登场"
+      "player2": "",
+      "description": "Farley Vieira Rosa被换下，Luo Xin替补登场",
+      "player_out": "Farley Vieira Rosa"
     },
     {
       "minute": 65,
@@ -483,8 +487,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Lu Yongtao",
-      "player2": "Ming-yang Yang",
-      "description": "Ming-yang Yang 被换下，Lu Yongtao 替补登场"
+      "player2": "",
+      "description": "Ming-yang Yang被换下，Lu Yongtao替补登场",
+      "player_out": "Ming-yang Yang"
     },
     {
       "minute": 67,
@@ -492,8 +497,9 @@
       "type": "substitution",
       "team": "home",
       "player": "徐新",
-      "player2": "朱萨",
-      "description": "Jussa 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "朱萨被换下，徐新替补登场",
+      "player_out": "朱萨"
     },
     {
       "minute": 67,
@@ -501,8 +507,9 @@
       "type": "substitution",
       "team": "home",
       "player": "李昂",
-      "player2": "魏震",
-      "description": "Wei Zhen 被换下，Li Ang 替补登场"
+      "player2": "",
+      "description": "魏震被换下，李昂替补登场",
+      "player_out": "魏震"
     },
     {
       "minute": 79,
@@ -510,8 +517,9 @@
       "type": "substitution",
       "team": "home",
       "player": "吕文君",
-      "player2": "Gustavo",
-      "description": "Gustavo 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "古斯塔沃被换下，吕文君替补登场",
+      "player_out": "古斯塔沃"
     },
     {
       "minute": 79,
@@ -519,8 +527,9 @@
       "type": "substitution",
       "team": "home",
       "player": "杨世元",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Yang Shiyuan 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，杨世元替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 79,
@@ -528,8 +537,8 @@
       "type": "goal",
       "team": "home",
       "player": "徐新",
-      "player2": "Gustavo",
-      "description": "Xu Xin 进球 (助攻: Gustavo)"
+      "player2": "古斯塔沃",
+      "description": "徐新在79'进球，助攻球员：古斯塔沃"
     },
     {
       "minute": 86,
@@ -537,8 +546,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Zhang Yuye",
-      "player2": "Zheng Haoqian",
-      "description": "Zheng Haoqian 被换下，Zhang Yuye 替补登场"
+      "player2": "",
+      "description": "Zheng Haoqian被换下，Zhang Yuye替补登场",
+      "player_out": "Zheng Haoqian"
     },
     {
       "minute": 88,
@@ -546,17 +556,17 @@
       "type": "goal",
       "team": "home",
       "player": "冯劲",
-      "player2": "Oscar",
-      "description": "Feng Jing 进球 (助攻: Oscar)"
+      "player2": "奥斯卡",
+      "description": "冯劲在88'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 90,
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": "武磊",
-      "description": "Oscar 进球 (助攻: Wu Lei)"
+      "description": "奥斯卡在90'进球，助攻球员：武磊"
     }
   ],
   "statistics": {

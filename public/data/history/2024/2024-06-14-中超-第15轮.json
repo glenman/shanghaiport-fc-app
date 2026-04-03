@@ -20,8 +20,8 @@
   },
   "teams": {
     "home": {
-      "name": "Tianjin Jinmen Tiger",
-      "full_name": "Tianjin Jinmen Tiger",
+      "name": "天津津门虎",
+      "full_name": "天津津门虎足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "5-4-1",
@@ -37,7 +37,7 @@
         {
           "position": "",
           "number": 6,
-          "name": "Han Pengfei",
+          "name": "韩鹏飞",
           "country": "中国"
         },
         {
@@ -49,7 +49,7 @@
         {
           "position": "",
           "number": 9,
-          "name": "Andrea Compagno",
+          "name": "安德烈亚·孔帕尼奥",
           "country": "中国"
         },
         {
@@ -61,19 +61,19 @@
         {
           "position": "MF",
           "number": 16,
-          "name": "Yang Zihao",
+          "name": "杨梓豪",
           "country": "中国"
         },
         {
           "position": "",
           "number": 21,
-          "name": "Mile Škorić",
+          "name": "米莱·斯科里奇",
           "country": "中国"
         },
         {
           "position": "",
           "number": 29,
-          "name": "Ba Dun",
+          "name": "巴顿",
           "country": "中国"
         },
         {
@@ -85,13 +85,13 @@
         {
           "position": "DF",
           "number": 32,
-          "name": "Su Yuanjie",
+          "name": "苏缘杰",
           "country": "中国"
         },
         {
           "position": "",
           "number": 36,
-          "name": "Guo Hao",
+          "name": "郭皓",
           "country": "中国"
         }
       ],
@@ -135,7 +135,7 @@
         {
           "position": "FW",
           "number": 11,
-          "name": "Xie Weijun",
+          "name": "谢维军",
           "country": "中国"
         },
         {
@@ -153,7 +153,7 @@
         {
           "position": "DF",
           "number": 23,
-          "name": "Qian Yumiao",
+          "name": "钱宇淼",
           "country": "中国"
         },
         {
@@ -165,40 +165,40 @@
         {
           "position": "",
           "number": 40,
-          "name": "Shi Yan",
+          "name": "史岩",
           "country": "中国"
         }
       ],
       "substitutions": [
         {
           "minute": 68,
-          "player_out": "Han Pengfei",
+          "player_out": "韩鹏飞",
           "player_in": "Alex Grant"
         },
         {
           "minute": 68,
-          "player_out": "Guo Hao",
+          "player_out": "郭皓",
           "player_in": "Ivan Fiolić"
         },
         {
           "minute": 72,
-          "player_out": "Yang Zihao",
-          "player_in": "Xie Weijun"
+          "player_out": "杨梓豪",
+          "player_in": "谢维军"
         },
         {
           "minute": 72,
-          "player_out": "Ba Dun",
-          "player_in": "Qian Yumiao"
+          "player_out": "巴顿",
+          "player_in": "钱宇淼"
         },
         {
           "minute": 78,
           "player_out": "Albion Ademi",
-          "player_in": "Shi Yan"
+          "player_in": "史岩"
         }
       ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 3,
       "score_ht": 0,
@@ -365,7 +365,7 @@
         },
         {
           "minute": 74,
-          "player_out": "Gustavo",
+          "player_out": "古斯塔沃",
           "player_in": "李圣龙"
         },
         {
@@ -382,17 +382,17 @@
       "minute_extra": null,
       "type": "goal",
       "team": "away",
-      "player": "Gustavo",
+      "player": "古斯塔沃",
       "player2": "王燊超",
-      "description": "Gustavo 进球 (助攻: Wang Shenchao)"
+      "description": "古斯塔沃在14'进球，助攻球员：王燊超"
     },
     {
       "minute": 28,
       "minute_extra": null,
       "type": "yellow_card",
       "team": "home",
-      "player": "Mile Škorić",
-      "description": "Mile Škorić 获得黄牌"
+      "player": "米莱·斯科里奇",
+      "description": "米莱·斯科里奇获得黄牌"
     },
     {
       "minute": 33,
@@ -400,24 +400,24 @@
       "type": "goal",
       "team": "away",
       "player": "布朗宁",
-      "player2": "Oscar",
-      "description": "Tyias Browning 进球 (助攻: Oscar)"
+      "player2": "奥斯卡",
+      "description": "布朗宁在33'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 40,
       "minute_extra": null,
       "type": "yellow_card",
       "team": "away",
-      "player": "Gustavo",
-      "description": "Gustavo 获得黄牌"
+      "player": "古斯塔沃",
+      "description": "古斯塔沃获得黄牌"
     },
     {
       "minute": 51,
       "minute_extra": null,
       "type": "yellow_card",
       "team": "home",
-      "player": "Su Yuanjie",
-      "description": "Su Yuanjie 获得黄牌"
+      "player": "苏缘杰",
+      "description": "苏缘杰获得黄牌"
     },
     {
       "minute": 66,
@@ -425,8 +425,9 @@
       "type": "substitution",
       "team": "away",
       "player": "武磊",
-      "player2": "刘祝润",
-      "description": "Liu Zhurun 被换下，Wu Lei 替补登场"
+      "player2": "",
+      "description": "刘祝润被换下，武磊替补登场",
+      "player_out": "刘祝润"
     },
     {
       "minute": 66,
@@ -434,8 +435,9 @@
       "type": "substitution",
       "team": "away",
       "player": "徐新",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，徐新替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 68,
@@ -443,8 +445,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Alex Grant",
-      "player2": "Han Pengfei",
-      "description": "Han Pengfei 被换下，Alex Grant 替补登场"
+      "player2": "",
+      "description": "韩鹏飞被换下，Alex Grant替补登场",
+      "player_out": "韩鹏飞"
     },
     {
       "minute": 68,
@@ -452,35 +455,38 @@
       "type": "substitution",
       "team": "home",
       "player": "Ivan Fiolić",
-      "player2": "Guo Hao",
-      "description": "Guo Hao 被换下，Ivan Fiolić 替补登场"
+      "player2": "",
+      "description": "郭皓被换下，Ivan Fiolić替补登场",
+      "player_out": "郭皓"
     },
     {
       "minute": 71,
       "minute_extra": null,
       "type": "goal",
       "team": "away",
-      "player": "Gustavo",
-      "player2": "Oscar",
-      "description": "Gustavo 进球 (助攻: Oscar)"
+      "player": "古斯塔沃",
+      "player2": "奥斯卡",
+      "description": "古斯塔沃在71'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 72,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Xie Weijun",
-      "player2": "Yang Zihao",
-      "description": "Yang Zihao 被换下，Xie Weijun 替补登场"
+      "player": "谢维军",
+      "player2": "",
+      "description": "杨梓豪被换下，谢维军替补登场",
+      "player_out": "杨梓豪"
     },
     {
       "minute": 72,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Qian Yumiao",
-      "player2": "Ba Dun",
-      "description": "Ba Dun 被换下，Qian Yumiao 替补登场"
+      "player": "钱宇淼",
+      "player2": "",
+      "description": "巴顿被换下，钱宇淼替补登场",
+      "player_out": "巴顿"
     },
     {
       "minute": 73,
@@ -488,8 +494,9 @@
       "type": "substitution",
       "team": "away",
       "player": "巴尔加斯",
-      "player2": "冯劲",
-      "description": "Feng Jing 被换下，Matías Vargas 替补登场"
+      "player2": "",
+      "description": "冯劲被换下，巴尔加斯替补登场",
+      "player_out": "冯劲"
     },
     {
       "minute": 74,
@@ -497,8 +504,9 @@
       "type": "substitution",
       "team": "away",
       "player": "李圣龙",
-      "player2": "Gustavo",
-      "description": "Gustavo 被换下，Li Shenglong 替补登场"
+      "player2": "",
+      "description": "古斯塔沃被换下，李圣龙替补登场",
+      "player_out": "古斯塔沃"
     },
     {
       "minute": 76,
@@ -506,8 +514,9 @@
       "type": "substitution",
       "team": "away",
       "player": "杨世元",
-      "player2": "朱萨",
-      "description": "Jussa 被换下，Yang Shiyuan 替补登场"
+      "player2": "",
+      "description": "朱萨被换下，杨世元替补登场",
+      "player_out": "朱萨"
     },
     {
       "minute": 77,
@@ -515,24 +524,25 @@
       "type": "yellow_card",
       "team": "away",
       "player": "巴尔加斯",
-      "description": "Matías Vargas 获得黄牌"
+      "description": "巴尔加斯获得黄牌"
     },
     {
       "minute": 78,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Shi Yan",
-      "player2": "Albion Ademi",
-      "description": "Albion Ademi 被换下，Shi Yan 替补登场"
+      "player": "史岩",
+      "player2": "",
+      "description": "Albion Ademi被换下，史岩替补登场",
+      "player_out": "Albion Ademi"
     },
     {
       "minute": 81,
       "minute_extra": null,
       "type": "yellow_card",
       "team": "home",
-      "player": "Xie Weijun",
-      "description": "Xie Weijun 获得黄牌"
+      "player": "谢维军",
+      "description": "谢维军获得黄牌"
     }
   ],
   "statistics": {

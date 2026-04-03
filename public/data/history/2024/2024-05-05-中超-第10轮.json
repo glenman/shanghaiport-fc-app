@@ -21,7 +21,7 @@
   "teams": {
     "home": {
       "name": "Shenzhen Peng City",
-      "full_name": "Shenzhen Peng City",
+      "full_name": "Shenzhen Peng City足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "4-1-4-1",
@@ -43,7 +43,7 @@
         {
           "position": "FW",
           "number": 7,
-          "name": "Thiago",
+          "name": "蒂亚戈",
           "country": "中国"
         },
         {
@@ -85,13 +85,13 @@
         {
           "position": "",
           "number": 24,
-          "name": "Wang Hao",
+          "name": "王浩",
           "country": "中国"
         },
         {
           "position": "DF",
           "number": 28,
-          "name": "Zhang Yudong",
+          "name": "张煜东",
           "country": "中国"
         }
       ],
@@ -105,7 +105,7 @@
         {
           "position": "DF",
           "number": 2,
-          "name": "Zhang Wei",
+          "name": "张伟",
           "country": "中国"
         },
         {
@@ -178,7 +178,7 @@
         {
           "minute": 46,
           "player_out": "Li Zhi",
-          "player_in": "Zhang Wei"
+          "player_in": "张伟"
         },
         {
           "minute": 59,
@@ -187,7 +187,7 @@
         },
         {
           "minute": 60,
-          "player_out": "Thiago",
+          "player_out": "蒂亚戈",
           "player_in": "Baihelamu Abuduwaili"
         },
         {
@@ -198,7 +198,7 @@
       ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 6,
       "score_ht": 0,
@@ -370,7 +370,7 @@
         },
         {
           "minute": 81,
-          "player_out": "Oscar",
+          "player_out": "奥斯卡",
           "player_in": "吕文君"
         }
       ]
@@ -382,8 +382,8 @@
       "minute_extra": null,
       "type": "red_card",
       "team": "home",
-      "player": "Wang Hao",
-      "description": "Wang Hao 获得红牌"
+      "player": "王浩",
+      "description": "王浩获得红牌"
     },
     {
       "minute": 11,
@@ -391,16 +391,16 @@
       "type": "yellow_card",
       "team": "away",
       "player": "巴尔加斯",
-      "description": "Matías Vargas 获得黄牌"
+      "description": "巴尔加斯获得黄牌"
     },
     {
       "minute": 27,
       "minute_extra": null,
       "type": "goal",
       "team": "away",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": null,
-      "description": "Oscar 进球"
+      "description": "奥斯卡在27'进球"
     },
     {
       "minute": 29,
@@ -409,7 +409,7 @@
       "team": "away",
       "player": "武磊",
       "player2": "朱萨",
-      "description": "Wu Lei 进球 (助攻: Jussa)"
+      "description": "武磊在29'进球，助攻球员：朱萨"
     },
     {
       "minute": 45,
@@ -418,15 +418,15 @@
       "team": "away",
       "player": "巴尔加斯",
       "player2": "朱萨",
-      "description": "Matías Vargas 进球 (助攻: Jussa)"
+      "description": "巴尔加斯在45+4'进球，助攻球员：朱萨"
     },
     {
       "minute": 45,
       "minute_extra": 6,
       "type": "yellow_card",
       "team": "away",
-      "player": "Li Shuai",
-      "description": "Li Shuai 获得黄牌"
+      "player": "李帅",
+      "description": "李帅获得黄牌"
     },
     {
       "minute": 46,
@@ -434,17 +434,19 @@
       "type": "substitution",
       "team": "home",
       "player": "Nizamdin Ependi",
-      "player2": "Samuel Armenteros",
-      "description": "Samuel Armenteros 被换下，Nizamdin Ependi 替补登场"
+      "player2": "",
+      "description": "Samuel Armenteros被换下，Nizamdin Ependi替补登场",
+      "player_out": "Samuel Armenteros"
     },
     {
       "minute": 46,
       "minute_extra": null,
       "type": "substitution",
       "team": "home",
-      "player": "Zhang Wei",
-      "player2": "Li Zhi",
-      "description": "Li Zhi 被换下，Zhang Wei 替补登场"
+      "player": "张伟",
+      "player2": "",
+      "description": "Li Zhi被换下，张伟替补登场",
+      "player_out": "Li Zhi"
     },
     {
       "minute": 50,
@@ -452,17 +454,17 @@
       "type": "goal",
       "team": "away",
       "player": "巴尔加斯",
-      "player2": "Oscar",
-      "description": "Matías Vargas 进球 (助攻: Oscar)"
+      "player2": "奥斯卡",
+      "description": "巴尔加斯在50'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 56,
       "minute_extra": null,
       "type": "goal",
       "team": "away",
-      "player": "Gustavo",
-      "player2": "Oscar",
-      "description": "Gustavo 进球 (助攻: Oscar)"
+      "player": "古斯塔沃",
+      "player2": "奥斯卡",
+      "description": "古斯塔沃在56'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 59,
@@ -470,8 +472,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Nan Song",
-      "player2": "Edu Garcia",
-      "description": "Edu Garcia 被换下，Nan Song 替补登场"
+      "player2": "",
+      "description": "Edu Garcia被换下，Nan Song替补登场",
+      "player_out": "Edu Garcia"
     },
     {
       "minute": 60,
@@ -479,8 +482,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Baihelamu Abuduwaili",
-      "player2": "Thiago",
-      "description": "Thiago 被换下，Baihelamu Abuduwaili 替补登场"
+      "player2": "",
+      "description": "蒂亚戈被换下，Baihelamu Abuduwaili替补登场",
+      "player_out": "蒂亚戈"
     },
     {
       "minute": 63,
@@ -488,8 +492,9 @@
       "type": "substitution",
       "team": "away",
       "player": "李昂",
-      "player2": "布朗宁",
-      "description": "Tyias Browning 被换下，Li Ang 替补登场"
+      "player2": "",
+      "description": "布朗宁被换下，李昂替补登场",
+      "player_out": "布朗宁"
     },
     {
       "minute": 71,
@@ -497,8 +502,9 @@
       "type": "substitution",
       "team": "away",
       "player": "唐金",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Will Donkin 替补登场"
+      "player2": "",
+      "description": "武磊被换下，唐金替补登场",
+      "player_out": "武磊"
     },
     {
       "minute": 71,
@@ -506,8 +512,9 @@
       "type": "substitution",
       "team": "away",
       "player": "徐新",
-      "player2": "朱萨",
-      "description": "Jussa 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "朱萨被换下，徐新替补登场",
+      "player_out": "朱萨"
     },
     {
       "minute": 79,
@@ -516,7 +523,7 @@
       "team": "away",
       "player": "巴尔加斯",
       "player2": null,
-      "description": "Matías Vargas 进球"
+      "description": "巴尔加斯在79'进球"
     },
     {
       "minute": 80,
@@ -524,8 +531,9 @@
       "type": "substitution",
       "team": "home",
       "player": "Xiao Kun",
-      "player2": "Jorge Ortiz Mendoza",
-      "description": "Jorge Ortiz Mendoza 被换下，Xiao Kun 替补登场"
+      "player2": "",
+      "description": "Jorge Ortiz Mendoza被换下，Xiao Kun替补登场",
+      "player_out": "Jorge Ortiz Mendoza"
     },
     {
       "minute": 80,
@@ -533,8 +541,9 @@
       "type": "substitution",
       "team": "away",
       "player": "冯劲",
-      "player2": "巴尔加斯",
-      "description": "Matías Vargas 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "巴尔加斯被换下，冯劲替补登场",
+      "player_out": "巴尔加斯"
     },
     {
       "minute": 81,
@@ -542,8 +551,9 @@
       "type": "substitution",
       "team": "away",
       "player": "吕文君",
-      "player2": "Oscar",
-      "description": "Oscar 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "奥斯卡被换下，吕文君替补登场",
+      "player_out": "奥斯卡"
     }
   ],
   "statistics": {

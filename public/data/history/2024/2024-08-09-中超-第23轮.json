@@ -20,7 +20,7 @@
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 7,
       "score_ht": 0,
@@ -182,12 +182,12 @@
         },
         {
           "minute": 71,
-          "player_out": "Li Shuai",
+          "player_out": "李帅",
           "player_in": "傅欢"
         },
         {
           "minute": 84,
-          "player_out": "Oscar",
+          "player_out": "奥斯卡",
           "player_in": "吕文君"
         },
         {
@@ -198,8 +198,8 @@
       ]
     },
     "away": {
-      "name": "Meizhou Hakka",
-      "full_name": "Meizhou Hakka",
+      "name": "梅州客家",
+      "full_name": "梅州客家足球俱乐部",
       "score": 2,
       "score_ht": 0,
       "formation": "4-2-3-1",
@@ -209,7 +209,7 @@
         {
           "position": "DF",
           "number": 41,
-          "name": "Guo Quanbo",
+          "name": "郭全博",
           "country": "中国"
         },
         {
@@ -239,7 +239,7 @@
         {
           "position": "",
           "number": 15,
-          "name": "Chen Zhechao",
+          "name": "陈哲超",
           "country": "中国"
         },
         {
@@ -251,13 +251,13 @@
         {
           "position": "MF",
           "number": 20,
-          "name": "Wang Jianan",
+          "name": "王建安",
           "country": "中国"
         },
         {
           "position": "",
           "number": 25,
-          "name": "Rodrigo",
+          "name": "罗德里戈",
           "country": "中国"
         },
         {
@@ -338,7 +338,7 @@
       "substitutions": [
         {
           "minute": 46,
-          "player_out": "Chen Zhechao",
+          "player_out": "陈哲超",
           "player_in": "Yue Tze Nam"
         },
         {
@@ -358,7 +358,7 @@
         },
         {
           "minute": 77,
-          "player_out": "Rodrigo",
+          "player_out": "罗德里戈",
           "player_in": "Yin Hongbo"
         }
       ]
@@ -372,15 +372,15 @@
       "team": "home",
       "player": "武磊",
       "player2": "王燊超",
-      "description": "Wu Lei 进球 (助攻: Wang Shenchao)"
+      "description": "武磊在3'进球，助攻球员：王燊超"
     },
     {
       "minute": 20,
       "minute_extra": null,
       "type": "yellow_card",
       "team": "away",
-      "player": "Wang Jianan",
-      "description": "Wang Jianan 获得黄牌"
+      "player": "王建安",
+      "description": "王建安获得黄牌"
     },
     {
       "minute": 30,
@@ -388,25 +388,25 @@
       "type": "yellow_card",
       "team": "away",
       "player": "Rao Weihui",
-      "description": "Rao Weihui 获得黄牌"
+      "description": "Rao Weihui获得黄牌"
     },
     {
       "minute": 31,
       "minute_extra": null,
       "type": "goal",
       "team": "home",
-      "player": "Gustavo",
-      "player2": "Oscar",
-      "description": "Gustavo 进球 (助攻: Oscar)"
+      "player": "古斯塔沃",
+      "player2": "奥斯卡",
+      "description": "古斯塔沃在31'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 34,
       "minute_extra": null,
       "type": "goal",
       "team": "away",
-      "player": "Rodrigo",
+      "player": "罗德里戈",
       "player2": "Yang Chaosheng",
-      "description": "Rodrigo 进球 (助攻: Yang Chaosheng)"
+      "description": "罗德里戈在34'进球，助攻球员：Yang Chaosheng"
     },
     {
       "minute": 38,
@@ -414,8 +414,8 @@
       "type": "goal",
       "team": "home",
       "player": "武磊",
-      "player2": "Oscar",
-      "description": "Wu Lei 进球 (助攻: Oscar)"
+      "player2": "奥斯卡",
+      "description": "武磊在38'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 45,
@@ -424,7 +424,7 @@
       "team": "home",
       "player": "武磊",
       "player2": null,
-      "description": "Wu Lei 进球"
+      "description": "武磊在45+1'进球"
     },
     {
       "minute": 46,
@@ -432,8 +432,9 @@
       "type": "substitution",
       "team": "home",
       "player": "徐新",
-      "player2": "奇塔迪尼",
-      "description": "Léo Cittadini 被换下，Xu Xin 替补登场"
+      "player2": "",
+      "description": "奇塔迪尼被换下，徐新替补登场",
+      "player_out": "奇塔迪尼"
     },
     {
       "minute": 46,
@@ -441,8 +442,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Yue Tze Nam",
-      "player2": "Chen Zhechao",
-      "description": "Chen Zhechao 被换下，Yue Tze Nam 替补登场"
+      "player2": "",
+      "description": "陈哲超被换下，Yue Tze Nam替补登场",
+      "player_out": "陈哲超"
     },
     {
       "minute": 46,
@@ -450,8 +452,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Wei Zhiwei",
-      "player2": "Shi Liang",
-      "description": "Shi Liang 被换下，Wei Zhiwei 替补登场"
+      "player2": "",
+      "description": "Shi Liang被换下，Wei Zhiwei替补登场",
+      "player_out": "Shi Liang"
     },
     {
       "minute": 61,
@@ -459,8 +462,9 @@
       "type": "substitution",
       "team": "home",
       "player": "杨世元",
-      "player2": "朱萨",
-      "description": "Jussa 被换下，Yang Shiyuan 替补登场"
+      "player2": "",
+      "description": "朱萨被换下，杨世元替补登场",
+      "player_out": "朱萨"
     },
     {
       "minute": 62,
@@ -468,8 +472,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Yin Congyao",
-      "player2": "Tyrone Conraad",
-      "description": "Tyrone Conraad 被换下，Yin Congyao 替补登场"
+      "player2": "",
+      "description": "Tyrone Conraad被换下，Yin Congyao替补登场",
+      "player_out": "Tyrone Conraad"
     },
     {
       "minute": 63,
@@ -478,7 +483,7 @@
       "team": "home",
       "player": "武磊",
       "player2": null,
-      "description": "Wu Lei 进球"
+      "description": "武磊在63'进球"
     },
     {
       "minute": 65,
@@ -486,8 +491,8 @@
       "type": "goal",
       "team": "home",
       "player": "巴尔加斯",
-      "player2": "Oscar",
-      "description": "Matías Vargas 进球 (助攻: Oscar)"
+      "player2": "奥斯卡",
+      "description": "巴尔加斯在65'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 69,
@@ -496,7 +501,7 @@
       "team": "home",
       "player": "巴尔加斯",
       "player2": null,
-      "description": "Matías Vargas 进球"
+      "description": "巴尔加斯在69'进球"
     },
     {
       "minute": 71,
@@ -504,8 +509,9 @@
       "type": "substitution",
       "team": "home",
       "player": "傅欢",
-      "player2": "Li Shuai",
-      "description": "Li Shuai 被换下，Fu Huan 替补登场"
+      "player2": "",
+      "description": "李帅被换下，傅欢替补登场",
+      "player_out": "李帅"
     },
     {
       "minute": 73,
@@ -513,8 +519,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Ning Li",
-      "player2": "Ye Chugui",
-      "description": "Ye Chugui 被换下，Ning Li 替补登场"
+      "player2": "",
+      "description": "Ye Chugui被换下，Ning Li替补登场",
+      "player_out": "Ye Chugui"
     },
     {
       "minute": 77,
@@ -522,8 +529,9 @@
       "type": "substitution",
       "team": "away",
       "player": "Yin Hongbo",
-      "player2": "Rodrigo",
-      "description": "Rodrigo 被换下，Yin Hongbo 替补登场"
+      "player2": "",
+      "description": "罗德里戈被换下，Yin Hongbo替补登场",
+      "player_out": "罗德里戈"
     },
     {
       "minute": 82,
@@ -532,7 +540,7 @@
       "team": "away",
       "player": "Yang Chaosheng",
       "player2": "Ning Li",
-      "description": "Yang Chaosheng 进球 (助攻: Ning Li)"
+      "description": "Yang Chaosheng在82'进球，助攻球员：Ning Li"
     },
     {
       "minute": 84,
@@ -540,8 +548,9 @@
       "type": "substitution",
       "team": "home",
       "player": "吕文君",
-      "player2": "Oscar",
-      "description": "Oscar 被换下，Lü Wenjun 替补登场"
+      "player2": "",
+      "description": "奥斯卡被换下，吕文君替补登场",
+      "player_out": "奥斯卡"
     },
     {
       "minute": 84,
@@ -549,8 +558,9 @@
       "type": "substitution",
       "team": "home",
       "player": "冯劲",
-      "player2": "武磊",
-      "description": "Wu Lei 被换下，Feng Jing 替补登场"
+      "player2": "",
+      "description": "武磊被换下，冯劲替补登场",
+      "player_out": "武磊"
     }
   ],
   "statistics": {

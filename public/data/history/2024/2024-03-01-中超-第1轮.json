@@ -20,7 +20,7 @@
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "上海海港足球俱乐部",
       "score": 3,
       "score_ht": 1,
@@ -198,7 +198,7 @@
       ]
     },
     "away": {
-      "name": "Wuhan Three Towns",
+      "name": "武汉三镇",
       "full_name": "武汉三镇足球俱乐部",
       "score": 1,
       "score_ht": 1,
@@ -372,7 +372,7 @@
       "type": "goal",
       "team": "away",
       "player": "王毅",
-      "description": "武汉三镇进球"
+      "description": "王毅在20'进球"
     },
     {
       "minute": 33,
@@ -380,7 +380,7 @@
       "team": "home",
       "player": "武磊",
       "player2": "吕文君",
-      "description": "上海海港扳平比分"
+      "description": "武磊在33'进球，助攻球员：吕文君"
     },
     {
       "minute": 75,
@@ -388,7 +388,7 @@
       "team": "home",
       "player": "武磊",
       "player2": "奥斯卡",
-      "description": "上海海港领先"
+      "description": "武磊在75'进球，助攻球员：奥斯卡"
     },
     {
       "minute": 90,
@@ -396,7 +396,7 @@
       "type": "goal",
       "team": "home",
       "player": "王燊超",
-      "description": "上海海港锁定胜局"
+      "description": "王燊超在90+2'进球"
     }
   ],
   "statistics": {
