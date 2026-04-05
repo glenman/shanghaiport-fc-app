@@ -351,10 +351,7 @@
         font-size: 0.85rem;
       }
 
-      .statistics-table th:first-child,
-      .statistics-table td:first-child {
-        text-align: left;
-      }
+
 
       .statistics-table tr:hover {
         background-color: rgba(60, 60, 60, 0.6);
@@ -656,7 +653,7 @@
 
             html += renderScoreboard(data);
             html += renderSummary(data);
-            html += renderTimeline(data);
+            html += renderGoalRecords(data);
             html += renderLineups(data);
             html += renderStatistics(data);
             html += renderTacticalAnalysis(data);
@@ -669,6 +666,74 @@
             html += '<a href="javascript:window.history.back()" class="back-link">返回</a>';
 
             document.getElementById('content').innerHTML = html;
+          }
+
+          function renderGoalRecords(data) {
+            const events = data.matchTimeline || data.highlights || [];
+            if (!events || events.length === 0) return '';
+            
+            const goalEvents = events.filter(event => 
+              event.type === 'goal' || event.type === 'own_goal'
+            );
+            if (goalEvents.length === 0) return '';
+            
+            const homeGoals = goalEvents.filter(event => event.team === 'home');
+            const awayGoals = goalEvents.filter(event => event.team === 'away');
+            
+            function renderGoalList(goals, teamName) {
+              if (goals.length === 0) return '';
+              
+              let html = `
+                <div style="margin-bottom: 1rem;">
+                  <h4 style="color: #c00010; font-size: 1.1rem; margin-bottom: 0.5rem;">${teamName}</h4>
+                  <ul style="list-style: none; padding: 0;">
+              `;
+              
+              goals.forEach((goal, index) => {
+                const minute = goal.minute;
+                const minuteExtra = goal.minute_extra;
+                const timeDisplay = minuteExtra ? `${minute}+${minuteExtra}'` : `${minute}'`;
+                
+                let specialMark = '';
+                let ballIcon = '⚽';
+                
+                // 支持新的goal_type字段
+                if (goal.goal_type === 'own_goal') {
+                  ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
+                  specialMark = ' <span style="color: #ff6b6b; font-weight: bold;">(OG)</span>';
+                } else if (goal.goal_type === 'penalty_goal') {
+                  specialMark = ' <span style="color: #4ecdc4; font-weight: bold;">(P)</span>';
+                }
+                
+                // 兼容新格式和旧格式的字段名
+                const playerName = goal.player || goal.scorer;
+                const assistPlayer = goal.player2 || goal.assist;
+                
+                html += `
+                  <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between;">
+                    <span>
+                      <span style="color: #c00010; font-weight: 700; min-width: 40px;">${index + 1}.</span>
+                      <span>${ballIcon} ${playerName}</span>${specialMark}
+                      ${assistPlayer ? `<span style="color: rgba(255, 255, 255, 0.6); font-size: 0.85rem;"> (助攻: ${assistPlayer})</span>` : ''}
+                    </span>
+                    <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">${timeDisplay}</span>
+                  </li>
+                `;
+              });
+              
+              html += '</ul></div>';
+              return html;
+            }
+            
+            return `
+              <div class="card">
+                <h2>⚽ 进球记录</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                  ${renderGoalList(homeGoals, data.match.homeTeam)}
+                  ${renderGoalList(awayGoals, data.match.awayTeam)}
+                </div>
+              </div>
+            `;
           }
 
           function renderScoreboard(data) {
@@ -710,39 +775,6 @@
             `;
           }
 
-          function renderTimeline(data) {
-            const timeline = data.matchTimeline || data.highlights || [];
-            if (timeline.length === 0) return '';
-
-            const sortedTimeline = [...timeline].sort((a, b) => {
-              const timeA = parseInt(a.minute || a.time || '0');
-              const timeB = parseInt(b.minute || b.time || '0');
-              return timeA - timeB;
-            });
-
-            let html = '<div class="card"><h2>⏱️ 比赛时间线</h2><div class="timeline">';
-            
-            sortedTimeline.forEach(item => {
-              const minute = item.minute || parseInt(item.time) || 0;
-              const type = item.type;
-              let cssClass = '';
-              
-              if (type === 'goal') cssClass = 'goal';
-              else if (type === 'yellow_card' || type === 'card') cssClass = 'card';
-              else if (type === 'substitution') cssClass = 'substitution';
-
-              html += `
-                <div class="timeline-item ${cssClass}">
-                  <span class="timeline-time">${minute}'</span>
-                  <span class="timeline-content">${item.description}</span>
-                </div>
-              `;
-            });
-
-            html += '</div></div>';
-            return html;
-          }
-
           function renderLineups(data) {
             const lineups = data.lineups;
             if (!lineups) return '';
@@ -771,21 +803,38 @@
               if (!subs || subs.length === 0) return '';
               return `
                 <div class="substitutes-section">
-                  <h5>替补出场</h5>
+                  <h5>替补球员</h5>
                   <ul class="player-list">
-                    ${subs.map(s => {
-                      let position = '';
-                      if (s.substitutedAt && s.substitutedFor) {
-                        position = `${s.substitutedAt}' 换下 ${s.substitutedFor}`;
-                      } else if (s.substitutedAt) {
-                        position = `${s.substitutedAt}' 替补出场`;
-                      } else {
-                        position = s.position || '';
-                      }
+                    ${subs.map(s => `
+                      <li>
+                        <span><span class="player-number">${s.number}.</span><span class="player-name">${s.name}</span></span>
+                        <span class="player-position">${s.position || ''}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                </div>
+              `;
+            }
+
+            function renderSubstitutionDetails(events, teamKey) {
+              const substitutionEvents = events.filter(event => 
+                event.type === 'substitution' && event.team === teamKey
+              );
+              
+              if (!substitutionEvents || substitutionEvents.length === 0) return '';
+              
+              return `
+                <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed rgba(255, 255, 255, 0.2);">
+                  <h5 style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); margin-bottom: 0.5rem;">换人信息</h5>
+                  <ul class="player-list">
+                    ${substitutionEvents.map(event => {
+                      const minute = event.minute;
+                      const minuteExtra = event.minute_extra;
+                      const timeDisplay = minuteExtra ? `${minute}+${minuteExtra}'` : `${minute}'`;
                       return `
                         <li>
-                          <span><span class="player-number">${s.number}.</span><span class="player-name">${s.name}</span></span>
-                          <span class="player-position">${position}</span>
+                          <span><span class="player-number">${timeDisplay}</span><span class="player-name">${event.playerOut} <span style="color: #dc3545; font-weight: bold;">↓</span> <span style="color: #28a745; font-weight: bold;">↑</span> ${event.playerIn}</span></span>
+                          <span class="player-position">换人</span>
                         </li>
                       `;
                     }).join('')}
@@ -808,6 +857,7 @@
                       ${renderPlayerList(lineups.home.players)}
                     </ul>
                     ${renderSubstitutes(lineups.home.substitutes)}
+                    ${renderSubstitutionDetails(data.matchTimeline, 'home')}
                   </div>
                   <div class="lineup-team">
                     <h4>${lineups.away.name} <span class="formation">${lineups.away.formation}</span></h4>
@@ -819,6 +869,7 @@
                       ${renderPlayerList(lineups.away.players)}
                     </ul>
                     ${renderSubstitutes(lineups.away.substitutes)}
+                    ${renderSubstitutionDetails(data.matchTimeline, 'away')}
                   </div>
                 </div>
               </div>

@@ -714,7 +714,7 @@
               }).join('');
             }
 
-            function renderSubstitutes(subs, events, teamName) {
+            function renderSubstitutes(subs, events, teamKey, teamName) {
               if (!subs || subs.length === 0) return '';
               
               return `
@@ -732,13 +732,12 @@
                       `;
                     }).join('')}
                   </ul>
-                  ${renderSubstitutionDetails(events, teamName)}
+                  ${renderSubstitutionDetails(events, teamKey)}
                 </div>
               `;
             }
             
-            function renderSubstitutionDetails(events, teamName) {
-              const teamKey = teamName === '上海海港' ? 'home' : 'away';
+            function renderSubstitutionDetails(events, teamKey) {
               const substitutionEvents = events.filter(event => 
                 event.type === 'substitution' && event.team === teamKey
               );
@@ -778,7 +777,7 @@
                     <ul class="player-list">
                       ${renderPlayerList(homeTeam.lineup, homeTeam.name)}
                     </ul>
-                    ${renderSubstitutes(homeTeam.substitutes, data.events, homeTeam.name)}
+                    ${renderSubstitutes(homeTeam.substitutes, data.events, 'home', homeTeam.name)}
                   </div>
                   <div class="lineup-team">
                     <h4>${awayTeam.name} <span class="formation">${awayTeam.formation}</span></h4>
@@ -789,7 +788,7 @@
                     <ul class="player-list">
                       ${renderPlayerList(awayTeam.lineup, awayTeam.name)}
                     </ul>
-                    ${renderSubstitutes(awayTeam.substitutes, data.events, awayTeam.name)}
+                    ${renderSubstitutes(awayTeam.substitutes, data.events, 'away', awayTeam.name)}
                   </div>
                 </div>
               </div>

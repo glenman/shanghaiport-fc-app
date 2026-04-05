@@ -6,372 +6,274 @@
     "competition": {
       "name": "中国足球协会超级联赛",
       "season": "2024",
-      "round": "Matchweek 9"
+      "round": "第10轮"
     },
     "venue": {
-      "name": "上汽浦东足球场",
-      "city": "上海",
-      "attendance": 0
+      "name": "Shenzhen Bao'an Stadium",
+      "attendance": 7853
     },
     "referee": {
-      "name": "待补充",
-      "country": "China"
+      "main": null,
+      "ar1": null,
+      "ar2": null,
+      "fourth": null,
+      "var": null
     }
   },
   "teams": {
     "home": {
-      "name": "Shenzhen Peng City",
-      "full_name": "Shenzhen Peng City足球俱乐部",
+      "name": "深圳新鹏城",
+      "full_name": "",
       "score": 0,
       "score_ht": 0,
       "formation": "4-1-4-1",
-      "coach": "待补充",
-      "captain": "待补充",
+      "coach": "Jesús Tato",
+      "captain": "Zhang Yudong",
       "lineup": [
         {
-          "position": "",
-          "number": 13,
+          "number": "13",
           "name": "Peng Peng",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 3,
+          "number": "3",
           "name": "Tian Yinong",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 7,
-          "name": "蒂亚戈",
-          "country": "中国"
+          "number": "7",
+          "name": "Thiago",
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 9,
+          "number": "9",
           "name": "Samuel Armenteros",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 10,
+          "number": "10",
           "name": "Jorge Ortiz Mendoza",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 11,
+          "number": "11",
           "name": "Edu Garcia",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 15,
+          "number": "15",
           "name": "Yu Rui",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 16,
+          "number": "16",
           "name": "Li Zhi",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 20,
+          "number": "20",
           "name": "Rade Dugalić",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 24,
-          "name": "王浩",
-          "country": "中国"
+          "number": "24",
+          "name": "Wang Hao",
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 28,
-          "name": "张煜东",
-          "country": "中国"
+          "number": "28",
+          "name": "Zhang Yudong",
+          "country": "Unknown"
         }
       ],
       "substitutes": [
         {
-          "position": "",
-          "number": 14,
+          "number": "14",
           "name": "Zhao Shi",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 2,
-          "name": "张伟",
-          "country": "中国"
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 4,
+          "number": "4",
           "name": "Wang Jiao",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 6,
-          "name": "Lin Chuangyi",
-          "country": "中国"
+          "number": "6",
+          "name": "林创益",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 8,
+          "number": "8",
           "name": "Zhou Dadi",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 19,
+          "number": "19",
           "name": "Matthew Orr",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 21,
+          "number": "21",
           "name": "Nan Song",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 22,
+          "number": "22",
           "name": "Xiao Kun",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 27,
+          "number": "27",
           "name": "Baihelamu Abuduwaili",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 31,
+          "number": "31",
           "name": "Nizamdin Ependi",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 33,
+          "number": "33",
           "name": "Zhu Baojie",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 44,
+          "number": "44",
           "name": "Ruan Yang",
-          "country": "中国"
-        }
-      ],
-      "substitutions": [
-        {
-          "minute": 46,
-          "player_out": "Samuel Armenteros",
-          "player_in": "Nizamdin Ependi"
-        },
-        {
-          "minute": 46,
-          "player_out": "Li Zhi",
-          "player_in": "张伟"
-        },
-        {
-          "minute": 59,
-          "player_out": "Edu Garcia",
-          "player_in": "Nan Song"
-        },
-        {
-          "minute": 60,
-          "player_out": "蒂亚戈",
-          "player_in": "Baihelamu Abuduwaili"
-        },
-        {
-          "minute": 80,
-          "player_out": "Jorge Ortiz Mendoza",
-          "player_in": "Xiao Kun"
+          "country": "Unknown"
         }
       ]
     },
     "away": {
       "name": "上海海港",
-      "full_name": "上海海港足球俱乐部",
+      "full_name": "",
       "score": 6,
       "score_ht": 0,
       "formation": "4-2-3-1",
-      "coach": "待补充",
-      "captain": "待补充",
+      "coach": "凯文·穆斯卡特",
+      "captain": "奥斯卡",
       "lineup": [
         {
-          "position": "GK",
-          "number": 1,
+          "number": "1",
           "name": "颜骏凌",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 3,
+          "number": "3",
           "name": "蒋光太",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 7,
+          "number": "7",
           "name": "武磊",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 8,
+          "number": "8",
           "name": "奥斯卡",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 9,
+          "number": "9",
           "name": "古斯塔沃",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 10,
+          "number": "10",
           "name": "巴尔加斯",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 13,
+          "number": "13",
           "name": "魏震",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 18,
+          "number": "18",
           "name": "莱奥·奇塔迪尼",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 19,
+          "number": "19",
           "name": "王振澳",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 22,
+          "number": "22",
           "name": "马修斯·尤萨",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 32,
+          "number": "32",
           "name": "李帅",
-          "country": "中国"
+          "country": "Unknown"
         }
       ],
       "substitutes": [
         {
-          "position": "",
-          "number": 12,
+          "number": "12",
           "name": "陈威",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 2,
+          "number": "2",
           "name": "李昂",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 4,
+          "number": "4",
           "name": "王燊超",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 5,
+          "number": "5",
           "name": "张琳芃",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 6,
+          "number": "6",
           "name": "蔡慧康",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 11,
+          "number": "11",
           "name": "吕文君",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 14,
+          "number": "14",
           "name": "李圣龙",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 16,
+          "number": "16",
           "name": "徐新",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 17,
+          "number": "17",
           "name": "沈子贵",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 27,
+          "number": "27",
           "name": "冯劲",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 28,
+          "number": "28",
           "name": "贺惯",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 31,
+          "number": "31",
           "name": "鲍世蒙",
-          "country": "中国"
-        }
-      ],
-      "substitutions": [
-        {
-          "minute": 63,
-          "player_out": "布朗宁",
-          "player_in": "李昂"
-        },
-        {
-          "minute": 71,
-          "player_out": "武磊",
-          "player_in": "唐金"
-        },
-        {
-          "minute": 71,
-          "player_out": "朱萨",
-          "player_in": "徐新"
-        },
-        {
-          "minute": 80,
-          "player_out": "巴尔加斯",
-          "player_in": "冯劲"
-        },
-        {
-          "minute": 81,
-          "player_out": "奥斯卡",
-          "player_in": "吕文君"
+          "country": "Unknown"
         }
       ]
     }
@@ -379,37 +281,47 @@
   "events": [
     {
       "minute": 8,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "red_card",
       "team": "home",
-      "player": "王浩",
-      "description": "王浩获得红牌"
+      "player": "Wang Hao",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "红牌"
     },
     {
       "minute": 11,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
       "player": "巴尔加斯",
-      "description": "巴尔加斯获得黄牌"
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "黄牌"
     },
     {
       "minute": 27,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "goal",
       "team": "away",
       "player": "奥斯卡",
-      "player2": null,
-      "description": "奥斯卡在27'进球"
+      "player2": "",
+      "goal_type": "penalty_goal",
+      "player_out": "",
+      "description": "PENALTY GOAL"
     },
     {
       "minute": 29,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "goal",
       "team": "away",
       "player": "武磊",
-      "player2": "朱萨",
-      "description": "武磊在29'进球，助攻球员：朱萨"
+      "player2": "",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "进球"
     },
     {
       "minute": 45,
@@ -417,8 +329,10 @@
       "type": "goal",
       "team": "away",
       "player": "巴尔加斯",
-      "player2": "朱萨",
-      "description": "巴尔加斯在45+4'进球，助攻球员：朱萨"
+      "player2": "",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "进球"
     },
     {
       "minute": 45,
@@ -426,190 +340,210 @@
       "type": "yellow_card",
       "team": "away",
       "player": "李帅",
-      "description": "李帅获得黄牌"
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "黄牌"
     },
     {
       "minute": 46,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "home",
       "player": "Nizamdin Ependi",
-      "player2": "",
-      "description": "Samuel Armenteros被换下，Nizamdin Ependi替补登场",
-      "player_out": "Samuel Armenteros"
+      "player2": "Samuel Armenteros",
+      "goal_type": "",
+      "player_out": "Samuel Armenteros",
+      "description": "换人"
     },
     {
       "minute": 46,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "张伟",
-      "player2": "",
-      "description": "Li Zhi被换下，张伟替补登场",
-      "player_out": "Li Zhi"
+      "player": "Zhang Wei",
+      "player2": "Li Zhi",
+      "goal_type": "",
+      "player_out": "Li Zhi",
+      "description": "换人"
     },
     {
       "minute": 50,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "goal",
       "team": "away",
       "player": "巴尔加斯",
-      "player2": "奥斯卡",
-      "description": "巴尔加斯在50'进球，助攻球员：奥斯卡"
+      "player2": "",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "进球"
     },
     {
       "minute": 56,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "goal",
       "team": "away",
       "player": "古斯塔沃",
-      "player2": "奥斯卡",
-      "description": "古斯塔沃在56'进球，助攻球员：奥斯卡"
+      "player2": "",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "进球"
     },
     {
       "minute": 59,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "home",
       "player": "Nan Song",
-      "player2": "",
-      "description": "Edu Garcia被换下，Nan Song替补登场",
-      "player_out": "Edu Garcia"
+      "player2": "Edu Garcia",
+      "goal_type": "",
+      "player_out": "Edu Garcia",
+      "description": "换人"
     },
     {
       "minute": 60,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "home",
       "player": "Baihelamu Abuduwaili",
-      "player2": "",
-      "description": "蒂亚戈被换下，Baihelamu Abuduwaili替补登场",
-      "player_out": "蒂亚戈"
+      "player2": "Thiago",
+      "goal_type": "",
+      "player_out": "Thiago",
+      "description": "换人"
     },
     {
       "minute": 63,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "away",
       "player": "李昂",
-      "player2": "",
-      "description": "布朗宁被换下，李昂替补登场",
-      "player_out": "布朗宁"
+      "player2": "蒋光太",
+      "goal_type": "",
+      "player_out": "蒋光太",
+      "description": "换人"
     },
     {
       "minute": 71,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "唐金",
-      "player2": "",
-      "description": "武磊被换下，唐金替补登场",
-      "player_out": "武磊"
+      "player": "沈子贵",
+      "player2": "武磊",
+      "goal_type": "",
+      "player_out": "武磊",
+      "description": "换人"
     },
     {
       "minute": 71,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "away",
       "player": "徐新",
-      "player2": "",
-      "description": "朱萨被换下，徐新替补登场",
-      "player_out": "朱萨"
+      "player2": "马修斯·尤萨",
+      "goal_type": "",
+      "player_out": "马修斯·尤萨",
+      "description": "换人"
     },
     {
       "minute": 79,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "goal",
       "team": "away",
       "player": "巴尔加斯",
-      "player2": null,
-      "description": "巴尔加斯在79'进球"
+      "player2": "",
+      "goal_type": "penalty_goal",
+      "player_out": "",
+      "description": "PENALTY GOAL"
     },
     {
       "minute": 80,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "home",
       "player": "Xiao Kun",
-      "player2": "",
-      "description": "Jorge Ortiz Mendoza被换下，Xiao Kun替补登场",
-      "player_out": "Jorge Ortiz Mendoza"
+      "player2": "Jorge Ortiz Mendoza",
+      "goal_type": "",
+      "player_out": "Jorge Ortiz Mendoza",
+      "description": "换人"
     },
     {
       "minute": 80,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "away",
       "player": "冯劲",
-      "player2": "",
-      "description": "巴尔加斯被换下，冯劲替补登场",
-      "player_out": "巴尔加斯"
+      "player2": "巴尔加斯",
+      "goal_type": "",
+      "player_out": "巴尔加斯",
+      "description": "换人"
     },
     {
       "minute": 81,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "away",
       "player": "吕文君",
-      "player2": "",
-      "description": "奥斯卡被换下，吕文君替补登场",
-      "player_out": "奥斯卡"
+      "player2": "奥斯卡",
+      "goal_type": "",
+      "player_out": "奥斯卡",
+      "description": "换人"
     }
   ],
-  "statistics": {
-    "possession": {
-      "home": 29,
-      "away": 71
-    },
-    "shots_on_target": {
-      "home": 1,
-      "away": 9
-    },
-    "saves": {
-      "home": 3,
-      "away": 1
-    },
-    "fouls": {
-      "home": 12,
-      "away": 19
-    },
-    "corners": {
-      "home": 9,
-      "away": 13
-    },
-    "crosses": {
-      "home": 16,
-      "away": 34
-    },
-    "interceptions": {
-      "home": 18,
-      "away": 3
-    },
-    "offsides": {
-      "home": 1,
-      "away": 4
-    },
-    "shots": {
-      "home": 1,
-      "away": 9
-    },
-    "yellow_cards": {
-      "home": 0,
-      "away": 2
-    },
-    "red_cards": {
-      "home": 1,
-      "away": 0
-    }
-  },
-  "player_stats": {
-    "home": [],
-    "away": []
-  },
   "metadata": {
     "source": "FBref",
     "url": "https://fbref.com/en/matches/cbd6cde9/Shenzhen-Peng-City-Shanghai-Port-May-5-2024-Chinese-Super-League",
-    "scraped_at": "2026-03-24T22:35:12",
-    "version": "3.0"
+    "scraped_at": "2026-04-03T22:27:07.228618",
+    "statistics_complemented_at": "2026-04-04T18:11:56.132785",
+    "statistics_version": "v1.0-full"
+  },
+  "statistics": {
+    "possession": {
+      "home": "29%",
+      "away": "71%"
+    },
+    "shots_on_target": {
+      "home": "1",
+      "away": "9"
+    },
+    "shots": {
+      "home": "9",
+      "away": "24"
+    },
+    "shots_accuracy": {
+      "home": "11%",
+      "away": "38%"
+    },
+    "saves": {
+      "home": "3 of 9-33%",
+      "away": "1 of 1-100%"
+    },
+    "fouls": {
+      "home": "12",
+      "away": "19"
+    },
+    "corners": {
+      "home": "9",
+      "away": "13"
+    },
+    "crosses": {
+      "home": "16",
+      "away": "34"
+    },
+    "interceptions": {
+      "home": "18",
+      "away": "3"
+    },
+    "offsides": {
+      "home": "1",
+      "away": "4"
+    },
+    "yellow_cards": {
+      "home": 0,
+      "away": 0
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
   }
 }

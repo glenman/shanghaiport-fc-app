@@ -2,366 +2,278 @@
   "match_info": {
     "match_id": "705af6c3",
     "date": "2024-09-28",
-    "time": "20:00",
+    "time": "18:00",
     "competition": {
       "name": "中国足球协会超级联赛",
       "season": "2024",
-      "round": "Matchweek 27"
+      "round": "第27轮"
     },
     "venue": {
       "name": "上汽浦东足球场",
-      "city": "上海",
-      "attendance": 0
+      "attendance": 15578
     },
     "referee": {
-      "name": "待补充",
-      "country": "China"
+      "main": "Niu Minghui",
+      "ar1": "Cao Yi",
+      "ar2": "Zhao Wei",
+      "fourth": "Su Zihao",
+      "var": "Guan Xing"
     }
   },
   "teams": {
     "home": {
       "name": "上海海港",
-      "full_name": "上海海港足球俱乐部",
+      "full_name": "",
       "score": 2,
       "score_ht": 0,
       "formation": "4-2-3-1",
-      "coach": "待补充",
-      "captain": "待补充",
+      "coach": "凯文·穆斯卡特",
+      "captain": "奥斯卡",
       "lineup": [
         {
-          "position": "GK",
-          "number": 1,
+          "number": "1",
           "name": "颜骏凌",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 2,
+          "number": "2",
           "name": "李昂",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 4,
+          "number": "4",
           "name": "王燊超",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 7,
+          "number": "7",
           "name": "武磊",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 8,
+          "number": "8",
           "name": "奥斯卡",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 9,
+          "number": "9",
           "name": "古斯塔沃",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 13,
+          "number": "13",
           "name": "魏震",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 16,
+          "number": "16",
           "name": "徐新",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 22,
+          "number": "22",
           "name": "马修斯·尤萨",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 23,
+          "number": "23",
           "name": "傅欢",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 27,
+          "number": "27",
           "name": "冯劲",
-          "country": "中国"
+          "country": "Unknown"
         }
       ],
       "substitutes": [
         {
-          "position": "",
-          "number": 12,
+          "number": "12",
           "name": "陈威",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 3,
+          "number": "3",
           "name": "蒋光太",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 6,
+          "number": "6",
           "name": "蔡慧康",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 11,
+          "number": "11",
           "name": "吕文君",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 18,
+          "number": "18",
           "name": "莱奥·奇塔迪尼",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 20,
+          "number": "20",
           "name": "杨世元",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 31,
+          "number": "31",
           "name": "鲍世蒙",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 32,
+          "number": "32",
           "name": "李帅",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 33,
+          "number": "33",
           "name": "刘祝润",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 37,
+          "number": "37",
           "name": "陈序煌",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 38,
+          "number": "38",
           "name": "黎德明",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 45,
+          "number": "45",
           "name": "刘小龙",
-          "country": "中国"
-        }
-      ],
-      "substitutions": [
-        {
-          "minute": 35,
-          "player_out": "武磊",
-          "player_in": "吕文君"
-        },
-        {
-          "minute": 46,
-          "player_out": "王燊超",
-          "player_in": "李帅"
-        },
-        {
-          "minute": 68,
-          "player_out": "徐新",
-          "player_in": "奇塔迪尼"
-        },
-        {
-          "minute": 79,
-          "player_out": "冯劲",
-          "player_in": "刘祝润"
-        },
-        {
-          "minute": 79,
-          "player_out": "傅欢",
-          "player_in": "包世萌"
+          "country": "Unknown"
         }
       ]
     },
     "away": {
       "name": "青岛西海岸",
-      "full_name": "青岛西海岸足球俱乐部",
+      "full_name": "",
       "score": 1,
       "score_ht": 0,
       "formation": "4-2-3-1",
-      "coach": "待补充",
-      "captain": "待补充",
+      "coach": "Shao Jiayi",
+      "captain": "Varazdat Haroyan",
       "lineup": [
         {
-          "position": "",
-          "number": 35,
+          "number": "35",
           "name": "Shi Xiaotian",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 3,
+          "number": "3",
           "name": "Zhao Honglüe",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 8,
+          "number": "8",
           "name": "Zhang Xiuwei",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 9,
+          "number": "9",
           "name": "Brayan Riascos",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 10,
-          "name": "内尔森",
-          "country": "中国"
+          "number": "10",
+          "name": "Nelson",
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 14,
-          "name": "冯刚",
-          "country": "中国"
+          "number": "14",
+          "name": "Feng Gang",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 18,
-          "name": "Piao Shihao",
-          "country": "中国"
+          "number": "18",
+          "name": "朴世豪",
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 19,
+          "number": "19",
           "name": "Jean-David Beauguel",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 20,
+          "number": "20",
           "name": "Índio",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 33,
+          "number": "33",
           "name": "Varazdat Haroyan",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 36,
+          "number": "36",
           "name": "Sun Jie",
-          "country": "中国"
+          "country": "Unknown"
         }
       ],
       "substitutes": [
         {
-          "position": "GK",
-          "number": 1,
+          "number": "1",
           "name": "Ji Jiabao",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 2,
+          "number": "2",
           "name": "Song Bowei",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "DF",
-          "number": 5,
+          "number": "5",
           "name": "Liu Pujin",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 6,
+          "number": "6",
           "name": "Ge Zhen",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 13,
+          "number": "13",
           "name": "Tan Kaiyuan",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 15,
+          "number": "15",
           "name": "Abduklim Merdanjan",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 16,
+          "number": "16",
           "name": "Chen Xiangyu",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 17,
+          "number": "17",
           "name": "Chen Po-liang",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 22,
+          "number": "22",
           "name": "Osmanjan Abduhelil",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 24,
+          "number": "24",
           "name": "Duan Liuyu",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "FW",
-          "number": 27,
+          "number": "27",
           "name": "Yang Boyu",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
-          "position": "",
-          "number": 30,
+          "number": "30",
           "name": "He Longhai",
-          "country": "中国"
-        }
-      ],
-      "substitutions": [
-        {
-          "minute": 37,
-          "player_out": "Piao Shihao",
-          "player_in": "He Longhai"
-        },
-        {
-          "minute": 46,
-          "player_out": "冯刚",
-          "player_in": "Duan Liuyu"
-        },
-        {
-          "minute": 85,
-          "player_out": "Zhang Xiuwei",
-          "player_in": "Osmanjan Abduhelil"
+          "country": "Unknown"
         }
       ]
     }
@@ -369,126 +281,146 @@
   "events": [
     {
       "minute": 22,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Piao Shihao",
-      "description": "Piao Shihao获得黄牌"
+      "player": "朴世豪",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "黄牌"
     },
     {
       "minute": 35,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "home",
       "player": "吕文君",
-      "player2": "",
-      "description": "武磊被换下，吕文君替补登场",
-      "player_out": "武磊"
+      "player2": "武磊",
+      "goal_type": "",
+      "player_out": "武磊",
+      "description": "换人"
     },
     {
       "minute": 37,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "away",
       "player": "He Longhai",
-      "player2": "",
-      "description": "Piao Shihao被换下，He Longhai替补登场",
-      "player_out": "Piao Shihao"
+      "player2": "朴世豪",
+      "goal_type": "",
+      "player_out": "朴世豪",
+      "description": "换人"
     },
     {
       "minute": 43,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "goal",
       "team": "home",
       "player": "奥斯卡",
-      "player2": null,
-      "description": "奥斯卡在43'进球"
+      "player2": "",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "进球"
     },
     {
       "minute": 46,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "home",
       "player": "李帅",
-      "player2": "",
-      "description": "王燊超被换下，李帅替补登场",
-      "player_out": "王燊超"
+      "player2": "王燊超",
+      "goal_type": "",
+      "player_out": "王燊超",
+      "description": "换人"
     },
     {
       "minute": 46,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "away",
       "player": "Duan Liuyu",
-      "player2": "",
-      "description": "冯刚被换下，Duan Liuyu替补登场",
-      "player_out": "冯刚"
+      "player2": "Feng Gang",
+      "goal_type": "",
+      "player_out": "Feng Gang",
+      "description": "换人"
     },
     {
       "minute": 53,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "goal",
       "team": "home",
       "player": "奥斯卡",
-      "player2": "古斯塔沃",
-      "description": "奥斯卡在53'进球，助攻球员：古斯塔沃"
+      "player2": "",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "进球"
     },
     {
       "minute": 68,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "奇塔迪尼",
-      "player2": "",
-      "description": "徐新被换下，奇塔迪尼替补登场",
-      "player_out": "徐新"
+      "player": "莱奥·奇塔迪尼",
+      "player2": "徐新",
+      "goal_type": "",
+      "player_out": "徐新",
+      "description": "换人"
     },
     {
       "minute": 74,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "goal",
       "team": "away",
       "player": "Zhang Xiuwei",
-      "player2": "Jean-David Beauguel",
-      "description": "Zhang Xiuwei在74'进球，助攻球员：Jean-David Beauguel"
+      "player2": "",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "进球"
     },
     {
       "minute": 79,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "home",
       "player": "刘祝润",
-      "player2": "",
-      "description": "冯劲被换下，刘祝润替补登场",
-      "player_out": "冯劲"
+      "player2": "冯劲",
+      "goal_type": "",
+      "player_out": "冯劲",
+      "description": "换人"
     },
     {
       "minute": 79,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "包世萌",
-      "player2": "",
-      "description": "傅欢被换下，包世萌替补登场",
-      "player_out": "傅欢"
+      "player": "鲍世蒙",
+      "player2": "傅欢",
+      "goal_type": "",
+      "player_out": "傅欢",
+      "description": "换人"
     },
     {
       "minute": 83,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "yellow_card",
       "team": "home",
-      "player": "包世萌",
-      "description": "包世萌获得黄牌"
+      "player": "鲍世蒙",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "黄牌"
     },
     {
       "minute": 85,
-      "minute_extra": null,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "away",
       "player": "Osmanjan Abduhelil",
-      "player2": "",
-      "description": "Zhang Xiuwei被换下，Osmanjan Abduhelil替补登场",
-      "player_out": "Zhang Xiuwei"
+      "player2": "Zhang Xiuwei",
+      "goal_type": "",
+      "player_out": "Zhang Xiuwei",
+      "description": "换人"
     },
     {
       "minute": 90,
@@ -496,7 +428,10 @@
       "type": "yellow_card",
       "team": "away",
       "player": "Jean-David Beauguel",
-      "description": "Jean-David Beauguel获得黄牌"
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "黄牌"
     },
     {
       "minute": 90,
@@ -504,63 +439,66 @@
       "type": "yellow_card",
       "team": "away",
       "player": "Zhao Honglüe",
-      "description": "Zhao Honglüe获得黄牌"
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "黄牌"
     }
   ],
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/705af6c3/Shanghai-Port-Qingdao-West-Coast-September-28-2024-Chinese-Super-League",
+    "scraped_at": "2026-04-03T22:32:33.703502",
+    "stats_complemented": "2026-04-04T18:20:39.905670"
+  },
   "statistics": {
     "possession": {
-      "home": 57,
-      "away": 43
+      "home": "57%",
+      "away": "43%"
     },
     "shots_on_target": {
-      "home": 11,
-      "away": 4
-    },
-    "saves": {
-      "home": 2,
-      "away": 9
-    },
-    "fouls": {
-      "home": 13,
-      "away": 14
-    },
-    "corners": {
-      "home": 7,
-      "away": 7
-    },
-    "crosses": {
-      "home": 26,
-      "away": 17
-    },
-    "interceptions": {
-      "home": 16,
-      "away": 14
-    },
-    "offsides": {
-      "home": 2,
-      "away": 3
+      "home": "11",
+      "away": "4"
     },
     "shots": {
-      "home": 11,
-      "away": 4
+      "home": "21",
+      "away": "17"
+    },
+    "shots_accuracy": {
+      "home": "52%",
+      "away": "24%"
+    },
+    "saves": {
+      "home": "2 of 4-50%",
+      "away": "9 of 11-81%"
+    },
+    "fouls": {
+      "home": "13",
+      "away": "14"
+    },
+    "corners": {
+      "home": "7",
+      "away": "7"
+    },
+    "crosses": {
+      "home": "26",
+      "away": "17"
+    },
+    "interceptions": {
+      "home": "16",
+      "away": "14"
+    },
+    "offsides": {
+      "home": "2",
+      "away": "3"
     },
     "yellow_cards": {
-      "home": 1,
-      "away": 3
+      "home": 0,
+      "away": 0
     },
     "red_cards": {
       "home": 0,
       "away": 0
     }
-  },
-  "player_stats": {
-    "home": [],
-    "away": []
-  },
-  "metadata": {
-    "source": "FBref",
-    "url": "https://fbref.com/en/matches/705af6c3/Shanghai-Port-Qingdao-West-Coast-September-28-2024-Chinese-Super-League",
-    "scraped_at": "2026-03-24T22:37:39",
-    "version": "3.0"
   }
 }

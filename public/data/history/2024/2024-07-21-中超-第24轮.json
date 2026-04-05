@@ -1,0 +1,544 @@
+{
+  "match_info": {
+    "match_id": "8a071d7a",
+    "date": "2024-07-21",
+    "time": "19:35",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2024",
+      "round": "第24轮"
+    },
+    "venue": {
+      "name": "上汽浦东足球场",
+      "attendance": 20189
+    },
+    "referee": {
+      "main": null,
+      "ar1": null,
+      "ar2": null,
+      "fourth": null,
+      "var": null
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海海港",
+      "full_name": "",
+      "score": 5,
+      "score_ht": 0,
+      "formation": "4-2-3-1",
+      "coach": "凯文·穆斯卡特",
+      "captain": "奥斯卡",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "蒋光太",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "古斯塔沃",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "巴尔加斯",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "魏震",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "莱奥·奇塔迪尼",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "马修斯·尤萨",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "傅欢",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "12",
+          "name": "陈威",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "李昂",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "张琳芃",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "徐新",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "杨世元",
+          "country": "Unknown"
+        },
+        {
+          "number": "31",
+          "name": "鲍世蒙",
+          "country": "Unknown"
+        },
+        {
+          "number": "32",
+          "name": "李帅",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "刘祝润",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "陈序煌",
+          "country": "Unknown"
+        },
+        {
+          "number": "45",
+          "name": "刘小龙",
+          "country": "Unknown"
+        }
+      ]
+    },
+    "away": {
+      "name": "青岛海牛",
+      "full_name": "",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "4-4-2",
+      "coach": "Yasen Petrov",
+      "captain": "Sha Yibo",
+      "lineup": [
+        {
+          "number": "28",
+          "name": "Mou Pengfei",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Liu Junshuai",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Sha Yibo",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Elvis Sarić",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Li Hailong",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Diego Lopes",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Song Long",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Wang Chien-ming",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Nikola Radmanovac",
+          "country": "Unknown"
+        },
+        {
+          "number": "32",
+          "name": "Long Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "38",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "1",
+          "name": "Liu Jun",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Liu Zhenli",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Liu Weicheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "12",
+          "name": "Chen Chunxin",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Xu Yang",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Hu Jinghang",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Wang Zihao",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Zheng Long",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Zhong Jinbao",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Liu Jiashen",
+          "country": "Unknown"
+        },
+        {
+          "number": "34",
+          "name": "Jin Yonghao",
+          "country": "Unknown"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 35,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "莱奥·奇塔迪尼",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "黄牌"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "李帅",
+      "player2": "王燊超",
+      "goal_type": "",
+      "player_out": "王燊超",
+      "description": "换人"
+    },
+    {
+      "minute": 47,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "莱奥·奇塔迪尼",
+      "player2": "",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "进球"
+    },
+    {
+      "minute": 50,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "古斯塔沃",
+      "player2": "",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "进球"
+    },
+    {
+      "minute": 51,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "古斯塔沃",
+      "player2": "",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "进球"
+    },
+    {
+      "minute": 59,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhong Jinbao",
+      "player2": "Elvis Sarić",
+      "goal_type": "",
+      "player_out": "Elvis Sarić",
+      "description": "换人"
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wang Zihao",
+      "player2": "Diego Lopes",
+      "goal_type": "",
+      "player_out": "Diego Lopes",
+      "description": "换人"
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Hu Jinghang",
+      "player2": "Zhang Wei",
+      "goal_type": "",
+      "player_out": "Zhang Wei",
+      "description": "换人"
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Chen Chunxin",
+      "player2": "Sha Yibo",
+      "goal_type": "",
+      "player_out": "Sha Yibo",
+      "description": "换人"
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "古斯塔沃",
+      "player2": "",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "进球"
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "吕文君",
+      "player2": "奥斯卡",
+      "goal_type": "",
+      "player_out": "奥斯卡",
+      "description": "换人"
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "徐新",
+      "player2": "莱奥·奇塔迪尼",
+      "goal_type": "",
+      "player_out": "莱奥·奇塔迪尼",
+      "description": "换人"
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "武磊",
+      "player2": "",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "进球"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zheng Long",
+      "player2": "Song Long",
+      "goal_type": "",
+      "player_out": "Song Long",
+      "description": "换人"
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "刘祝润",
+      "player2": "古斯塔沃",
+      "goal_type": "",
+      "player_out": "古斯塔沃",
+      "description": "换人"
+    },
+    {
+      "minute": 82,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "蒋光太",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "黄牌"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "张琳芃",
+      "player2": "蒋光太",
+      "goal_type": "",
+      "player_out": "蒋光太",
+      "description": "换人"
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Nikola Radmanovac",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "黄牌"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Liu Junshuai",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "黄牌"
+    }
+  ],
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/8a071d7a/Shanghai-Port-Qingdao-Hainiu-July-21-2024-Chinese-Super-League",
+    "scraped_at": "2026-04-03T22:30:26.040097",
+    "statistics_complemented_at": "2026-04-04T18:14:54.345220",
+    "statistics_version": "v1.0-full"
+  },
+  "statistics": {
+    "possession": {
+      "home": "62%",
+      "away": "38%"
+    },
+    "shots_on_target": {
+      "home": "11",
+      "away": "1"
+    },
+    "shots": {
+      "home": "34",
+      "away": "4"
+    },
+    "shots_accuracy": {
+      "home": "32%",
+      "away": "25%"
+    },
+    "saves": {
+      "home": "1 of 1-100%",
+      "away": "6 of 11-54%"
+    },
+    "fouls": {
+      "home": "9",
+      "away": "5"
+    },
+    "corners": {
+      "home": "11",
+      "away": "1"
+    },
+    "crosses": {
+      "home": "35",
+      "away": "7"
+    },
+    "interceptions": {
+      "home": "5",
+      "away": "6"
+    },
+    "offsides": {
+      "home": "3",
+      "away": "2"
+    },
+    "yellow_cards": {
+      "home": 0,
+      "away": 0
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  }
+}

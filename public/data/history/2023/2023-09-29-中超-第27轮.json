@@ -2,34 +2,37 @@
   "match_info": {
     "match_id": "e4246bab",
     "date": "2023-09-29",
-    "time": "20:00",
+    "time": "19:35",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2023",
-      "round": "Matchweek 27"
+      "round": "第27轮"
     },
     "venue": {
       "name": "Rugao Olympic Sports Center Stadium",
       "attendance": 13919
     },
     "referee": {
-      "name": "",
-      "country": "China"
+      "main": "Chunqi Tang",
+      "ar1": "Mingfeng Wu",
+      "ar2": "胡成军",
+      "fourth": "Hei Xiaohu",
+      "var": "艾堃"
     }
   },
   "teams": {
     "home": {
-      "name": "Nantong Zhiyun",
+      "name": "南通支云",
       "full_name": "",
       "score": 0,
       "score_ht": 0,
       "formation": "4-2-3-1",
-      "coach": "",
-      "captain": "",
+      "coach": "David Patrício",
+      "captain": "Liu Wei",
       "lineup": [
         {
           "number": "32",
-          "name": "Xue Qinghao",
+          "name": "薛庆浩",
           "country": "Unknown"
         },
         {
@@ -144,56 +147,55 @@
           "name": "Zhang Yu",
           "country": "Unknown"
         }
-      ],
-      "substitutions": []
+      ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "",
       "score": 1,
       "score_ht": 0,
       "formation": "4-4-2",
-      "coach": "",
-      "captain": "",
+      "coach": "哈维尔·佩雷拉",
+      "captain": "奥斯卡",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "country": "Unknown"
         },
         {
           "number": "2",
-          "name": "Li Ang",
+          "name": "李昂",
           "country": "Unknown"
         },
         {
           "number": "3",
-          "name": "Tyias Browning",
+          "name": "蒋光太",
           "country": "Unknown"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "country": "Unknown"
         },
         {
           "number": "7",
-          "name": "Wu Lei",
+          "name": "武磊",
           "country": "Unknown"
         },
         {
           "number": "8",
-          "name": "Oscar",
+          "name": "奥斯卡",
           "country": "Unknown"
         },
         {
           "number": "13",
-          "name": "Wei Zhen",
+          "name": "魏震",
           "country": "Unknown"
         },
         {
           "number": "16",
-          "name": "Xu Xin",
+          "name": "徐新",
           "country": "Unknown"
         },
         {
@@ -203,78 +205,77 @@
         },
         {
           "number": "24",
-          "name": "Matías Vargas",
+          "name": "巴尔加斯",
           "country": "Unknown"
         },
         {
           "number": "34",
-          "name": "Issa Kallon",
+          "name": "伊萨·卡隆",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "12",
-          "name": "Chen Wei",
+          "name": "陈威",
           "country": "Unknown"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "country": "Unknown"
         },
         {
           "number": "10",
-          "name": "Markus Pink",
+          "name": "马库斯·平科",
           "country": "Unknown"
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "country": "Unknown"
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
+          "name": "李圣龙",
           "country": "Unknown"
         },
         {
           "number": "15",
-          "name": "Li Shenyuan",
+          "name": "李申圆",
           "country": "Unknown"
         },
         {
           "number": "20",
-          "name": "Yang Shiyuan",
+          "name": "杨世元",
           "country": "Unknown"
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "country": "Unknown"
         },
         {
           "number": "25",
-          "name": "Mirahmetjan Muzepper",
+          "name": "买提江",
           "country": "Unknown"
         },
         {
           "number": "29",
-          "name": "Zhang Huachen",
+          "name": "张华晨",
           "country": "Unknown"
         },
         {
           "number": "43",
-          "name": "Wang Yiwei",
+          "name": "王逸伟",
           "country": "Unknown"
         },
         {
           "number": "45",
-          "name": "Liu Xiaolong",
+          "name": "刘小龙",
           "country": "Unknown"
         }
-      ],
-      "substitutions": []
+      ]
     }
   },
   "events": [
@@ -283,20 +284,22 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Wang Shenchao",
+      "player": "王燊超",
       "player2": "",
+      "goal_type": "",
       "player_out": "",
-      "description": "YELLOW CARD"
+      "description": "黄牌"
     },
     {
       "minute": 29,
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Wu Lei",
-      "player2": "Li Ang",
+      "player": "武磊",
+      "player2": "",
+      "goal_type": "goal",
       "player_out": "",
-      "description": "GOAL"
+      "description": "进球"
     },
     {
       "minute": 33,
@@ -304,9 +307,10 @@
       "type": "substitution",
       "team": "home",
       "player": "Jiang Zilei",
-      "player2": "",
+      "player2": "Wei Lai",
+      "goal_type": "",
       "player_out": "Wei Lai",
-      "description": "SUBSTITUTION"
+      "description": "换人"
     },
     {
       "minute": 58,
@@ -315,8 +319,9 @@
       "team": "away",
       "player": "Lucas João",
       "player2": "",
+      "goal_type": "",
       "player_out": "",
-      "description": "YELLOW CARD"
+      "description": "黄牌"
     },
     {
       "minute": 58,
@@ -324,19 +329,21 @@
       "type": "substitution",
       "team": "home",
       "player": "Wang Song",
-      "player2": "",
+      "player2": "Cao Kang",
+      "goal_type": "",
       "player_out": "Cao Kang",
-      "description": "SUBSTITUTION"
+      "description": "换人"
     },
     {
       "minute": 59,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Yang Shiyuan",
-      "player2": "",
+      "player": "杨世元",
+      "player2": "Lucas João",
+      "goal_type": "",
       "player_out": "Lucas João",
-      "description": "SUBSTITUTION"
+      "description": "换人"
     },
     {
       "minute": 60,
@@ -345,8 +352,9 @@
       "team": "home",
       "player": "Romário Baldé",
       "player2": "",
+      "goal_type": "",
       "player_out": "",
-      "description": "YELLOW CARD"
+      "description": "黄牌"
     },
     {
       "minute": 72,
@@ -354,9 +362,10 @@
       "type": "substitution",
       "team": "home",
       "player": "Ruan Yang",
-      "player2": "",
+      "player2": "Zheng Haoqian",
+      "goal_type": "",
       "player_out": "Zheng Haoqian",
-      "description": "SUBSTITUTION"
+      "description": "换人"
     },
     {
       "minute": 72,
@@ -364,65 +373,94 @@
       "type": "substitution",
       "team": "home",
       "player": "David Puclin",
-      "player2": "",
+      "player2": "Román Castillo",
+      "goal_type": "",
       "player_out": "Román Castillo",
-      "description": "SUBSTITUTION"
+      "description": "换人"
     },
     {
       "minute": 74,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Cai Huikang",
-      "player2": "",
-      "player_out": "Xu Xin",
-      "description": "SUBSTITUTION"
+      "player": "蔡慧康",
+      "player2": "徐新",
+      "goal_type": "",
+      "player_out": "徐新",
+      "description": "换人"
     },
     {
       "minute": 86,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Mirahmetjan Muzepper",
-      "player2": "",
-      "player_out": "Matías Vargas",
-      "description": "SUBSTITUTION"
+      "player": "买提江",
+      "player2": "巴尔加斯",
+      "goal_type": "",
+      "player_out": "巴尔加斯",
+      "description": "换人"
     },
     {
       "minute": 87,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Li Ang",
+      "player": "李昂",
       "player2": "",
+      "goal_type": "",
       "player_out": "",
-      "description": "YELLOW CARD"
+      "description": "黄牌"
     },
     {
       "minute": 87,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Lü Wenjun",
-      "player2": "",
-      "player_out": "Issa Kallon",
-      "description": "SUBSTITUTION"
+      "player": "吕文君",
+      "player2": "伊萨·卡隆",
+      "goal_type": "",
+      "player_out": "伊萨·卡隆",
+      "description": "换人"
     },
     {
       "minute": 87,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Yu Hai",
-      "player2": "",
-      "player_out": "Li Ang",
-      "description": "SUBSTITUTION"
+      "player": "于海",
+      "player2": "李昂",
+      "goal_type": "",
+      "player_out": "李昂",
+      "description": "换人"
     }
   ],
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/e4246bab/Nantong-Zhiyun-Shanghai-Port-September-29-2023-Chinese-Super-League",
+    "scraped_at": "2026-04-03T22:11:58.760311",
+    "statistics_complemented_at": "2026-04-04T18:08:52.448244",
+    "statistics_version": "v1.0-full"
+  },
   "statistics": {
     "possession": {
       "home": "46%",
       "away": "54%"
+    },
+    "shots_on_target": {
+      "home": "1",
+      "away": "5"
+    },
+    "shots": {
+      "home": "10",
+      "away": "24"
+    },
+    "shots_accuracy": {
+      "home": "10%",
+      "away": "21%"
+    },
+    "saves": {
+      "home": "4 of 5-80%",
+      "away": "1 of 1-100%"
     },
     "fouls": {
       "home": "12",
@@ -443,16 +481,14 @@
     "offsides": {
       "home": "0",
       "away": "2"
+    },
+    "yellow_cards": {
+      "home": 0,
+      "away": 0
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
     }
-  },
-  "player_stats": {
-    "home": [],
-    "away": []
-  },
-  "metadata": {
-    "source": "FBref",
-    "url": "https://fbref.com/en/matches/e4246bab/Nantong-Zhiyun-Shanghai-Port-September-29-2023-Chinese-Super-League",
-    "scraped_at": "2026-03-28T19:52:16",
-    "version": "9.0-success"
   }
 }

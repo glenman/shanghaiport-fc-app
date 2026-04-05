@@ -2,30 +2,33 @@
   "match_info": {
     "match_id": "c8d1ba4b",
     "date": "2023-05-20",
-    "time": "20:00",
+    "time": "19:35",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2023",
-      "round": "Matchweek 8"
+      "round": "第8轮"
     },
     "venue": {
-      "name": "Huitang Stadium",
+      "name": "惠堂体育场",
       "attendance": 17600
     },
     "referee": {
-      "name": "",
-      "country": "China"
+      "main": "戴一戈",
+      "ar1": "Mingfeng Wu",
+      "ar2": "席飞",
+      "fourth": "Hei Xiaohu",
+      "var": "Toshiyuki Wakaku"
     }
   },
   "teams": {
     "home": {
-      "name": "Meizhou Hakka",
+      "name": "梅州客家",
       "full_name": "",
       "score": 0,
       "score_ht": 0,
       "formation": "5-4-1",
-      "coach": "",
-      "captain": "",
+      "coach": "Milan Ristić",
+      "captain": "Shi Liang",
       "lineup": [
         {
           "number": "18",
@@ -116,7 +119,7 @@
         },
         {
           "number": "21",
-          "name": "Wang Wei",
+          "name": "王伟",
           "country": "Unknown"
         },
         {
@@ -144,137 +147,135 @@
           "name": "Chen Guokang",
           "country": "Unknown"
         }
-      ],
-      "substitutions": []
+      ]
     },
     "away": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "",
       "score": 2,
       "score_ht": 0,
       "formation": "3-4-1-2",
-      "coach": "",
-      "captain": "",
+      "coach": "哈维尔·佩雷拉",
+      "captain": "奥斯卡",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "country": "Unknown"
         },
         {
           "number": "3",
-          "name": "Tyias Browning",
+          "name": "蒋光太",
           "country": "Unknown"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "country": "Unknown"
         },
         {
           "number": "5",
-          "name": "Zhang Linpeng",
+          "name": "张琳芃",
           "country": "Unknown"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "country": "Unknown"
         },
         {
           "number": "7",
-          "name": "Wu Lei",
+          "name": "武磊",
           "country": "Unknown"
         },
         {
           "number": "8",
-          "name": "Oscar",
+          "name": "奥斯卡",
           "country": "Unknown"
         },
         {
           "number": "9",
-          "name": "Paulinho",
+          "name": "保利尼奥",
           "country": "Unknown"
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "country": "Unknown"
         },
         {
           "number": "25",
-          "name": "Mirahmetjan Muzepper",
+          "name": "买提江",
           "country": "Unknown"
         },
         {
           "number": "34",
-          "name": "Issa Kallon",
+          "name": "伊萨·卡隆",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "12",
-          "name": "Chen Wei",
+          "name": "陈威",
           "country": "Unknown"
         },
         {
           "number": "2",
-          "name": "Li Ang",
+          "name": "李昂",
           "country": "Unknown"
         },
         {
           "number": "10",
-          "name": "Markus Pink",
+          "name": "马库斯·平科",
           "country": "Unknown"
         },
         {
           "number": "13",
-          "name": "Wei Zhen",
+          "name": "魏震",
           "country": "Unknown"
         },
         {
           "number": "15",
-          "name": "Li Shenyuan",
+          "name": "李申圆",
           "country": "Unknown"
         },
         {
           "number": "16",
-          "name": "Xu Xin",
+          "name": "徐新",
           "country": "Unknown"
         },
         {
           "number": "20",
-          "name": "Yang Shiyuan",
+          "name": "杨世元",
           "country": "Unknown"
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "country": "Unknown"
         },
         {
           "number": "24",
-          "name": "Matías Vargas",
+          "name": "巴尔加斯",
           "country": "Unknown"
         },
         {
           "number": "27",
-          "name": "Feng Jing",
+          "name": "冯劲",
           "country": "Unknown"
         },
         {
           "number": "28",
-          "name": "He Guan",
+          "name": "贺惯",
           "country": "Unknown"
         },
         {
           "number": "45",
-          "name": "Liu Xiaolong",
+          "name": "刘小龙",
           "country": "Unknown"
         }
-      ],
-      "substitutions": []
+      ]
     }
   },
   "events": [
@@ -283,10 +284,11 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Lü Wenjun",
-      "player2": "Wu Lei",
+      "player": "吕文君",
+      "player2": "",
+      "goal_type": "goal",
       "player_out": "",
-      "description": "GOAL"
+      "description": "进球"
     },
     {
       "minute": 60,
@@ -294,9 +296,10 @@
       "type": "substitution",
       "team": "home",
       "player": "Wen Junjie",
-      "player2": "",
+      "player2": "Rade Dugalić",
+      "goal_type": "",
       "player_out": "Rade Dugalić",
-      "description": "SUBSTITUTION"
+      "description": "换人"
     },
     {
       "minute": 60,
@@ -304,9 +307,10 @@
       "type": "substitution",
       "team": "home",
       "player": "Elguja Lobjanidze",
-      "player2": "",
+      "player2": "Chen Zhechao",
+      "goal_type": "",
       "player_out": "Chen Zhechao",
-      "description": "SUBSTITUTION"
+      "description": "换人"
     },
     {
       "minute": 60,
@@ -314,9 +318,10 @@
       "type": "substitution",
       "team": "home",
       "player": "Yin Hongbo",
-      "player2": "",
+      "player2": "Yang Chaosheng",
+      "goal_type": "",
       "player_out": "Yang Chaosheng",
-      "description": "SUBSTITUTION"
+      "description": "换人"
     },
     {
       "minute": 60,
@@ -324,19 +329,21 @@
       "type": "substitution",
       "team": "home",
       "player": "Nebojša Kosović",
-      "player2": "",
+      "player2": "Li Yongjia",
+      "goal_type": "",
       "player_out": "Li Yongjia",
-      "description": "SUBSTITUTION"
+      "description": "换人"
     },
     {
       "minute": 72,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Yang Shiyuan",
-      "player2": "",
-      "player_out": "Mirahmetjan Muzepper",
-      "description": "SUBSTITUTION"
+      "player": "杨世元",
+      "player2": "买提江",
+      "goal_type": "",
+      "player_out": "买提江",
+      "description": "换人"
     },
     {
       "minute": 76,
@@ -344,65 +351,94 @@
       "type": "substitution",
       "team": "home",
       "player": "Yang Yihu",
-      "player2": "",
+      "player2": "Rao Weihui",
+      "goal_type": "",
       "player_out": "Rao Weihui",
-      "description": "SUBSTITUTION"
+      "description": "换人"
     },
     {
       "minute": 76,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Matías Vargas",
-      "player2": "",
-      "player_out": "Issa Kallon",
-      "description": "SUBSTITUTION"
+      "player": "巴尔加斯",
+      "player2": "伊萨·卡隆",
+      "goal_type": "",
+      "player_out": "伊萨·卡隆",
+      "description": "换人"
     },
     {
       "minute": 77,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Markus Pink",
-      "player2": "",
-      "player_out": "Paulinho",
-      "description": "SUBSTITUTION"
+      "player": "马库斯·平科",
+      "player2": "保利尼奥",
+      "goal_type": "",
+      "player_out": "保利尼奥",
+      "description": "换人"
     },
     {
       "minute": 84,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Wei Zhen",
-      "player2": "",
-      "player_out": "Cai Huikang",
-      "description": "SUBSTITUTION"
+      "player": "魏震",
+      "player2": "蔡慧康",
+      "goal_type": "",
+      "player_out": "蔡慧康",
+      "description": "换人"
     },
     {
       "minute": 90,
       "minute_extra": 1,
       "type": "yellow_card",
       "team": "away",
-      "player": "Wang Shenchao",
+      "player": "王燊超",
       "player2": "",
+      "goal_type": "",
       "player_out": "",
-      "description": "YELLOW CARD"
+      "description": "黄牌"
     },
     {
       "minute": 90,
       "minute_extra": 5,
       "type": "goal",
       "team": "away",
-      "player": "Wu Lei",
-      "player2": "Oscar",
+      "player": "武磊",
+      "player2": "",
+      "goal_type": "goal",
       "player_out": "",
-      "description": "GOAL"
+      "description": "进球"
     }
   ],
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/c8d1ba4b/Meizhou-Hakka-Shanghai-Port-May-20-2023-Chinese-Super-League",
+    "scraped_at": "2026-04-03T22:06:43.328661",
+    "statistics_complemented_at": "2026-04-04T18:03:48.950779",
+    "statistics_version": "v1.0-full"
+  },
   "statistics": {
     "possession": {
       "home": "40%",
       "away": "60%"
+    },
+    "shots_on_target": {
+      "home": "1",
+      "away": "6"
+    },
+    "shots": {
+      "home": "5",
+      "away": "13"
+    },
+    "shots_accuracy": {
+      "home": "20%",
+      "away": "46%"
+    },
+    "saves": {
+      "home": "4 of 6-66%",
+      "away": "1 of 1-100%"
     },
     "fouls": {
       "home": "7",
@@ -423,16 +459,14 @@
     "offsides": {
       "home": "3",
       "away": "0"
+    },
+    "yellow_cards": {
+      "home": 0,
+      "away": 0
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
     }
-  },
-  "player_stats": {
-    "home": [],
-    "away": []
-  },
-  "metadata": {
-    "source": "FBref",
-    "url": "https://fbref.com/en/matches/c8d1ba4b/Meizhou-Hakka-Shanghai-Port-May-20-2023-Chinese-Super-League",
-    "scraped_at": "2026-03-28T19:47:43",
-    "version": "9.0-success"
   }
 }

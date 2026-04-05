@@ -2,239 +2,242 @@
   "match_info": {
     "match_id": "5e480274",
     "date": "2023-07-12",
-    "time": "20:00",
+    "time": "19:35",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2023",
-      "round": "Matchweek 16"
+      "round": "第16轮"
     },
     "venue": {
-      "name": "SAIC Motor Pudong Arena"
+      "name": "上汽浦东足球场",
+      "attendance": null
     },
     "referee": {
-      "name": "",
-      "country": "China"
+      "main": "马宁",
+      "ar1": "石祥",
+      "ar2": "胡成军",
+      "fourth": "Xinyu Liu",
+      "var": "张龙"
     }
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
+      "name": "上海海港",
       "full_name": "",
       "score": 3,
       "score_ht": 0,
       "formation": "4-3-1-2",
-      "coach": "",
-      "captain": "",
+      "coach": "哈维尔·佩雷拉",
+      "captain": "奥斯卡",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "country": "Unknown"
         },
         {
           "number": "3",
-          "name": "Tyias Browning",
+          "name": "蒋光太",
           "country": "Unknown"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "country": "Unknown"
         },
         {
           "number": "5",
-          "name": "Zhang Linpeng",
+          "name": "张琳芃",
           "country": "Unknown"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "country": "Unknown"
         },
         {
           "number": "7",
-          "name": "Wu Lei",
+          "name": "武磊",
           "country": "Unknown"
         },
         {
           "number": "8",
-          "name": "Oscar",
+          "name": "奥斯卡",
           "country": "Unknown"
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "country": "Unknown"
         },
         {
           "number": "16",
-          "name": "Xu Xin",
+          "name": "徐新",
           "country": "Unknown"
         },
         {
           "number": "25",
-          "name": "Mirahmetjan Muzepper",
+          "name": "买提江",
           "country": "Unknown"
         },
         {
           "number": "34",
-          "name": "Issa Kallon",
+          "name": "伊萨·卡隆",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "12",
-          "name": "Chen Wei",
+          "name": "陈威",
           "country": "Unknown"
         },
         {
           "number": "2",
-          "name": "Li Ang",
+          "name": "李昂",
           "country": "Unknown"
         },
         {
           "number": "9",
-          "name": "Paulinho",
+          "name": "保利尼奥",
           "country": "Unknown"
         },
         {
           "number": "13",
-          "name": "Wei Zhen",
+          "name": "魏震",
           "country": "Unknown"
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
+          "name": "李圣龙",
           "country": "Unknown"
         },
         {
           "number": "15",
-          "name": "Li Shenyuan",
+          "name": "李申圆",
           "country": "Unknown"
         },
         {
           "number": "20",
-          "name": "Yang Shiyuan",
+          "name": "杨世元",
           "country": "Unknown"
         },
         {
           "number": "24",
-          "name": "Matías Vargas",
+          "name": "巴尔加斯",
           "country": "Unknown"
         },
         {
           "number": "28",
-          "name": "He Guan",
+          "name": "贺惯",
           "country": "Unknown"
         },
         {
           "number": "32",
-          "name": "Li Shuai",
+          "name": "李帅",
           "country": "Unknown"
         },
         {
           "number": "33",
-          "name": "Liu Zhurun",
+          "name": "刘祝润",
           "country": "Unknown"
         },
         {
           "number": "45",
-          "name": "Liu Xiaolong",
+          "name": "刘小龙",
           "country": "Unknown"
         }
-      ],
-      "substitutions": []
+      ]
     },
     "away": {
-      "name": "Wuhan Three Towns",
+      "name": "武汉三镇",
       "full_name": "",
       "score": 1,
       "score_ht": 0,
       "formation": "4-2-3-1",
-      "coach": "",
-      "captain": "",
+      "coach": "Tsutomu Takahata",
+      "captain": "任航",
       "lineup": [
         {
           "number": "22",
-          "name": "Liu Dianzuo",
+          "name": "刘殿座",
           "country": "Unknown"
         },
         {
           "number": "8",
-          "name": "Yan Dinghao",
+          "name": "严鼎皓",
           "country": "Unknown"
         },
         {
           "number": "9",
-          "name": "Abdul-Aziz Yakubu",
+          "name": "雅库布",
           "country": "Unknown"
         },
         {
           "number": "10",
-          "name": "Nicolae Stanciu",
+          "name": "斯坦丘",
           "country": "Unknown"
         },
         {
           "number": "11",
-          "name": "Davidson da Luz Pereira",
+          "name": "戴维森",
           "country": "Unknown"
         },
         {
           "number": "18",
-          "name": "Liu Yiming",
+          "name": "刘一鸣",
           "country": "Unknown"
         },
         {
           "number": "20",
-          "name": "Gao Zhunyi",
+          "name": "高准翼",
           "country": "Unknown"
         },
         {
           "number": "21",
-          "name": "He Chao",
+          "name": "何超",
           "country": "Unknown"
         },
         {
           "number": "23",
-          "name": "Ren Hang",
+          "name": "任航",
           "country": "Unknown"
         },
         {
           "number": "28",
-          "name": "Wang Yi Denny",
+          "name": "王逸",
           "country": "Unknown"
         },
         {
           "number": "30",
-          "name": "Xie Pengfei",
+          "name": "谢鹏飞",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "1",
-          "name": "Wu Fei",
+          "name": "吴飞",
           "country": "Unknown"
         },
         {
           "number": "2",
-          "name": "Li Yang",
+          "name": "李扬",
           "country": "Unknown"
         },
         {
           "number": "4",
-          "name": "Wei Shihao",
+          "name": "韦世豪",
           "country": "Unknown"
         },
         {
           "number": "12",
-          "name": "Zhang Xiaobin",
+          "name": "张晓彬",
           "country": "Unknown"
         },
         {
           "number": "14",
-          "name": "Luo Jing",
+          "name": "罗竞",
           "country": "Unknown"
         },
         {
@@ -249,17 +252,17 @@
         },
         {
           "number": "19",
-          "name": "Zhang Wentao",
+          "name": "张卫",
           "country": "Unknown"
         },
         {
           "number": "29",
-          "name": "Tao Qianglong",
+          "name": "陶强龙",
           "country": "Unknown"
         },
         {
           "number": "40",
-          "name": "Zhang Hui",
+          "name": "张辉",
           "country": "Unknown"
         },
         {
@@ -272,8 +275,7 @@
           "name": "Zhang Tao",
           "country": "Unknown"
         }
-      ],
-      "substitutions": []
+      ]
     }
   },
   "events": [
@@ -282,110 +284,121 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Ren Hang",
+      "player": "任航",
       "player2": "",
+      "goal_type": "",
       "player_out": "",
-      "description": "YELLOW CARD"
+      "description": "黄牌"
     },
     {
       "minute": 38,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "home",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": "",
+      "goal_type": "",
       "player_out": "",
-      "description": "YELLOW CARD"
+      "description": "黄牌"
     },
     {
       "minute": 44,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Ren Hang",
+      "player": "任航",
       "player2": "",
+      "goal_type": "",
       "player_out": "",
-      "description": "YELLOW CARD"
+      "description": "黄牌"
     },
     {
       "minute": 45,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "He Chao",
+      "player": "何超",
       "player2": "",
+      "goal_type": "",
       "player_out": "",
-      "description": "YELLOW CARD"
+      "description": "黄牌"
     },
     {
       "minute": 45,
       "minute_extra": 3,
       "type": "yellow_card",
       "team": "home",
-      "player": "Mirahmetjan Muzepper",
+      "player": "买提江",
       "player2": "",
+      "goal_type": "",
       "player_out": "",
-      "description": "YELLOW CARD"
+      "description": "黄牌"
     },
     {
       "minute": 45,
       "minute_extra": 3,
       "type": "yellow_card",
       "team": "away",
-      "player": "Wu Fei",
+      "player": "吴飞",
       "player2": "",
+      "goal_type": "",
       "player_out": "",
-      "description": "YELLOW CARD"
+      "description": "黄牌"
     },
     {
       "minute": 45,
       "minute_extra": 3,
       "type": "red_card",
       "team": "away",
-      "player": "Wei Shihao",
+      "player": "韦世豪",
       "player2": "",
+      "goal_type": "",
       "player_out": "",
-      "description": "RED CARD"
+      "description": "红牌"
     },
     {
       "minute": 46,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Li Shenglong",
-      "player2": "",
-      "player_out": "Issa Kallon",
-      "description": "SUBSTITUTION"
+      "player": "李圣龙",
+      "player2": "伊萨·卡隆",
+      "goal_type": "",
+      "player_out": "伊萨·卡隆",
+      "description": "换人"
     },
     {
       "minute": 60,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Li Shuai",
-      "player2": "",
-      "player_out": "Mirahmetjan Muzepper",
-      "description": "SUBSTITUTION"
+      "player": "李帅",
+      "player2": "买提江",
+      "goal_type": "",
+      "player_out": "买提江",
+      "description": "换人"
     },
     {
       "minute": 62,
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Li Shenglong",
-      "player2": "Li Shuai",
+      "player": "李圣龙",
+      "player2": "",
+      "goal_type": "goal",
       "player_out": "",
-      "description": "GOAL"
+      "description": "进球"
     },
     {
       "minute": 65,
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Gao Zhunyi",
+      "player": "高准翼",
       "player2": "",
+      "goal_type": "own_goal",
       "player_out": "",
-      "description": "GOAL"
+      "description": "OWN GOAL"
     },
     {
       "minute": 66,
@@ -393,115 +406,149 @@
       "type": "substitution",
       "team": "away",
       "player": "Chen Yuhao",
-      "player2": "",
-      "player_out": "Wang Yi Denny",
-      "description": "SUBSTITUTION"
+      "player2": "王逸",
+      "goal_type": "",
+      "player_out": "王逸",
+      "description": "换人"
     },
     {
       "minute": 66,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Zhang Xiaobin",
-      "player2": "",
-      "player_out": "Xie Pengfei",
-      "description": "SUBSTITUTION"
+      "player": "张晓彬",
+      "player2": "谢鹏飞",
+      "goal_type": "",
+      "player_out": "谢鹏飞",
+      "description": "换人"
     },
     {
       "minute": 74,
       "minute_extra": 0,
       "type": "red_card",
       "team": "home",
-      "player": "Tyias Browning",
+      "player": "蒋光太",
       "player2": "",
+      "goal_type": "",
       "player_out": "",
-      "description": "RED CARD"
+      "description": "红牌"
     },
     {
       "minute": 74,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Tao Qianglong",
-      "player2": "",
-      "player_out": "Yan Dinghao",
-      "description": "SUBSTITUTION"
+      "player": "陶强龙",
+      "player2": "严鼎皓",
+      "goal_type": "",
+      "player_out": "严鼎皓",
+      "description": "换人"
     },
     {
       "minute": 74,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Luo Jing",
-      "player2": "",
-      "player_out": "He Chao",
-      "description": "SUBSTITUTION"
+      "player": "罗竞",
+      "player2": "何超",
+      "goal_type": "",
+      "player_out": "何超",
+      "description": "换人"
     },
     {
       "minute": 76,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Wei Zhen",
-      "player2": "",
-      "player_out": "Xu Xin",
-      "description": "SUBSTITUTION"
+      "player": "魏震",
+      "player2": "徐新",
+      "goal_type": "",
+      "player_out": "徐新",
+      "description": "换人"
     },
     {
       "minute": 78,
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Wu Lei",
-      "player2": "Oscar",
+      "player": "武磊",
+      "player2": "",
+      "goal_type": "goal",
       "player_out": "",
-      "description": "GOAL"
+      "description": "进球"
     },
     {
       "minute": 81,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Zhang Wentao",
-      "player2": "",
-      "player_out": "Liu Yiming",
-      "description": "SUBSTITUTION"
+      "player": "张卫",
+      "player2": "刘一鸣",
+      "goal_type": "",
+      "player_out": "刘一鸣",
+      "description": "换人"
     },
     {
       "minute": 90,
       "minute_extra": 2,
       "type": "substitution",
       "team": "home",
-      "player": "Liu Xiaolong",
-      "player2": "",
-      "player_out": "Oscar",
-      "description": "SUBSTITUTION"
+      "player": "刘小龙",
+      "player2": "奥斯卡",
+      "goal_type": "",
+      "player_out": "奥斯卡",
+      "description": "换人"
     },
     {
       "minute": 90,
       "minute_extra": 2,
       "type": "substitution",
       "team": "home",
-      "player": "He Guan",
-      "player2": "",
-      "player_out": "Wu Lei",
-      "description": "SUBSTITUTION"
+      "player": "贺惯",
+      "player2": "武磊",
+      "goal_type": "",
+      "player_out": "武磊",
+      "description": "换人"
     },
     {
       "minute": 90,
       "minute_extra": 4,
       "type": "goal",
       "team": "away",
-      "player": "Abdul-Aziz Yakubu",
-      "player2": "Nicolae Stanciu",
+      "player": "雅库布",
+      "player2": "",
+      "goal_type": "goal",
       "player_out": "",
-      "description": "GOAL"
+      "description": "进球"
     }
   ],
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/5e480274/Shanghai-Port-Wuhan-Three-Towns-July-12-2023-Chinese-Super-League",
+    "scraped_at": "2026-04-03T22:08:55.889018",
+    "statistics_complemented_at": "2026-04-04T18:05:57.574295",
+    "statistics_version": "v1.0-full"
+  },
   "statistics": {
     "possession": {
       "home": "55%",
       "away": "45%"
+    },
+    "shots_on_target": {
+      "home": "4",
+      "away": "4"
+    },
+    "shots": {
+      "home": "13",
+      "away": "15"
+    },
+    "shots_accuracy": {
+      "home": "31%",
+      "away": "27%"
+    },
+    "saves": {
+      "home": "3 of 4-75%",
+      "away": "1 of 4-25%"
     },
     "fouls": {
       "home": "9",
@@ -522,16 +569,14 @@
     "offsides": {
       "home": "0",
       "away": "3"
+    },
+    "yellow_cards": {
+      "home": 0,
+      "away": 0
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
     }
-  },
-  "player_stats": {
-    "home": [],
-    "away": []
-  },
-  "metadata": {
-    "source": "FBref",
-    "url": "https://fbref.com/en/matches/5e480274/Shanghai-Port-Wuhan-Three-Towns-July-12-2023-Chinese-Super-League",
-    "scraped_at": "2026-03-28T19:49:38",
-    "version": "9.0-success"
   }
 }

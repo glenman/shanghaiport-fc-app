@@ -46,7 +46,7 @@ interface Season {
 }
 
 const App: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('statistics');
+  const [activeTab, setActiveTab] = useState('schedule');
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
 
   const toggleSidebar = () => {
