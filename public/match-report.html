@@ -256,6 +256,76 @@
         }
       }
 
+      @media (max-width: 480px) {
+        .scoreboard-teams {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+        
+        .team-name {
+          font-size: 1.1rem;
+          min-width: auto;
+          text-align: center !important;
+        }
+        
+        .team-name.home, .team-name.away {
+          text-align: center !important;
+        }
+        
+        .score-display {
+          font-size: 2rem;
+          min-width: auto;
+          text-align: center;
+        }
+        
+        .scoreboard-info {
+          font-size: 0.85rem;
+          gap: 0.3rem;
+        }
+        
+        .scoreboard-info-row {
+          gap: 0.8rem;
+          flex-wrap: wrap;
+        }
+        
+        .match-info-item {
+          min-width: auto;
+          font-size: 0.85rem;
+        }
+        
+        .card h2 {
+          font-size: 1.2rem;
+        }
+        
+        .card h3 {
+          font-size: 1rem;
+        }
+        
+        .statistics table {
+          font-size: 0.8rem;
+        }
+        
+        .statistics th, .statistics td {
+          padding: 0.4rem 0.3rem;
+        }
+        
+        .lineup li {
+          font-size: 0.85rem;
+        }
+        
+        .possession-bar {
+          height: 16px;
+        }
+        
+        .goal-player {
+          font-size: 0.85rem;
+        }
+        
+        .goal-time {
+          font-size: 0.8rem;
+        }
+      }
+
       .goals-team {
         background: rgba(50, 50, 50, 0.8);
         padding: 1rem;
@@ -310,6 +380,7 @@
 
       .scoreboard-teams {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 2rem;
@@ -317,7 +388,7 @@
       }
 
       .team-name {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 700;
         color: #fff;
         min-width: 120px;
@@ -336,16 +407,23 @@
         font-weight: 700;
         color: #c00010;
         min-width: 100px;
+        text-align: center;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
 
       .scoreboard-info {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .scoreboard-info-row {
+        display: flex;
         justify-content: center;
         gap: 1.5rem;
-        font-size: 0.9rem;
-        color: rgba(255, 255, 255, 0.7);
       }
 
       .scoreboard-info span {
@@ -397,6 +475,27 @@
           flex-direction: column;
           gap: 0.6rem;
         }
+        
+        .scoreboard-teams {
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+        
+        .team-name {
+          font-size: 1.1rem;
+          min-width: auto;
+          text-align: center !important;
+        }
+        
+        .team-name.home, .team-name.away {
+          text-align: center !important;
+        }
+        
+        .score-display {
+          font-size: 2.2rem;
+          min-width: auto;
+          text-align: center;
+        }
 
         .lineups {
           flex-direction: column;
@@ -422,12 +521,14 @@
         <div class="card">
           <h2>赛事报告</h2>
           
+          <div class="match-info" id="match-info">
+            <!-- 比赛信息将通过 JavaScript 动态填充 -->
+          </div>
+          
           <div class="scoreboard" id="match-scoreboard">
             <!-- 比分信息将通过 JavaScript 动态填充 -->
           </div>
           
-
-
           <h3>进球记录</h3>
           <div class="match-goals" id="match-goals">
             <!-- 进球记录将通过 JavaScript 动态填充 -->
@@ -517,7 +618,30 @@
                   // 填充比分板
                   const matchScoreboard = document.getElementById('match-scoreboard');
                   const details = data.matchDetails || {};
-                  const halftimeScore = details.halftimeScore || '0-0';
+                  
+                  // 动态计算半场比分
+                  function calculateHalftimeScore() {
+                    const goalHighlights = data.highlights.filter(h => h.type === 'goal');
+                    let homeHalftimeGoals = 0;
+                    let awayHalftimeGoals = 0;
+                    
+                    goalHighlights.forEach(goal => {
+                      // 解析进球时间，判断是否在上半场（≤45分钟）
+                      const timeStr = goal.time.replace("'", '');
+                      const minute = parseInt(timeStr.split('+')[0]);
+                      if (minute <= 45) {
+                        if (goal.team === 'home') {
+                          homeHalftimeGoals++;
+                        } else if (goal.team === 'away') {
+                          awayHalftimeGoals++;
+                        }
+                      }
+                    });
+                    
+                    return `${homeHalftimeGoals}-${awayHalftimeGoals}`;
+                  }
+                  
+                  const halftimeScore = calculateHalftimeScore();
                   
                   matchScoreboard.innerHTML = `
                     <div class="scoreboard-teams">
@@ -526,12 +650,18 @@
                       <div class="team-name away">${data.match.awayTeam}</div>
                     </div>
                     <div class="scoreboard-info">
-                      <span>📅 ${data.match.date} ${data.match.time}</span>
-                      <span>🏟️ ${data.match.venue}</span>
-                      <span>📍 ${data.match.city}</span>
-                      ${details.temperature ? `<span>🌡️ ${details.temperature}</span>` : ''}
-                      <span>⏱️ 半场: ${halftimeScore}</span>
-                      ${data.match.attendance && data.match.attendance !== '未知' ? `<span>👥 ${data.match.attendance}</span>` : ''}
+                      <div class="scoreboard-info-row">
+                        <span>📍 ${data.match.city}</span>
+                        <span>📅 ${data.match.date} ${data.match.time}</span>
+                        ${details.temperature ? `<span>🌡️ ${details.temperature}</span>` : ''}
+                      </div>
+                      <div class="scoreboard-info-row">
+                        <span>🏟️ ${data.match.venue}</span>
+                        ${data.match.attendance && data.match.attendance !== '未知' ? `<span>👥 ${data.match.attendance}</span>` : ''}
+                      </div>
+                      <div class="scoreboard-info-row">
+                        <span>⏱️ 半场: ${halftimeScore}</span>
+                      </div>
                     </div>
                   `;
 

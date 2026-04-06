@@ -90,7 +90,7 @@
       }
 
       .team-name {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: 700;
         color: #fff;
         min-width: 120px;
@@ -105,7 +105,7 @@
       }
 
       .score-display {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 700;
         color: #c00010;
         min-width: 100px;
@@ -114,11 +114,17 @@
 
       .scoreboard-info {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .scoreboard-info-row {
+        display: flex;
         justify-content: center;
         gap: 1.5rem;
-        font-size: 0.9rem;
-        color: rgba(255, 255, 255, 0.7);
       }
 
       .scoreboard-info span {
@@ -233,6 +239,166 @@
       @media (max-width: 768px) {
         .lineups {
           grid-template-columns: 1fr;
+        }
+        
+        .app-content {
+          padding: 0.8rem;
+        }
+
+        .card {
+          padding: 0.8rem;
+        }
+
+        .scoreboard {
+          padding: 1rem;
+        }
+
+        .scoreboard-teams {
+          flex-direction: row;
+          gap: 1rem;
+        }
+
+        .team-name {
+          font-size: 1.2rem;
+          min-width: 80px;
+        }
+
+        .team-name.home {
+          text-align: right;
+        }
+
+        .team-name.away {
+          text-align: left;
+        }
+
+        .score-display {
+          font-size: 2.2rem;
+          min-width: 80px;
+        }
+        
+        .scoreboard-info {
+          font-size: 0.85rem;
+          gap: 0.3rem;
+        }
+        
+        .scoreboard-info-row {
+          gap: 0.8rem;
+          flex-wrap: wrap;
+        }
+
+        .statistics-table {
+          font-size: 0.85rem;
+        }
+
+        .statistics-table th,
+        .statistics-table td {
+          padding: 0.5rem 0.4rem;
+        }
+        
+        .timeline {
+          padding-left: 1.5rem;
+        }
+        
+        .timeline-item {
+          padding-left: 0.8rem;
+          padding-bottom: 0.8rem;
+        }
+        
+        .timeline-item::before {
+          width: 10px;
+          height: 10px;
+          left: -1.4rem;
+        }
+        
+        .player-list li {
+          font-size: 0.85rem;
+        }
+        
+        .player-number {
+          min-width: 20px;
+        }
+        
+        .possession-bar {
+          height: 16px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .app-header h1 {
+          font-size: 1.3rem;
+        }
+        
+        .app-header h2 {
+          font-size: 0.9rem;
+        }
+        
+        .card h2 {
+          font-size: 1.2rem;
+        }
+        
+        .card h3 {
+          font-size: 1rem;
+        }
+        
+        .card h4 {
+          font-size: 0.95rem;
+        }
+        
+        .team-name {
+          font-size: 1.1rem;
+          min-width: 70px;
+        }
+        
+        .team-name.home {
+          text-align: right;
+        }
+
+        .team-name.away {
+          text-align: left;
+        }
+        
+        .score-display {
+          font-size: 2rem;
+          min-width: 70px;
+        }
+        
+        .scoreboard-info {
+          font-size: 0.8rem;
+          gap: 0.2rem;
+        }
+        
+        .scoreboard-info-row {
+          gap: 0.6rem;
+          flex-wrap: wrap;
+        }
+        
+        .statistics-table {
+          font-size: 0.8rem;
+        }
+        
+        .statistics-table th,
+        .statistics-table td {
+          padding: 0.4rem 0.3rem;
+        }
+        
+        .timeline-content {
+          font-size: 0.85rem;
+        }
+        
+        .timeline-time {
+          font-size: 0.9rem;
+        }
+        
+        .lineup-team h4 {
+          font-size: 1rem;
+        }
+        
+        .manager-captain {
+          font-size: 0.8rem;
+        }
+        
+        .manager-captain span {
+          margin-right: 0.5rem;
         }
       }
 
@@ -537,11 +703,17 @@
                   <div class="team-name away">${awayTeam.name}</div>
                 </div>
                 <div class="scoreboard-info">
-                  <span>📅 ${formattedDate} ${matchInfo.time}</span>
-                  <span>🏟️ ${matchInfo.venue.name}</span>
-                  ${matchInfo.venue.city ? `<span>📍 ${matchInfo.venue.city}</span>` : ''}
-                  <span>👥 ${matchInfo.venue.attendance}</span>
-                  <span>⏱️ 半场: ${homeFirstHalfGoals} - ${awayFirstHalfGoals}</span>
+                  <div class="scoreboard-info-row">
+                    ${matchInfo.venue.city ? `<span>📍 ${matchInfo.venue.city}</span>` : ''}
+                    <span>📅 ${formattedDate} ${matchInfo.time}</span>
+                  </div>
+                  <div class="scoreboard-info-row">
+                    <span>🏟️ ${matchInfo.venue.name}</span>
+                    <span>👥 ${matchInfo.venue.attendance}</span>
+                  </div>
+                  <div class="scoreboard-info-row">
+                    <span>⏱️ 半场: ${homeFirstHalfGoals} - ${awayFirstHalfGoals}</span>
+                  </div>
                 </div>
               </div>
             `;
@@ -564,7 +736,7 @@
               
               let html = `
                 <div style="margin-bottom: 1rem;">
-                  <h4 style="color: #c00010; font-size: 1.1rem; margin-bottom: 0.5rem;">${teamName}</h4>
+                  <h4 style="color: #c00010; font-size: 1rem; margin-bottom: 0.5rem;">${teamName}</h4>
                   <ul style="list-style: none; padding: 0;">
               `;
               
@@ -577,19 +749,21 @@
                 let ballIcon = '⚽';
                 if (goal.goal_type === 'own_goal') {
                   ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
-                  specialMark = ' <span style="color: #ff6b6b; font-weight: bold;">(OG)</span>';
+                  specialMark = ' <span style="color: #ff6b6b; font-weight: bold; font-size: 0.85rem;">(OG)</span>';
                 } else if (goal.goal_type === 'penalty_goal') {
-                  specialMark = ' <span style="color: #4ecdc4; font-weight: bold;">(P)</span>';
+                  specialMark = ' <span style="color: #4ecdc4; font-weight: bold; font-size: 0.85rem;">(P)</span>';
                 }
                 
                 html += `
-                  <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between;">
-                    <span>
-                      <span style="color: #c00010; font-weight: 700; min-width: 40px;">${index + 1}.</span>
-                      <span>${ballIcon} ${goal.player}</span>${specialMark}
-                      ${goal.player2 ? `<span style="color: rgba(255, 255, 255, 0.6); font-size: 0.85rem;"> (助攻: ${goal.player2})</span>` : ''}
-                    </span>
-                    <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">${timeDisplay}</span>
+                  <li style="padding: 0.3rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                    <div style="display: flex; justify-content: space-between;">
+                      <span style="font-size: 0.85rem;">
+                        <span style="color: #c00010; font-weight: 700; min-width: 30px;">${index + 1}.</span>
+                        <span>${ballIcon} ${goal.player}</span>${specialMark}
+                      </span>
+                      <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.8rem;">${timeDisplay}</span>
+                    </div>
+                    ${goal.player2 ? `<div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); margin-left: 30px; margin-top: 0.2rem;">(助攻: ${goal.player2})</div>` : ''}
                   </li>
                 `;
               });
@@ -825,14 +999,14 @@
 
             
             const statsRows = [
-              renderStatRow(stats.shots, '射门次数'),
-              renderStatRow(stats.shots_on_target, '射正次数'),
-              renderStatRow(stats.saves, '扑救次数'),
-              renderStatRow(stats.corners, '角球次数'),
-              renderStatRow(stats.fouls, '犯规次数'),
-              renderStatRow(stats.crosses, '传中次数'),
-              renderStatRow(stats.interceptions, '拦截次数'),
-              renderStatRow(stats.offsides, '越位次数'),
+              renderStatRow(stats.shots, '射门'),
+              renderStatRow(stats.shots_on_target, '射正'),
+              renderStatRow(stats.saves, '扑救'),
+              renderStatRow(stats.corners, '角球'),
+              renderStatRow(stats.fouls, '犯规'),
+              renderStatRow(stats.crosses, '传中'),
+              renderStatRow(stats.interceptions, '拦截'),
+              renderStatRow(stats.offsides, '越位'),
               renderStatRow(stats.yellow_cards, '黄牌'),
               renderStatRow(stats.red_cards, '红牌')
             ].filter(row => row).join('');
@@ -847,9 +1021,9 @@
                 <table class="statistics-table">
                   <thead>
                     <tr>
-                      <th>${data.teams.home.full_name}</th>
+                      <th>${data.teams.home.name}</th>
                       <th>统计项</th>
-                      <th>${data.teams.away.full_name}</th>
+                      <th>${data.teams.away.name}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -910,8 +1084,8 @@
               <div class="card">
                 <h2>🟨🟥 红黄牌记录</h2>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                  ${renderCardList(homeCards, data.teams.home.full_name)}
-                  ${renderCardList(awayCards, data.teams.away.full_name)}
+                  ${renderCardList(homeCards, data.teams.home.name)}
+                  ${renderCardList(awayCards, data.teams.away.name)}
                 </div>
               </div>
             `;
