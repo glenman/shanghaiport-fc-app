@@ -760,7 +760,9 @@
                       <h5>替补:</h5>
                       <ul>
                         ${data.lineups.home.substitutes.map(sub => 
-                          `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>`
+                          sub.substitutedAt ? 
+                          `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>` : 
+                          `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position})</li>`
                         ).join('')}
                       </ul>
                     </div>
@@ -776,7 +778,9 @@
                       <h5>替补:</h5>
                       <ul>
                         ${data.lineups.away.substitutes.map(sub => 
-                          `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>`
+                          sub.substitutedAt ? 
+                          `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>` : 
+                          `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position})</li>`
                         ).join('')}
                       </ul>
                     </div>
