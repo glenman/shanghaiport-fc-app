@@ -1,0 +1,302 @@
+{
+  "match": {
+    "id": 5,
+    "round": "第5轮",
+    "date": "2026-04-11",
+    "time": "19:35",
+    "homeTeam": "上海申花",
+    "awayTeam": "上海海港",
+    "venue": "上海体育场",
+    "city": "上海",
+    "result": "1-0",
+    "status": "已结束",
+    "attendance": "37890",
+    "referee": "马宁",
+    "weather": "晴",
+    "competition": "中国足球协会超级联赛",
+    "matchweek": 5,
+    "season": "2026"
+  },
+  "matchDetails": {
+    "stadiumCapacity": "56842",
+    "pitchCondition": "良好",
+    "temperature": "18°C",
+    "kickoffTime": "19:35",
+    "halftimeScore": "0-0",
+    "fulltimeScore": "1-0"
+  },
+  "officials": {
+    "referee": "马宁",
+    "assistantReferee1": "张铖",
+    "assistantReferee2": "周飞",
+    "fourthOfficial": "李海新",
+    "VAR": "傅明"
+  },
+  "seasonRecords": {
+    "home": {
+      "currentPosition": "未知",
+      "matchesPlayed": 5,
+      "record": "3胜1平1负",
+      "points": 10,
+      "goalsFor": 6,
+      "goalsAgainst": 3,
+      "form": "WWDLW"
+    },
+    "away": {
+      "currentPosition": "未知",
+      "matchesPlayed": 5,
+      "record": "2胜0平3负",
+      "points": 6,
+      "goalsFor": 7,
+      "goalsAgainst": 7,
+      "form": "LWLWL"
+    }
+  },
+  "lineups": {
+    "home": {
+      "name": "上海申花",
+      "formation": "4-3-3",
+      "manager": "吴金贵",
+      "captain": "吴曦",
+      "players": [
+        {
+          "number": 1, "name": "马镇", "position": "门将", "nationality": "中国", "age": "28-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 2, "name": "艾迪", "position": "后卫", "nationality": "中国", "age": "32-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 4, "name": "金洋洋", "position": "后卫", "nationality": "中国", "age": "31-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 5, "name": "朱辰杰", "position": "后卫", "nationality": "中国", "age": "25-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 6, "name": "冯潇霆", "position": "后卫", "nationality": "中国", "age": "38-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 8, "name": "吴曦", "position": "中场", "nationality": "中国", "age": "36-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 10, "name": "特谢拉", "position": "中场", "nationality": "巴西", "age": "34-000", "minutes": 90, "goals": 1, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 11, "name": "巴索戈", "position": "前锋", "nationality": "喀麦隆", "age": "30-000", "minutes": 90, "goals": 0, "assists": 1, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 18, "name": "温家宝", "position": "中场", "nationality": "中国", "age": "26-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 20, "name": "于汉超", "position": "前锋", "nationality": "中国", "age": "37-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 25, "name": "彭欣力", "position": "中场", "nationality": "中国", "age": "33-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        }
+      ],
+      "substitutes": [
+        { "number": 12, "name": "周正凯", "position": "门将", "nationality": "中国", "age": "24-000" },
+        { "number": 3, "name": "毕津浩", "position": "后卫", "nationality": "中国", "age": "32-000" },
+        { "number": 7, "name": "钱杰给", "position": "中场", "nationality": "加蓬", "age": "31-000" },
+        { "number": 9, "name": "杨旭", "position": "前锋", "nationality": "中国", "age": "36-000" },
+        { "number": 15, "name": "朱宝杰", "position": "中场", "nationality": "中国", "age": "34-000" },
+        { "number": 17, "name": "孙世林", "position": "中场", "nationality": "中国", "age": "35-000" },
+        { "number": 19, "name": "曾诚", "position": "门将", "nationality": "中国", "age": "37-000" },
+        { "number": 21, "name": "朱越", "position": "后卫", "nationality": "中国", "age": "23-000" },
+        { "number": 22, "name": "金信煜", "position": "前锋", "nationality": "韩国", "age": "35-000" },
+        { "number": 24, "name": "徐友刚", "position": "后卫", "nationality": "中国", "age": "30-000" },
+        { "number": 27, "name": "朱建荣", "position": "前锋", "nationality": "中国", "age": "33-000" },
+        { "number": 33, "name": "汪海健", "position": "中场", "nationality": "中国", "age": "24-000" }
+      ]
+    },
+    "away": {
+      "name": "上海海港",
+      "formation": "4-2-3-1",
+      "manager": "凯文·穆斯卡特",
+      "captain": "颜骏凌",
+      "players": [
+        {
+          "number": 1, "name": "颜骏凌", "position": "门将", "nationality": "中国", "age": "35-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 4, "name": "王燊超", "position": "后卫", "nationality": "中国", "age": "37-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 5, "name": "张琳芃", "position": "后卫", "nationality": "中国", "age": "35-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 10, "name": "马特乌斯·维塔尔", "position": "中场", "nationality": "巴西", "age": "28-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 11, "name": "加布里埃尔", "position": "中场", "nationality": "巴西", "age": "30-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 13, "name": "魏震", "position": "后卫", "nationality": "中国", "age": "29-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 22, "name": "杨希", "position": "后卫", "nationality": "中国", "age": "20-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 32, "name": "李帅", "position": "后卫", "nationality": "中国", "age": "30-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 40, "name": "吾米提江·玉素普", "position": "后卫", "nationality": "中国", "age": "22-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 45, "name": "莱昂纳多", "position": "前锋", "nationality": "巴西", "age": "28-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        },
+        {
+          "number": 47, "name": "蒯纪闻", "position": "中场", "nationality": "中国", "age": "20-000", "minutes": 90, "goals": 0, "assists": 0, "yellowCards": 0, "redCards": 0
+        }
+      ],
+      "substitutes": [
+        { "number": 7, "name": "武磊", "position": "前锋", "nationality": "中国", "age": "34-000" },
+        { "number": 8, "name": "张华晨", "position": "中场", "nationality": "中国", "age": "27-000" },
+        { "number": 12, "name": "陈威", "position": "门将", "nationality": "中国", "age": "29-000" },
+        { "number": 16, "name": "朱鹏宇", "position": "前锋", "nationality": "中国", "age": "21-000" },
+        { "number": 17, "name": "李昂", "position": "后卫", "nationality": "中国", "age": "31-000" },
+        { "number": 20, "name": "杨世元", "position": "中场", "nationality": "中国", "age": "32-000" },
+        { "number": 21, "name": "吕鹏", "position": "中场", "nationality": "中国", "age": "34-000" },
+        { "number": 23, "name": "傅欢", "position": "后卫", "nationality": "中国", "age": "31-000" },
+        { "number": 26, "name": "刘若钒", "position": "前锋", "nationality": "中国", "age": "27-000" },
+        { "number": 28, "name": "孙康博", "position": "后卫", "nationality": "中国", "age": "23-000" },
+        { "number": 31, "name": "鲍世蒙", "position": "后卫", "nationality": "中国", "age": "22-000" },
+        { "number": 33, "name": "刘祝润", "position": "前锋", "nationality": "中国", "age": "24-000" }
+      ]
+    }
+  },
+  "detailedPlayerStats": {
+    "home": [
+      {
+        "player": "特谢拉", "number": 10, "position": "AM", "age": "34-000", "minutes": 90, "shots": 3, "shotsOnTarget": 2, "goals": 1, "assists": 0, "keyPasses": 2, "crosses": 1, "tacklesWon": 1, "interceptions": 0, "foulsCommitted": 0, "foulsWon": 2, "offsides": 0, "yellowCards": 0, "redCards": 0
+      },
+      {
+        "player": "巴索戈", "number": 11, "position": "FW", "age": "30-000", "minutes": 90, "shots": 2, "shotsOnTarget": 1, "goals": 0, "assists": 1, "keyPasses": 1, "crosses": 3, "tacklesWon": 0, "interceptions": 0, "foulsCommitted": 1, "foulsWon": 1, "offsides": 0, "yellowCards": 0, "redCards": 0
+      }
+    ],
+    "away": [
+      {
+        "player": "加布里埃尔", "number": 11, "position": "AM", "age": "30-000", "minutes": 90, "shots": 2, "shotsOnTarget": 1, "goals": 0, "assists": 0, "keyPasses": 2, "crosses": 2, "tacklesWon": 0, "interceptions": 0, "foulsCommitted": 0, "foulsWon": 1, "offsides": 0, "yellowCards": 0, "redCards": 0
+      },
+      {
+        "player": "莱昂纳多", "number": 45, "position": "FW", "age": "28-000", "minutes": 90, "shots": 3, "shotsOnTarget": 1, "goals": 0, "assists": 0, "keyPasses": 0, "crosses": 0, "tacklesWon": 0, "interceptions": 0, "foulsCommitted": 0, "foulsWon": 0, "offsides": 1, "yellowCards": 0, "redCards": 0
+      }
+    ]
+  },
+  "matchTimeline": [
+    {
+      "minute": 15, "minute_extra": 0, "type": "corner", "team": "home", "player": "巴索戈", "description": "上海申花获得角球"
+    },
+    {
+      "minute": 28, "minute_extra": 0, "type": "shot_off_target", "team": "away", "player": "莱昂纳多", "description": "上海海港莱昂纳多射门偏出"
+    },
+    {
+      "minute": 45, "minute_extra": 2, "type": "injury_time", "description": "伤停补时2分钟"
+    },
+    {
+      "minute": 46, "minute_extra": 0, "type": "substitution", "team": "away", "playerIn": "武磊", "playerOut": "蒯纪闻", "description": "上海海港武磊替换蒯纪闻上场"
+    },
+    {
+      "minute": 62, "minute_extra": 0, "type": "goal", "team": "home", "player": "特谢拉", "player2": "巴索戈", "goal_type": "goal", "description": "上海申花1-0领先"
+    },
+    {
+      "minute": 68, "minute_extra": 0, "type": "substitution", "team": "home", "playerIn": "钱杰给", "playerOut": "彭欣力", "description": "上海申花钱杰给替换彭欣力上场"
+    },
+    {
+      "minute": 75, "minute_extra": 0, "type": "substitution", "team": "away", "playerIn": "刘若钒", "playerOut": "吾米提江·玉素普", "description": "上海海港刘若钒替换吾米提江·玉素普上场"
+    },
+    {
+      "minute": 82, "minute_extra": 0, "type": "substitution", "team": "home", "playerIn": "朱建荣", "playerOut": "于汉超", "description": "上海申花朱建荣替换于汉超上场"
+    },
+    {
+      "minute": 86, "minute_extra": 0, "type": "substitution", "team": "away", "playerIn": "张华晨", "playerOut": "马特乌斯·维塔尔", "description": "上海海港张华晨替换马特乌斯·维塔尔上场"
+    },
+    {
+      "minute": 90, "minute_extra": 4, "type": "injury_time", "description": "伤停补时4分钟"
+    },
+    {
+      "minute": 90, "minute_extra": 3, "type": "shot_saved", "team": "away", "player": "武磊", "description": "上海海港武磊射门被马镇扑出"
+    }
+  ],
+  "tacticalAnalysis": {
+    "homeFormation": "4-3-3",
+    "awayFormation": "4-2-3-1",
+    "possession": { "home": 48, "away": 52 },
+    "attackDirection": { "home": "防守反击", "away": "控球进攻" },
+    "defensiveLine": { "home": "低位防守", "away": "高位压迫" },
+    "playingStyle": { "home": "快速反击，利用边路", "away": "控球主导，阵地进攻" }
+  },
+  "statistics": [
+    { "name": "控球率", "home": "48%", "away": "52%" },
+    { "name": "射门", "home": "8", "away": "12" },
+    { "name": "射正", "home": "4", "away": "5" },
+    { "name": "射门准确率", "home": "50%", "away": "41.7%" },
+    { "name": "扑救", "home": "5", "away": "3" },
+    { "name": "扑救成功率", "home": "100%", "away": "75%" },
+    { "name": "犯规", "home": "11", "away": "9" },
+    { "name": "角球", "home": "4", "away": "6" },
+    { "name": "传中", "home": "12", "away": "15" },
+    { "name": "拦截", "home": "8", "away": "6" },
+    { "name": "越位", "home": "1", "away": "2" },
+    { "name": "黄牌", "home": "2", "away": "1" },
+    { "name": "红牌", "home": "0", "away": "0" }
+  ],
+  "keyMetrics": {
+    "expectedGoals": { "home": 1.1, "away": 1.0 },
+    "bigChances": { "home": 1, "away": 2 },
+    "passAccuracy": { "home": "82%", "away": "86%" },
+    "aerialDuelsWon": { "home": "53%", "away": "47%" },
+    "successfulDribbles": { "home": 6, "away": 8 },
+    "keyPasses": { "home": 3, "away": 4 }
+  },
+  "playerRatings": {
+    "manOfTheMatch": "特谢拉",
+    "homeBestPlayer": "特谢拉",
+    "awayBestPlayer": "颜骏凌",
+    "topPerformers": [
+      { "name": "特谢拉", "team": "home", "rating": 8.3, "summary": "打入制胜球，进攻组织出色" },
+      { "name": "马镇", "team": "home", "rating": 7.8, "summary": "多次关键扑救，保持零失球" },
+      { "name": "颜骏凌", "team": "away", "rating": 7.5, "summary": "表现稳健，做出多次精彩扑救" }
+    ]
+  },
+  "headToHead": {
+    "totalMatches": 28, "homeWins": 12, "awayWins": 8, "draws": 8,
+    "lastMeeting": "2025-10-26 上海海港2-1上海申花",
+    "trend": "近期上海海港占优"
+  },
+  "socialMedia": {
+    "hashtags": ["#上海德比", "#中超2026", "#申花vs海港"],
+    "fanSentiment": { "home": "喜悦", "away": "失望" },
+    "matchTrending": true
+  },
+  "summary": "上海申花主场1-0战胜上海海港，特谢拉第62分钟打入制胜球。上海海港控球率占优（52%）但射门效率不足，上海申花凭借防守反击战术取得胜利。",
+  "keyFactors": [
+    "上海申花防守稳固，马镇多次关键扑救",
+    "特谢拉打入制胜球，展现核心价值",
+    "上海海港控球占优但缺乏有效进攻",
+    "申花防守反击战术执行到位"
+  ],
+  "highlights": [
+    { "minute": 62, "minute_extra": 0, "description": "上海申花特谢拉进球，助攻巴索戈", "type": "goal", "team": "home", "player": "特谢拉", "player2": "巴索戈", "goal_type": "goal" },
+    { "minute": 90, "minute_extra": 3, "description": "上海海港武磊射门被马镇扑出", "type": "shot_saved", "team": "away", "player": "武磊" }
+  ],
+  "matchAnalysis": {
+    "tacticalSummary": "上海申花采用4-3-3阵型，低位防守+快速反击战术，成功限制了上海海港的进攻。上海海港采用4-2-3-1阵型，控球进攻但缺乏穿透性，最终未能打破申花防线。",
+    "keyMoments": [
+      "第62分钟特谢拉打入制胜球",
+      "第90+3分钟武磊射门被马镇扑出"
+    ],
+    "teamPerformance": {
+      "home": { "strengths": ["防守稳固", "反击高效", "把握机会能力强"], "weaknesses": ["控球率低", "进攻机会少"] },
+      "away": { "strengths": ["控球优势", "传球流畅"], "weaknesses": ["进攻效率低", "缺乏穿透力"] }
+    }
+  },
+  "postMatchComments": {
+    "homeManager": "吴金贵：球队防守表现出色，反击战术执行到位，对胜利感到满意。",
+    "awayManager": "凯文·穆斯卡特：球队控球占优但缺乏效率，需要改进进攻端表现。",
+    "manOfTheMatchComment": "特谢拉：很高兴能为球队贡献进球，这是团队努力的结果。"
+  },
+  "nextMatches": {
+    "home": { "opponent": "山东泰山", "date": "2026-04-17", "venue": "客场" },
+    "away": { "opponent": "山东泰山", "date": "2026-04-17", "venue": "客场" }
+  }
+}
