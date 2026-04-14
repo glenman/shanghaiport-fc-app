@@ -11,10 +11,33 @@
     "result": "0-2",
     "status": "已结束",
     "attendance": "未知",
-    "referee": "未知",
+    "referee": "王昕堯（四川）",
     "weather": "未知"
   },
-  "summary": "中乙联赛A组第4轮，北京理工对阵上海海港富盛经开，最终海港B队以2-0获胜。第40分钟，谢鸿宇进球，助攻张俊杰。第82分钟，邓嘉俊乌龙球。比赛中，海港B队控球率60%，危险进攻78次，表现占优。许瑞轩在第90分钟被红牌罚下。",
+  "summary": "中乙联赛A组第4轮，北京理工主场对阵上海海港富盛经开，最终海港B队以2-0获胜。这是海港B队本赛季的第4场比赛，此前他们取得了2胜1平的不败战绩。第40分钟，谢鸿宇接张俊杰助攻打破僵局，第82分钟，邓嘉俊乌龙球扩大比分。比赛中，海港B队展现出了强大的控制力，控球率达到60%，危险进攻次数78次，是对手的1.6倍。尽管许瑞轩在第90分钟被红牌罚下，但球队仍然保持了领先优势。此役过后，海港B队以3胜1平的优异战绩继续领跑A组积分榜，展现出了强劲的竞争力。",
+  "goals": {
+    "home": {
+      "team": "北京理工",
+      "goals": []
+    },
+    "away": {
+      "team": "上海海港富盛经开",
+      "goals": [
+        {
+          "minute": 40,
+          "player": "谢鸿宇",
+          "assist": "张俊杰",
+          "type": "regular"
+        },
+        {
+          "minute": 82,
+          "player": "邓嘉俊 (OG)",
+          "assist": "",
+          "type": "own_goal"
+        }
+      ]
+    }
+  },
   "highlights": [
     {
       "time": "24'",
@@ -39,83 +62,11 @@
       "player": "张俊杰"
     },
     {
-      "time": "46'",
-      "description": "主队曾宇翔被唐昊换下",
-      "type": "substitution",
-      "team": "home",
-      "playerIn": "唐昊",
-      "playerOut": "曾宇翔"
-    },
-    {
-      "time": "46'",
-      "description": "主队李莅博被崔豪换下",
-      "type": "substitution",
-      "team": "home",
-      "playerIn": "崔豪",
-      "playerOut": "李莅博"
-    },
-    {
-      "time": "62'",
-      "description": "客队杨黔东被崔峻诚换下",
-      "type": "substitution",
-      "team": "away",
-      "playerIn": "崔峻诚",
-      "playerOut": "杨黔东"
-    },
-    {
-      "time": "63'",
-      "description": "客队张俊杰被韩杨换下",
-      "type": "substitution",
-      "team": "away",
-      "playerIn": "韩杨",
-      "playerOut": "张俊杰"
-    },
-    {
-      "time": "63'",
-      "description": "客队刘铁诚被王晶磊换下",
-      "type": "substitution",
-      "team": "away",
-      "playerIn": "王晶磊",
-      "playerOut": "刘铁诚"
-    },
-    {
-      "time": "64'",
-      "description": "主队程烨垚被毛鹏换下",
-      "type": "substitution",
-      "team": "home",
-      "playerIn": "毛鹏",
-      "playerOut": "程烨垚"
-    },
-    {
-      "time": "64'",
-      "description": "主队张宇烨被程烨垚换下",
-      "type": "substitution",
-      "team": "home",
-      "playerIn": "程烨垚",
-      "playerOut": "张宇烨"
-    },
-    {
-      "time": "64'",
-      "description": "主队吴岳洋被王建换下",
-      "type": "substitution",
-      "team": "home",
-      "playerIn": "王建",
-      "playerOut": "吴岳洋"
-    },
-    {
       "time": "67'",
       "description": "主队邓嘉俊被黄牌警告",
       "type": "yellow_card",
       "team": "home",
       "player": "邓嘉俊"
-    },
-    {
-      "time": "69'",
-      "description": "客队李瑞龙被汪照普换下",
-      "type": "substitution",
-      "team": "away",
-      "playerIn": "汪照普",
-      "playerOut": "李瑞龙"
     },
     {
       "time": "76'",
@@ -127,17 +78,9 @@
     {
       "time": "82'",
       "description": "客队邓嘉俊乌龙球",
-      "type": "goal",
+      "type": "own_goal",
       "team": "away",
-      "player": "邓嘉俊 (OG)"
-    },
-    {
-      "time": "85'",
-      "description": "客队黄雍海被李圣龙换下",
-      "type": "substitution",
-      "team": "away",
-      "playerIn": "李圣龙",
-      "playerOut": "黄雍海"
+      "player": "邓嘉俊"
     },
     {
       "time": "90'",
@@ -352,7 +295,7 @@
       "name": "上海海港富盛经开",
       "formation": "4-2-3-1",
       "manager": "成耀东",
-      "captain": "未知",
+      "captain": "王逸伟",
       "players": [
         {
           "number": 53,

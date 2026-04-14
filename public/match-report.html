@@ -671,29 +671,28 @@
                   const matchGoals = document.getElementById('match-goals');
                   
                   // 从highlights中提取进球记录
-                  const goalHighlights = data.highlights.filter(h => h.type === 'goal');
+                  const goalHighlights = data.highlights.filter(h => h.type === 'goal' || h.type === 'own_goal');
+                  const homeGoals = goalHighlights.filter(h => h.team === 'home');
+                  const awayGoals = goalHighlights.filter(h => h.team === 'away');
                   
-                  if (goalHighlights.length > 0) {
-                    const homeGoals = goalHighlights.filter(h => h.team === 'home');
-                    const awayGoals = goalHighlights.filter(h => h.team === 'away');
+                  function renderGoalList(goals, teamName) {
+                    let html = `
+                      <div class="goals-team">
+                        <h4>${teamName}</h4>
+                        <ul class="goals-list">
+                    `;
                     
-                    function renderGoalList(goals, teamName) {
-                      if (goals.length === 0) return '';
-                      
-                      let html = `
-                        <div class="goals-team">
-                          <h4>${teamName}</h4>
-                          <ul class="goals-list">
-                      `;
-                      
+                    if (goals.length === 0) {
+                      html += '<li style="color: rgba(255, 255, 255, 0.6); font-style: italic;">无进球</li>';
+                    } else {
                       goals.forEach((goal, index) => {
                         let specialMark = '';
                         let ballIcon = '⚽';
                         
-                        if (goal.goal_type === 'own_goal') {
+                        if (goal.type === 'own_goal') {
                           ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
-                          specialMark = ' <span style="color: #ff6b6b; font-weight: bold;">(OG)</span>';
-                        } else if (goal.goal_type === 'penalty_goal') {
+                          specialMark = '';
+                        } else if (goal.type === 'penalty_goal') {
                           specialMark = ' <span style="color: #4ecdc4; font-weight: bold;">(P)</span>';
                         }
                         
@@ -711,20 +710,18 @@
                           </li>
                         `;
                       });
-                      
-                      html += '</ul></div>';
-                      return html;
                     }
                     
-                    matchGoals.innerHTML = `
-                      <div class="goals-grid">
-                        ${renderGoalList(homeGoals, data.match.homeTeam)}
-                        ${renderGoalList(awayGoals, data.match.awayTeam)}
-                      </div>
-                    `;
-                  } else {
-                    matchGoals.innerHTML = '<p style="text-align: center; color: rgba(255, 255, 255, 0.6);">暂无进球记录</p>';
+                    html += '</ul></div>';
+                    return html;
                   }
+                  
+                  matchGoals.innerHTML = `
+                    <div class="goals-grid">
+                      ${renderGoalList(homeGoals, data.match.homeTeam)}
+                      ${renderGoalList(awayGoals, data.match.awayTeam)}
+                    </div>
+                  `;
 
                   // 填充比赛摘要
                   const matchSummary = document.getElementById('match-summary');
