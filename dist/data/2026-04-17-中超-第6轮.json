@@ -10,7 +10,7 @@
     "city": "济南",
     "result": "1-1",
     "status": "已结束",
-    "attendance": "未知",
+    "attendance": "28725",
     "referee": "梁松尚",
     "weather": "晴",
     "competition": "中国足球协会超级联赛",
@@ -18,7 +18,7 @@
     "season": "2026"
   },
   "matchDetails": {
-    "stadiumCapacity": "未知",
+    "stadiumCapacity": "56,808",
     "pitchCondition": "良好",
     "temperature": "25℃",
     "kickoffTime": "19:35",
@@ -644,19 +644,27 @@
   },
   "matchTimeline": [
     {
-      "minute": 20,
+      "minute": 0,
       "minute_extra": 0,
       "type": "kick_off",
       "team": "neutral",
       "description": "比赛开始"
     },
     {
-      "minute": 27,
+      "minute": 20,
       "minute_extra": 0,
-      "type": "foul",
+      "type": "yellow_card",
       "team": "away",
       "player": "维塔尔",
-      "description": "上海海港维塔尔犯规"
+      "description": "上海海港维塔尔获得黄牌"
+    },
+    {
+      "minute": 27,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "马德鲁加",
+      "description": "山东泰山马德鲁加获得黄牌"
     },
     {
       "minute": 37,
@@ -688,18 +696,18 @@
     {
       "minute": 54,
       "minute_extra": 0,
-      "type": "foul",
+      "type": "yellow_card",
       "team": "away",
       "player": "吾米提江",
-      "description": "上海海港吾米提江犯规"
+      "description": "上海海港吾米提江获得黄牌"
     },
     {
       "minute": 55,
       "minute_extra": 0,
-      "type": "foul",
+      "type": "yellow_card",
       "team": "home",
       "player": "谢文能",
-      "description": "山东泰山谢文能犯规"
+      "description": "山东泰山谢文能犯规黄牌"
     },
     {
       "minute": 64,
@@ -722,10 +730,10 @@
     {
       "minute": 69,
       "minute_extra": 0,
-      "type": "foul",
+      "type": "yellow_card",
       "team": "away",
       "player": "卢永涛",
-      "description": "上海海港卢永涛犯规"
+      "description": "上海海港卢永涛获得黄牌"
     },
     {
       "minute": 71,
@@ -766,10 +774,10 @@
     {
       "minute": 81,
       "minute_extra": 0,
-      "type": "foul",
+      "type": "yellow_card",
       "team": "away",
       "player": "李帅",
-      "description": "上海海港李帅犯规"
+      "description": "上海海港李帅获得黄牌"
     },
     {
       "minute": 81,
@@ -792,18 +800,18 @@
     {
       "minute": 87,
       "minute_extra": 0,
-      "type": "foul",
+      "type": "yellow_card",
       "team": "away",
       "player": "王燊超",
-      "description": "上海海港王燊超犯规"
+      "description": "上海海港王燊超获得黄牌"
     },
     {
       "minute": 87,
       "minute_extra": 0,
-      "type": "foul",
+      "type": "yellow_card",
       "team": "away",
       "player": "武磊",
-      "description": "上海海港武磊犯规"
+      "description": "上海海港武磊获得黄牌"
     }
   ],
   "tacticalAnalysis": {
@@ -1017,8 +1025,8 @@
     {
       "minute": 87,
       "minute_extra": 0,
-      "description": "上海海港王燊超犯规",
-      "type": "foul",
+      "description": "上海海港王燊超犯规获得黄牌",
+      "type": "yellow_card",
       "team": "away",
       "player": "王燊超"
     },
@@ -1050,7 +1058,7 @@
     }
   },
   "postMatchComments": {
-    "homeManager": "苏茂臻：球队控制了比赛但效率需要提升，对平局结果可以接受。",
+    "homeManager": "宿茂臻：球队控制了比赛但效率需要提升，对平局结果可以接受。",
     "awayManager": "凯文·马斯卡特：客场拿到1分很重要，球员们展现了顽强的防守。",
     "manOfTheMatchComment": "克雷桑：很高兴能帮助球队扳平，我们本可以赢球但对手门将表现很好。"
   },

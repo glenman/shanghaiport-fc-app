@@ -73,7 +73,7 @@
         },
         {
           "number": 8,
-          "name": "让·克劳德",
+          "name": "让克劳德",
           "position": "后卫",
           "nationality": "多哥",
           "age": "22-083",
@@ -85,7 +85,7 @@
         },
         {
           "number": 10,
-          "name": "马特乌斯·维塔尔",
+          "name": "维塔尔",
           "position": "中场",
           "nationality": "巴西",
           "age": "28-023",
@@ -181,7 +181,7 @@
         },
         {
           "number": 40,
-          "name": "吾米提江·玉苏普",
+          "name": "吾米提江",
           "position": "后卫",
           "nationality": "中国",
           "age": "22-007",
@@ -278,7 +278,8 @@
           "nationality": "中国",
           "age": "20-007",
           "substitutedAt": 46,
-          "substitutedFor": "卢永涛"
+          "substitutedFor": "卢永涛",
+          "yellowCards": 1
         },
         {
           "number": 49,
@@ -696,8 +697,8 @@
       "type": "substitution",
       "team": "home",
       "playerIn": "张源",
-      "playerOut": "让·克劳德",
-      "description": "上海海港张源替换让·克劳德上场"
+      "playerOut": "让克劳德",
+      "description": "上海海港张源替换让克劳德上场"
     },
     {
       "minute": 76,

@@ -445,3 +445,320 @@ tr:hover {
     text-align: center;
   }
 }
+
+/* 当季数据统计样式 */
+.team-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #2a2a2a;
+  border: 2px solid #444;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.team-tab:hover {
+  border-color: #c00010;
+  background-color: #333;
+}
+
+.team-tab.active {
+  border-color: #c00010;
+  background-color: #c00010;
+}
+
+.team-tab .tab-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-tab .tab-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.team-tab .tab-competition {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.25rem;
+}
+
+.team-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+/* 赛事Tab样式 */
+.competition-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.competition-tab {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.competition-tab:hover {
+  background-color: #333;
+  border-color: #c00010;
+}
+
+.competition-tab.active {
+  background-color: #c00010;
+  border-color: #c00010;
+  font-weight: bold;
+}
+
+.overview-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.overview-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.25rem;
+}
+
+.overview-value {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #c00010;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-tabs {
+    flex-direction: column;
+  }
+  
+  .team-overview {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.stats-section {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.stats-section h3 {
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #444;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.stats-table {
+  width: 100%;
+  min-width: unset;
+}
+
+.stats-table th,
+.stats-table td {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.stats-table th {
+  background-color: #444;
+}
+
+.stats-table tbody tr:hover {
+  background-color: #3a3a3a;
+}
+
+.stat-clickable {
+  cursor: pointer;
+  color: #c00010;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.stat-clickable:hover {
+  color: #ff4444;
+  text-decoration: underline;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #444;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.modal-close:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.modal-body {
+  padding: 1rem;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.modal-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modal-table th,
+.modal-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.modal-table th {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-weight: normal;
+  font-size: 0.85rem;
+}
+
+.modal-table td {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+.modal-table tbody tr:hover {
+  background-color: #3a3a3a;
+}
+
+.modal-empty {
+  text-align: center;
+  color: #888;
+  padding: 1rem;
+}
+
+.modal-content-compact {
+  max-width: 450px;
+}
+
+.modal-body-compact {
+  padding: 0.75rem;
+}
+
+.detail-list-compact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-item-compact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background-color: #1a1a1a;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.detail-round {
+  color: #c00010;
+  font-weight: bold;
+  min-width: 50px;
+}
+
+.detail-date {
+  color: rgba(255, 255, 255, 0.7);
+  min-width: 90px;
+}
+
+.detail-opponent {
+  color: #fff;
+  flex: 1;
+  text-align: center;
+}
+
+.detail-time {
+  color: #888;
+  min-width: 40px;
+  text-align: right;
+}

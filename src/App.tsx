@@ -5,6 +5,7 @@ import Schedule from './components/Schedule';
 import Seasons from './components/Seasons';
 import Statistics from './components/Statistics';
 import History from './components/History';
+import CurrentStats from './components/CurrentStats';
 
 interface Player {
   id: number;
@@ -78,6 +79,13 @@ const App: React.FC = () => {
             <span className="menu-text">球队赛程</span>
           </div>
           <div 
+            className={`menu-item ${activeTab === 'currentStats' ? 'active' : ''}`}
+            onClick={() => setActiveTab('currentStats')}
+          >
+            <span className="menu-icon">📈</span>
+            <span className="menu-text">当季数据统计</span>
+          </div>
+          <div 
             className={`menu-item ${activeTab === 'seasons' ? 'active' : ''}`}
             onClick={() => setActiveTab('seasons')}
           >
@@ -116,6 +124,7 @@ const App: React.FC = () => {
           {activeTab === 'players' && <Players />}
           {activeTab === 'seasons' && <Seasons />}
           {activeTab === 'statistics' && <Statistics />}
+          {activeTab === 'currentStats' && <CurrentStats />}
           {activeTab === 'history' && <History />}
         </main>
         <div className="app-footer">
