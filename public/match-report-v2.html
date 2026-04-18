@@ -996,12 +996,24 @@
                 <div class="substitutes-section">
                   <h5>替补球员</h5>
                   <ul class="player-list">
-                    ${subs.map(s => `
-                      <li>
-                        <span><span class="player-number">${s.number}.</span><span class="player-name">${s.name}</span></span>
-                        <span class="player-position">${s.position || ''}</span>
-                      </li>
-                    `).join('')}
+                    ${subs.map(s => {
+                      let stats = '';
+                      if (s.goals > 0) stats += `<span class="goal">⚽${s.goals}</span>`;
+                      if (s.assists > 0) stats += `<span class="assist">🅰️${s.assists}</span>`;
+                      if (s.yellowCards > 0) stats += `<span class="yellow">🟨${s.yellowCards}</span>`;
+                      if (s.redCards > 0) stats += `<span class="red">🟥${s.redCards}</span>`;
+                      
+                      return `
+                        <li>
+                          <span>
+                            <span class="player-number">${s.number}.</span>
+                            <span class="player-name">${s.name}</span>
+                            ${stats ? `<span class="player-stats">${stats}</span>` : ''}
+                          </span>
+                          <span class="player-position">${s.position || ''}</span>
+                        </li>
+                      `;
+                    }).join('')}
                   </ul>
                 </div>
               `;
