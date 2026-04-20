@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 
 interface StatDetail {
   match: string;
@@ -52,9 +53,10 @@ interface ModalProps {
   playerNumber: number;
   statType: 'goals' | 'assists' | 'yellowCards' | 'redCards';
   details: StatDetail[];
+  clickY: number;
 }
 
-const StatDetailModal: React.FC<ModalProps> = ({ isOpen, onClose, title, playerName, playerNumber, statType, details, position }) => {
+const StatDetailModal: React.FC<ModalProps> = ({ isOpen, onClose, title, playerName, playerNumber, statType, details, clickY }) => {
   if (!isOpen) return null;
 
   const statLabel = {
@@ -71,9 +73,40 @@ const StatDetailModal: React.FC<ModalProps> = ({ isOpen, onClose, title, playerN
     'redCards': '🟥'
   }[statType];
 
-  return (
+  const viewportHeight = window.innerHeight;
+  let top = clickY + 10;
+  if (top + 200 > viewportHeight) {
+    top = clickY - 210;
+  }
+  if (top < 10) {
+    top = 10;
+  }
+
+  // 计算main区域（.app-content）的中心位置
+  const getMainCenterX = () => {
+    const mainElement = document.querySelector('.app-content');
+    if (mainElement) {
+      const rect = mainElement.getBoundingClientRect();
+      return rect.left + rect.width / 2;
+    }
+    return window.innerWidth / 2;
+  };
+
+  const mainCenterX = getMainCenterX();
+
+  const modalContent = (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content modal-content-compact" onClick={(e) => e.stopPropagation()}>
+      <div
+        className="modal-content modal-content-compact"
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          position: 'fixed',
+          left: `${mainCenterX}px`,
+          top: `${top}px`,
+          transform: 'translateX(-50%)',
+          zIndex: 1001
+        }}
+      >
         <div className="modal-header">
           <h3>{statIcon} {playerName} 的{statLabel}记录</h3>
           <button className="modal-close" onClick={onClose}>×</button>
@@ -97,6 +130,8 @@ const StatDetailModal: React.FC<ModalProps> = ({ isOpen, onClose, title, playerN
       </div>
     </div>
   );
+
+  return ReactDOM.createPortal(modalContent, document.body);
 };
 
 const CurrentStats: React.FC = () => {
@@ -112,13 +147,15 @@ const CurrentStats: React.FC = () => {
     playerNumber: number;
     statType: 'goals' | 'assists' | 'yellowCards' | 'redCards';
     details: StatDetail[];
+    clickY: number;
   }>({
     isOpen: false,
     title: '',
     playerName: '',
     playerNumber: 0,
     statType: 'goals',
-    details: []
+    details: [],
+    clickY: 0
   });
 
   useEffect(() => {
@@ -141,14 +178,15 @@ const CurrentStats: React.FC = () => {
     fetchData();
   }, []);
 
-  const openModal = (playerName: string, playerNumber: number, statType: 'goals' | 'assists' | 'yellowCards' | 'redCards', details: StatDetail[], title: string) => {
+  const openModal = (playerName: string, playerNumber: number, statType: 'goals' | 'assists' | 'yellowCards' | 'redCards', details: StatDetail[], title: string, event: React.MouseEvent) => {
     setModalInfo({
       isOpen: true,
       title,
       playerName,
       playerNumber,
       statType,
-      details
+      details,
+      clickY: event.clientY
     });
   };
 
@@ -217,7 +255,7 @@ const CurrentStats: React.FC = () => {
                 <td>{stat.number}</td>
                 <td
                   className="stat-clickable"
-                  onClick={() => openModal(stat.name, stat.number, statKey, stat.details || [], title)}
+                  onClick={(e) => openModal(stat.name, stat.number, statKey, stat.details || [], title, e)}
                   title="点击查看详细"
                 >
                   {stat[statKey]}
@@ -327,6 +365,7 @@ const CurrentStats: React.FC = () => {
         playerNumber={modalInfo.playerNumber}
         statType={modalInfo.statType}
         details={modalInfo.details}
+        clickY={modalInfo.clickY}
       />
     </div>
   );
