@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-04-18",
+  "lastUpdated": "2026-04-22",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
     "competition": "中国足球协会超级联赛",
-    "matchesPlayed": 6,
-    "record": "2胜1平3负",
-    "goalsFor": 8,
-    "goalsAgainst": 7,
+    "matchesPlayed": 7,
+    "record": "2胜1平4负",
+    "goalsFor": 9,
+    "goalsAgainst": 9,
     "points": 7,
     "topScorers": [
       {
@@ -113,6 +113,21 @@
             "type": "进球"
           }
         ]
+      },
+      {
+        "rank": 7,
+        "name": "李新翔",
+        "number": 49,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第7轮",
+            "date": "2026-04-21",
+            "time": "57'",
+            "opponent": "重庆铜梁龙",
+            "type": "进球"
+          }
+        ]
       }
     ],
     "topAssists": [
@@ -197,6 +212,20 @@
             "opponent": "青岛西海岸"
           }
         ]
+      },
+      {
+        "rank": 6,
+        "name": "王燊超",
+        "number": 4,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第7轮",
+            "date": "2026-04-21",
+            "time": "57'",
+            "opponent": "重庆铜梁龙"
+          }
+        ]
       }
     ],
     "yellowCards": [
@@ -231,6 +260,64 @@
       },
       {
         "rank": 2,
+        "name": "吾米提江",
+        "number": 40,
+        "yellowCards": 3,
+        "details": [
+          {
+            "match": "第3轮",
+            "date": "2026-03-20",
+            "time": "22'",
+            "opponent": "大连英博海发",
+            "reason": "上海海港吾米提江获得黄牌"
+          },
+          {
+            "match": "第6轮",
+            "date": "2026-04-17",
+            "time": "54'",
+            "opponent": "山东泰山",
+            "reason": "上海海港吾米提江获得黄牌"
+          },
+          {
+            "match": "第7轮",
+            "date": "2026-04-21",
+            "time": "85'",
+            "opponent": "重庆铜梁龙",
+            "reason": "上海海港吾米提江获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "name": "王燊超",
+        "number": 4,
+        "yellowCards": 3,
+        "details": [
+          {
+            "match": "第4轮",
+            "date": "2026-04-04",
+            "time": "90'",
+            "opponent": "云南玉昆",
+            "reason": "上海海港王燊超获得黄牌"
+          },
+          {
+            "match": "第6轮",
+            "date": "2026-04-17",
+            "time": "87'",
+            "opponent": "山东泰山",
+            "reason": "上海海港王燊超获得黄牌"
+          },
+          {
+            "match": "第7轮",
+            "date": "2026-04-21",
+            "time": "53'",
+            "opponent": "重庆铜梁龙",
+            "reason": "上海海港王燊超获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 4,
         "name": "李帅",
         "number": 32,
         "yellowCards": 2,
@@ -252,7 +339,7 @@
         ]
       },
       {
-        "rank": 3,
+        "rank": 5,
         "name": "刘祝润",
         "number": 33,
         "yellowCards": 2,
@@ -270,50 +357,6 @@
             "time": "45'",
             "opponent": "云南玉昆",
             "reason": "上海海港刘祝润获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 4,
-        "name": "吾米提江",
-        "number": 40,
-        "yellowCards": 2,
-        "details": [
-          {
-            "match": "第3轮",
-            "date": "2026-03-20",
-            "time": "22'",
-            "opponent": "大连英博海发",
-            "reason": "上海海港吾米提江获得黄牌"
-          },
-          {
-            "match": "第6轮",
-            "date": "2026-04-17",
-            "time": "54'",
-            "opponent": "山东泰山",
-            "reason": "上海海港吾米提江获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 5,
-        "name": "王燊超",
-        "number": 4,
-        "yellowCards": 2,
-        "details": [
-          {
-            "match": "第4轮",
-            "date": "2026-04-04",
-            "time": "90'",
-            "opponent": "云南玉昆",
-            "reason": "上海海港王燊超获得黄牌"
-          },
-          {
-            "match": "第6轮",
-            "date": "2026-04-17",
-            "time": "87'",
-            "opponent": "山东泰山",
-            "reason": "上海海港王燊超获得黄牌"
           }
         ]
       },
@@ -363,7 +406,7 @@
           {
             "match": "第6轮",
             "date": "2026-04-17",
-            "time": "27'",
+            "time": "20'",
             "opponent": "山东泰山",
             "reason": "上海海港维塔尔获得黄牌"
           }
@@ -371,6 +414,21 @@
       },
       {
         "rank": 9,
+        "name": "傅欢",
+        "number": 23,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第7轮",
+            "date": "2026-04-21",
+            "time": "63'",
+            "opponent": "重庆铜梁龙",
+            "reason": "上海海港傅欢获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 10,
         "name": "杨世元",
         "number": 20,
         "yellowCards": 1,
