@@ -4,11 +4,11 @@
   "firstTeam": {
     "teamName": "上海海港",
     "competition": "中国足球协会超级联赛",
-    "matchesPlayed": 7,
-    "record": "2胜1平4负",
-    "goalsFor": 9,
+    "matchesPlayed": 8,
+    "record": "3胜1平4负",
+    "goalsFor": 13,
     "goalsAgainst": 9,
-    "points": 7,
+    "points": 10,
     "topScorers": [
       {
         "rank": 1,
@@ -101,6 +101,51 @@
       },
       {
         "rank": 6,
+        "name": "魏震",
+        "number": 13,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第8轮",
+            "date": "2026-04-25",
+            "time": "15'",
+            "opponent": "武汉三镇",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "name": "安佩姆",
+        "number": 17,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第8轮",
+            "date": "2026-04-25",
+            "time": "46'",
+            "opponent": "武汉三镇",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "name": "刘祝润",
+        "number": 33,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第8轮",
+            "date": "2026-04-25",
+            "time": "77'",
+            "opponent": "武汉三镇",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 9,
         "name": "王燊超",
         "number": 4,
         "goals": 1,
@@ -115,7 +160,7 @@
         ]
       },
       {
-        "rank": 7,
+        "rank": 10,
         "name": "李新翔",
         "number": 49,
         "goals": 1,
@@ -125,6 +170,21 @@
             "date": "2026-04-21",
             "time": "57'",
             "opponent": "重庆铜梁龙",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "name": "布朗宁",
+        "number": 3,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第8轮",
+            "date": "2026-04-25",
+            "time": "58'",
+            "opponent": "武汉三镇",
             "type": "进球"
           }
         ]
@@ -153,6 +213,26 @@
       },
       {
         "rank": 2,
+        "name": "维塔尔",
+        "number": 10,
+        "assists": 2,
+        "details": [
+          {
+            "match": "第8轮",
+            "date": "2026-04-25",
+            "time": "15'",
+            "opponent": "武汉三镇"
+          },
+          {
+            "match": "第8轮",
+            "date": "2026-04-25",
+            "time": "58'",
+            "opponent": "武汉三镇"
+          }
+        ]
+      },
+      {
+        "rank": 3,
         "name": "李帅",
         "number": 32,
         "assists": 2,
@@ -172,7 +252,7 @@
         ]
       },
       {
-        "rank": 3,
+        "rank": 4,
         "name": "杨希",
         "number": 22,
         "assists": 1,
@@ -186,7 +266,7 @@
         ]
       },
       {
-        "rank": 4,
+        "rank": 5,
         "name": "蒯纪闻",
         "number": 47,
         "assists": 1,
@@ -200,7 +280,7 @@
         ]
       },
       {
-        "rank": 5,
+        "rank": 6,
         "name": "安佩姆",
         "number": 17,
         "assists": 1,
@@ -214,7 +294,21 @@
         ]
       },
       {
-        "rank": 6,
+        "rank": 7,
+        "name": "刘祝润",
+        "number": 33,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第8轮",
+            "date": "2026-04-25",
+            "time": "46'",
+            "opponent": "武汉三镇"
+          }
+        ]
+      },
+      {
+        "rank": 8,
         "name": "王燊超",
         "number": 4,
         "assists": 1,
@@ -224,6 +318,20 @@
             "date": "2026-04-21",
             "time": "57'",
             "opponent": "重庆铜梁龙"
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "name": "刘若钒",
+        "number": 26,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第8轮",
+            "date": "2026-04-25",
+            "time": "77'",
+            "opponent": "武汉三镇"
           }
         ]
       }
@@ -458,7 +566,7 @@
         "rank": 1,
         "name": "温钧翔",
         "number": 35,
-        "goals": 2,
+        "goals": 3,
         "details": [
           {
             "match": "第1轮",
@@ -472,6 +580,13 @@
             "date": "2026-03-22",
             "time": "0'",
             "opponent": "上海賽更达",
+            "type": "进球"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-04-25",
+            "time": "0'",
+            "opponent": "山西崇德荣海",
             "type": "进球"
           }
         ]
@@ -480,7 +595,7 @@
         "rank": 2,
         "name": "李圣龙",
         "number": 14,
-        "goals": 2,
+        "goals": 3,
         "details": [
           {
             "match": "第1轮",
@@ -495,6 +610,13 @@
             "time": "0'",
             "opponent": "上海賽更达",
             "type": "进球"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-04-25",
+            "time": "0'",
+            "opponent": "山西崇德荣海",
+            "type": "进球"
           }
         ]
       },
@@ -502,13 +624,20 @@
         "rank": 3,
         "name": "崔峻诚",
         "number": 46,
-        "goals": 1,
+        "goals": 2,
         "details": [
           {
             "match": "第1轮",
             "date": "2026-03-22",
             "time": "0'",
             "opponent": "上海賽更达",
+            "type": "进球"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-04-25",
+            "time": "0'",
+            "opponent": "山西崇德荣海",
             "type": "进球"
           }
         ]
