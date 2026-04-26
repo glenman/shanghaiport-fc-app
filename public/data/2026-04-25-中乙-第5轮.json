@@ -10,41 +10,36 @@
     "city": "太原",
     "result": "0-3",
     "status": "已结束",
-    "attendance": "未知",
-    "referee": "未知",
-    "weather": "未知"
+    "attendance": "498",
+    "referee": "高常起",
+    "weather": "晴"
   },
   "summary": "中乙联赛A组第5轮，山西崇德荣海主场对阵上海海港富盛经开，最终海港B队以3-0客场获胜。比赛中海港B队表现强势，控球率和进攻机会占优，但具体技术统计未知。山西队虽努力防守，但未能抵挡住客队的攻势。",
-  "goals": {
-    "home": {
-      "team": "山西崇德荣海",
-      "goals": []
-    },
-    "away": {
-      "team": "上海海港富盛经开",
-      "goals": [
-      {
-      "minute": 30,
-      "player": "李圣龙",
-      "assist": "",
-      "type": "regular"
-      },
-      {
-      "minute": 34,
-      "player": "温钧翔",
-      "assist": "",
-      "type": "regular"
-      },
-      {
-      "minute": 41,
-      "player": "崔峻诚",
-      "assist": "",
-      "type": "regular"
-      }
-      ]
-    }
-  },
   "highlights": [
+    {
+      "time": "30'",
+      "description": "上海海港富盛经开李圣龙进球",
+      "type": "goal",
+      "team": "away",
+      "player": "李圣龙",
+      "assist": ""
+    },
+    {
+      "time": "34'",
+      "description": "上海海港富盛经开温钧翔进球",
+      "type": "goal",
+      "team": "away",
+      "player": "温钧翔",
+      "assist": ""
+    },
+    {
+      "time": "41'",
+      "description": "上海海港富盛经开崔峻诚进球",
+      "type": "goal",
+      "team": "away",
+      "player": "崔峻诚",
+      "assist": ""
+    },
     {
       "time": "46'",
       "description": "主队换人：王款换上，杨卓燠燠换下；外力·库尔班换上，王捷换下",
