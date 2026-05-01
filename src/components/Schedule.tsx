@@ -64,10 +64,11 @@ const Schedule: React.FC = () => {
       (match.homeTeam && match.homeTeam.toLowerCase().includes(searchTerm.toLowerCase())) ||
       (match.awayTeam && match.awayTeam.toLowerCase().includes(searchTerm.toLowerCase())) ||
       (match.city && match.city.toLowerCase().includes(searchTerm.toLowerCase()));
-    const teamName = activeTab === 'first' ? '上海海港' : '上海海港B队';
+    const isFirstTeam = activeTab === 'first';
+    const teamNames = isFirstTeam ? ['上海海港'] : ['上海海港B队', '上海海港富盛经开'];
     const matchesType = matchType === 'all' || 
-      (matchType === 'home' && match.homeTeam === teamName) ||
-      (matchType === 'away' && match.awayTeam === teamName);
+      (matchType === 'home' && teamNames.includes(match.homeTeam)) ||
+      (matchType === 'away' && teamNames.includes(match.awayTeam));
     return matchesStatus && matchesSearch && matchesType;
   });
 
@@ -265,7 +266,8 @@ const Schedule: React.FC = () => {
                         const getResultStatus = (match: Match) => {
                           if (match.status !== '已结束' || match.result === '-') return '-';
                           const [homeGoals, awayGoals] = match.result.split('-').map(Number);
-                          const isHome = match.homeTeam === '上海海港B队';
+                          const bTeamNames = ['上海海港B队', '上海海港富盛经开'];
+                          const isHome = bTeamNames.includes(match.homeTeam);
                           if (isHome) {
                             if (homeGoals > awayGoals) return '胜';
                             if (homeGoals < awayGoals) return '负';
