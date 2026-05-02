@@ -1,0 +1,570 @@
+{
+  "match_info": {
+    "match_id": "9412ddd4",
+    "date": "2022-09-29",
+    "time": "17:30",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2022",
+      "round": "第18轮"
+    },
+    "venue": {
+      "name": "Changchun's People Stadium",
+      "attendance": 0
+    },
+    "referee": {
+      "main": "Shi Zhenlu",
+      "ar1": "Wang Dexin",
+      "ar2": "Su Xiaofei",
+      "fourth": "Gao Peng",
+      "var": "Toshiyuki Wakaku",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海海港",
+      "full_name": "上海海港足球俱乐部",
+      "score": 3,
+      "score_ht": 0,
+      "formation": "Shanghai Port (5-4-1)",
+      "coach": "Ivan Leko",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "颜骏凌",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 2,
+          "name": "李昂",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 3,
+          "name": "蒋光太",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 4,
+          "name": "王燊超",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "蔡慧康",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 7,
+          "name": "武磊",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 9,
+          "name": "保利尼奥",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "吕文君",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 13,
+          "name": "李申圆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 16,
+          "name": "徐新",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 24,
+          "name": "Matías Vargas",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 12,
+          "name": "陈威",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 22,
+          "name": "杜佳",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 14,
+          "name": "李圣龙",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 15,
+          "name": "李申圆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "于海",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 25,
+          "name": "买提江",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "陈纯新",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "张华晨",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 32,
+          "name": "李帅",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 37,
+          "name": "陈旭黄",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 39,
+          "name": "王淞",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 61,
+          "minute_extra": 0,
+          "player_out": "吕文君",
+          "player_in": ""
+        },
+        {
+          "minute": 67,
+          "minute_extra": 0,
+          "player_out": "武磊",
+          "player_in": ""
+        },
+        {
+          "minute": 68,
+          "minute_extra": 0,
+          "player_out": "徐新",
+          "player_in": ""
+        },
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "player_out": "王燊超",
+          "player_in": ""
+        },
+        {
+          "minute": 81,
+          "minute_extra": 0,
+          "player_out": "Matías Vargas",
+          "player_in": ""
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "Opponent足球俱乐部",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "Chengdu Rongcheng (5-4-1)",
+      "coach": "Seo Jung-won",
+      "captain": "Gan Rui",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 33,
+          "name": "刘祝润",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "恩迪亚耶",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "吕文君",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 12,
+          "name": "陈威",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 15,
+          "name": "李申圆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 17,
+          "name": "陈彬彬",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 20,
+          "name": "杨世元",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "陈纯新",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "张华晨",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 39,
+          "name": "王淞",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 40,
+          "name": "吕坤",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 24,
+          "name": "Xing Yu",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 9,
+          "name": "保利尼奥",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 13,
+          "name": "李申圆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 14,
+          "name": "李圣龙",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 18,
+          "name": "于海",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 19,
+          "name": "Xiang Baixu",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "Meng Junjie",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 22,
+          "name": "杜佳",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 27,
+          "name": "阿布拉汗·哈力克",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 28,
+          "name": "贺惯",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 31,
+          "name": "Yang Ting",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 36,
+          "name": "卡隆",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "player_out": "Saldanha",
+          "player_in": ""
+        },
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "player_out": "Gan Rui",
+          "player_in": ""
+        },
+        {
+          "minute": 60,
+          "minute_extra": 0,
+          "player_out": "Felipe Sousa",
+          "player_in": ""
+        },
+        {
+          "minute": 64,
+          "minute_extra": 0,
+          "player_out": "Wu Guichao",
+          "player_in": ""
+        },
+        {
+          "minute": 79,
+          "minute_extra": 0,
+          "player_out": "Gan Chao",
+          "player_in": ""
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 21,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "吕文君",
+      "player2": "保利尼奥",
+      "description": ""
+    },
+    {
+      "minute": 40,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "武磊",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 42,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Gan Rui",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Felipe Sousa",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Hu Jing",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 51,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "武磊",
+      "player2": "保利尼奥",
+      "description": ""
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Meng Junjie",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 61,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "李申圆",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 64,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Liu Bin",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "李圣龙",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 68,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "张华晨",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Hu Xingyu",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "李帅",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "买提江",
+      "player2": "",
+      "description": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "56%",
+      "away": "44%"
+    },
+    "shots_on_target": {
+      "home": "5",
+      "away": "2"
+    },
+    "shots": {
+      "home": "10",
+      "away": "8"
+    },
+    "shots_accuracy": {
+      "home": "50%",
+      "away": "25%"
+    },
+    "saves": {
+      "home": "2 of 2-100%",
+      "away": "2 of 5-40%"
+    },
+    "fouls": {
+      "home": "9",
+      "away": "9"
+    },
+    "corners": {
+      "home": "1",
+      "away": "2"
+    },
+    "crosses": {
+      "home": "7",
+      "away": "7"
+    },
+    "interceptions": {
+      "home": "7",
+      "away": "13"
+    },
+    "offsides": {
+      "home": "1",
+      "away": "0"
+    },
+    "yellow_cards": {
+      "home": 1,
+      "away": 0
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/9412ddd4/Shanghai-Port-Chengdu-Rongcheng-September-29-2022-Chinese-Super-League",
+    "scraped_at": "2026-05-01T18:40:45.378766",
+    "version": "11.0-2022"
+  }
+}

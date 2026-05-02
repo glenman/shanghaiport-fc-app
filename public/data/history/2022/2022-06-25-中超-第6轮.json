@@ -1,0 +1,576 @@
+{
+  "match_info": {
+    "match_id": "fb554c6c",
+    "date": "2022-06-25",
+    "time": "19:30",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2022",
+      "round": "第6轮"
+    },
+    "venue": {
+      "name": "Puwan Stadium",
+      "attendance": 0
+    },
+    "referee": {
+      "main": "Yige Dai",
+      "ar1": "Tang Chao",
+      "ar2": "Hu Chengjun",
+      "fourth": "Niu Minghui",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海海港",
+      "full_name": "上海海港足球俱乐部",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Wuhan Zall (4-5-1)",
+      "coach": "Li Jinyu",
+      "captain": "Ming Tian",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "颜骏凌",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 2,
+          "name": "李昂",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 5,
+          "name": "张琳芃",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "恩迪亚耶",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "吕文君",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 12,
+          "name": "陈威",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 15,
+          "name": "李申圆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 16,
+          "name": "徐新",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 19,
+          "name": "Hu Jinghang",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 24,
+          "name": "Hu Jiali",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 33,
+          "name": "刘祝润",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 22,
+          "name": "杜佳",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 3,
+          "name": "蒋光太",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "蔡慧康",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 17,
+          "name": "陈彬彬",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 18,
+          "name": "于海",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 20,
+          "name": "杨世元",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "Wang Jingbin",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "陈纯新",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "张华晨",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 32,
+          "name": "李帅",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 37,
+          "name": "陈旭黄",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 39,
+          "name": "王淞",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "player_out": "Liu Shangkun",
+          "player_in": ""
+        },
+        {
+          "minute": 61,
+          "minute_extra": 0,
+          "player_out": "Asmir Kajević",
+          "player_in": ""
+        },
+        {
+          "minute": 70,
+          "minute_extra": 0,
+          "player_out": "Hu Jiali",
+          "player_in": ""
+        },
+        {
+          "minute": 84,
+          "minute_extra": 0,
+          "player_out": "Bruno Viana",
+          "player_in": ""
+        },
+        {
+          "minute": 84,
+          "minute_extra": 0,
+          "player_out": "Hu Jinghang",
+          "player_in": ""
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "Opponent足球俱乐部",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Shanghai Port (3-4-3)",
+      "coach": "Ivan Leko",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "颜骏凌",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 2,
+          "name": "李昂",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 4,
+          "name": "王燊超",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 5,
+          "name": "张琳芃",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 9,
+          "name": "保利尼奥",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "恩迪亚耶",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "吕文君",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 16,
+          "name": "徐新",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 25,
+          "name": "买提江",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 27,
+          "name": "阿布拉汗·哈力克",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 39,
+          "name": "王淞",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 22,
+          "name": "杜佳",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 31,
+          "name": "奚安杰",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "蔡慧康",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 14,
+          "name": "李圣龙",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 15,
+          "name": "李申圆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 20,
+          "name": "杨世元",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "于海",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "陈纯新",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 28,
+          "name": "贺惯",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "张华晨",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 33,
+          "name": "刘祝润",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 37,
+          "name": "陈旭黄",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "player_out": "徐新",
+          "player_in": ""
+        },
+        {
+          "minute": 79,
+          "minute_extra": 0,
+          "player_out": "Liu Baiyang",
+          "player_in": ""
+        },
+        {
+          "minute": 79,
+          "minute_extra": 0,
+          "player_out": "吕文君",
+          "player_in": ""
+        },
+        {
+          "minute": 79,
+          "minute_extra": 0,
+          "player_out": "杨世元",
+          "player_in": ""
+        },
+        {
+          "minute": 89,
+          "minute_extra": 0,
+          "player_out": "Feng Jing",
+          "player_in": ""
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 11,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "徐新",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Chen Yuhao",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "杨世元",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 54,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "杨世元",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 61,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Huajun",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Bruno Viana",
+      "player2": "Chen Yuhao",
+      "description": ""
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Nie Aoshuang",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "刘祝润",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "李申圆",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "张华晨",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "恩迪亚耶",
+      "player2": "刘祝润",
+      "description": ""
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Chao",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wang Jingbin",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "于海",
+      "player2": "",
+      "description": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "31%",
+      "away": "69%"
+    },
+    "shots_on_target": {
+      "home": "4",
+      "away": "4"
+    },
+    "shots": {
+      "home": "11",
+      "away": "14"
+    },
+    "shots_accuracy": {
+      "home": "36%",
+      "away": "29%"
+    },
+    "saves": {
+      "home": "2 of 4-50%",
+      "away": "3 of 4-75%"
+    },
+    "fouls": {
+      "home": "11",
+      "away": "12"
+    },
+    "corners": {
+      "home": "1",
+      "away": "8"
+    },
+    "crosses": {
+      "home": "8",
+      "away": "20"
+    },
+    "interceptions": {
+      "home": "5",
+      "away": "10"
+    },
+    "offsides": {
+      "home": "0",
+      "away": "2"
+    },
+    "yellow_cards": {
+      "home": 1,
+      "away": 0
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/fb554c6c/Wuhan-Zall-Shanghai-Port-June-25-2022-Chinese-Super-League",
+    "scraped_at": "2026-05-01T18:37:40.477829",
+    "version": "11.0-2022"
+  }
+}

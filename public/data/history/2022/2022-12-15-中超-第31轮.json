@@ -1,0 +1,492 @@
+{
+  "match_info": {
+    "match_id": "c3612cea",
+    "date": "2022-12-15",
+    "time": "19:30",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2022",
+      "round": "第31轮"
+    },
+    "venue": {
+      "name": "Huitang Stadium",
+      "attendance": 1680
+    },
+    "referee": {
+      "main": "Niu Minghui",
+      "ar1": "Tang Chao",
+      "ar2": "Bo Jiang",
+      "fourth": "Kai He",
+      "var": "Zhang Lei",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海海港",
+      "full_name": "上海海港足球俱乐部",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "Meizhou Hakka (3-4-3)",
+      "coach": "Milan Ristić",
+      "captain": "Shi Liang",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 22,
+          "name": "杜佳",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 2,
+          "name": "李昂",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "蔡慧康",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "恩迪亚耶",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "吕文君",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 13,
+          "name": "李申圆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 17,
+          "name": "陈彬彬",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "Wang Wei",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 25,
+          "name": "买提江",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 28,
+          "name": "贺惯",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "张华晨",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "颜骏凌",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 35,
+          "name": "杨子涵",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 3,
+          "name": "蒋光太",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 7,
+          "name": "武磊",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 8,
+          "name": "奥斯卡",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 12,
+          "name": "陈威",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 16,
+          "name": "徐新",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 18,
+          "name": "于海",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 19,
+          "name": "Yang Yilin",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 23,
+          "name": "傅欢",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 32,
+          "name": "李帅",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 37,
+          "name": "陈旭黄",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "player_out": "Wang Wei",
+          "player_in": ""
+        },
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "player_out": "Cai Haochang",
+          "player_in": ""
+        },
+        {
+          "minute": 81,
+          "minute_extra": 0,
+          "player_out": "Chisom Egbuchulam",
+          "player_in": ""
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "player_out": "Yang Yihu",
+          "player_in": ""
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "Opponent足球俱乐部",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Shanghai Port (5-4-1)",
+      "coach": "Sun Xiang",
+      "captain": "Zhang Linpeng",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 12,
+          "name": "陈威",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 3,
+          "name": "蒋光太",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 5,
+          "name": "张琳芃",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "恩迪亚耶",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "于海",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 24,
+          "name": "Matías Vargas",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 34,
+          "name": "赵申澳",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 36,
+          "name": "卡隆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 43,
+          "name": "梁锟",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 47,
+          "name": "赵申澳",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 68,
+          "name": "杨子涵",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 31,
+          "name": "奚安杰",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 41,
+          "name": "奚安杰",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 42,
+          "name": "Xiang Rongjun",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 51,
+          "name": "王玉龙",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 52,
+          "name": "汤宇璇",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 55,
+          "name": "王淞",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 66,
+          "name": "黎德明",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 51,
+          "minute_extra": 0,
+          "player_out": "王逸伟",
+          "player_in": ""
+        },
+        {
+          "minute": 61,
+          "minute_extra": 0,
+          "player_out": "赵申澳",
+          "player_in": ""
+        },
+        {
+          "minute": 61,
+          "minute_extra": 0,
+          "player_out": "杨子涵",
+          "player_in": ""
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Junfeng",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Chen Guokang",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 51,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Xiang Rongjun",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 61,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "黎德明",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 61,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "王淞",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 62,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "黎德明",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Li Junfeng",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Yang Chaosheng",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "李昂",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 2,
+      "type": "goal",
+      "team": "away",
+      "player": "黎德明",
+      "player2": "卡隆",
+      "description": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "55%",
+      "away": "45%"
+    },
+    "shots_on_target": {
+      "home": "1",
+      "away": "4"
+    },
+    "shots": {
+      "home": "7",
+      "away": "15"
+    },
+    "shots_accuracy": {
+      "home": "14%",
+      "away": "27%"
+    },
+    "saves": {
+      "home": "3 of 4-75%",
+      "away": "1 of 1-100%"
+    },
+    "fouls": {
+      "home": "8",
+      "away": "8"
+    },
+    "corners": {
+      "home": "4",
+      "away": "14"
+    },
+    "crosses": {
+      "home": "19",
+      "away": "29"
+    },
+    "interceptions": {
+      "home": "4",
+      "away": "11"
+    },
+    "offsides": {
+      "home": "0",
+      "away": "1"
+    },
+    "yellow_cards": {
+      "home": 1,
+      "away": 1
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/c3612cea/Meizhou-Hakka-Shanghai-Port-December-15-2022-Chinese-Super-League",
+    "scraped_at": "2026-05-01T18:44:06.264383",
+    "version": "11.0-2022"
+  }
+}
