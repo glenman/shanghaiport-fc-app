@@ -1,0 +1,417 @@
+{
+  "match_info": {
+    "match_id": "d1c8091b",
+    "date": "2019-04-28",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 7"
+    },
+    "venue": {
+      "name": "Workers' Stadium",
+      "attendance": 37182
+    },
+    "referee": {
+      "main": "Shi Zhenlu",
+      "ar1": "Zhong Yong",
+      "ar2": "Zhi Ye",
+      "fourth": "Mai Pan",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "Beijing Guoan (4-2-3-1)",
+      "coach": "Roger Schmidt",
+      "captain": "Yang Zhi",
+      "lineup": [
+        {
+          "number": "22",
+          "name": "Yang Zhi",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Yu Yang",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Li Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Ralf",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Jonathan Soriano",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Zhang Xizhe",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Song Boxuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Renato Augusto",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "Jiang Tao",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Ba Dun",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Lei Tenglong",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "1",
+          "name": "Hou Sen",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Zhang Chiming",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Zhu Chaoqing",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Ma Fuyu",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Yu Dabao",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Zhang Xinxin",
+          "country": "Unknown"
+        },
+        {
+          "number": "31",
+          "name": "Zhao Hejing",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 45,
+          "minute_extra": 1,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhao Hejing",
+          "player2": "",
+          "player_out": "Jiang Tao"
+        },
+        {
+          "minute": 53,
+          "minute_extra": 1,
+          "type": "substitution",
+          "team": "home",
+          "player": "Yu Dabao",
+          "player2": "",
+          "player_out": "Song Boxuan"
+        },
+        {
+          "minute": 71,
+          "minute_extra": 1,
+          "type": "substitution",
+          "team": "home",
+          "player": "Ma Fuyu",
+          "player2": "",
+          "player_out": "Ba Dun"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-2-3-1)",
+      "coach": "André Villas-Boas",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Wei Shihao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Zheng Zhiyun",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 60,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lü Wenjun",
+          "player2": "",
+          "player_out": "Wei Shihao"
+        },
+        {
+          "minute": 81,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wei Zhen",
+          "player2": "",
+          "player_out": "Wang Shenchao"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 5,
+          "type": "substitution",
+          "team": "away",
+          "player": "Yu Hai",
+          "player2": "",
+          "player_out": "Wu Lei"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 31,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Oscar",
+      "player2": "Hulk",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 37,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zhang Xizhe",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 1,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhao Hejing",
+      "player2": "",
+      "player_out": "Jiang Tao"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 2,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 2,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Yu Yang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Wei Shihao",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 53,
+      "minute_extra": 1,
+      "type": "substitution",
+      "team": "home",
+      "player": "Yu Dabao",
+      "player2": "",
+      "player_out": "Song Boxuan"
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "player_out": "Wei Shihao"
+    },
+    {
+      "minute": 71,
+      "minute_extra": 1,
+      "type": "substitution",
+      "team": "home",
+      "player": "Ma Fuyu",
+      "player2": "",
+      "player_out": "Ba Dun"
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wei Zhen",
+      "player2": "",
+      "player_out": "Wang Shenchao"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 5,
+      "type": "substitution",
+      "team": "away",
+      "player": "Yu Hai",
+      "player2": "",
+      "player_out": "Wu Lei"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 7,
+      "type": "red_card",
+      "team": "home",
+      "player": "Zhao Hejing",
+      "player2": "",
+      "player_out": ""
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 2,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 1
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/d1c8091b/Tianjin-TEDA-Shanghai-SIPG-April-28-2019-Chinese-Super-League",
+    "scraped_at": "2026-05-02T11:02:35.338474",
+    "version": "11.0-2019"
+  }
+}

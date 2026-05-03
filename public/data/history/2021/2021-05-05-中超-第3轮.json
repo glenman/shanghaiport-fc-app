@@ -6,10 +6,10 @@
     "competition": {
       "name": "中国足球协会超级联赛",
       "season": "2021",
-      "round": "第None轮"
+      "round": "第3轮"
     },
     "venue": {
-      "name": "Suzhou Sports Center Stadium",
+      "name": "待补充",
       "attendance": 0
     },
     "referee": {
@@ -27,7 +27,7 @@
       "full_name": "上海海港足球俱乐部",
       "score": 1,
       "score_ht": 0,
-      "formation": "Shanghai Shen (3-4-3)",
+      "formation": "(3-4-3)",
       "coach": "Choi Kanghee",
       "captain": "Giovanni Moreno",
       "lineup": [
@@ -177,42 +177,42 @@
           "minute": 57,
           "minute_extra": 0,
           "player_out": "Kim Shin-wook",
-          "player_in": ""
+          "player_in": "Christian Bassogog"
         },
         {
           "minute": 64,
           "minute_extra": 0,
           "player_out": "Adrian Mierzejewski",
-          "player_in": ""
+          "player_in": "Cao Yunding"
         },
         {
           "minute": 72,
           "minute_extra": 0,
           "player_out": "Peng Xinli",
-          "player_in": ""
+          "player_in": "Yu Hanchao"
         },
         {
           "minute": 72,
           "minute_extra": 0,
           "player_out": "Zhao Mingjian",
-          "player_in": ""
+          "player_in": "Bi Jinhao"
         },
         {
           "minute": 87,
           "minute_extra": 0,
           "player_out": "Aidi Fulangxisi",
-          "player_in": ""
+          "player_in": "Yang Xu"
         }
       ]
     },
     "away": {
-      "name": "Opponent",
-      "full_name": "Opponent足球俱乐部",
+      "name": "上海海港",
+      "full_name": "上海海港足球俱乐部",
       "score": 1,
       "score_ht": 0,
-      "formation": "Shanghai Port (3-4-1-2)",
-      "coach": "Ivan Leko",
-      "captain": "Oscar",
+      "formation": "(3-4-1-2)",
+      "coach": "伊万·莱科",
+      "captain": "奥斯卡",
       "lineup": [
         {
           "position": "MF",
@@ -360,19 +360,19 @@
           "minute": 74,
           "minute_extra": 0,
           "player_out": "马尔科·阿瑙托维奇",
-          "player_in": ""
+          "player_in": "李圣龙"
         },
         {
           "minute": 79,
           "minute_extra": 0,
           "player_out": "里卡多·洛佩斯",
-          "player_in": ""
+          "player_in": "买提江"
         },
         {
           "minute": 90,
           "minute_extra": 1,
           "player_out": "阿隆·穆伊",
-          "player_in": ""
+          "player_in": "于睿"
         }
       ]
     }
@@ -402,7 +402,7 @@
       "type": "substitution",
       "team": "home",
       "player": "Christian Bassogog",
-      "player2": "",
+      "player2": "Kim Shin-wook",
       "description": ""
     },
     {
@@ -420,7 +420,7 @@
       "type": "substitution",
       "team": "home",
       "player": "Cao Yunding",
-      "player2": "",
+      "player2": "Adrian Mierzejewski",
       "description": ""
     },
     {
@@ -429,7 +429,7 @@
       "type": "substitution",
       "team": "home",
       "player": "Yu Hanchao",
-      "player2": "",
+      "player2": "Peng Xinli",
       "description": ""
     },
     {
@@ -438,7 +438,7 @@
       "type": "substitution",
       "team": "home",
       "player": "Bi Jinhao",
-      "player2": "",
+      "player2": "Zhao Mingjian",
       "description": ""
     },
     {
@@ -465,7 +465,7 @@
       "type": "substitution",
       "team": "away",
       "player": "李圣龙",
-      "player2": "",
+      "player2": "马尔科·阿瑙托维奇",
       "description": ""
     },
     {
@@ -483,7 +483,7 @@
       "type": "substitution",
       "team": "away",
       "player": "买提江",
-      "player2": "",
+      "player2": "里卡多·洛佩斯",
       "description": ""
     },
     {
@@ -501,7 +501,7 @@
       "type": "substitution",
       "team": "home",
       "player": "Yang Xu",
-      "player2": "",
+      "player2": "Aidi Fulangxisi",
       "description": ""
     },
     {
@@ -510,7 +510,7 @@
       "type": "substitution",
       "team": "away",
       "player": "于睿",
-      "player2": "",
+      "player2": "阿隆·穆伊",
       "description": ""
     }
   ],

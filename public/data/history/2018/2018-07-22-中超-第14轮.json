@@ -1,0 +1,477 @@
+{
+  "match_info": {
+    "match_id": "d981ec51",
+    "date": "2018-07-22",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 14"
+    },
+    "venue": {
+      "name": "Shanghai Stadium",
+      "attendance": 19125
+    },
+    "referee": {
+      "main": "Gu Chunhan",
+      "ar1": "Cao Yi",
+      "ar2": "Shen Pengxiang",
+      "fourth": "Shunqi Tang",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 3,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (3-1-4-2)",
+      "coach": "Vítor Pereira",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Elkeson",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Yang Shiyuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "Chen Binbin",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "34",
+          "name": "Chen Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Hu Jinghang",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "Lei Wenjie",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Li Shenglong",
+          "player2": "",
+          "player_out": "Cai Huikang"
+        },
+        {
+          "minute": 70,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Hu Jinghang",
+          "player2": "",
+          "player_out": "Elkeson"
+        },
+        {
+          "minute": 76,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lei Wenjie",
+          "player2": "",
+          "player_out": "Odil Ahmedov"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "Beijing Renhe (4-4-2)",
+      "coach": "Aleksandar Stanojević",
+      "captain": "Zhang Lie",
+      "lineup": [
+        {
+          "number": "12",
+          "name": "Zhang Lie",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Luo Xin",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Wan Houliang",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Makhete Diop",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Sone Aluko",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Wang Xuanhong",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Chen Jie",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Liu Jian",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Cao Yongjing",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Zhang Yufeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Nizamdin Ependi",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "23",
+          "name": "Mou Pengfei",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Zhang Wenzhao",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Sun Weizhe",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Jin Hui",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "Li Chenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Feng Renliang",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "Yang Yihu",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 57,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zhang Wenzhao",
+          "player2": "",
+          "player_out": "Cao Yongjing"
+        },
+        {
+          "minute": 73,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Feng Renliang",
+          "player2": "",
+          "player_out": "Nizamdin Ependi"
+        },
+        {
+          "minute": 85,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Sun Weizhe",
+          "player2": "",
+          "player_out": "Zhang Yufeng"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 11,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Liu Jian",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 12,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Cai Huikang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Shenglong",
+      "player2": "",
+      "player_out": "Cai Huikang"
+    },
+    {
+      "minute": 52,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zhang Yufeng",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Oscar",
+      "player2": "Wang Shenchao",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 57,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhang Wenzhao",
+      "player2": "",
+      "player_out": "Cao Yongjing"
+    },
+    {
+      "minute": 62,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Wang Xuanhong",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 63,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Yang Shiyuan",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Li Shenglong",
+      "player2": "Wang Shenchao",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Elkeson",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Hu Jinghang",
+      "player2": "",
+      "player_out": "Elkeson"
+    },
+    {
+      "minute": 73,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Feng Renliang",
+      "player2": "",
+      "player_out": "Nizamdin Ependi"
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lei Wenjie",
+      "player2": "",
+      "player_out": "Odil Ahmedov"
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Sun Weizhe",
+      "player2": "",
+      "player_out": "Zhang Yufeng"
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "57%",
+      "away": "43%"
+    },
+    "shots_on_target": {
+      "home": "4",
+      "away": "2"
+    },
+    "shots": {
+      "home": "10",
+      "away": "14"
+    },
+    "shots_accuracy": {
+      "home": "40%",
+      "away": "14%"
+    },
+    "saves": {
+      "home": "2 of 2-100%",
+      "away": "1 of 4-25%"
+    },
+    "fouls": {
+      "home": "19",
+      "away": "18"
+    },
+    "corners": {
+      "home": "3",
+      "away": "5"
+    },
+    "crosses": {
+      "home": "21",
+      "away": "17"
+    },
+    "interceptions": {
+      "home": "10",
+      "away": "4"
+    },
+    "offsides": {
+      "home": "0",
+      "away": "1"
+    },
+    "yellow_cards": {
+      "home": 3,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/d981ec51/Shenzhen-FC-Shanghai-SIPG-July-22-2018-Chinese-Super-League",
+    "scraped_at": "2026-05-02T09:27:54.408734",
+    "version": "11.0-2018"
+  }
+}

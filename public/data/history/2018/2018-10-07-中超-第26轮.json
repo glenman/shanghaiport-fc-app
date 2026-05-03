@@ -1,0 +1,458 @@
+{
+  "match_info": {
+    "match_id": "3350f4b1",
+    "date": "2018-10-07",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 26"
+    },
+    "venue": {
+      "name": "Workers' Stadium",
+      "attendance": 51810
+    },
+    "referee": {
+      "main": "Damir Skomina",
+      "ar1": "Wang Dexin",
+      "ar2": "Ma Ji",
+      "fourth": "Shunqi Tang",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "Beijing Guoan (4-4-2)",
+      "coach": "Bruno Génésio",
+      "captain": "Yu Dabao",
+      "lineup": [
+        {
+          "number": "14",
+          "name": "Zou Dehai",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Kim Min-jae",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Li Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Renato Augusto",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "John Hou Sæter",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Zhang Yuning",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Zhang Xizhe",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Fernando",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Yu Dabao",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Lü Peng",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Wang Gang",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "1",
+          "name": "Hou Sen",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Yu Yang",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Chi Zhongguo",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Cédric Bakambu",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Jin Taiyan",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Nico Yennaris",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Ba Dun",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 59,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Cédric Bakambu",
+          "player2": "",
+          "player_out": "Fernando"
+        },
+        {
+          "minute": 70,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Ba Dun",
+          "player2": "",
+          "player_out": "John Hou Sæter"
+        },
+        {
+          "minute": 84,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Jin Taiyan",
+          "player2": "",
+          "player_out": "Li Lei"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "Vítor Pereira",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "12",
+          "name": "Li Haowen",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "Chen Binbin",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 59,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Chen Binbin",
+          "player2": "",
+          "player_out": "Hulk"
+        },
+        {
+          "minute": 85,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zhang Wei",
+          "player2": "",
+          "player_out": "Yu Hai"
+        },
+        {
+          "minute": 87,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wei Zhen",
+          "player2": "",
+          "player_out": "He Guan"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 12,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 24,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Yu Dabao",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 28,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Cai Huikang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 49,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Li Shenglong",
+      "player2": "Lü Wenjun",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 59,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Cédric Bakambu",
+      "player2": "",
+      "player_out": "Fernando"
+    },
+    {
+      "minute": 59,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Chen Binbin",
+      "player2": "",
+      "player_out": "Hulk"
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Odil Ahmedov",
+      "player2": "Chen Binbin",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Ba Dun",
+      "player2": "",
+      "player_out": "John Hou Sæter"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zhang Yuning",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Jin Taiyan",
+      "player2": "",
+      "player_out": "Li Lei"
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhang Wei",
+      "player2": "",
+      "player_out": "Yu Hai"
+    },
+    {
+      "minute": 87,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wei Zhen",
+      "player2": "",
+      "player_out": "He Guan"
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "62%",
+      "away": "38%"
+    },
+    "shots_on_target": {
+      "home": "2",
+      "away": "3"
+    },
+    "shots": {
+      "home": "11",
+      "away": "6"
+    },
+    "shots_accuracy": {
+      "home": "18%",
+      "away": "50%"
+    },
+    "saves": {
+      "home": "1 of 3-33%",
+      "away": "2 of 2-100%"
+    },
+    "fouls": {
+      "home": "8",
+      "away": "15"
+    },
+    "corners": {
+      "home": "6",
+      "away": "4"
+    },
+    "crosses": {
+      "home": "23",
+      "away": "16"
+    },
+    "interceptions": {
+      "home": "12",
+      "away": "15"
+    },
+    "offsides": {
+      "home": "3",
+      "away": "2"
+    },
+    "yellow_cards": {
+      "home": 2,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/3350f4b1/Guangzhou-RandF-Shanghai-SIPG-October-7-2018-Chinese-Super-League",
+    "scraped_at": "2026-05-02T09:31:04.651676",
+    "version": "11.0-2018"
+  }
+}

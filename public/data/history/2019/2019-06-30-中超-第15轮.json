@@ -1,0 +1,439 @@
+{
+  "match_info": {
+    "match_id": "774e686f",
+    "date": "2019-06-30",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 15"
+    },
+    "venue": {
+      "name": "Shenzhen Universiade Sports Centre",
+      "attendance": 15712
+    },
+    "referee": {
+      "main": "Zhang Lei",
+      "ar1": "Wang Dexin",
+      "ar2": "Hu Chengjun",
+      "fourth": "Wang Zhe",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "Shenzhen (5-3-2)",
+      "coach": "López Caro",
+      "captain": "Ge Zhen",
+      "lineup": [
+        {
+          "number": "23",
+          "name": "Guo Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Lü Haidong",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Ole Selnæs",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Zhang Yuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Cheikh M'Bengue",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Ge Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Wang Peng",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Jin Qiang",
+          "country": "Unknown"
+        },
+        {
+          "number": "31",
+          "name": "Li Yuanyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "32",
+          "name": "Chen Fujun",
+          "country": "Unknown"
+        },
+        {
+          "number": "39",
+          "name": "Gan Chao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "16",
+          "name": "Zhou Yajun",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wang Xinbo",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Xu Yang",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Cai Jingyuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Li Jinqing",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Zu Pengchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Wang Dalong",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 17,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Xu Yang",
+          "player2": "",
+          "player_out": "Chen Fujun"
+        },
+        {
+          "minute": 63,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zu Pengchao",
+          "player2": "",
+          "player_out": "Gan Chao"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 2,
+          "type": "substitution",
+          "team": "home",
+          "player": "Li Jinqing",
+          "player2": "",
+          "player_out": "Zu Pengchao"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (3-4-3)",
+      "coach": "Vítor Pereira",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Yang Shiyuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "Chen Binbin",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "34",
+          "name": "Chen Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "12",
+          "name": "Li Haowen",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Hu Jinghang",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "Lei Wenjie",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zhang Wei",
+          "player2": "",
+          "player_out": "Chen Binbin"
+        },
+        {
+          "minute": 70,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lin Chuangyi",
+          "player2": "",
+          "player_out": "Hulk"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 2,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lei Wenjie",
+          "player2": "",
+          "player_out": "Wei Zhen"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 17,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Xu Yang",
+      "player2": "",
+      "player_out": "Chen Fujun"
+    },
+    {
+      "minute": 43,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Yang Shiyuan",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhang Wei",
+      "player2": "",
+      "player_out": "Chen Binbin"
+    },
+    {
+      "minute": 49,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Oscar",
+      "player2": "Zhang Wei",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 63,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zu Pengchao",
+      "player2": "",
+      "player_out": "Gan Chao"
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lin Chuangyi",
+      "player2": "",
+      "player_out": "Hulk"
+    },
+    {
+      "minute": 77,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Jin Qiang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 2,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Jinqing",
+      "player2": "",
+      "player_out": "Zu Pengchao"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 2,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lei Wenjie",
+      "player2": "",
+      "player_out": "Wei Zhen"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 9,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zhang Yuan",
+      "player2": "",
+      "player_out": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "54%",
+      "away": "46%"
+    },
+    "shots_on_target": {
+      "home": "1",
+      "away": "5"
+    },
+    "shots": {
+      "home": "15",
+      "away": "8"
+    },
+    "shots_accuracy": {
+      "home": "7%",
+      "away": "63%"
+    },
+    "saves": {
+      "home": "3 of 5-60%",
+      "away": "1 of 1-100%"
+    },
+    "fouls": {
+      "home": "10",
+      "away": "11"
+    },
+    "corners": {
+      "home": "9",
+      "away": "3"
+    },
+    "crosses": {
+      "home": "31",
+      "away": "8"
+    },
+    "interceptions": {
+      "home": "9",
+      "away": "6"
+    },
+    "offsides": {
+      "home": "1",
+      "away": "0"
+    },
+    "yellow_cards": {
+      "home": 1,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/774e686f/Shenzhen-FC-Shanghai-SIPG-June-30-2019-Chinese-Super-League",
+    "scraped_at": "2026-05-02T11:04:28.700508",
+    "version": "11.0-2019"
+  }
+}

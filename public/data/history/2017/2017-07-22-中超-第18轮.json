@@ -1,0 +1,420 @@
+{
+  "match_info": {
+    "match_id": "9b8bb9a5",
+    "date": "2017-07-22",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2017",
+      "round": "Matchweek 18"
+    },
+    "venue": {
+      "name": "Shanghai Stadium",
+      "attendance": 46717
+    },
+    "referee": {
+      "main": "Huang Yejun",
+      "ar1": "Xiangyun Song",
+      "ar2": "Xu Xianghui",
+      "fourth": "Haitao Luo",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "André Villas-Boas",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Elkeson",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Zhang Huachen",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Wang Jiajie",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Zheng Zhiyun",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 20,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lin Chuangyi",
+          "player2": "",
+          "player_out": "Zhang Huachen"
+        },
+        {
+          "minute": 73,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lü Wenjun",
+          "player2": "",
+          "player_out": "Zhang Wei"
+        },
+        {
+          "minute": 84,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Yu Hai",
+          "player2": "",
+          "player_out": "Lin Chuangyi"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Guangzhou Evg (4-2-3-1)",
+      "coach": "Luiz Felipe Scolari",
+      "captain": "Paulinho",
+      "lineup": [
+        {
+          "number": "19",
+          "name": "Zeng Cheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Mei Fang",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Zhang Linpeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Feng Xiaoting",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Paulinho",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Ricardo Goulart",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Huang Bowen",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Yu Hanchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Zou Zheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Gao Lin",
+          "country": "Unknown"
+        },
+        {
+          "number": "38",
+          "name": "Wen Jiabao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "32",
+          "name": "Liu Dianzuo",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Liao Lisheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Alan Carvalho",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Zhang Wenzhao",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Liu Jian",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "Kim Young-gwon",
+          "country": "Unknown"
+        },
+        {
+          "number": "34",
+          "name": "Feng Boxuan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 24,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Alan Carvalho",
+          "player2": "",
+          "player_out": "Wen Jiabao"
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Liu Jian",
+          "player2": "",
+          "player_out": "Gao Lin"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 20,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lin Chuangyi",
+      "player2": "",
+      "player_out": "Zhang Huachen"
+    },
+    {
+      "minute": 24,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Alan Carvalho",
+      "player2": "",
+      "player_out": "Wen Jiabao"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 1,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Elkeson",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 51,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Alan Carvalho",
+      "player2": "Gao Lin",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 58,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "Elkeson",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 68,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zhang Wei",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Yu Hanchao",
+      "player2": "Gao Lin",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 73,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "player_out": "Zhang Wei"
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Yu Hai",
+      "player2": "",
+      "player_out": "Lin Chuangyi"
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "Hulk",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Liu Jian",
+      "player2": "",
+      "player_out": "Gao Lin"
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Feng Xiaoting",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 4,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zou Zheng",
+      "player2": "",
+      "player_out": ""
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 2,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/9b8bb9a5/Shanghai-SIPG-Guangzhou-Evergrande-Taobao-July-22-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T11:00:49.052058",
+    "version": "11.0-2017"
+  }
+}

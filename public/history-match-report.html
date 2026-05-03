@@ -626,31 +626,22 @@
               
               console.log('文件路径:', filePath);
               
-              // 并行加载比赛数据和球员数据
-              const [matchResponse, playersResponse] = await Promise.all([
-                fetch(filePath),
-                fetch('data/history/2025/players.json')
-              ]);
-              
+              const matchResponse = await fetch(filePath);
+
               if (!matchResponse.ok) {
                 throw new Error('找不到对应的比赛报告');
               }
-              
+
               const matchData = await matchResponse.json();
-              let playersData = null;
-              
-              if (playersResponse.ok) {
-                playersData = await playersResponse.json();
-              }
-              
-              renderMatchReport(matchData, playersData);
+
+              renderMatchReport(matchData);
             } catch (error) {
               document.getElementById('content').innerHTML = `<div class="card"><p>加载比赛数据失败: ${error.message}</p></div>`;
             }
           }
 
           // 显示比赛数据
-          function renderMatchReport(data, playersData) {
+          function renderMatchReport(data) {
             const matchInfo = data.match_info;
             const homeTeam = data.teams.home;
             const awayTeam = data.teams.away;
@@ -663,7 +654,7 @@
 
             html += renderScoreboard(data);
             html += renderGoalRecords(data);
-            html += renderLineups(data, playersData);
+            html += renderLineups(data);
             html += renderStatistics(data);
             html += renderCards(data);
 
@@ -830,7 +821,7 @@
             return html;
           }
 
-          function renderLineups(data, playersData) {
+          function renderLineups(data) {
             const homeTeam = data.teams.home;
             const awayTeam = data.teams.away;
             
@@ -864,14 +855,7 @@
               if (player.position) {
                 return player.position;
               }
-              
-              if (playersData && playersData.playersByNumber) {
-                const playerInfo = playersData.playersByNumber[player.number];
-                if (playerInfo && playerInfo.中文位置) {
-                  return playerInfo.中文位置;
-                }
-              }
-              
+
               return null;
             }
 
@@ -928,7 +912,7 @@
                       const timeDisplay = minuteExtra ? `${minute}+${minuteExtra}'` : `${minute}'`;
                       return `
                         <li>
-                          <span><span class="player-number">${timeDisplay}</span><span class="player-name">${event.player_out} <span style="color: #dc3545; font-weight: bold;">↓</span> <span style="color: #28a745; font-weight: bold;">↑</span> ${event.player}</span></span>
+                          <span><span class="player-number">${timeDisplay}</span><span class="player-name">${event.player2 || event.player_out} <span style="color: #dc3545; font-weight: bold;">↓</span> <span style="color: #28a745; font-weight: bold;">↑</span> ${event.player}</span></span>
                           <span class="player-position">换人</span>
                         </li>
                       `;

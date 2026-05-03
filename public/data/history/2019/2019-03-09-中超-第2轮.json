@@ -1,0 +1,447 @@
+{
+  "match_info": {
+    "match_id": "64b4d874",
+    "date": "2019-03-09",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 2"
+    },
+    "venue": {
+      "name": "Qinhuangdao Olympic Sports Center Stadium",
+      "attendance": 18228
+    },
+    "referee": {
+      "main": "Shi Zhenlu",
+      "ar1": "Cao Yi",
+      "ar2": "Yue Yu",
+      "fourth": "Haitao Luo",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Hebei Fortune (4-2-3-1)",
+      "coach": "Manuel Pellegrini",
+      "captain": "Zhang Chengdong",
+      "lineup": [
+        {
+          "number": "19",
+          "name": "Yang Cheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhao Mingjian",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Zhao Yuhao",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Luo Senwen",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Kim Ju-young",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Yin Hongbo",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Aloísio dos Santos Gonçalves",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Ezequiel Lavezzi",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "Zhang Chengdong",
+          "country": "Unknown"
+        },
+        {
+          "number": "32",
+          "name": "Ding Haifeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Gao Zhunyi",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "1",
+          "name": "Ou Ya",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Jin Yangyang",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Dong Xuesheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Gui Hong",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Zhu Haiwei",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Zhang Lifeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Li Hang",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 78,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Li Hang",
+          "player2": "",
+          "player_out": "Yin Hongbo"
+        },
+        {
+          "minute": 86,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Gui Hong",
+          "player2": "",
+          "player_out": "Aloísio dos Santos Gonçalves"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 3,
+          "type": "substitution",
+          "team": "home",
+          "player": "Jin Yangyang",
+          "player2": "",
+          "player_out": "Luo Senwen"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (3-4-3)",
+      "coach": "André Villas-Boas",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Elkeson",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Gao Haisheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Zheng Zhiyun",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Wei Shihao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 75,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Cai Huikang",
+          "player2": "",
+          "player_out": "Zhang Yi"
+        },
+        {
+          "minute": 75,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zheng Zhiyun",
+          "player2": "",
+          "player_out": "Yu Hai"
+        },
+        {
+          "minute": 78,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wei Shihao",
+          "player2": "",
+          "player_out": "Fu Huan"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 7,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Elkeson",
+      "player2": "Hulk",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 2,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zhao Mingjian",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Fu Huan",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Ezequiel Lavezzi",
+      "player2": "Yin Hongbo",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Ezequiel Lavezzi",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 74,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Gao Zhunyi",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Cai Huikang",
+      "player2": "",
+      "player_out": "Zhang Yi"
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zheng Zhiyun",
+      "player2": "",
+      "player_out": "Yu Hai"
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wei Shihao",
+      "player2": "",
+      "player_out": "Fu Huan"
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Hang",
+      "player2": "",
+      "player_out": "Yin Hongbo"
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Yan Junling",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Wei Zhen",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Gui Hong",
+      "player2": "",
+      "player_out": "Aloísio dos Santos Gonçalves"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 1,
+      "type": "goal",
+      "team": "away",
+      "player": "He Guan",
+      "player2": "Hulk",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "substitution",
+      "team": "home",
+      "player": "Jin Yangyang",
+      "player2": "",
+      "player_out": "Luo Senwen"
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 3,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/64b4d874/Shanghai-SIPG-Jiangsu-Suning-March-9-2019-Chinese-Super-League",
+    "scraped_at": "2026-05-02T11:01:24.420803",
+    "version": "11.0-2019"
+  }
+}

@@ -1,0 +1,494 @@
+{
+  "match_info": {
+    "match_id": "5eb0f8e9",
+    "date": "2018-05-20",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 9"
+    },
+    "venue": {
+      "name": "Shanghai Stadium",
+      "attendance": 22093
+    },
+    "referee": {
+      "main": "",
+      "ar1": "Wang Dexin",
+      "ar2": "Zhong Yong",
+      "fourth": "Guan Xing",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (3-4-3)",
+      "coach": "Vítor Pereira",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Elkeson",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "34",
+          "name": "Chen Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Zhang Huachen",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Hu Jinghang",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Yang Shiyuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "36",
+          "name": "Yu Hao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Li Shenglong",
+          "player2": "",
+          "player_out": "Lin Chuangyi"
+        },
+        {
+          "minute": 86,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Hu Jinghang",
+          "player2": "",
+          "player_out": "Wang Shenchao"
+        },
+        {
+          "minute": 86,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Yu Hao",
+          "player2": "",
+          "player_out": "Zhang Wei"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Shandong Taishan (4-4-2)",
+      "coach": "Li Xiaopeng",
+      "captain": "Hao Junmin",
+      "lineup": [
+        {
+          "number": "14",
+          "name": "Wang Dalei",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Gil",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Zheng Zheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Zhang Chi",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Liu Binbin",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Hao Junmin",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Roger Guedes",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Marouane Fellaini",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "Chen Kerui",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Jin Jingdao",
+          "country": "Unknown"
+        },
+        {
+          "number": "35",
+          "name": "Dai Lin",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "20",
+          "name": "Han Rongze",
+          "country": "Unknown"
+        },
+        {
+          "number": "40",
+          "name": "Li Guanxi",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Wang Tong",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Liu Yang",
+          "country": "Unknown"
+        },
+        {
+          "number": "31",
+          "name": "Zhao Jianfei",
+          "country": "Unknown"
+        },
+        {
+          "number": "34",
+          "name": "Huang Cong",
+          "country": "Unknown"
+        },
+        {
+          "number": "36",
+          "name": "Duan Liuyu",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 38,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Duan Liuyu",
+          "player2": "",
+          "player_out": "Chen Kerui"
+        },
+        {
+          "minute": 66,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Liu Yang",
+          "player2": "",
+          "player_out": "Zheng Zheng"
+        },
+        {
+          "minute": 79,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zhao Jianfei",
+          "player2": "",
+          "player_out": "Liu Binbin"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 1,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Roger Guedes",
+      "player2": "Wang Dalei",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 37,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Chen Kerui",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 38,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Duan Liuyu",
+      "player2": "",
+      "player_out": "Chen Kerui"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Shenglong",
+      "player2": "",
+      "player_out": "Lin Chuangyi"
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Liu Yang",
+      "player2": "",
+      "player_out": "Zheng Zheng"
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Wei Zhen",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Wei Zhen",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 74,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Elkeson",
+      "player2": "Li Shenglong",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zhang Wei",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhao Jianfei",
+      "player2": "",
+      "player_out": "Liu Binbin"
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Hu Jinghang",
+      "player2": "",
+      "player_out": "Wang Shenchao"
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Yu Hao",
+      "player2": "",
+      "player_out": "Zhang Wei"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 2,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Hao Junmin",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 9,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Gil",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 11,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 11,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "63%",
+      "away": "37%"
+    },
+    "shots_on_target": {
+      "home": "4",
+      "away": "2"
+    },
+    "shots": {
+      "home": "16",
+      "away": "17"
+    },
+    "shots_accuracy": {
+      "home": "25%",
+      "away": "12%"
+    },
+    "saves": {
+      "home": "1 of 2-50%",
+      "away": "2 of 4-50%"
+    },
+    "fouls": {
+      "home": "13",
+      "away": "16"
+    },
+    "corners": {
+      "home": "8",
+      "away": "6"
+    },
+    "crosses": {
+      "home": "29",
+      "away": "24"
+    },
+    "interceptions": {
+      "home": "2",
+      "away": "7"
+    },
+    "offsides": {
+      "home": "1",
+      "away": "3"
+    },
+    "yellow_cards": {
+      "home": 3,
+      "away": 5
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/5eb0f8e9/Shanghai-SIPG-Shandong-Luneng-Taishan-May-20-2018-Chinese-Super-League",
+    "scraped_at": "2026-05-02T09:26:43.417806",
+    "version": "11.0-2018"
+  }
+}

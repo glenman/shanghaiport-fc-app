@@ -1,0 +1,420 @@
+{
+  "match_info": {
+    "match_id": "0670afac",
+    "date": "2017-06-25",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2017",
+      "round": "Matchweek 14"
+    },
+    "venue": {
+      "name": "Shanghai Stadium",
+      "attendance": 26575
+    },
+    "referee": {
+      "main": "Guan Xing",
+      "ar1": "Liu Guiqing",
+      "ar2": "Yang Yang",
+      "fourth": "Ma Li",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 4,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "André Villas-Boas",
+      "captain": "Cai Huikang",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Elkeson",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Zheng Zhiyun",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Zhang Huachen",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Wei Shihao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 45,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Yu Hai",
+          "player2": "",
+          "player_out": "Zheng Zhiyun"
+        },
+        {
+          "minute": 78,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lü Wenjun",
+          "player2": "",
+          "player_out": "Elkeson"
+        },
+        {
+          "minute": 87,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhang Yi",
+          "player2": "",
+          "player_out": "Odil Ahmedov"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Henan Jianye (5-4-1)",
+      "coach": "Yasen Petrov",
+      "captain": "Edigeison Gomes",
+      "lineup": [
+        {
+          "number": "17",
+          "name": "Wu Yan",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Long Cheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Edigeison Gomes",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Gu Cao",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Feng Zhuoyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Bořek Dočkal",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Javier Patiño",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Feng Gang",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Yang Kuo",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "Liu Heng",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Zhong Jinbao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "12",
+          "name": "Wang Guoming",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Long Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Wang Fei",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Luo Heng",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Lu Yao",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Du Changjie",
+          "country": "Unknown"
+        },
+        {
+          "number": "39",
+          "name": "Chen Zijie",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 81,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Du Changjie",
+          "player2": "",
+          "player_out": "Feng Gang"
+        },
+        {
+          "minute": 89,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wang Fei",
+          "player2": "",
+          "player_out": "Liu Heng"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 15,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Feng Gang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 21,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Bořek Dočkal",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 22,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Edigeison Gomes",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 30,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Odil Ahmedov",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Yu Hai",
+      "player2": "",
+      "player_out": "Zheng Zhiyun"
+    },
+    {
+      "minute": 51,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Odil Ahmedov",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 62,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Elkeson",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "Elkeson",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Javier Patiño",
+      "player2": "Feng Zhuoyi",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "player_out": "Elkeson"
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Du Changjie",
+      "player2": "",
+      "player_out": "Feng Gang"
+    },
+    {
+      "minute": 87,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Yi",
+      "player2": "",
+      "player_out": "Odil Ahmedov"
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wang Fei",
+      "player2": "",
+      "player_out": "Liu Heng"
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 2,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/0670afac/Shanghai-SIPG-Henan-Jianye-June-25-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T10:59:51.424373",
+    "version": "11.0-2017"
+  }
+}

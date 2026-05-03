@@ -1,0 +1,454 @@
+{
+  "match_info": {
+    "match_id": "b0274c6c",
+    "date": "2017-06-18",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2017",
+      "round": "Matchweek 13"
+    },
+    "venue": {
+      "name": "Yuexiushan Stadium",
+      "attendance": 10113
+    },
+    "referee": {
+      "main": "Zhou Gang",
+      "ar1": "Ma Ji",
+      "ar2": "Xueyun Yi",
+      "fourth": "Li Pan",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Guangzhou (4-4-2)",
+      "coach": "Dragan Stojković",
+      "captain": "Jiang Zhipeng",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Cheng Yuelei",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Eran Zahavi",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Júnior Urso",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Renato Ribeiro Calixto",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Jiang Zhipeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Tang Miao",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Lu Lin",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Xiao Zhi",
+          "country": "Unknown"
+        },
+        {
+          "number": "32",
+          "name": "Chen Zhizhao",
+          "country": "Unknown"
+        },
+        {
+          "number": "35",
+          "name": "Li Tixiang",
+          "country": "Unknown"
+        },
+        {
+          "number": "36",
+          "name": "Huang Zhengyu",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "25",
+          "name": "Han Feng",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Xiang Baixu",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Ye Chugui",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Zeng Chao",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Zhang Chenlong",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "Wang Jianan",
+          "country": "Unknown"
+        },
+        {
+          "number": "40",
+          "name": "Chen Weiming",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Wang Jianan",
+          "player2": "",
+          "player_out": "Chen Zhizhao"
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Ye Chugui",
+          "player2": "",
+          "player_out": "Xiao Zhi"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 3,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zeng Chao",
+          "player2": "",
+          "player_out": "Renato Ribeiro Calixto"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-2-3-1)",
+      "coach": "André Villas-Boas",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Elkeson",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Zheng Zhiyun",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Wei Shihao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 17,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lin Chuangyi",
+          "player2": "",
+          "player_out": "Zheng Zhiyun"
+        },
+        {
+          "minute": 57,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zhang Wei",
+          "player2": "",
+          "player_out": "Wu Lei"
+        },
+        {
+          "minute": 71,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lü Wenjun",
+          "player2": "",
+          "player_out": "Lin Chuangyi"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 17,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lin Chuangyi",
+      "player2": "",
+      "player_out": "Zheng Zhiyun"
+    },
+    {
+      "minute": 18,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Wang Shenchao",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 30,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Eran Zahavi",
+      "player2": "Xiao Zhi",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Hulk",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 1,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Júnior Urso",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 2,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Jiang Zhipeng",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 6,
+      "type": "red_card",
+      "team": "home",
+      "player": "Li Tixiang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 6,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Chen Zhizhao",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 7,
+      "type": "red_card",
+      "team": "away",
+      "player": "Fu Huan",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 57,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhang Wei",
+      "player2": "",
+      "player_out": "Wu Lei"
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "player_out": "Lin Chuangyi"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wang Jianan",
+      "player2": "",
+      "player_out": "Chen Zhizhao"
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Huang Zhengyu",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Ye Chugui",
+      "player2": "",
+      "player_out": "Xiao Zhi"
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Tang Miao",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zeng Chao",
+      "player2": "",
+      "player_out": "Renato Ribeiro Calixto"
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 1,
+      "away": 5
+    },
+    "red_cards": {
+      "home": 1,
+      "away": 1
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/b0274c6c/Guangzhou-RandF-Shanghai-SIPG-June-18-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T10:59:37.686304",
+    "version": "11.0-2017"
+  }
+}

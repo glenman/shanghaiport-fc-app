@@ -1,0 +1,590 @@
+{
+  "match_info": {
+    "match_id": "8efdf598",
+    "date": "2020-09-15",
+    "time": "18:00",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2020",
+      "round": "Matchweek None"
+    },
+    "venue": {
+      "name": "Xuzhou Olympic Sports Centre Stadium",
+      "attendance": 871
+    },
+    "referee": {
+      "main": "Zhang Lei",
+      "ar1": "Song Xiangyun",
+      "ar2": "Guo Jingtao",
+      "fourth": "Li Haixin",
+      "var": "Liying Wu",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Wuhan Zall (4-4-2)",
+      "coach": "José González",
+      "captain": "Liao Junjian",
+      "lineup": [
+        {
+          "number": "16",
+          "name": "Dong Hengyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Liu Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Han Pengfei",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Léo Baptistão",
+          "country": "Unknown"
+        },
+        {
+          "number": "12",
+          "name": "Liu Shangkun",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Jiang Zilei",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Liao Junjian",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "Wang Kai",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Eddy Gnahoré",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Zhang Chenglin",
+          "country": "Unknown"
+        },
+        {
+          "number": "31",
+          "name": "Dong Xuesheng",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "1",
+          "name": "Wang Zhifeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Ai Zhibo",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Li Chao",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Luo Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Yao Hanlin",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Zhou Tong",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Ming Tian",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Jean Evrard Kouassi",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Song Zhiwei",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Liu Yun",
+          "country": "Unknown"
+        },
+        {
+          "number": "39",
+          "name": "Cong Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "41",
+          "name": "Chen Ao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 56,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Song Zhiwei",
+          "player2": "",
+          "player_out": "Wang Kai"
+        },
+        {
+          "minute": 72,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Wang Zhifeng",
+          "player2": "",
+          "player_out": "Dong Hengyi"
+        },
+        {
+          "minute": 72,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Jean Evrard Kouassi",
+          "player2": "",
+          "player_out": "Jiang Zilei"
+        },
+        {
+          "minute": 72,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Liu Yun",
+          "player2": "",
+          "player_out": "Liu Yi"
+        },
+        {
+          "minute": 83,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhou Tong",
+          "player2": "",
+          "player_out": "Léo Baptistão"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-1-2)",
+      "coach": "Vítor Pereira",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Marko Arnautović",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Mirahmetjan Muzepper",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Yang Shiyuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "12",
+          "name": "Chen Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Ricardo Lopes Pereira",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Chen Binbin",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Aaron Mooy",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "Lei Wenjie",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Jia Boyan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lü Wenjun",
+          "player2": "",
+          "player_out": "Mirahmetjan Muzepper"
+        },
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Aaron Mooy",
+          "player2": "",
+          "player_out": "Cai Huikang"
+        },
+        {
+          "minute": 61,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Li Shenglong",
+          "player2": "",
+          "player_out": "Marko Arnautović"
+        },
+        {
+          "minute": 83,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Ricardo Lopes Pereira",
+          "player2": "",
+          "player_out": "Hulk"
+        },
+        {
+          "minute": 89,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "He Guan",
+          "player2": "",
+          "player_out": "Fu Huan"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 23,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Mirahmetjan Muzepper",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 39,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Dong Xuesheng",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 2,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Han Pengfei",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "player_out": "Mirahmetjan Muzepper"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Aaron Mooy",
+      "player2": "",
+      "player_out": "Cai Huikang"
+    },
+    {
+      "minute": 56,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Song Zhiwei",
+      "player2": "",
+      "player_out": "Wang Kai"
+    },
+    {
+      "minute": 59,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Marko Arnautović",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 61,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Li Shenglong",
+      "player2": "",
+      "player_out": "Marko Arnautović"
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Aaron Mooy",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wang Zhifeng",
+      "player2": "",
+      "player_out": "Dong Hengyi"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Jean Evrard Kouassi",
+      "player2": "",
+      "player_out": "Jiang Zilei"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Liu Yun",
+      "player2": "",
+      "player_out": "Liu Yi"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Eddy Gnahoré",
+      "player2": "Jean Evrard Kouassi",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhou Tong",
+      "player2": "",
+      "player_out": "Léo Baptistão"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Ricardo Lopes Pereira",
+      "player2": "",
+      "player_out": "Hulk"
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Li Shenglong",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "He Guan",
+      "player2": "",
+      "player_out": "Fu Huan"
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "33%",
+      "away": "68%"
+    },
+    "shots_on_target": {
+      "home": "3",
+      "away": "4"
+    },
+    "shots": {
+      "home": "6",
+      "away": "13"
+    },
+    "shots_accuracy": {
+      "home": "50%",
+      "away": "31%"
+    },
+    "saves": {
+      "home": "2 of 4-50%",
+      "away": "2 of 3-66%"
+    },
+    "fouls": {
+      "home": "19",
+      "away": "16"
+    },
+    "corners": {
+      "home": "2",
+      "away": "10"
+    },
+    "crosses": {
+      "home": "10",
+      "away": "36"
+    },
+    "interceptions": {
+      "home": "8",
+      "away": "16"
+    },
+    "offsides": {
+      "home": "1",
+      "away": "0"
+    },
+    "yellow_cards": {
+      "home": 2,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/8efdf598/Wuhan-Zall-Shanghai-SIPG-September-15-2020-Chinese-Super-League",
+    "scraped_at": "2026-05-01T20:01:59.379581",
+    "version": "11.0-2020"
+  }
+}

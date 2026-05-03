@@ -1,0 +1,401 @@
+{
+  "match_info": {
+    "match_id": "2d0e8f1a",
+    "date": "2019-04-05",
+    "time": "17:30",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 4"
+    },
+    "venue": {
+      "name": "Guiyang Olympic Sports Center",
+      "attendance": 31589
+    },
+    "referee": {
+      "main": "Wang Zhe",
+      "ar1": "Zhong Yong",
+      "ar2": "Mai Pan",
+      "fourth": "Shunqi Tang",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Guizhou Heng (4-4-2)",
+      "coach": "Manzano",
+      "captain": "Festus Baise",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Su Boyang",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Tang Xin",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Festus Baise",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Yang Ting",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Fan Yunlong",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Nikica Jelavić",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Ilhamjan Iminjan",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Min Junlin",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Mario Suárez",
+          "country": "Unknown"
+        },
+        {
+          "number": "35",
+          "name": "Du Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "40",
+          "name": "Rubén Castro",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "16",
+          "name": "Wang Zhuo",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wang Fan",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Zhang Mengqi",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Chang Feiya",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Jiang Liang",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Liang Xueming",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Han Pengfei",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 50,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Han Pengfei",
+          "player2": "",
+          "player_out": "Du Wei"
+        },
+        {
+          "minute": 69,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Chang Feiya",
+          "player2": "",
+          "player_out": "Fan Yunlong"
+        },
+        {
+          "minute": 83,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Wang Fan",
+          "player2": "",
+          "player_out": "Ilhamjan Iminjan"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (3-4-1-2)",
+      "coach": "André Villas-Boas",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Elkeson",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Wei Shihao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wu Lei",
+          "player2": "",
+          "player_out": "Wei Zhen"
+        },
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zhang Wei",
+          "player2": "",
+          "player_out": "Yu Hai"
+        },
+        {
+          "minute": 62,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Elkeson",
+          "player2": "",
+          "player_out": "Zhang Yi"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wu Lei",
+      "player2": "",
+      "player_out": "Wei Zhen"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhang Wei",
+      "player2": "",
+      "player_out": "Yu Hai"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Nikica Jelavić",
+      "player2": "Mario Suárez",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 50,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Han Pengfei",
+      "player2": "",
+      "player_out": "Du Wei"
+    },
+    {
+      "minute": 62,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Elkeson",
+      "player2": "",
+      "player_out": "Zhang Yi"
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Chang Feiya",
+      "player2": "",
+      "player_out": "Fan Yunlong"
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Lü Wenjun",
+      "player2": "Fu Huan",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wang Fan",
+      "player2": "",
+      "player_out": "Ilhamjan Iminjan"
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Yang Ting",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wang Fan",
+      "player2": "Nikica Jelavić",
+      "player_out": "",
+      "goal_type": "goal"
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 0,
+      "away": 1
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/2d0e8f1a/Shanghai-SIPG-Chongqing-Dangdai-Lifan-April-5-2019-Chinese-Super-League",
+    "scraped_at": "2026-05-02T11:01:51.247023",
+    "version": "11.0-2019"
+  }
+}

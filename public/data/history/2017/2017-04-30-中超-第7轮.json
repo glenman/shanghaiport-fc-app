@@ -1,0 +1,373 @@
+{
+  "match_info": {
+    "match_id": "d947e84c",
+    "date": "2017-04-30",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2017",
+      "round": "Matchweek 7"
+    },
+    "venue": {
+      "name": "Chongqing Olympic Sports Center",
+      "attendance": 43680
+    },
+    "referee": {
+      "main": "Ai Kun",
+      "ar1": "Zhong Yong",
+      "ar2": "Zhi Ye",
+      "fourth": "Li Haixin",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Chongqing Lifan (4-2-3-1)",
+      "coach": "Chang Woeryong",
+      "captain": "Wu Qing",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Deng Xiaofei",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Ding Jie",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Liu Yu",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Peng Xinli",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Wu Qing",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Goran Milović",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Liu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Chen Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Alan Kardec",
+          "country": "Unknown"
+        },
+        {
+          "number": "32",
+          "name": "Fernandinho",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Nan Song",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "17",
+          "name": "Sui Weijie",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Zheng Tao",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Feng Jing",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Wang Weicheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Sui Donglu",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Cui Yongzhe",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Yuan Mincheng",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 45,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Wang Weicheng",
+          "player2": "",
+          "player_out": "Nan Song"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "André Villas-Boas",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Zhang Huachen",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Wang Jiajie",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Wei Shihao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 14,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lin Chuangyi",
+          "player2": "",
+          "player_out": "Zhang Huachen"
+        },
+        {
+          "minute": 20,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Cai Huikang",
+          "player2": "",
+          "player_out": "Shi Ke"
+        },
+        {
+          "minute": 87,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wei Shihao",
+          "player2": "",
+          "player_out": "Wu Lei"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 14,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lin Chuangyi",
+      "player2": "",
+      "player_out": "Zhang Huachen"
+    },
+    {
+      "minute": 20,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Cai Huikang",
+      "player2": "",
+      "player_out": "Shi Ke"
+    },
+    {
+      "minute": 22,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Wang Shenchao",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wang Weicheng",
+      "player2": "",
+      "player_out": "Nan Song"
+    },
+    {
+      "minute": 51,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Liu Yu",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 52,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "He Guan",
+      "player2": "Wu Lei",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 87,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wei Shihao",
+      "player2": "",
+      "player_out": "Wu Lei"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 1,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zhang Wei",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 4,
+      "type": "goal",
+      "team": "home",
+      "player": "Ding Jie",
+      "player2": "Liu Yu",
+      "player_out": "",
+      "goal_type": "goal"
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 2,
+      "away": 1
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/d947e84c/Chongqing-Dangdai-Lifan-Shanghai-SIPG-April-30-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T10:58:12.198916",
+    "version": "11.0-2017"
+  }
+}

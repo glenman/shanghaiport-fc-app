@@ -1,0 +1,456 @@
+{
+  "match_info": {
+    "match_id": "8693c692",
+    "date": "2019-04-14",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 5"
+    },
+    "venue": {
+      "name": "Shanghai Stadium",
+      "attendance": 27167
+    },
+    "referee": {
+      "main": "Li Haixin",
+      "ar1": "Yue Yu",
+      "ar2": "Mai Pan",
+      "fourth": "Hei Xiaohu",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 3,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-4-1-1)",
+      "coach": "André Villas-Boas",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Wei Shihao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Elkeson",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Yi",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Elkeson",
+          "player2": "",
+          "player_out": "Wei Shihao"
+        },
+        {
+          "minute": 65,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lin Chuangyi",
+          "player2": "",
+          "player_out": "Yu Hai"
+        },
+        {
+          "minute": 84,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhang Yi",
+          "player2": "",
+          "player_out": "Fu Huan"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Tianjin TEDA (4-2-3-1)",
+      "coach": "Chi Rongliang",
+      "captain": "John Obi Mikel",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Du Jia",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Zhao Honglüe",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Pan Ximing",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Frank Acheampong",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Hu Rentian",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "John Obi Mikel",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wang Qiuming",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Yang Liyu",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Mirahmetjan Muzepper",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Cao Yang",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Nemanja Gudelj",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "30",
+          "name": "Li Zheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Qiu Tianyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Li Yuanyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Liao Bochao",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Hui Jiakang",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Guo Hao",
+          "country": "Unknown"
+        },
+        {
+          "number": "32",
+          "name": "Lei Yongchi",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Hui Jiakang",
+          "player2": "",
+          "player_out": "Yang Liyu"
+        },
+        {
+          "minute": 64,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Li Yuanyi",
+          "player2": "",
+          "player_out": "Hu Rentian"
+        },
+        {
+          "minute": 72,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lei Yongchi",
+          "player2": "",
+          "player_out": "Wang Qiuming"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 11,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 15,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Yu Hai",
+      "player2": "Wu Lei",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 33,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Cai Huikang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 33,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Mirahmetjan Muzepper",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 34,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "John Obi Mikel",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Elkeson",
+      "player2": "",
+      "player_out": "Wei Shihao"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Hui Jiakang",
+      "player2": "",
+      "player_out": "Yang Liyu"
+    },
+    {
+      "minute": 56,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zhao Honglüe",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 64,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Li Yuanyi",
+      "player2": "",
+      "player_out": "Hu Rentian"
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lin Chuangyi",
+      "player2": "",
+      "player_out": "Yu Hai"
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Pan Ximing",
+      "player2": "Nemanja Gudelj",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lei Yongchi",
+      "player2": "",
+      "player_out": "Wang Qiuming"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Lei Yongchi",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Elkeson",
+      "player2": "Hulk",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Yi",
+      "player2": "",
+      "player_out": "Fu Huan"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 1,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Shi Ke",
+      "player2": "",
+      "player_out": ""
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 4,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/8693c692/Shanghai-SIPG-Wuhan-Zall-April-14-2019-Chinese-Super-League",
+    "scraped_at": "2026-05-02T11:02:04.861066",
+    "version": "11.0-2019"
+  }
+}

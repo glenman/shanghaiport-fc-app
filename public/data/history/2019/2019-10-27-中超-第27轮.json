@@ -1,0 +1,441 @@
+{
+  "match_info": {
+    "match_id": "07491b6b",
+    "date": "2019-10-27",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 27"
+    },
+    "venue": {
+      "name": "Shanghai Stadium",
+      "attendance": 12635
+    },
+    "referee": {
+      "main": "Taqi Aljaafari Jahari",
+      "ar1": "Sun Kai",
+      "ar2": "Guo Jingtao",
+      "fourth": "Liying Wu",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 3,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "Vítor Pereira",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Marko Arnautović",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "Chen Binbin",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 64,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Chen Binbin",
+          "player2": "",
+          "player_out": "Lü Wenjun"
+        },
+        {
+          "minute": 74,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Marko Arnautović",
+          "player2": "",
+          "player_out": "Hulk"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 2,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lin Chuangyi",
+          "player2": "",
+          "player_out": "Cai Huikang"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "Dalian Yifang (5-4-1)",
+      "coach": "Rafael Benítez",
+      "captain": "Zhang Chong",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Zhang Chong",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Shan Pengfei",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Salomón Rondón",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Sun Guowen",
+          "country": "Unknown"
+        },
+        {
+          "number": "12",
+          "name": "Zhou Ting",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wang Yaopeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Marek Hamšík",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Wang Jinxian",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Emmanuel Boateng",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Dong Yanfeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Cui Ming'an",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "32",
+          "name": "Xuebo Li",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Zhao Xuri",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "He Yupeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Hui Cheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Sun Bo",
+          "country": "Unknown"
+        },
+        {
+          "number": "31",
+          "name": "Zheng Long",
+          "country": "Unknown"
+        },
+        {
+          "number": "36",
+          "name": "Xiao Zhou",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 71,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Sun Bo",
+          "player2": "",
+          "player_out": "Wang Jinxian"
+        },
+        {
+          "minute": 82,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "He Yupeng",
+          "player2": "",
+          "player_out": "Dong Yanfeng"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 13,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Li Shenglong",
+      "player2": "Lü Wenjun",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 26,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Zhou Ting",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "own_goal"
+    },
+    {
+      "minute": 64,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Chen Binbin",
+      "player2": "",
+      "player_out": "Lü Wenjun"
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Sun Bo",
+      "player2": "",
+      "player_out": "Wang Jinxian"
+    },
+    {
+      "minute": 73,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Shan Pengfei",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 74,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Marko Arnautović",
+      "player2": "",
+      "player_out": "Hulk"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Dong Yanfeng",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 82,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "He Yupeng",
+      "player2": "",
+      "player_out": "Dong Yanfeng"
+    },
+    {
+      "minute": 87,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zhou Ting",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 2,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lin Chuangyi",
+      "player2": "",
+      "player_out": "Cai Huikang"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "goal",
+      "team": "home",
+      "player": "Oscar",
+      "player2": "Marko Arnautović",
+      "player_out": "",
+      "goal_type": "goal"
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "53%",
+      "away": "47%"
+    },
+    "shots_on_target": {
+      "home": "6",
+      "away": "1"
+    },
+    "shots": {
+      "home": "16",
+      "away": "11"
+    },
+    "shots_accuracy": {
+      "home": "38%",
+      "away": "9%"
+    },
+    "saves": {
+      "home": "1 of 1-100%",
+      "away": "4 of 6-66%"
+    },
+    "fouls": {
+      "home": "10",
+      "away": "10"
+    },
+    "corners": {
+      "home": "3",
+      "away": "3"
+    },
+    "crosses": {
+      "home": "17",
+      "away": "24"
+    },
+    "interceptions": {
+      "home": "14",
+      "away": "24"
+    },
+    "offsides": {
+      "home": "2",
+      "away": "4"
+    },
+    "yellow_cards": {
+      "home": 3,
+      "away": 0
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/07491b6b/Shanghai-SIPG-Dalian-Yifang-October-27-2019-Chinese-Super-League",
+    "scraped_at": "2026-05-02T11:07:26.384749",
+    "version": "11.0-2019"
+  }
+}

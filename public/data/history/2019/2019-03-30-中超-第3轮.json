@@ -1,0 +1,428 @@
+{
+  "match_info": {
+    "match_id": "88629426",
+    "date": "2019-03-30",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 3"
+    },
+    "venue": {
+      "name": "Shanghai Stadium",
+      "attendance": 25387
+    },
+    "referee": {
+      "main": "Gu Chunhan",
+      "ar1": "Huo Weiming",
+      "ar2": "Wang Dexin",
+      "fourth": "Zhou Gang",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 3,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-2-3-1)",
+      "coach": "André Villas-Boas",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Gao Haisheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Wei Shihao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 60,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lü Wenjun",
+          "player2": "",
+          "player_out": "Yu Hai"
+        },
+        {
+          "minute": 60,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Shi Ke",
+          "player2": "",
+          "player_out": "Wei Zhen"
+        },
+        {
+          "minute": 69,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Cai Huikang",
+          "player2": "",
+          "player_out": "Zhang Yi"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Chongqing Lifan (5-3-2)",
+      "coach": "Chang Woeryong",
+      "captain": "Goran Milović",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Deng Xiaofei",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Jung Woo-young",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Feng Jing",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Liu Yu",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Peng Xinli",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Hyuri",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Goran Milović",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Xu Yang",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Liu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Chen Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Nan Song",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "17",
+          "name": "Sui Weijie",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Zheng Tao",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Ding Jie",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Wang Weicheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Sui Donglu",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Cui Yongzhe",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Yuan Mincheng",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 72,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Cui Yongzhe",
+          "player2": "",
+          "player_out": "Hyuri"
+        },
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wang Weicheng",
+          "player2": "",
+          "player_out": "Nan Song"
+        },
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Ding Jie",
+          "player2": "",
+          "player_out": "Peng Xinli"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 24,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Odil Ahmedov",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 34,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 38,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Oscar",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Hyuri",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "player_out": "Yu Hai"
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Shi Ke",
+      "player2": "",
+      "player_out": "Wei Zhen"
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Cai Huikang",
+      "player2": "",
+      "player_out": "Zhang Yi"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Odil Ahmedov",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Cui Yongzhe",
+      "player2": "",
+      "player_out": "Hyuri"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wang Weicheng",
+      "player2": "",
+      "player_out": "Nan Song"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Ding Jie",
+      "player2": "",
+      "player_out": "Peng Xinli"
+    },
+    {
+      "minute": 87,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Liu Huan",
+      "player2": "Liu Yu",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "Wang Shenchao",
+      "player_out": "",
+      "goal_type": "goal"
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 1,
+      "away": 3
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/88629426/Hebei-China-Fortune-Shanghai-SIPG-March-30-2019-Chinese-Super-League",
+    "scraped_at": "2026-05-02T11:01:37.917573",
+    "version": "11.0-2019"
+  }
+}

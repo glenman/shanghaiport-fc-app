@@ -1,0 +1,429 @@
+{
+  "match_info": {
+    "match_id": "5eb0f8e9",
+    "date": "2019-05-12",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 9"
+    },
+    "venue": {
+      "name": "Shanghai Stadium",
+      "attendance": 25567
+    },
+    "referee": {
+      "main": "lovec",
+      "ar1": "Martin Wilczek",
+      "ar2": "",
+      "fourth": "Li Pan",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-2-3-1)",
+      "coach": "André Villas-Boas",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Ricardo Carvalho",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Wei Shihao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 55,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhang Yi",
+          "player2": "",
+          "player_out": "Lin Chuangyi"
+        },
+        {
+          "minute": 55,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lü Wenjun",
+          "player2": "",
+          "player_out": "Wei Shihao"
+        },
+        {
+          "minute": 82,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Li Shenglong",
+          "player2": "",
+          "player_out": "Cai Huikang"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Guangzhou (5-4-1)",
+      "coach": "Dragan Stojković",
+      "captain": "Jiang Zhipeng",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Cheng Yuelei",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Eran Zahavi",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Renato Ribeiro Calixto",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Jiang Zhipeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Yi Teng",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Jiang Jihong",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Tang Miao",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Lu Lin",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Xiao Zhi",
+          "country": "Unknown"
+        },
+        {
+          "number": "32",
+          "name": "Chen Zhizhao",
+          "country": "Unknown"
+        },
+        {
+          "number": "36",
+          "name": "Huang Zhengyu",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "25",
+          "name": "Han Feng",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Zhang Gong",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Sölvi Ottesen",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Apostolos Giannou",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Ye Chugui",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Zeng Chao",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Zhang Chenlong",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 81,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Sölvi Ottesen",
+          "player2": "",
+          "player_out": "Huang Zhengyu"
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Ye Chugui",
+          "player2": "",
+          "player_out": "Renato Ribeiro Calixto"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 3,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zhang Gong",
+          "player2": "",
+          "player_out": "Lu Lin"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 5,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Jiang Jihong",
+      "player2": "Lu Lin",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 24,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "Cheng Yuelei",
+      "player_out": "",
+      "goal_type": "penalty_goal"
+    },
+    {
+      "minute": 40,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Renato Ribeiro Calixto",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 49,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Eran Zahavi",
+      "player2": "Renato Ribeiro Calixto",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Yi",
+      "player2": "",
+      "player_out": "Lin Chuangyi"
+    },
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "player_out": "Wei Shihao"
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "Lü Wenjun",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 73,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Sölvi Ottesen",
+      "player2": "",
+      "player_out": "Huang Zhengyu"
+    },
+    {
+      "minute": 82,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Shenglong",
+      "player2": "",
+      "player_out": "Cai Huikang"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Fu Huan",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Ye Chugui",
+      "player2": "",
+      "player_out": "Renato Ribeiro Calixto"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhang Gong",
+      "player2": "",
+      "player_out": "Lu Lin"
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 1,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/5eb0f8e9/Shanghai-SIPG-Shandong-Luneng-Taishan-May-12-2019-Chinese-Super-League",
+    "scraped_at": "2026-05-02T11:03:02.270952",
+    "version": "11.0-2019"
+  }
+}

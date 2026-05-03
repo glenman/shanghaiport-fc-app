@@ -1,0 +1,447 @@
+{
+  "match_info": {
+    "match_id": "c0cfe947",
+    "date": "2017-09-09",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2017",
+      "round": "Matchweek 24"
+    },
+    "venue": {
+      "name": "Tianjin Olympic Center Stadium",
+      "attendance": 20314
+    },
+    "referee": {
+      "main": "Zhang Lei",
+      "ar1": "Yue Yu",
+      "ar2": "Ma Ji",
+      "fourth": "Hei Xiaohu",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "Shanghai SIPG",
+      "full_name": "",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "Tianjin Tianhai (4-2-3-1)",
+      "coach": "Shen Xiangfu",
+      "captain": "Zhang Lu",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Zhang Lu",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Wu Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Pei Shuai",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Alan Carvalho",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Yang Xu",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Renato Ribeiro Calixto",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Zhang Xiaobin",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Cheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Kwon Kyung-won",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Mi Haolun",
+          "country": "Unknown"
+        },
+        {
+          "number": "39",
+          "name": "Wang Yongpo",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Fang Jingqi",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Zhang Chenglin",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Yao Junsheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Wen Jiabao",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Zheng Dalun",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Zhang Yuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "38",
+          "name": "Sun Ke",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 76,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhang Yuan",
+          "player2": "",
+          "player_out": "Zhang Cheng"
+        },
+        {
+          "minute": 76,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zheng Dalun",
+          "player2": "",
+          "player_out": "Renato Ribeiro Calixto"
+        },
+        {
+          "minute": 87,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Wen Jiabao",
+          "player2": "",
+          "player_out": "Zhang Xiaobin"
+        }
+      ]
+    },
+    "away": {
+      "name": "Opponent",
+      "full_name": "",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (3-1-4-2)",
+      "coach": "Vítor Pereira",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Elkeson",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "Chen Binbin",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "34",
+          "name": "Chen Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "Lei Wenjie",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 36,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wei Zhen",
+          "player2": "",
+          "player_out": "Chen Binbin"
+        },
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wang Shenchao",
+          "player2": "",
+          "player_out": "Lin Chuangyi"
+        },
+        {
+          "minute": 78,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lei Wenjie",
+          "player2": "",
+          "player_out": "Fu Huan"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 17,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Yu Hai",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 36,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wei Zhen",
+      "player2": "",
+      "player_out": "Chen Binbin"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 1,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Wang Yongpo",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wang Shenchao",
+      "player2": "",
+      "player_out": "Lin Chuangyi"
+    },
+    {
+      "minute": 59,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Mi Haolun",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Wei Zhen",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Yuan",
+      "player2": "",
+      "player_out": "Zhang Cheng"
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zheng Dalun",
+      "player2": "",
+      "player_out": "Renato Ribeiro Calixto"
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lei Wenjie",
+      "player2": "",
+      "player_out": "Fu Huan"
+    },
+    {
+      "minute": 87,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wen Jiabao",
+      "player2": "",
+      "player_out": "Zhang Xiaobin"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 4,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "42%",
+      "away": "58%"
+    },
+    "shots_on_target": {
+      "home": "2",
+      "away": "2"
+    },
+    "shots": {
+      "home": "14",
+      "away": "10"
+    },
+    "shots_accuracy": {
+      "home": "14%",
+      "away": "20%"
+    },
+    "saves": {
+      "home": "2 of 2-100%",
+      "away": "2 of 2-100%"
+    },
+    "fouls": {
+      "home": "16",
+      "away": "18"
+    },
+    "corners": {
+      "home": "6",
+      "away": "3"
+    },
+    "crosses": {
+      "home": "20",
+      "away": "27"
+    },
+    "interceptions": {
+      "home": "9",
+      "away": "13"
+    },
+    "offsides": {
+      "home": "1",
+      "away": "1"
+    },
+    "yellow_cards": {
+      "home": 3,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/c0cfe947/Shanghai-SIPG-Tianjin-TEDA-September-9-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T11:02:13.514768",
+    "version": "11.0-2017"
+  }
+}

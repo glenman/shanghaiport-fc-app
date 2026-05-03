@@ -6,10 +6,10 @@
     "competition": {
       "name": "中国足球协会超级联赛",
       "season": "2021",
-      "round": "第None轮"
+      "round": "第20轮"
     },
     "venue": {
-      "name": "Yuexiushan Stadium",
+      "name": "待补充",
       "attendance": 0
     },
     "referee": {
@@ -23,129 +23,129 @@
   },
   "teams": {
     "home": {
-      "name": "上海海港",
-      "full_name": "上海海港足球俱乐部",
+      "name": "广州城",
+      "full_name": "广州城",
       "score": 1,
       "score_ht": 0,
-      "formation": "Guangzhou (3-4-3)",
+      "formation": "(3-4-3)",
       "coach": "Jean-Paul van Gastel",
       "captain": "Jiang Jihong",
       "lineup": [
         {
           "position": "MF",
           "number": 22,
-          "name": "杜佳",
-          "country": "中国"
+          "name": "Han Jiaqi",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 6,
-          "name": "蔡慧康",
-          "country": "中国"
+          "name": "Fan Yunlong",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 7,
-          "name": "里卡多·洛佩斯",
-          "country": "中国"
+          "name": "Jown Cardona",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 10,
-          "name": "马尔科·阿瑙托维奇",
-          "country": "中国"
+          "name": "Li Tixiang",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 18,
-          "name": "于海",
-          "country": "中国"
+          "name": "Yi Teng",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 19,
-          "name": "张卫",
-          "country": "中国"
+          "name": "Jiang Jihong",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 27,
-          "name": "张一",
-          "country": "中国"
+          "name": "Yang Xiaotian",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 29,
-          "name": "聂孟",
-          "country": "中国"
+          "name": "Song Wenjie",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 32,
-          "name": "贾博琰",
-          "country": "中国"
+          "name": "Chen Zhizhao",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 35,
           "name": "Wang Huapeng",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 36,
           "name": "Huang Zhengyu",
-          "country": "中国"
+          "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "position": "MF",
           "number": 1,
-          "name": "颜骏凌",
-          "country": "中国"
+          "name": "Cheng Yuelei",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 26,
-          "name": "胡靖航",
-          "country": "中国"
+          "name": "Long Wenhao",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 5,
-          "name": "魏震",
-          "country": "中国"
+          "name": "Hu Ruibao",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 9,
-          "name": "保利尼奥",
-          "country": "中国"
+          "name": "Tiago",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 15,
-          "name": "张华晨",
-          "country": "中国"
+          "name": "Han Pengfei",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 25,
-          "name": "陈彬彬",
-          "country": "中国"
+          "name": "Jin Liangkuan",
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 37,
           "name": "Wen Yongjun",
-          "country": "中国"
+          "country": "Unknown"
         },
         {
           "position": "MF",
           "number": 39,
-          "name": "李昂",
-          "country": "中国"
+          "name": "Su Yuliang",
+          "country": "Unknown"
         }
       ],
       "substitutions": [
@@ -153,36 +153,36 @@
           "minute": 46,
           "minute_extra": 0,
           "player_out": "Li Tixiang",
-          "player_in": ""
+          "player_in": "Hu Ruibao"
         },
         {
           "minute": 71,
           "minute_extra": 0,
           "player_out": "Fan Yunlong",
-          "player_in": ""
+          "player_in": "Han Pengfei"
         },
         {
           "minute": 74,
           "minute_extra": 0,
           "player_out": "Wang Huapeng",
-          "player_in": ""
+          "player_in": "Wen Yongjun"
         },
         {
           "minute": 75,
           "minute_extra": 0,
           "player_out": "Chen Zhizhao",
-          "player_in": ""
+          "player_in": "Tiago"
         }
       ]
     },
     "away": {
-      "name": "Opponent",
-      "full_name": "Opponent足球俱乐部",
+      "name": "上海海港",
+      "full_name": "上海海港足球俱乐部",
       "score": 2,
       "score_ht": 0,
-      "formation": "Shanghai Port (3-3-3-1)",
-      "coach": "Ivan Leko",
-      "captain": "Oscar",
+      "formation": "(3-3-3-1)",
+      "coach": "伊万·莱科",
+      "captain": "奥斯卡",
       "lineup": [
         {
           "position": "MF",
@@ -318,13 +318,13 @@
           "minute": 71,
           "minute_extra": 0,
           "player_out": "刘祝润",
-          "player_in": ""
+          "player_in": "张华晨"
         },
         {
           "minute": 83,
           "minute_extra": 0,
           "player_out": "胡靖航",
-          "player_in": ""
+          "player_in": "李圣龙"
         }
       ]
     }
@@ -354,7 +354,7 @@
       "type": "substitution",
       "team": "home",
       "player": "Hu Ruibao",
-      "player2": "",
+      "player2": "Li Tixiang",
       "description": ""
     },
     {
@@ -372,7 +372,7 @@
       "type": "substitution",
       "team": "away",
       "player": "张华晨",
-      "player2": "",
+      "player2": "刘祝润",
       "description": ""
     },
     {
@@ -381,7 +381,7 @@
       "type": "substitution",
       "team": "home",
       "player": "Han Pengfei",
-      "player2": "",
+      "player2": "Fan Yunlong",
       "description": ""
     },
     {
@@ -390,7 +390,7 @@
       "type": "substitution",
       "team": "home",
       "player": "Wen Yongjun",
-      "player2": "",
+      "player2": "Wang Huapeng",
       "description": ""
     },
     {
@@ -399,7 +399,7 @@
       "type": "substitution",
       "team": "home",
       "player": "Tiago",
-      "player2": "",
+      "player2": "Chen Zhizhao",
       "description": ""
     },
     {
@@ -426,7 +426,7 @@
       "type": "substitution",
       "team": "away",
       "player": "李圣龙",
-      "player2": "",
+      "player2": "胡靖航",
       "description": ""
     }
   ],
