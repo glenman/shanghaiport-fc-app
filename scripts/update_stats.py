@@ -159,8 +159,13 @@ def process_matches(full_update=False, last_update_date=None):
 
     return first_team_matches, b_team_matches
 
-def extract_statistics(matches, team_name):
-    """提取统计数据"""
+def extract_statistics(matches, team_name, is_b_team=False):
+    """提取统计数据
+    Args:
+        matches: 比赛列表
+        team_name: 球队名称
+        is_b_team: 是否为B队（True使用assist字段，False使用player2字段）
+    """
     # 统计球员数据
     player_stats = {}
 
@@ -192,7 +197,11 @@ def extract_statistics(matches, team_name):
             for highlight in data['highlights']:
                 if highlight.get('type') == 'goal' and highlight.get('team') == team_role:
                     scorer = highlight.get('player', '')
-                    assist = highlight.get('player2', '')
+                    # B队使用assist字段，一线队使用player2字段
+                    if is_b_team:
+                        assist = highlight.get('assist', '')
+                    else:
+                        assist = highlight.get('player2', '')
                     minute = highlight.get('minute', 0)
                     minute_extra = highlight.get('minute_extra', 0)
                     goal_type = highlight.get('goal_type', 'regular')
@@ -255,9 +264,9 @@ def extract_statistics(matches, team_name):
                             'opponent': opponent
                         })
 
-        # 从 matchTimeline 中提取黄牌和红牌事件
-        if 'matchTimeline' in data:
-            for event in data['matchTimeline']:
+        # 从 matchTimeline/highlights 中提取黄牌和红牌事件
+        events = data.get('matchTimeline', []) or data.get('highlights', [])
+        for event in events:
                 event_type = event.get('type', '')
                 event_team = event.get('team', '')
 
@@ -518,11 +527,11 @@ def main():
 
     # 统计一线队数据
     first_team_record, first_team_points, first_team_goals_for, first_team_goals_against = calculate_record(first_team_matches)
-    first_team_scorers, first_team_assists, first_team_yellow, first_team_red = extract_statistics(first_team_matches, TEAM_NAMES['first'])
+    first_team_scorers, first_team_assists, first_team_yellow, first_team_red = extract_statistics(first_team_matches, TEAM_NAMES['first'], is_b_team=False)
 
     # 统计B队数据
     b_team_record, b_team_points, b_team_goals_for, b_team_goals_against = calculate_record(b_team_matches)
-    b_team_scorers, b_team_assists, b_team_yellow, b_team_red = extract_statistics(b_team_matches, TEAM_NAMES['b_team'])
+    b_team_scorers, b_team_assists, b_team_yellow, b_team_red = extract_statistics(b_team_matches, TEAM_NAMES['b_team'], is_b_team=True)
 
     # 生成统计结果
     stats_data = {

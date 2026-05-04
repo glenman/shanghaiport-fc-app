@@ -689,11 +689,14 @@
                         let specialMark = '';
                         let ballIcon = '⚽';
                         
-                        if (goal.type === 'own_goal') {
+                        if (goal.type === 'own_goal' || goal.goal_type === 'own_goal') {
                           ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
                           specialMark = '';
-                        } else if (goal.type === 'penalty_goal') {
-                          specialMark = ' <span style="color: #4ecdc4; font-weight: bold;">(P)</span>';
+                        } else if (goal.type === 'penalty_goal' || goal.goal_type === 'penalty_goal') {
+                          specialMark = ' <span style="color: #4ecdc4; font-weight: bold;">(PK)</span>';
+                          if (goal.foul_player) {
+                            specialMark += ` <span style="color: #ffd93d; font-size: 0.85rem;">(造:${goal.foul_player})</span>`;
+                          }
                         }
                         
                         const playerName = goal.player || goal.scorer;
