@@ -1,67 +1,500 @@
 {
   "match_info": {
-    "match_id": "ff18beaf",
+    "match_id": "qingdao-hainiu-vs-shanghai-sipg-2020-08-06",
     "date": "2020-08-06",
     "time": "20:00",
     "competition": {
       "name": "Chinese Football Association Super League",
       "season": "2020",
-      "round": "Matchweek None"
+      "round": "Regular season"
     },
     "venue": {
-      "name": "",
-      "attendance": 0
+      "name": "Suzhou Sports Center Stadium",
+      "attendance": null
     },
     "referee": {
-      "main": "",
-      "ar1": "",
-      "ar2": "",
-      "fourth": "",
-      "var": "",
+      "main": "Zhang Lei",
+      "ar1": "Song Xiangyun",
+      "ar2": "Wang Dexin",
+      "fourth": "Liu Lin",
+      "var": "Jingyuan",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Shanghai SIPG",
+      "name": "Qingdao Hainiu",
       "full_name": "",
-      "score": 0,
+      "score": 1,
       "score_ht": 0,
-      "formation": "",
-      "coach": "",
-      "captain": "",
-      "lineup": [],
-      "substitutes": [],
-      "substitutions": []
+      "formation": "Qingdao Hainiu (4-4-2)",
+      "coach": "Wu Jingui",
+      "captain": "Wang Dong",
+      "lineup": [
+        {
+          "number": "22",
+          "name": "Liu Zhenli",
+          "country": "China",
+          "position": "GK"
+        },
+        {
+          "number": "4",
+          "name": "Yaki Yen",
+          "country": "Chinese Taipei",
+          "position": "CM"
+        },
+        {
+          "number": "5",
+          "name": "Yan Zihao",
+          "country": "China",
+          "position": "LB"
+        },
+        {
+          "number": "6",
+          "name": "Wang Dong",
+          "country": "China",
+          "position": "CM"
+        },
+        {
+          "number": "10",
+          "name": "Romain Alessandrini",
+          "country": "France",
+          "position": "FW"
+        },
+        {
+          "number": "11",
+          "name": "Muhammateli Bari",
+          "country": "China",
+          "position": "FW"
+        },
+        {
+          "number": "20",
+          "name": "Wang Fei",
+          "country": "China",
+          "position": "RM"
+        },
+        {
+          "number": "23",
+          "name": "Liu Jiashen",
+          "country": "China",
+          "position": "CB"
+        },
+        {
+          "number": "25",
+          "name": "Zou Zheng",
+          "country": "China",
+          "position": "RB"
+        },
+        {
+          "number": "26",
+          "name": "Jagoš Vuković",
+          "country": "Serbia",
+          "position": "CB"
+        },
+        {
+          "number": "30",
+          "name": "Ezmat Memet-Abdulla",
+          "country": "China",
+          "position": "LM"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "18",
+          "name": "Zhao Shi",
+          "country": "China"
+        },
+        {
+          "number": "2",
+          "name": "Jiang Weipeng",
+          "country": "China"
+        },
+        {
+          "number": "7",
+          "name": "Gao Xiang",
+          "country": "China"
+        },
+        {
+          "number": "13",
+          "name": "Wang Cheng",
+          "country": "China"
+        },
+        {
+          "number": "15",
+          "name": "Wang Jianwen",
+          "country": "China"
+        },
+        {
+          "number": "17",
+          "name": "Zhou Junchen",
+          "country": "China"
+        },
+        {
+          "number": "21",
+          "name": "Wang Wei",
+          "country": "China"
+        },
+        {
+          "number": "27",
+          "name": "Zhu Jianrong",
+          "country": "China"
+        },
+        {
+          "number": "33",
+          "name": "Shi Zhe",
+          "country": "China"
+        },
+        {
+          "number": "37",
+          "name": "Yao Jiangshan",
+          "country": "China"
+        },
+        {
+          "number": "50",
+          "name": "Zhang Haochen",
+          "country": "China"
+        },
+        {
+          "number": "58",
+          "name": "Fang Xinfeng",
+          "country": "China"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhu Jianrong",
+          "player_out": "Wang Fei"
+        },
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhou Junchen",
+          "player_out": "Ezmat Memet-Abdulla"
+        },
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Gao Xiang",
+          "player_out": "Muhammateli Bari"
+        },
+        {
+          "minute": 61,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Wang Wei",
+          "player_out": "Yan Zihao"
+        },
+        {
+          "minute": 75,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Shi Zhe",
+          "player_out": "Yaki Yen"
+        }
+      ]
     },
     "away": {
-      "name": "Opponent",
+      "name": "Shanghai SIPG",
       "full_name": "",
-      "score": 0,
+      "score": 1,
       "score_ht": 0,
-      "formation": "",
-      "coach": "",
-      "captain": "",
-      "lineup": [],
-      "substitutes": [],
-      "substitutions": []
+      "formation": "Shanghai SIPG (3-4-3)",
+      "coach": "Vítor Pereira",
+      "captain": "Oscar",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "China",
+          "position": "GK"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "China",
+          "position": "LM"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "China",
+          "position": "RM"
+        },
+        {
+          "number": "7",
+          "name": "Marko Arnautović",
+          "country": "Austria",
+          "position": "FW"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Brazil",
+          "position": "FW"
+        },
+        {
+          "number": "9",
+          "name": "Ricardo Lopes Pereira",
+          "country": "Brazil",
+          "position": "FW"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "China",
+          "position": "CB"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "China",
+          "position": "CM"
+        },
+        {
+          "number": "16",
+          "name": "Mirahmetjan Muzepper",
+          "country": "China",
+          "position": "CM"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "China",
+          "position": "CB"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "China",
+          "position": "CB"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "12",
+          "name": "Chen Wei",
+          "country": "China"
+        },
+        {
+          "number": "3",
+          "name": "Yu Rui",
+          "country": "China"
+        },
+        {
+          "number": "5",
+          "name": "Shi Ke",
+          "country": "China"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "China"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "China"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "China"
+        },
+        {
+          "number": "17",
+          "name": "Chen Binbin",
+          "country": "China"
+        },
+        {
+          "number": "20",
+          "name": "Yang Shiyuan",
+          "country": "China"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "China"
+        },
+        {
+          "number": "24",
+          "name": "Lei Wenjie",
+          "country": "China"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Uzbekistan"
+        },
+        {
+          "number": "40",
+          "name": "Chen Chunxin",
+          "country": "China"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Odil Ahmedov",
+          "player_out": "Lin Chuangyi"
+        },
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lü Wenjun",
+          "player_out": "Zhang Wei"
+        },
+        {
+          "minute": 65,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Li Shenglong",
+          "player_out": "Marko Arnautović"
+        },
+        {
+          "minute": 65,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Chen Binbin",
+          "player_out": "Mirahmetjan Muzepper"
+        }
+      ]
     }
   },
-  "events": [],
+  "events": [
+    {
+      "minute": 62,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zou Zheng",
+      "card_type": "yellow"
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Wei Zhen",
+      "card_type": "yellow"
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wang Dong",
+      "player2": "",
+      "goal_type": "penalty_goal"
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Oscar",
+      "card_type": "yellow"
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zhu Jianrong",
+      "card_type": "yellow"
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Oscar",
+      "player2": "",
+      "goal_type": "penalty_goal"
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "red_card",
+      "team": "away",
+      "player": "Wei Zhen",
+      "card_type": "red"
+    }
+  ],
   "statistics": {
+    "possession": {
+      "home": "32%",
+      "away": "69%"
+    },
+    "shots_on_target": {
+      "home": "3",
+      "away": "2"
+    },
+    "shots": {
+      "home": "7",
+      "away": "12"
+    },
+    "shots_accuracy": {
+      "home": "43%",
+      "away": "17%"
+    },
+    "saves": {
+      "home": "1",
+      "away": "2"
+    },
+    "fouls": {
+      "home": "18",
+      "away": "19"
+    },
+    "corners": {
+      "home": "3",
+      "away": "5"
+    },
+    "crosses": {
+      "home": "10",
+      "away": "31"
+    },
+    "interceptions": {
+      "home": "7",
+      "away": "7"
+    },
+    "offsides": {
+      "home": "3",
+      "away": "2"
+    },
     "yellow_cards": {
-      "home": 0,
-      "away": 0
+      "home": 2,
+      "away": 1
     },
     "red_cards": {
       "home": 0,
-      "away": 0
+      "away": 1
+    },
+    "passing_accuracy": {
+      "home": "68%",
+      "away": "85%"
     }
   },
   "metadata": {
     "source": "FBref",
-    "url": "https://fbref.com/en/matches/ff18beaf/Qingdao-Hainiu-Shanghai-SIPG-August-6-2020-Chinese-Super-League",
-    "scraped_at": "2026-05-01T19:59:40.748047",
-    "version": "11.0-2020"
+    "url": "https://fbref.com/en/matches/qingdao-hainiu-vs-shanghai-sipg-2020-08-06",
+    "scraped_at": "2026-05-04T00:00:00.000000",
+    "version": "1.0"
   }
 }

@@ -1,67 +1,511 @@
 {
   "match_info": {
-    "match_id": "c3add62e",
+    "match_id": "tianjin-teda-vs-shanghai-sipg-2020-07-27",
     "date": "2020-07-27",
-    "time": "20:00",
+    "time": "19:35",
     "competition": {
       "name": "Chinese Football Association Super League",
       "season": "2020",
-      "round": "Matchweek None"
+      "round": "Regular season"
     },
     "venue": {
-      "name": "",
-      "attendance": 0
+      "name": "Kunshan Sports Center Stadium",
+      "attendance": null
     },
     "referee": {
-      "main": "",
-      "ar1": "",
-      "ar2": "",
-      "fourth": "",
-      "var": "",
+      "main": "Shi Zhenlu",
+      "ar1": "Cao Yi",
+      "ar2": "Bo Jiang",
+      "fourth": "Li Haixin",
+      "var": "Liu Lin",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Shanghai SIPG",
+      "name": "Tianjin TEDA",
       "full_name": "",
-      "score": 0,
-      "score_ht": 0,
-      "formation": "",
-      "coach": "",
-      "captain": "",
-      "lineup": [],
-      "substitutes": [],
-      "substitutions": []
+      "score": 1,
+      "score_ht": 1,
+      "formation": "Tianjin TEDA (4-2-3-1)",
+      "coach": "Uli Stielike",
+      "captain": "Zheng Kaimu",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Du Jia",
+          "country": "China",
+          "position": "GK"
+        },
+        {
+          "number": "3",
+          "name": "Zhao Honglüe",
+          "country": "China",
+          "position": "LB"
+        },
+        {
+          "number": "5",
+          "name": "Qiu Tianyi",
+          "country": "China",
+          "position": "CB"
+        },
+        {
+          "number": "7",
+          "name": "Frank Acheampong",
+          "country": "Ghana",
+          "position": "AM"
+        },
+        {
+          "number": "8",
+          "name": "Xiao Zhi",
+          "country": "China",
+          "position": "FW"
+        },
+        {
+          "number": "13",
+          "name": "Zheng Kaimu",
+          "country": "China",
+          "position": "DM"
+        },
+        {
+          "number": "14",
+          "name": "Rong Hao",
+          "country": "China",
+          "position": "AM"
+        },
+        {
+          "number": "16",
+          "name": "Liu Ruofan",
+          "country": "China",
+          "position": "AM"
+        },
+        {
+          "number": "19",
+          "name": "Bai Yuefeng",
+          "country": "China",
+          "position": "RB"
+        },
+        {
+          "number": "22",
+          "name": "Guo Hao",
+          "country": "China",
+          "position": "DM"
+        },
+        {
+          "number": "30",
+          "name": "Liu Yang",
+          "country": "China",
+          "position": "CB"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "27",
+          "name": "Teng Shangkun",
+          "country": "China"
+        },
+        {
+          "number": "2",
+          "name": "Wang Zhenghao",
+          "country": "China"
+        },
+        {
+          "number": "4",
+          "name": "Lei Tenglong",
+          "country": "China"
+        },
+        {
+          "number": "11",
+          "name": "Xie Weijun",
+          "country": "China"
+        },
+        {
+          "number": "15",
+          "name": "Felix Bastians",
+          "country": "Germany"
+        },
+        {
+          "number": "17",
+          "name": "Hui Jiakang",
+          "country": "China"
+        },
+        {
+          "number": "21",
+          "name": "Zhao Yingjie",
+          "country": "China"
+        },
+        {
+          "number": "23",
+          "name": "Qian Yumiao",
+          "country": "China"
+        },
+        {
+          "number": "24",
+          "name": "Piao Taoyu",
+          "country": "China"
+        },
+        {
+          "number": "26",
+          "name": "Che Shiwei",
+          "country": "China"
+        },
+        {
+          "number": "28",
+          "name": "Tan Wangsong",
+          "country": "China"
+        },
+        {
+          "number": "35",
+          "name": "Lan Jingxuan",
+          "country": "China"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Tan Wangsong",
+          "player_out": "Bai Yuefeng"
+        },
+        {
+          "minute": 74,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lei Tenglong",
+          "player_out": "Xiao Zhi"
+        },
+        {
+          "minute": 75,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Qian Yumiao",
+          "player_out": "Liu Ruofan"
+        },
+        {
+          "minute": 79,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Hui Jiakang",
+          "player_out": "Rong Hao"
+        },
+        {
+          "minute": 83,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Xie Weijun",
+          "player_out": "Frank Acheampong"
+        }
+      ]
     },
     "away": {
-      "name": "Opponent",
+      "name": "Shanghai SIPG",
       "full_name": "",
-      "score": 0,
-      "score_ht": 0,
-      "formation": "",
-      "coach": "",
-      "captain": "",
-      "lineup": [],
-      "substitutes": [],
-      "substitutions": []
+      "score": 3,
+      "score_ht": 2,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "Vítor Pereira",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "China",
+          "position": "GK"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "China",
+          "position": "LB"
+        },
+        {
+          "number": "5",
+          "name": "Shi Ke",
+          "country": "China",
+          "position": "CB"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Brazil",
+          "position": "CM"
+        },
+        {
+          "number": "9",
+          "name": "Ricardo Lopes Pereira",
+          "country": "Brazil",
+          "position": "FW"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Brazil",
+          "position": "FW"
+        },
+        {
+          "number": "16",
+          "name": "Mirahmetjan Muzepper",
+          "country": "China",
+          "position": "CM"
+        },
+        {
+          "number": "17",
+          "name": "Chen Binbin",
+          "country": "China",
+          "position": "FW"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "China",
+          "position": "CB"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "China",
+          "position": "RB"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Uzbekistan",
+          "position": "CM"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "12",
+          "name": "Chen Wei",
+          "country": "China"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "China"
+        },
+        {
+          "number": "3",
+          "name": "Yu Rui",
+          "country": "China"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "China"
+        },
+        {
+          "number": "7",
+          "name": "Marko Arnautović",
+          "country": "Austria"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "China"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "China"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "China"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "China"
+        },
+        {
+          "number": "20",
+          "name": "Yang Shiyuan",
+          "country": "China"
+        },
+        {
+          "number": "24",
+          "name": "Lei Wenjie",
+          "country": "China"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "China"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wei Zhen",
+          "player_out": "Chen Binbin"
+        },
+        {
+          "minute": 68,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Marko Arnautović",
+          "player_out": "Odil Ahmedov"
+        },
+        {
+          "minute": 72,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lü Wenjun",
+          "player_out": "Fu Huan"
+        },
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lin Chuangyi",
+          "player_out": "Mirahmetjan Muzepper"
+        },
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Li Shenglong",
+          "player_out": "Ricardo Lopes Pereira"
+        }
+      ]
     }
   },
-  "events": [],
+  "events": [
+    {
+      "minute": 6,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Fu Huan",
+      "player2": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 40,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Rong Hao",
+      "player2": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 44,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Ricardo Lopes Pereira",
+      "player2": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 3,
+      "type": "goal",
+      "team": "away",
+      "player": "Wang Shenchao",
+      "player2": "Mirahmetjan Muzepper",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 64,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Ricardo Lopes Pereira",
+      "player2": "Odil Ahmedov",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 0,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Fu Huan",
+      "card_type": "yellow"
+    },
+    {
+      "minute": 0,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Xiao Zhi",
+      "card_type": "yellow"
+    }
+  ],
   "statistics": {
+    "possession": {
+      "home": "31%",
+      "away": "69%"
+    },
+    "shots_on_target": {
+      "home": "4",
+      "away": "11"
+    },
+    "shots": {
+      "home": "12",
+      "away": "22"
+    },
+    "shots_accuracy": {
+      "home": "33%",
+      "away": "50%"
+    },
+    "saves": {
+      "home": "8",
+      "away": "3"
+    },
+    "fouls": {
+      "home": "15",
+      "away": "12"
+    },
+    "corners": {
+      "home": "3",
+      "away": "7"
+    },
+    "crosses": {
+      "home": "15",
+      "away": "21"
+    },
+    "interceptions": {
+      "home": "8",
+      "away": "6"
+    },
+    "offsides": {
+      "home": "1",
+      "away": "1"
+    },
     "yellow_cards": {
-      "home": 0,
-      "away": 0
+      "home": 1,
+      "away": 1
     },
     "red_cards": {
       "home": 0,
       "away": 0
+    },
+    "passing_accuracy": {
+      "home": "69%",
+      "away": "86%"
     }
   },
   "metadata": {
     "source": "FBref",
-    "url": "https://fbref.com/en/matches/c3add62e/Tianjin-TEDA-Shanghai-SIPG-July-27-2020-Chinese-Super-League",
-    "scraped_at": "2026-05-01T19:59:12.874289",
-    "version": "11.0-2020"
+    "url": "https://fbref.com/en/matches/tianjin-teda-vs-shanghai-sipg-2020-07-27",
+    "scraped_at": "2026-05-04T00:00:00.000000",
+    "version": "1.0"
   }
 }

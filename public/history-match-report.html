@@ -723,41 +723,43 @@
             const awayGoals = goalEvents.filter(event => event.team === 'away');
             
             function renderGoalList(goals, teamName) {
-              if (goals.length === 0) return '';
-              
               let html = `
                 <div style="margin-bottom: 1rem;">
                   <h4 style="color: #c00010; font-size: 1rem; margin-bottom: 0.5rem;">${teamName}</h4>
                   <ul style="list-style: none; padding: 0;">
               `;
               
-              goals.forEach((goal, index) => {
-                const minute = goal.minute;
-                const minuteExtra = goal.minute_extra;
-                const timeDisplay = minuteExtra ? `${minute}+${minuteExtra}'` : `${minute}'`;
-                
-                let specialMark = '';
-                let ballIcon = '⚽';
-                if (goal.goal_type === 'own_goal') {
-                  ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
-                  specialMark = ' <span style="color: #ff6b6b; font-weight: bold; font-size: 0.85rem;">(OG)</span>';
-                } else if (goal.goal_type === 'penalty_goal') {
-                  specialMark = ' <span style="color: #4ecdc4; font-weight: bold; font-size: 0.85rem;">(P)</span>';
-                }
-                
-                html += `
-                  <li style="padding: 0.3rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
-                    <div style="display: flex; justify-content: space-between;">
-                      <span style="font-size: 0.85rem;">
-                        <span style="color: #c00010; font-weight: 700; min-width: 30px;">${index + 1}.</span>
-                        <span>${ballIcon} ${goal.player}</span>${specialMark}
-                      </span>
-                      <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.8rem;">${timeDisplay}</span>
-                    </div>
-                    ${goal.player2 ? `<div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); margin-left: 30px; margin-top: 0.2rem;">(助攻: ${goal.player2})</div>` : ''}
-                  </li>
-                `;
-              });
+              if (goals.length === 0) {
+                html += '<li style="padding: 0.3rem 0; color: rgba(255, 255, 255, 0.5); font-size: 0.85rem;">暂无进球</li>';
+              } else {
+                goals.forEach((goal, index) => {
+                  const minute = goal.minute;
+                  const minuteExtra = goal.minute_extra;
+                  const timeDisplay = minuteExtra ? `${minute}+${minuteExtra}'` : `${minute}'`;
+                  
+                  let specialMark = '';
+                  let ballIcon = '⚽';
+                  if (goal.goal_type === 'own_goal') {
+                    ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
+                    specialMark = ' <span style="color: #ff6b6b; font-weight: bold; font-size: 0.85rem;">(OG)</span>';
+                  } else if (goal.goal_type === 'penalty_goal') {
+                    specialMark = ' <span style="color: #4ecdc4; font-weight: bold; font-size: 0.85rem;">(P)</span>';
+                  }
+                  
+                  html += `
+                    <li style="padding: 0.3rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                      <div style="display: flex; justify-content: space-between;">
+                        <span style="font-size: 0.85rem;">
+                          <span style="color: #c00010; font-weight: 700; min-width: 30px;">${index + 1}.</span>
+                          <span>${ballIcon} ${goal.player}</span>${specialMark}
+                        </span>
+                        <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.8rem;">${timeDisplay}</span>
+                      </div>
+                      ${goal.player2 ? `<div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); margin-left: 30px; margin-top: 0.2rem;">(助攻: ${goal.player2})</div>` : ''}
+                    </li>
+                  `;
+                });
+              }
               
               html += '</ul></div>';
               return html;

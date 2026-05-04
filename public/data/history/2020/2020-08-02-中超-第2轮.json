@@ -1,23 +1,23 @@
 {
   "match_info": {
-    "match_id": "1d7e0858",
+    "match_id": "shanghai-sipg-vs-hebei-fortune-2020-08-02",
     "date": "2020-08-02",
-    "time": "20:00",
+    "time": "18:00",
     "competition": {
       "name": "Chinese Football Association Super League",
       "season": "2020",
-      "round": "Matchweek None"
+      "round": "Regular season"
     },
     "venue": {
-      "name": "",
-      "attendance": 0
+      "name": "Kunshan Sports Center Stadium",
+      "attendance": null
     },
     "referee": {
-      "main": "",
-      "ar1": "",
-      "ar2": "",
-      "fourth": "",
-      "var": "",
+      "main": "Li Haixin",
+      "ar1": "Zhong Yong",
+      "ar2": "Guo Jingtao",
+      "fourth": "Liu Lin",
+      "var": "Guo Baolong",
       "country": "China"
     }
   },
@@ -25,43 +25,446 @@
     "home": {
       "name": "Shanghai SIPG",
       "full_name": "",
-      "score": 0,
-      "score_ht": 0,
-      "formation": "",
-      "coach": "",
-      "captain": "",
-      "lineup": [],
-      "substitutes": [],
-      "substitutions": []
+      "score": 4,
+      "score_ht": 1,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "Vítor Pereira",
+      "captain": "Oscar",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "China",
+          "position": "GK"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "China",
+          "position": "LB"
+        },
+        {
+          "number": "5",
+          "name": "Shi Ke",
+          "country": "China",
+          "position": "CB"
+        },
+        {
+          "number": "7",
+          "name": "Marko Arnautović",
+          "country": "Austria",
+          "position": "FW"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Brazil",
+          "position": "CM"
+        },
+        {
+          "number": "9",
+          "name": "Ricardo Lopes Pereira",
+          "country": "Brazil",
+          "position": "FW"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "China",
+          "position": "FW"
+        },
+        {
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "China",
+          "position": "RB"
+        },
+        {
+          "number": "16",
+          "name": "Mirahmetjan Muzepper",
+          "country": "China",
+          "position": "CM"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Uzbekistan",
+          "position": "CM"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "China",
+          "position": "CB"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "12",
+          "name": "Chen Wei",
+          "country": "China"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "China"
+        },
+        {
+          "number": "3",
+          "name": "Yu Rui",
+          "country": "China"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "China"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "China"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "China"
+        },
+        {
+          "number": "17",
+          "name": "Chen Binbin",
+          "country": "China"
+        },
+        {
+          "number": "20",
+          "name": "Yang Shiyuan",
+          "country": "China"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "China"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "China"
+        },
+        {
+          "number": "24",
+          "name": "Lei Wenjie",
+          "country": "China"
+        },
+        {
+          "number": "30",
+          "name": "Jia Boyan",
+          "country": "China"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 60,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lin Chuangyi",
+          "player_out": "Odil Ahmedov"
+        },
+        {
+          "minute": 74,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Yu Hai",
+          "player_out": "Lü Wenjun"
+        },
+        {
+          "minute": 75,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Cai Huikang",
+          "player_out": "Marko Arnautović"
+        },
+        {
+          "minute": 75,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Yang Shiyuan",
+          "player_out": "Mirahmetjan Muzepper"
+        },
+        {
+          "minute": 84,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Li Shenglong",
+          "player_out": "He Guan"
+        }
+      ]
     },
     "away": {
-      "name": "Opponent",
+      "name": "Hebei Fortune",
       "full_name": "",
       "score": 0,
       "score_ht": 0,
-      "formation": "",
-      "coach": "",
-      "captain": "",
-      "lineup": [],
-      "substitutes": [],
-      "substitutions": []
+      "formation": "Hebei Fortune (5-4-1)",
+      "coach": "Xie Feng",
+      "captain": "Zhang Chengdong",
+      "lineup": [
+        {
+          "number": "22",
+          "name": "Chi Wenyi",
+          "country": "China",
+          "position": "GK"
+        },
+        {
+          "number": "3",
+          "name": "Zhao Yuhao",
+          "country": "China",
+          "position": "CM"
+        },
+        {
+          "number": "5",
+          "name": "Samir Memišević",
+          "country": "Bosnia and Herzegovina",
+          "position": "CB"
+        },
+        {
+          "number": "9",
+          "name": "Dong Xuesheng",
+          "country": "China",
+          "position": "RM"
+        },
+        {
+          "number": "10",
+          "name": "Marcão",
+          "country": "Brazil",
+          "position": "FW"
+        },
+        {
+          "number": "16",
+          "name": "Ricardo Goulart",
+          "country": "Brazil",
+          "position": "LM"
+        },
+        {
+          "number": "23",
+          "name": "Ren Hang",
+          "country": "China",
+          "position": "CB"
+        },
+        {
+          "number": "27",
+          "name": "Liu Jing",
+          "country": "China",
+          "position": "CM"
+        },
+        {
+          "number": "28",
+          "name": "Zhang Chengdong",
+          "country": "China",
+          "position": "CB"
+        },
+        {
+          "number": "31",
+          "name": "Xu Tianyuan",
+          "country": "China",
+          "position": "LB"
+        },
+        {
+          "number": "37",
+          "name": "Pan Ximing",
+          "country": "China",
+          "position": "RB"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "30",
+          "name": "Bao Yaxiong",
+          "country": "China"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Junzhe",
+          "country": "China"
+        },
+        {
+          "number": "11",
+          "name": "Mohamed Buya Turay",
+          "country": "Sierra Leone"
+        },
+        {
+          "number": "13",
+          "name": "Yin Hongbo",
+          "country": "China"
+        },
+        {
+          "number": "14",
+          "name": "Feng Gang",
+          "country": "China"
+        },
+        {
+          "number": "15",
+          "name": "Wang Qiuming",
+          "country": "China"
+        },
+        {
+          "number": "17",
+          "name": "Luo Shipeng",
+          "country": "China"
+        },
+        {
+          "number": "20",
+          "name": "Gao Huaze",
+          "country": "China"
+        },
+        {
+          "number": "24",
+          "name": "Zhang Yu",
+          "country": "China"
+        },
+        {
+          "number": "26",
+          "name": "Jiang Wenjun",
+          "country": "China"
+        },
+        {
+          "number": "29",
+          "name": "Chen Xiao",
+          "country": "China"
+        },
+        {
+          "number": "33",
+          "name": "Wei Ren",
+          "country": "China"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 59,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Feng Gang",
+          "player_out": "Xu Tianyuan"
+        },
+        {
+          "minute": 77,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Gao Huaze",
+          "player_out": "Liu Jing"
+        }
+      ]
     }
   },
-  "events": [],
+  "events": [
+    {
+      "minute": 45,
+      "minute_extra": 1,
+      "type": "goal",
+      "team": "home",
+      "player": "Marko Arnautović",
+      "player2": "Lü Wenjun",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 48,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Marko Arnautović",
+      "player2": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 58,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Pan Ximing",
+      "card_type": "yellow"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Ricardo Lopes Pereira",
+      "player2": "Oscar",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "goal",
+      "team": "home",
+      "player": "Ricardo Lopes Pereira",
+      "player2": "",
+      "goal_type": "goal"
+    }
+  ],
   "statistics": {
+    "possession": {
+      "home": "54%",
+      "away": "46%"
+    },
+    "shots_on_target": {
+      "home": "7",
+      "away": "1"
+    },
+    "shots": {
+      "home": "18",
+      "away": "6"
+    },
+    "shots_accuracy": {
+      "home": "39%",
+      "away": "17%"
+    },
+    "saves": {
+      "home": "1",
+      "away": "3"
+    },
+    "fouls": {
+      "home": "21",
+      "away": "12"
+    },
+    "corners": {
+      "home": "4",
+      "away": "1"
+    },
+    "crosses": {
+      "home": "10",
+      "away": "12"
+    },
+    "interceptions": {
+      "home": "11",
+      "away": "15"
+    },
+    "offsides": {
+      "home": "2",
+      "away": "2"
+    },
     "yellow_cards": {
       "home": 0,
-      "away": 0
+      "away": 1
     },
     "red_cards": {
       "home": 0,
       "away": 0
+    },
+    "passing_accuracy": {
+      "home": "83%",
+      "away": "81%"
     }
   },
   "metadata": {
     "source": "FBref",
-    "url": "https://fbref.com/en/matches/1d7e0858/Shanghai-SIPG-Hebei-China-Fortune-August-2-2020-Chinese-Super-League",
-    "scraped_at": "2026-05-01T19:59:26.813400",
-    "version": "11.0-2020"
+    "url": "https://fbref.com/en/matches/shanghai-sipg-vs-hebei-fortune-2020-08-02",
+    "scraped_at": "2026-05-04T00:00:00.000000",
+    "version": "1.0"
   }
 }
