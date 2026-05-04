@@ -1,0 +1,621 @@
+{
+  "match_info": {
+    "match_id": "63a2c835",
+    "date": "2021-08-03",
+    "time": "18:30",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2021",
+      "round": "第11轮"
+    },
+    "venue": {
+      "name": "待补充",
+      "attendance": 0
+    },
+    "referee": {
+      "main": "Qi Xing",
+      "ar1": "Guo Jingtao",
+      "ar2": "Xi Fei",
+      "fourth": "Yige Dai",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "长春亚泰",
+      "full_name": "长春亚泰",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "(5-4-1)",
+      "coach": "Chen Yang",
+      "captain": "Sun Jie",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 28,
+          "name": "Shi Xiaotian",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 4,
+          "name": "Jores Okore",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 5,
+          "name": "Sun Jie",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "Serginho",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "Erik Lima",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 15,
+          "name": "Tudi Dilyimit",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "Cui Qi",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 25,
+          "name": "Wang Peng",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "Tan Long",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 31,
+          "name": "Rao Weihui",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 32,
+          "name": "Li Guang",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 23,
+          "name": "Wu Yake",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "Zhang Yu",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 9,
+          "name": "Júnior Negrão",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 13,
+          "name": "Cheng Changcheng",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 16,
+          "name": "Jiang Zhe",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 17,
+          "name": "Chen Po-liang",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 20,
+          "name": "Zhang Yufeng",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 24,
+          "name": "Yan Zhiyu",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "Yang Chaosheng",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 27,
+          "name": "Zhang Li",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 30,
+          "name": "Sun Qinhan",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 39,
+          "name": "Mao Kaiyu",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 58,
+          "minute_extra": 0,
+          "player_out": "Tan Long",
+          "player_in": "Yang Chaosheng"
+        },
+        {
+          "minute": 58,
+          "minute_extra": 0,
+          "player_out": "Li Guang",
+          "player_in": "Júnior Negrão"
+        },
+        {
+          "minute": 58,
+          "minute_extra": 0,
+          "player_out": "Tudi Dilyimit",
+          "player_in": "Zhang Yufeng"
+        },
+        {
+          "minute": 74,
+          "minute_extra": 0,
+          "player_out": "Erik Lima",
+          "player_in": "Chen Po-liang"
+        },
+        {
+          "minute": 79,
+          "minute_extra": 0,
+          "player_out": "Rao Weihui",
+          "player_in": "Cheng Changcheng"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海海港",
+      "full_name": "上海海港足球俱乐部",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "(3-4-3)",
+      "coach": "伊万·莱科",
+      "captain": "奥斯卡",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "颜骏凌",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 2,
+          "name": "李昂",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 8,
+          "name": "奥斯卡",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 9,
+          "name": "保利尼奥",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "马尔科·阿瑙托维奇",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 13,
+          "name": "李申圆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 14,
+          "name": "李圣龙",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 15,
+          "name": "张华晨",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 17,
+          "name": "阿布拉汗·哈力克",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 20,
+          "name": "杨世元",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 28,
+          "name": "贺惯",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 12,
+          "name": "陈威",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 3,
+          "name": "于睿",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 4,
+          "name": "王燊超",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "蔡慧康",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "吕文君",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 16,
+          "name": "买提江",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "阿隆·穆伊",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 25,
+          "name": "陈彬彬",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "胡靖航",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 27,
+          "name": "张一",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 36,
+          "name": "阿布拉汗·哈力克",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 39,
+          "name": "胡靖航",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "player_out": "陈彬彬",
+          "player_in": "吕文君"
+        },
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "player_out": "保利尼奥",
+          "player_in": "张华晨"
+        },
+        {
+          "minute": 69,
+          "minute_extra": 0,
+          "player_out": "李申圆",
+          "player_in": "王燊超"
+        },
+        {
+          "minute": 74,
+          "minute_extra": 0,
+          "player_out": "里卡多·洛佩斯",
+          "player_in": "买提江"
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "player_out": "贺惯",
+          "player_in": "胡靖航"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 39,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Rao Weihui",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Li Guang",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "吕文君",
+      "player2": "陈彬彬",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "张华晨",
+      "player2": "保利尼奥",
+      "description": ""
+    },
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "吕文君",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 58,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Yang Chaosheng",
+      "player2": "Tan Long",
+      "description": ""
+    },
+    {
+      "minute": 58,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Júnior Negrão",
+      "player2": "Li Guang",
+      "description": ""
+    },
+    {
+      "minute": 58,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Yufeng",
+      "player2": "Tudi Dilyimit",
+      "description": ""
+    },
+    {
+      "minute": 61,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "李申圆",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 64,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Yang Chaosheng",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "李昂",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "王燊超",
+      "player2": "李申圆",
+      "description": ""
+    },
+    {
+      "minute": 74,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Chen Po-liang",
+      "player2": "Erik Lima",
+      "description": ""
+    },
+    {
+      "minute": 74,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "买提江",
+      "player2": "里卡多·洛佩斯",
+      "description": ""
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Cheng Changcheng",
+      "player2": "Rao Weihui",
+      "description": ""
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Júnior Negrão",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Júnior Negrão",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "胡靖航",
+      "player2": "贺惯",
+      "description": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "魏震",
+      "player2": "",
+      "description": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "35%",
+      "away": "65%"
+    },
+    "shots_on_target": {
+      "home": "5",
+      "away": "4"
+    },
+    "shots": {
+      "home": "11",
+      "away": "11"
+    },
+    "shots_accuracy": {
+      "home": "45%",
+      "away": "36%"
+    },
+    "saves": {
+      "home": "3 of 4-75%",
+      "away": "3 of 5-60%"
+    },
+    "fouls": {
+      "home": "18",
+      "away": "9"
+    },
+    "corners": {
+      "home": "2",
+      "away": "9"
+    },
+    "crosses": {
+      "home": "10",
+      "away": "20"
+    },
+    "interceptions": {
+      "home": "11",
+      "away": "10"
+    },
+    "offsides": {
+      "home": "1",
+      "away": "0"
+    },
+    "yellow_cards": {
+      "home": 3,
+      "away": 3
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/63a2c835/Changchun-Yatai-Shanghai-Port-August-3-2021-Chinese-Super-League",
+    "scraped_at": "2026-05-01T19:31:51.911575",
+    "version": "11.0-2021"
+  }
+}

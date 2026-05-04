@@ -1,0 +1,561 @@
+{
+  "match_info": {
+    "match_id": "1462669b",
+    "date": "2022-12-04",
+    "time": "19:30",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2022",
+      "round": "第29轮"
+    },
+    "venue": {
+      "name": "Yuexiushan Stadium",
+      "attendance": 0
+    },
+    "referee": {
+      "main": "Shi Zhenlu",
+      "ar1": "Wang Xihong",
+      "ar2": "Zhang Xuechen",
+      "fourth": "Wang Wei",
+      "var": "Fu Ming",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "广州城",
+      "full_name": "广州城",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "(5-4-1)",
+      "coach": "Li Weifeng",
+      "captain": "Chen Zhizhao",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 23,
+          "name": "Zhou Yuchen",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "Fan Yunlong",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 9,
+          "name": "Gui Hong",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 15,
+          "name": "Wang Peng",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 17,
+          "name": "Fu Yuncheng",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "Chang Feiya",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 28,
+          "name": "Wu Chengru",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 31,
+          "name": "Zhang Jinliang",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 32,
+          "name": "Chen Zhizhao",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 37,
+          "name": "Wen Yongjun",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 43,
+          "name": "Liu Jiqiang",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "Cheng Yuelei",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 7,
+          "name": "Jown Cardona",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 12,
+          "name": "Guilherme",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 18,
+          "name": "Yi Teng",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 20,
+          "name": "Tang Miao",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 25,
+          "name": "Jin Liangkuan",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "Song Wenjie",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 35,
+          "name": "Liao Jiajun",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 38,
+          "name": "Li Yongjia",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 39,
+          "name": "Su Yuliang",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 42,
+          "name": "Sun Delin",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 44,
+          "name": "Yikai Huang",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 68,
+          "minute_extra": 0,
+          "player_out": "Chen Zhizhao",
+          "player_in": "Yikai Huang"
+        },
+        {
+          "minute": 68,
+          "minute_extra": 0,
+          "player_out": "Gui Hong",
+          "player_in": "Song Wenjie"
+        },
+        {
+          "minute": 81,
+          "minute_extra": 0,
+          "player_out": "Zhang Jinliang",
+          "player_in": "Jin Liangkuan"
+        },
+        {
+          "minute": 84,
+          "minute_extra": 0,
+          "player_out": "Fan Yunlong",
+          "player_in": "Li Yongjia"
+        },
+        {
+          "minute": 84,
+          "minute_extra": 0,
+          "player_out": "Wu Chengru",
+          "player_in": "Su Yuliang"
+        }
+      ]
+    },
+    "away": {
+      "name": "​​上海海港​​",
+      "full_name": "​​上海海港​​",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "(4-5-1)",
+      "coach": "Zhikang Xi",
+      "captain": "王燊超",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "颜骏凌",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 3,
+          "name": "吕文君",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 4,
+          "name": "王燊超",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "蔡慧康",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 7,
+          "name": "魏震",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 9,
+          "name": "李昂",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "张琳芃",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 13,
+          "name": "李申圆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 16,
+          "name": "张华晨",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 24,
+          "name": "刘柏杨",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 43,
+          "name": "梁锟",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 12,
+          "name": "蒋光太",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "马蒂亚斯·巴尔加斯",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 15,
+          "name": "武磊",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "刘祝润",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 25,
+          "name": "杨世元",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "贺惯",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 27,
+          "name": "阿布拉汗·哈力克",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "傅欢",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 32,
+          "name": "陈旭黄",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 33,
+          "name": "李帅",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 34,
+          "name": "赵申澳",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 36,
+          "name": "杜佳",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 63,
+          "minute_extra": 0,
+          "player_out": "吕文君",
+          "player_in": "卡隆"
+        },
+        {
+          "minute": 71,
+          "minute_extra": 0,
+          "player_out": "保利尼奥",
+          "player_in": "冯劲"
+        },
+        {
+          "minute": 72,
+          "minute_extra": 0,
+          "player_out": "武磊",
+          "player_in": "恩迪亚耶"
+        },
+        {
+          "minute": 84,
+          "minute_extra": 0,
+          "player_out": "王逸伟",
+          "player_in": "刘祝润"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 36,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Fan Yunlong",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 39,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "马蒂亚斯·巴尔加斯",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 41,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wen Yongjun",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "武磊",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 63,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "卡隆",
+      "player2": "吕文君",
+      "description": ""
+    },
+    {
+      "minute": 68,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Yikai Huang",
+      "player2": "Chen Zhizhao",
+      "description": ""
+    },
+    {
+      "minute": 68,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Song Wenjie",
+      "player2": "Gui Hong",
+      "description": ""
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "冯劲",
+      "player2": "保利尼奥",
+      "description": ""
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "恩迪亚耶",
+      "player2": "武磊",
+      "description": ""
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Jin Liangkuan",
+      "player2": "Zhang Jinliang",
+      "description": ""
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Yongjia",
+      "player2": "Fan Yunlong",
+      "description": ""
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Su Yuliang",
+      "player2": "Wu Chengru",
+      "description": ""
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "刘祝润",
+      "player2": "王逸伟",
+      "description": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "35%",
+      "away": "66%"
+    },
+    "shots_on_target": {
+      "home": "1",
+      "away": "10"
+    },
+    "shots": {
+      "home": "6",
+      "away": "31"
+    },
+    "shots_accuracy": {
+      "home": "17%",
+      "away": "32%"
+    },
+    "saves": {
+      "home": "7 of 10-70%",
+      "away": "0 of 1-0%"
+    },
+    "fouls": {
+      "home": "12",
+      "away": "7"
+    },
+    "corners": {
+      "home": "2",
+      "away": "14"
+    },
+    "crosses": {
+      "home": "5",
+      "away": "28"
+    },
+    "interceptions": {
+      "home": "12",
+      "away": "10"
+    },
+    "offsides": {
+      "home": "0",
+      "away": "3"
+    },
+    "yellow_cards": {
+      "home": 0,
+      "away": 1
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/1462669b/Guangzhou-City-Shanghai-Port-December-4-2022-Chinese-Super-League",
+    "scraped_at": "2026-05-01T18:43:33.666293",
+    "version": "11.0-2022"
+  }
+}

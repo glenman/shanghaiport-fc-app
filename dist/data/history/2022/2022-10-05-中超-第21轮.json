@@ -1,0 +1,543 @@
+{
+  "match_info": {
+    "match_id": "d394fb8a",
+    "date": "2022-10-05",
+    "time": "19:30",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2022",
+      "round": "第21轮"
+    },
+    "venue": {
+      "name": "大连体育中心体育场",
+      "attendance": 0
+    },
+    "referee": {
+      "main": "Li Haixin",
+      "ar1": "Luo Zheng",
+      "ar2": "Xing Liu",
+      "fourth": "Sun Lei",
+      "var": "Shunqi Tang",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "​​上海海港​​",
+      "full_name": "​​上海海港​​",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "(3-5-1)",
+      "coach": "伊万·莱科",
+      "captain": "王燊超",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "颜骏凌",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 2,
+          "name": "李昂",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 3,
+          "name": "吕文君",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 4,
+          "name": "王燊超",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "蔡慧康",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 9,
+          "name": "李昂",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "马蒂亚斯·巴尔加斯",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "张琳芃",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 13,
+          "name": "李申圆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 24,
+          "name": "刘柏杨",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "傅欢",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 12,
+          "name": "蒋光太",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 22,
+          "name": "卡隆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 14,
+          "name": "冯劲",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 15,
+          "name": "武磊",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 20,
+          "name": "陈纯新",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "刘祝润",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 25,
+          "name": "杨世元",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "贺惯",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 32,
+          "name": "陈旭黄",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 37,
+          "name": "向荣峻",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 39,
+          "name": "王淞",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 74,
+          "minute_extra": 0,
+          "player_out": "王燊超",
+          "player_in": "李申圆"
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "player_out": "恩迪亚耶",
+          "player_in": "李圣龙"
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "player_out": "李昂",
+          "player_in": "李帅"
+        }
+      ]
+    },
+    "away": {
+      "name": "北京国安",
+      "full_name": "北京国安",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "(4-2-3)",
+      "coach": "Stanley Menzo",
+      "captain": "Yu Dabao",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 14,
+          "name": "Zou Dehai",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 5,
+          "name": "Samir Memišević",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 9,
+          "name": "Zhang Yuning",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "Zhang Xizhe",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 15,
+          "name": "Gao Tianyi",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 17,
+          "name": "Kang Sang-woo",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 19,
+          "name": "Liu Huan",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 20,
+          "name": "Wang Ziming",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 22,
+          "name": "Yu Dabao",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 27,
+          "name": "Wang Gang",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 28,
+          "name": "Zhang Chengdong",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "Hou Sen",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 25,
+          "name": "Guo Quanbo",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 3,
+          "name": "Yu Yang",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 8,
+          "name": "Piao Cheng",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "Samuel Adegbenro",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 16,
+          "name": "Jin Pengxiang",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "Bai Yang",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "Tian Yuda",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 30,
+          "name": "Marko Dabro",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 32,
+          "name": "Liu Guobo",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 34,
+          "name": "Naibijiang Mohemaiti",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 37,
+          "name": "Cao Yongjing",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 59,
+          "minute_extra": 0,
+          "player_out": "Zou Dehai",
+          "player_in": "Hou Sen"
+        },
+        {
+          "minute": 72,
+          "minute_extra": 0,
+          "player_out": "Kang Sang-woo",
+          "player_in": "Cao Yongjing"
+        },
+        {
+          "minute": 72,
+          "minute_extra": 0,
+          "player_out": "Wang Ziming",
+          "player_in": "Samuel Adegbenro"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 6,
+          "player_out": "Zhang Xizhe",
+          "player_in": "Bai Yang"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 22,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Gao Tianyi",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 36,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zhang Chengdong",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 56,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "李昂",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 57,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zou Dehai",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 59,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Hou Sen",
+      "player2": "Zou Dehai",
+      "description": ""
+    },
+    {
+      "minute": 64,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "马蒂亚斯·巴尔加斯",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Cao Yongjing",
+      "player2": "Kang Sang-woo",
+      "description": ""
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Samuel Adegbenro",
+      "player2": "Wang Ziming",
+      "description": ""
+    },
+    {
+      "minute": 74,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "李申圆",
+      "player2": "王燊超",
+      "description": ""
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "李圣龙",
+      "player2": "恩迪亚耶",
+      "description": ""
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "李帅",
+      "player2": "李昂",
+      "description": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 5,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Liu Huan",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 6,
+      "type": "substitution",
+      "team": "away",
+      "player": "Bai Yang",
+      "player2": "Zhang Xizhe",
+      "description": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "67%",
+      "away": "33%"
+    },
+    "shots_on_target": {
+      "home": "4",
+      "away": "5"
+    },
+    "shots": {
+      "home": "11",
+      "away": "11"
+    },
+    "shots_accuracy": {
+      "home": "36%",
+      "away": "45%"
+    },
+    "saves": {
+      "home": "4 of 5-80%",
+      "away": "4 of 4-100%"
+    },
+    "fouls": {
+      "home": "10",
+      "away": "10"
+    },
+    "corners": {
+      "home": "4",
+      "away": "4"
+    },
+    "crosses": {
+      "home": "19",
+      "away": "8"
+    },
+    "interceptions": {
+      "home": "18",
+      "away": "18"
+    },
+    "offsides": {
+      "home": "0",
+      "away": "2"
+    },
+    "yellow_cards": {
+      "home": 3,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/d394fb8a/Shanghai-Port-Beijing-Guoan-October-5-2022-Chinese-Super-League",
+    "scraped_at": "2026-05-01T18:40:59.444279",
+    "version": "11.0-2022"
+  }
+}

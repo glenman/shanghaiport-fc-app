@@ -1,0 +1,489 @@
+{
+  "match_info": {
+    "match_id": "3025b3b9",
+    "date": "2021-12-29",
+    "time": "20:00",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2021",
+      "round": "第20轮"
+    },
+    "venue": {
+      "name": "待补充",
+      "attendance": 0
+    },
+    "referee": {
+      "main": "Zhang Long",
+      "ar1": "Ma Ji",
+      "ar2": "Li Xingfeng",
+      "fourth": "Jingyuan",
+      "var": "",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "广州队",
+      "full_name": "广州队",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "(3-4-3)",
+      "coach": "Jean-Paul van Gastel",
+      "captain": "Jiang Jihong",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 22,
+          "name": "Han Jiaqi",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "Fan Yunlong",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 7,
+          "name": "Jown Cardona",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "Li Tixiang",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 18,
+          "name": "Yi Teng",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 19,
+          "name": "Jiang Jihong",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 27,
+          "name": "Yang Xiaotian",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "Song Wenjie",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 32,
+          "name": "Chen Zhizhao",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 35,
+          "name": "Wang Huapeng",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 36,
+          "name": "Huang Zhengyu",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "Cheng Yuelei",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "Long Wenhao",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 5,
+          "name": "Hu Ruibao",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 9,
+          "name": "Tiago",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 15,
+          "name": "Han Pengfei",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 25,
+          "name": "Jin Liangkuan",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 37,
+          "name": "Wen Yongjun",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 39,
+          "name": "Su Yuliang",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "player_out": "Li Tixiang",
+          "player_in": "Hu Ruibao"
+        },
+        {
+          "minute": 71,
+          "minute_extra": 0,
+          "player_out": "Fan Yunlong",
+          "player_in": "Han Pengfei"
+        },
+        {
+          "minute": 74,
+          "minute_extra": 0,
+          "player_out": "Wang Huapeng",
+          "player_in": "Wen Yongjun"
+        },
+        {
+          "minute": 75,
+          "minute_extra": 0,
+          "player_out": "Chen Zhizhao",
+          "player_in": "Tiago"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海海港",
+      "full_name": "上海海港",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "(3-3-3-1)",
+      "coach": "伊万·莱科",
+      "captain": "奥斯卡",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "颜骏凌",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 4,
+          "name": "王燊超",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 8,
+          "name": "奥斯卡",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "吕文君",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 15,
+          "name": "张华晨",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 19,
+          "name": "张卫",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "阿隆·穆伊",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 25,
+          "name": "陈彬彬",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 28,
+          "name": "贺惯",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 33,
+          "name": "刘祝润",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 39,
+          "name": "胡靖航",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 12,
+          "name": "陈威",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 35,
+          "name": "郭通",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "蔡慧康",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 14,
+          "name": "李圣龙",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 16,
+          "name": "买提江",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 18,
+          "name": "于海",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "胡靖航",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 27,
+          "name": "张一",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "聂孟",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 36,
+          "name": "阿布拉汗·哈力克",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 71,
+          "minute_extra": 0,
+          "player_out": "刘祝润",
+          "player_in": "张华晨"
+        },
+        {
+          "minute": 83,
+          "minute_extra": 0,
+          "player_out": "胡靖航",
+          "player_in": "李圣龙"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 15,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "阿隆·穆伊",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "阿隆·穆伊",
+      "player2": "奥斯卡",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Hu Ruibao",
+      "player2": "Li Tixiang",
+      "description": ""
+    },
+    {
+      "minute": 59,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Song Wenjie",
+      "player2": "Fan Yunlong",
+      "description": ""
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "张华晨",
+      "player2": "刘祝润",
+      "description": ""
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Han Pengfei",
+      "player2": "Fan Yunlong",
+      "description": ""
+    },
+    {
+      "minute": 74,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wen Yongjun",
+      "player2": "Wang Huapeng",
+      "description": ""
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Tiago",
+      "player2": "Chen Zhizhao",
+      "description": ""
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Yi Teng",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "胡靖航",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "李圣龙",
+      "player2": "胡靖航",
+      "description": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "43%",
+      "away": "57%"
+    },
+    "shots_on_target": {
+      "home": "4",
+      "away": "11"
+    },
+    "shots": {
+      "home": "9",
+      "away": "25"
+    },
+    "shots_accuracy": {
+      "home": "44%",
+      "away": "44%"
+    },
+    "saves": {
+      "home": "8 of 11-72%",
+      "away": "3 of 4-75%"
+    },
+    "fouls": {
+      "home": "10",
+      "away": "15"
+    },
+    "corners": {
+      "home": "0",
+      "away": "12"
+    },
+    "crosses": {
+      "home": "10",
+      "away": "26"
+    },
+    "interceptions": {
+      "home": "12",
+      "away": "9"
+    },
+    "offsides": {
+      "home": "0",
+      "away": "1"
+    },
+    "yellow_cards": {
+      "home": 1,
+      "away": 1
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/3025b3b9/Guangzhou-City-Shanghai-Port-December-29-2021-Chinese-Super-League",
+    "scraped_at": "2026-05-01T19:34:17.866003",
+    "version": "11.0-2021"
+  }
+}

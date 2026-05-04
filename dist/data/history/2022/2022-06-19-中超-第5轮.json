@@ -1,0 +1,540 @@
+{
+  "match_info": {
+    "match_id": "c414f524",
+    "date": "2022-06-19",
+    "time": "17:30",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2022",
+      "round": "第5轮"
+    },
+    "venue": {
+      "name": "Puwan Stadium",
+      "attendance": 0
+    },
+    "referee": {
+      "main": "Shunqi Tang",
+      "ar1": "Hu Chengjun",
+      "ar2": "Kexin Ma",
+      "fourth": "Niu Minghui",
+      "var": "Qi Xing",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "武汉三镇",
+      "full_name": "武汉三镇",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "(4-4-2)",
+      "coach": "Pedro Morilla Pineda",
+      "captain": "Ren Hang",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 22,
+          "name": "Liu Dianzuo",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 3,
+          "name": "Wallace",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 7,
+          "name": "Ademilson",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 12,
+          "name": "Zhang Xiaobin",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 13,
+          "name": "Marcão",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 18,
+          "name": "Liu Yiming",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 23,
+          "name": "Ren Hang",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 25,
+          "name": "Deng Hanwen",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 30,
+          "name": "Xie Pengfei",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 37,
+          "name": "Xu Haoyang",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 43,
+          "name": "Nicolae Stanciu",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "Wu Fei",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 2,
+          "name": "Xiong Fei",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 4,
+          "name": "Yaki Yen",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "Duan Yunzi",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 8,
+          "name": "Deng Zhuoxiang",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "Sang Yifei",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "Davidson da Luz Pereira",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 19,
+          "name": "Zhang Wentao",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "He Chao",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "Tao Qianglong",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 31,
+          "name": "Luo Senwen",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 40,
+          "name": "Zhang Hui",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 55,
+          "minute_extra": 0,
+          "player_out": "Xie Pengfei",
+          "player_in": "He Chao"
+        },
+        {
+          "minute": 72,
+          "minute_extra": 0,
+          "player_out": "Marcão",
+          "player_in": "Davidson da Luz Pereira"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 2,
+          "player_out": "Nicolae Stanciu",
+          "player_in": "Luo Senwen"
+        }
+      ]
+    },
+    "away": {
+      "name": "​​上海海港​​",
+      "full_name": "​​上海海港​​",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "(3-4-3)",
+      "coach": "伊万·莱科",
+      "captain": "王燊超",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "颜骏凌",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 2,
+          "name": "李昂",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 4,
+          "name": "王燊超",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 5,
+          "name": "保利尼奥",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 9,
+          "name": "李昂",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "张琳芃",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 20,
+          "name": "陈纯新",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 25,
+          "name": "杨世元",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "贺惯",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 27,
+          "name": "阿布拉汗·哈力克",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 33,
+          "name": "李帅",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 22,
+          "name": "卡隆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 31,
+          "name": "奥斯卡",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "蔡慧康",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "马蒂亚斯·巴尔加斯",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 14,
+          "name": "冯劲",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 16,
+          "name": "张华晨",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 17,
+          "name": "买提江",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "刘祝润",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 28,
+          "name": "陈威",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "傅欢",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 37,
+          "name": "向荣峻",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 39,
+          "name": "王淞",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 37,
+          "minute_extra": 0,
+          "player_out": "杨世元",
+          "player_in": "徐新"
+        },
+        {
+          "minute": 37,
+          "minute_extra": 0,
+          "player_out": "陈纯新",
+          "player_in": "恩迪亚耶"
+        },
+        {
+          "minute": 58,
+          "minute_extra": 0,
+          "player_out": "王燊超",
+          "player_in": "贺惯"
+        },
+        {
+          "minute": 72,
+          "minute_extra": 0,
+          "player_out": "刘祝润",
+          "player_in": "刘柏杨"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 10,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Marcão",
+      "player2": "Xie Pengfei",
+      "description": ""
+    },
+    {
+      "minute": 21,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "杨世元",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 24,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Ren Hang",
+      "player2": "Nicolae Stanciu",
+      "description": ""
+    },
+    {
+      "minute": 37,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "徐新",
+      "player2": "杨世元",
+      "description": ""
+    },
+    {
+      "minute": 37,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "恩迪亚耶",
+      "player2": "陈纯新",
+      "description": ""
+    },
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "He Chao",
+      "player2": "Xie Pengfei",
+      "description": ""
+    },
+    {
+      "minute": 57,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "恩迪亚耶",
+      "player2": "冯劲",
+      "description": ""
+    },
+    {
+      "minute": 58,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "贺惯",
+      "player2": "王燊超",
+      "description": ""
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Davidson da Luz Pereira",
+      "player2": "Marcão",
+      "description": ""
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "刘柏杨",
+      "player2": "刘祝润",
+      "description": ""
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "He Chao",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 2,
+      "type": "substitution",
+      "team": "home",
+      "player": "Luo Senwen",
+      "player2": "Nicolae Stanciu",
+      "description": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "35%",
+      "away": "65%"
+    },
+    "shots_on_target": {
+      "home": "11",
+      "away": "3"
+    },
+    "shots": {
+      "home": "22",
+      "away": "6"
+    },
+    "shots_accuracy": {
+      "home": "50%",
+      "away": "50%"
+    },
+    "saves": {
+      "home": "2 of 3-66%",
+      "away": "9 of 11-81%"
+    },
+    "fouls": {
+      "home": "18",
+      "away": "13"
+    },
+    "corners": {
+      "home": "8",
+      "away": "6"
+    },
+    "crosses": {
+      "home": "15",
+      "away": "20"
+    },
+    "interceptions": {
+      "home": "11",
+      "away": "8"
+    },
+    "offsides": {
+      "home": "0",
+      "away": "3"
+    },
+    "yellow_cards": {
+      "home": 1,
+      "away": 1
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/c414f524/Wuhan-Three-Towns-Shanghai-Port-June-19-2022-Chinese-Super-League",
+    "scraped_at": "2026-05-01T18:37:23.473637",
+    "version": "11.0-2022"
+  }
+}

@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-05-01",
+  "lastUpdated": "2026-05-03",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
     "competition": "中国足球协会超级联赛",
-    "matchesPlayed": 8,
-    "record": "3胜1平4负",
-    "goalsFor": 13,
-    "goalsAgainst": 9,
+    "matchesPlayed": 9,
+    "record": "3胜1平5负",
+    "goalsFor": 14,
+    "goalsAgainst": 12,
     "points": 10,
     "topScorers": [
       {
@@ -339,6 +339,42 @@
     "yellowCards": [
       {
         "rank": 1,
+        "name": "吾米提江",
+        "number": 40,
+        "yellowCards": 4,
+        "details": [
+          {
+            "match": "第3轮",
+            "date": "2026-03-20",
+            "time": "22'",
+            "opponent": "大连英博海发",
+            "reason": "上海海港吾米提江获得黄牌"
+          },
+          {
+            "match": "第6轮",
+            "date": "2026-04-17",
+            "time": "54'",
+            "opponent": "山东泰山",
+            "reason": "上海海港吾米提江获得黄牌"
+          },
+          {
+            "match": "第7轮",
+            "date": "2026-04-21",
+            "time": "85'",
+            "opponent": "重庆铜梁龙",
+            "reason": "上海海港吾米提江获得黄牌"
+          },
+          {
+            "match": "第9轮",
+            "date": "2026-05-02",
+            "time": "33'",
+            "opponent": "青岛海牛",
+            "reason": "上海海港吾米提江·玉素甫获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 2,
         "name": "卢永涛",
         "number": 38,
         "yellowCards": 3,
@@ -363,35 +399,6 @@
             "time": "69'",
             "opponent": "山东泰山",
             "reason": "上海海港卢永涛获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 2,
-        "name": "吾米提江",
-        "number": 40,
-        "yellowCards": 3,
-        "details": [
-          {
-            "match": "第3轮",
-            "date": "2026-03-20",
-            "time": "22'",
-            "opponent": "大连英博海发",
-            "reason": "上海海港吾米提江获得黄牌"
-          },
-          {
-            "match": "第6轮",
-            "date": "2026-04-17",
-            "time": "54'",
-            "opponent": "山东泰山",
-            "reason": "上海海港吾米提江获得黄牌"
-          },
-          {
-            "match": "第7轮",
-            "date": "2026-04-21",
-            "time": "85'",
-            "opponent": "重庆铜梁龙",
-            "reason": "上海海港吾米提江获得黄牌"
           }
         ]
       },
@@ -537,6 +544,21 @@
       },
       {
         "rank": 10,
+        "name": "鲍世蒙",
+        "number": 31,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第9轮",
+            "date": "2026-05-02",
+            "time": "54'",
+            "opponent": "青岛海牛",
+            "reason": "上海海港鲍世蒙获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 11,
         "name": "杨世元",
         "number": 20,
         "yellowCards": 1,
@@ -551,7 +573,23 @@
         ]
       }
     ],
-    "redCards": []
+    "redCards": [
+      {
+        "rank": 1,
+        "name": "吾米提江",
+        "number": 40,
+        "redCards": 1,
+        "details": [
+          {
+            "match": "第9轮",
+            "date": "2026-05-02",
+            "time": "63'",
+            "opponent": "青岛海牛",
+            "reason": "上海海港吾米提江·玉素甫获得第二张黄牌被罚下"
+          }
+        ]
+      }
+    ]
   },
   "bTeam": {
     "teamName": "上海海港富盛经开",

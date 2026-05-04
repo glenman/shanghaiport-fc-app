@@ -1,0 +1,603 @@
+{
+  "match_info": {
+    "match_id": "e0bb3655",
+    "date": "2022-11-26",
+    "time": "20:00",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2022",
+      "round": "第27轮"
+    },
+    "venue": {
+      "name": "Mission Hills Football Base Stadium",
+      "attendance": 0
+    },
+    "referee": {
+      "main": "Jingyuan",
+      "ar1": "Wang Dexin",
+      "ar2": "Huang Tao",
+      "fourth": "Caiwei Liang",
+      "var": "Du Jianxin",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "天津津门虎",
+      "full_name": "天津津门虎",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "(4-5-1)",
+      "coach": "Yu Genwei",
+      "captain": "Bai Yuefeng",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "Xu Jiamin",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 2,
+          "name": "David Andújar",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 4,
+          "name": "Yang Fan",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 8,
+          "name": "Zhao Yingjie",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "Xie Weijun",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 18,
+          "name": "Farley Vieira Rosa",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 19,
+          "name": "Bai Yuefeng",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 24,
+          "name": "Piao Taoyu",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 31,
+          "name": "Tian Yinong",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 32,
+          "name": "Su Yuanjie",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 40,
+          "name": "Shi Yan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 22,
+          "name": "Fang Jingqi",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 3,
+          "name": "Wang Zhenghao",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "Gao Jiarun",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 7,
+          "name": "Zhou Tong",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 9,
+          "name": "Robert Berić",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "Éder Luiz Lima de Souza",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 17,
+          "name": "Zhou Zheng",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 20,
+          "name": "Wang Jianan",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "Zhang Xingliang",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 27,
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 30,
+          "name": "Wang Qiuming",
+          "country": "Unknown"
+        },
+        {
+          "position": "MF",
+          "number": 33,
+          "name": "Song Yue",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "player_out": "Xie Weijun",
+          "player_in": "Robert Berić"
+        },
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "player_out": "Piao Taoyu",
+          "player_in": "Wang Qiuming"
+        },
+        {
+          "minute": 69,
+          "minute_extra": 0,
+          "player_out": "Bai Yuefeng",
+          "player_in": "Wang Zhenghao"
+        },
+        {
+          "minute": 69,
+          "minute_extra": 0,
+          "player_out": "Shi Yan",
+          "player_in": "Wang Jianan"
+        },
+        {
+          "minute": 84,
+          "minute_extra": 0,
+          "player_out": "Farley Vieira Rosa",
+          "player_in": "Gao Jiarun"
+        }
+      ]
+    },
+    "away": {
+      "name": "​​上海海港​​",
+      "full_name": "​​上海海港​​",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "(4-2-3)",
+      "coach": "伊万·莱科",
+      "captain": "王燊超",
+      "lineup": [
+        {
+          "position": "MF",
+          "number": 1,
+          "name": "颜骏凌",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 3,
+          "name": "吕文君",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 4,
+          "name": "王燊超",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 6,
+          "name": "蔡慧康",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 7,
+          "name": "魏震",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 9,
+          "name": "李昂",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 11,
+          "name": "张琳芃",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 13,
+          "name": "李申圆",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 24,
+          "name": "刘柏杨",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 27,
+          "name": "阿布拉汗·哈力克",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 43,
+          "name": "梁锟",
+          "country": "中国"
+        }
+      ],
+      "substitutes": [
+        {
+          "position": "MF",
+          "number": 12,
+          "name": "蒋光太",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 31,
+          "name": "奥斯卡",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 10,
+          "name": "马蒂亚斯·巴尔加斯",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 16,
+          "name": "张华晨",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 20,
+          "name": "陈纯新",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 21,
+          "name": "刘祝润",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 26,
+          "name": "贺惯",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 29,
+          "name": "傅欢",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 32,
+          "name": "陈旭黄",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 33,
+          "name": "李帅",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 34,
+          "name": "赵申澳",
+          "country": "中国"
+        },
+        {
+          "position": "MF",
+          "number": 36,
+          "name": "杜佳",
+          "country": "中国"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "player_out": "王逸伟",
+          "player_in": "刘祝润"
+        },
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "player_out": "冯劲",
+          "player_in": "徐新"
+        },
+        {
+          "minute": 76,
+          "minute_extra": 0,
+          "player_out": "马蒂亚斯·巴尔加斯",
+          "player_in": "恩迪亚耶"
+        },
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "player_out": "蔡慧康",
+          "player_in": "张华晨"
+        },
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "player_out": "蒋光太",
+          "player_in": "李帅"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 11,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "吕文君",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 13,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zhao Yingjie",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 17,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Bai Yuefeng",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 18,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "蔡慧康",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 31,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "魏震",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Robert Berić",
+      "player2": "Xie Weijun",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "刘祝润",
+      "player2": "王逸伟",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wang Qiuming",
+      "player2": "Piao Taoyu",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "徐新",
+      "player2": "冯劲",
+      "description": ""
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wang Zhenghao",
+      "player2": "Bai Yuefeng",
+      "description": ""
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wang Jianan",
+      "player2": "Shi Yan",
+      "description": ""
+    },
+    {
+      "minute": 73,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Su Yuanjie",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 74,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wang Qiuming",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "恩迪亚耶",
+      "player2": "马蒂亚斯·巴尔加斯",
+      "description": ""
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "张华晨",
+      "player2": "蔡慧康",
+      "description": ""
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "李帅",
+      "player2": "蒋光太",
+      "description": ""
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Gao Jiarun",
+      "player2": "Farley Vieira Rosa",
+      "description": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "33%",
+      "away": "67%"
+    },
+    "shots_on_target": {
+      "home": "3",
+      "away": "2"
+    },
+    "shots": {
+      "home": "5",
+      "away": "12"
+    },
+    "shots_accuracy": {
+      "home": "60%",
+      "away": "17%"
+    },
+    "saves": {
+      "home": "2 of 2-100%",
+      "away": "1 of 3-33%"
+    },
+    "fouls": {
+      "home": "12",
+      "away": "13"
+    },
+    "corners": {
+      "home": "1",
+      "away": "8"
+    },
+    "crosses": {
+      "home": "7",
+      "away": "38"
+    },
+    "interceptions": {
+      "home": "16",
+      "away": "7"
+    },
+    "offsides": {
+      "home": "1",
+      "away": "2"
+    },
+    "yellow_cards": {
+      "home": 3,
+      "away": 3
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/e0bb3655/Tianjin-Jinmen-Tiger-Shanghai-Port-November-26-2022-Chinese-Super-League",
+    "scraped_at": "2026-05-01T18:43:04.288543",
+    "version": "11.0-2022"
+  }
+}
