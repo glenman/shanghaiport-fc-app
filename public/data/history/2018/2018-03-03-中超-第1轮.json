@@ -1,0 +1,484 @@
+{
+  "match_info": {
+    "match_id": "86e4ee33",
+    "date": "2018-03-03",
+    "time": "19:35",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2019",
+      "round": "第1轮"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 21830
+    },
+    "referee": {
+      "main": "关星(北京)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 8,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-2-3-1)",
+      "coach": "维托尔·佩雷拉",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "胡尔克",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "胡靖航",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "于海",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "34",
+          "name": "陈威",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "李圣龙",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "张华晨",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "傅欢",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "陈彬彬",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 63,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lü Wenjun",
+          "player2": "",
+          "player_out": "Hu Jinghang"
+        },
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Chen Binbin",
+          "player2": "",
+          "player_out": "Cai Huikang"
+        },
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhang Huachen",
+          "player2": "",
+          "player_out": "Oscar"
+        }
+      ]
+    },
+    "away": {
+      "name": "大连一方",
+      "full_name": "",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "(4-4-1-1)",
+      "coach": "马林",
+      "captain": "Wang Wanpeng",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Zhang Chong",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Wang Wanpeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "José Fonte",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wang Liang",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Zhu Ting",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Nicolás Gaitán",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Yannick Carrasco",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Sun Guowen",
+          "country": "Unknown"
+        },
+        {
+          "number": "12",
+          "name": "Zhou Ting",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Jin Qiang",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Wang Jinxian",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "19",
+          "name": "Yu Ziqian",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Li Shuai",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Zhu Xiaogang",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wang Yaopeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Cui Ming'an",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Sun Bo",
+          "country": "Unknown"
+        },
+        {
+          "number": "31",
+          "name": "Yang Shanping",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 66,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Li Shuai",
+          "player2": "",
+          "player_out": "Wang Jinxian"
+        },
+        {
+          "minute": 66,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wang Yaopeng",
+          "player2": "",
+          "player_out": "Sun Guowen"
+        },
+        {
+          "minute": 81,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Yang Shanping",
+          "player2": "",
+          "player_out": "José Fonte"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 1,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Oscar",
+      "player2": "Hu Jinghang",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 24,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Oscar",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 37,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "penalty_goal"
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 63,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "player_out": "Hu Jinghang"
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Li Shuai",
+      "player2": "",
+      "player_out": "Wang Jinxian"
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wang Yaopeng",
+      "player2": "",
+      "player_out": "Sun Guowen"
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Oscar",
+      "player2": "Hulk",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Chen Binbin",
+      "player2": "",
+      "player_out": "Cai Huikang"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Huachen",
+      "player2": "",
+      "player_out": "Oscar"
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Yang Shanping",
+      "player2": "",
+      "player_out": "José Fonte"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "Chen Binbin",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "Hulk",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zhou Ting",
+      "player2": "",
+      "player_out": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "63%",
+      "away": "37%"
+    },
+    "shots_on_target": {
+      "home": "13",
+      "away": "0"
+    },
+    "shots": {
+      "home": "24",
+      "away": "9"
+    },
+    "shots_accuracy": {
+      "home": "54%",
+      "away": "0%"
+    },
+    "fouls": {
+      "home": "11",
+      "away": "13"
+    },
+    "corners": {
+      "home": "5",
+      "away": "4"
+    },
+    "crosses": {
+      "home": "16",
+      "away": "12"
+    },
+    "interceptions": {
+      "home": "11",
+      "away": "8"
+    },
+    "offsides": {
+      "home": "3",
+      "away": "4"
+    },
+    "yellow_cards": {
+      "home": 1,
+      "away": 0
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/86e4ee33/Shanghai-SIPG-Dalian-Yifang-March-3-2018-Chinese-Super-League",
+    "scraped_at": "2026-05-05T18:42:05.891253",
+    "version": "11.0-2018"
+  }
+}

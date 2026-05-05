@@ -1,0 +1,387 @@
+{
+  "match_info": {
+    "match_id": "31710af5",
+    "date": "2017-05-14",
+    "time": "19:35",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2017",
+      "round": "第9轮"
+    },
+    "venue": {
+      "name": "天津团泊足球场",
+      "city": "天津市",
+      "attendance": 13629
+    },
+    "referee": {
+      "main": "王竞(贵州)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "天津泰达",
+      "full_name": "",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "Tianjin TEDA (4-1-4-1)",
+      "coach": "海梅·帕切科(葡萄牙)",
+      "captain": "Nemanja Gudelj",
+      "lineup": [
+        {
+          "number": "29",
+          "name": "Yang Qipeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Zhao Honglüe",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Pan Ximing",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Hu Rentian",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Hwang Seok-ho",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Bai Yuefeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Yang Liyu",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Guo Hao",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Mirahmetjan Muzepper",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Nemanja Gudelj",
+          "country": "Unknown"
+        },
+        {
+          "number": "39",
+          "name": "Brown Ideye",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "30",
+          "name": "Li Zheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Li Yuanyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wang Qiuming",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Hui Jiakang",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Zhao Yingjie",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Nie Tao",
+          "country": "Unknown"
+        },
+        {
+          "number": "32",
+          "name": "Lei Yongchi",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 12,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Li Yuanyi",
+          "player2": "",
+          "player_out": "Yang Liyu"
+        },
+        {
+          "minute": 78,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lei Yongchi",
+          "player2": "",
+          "player_out": "Mirahmetjan Muzepper"
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Hui Jiakang",
+          "player2": "",
+          "player_out": "Bai Yuefeng"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "安德烈·维拉斯·博阿斯",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "胡尔克",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "张华晨",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "傅欢",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "艾哈迈多夫",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "孙乐",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "李圣龙",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "张一",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "韦世豪",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 11,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Cai Huikang",
+          "player2": "",
+          "player_out": "Zhang Huachen"
+        },
+        {
+          "minute": 81,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wei Shihao",
+          "player2": "",
+          "player_out": "Lü Wenjun"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 11,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Cai Huikang",
+      "player2": "",
+      "player_out": "Zhang Huachen"
+    },
+    {
+      "minute": 12,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Yuanyi",
+      "player2": "",
+      "player_out": "Yang Liyu"
+    },
+    {
+      "minute": 34,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Fu Huan",
+      "player2": "Lü Wenjun",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lei Yongchi",
+      "player2": "",
+      "player_out": "Mirahmetjan Muzepper"
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wei Shihao",
+      "player2": "",
+      "player_out": "Lü Wenjun"
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Fu Huan",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zhao Honglüe",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Hui Jiakang",
+      "player2": "",
+      "player_out": "Bai Yuefeng"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Li Yuanyi",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Pan Ximing",
+      "player2": "",
+      "player_out": ""
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 1,
+      "away": 3
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/31710af5/Tianjin-TEDA-Shanghai-SIPG-May-14-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T10:58:39.333953",
+    "version": "11.0-2017"
+  }
+}

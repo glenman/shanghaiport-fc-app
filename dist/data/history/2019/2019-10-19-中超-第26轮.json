@@ -1,290 +1,231 @@
 {
   "match_info": {
-    "match_id": "3350f4b1",
+    "match_id": "Beijing-Sinobo-Guoan-Shanghai-SIPG-October-19-2019-Chinese-Super-League",
     "date": "2019-10-19",
     "time": "19:35",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2019",
       "round": "第26轮"
     },
     "venue": {
-      "name": "Workers' Stadium",
+      "name": "北京工人体育场",
+      "city": "北京市",
       "attendance": 51810
     },
     "referee": {
-      "main": "Damir Skomina",
-      "ar1": "Wang Dexin",
-      "ar2": "Ma Ji",
-      "fourth": "Shunqi Tang",
-      "var": "",
+      "main": "达米尔·斯科米纳(斯洛文尼亚)",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Shanghai SIPG",
-      "full_name": "",
+      "name": "北京国安",
+      "full_name": "北京国安",
       "score": 0,
       "score_ht": 0,
-      "formation": "Beijing Guoan (4-4-2)",
-      "coach": "Bruno Génésio",
-      "captain": "Yu Dabao",
+      "formation": "4-4-2",
+      "coach": "布鲁诺·热内西奥(法国)",
+      "captain": "Unknown",
       "lineup": [
         {
           "number": "14",
           "name": "Zou Dehai",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "2",
-          "name": "Kim Min-jae",
-          "country": "Unknown"
+          "name": "Kim Min",
+          "position": ""
         },
         {
           "number": "4",
           "name": "Li Lei",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "5",
           "name": "Renato Augusto",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "7",
           "name": "John Hou Sæter",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "9",
           "name": "Zhang Yuning",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "10",
           "name": "Zhang Xizhe",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "11",
           "name": "Fernando",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "19",
           "name": "Yu Dabao",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "26",
           "name": "Lü Peng",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "27",
           "name": "Wang Gang",
-          "country": "Unknown"
+          "position": ""
         }
       ],
       "substitutes": [
         {
           "number": "1",
           "name": "Hou Sen",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "3",
           "name": "Yu Yang",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "6",
           "name": "Chi Zhongguo",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "17",
           "name": "Cédric Bakambu",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "18",
           "name": "Jin Taiyan",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "23",
           "name": "Nico Yennaris",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "29",
           "name": "Ba Dun",
-          "country": "Unknown"
+          "position": ""
         }
       ],
-      "substitutions": [
-        {
-          "minute": 59,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Cédric Bakambu",
-          "player2": "",
-          "player_out": "Fernando"
-        },
-        {
-          "minute": 70,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Ba Dun",
-          "player2": "",
-          "player_out": "John Hou Sæter"
-        },
-        {
-          "minute": 84,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Jin Taiyan",
-          "player2": "",
-          "player_out": "Li Lei"
-        }
-      ]
+      "substitutions": []
     },
     "away": {
-      "name": "Opponent",
-      "full_name": "",
+      "name": "上海上港",
+      "full_name": "上海上港",
       "score": 2,
       "score_ht": 0,
-      "formation": "Shanghai SIPG (4-3-3)",
-      "coach": "Vítor Pereira",
-      "captain": "Hulk",
+      "formation": "4-3-3",
+      "coach": "维托尔·佩雷拉",
+      "captain": "奥斯卡",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
-          "country": "Unknown"
+          "name": "颜骏凌",
+          "position": ""
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
-          "country": "Unknown"
+          "name": "王燊超",
+          "position": ""
         },
         {
           "number": "5",
-          "name": "Shi Ke",
-          "country": "Unknown"
+          "name": "石柯",
+          "position": ""
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
-          "country": "Unknown"
+          "name": "蔡慧康",
+          "position": ""
         },
         {
           "number": "8",
-          "name": "Oscar",
-          "country": "Unknown"
+          "name": "奥斯卡",
+          "position": ""
         },
         {
           "number": "10",
-          "name": "Hulk",
-          "country": "Unknown"
+          "name": "胡尔克",
+          "position": ""
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
-          "country": "Unknown"
+          "name": "吕文君",
+          "position": ""
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
-          "country": "Unknown"
+          "name": "李圣龙",
+          "position": ""
         },
         {
           "number": "21",
-          "name": "Yu Hai",
-          "country": "Unknown"
+          "name": "于海",
+          "position": ""
         },
         {
           "number": "25",
-          "name": "Odil Ahmedov",
-          "country": "Unknown"
+          "name": "艾哈迈多夫",
+          "position": ""
         },
         {
           "number": "28",
-          "name": "He Guan",
-          "country": "Unknown"
+          "name": "贺惯",
+          "position": ""
         }
       ],
       "substitutes": [
         {
           "number": "22",
-          "name": "Sun Le",
-          "country": "Unknown"
+          "name": "孙乐",
+          "position": ""
         },
         {
           "number": "2",
-          "name": "Zhang Wei",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "12",
-          "name": "Li Haowen",
-          "country": "Unknown"
+          "name": "李浩文",
+          "position": ""
         },
         {
           "number": "13",
-          "name": "Wei Zhen",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "15",
-          "name": "Lin Chuangyi",
-          "country": "Unknown"
+          "name": "林创益",
+          "position": ""
         },
         {
           "number": "23",
-          "name": "Fu Huan",
-          "country": "Unknown"
+          "name": "傅欢",
+          "position": ""
         },
         {
           "number": "37",
-          "name": "Chen Binbin",
-          "country": "Unknown"
+          "name": "陈彬彬",
+          "position": ""
         }
       ],
-      "substitutions": [
-        {
-          "minute": 59,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Chen Binbin",
-          "player2": "",
-          "player_out": "Hulk"
-        },
-        {
-          "minute": 85,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Zhang Wei",
-          "player2": "",
-          "player_out": "Yu Hai"
-        },
-        {
-          "minute": 87,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Wei Zhen",
-          "player2": "",
-          "player_out": "He Guan"
-        }
-      ]
+      "substitutions": []
     }
   },
   "events": [
@@ -293,9 +234,11 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Lü Wenjun",
+      "player": "吕文君",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"12’ 0:0 Lü Wenjun — Yellow Card\""
     },
     {
       "minute": 24,
@@ -304,26 +247,31 @@
       "team": "home",
       "player": "Yu Dabao",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"24’ 0:0 Yu Dabao — Yellow Card\""
     },
     {
       "minute": 28,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Cai Huikang",
+      "player": "蔡慧康",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"28’ 0:0 Cai Huikang — Yellow Card\""
     },
     {
       "minute": 49,
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Li Shenglong",
-      "player2": "Lü Wenjun",
+      "player": "李圣龙",
+      "player2": "吕文君",
+      "goal_type": "goal",
       "player_out": "",
-      "goal_type": "goal"
+      "description": "\"49’ 0:1 Li Shenglong Assist: Lü Wenjun — Goal 0:1\""
     },
     {
       "minute": 59,
@@ -331,27 +279,32 @@
       "type": "substitution",
       "team": "home",
       "player": "Cédric Bakambu",
-      "player2": "",
-      "player_out": "Fernando"
+      "player2": "Fernando",
+      "goal_type": "",
+      "player_out": "Fernando",
+      "description": "\"59’ 0:1 Cédric Bakambu for Fernando — Substitute\""
     },
     {
       "minute": 59,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Chen Binbin",
-      "player2": "",
-      "player_out": "Hulk"
+      "player": "陈彬彬",
+      "player2": "胡尔克",
+      "goal_type": "",
+      "player_out": "Hulk",
+      "description": "\"59’ 0:1 Chen Binbin for Hulk — Substitute\""
     },
     {
       "minute": 66,
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Odil Ahmedov",
-      "player2": "Chen Binbin",
+      "player": "艾哈迈多夫",
+      "player2": "陈彬彬",
+      "goal_type": "goal",
       "player_out": "",
-      "goal_type": "goal"
+      "description": "\"66’ 0:2 Odil Ahmedov Assist: Chen Binbin — Goal 0:2\""
     },
     {
       "minute": 70,
@@ -359,8 +312,10 @@
       "type": "substitution",
       "team": "home",
       "player": "Ba Dun",
-      "player2": "",
-      "player_out": "John Hou Sæter"
+      "player2": "John Hou Sæter",
+      "goal_type": "",
+      "player_out": "John Hou Sæter",
+      "description": "\"70’ 0:2 Ba Dun for John Hou Sæter — Substitute\""
     },
     {
       "minute": 83,
@@ -369,7 +324,9 @@
       "team": "home",
       "player": "Zhang Yuning",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"83’ 0:2 Zhang Yuning — Yellow Card\""
     },
     {
       "minute": 84,
@@ -377,82 +334,64 @@
       "type": "substitution",
       "team": "home",
       "player": "Jin Taiyan",
-      "player2": "",
-      "player_out": "Li Lei"
+      "player2": "Li Lei",
+      "goal_type": "",
+      "player_out": "Li Lei",
+      "description": "\"84’ 0:2 Jin Taiyan for Li Lei — Substitute\""
     },
     {
       "minute": 85,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Zhang Wei",
-      "player2": "",
-      "player_out": "Yu Hai"
+      "player": "张卫",
+      "player2": "于海",
+      "goal_type": "",
+      "player_out": "Yu Hai",
+      "description": "\"85’ 0:2 Zhang Wei for Yu Hai — Substitute\""
     },
     {
       "minute": 87,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Wei Zhen",
-      "player2": "",
-      "player_out": "He Guan"
+      "player": "张卫",
+      "player2": "贺惯",
+      "goal_type": "",
+      "player_out": "He Guan",
+      "description": "\"87’ 0:2 Wei Zhen for He Guan — Substitute\""
     }
   ],
   "statistics": {
-    "possession": {
-      "home": "62%",
-      "away": "38%"
+    "\"Beijing Guoan\"": {
+      "home": "",
+      "away": ""
     },
-    "shots_on_target": {
-      "home": "2",
-      "away": "3"
+    "\"Possession\"": {
+      "home": "",
+      "away": ""
     },
-    "shots": {
-      "home": "11",
-      "away": "6"
+    "\"Passing Accuracy\"": {
+      "home": "",
+      "away": ""
     },
-    "shots_accuracy": {
-      "home": "18%",
-      "away": "50%"
+    "\"Shots on Target\"": {
+      "home": "",
+      "away": ""
     },
-    "saves": {
-      "home": "1 of 3-33%",
-      "away": "2 of 2-100%"
+    "\"Saves\"": {
+      "home": "",
+      "away": ""
     },
-    "fouls": {
-      "home": "8",
-      "away": "15"
-    },
-    "corners": {
-      "home": "6",
-      "away": "4"
-    },
-    "crosses": {
-      "home": "23",
-      "away": "16"
-    },
-    "interceptions": {
-      "home": "12",
-      "away": "15"
-    },
-    "offsides": {
-      "home": "3",
-      "away": "2"
-    },
-    "yellow_cards": {
-      "home": 2,
-      "away": 2
-    },
-    "red_cards": {
-      "home": 0,
-      "away": 0
+    "\"Cards\"": {
+      "home": "",
+      "away": ""
     }
   },
   "metadata": {
     "source": "FBref",
     "url": "https://fbref.com/en/matches/3350f4b1/Beijing-Sinobo-Guoan-Shanghai-SIPG-October-19-2019-Chinese-Super-League",
-    "scraped_at": "2026-05-02T11:07:12.965560",
-    "version": "11.0-2019"
+    "scraped_at": "2026-05-04T17:30:50.240490",
+    "version": "2.0-BLOCK-BY-BLOCK"
   }
 }

@@ -1,0 +1,464 @@
+{
+  "match_info": {
+    "match_id": "7c48be0d",
+    "date": "2018-05-12",
+    "time": "15:30",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 10"
+    },
+    "venue": {
+      "name": "贵阳奥体中心",
+      "city": "贵州省贵阳市",
+      "attendance": 16753
+    },
+    "referee": {
+      "main": "关星(北京)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "贵州恒丰",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Guizhou Heng (4-2-3-1)",
+      "coach": "格雷戈里奥·曼萨诺(西班牙)",
+      "captain": "Festus Baise",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Su Boyang",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Tang Xin",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Festus Baise",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Yang Ting",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wang Fan",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Zhang Yuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Bubacarr Trawally",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Tjaronn Chery",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Min Junlin",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Mario Suárez",
+          "country": "Unknown"
+        },
+        {
+          "number": "35",
+          "name": "张卫",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "14",
+          "name": "Zhu Zhengyu",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Zhang Sipeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Fan Yunlong",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Zheng Kaimu",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Jiang Liang",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Liang Xueming",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Chen Ji",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Fan Yunlong",
+          "player2": "",
+          "player_out": "Zhang Yuan"
+        },
+        {
+          "minute": 79,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Chen Ji",
+          "player2": "",
+          "player_out": "Wang Fan"
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhu Zhengyu",
+          "player2": "",
+          "player_out": "Tjaronn Chery"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "(3-4-3)",
+      "coach": "维托尔·佩雷拉",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "埃尔克森",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "张一",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "于海",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "陈彬彬",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "34",
+          "name": "陈威",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "李圣龙",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "胡靖航",
+          "country": "Unknown"
+        },
+        {
+          "number": "39",
+          "name": "孙峻岗",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 73,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Hu Jinghang",
+          "player2": "",
+          "player_out": "Chen Binbin"
+        },
+        {
+          "minute": 73,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Cai Huikang",
+          "player2": "",
+          "player_out": "Zhang Yi"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 15,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Mario Suárez",
+      "player2": "Tjaronn Chery",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 32,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Wu Lei",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Min Junlin",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Fan Yunlong",
+      "player2": "",
+      "player_out": "Zhang Yuan"
+    },
+    {
+      "minute": 53,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zhang Wei",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 62,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Wang Fan",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Bubacarr Trawally",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 73,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Hu Jinghang",
+      "player2": "",
+      "player_out": "Chen Binbin"
+    },
+    {
+      "minute": 73,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Cai Huikang",
+      "player2": "",
+      "player_out": "Zhang Yi"
+    },
+    {
+      "minute": 77,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Yu Hai",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Chen Ji",
+      "player2": "",
+      "player_out": "Wang Fan"
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhu Zhengyu",
+      "player2": "",
+      "player_out": "Tjaronn Chery"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 1,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zhang Wei",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 1,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Chen Ji",
+      "player2": "",
+      "player_out": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "48%",
+      "away": "52%"
+    },
+    "shots_on_target": {
+      "home": "4",
+      "away": "1"
+    },
+    "shots": {
+      "home": "9",
+      "away": "3"
+    },
+    "shots_accuracy": {
+      "home": "44%",
+      "away": "33%"
+    },
+    "saves": {
+      "home": "0 of 1-0%",
+      "away": "2 of 4-50%"
+    },
+    "fouls": {
+      "home": "15",
+      "away": "22"
+    },
+    "corners": {
+      "home": "6",
+      "away": "4"
+    },
+    "crosses": {
+      "home": "22",
+      "away": "20"
+    },
+    "interceptions": {
+      "home": "18",
+      "away": "9"
+    },
+    "offsides": {
+      "home": "3",
+      "away": "5"
+    },
+    "yellow_cards": {
+      "home": 3,
+      "away": 4
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/7c48be0d/Guizhou-Hengfeng-Shanghai-SIPG-May-12-2018-Chinese-Super-League",
+    "scraped_at": "2026-05-05T18:44:20.590460",
+    "version": "11.0-2018"
+  }
+}

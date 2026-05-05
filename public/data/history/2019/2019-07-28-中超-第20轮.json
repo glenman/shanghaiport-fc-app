@@ -1,281 +1,231 @@
 {
   "match_info": {
-    "match_id": "79b6c984",
+    "match_id": "Wuhan-Zall-Shanghai-SIPG-July-28-2019-Chinese-Super-League",
     "date": "2019-07-28",
     "time": "19:35",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2019",
       "round": "第20轮"
     },
     "venue": {
-      "name": "Wuhan Sports Center Stadium",
+      "name": "武汉五环体育中心",
+      "city": "湖北省武汉市",
       "attendance": 23517
     },
     "referee": {
-      "main": "",
-      "ar1": "Hu Chengjun",
-      "ar2": "Shen Pengxiang",
-      "fourth": "Jingyuan",
-      "var": "",
+      "main": "米洛拉德·马日奇(塞尔维亚)",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Shanghai SIPG",
-      "full_name": "",
+      "name": "武汉卓尔",
+      "full_name": "武汉卓尔",
       "score": 1,
       "score_ht": 0,
-      "formation": "Wuhan Zall (4-2-3-1)",
-      "coach": "Li Tie",
-      "captain": "Liao Junjian",
+      "formation": "4-2-3-1",
+      "coach": "李铁",
+      "captain": "Unknown",
       "lineup": [
         {
           "number": "16",
           "name": "Dong Hengyi",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "2",
           "name": "Huang Bowen",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "3",
-          "name": "Liu Yi",
-          "country": "Unknown"
+          "name": "张一",
+          "position": ""
         },
         {
           "number": "10",
           "name": "Léo Baptistão",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "15",
           "name": "Ming Tian",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "17",
           "name": "Jean Evrard Kouassi",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "18",
           "name": "Song Zhiwei",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "22",
           "name": "Liao Junjian",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "24",
           "name": "Wang Kai",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "25",
           "name": "Stéphane Mbia",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "26",
           "name": "Liu Yun",
-          "country": "Unknown"
+          "position": ""
         }
       ],
       "substitutes": [
         {
           "number": "23",
           "name": "Sun Shoubo",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "4",
           "name": "Ai Zhibo",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "8",
           "name": "Yao Hanlin",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "20",
           "name": "Li Hang",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "27",
           "name": "Tong Xiaoxing",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "33",
           "name": "Chang Feiya",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "40",
           "name": "Guo Tianyu",
-          "country": "Unknown"
+          "position": ""
         }
       ],
-      "substitutions": [
-        {
-          "minute": 68,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Li Hang",
-          "player2": "",
-          "player_out": "Wang Kai"
-        },
-        {
-          "minute": 75,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Chang Feiya",
-          "player2": "",
-          "player_out": "Ming Tian"
-        }
-      ]
+      "substitutions": []
     },
     "away": {
-      "name": "Opponent",
-      "full_name": "",
+      "name": "上海上港",
+      "full_name": "上海上港",
       "score": 1,
       "score_ht": 0,
-      "formation": "Shanghai SIPG (3-4-3)",
-      "coach": "Vítor Pereira",
-      "captain": "Hulk",
+      "formation": "3-4-3",
+      "coach": "维托尔·佩雷拉",
+      "captain": "奥斯卡",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
-          "country": "Unknown"
+          "name": "颜骏凌",
+          "position": ""
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
-          "country": "Unknown"
+          "name": "王燊超",
+          "position": ""
         },
         {
           "number": "5",
-          "name": "Shi Ke",
-          "country": "Unknown"
+          "name": "石柯",
+          "position": ""
         },
         {
           "number": "7",
-          "name": "Marko Arnautović",
-          "country": "Unknown"
+          "name": "阿瑙托维奇",
+          "position": ""
         },
         {
           "number": "8",
-          "name": "Oscar",
-          "country": "Unknown"
+          "name": "奥斯卡",
+          "position": ""
         },
         {
           "number": "10",
-          "name": "Hulk",
-          "country": "Unknown"
+          "name": "胡尔克",
+          "position": ""
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
-          "country": "Unknown"
+          "name": "吕文君",
+          "position": ""
         },
         {
           "number": "15",
-          "name": "Lin Chuangyi",
-          "country": "Unknown"
+          "name": "林创益",
+          "position": ""
         },
         {
           "number": "21",
-          "name": "Yu Hai",
-          "country": "Unknown"
+          "name": "于海",
+          "position": ""
         },
         {
           "number": "28",
-          "name": "He Guan",
-          "country": "Unknown"
+          "name": "贺惯",
+          "position": ""
         },
         {
           "number": "37",
-          "name": "Chen Binbin",
-          "country": "Unknown"
+          "name": "陈彬彬",
+          "position": ""
         }
       ],
       "substitutes": [
         {
           "number": "34",
-          "name": "Chen Wei",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "2",
-          "name": "Zhang Wei",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "13",
-          "name": "Wei Zhen",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
-          "country": "Unknown"
+          "name": "李圣龙",
+          "position": ""
         },
         {
           "number": "18",
-          "name": "Zhang Yi",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "19",
-          "name": "Hu Jinghang",
-          "country": "Unknown"
+          "name": "胡靖航",
+          "position": ""
         },
         {
           "number": "25",
-          "name": "Odil Ahmedov",
-          "country": "Unknown"
+          "name": "艾哈迈多夫",
+          "position": ""
         }
       ],
-      "substitutions": [
-        {
-          "minute": 46,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Odil Ahmedov",
-          "player2": "",
-          "player_out": "Marko Arnautović"
-        },
-        {
-          "minute": 69,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Li Shenglong",
-          "player2": "",
-          "player_out": "Lin Chuangyi"
-        },
-        {
-          "minute": 83,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Zhang Yi",
-          "player2": "",
-          "player_out": "Lü Wenjun"
-        }
-      ]
+      "substitutions": []
     }
   },
   "events": [
@@ -286,27 +236,31 @@
       "team": "home",
       "player": "Liu Yun",
       "player2": "Huang Bowen",
+      "goal_type": "goal",
       "player_out": "",
-      "goal_type": "goal"
+      "description": "\"4’ 1:0 Liu Yun Assist: Huang Bowen — Goal 1:0\""
     },
     {
       "minute": 23,
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Marko Arnautović",
-      "player2": "Hulk",
+      "player": "阿瑙托维奇",
+      "player2": "胡尔克",
+      "goal_type": "goal",
       "player_out": "",
-      "goal_type": "goal"
+      "description": "\"23’ 1:1 Marko Arnautović Assist: Hulk — Goal 1:1\""
     },
     {
       "minute": 46,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Odil Ahmedov",
-      "player2": "",
-      "player_out": "Marko Arnautović"
+      "player": "艾哈迈多夫",
+      "player2": "阿瑙托维奇",
+      "goal_type": "",
+      "player_out": "Marko Arnautović",
+      "description": "\"46’ 1:1 Odil Ahmedov for Marko Arnautović — Substitute\""
     },
     {
       "minute": 68,
@@ -314,17 +268,21 @@
       "type": "substitution",
       "team": "home",
       "player": "Li Hang",
-      "player2": "",
-      "player_out": "Wang Kai"
+      "player2": "Wang Kai",
+      "goal_type": "",
+      "player_out": "Wang Kai",
+      "description": "\"68’ 1:1 Li Hang for Wang Kai — Substitute\""
     },
     {
       "minute": 69,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Li Shenglong",
-      "player2": "",
-      "player_out": "Lin Chuangyi"
+      "player": "李圣龙",
+      "player2": "林创益",
+      "goal_type": "",
+      "player_out": "Lin Chuangyi",
+      "description": "\"69’ 1:1 Li Shenglong for Lin Chuangyi — Substitute\""
     },
     {
       "minute": 75,
@@ -332,8 +290,10 @@
       "type": "substitution",
       "team": "home",
       "player": "Chang Feiya",
-      "player2": "",
-      "player_out": "Ming Tian"
+      "player2": "Ming Tian",
+      "goal_type": "",
+      "player_out": "Ming Tian",
+      "description": "\"75’ 1:1 Chang Feiya for Ming Tian — Substitute\""
     },
     {
       "minute": 77,
@@ -342,81 +302,63 @@
       "team": "home",
       "player": "Liu Yi",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"77’ 1:1 Liu Yi — Yellow Card\""
     },
     {
       "minute": 83,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Zhang Yi",
-      "player2": "",
-      "player_out": "Lü Wenjun"
+      "player": "张卫",
+      "player2": "吕文君",
+      "goal_type": "",
+      "player_out": "Lü Wenjun",
+      "description": "\"83’ 1:1 Zhang Yi for Lü Wenjun — Substitute\""
     },
     {
       "minute": 84,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Chen Binbin",
+      "player": "陈彬彬",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"84’ 1:1 Chen Binbin — Yellow Card\""
     }
   ],
   "statistics": {
-    "possession": {
-      "home": "47%",
-      "away": "53%"
+    "\"Wuhan Zall\"": {
+      "home": "",
+      "away": ""
     },
-    "shots_on_target": {
-      "home": "2",
-      "away": "1"
+    "\"Possession\"": {
+      "home": "",
+      "away": ""
     },
-    "shots": {
-      "home": "9",
-      "away": "14"
+    "\"Passing Accuracy\"": {
+      "home": "",
+      "away": ""
     },
-    "shots_accuracy": {
-      "home": "22%",
-      "away": "7%"
+    "\"Shots on Target\"": {
+      "home": "",
+      "away": ""
     },
-    "saves": {
-      "home": "0 of 1-0%",
-      "away": "1 of 2-50%"
+    "\"Saves\"": {
+      "home": "",
+      "away": ""
     },
-    "fouls": {
-      "home": "8",
-      "away": "11"
-    },
-    "corners": {
-      "home": "3",
-      "away": "8"
-    },
-    "crosses": {
-      "home": "4",
-      "away": "25"
-    },
-    "interceptions": {
-      "home": "6",
-      "away": "6"
-    },
-    "offsides": {
-      "home": "1",
-      "away": "0"
-    },
-    "yellow_cards": {
-      "home": 1,
-      "away": 1
-    },
-    "red_cards": {
-      "home": 0,
-      "away": 0
+    "\"Cards\"": {
+      "home": "",
+      "away": ""
     }
   },
   "metadata": {
     "source": "FBref",
     "url": "https://fbref.com/en/matches/79b6c984/Wuhan-Zall-Shanghai-SIPG-July-28-2019-Chinese-Super-League",
-    "scraped_at": "2026-05-02T11:05:42.408897",
-    "version": "11.0-2019"
+    "scraped_at": "2026-05-04T17:27:58.770690",
+    "version": "2.0-BLOCK-BY-BLOCK"
   }
 }

@@ -1,0 +1,397 @@
+{
+  "match_info": {
+    "match_id": "58fd4b30",
+    "date": "2017-04-21",
+    "time": "19:35",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2017",
+      "round": "第6轮"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 26896
+    },
+    "referee": {
+      "main": "关星(北京)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 3,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "安德烈·维拉斯·博阿斯",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "胡尔克",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "张华晨",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "艾哈迈多夫",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "孙乐",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "汪佳捷",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "张一",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "于海",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "韦世豪",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 16,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Cai Huikang",
+          "player2": "",
+          "player_out": "Zhang Huachen"
+        },
+        {
+          "minute": 81,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Yu Hai",
+          "player2": "",
+          "player_out": "Lü Wenjun"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lin Chuangyi",
+          "player2": "",
+          "player_out": "Wu Lei"
+        }
+      ]
+    },
+    "away": {
+      "name": "河北华夏",
+      "full_name": "",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "Hebei Fortune (4-2-3-1)",
+      "coach": "曼努埃尔·佩莱格里尼(智利)",
+      "captain": "Yang Cheng",
+      "lineup": [
+        {
+          "number": "19",
+          "name": "Yang Cheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhao Mingjian",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Zhao Yuhao",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Dong Xuesheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hernanes",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Yin Hongbo",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Aloísio dos Santos Gonçalves",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Ezequiel Lavezzi",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Ren Hang",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "Zhang Chengdong",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Gao Zhunyi",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "1",
+          "name": "Ou Ya",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Jin Yangyang",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "陈威",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Luo Senwen",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Zhu Haiwei",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Li Hang",
+          "country": "Unknown"
+        },
+        {
+          "number": "35",
+          "name": "Che Shiwei",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 45,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Luo Senwen",
+          "player2": "",
+          "player_out": "Zhao Yuhao"
+        },
+        {
+          "minute": 68,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zhu Haiwei",
+          "player2": "",
+          "player_out": "Hernanes"
+        },
+        {
+          "minute": 82,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Jin Yangyang",
+          "player2": "",
+          "player_out": "Ren Hang"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 16,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Cai Huikang",
+      "player2": "",
+      "player_out": "Zhang Huachen"
+    },
+    {
+      "minute": 20,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "Cai Huikang",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 26,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "He Guan",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 34,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zhao Yuhao",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Luo Senwen",
+      "player2": "",
+      "player_out": "Zhao Yuhao"
+    },
+    {
+      "minute": 68,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhu Haiwei",
+      "player2": "",
+      "player_out": "Hernanes"
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Ren Hang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Yu Hai",
+      "player2": "",
+      "player_out": "Lü Wenjun"
+    },
+    {
+      "minute": 82,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Jin Yangyang",
+      "player2": "",
+      "player_out": "Ren Hang"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lin Chuangyi",
+      "player2": "",
+      "player_out": "Wu Lei"
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 2,
+      "away": 0
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/58fd4b30/Shanghai-SIPG-Hebei-China-Fortune-April-21-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T10:57:58.995182",
+    "version": "11.0-2017"
+  }
+}

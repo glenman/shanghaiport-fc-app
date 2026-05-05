@@ -1,0 +1,387 @@
+{
+  "match_info": {
+    "match_id": "Shanghai-SIPG-Beijing-Guoan-LeEco-September-9-2016-Chinese-Super-League",
+    "date": "2016-09-09",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Super League",
+      "season": "2016",
+      "round": "Matchweek 24"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 26017
+    },
+    "referee": {
+      "main": "周刚(湖北)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "Shanghai SIPG",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "4-4-2",
+      "coach": "斯文·戈兰·埃里克森",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "position": ""
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "position": ""
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "position": ""
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "position": ""
+        },
+        {
+          "number": "9",
+          "name": "Elkeson",
+          "position": ""
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "position": ""
+        },
+        {
+          "number": "17",
+          "name": "Jean Evrard Kouassi",
+          "position": ""
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "position": ""
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "position": ""
+        },
+        {
+          "number": "32",
+          "name": "Sun Xiang",
+          "position": ""
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "position": ""
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "position": ""
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "position": ""
+        },
+        {
+          "number": "12",
+          "name": "Li Haowen",
+          "position": ""
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "position": ""
+        },
+        {
+          "number": "19",
+          "name": "Yang Shiyuan",
+          "position": ""
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "position": ""
+        }
+      ],
+      "substitutions": []
+    },
+    "away": {
+      "name": "北京国安",
+      "full_name": "Beijing Guoan LeEco",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "4-4-2",
+      "coach": "谢峰",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "22",
+          "name": "Yang Zhi",
+          "position": ""
+        },
+        {
+          "number": "2",
+          "name": "Egor Krimets",
+          "position": ""
+        },
+        {
+          "number": "4",
+          "name": "Zhou Ting",
+          "position": ""
+        },
+        {
+          "number": "4",
+          "name": "Li Lei",
+          "position": ""
+        },
+        {
+          "number": "5",
+          "name": "Ralf",
+          "position": ""
+        },
+        {
+          "number": "10",
+          "name": "Zhang Xizhe",
+          "position": ""
+        },
+        {
+          "number": "15",
+          "name": "Igor Sergeev",
+          "position": ""
+        },
+        {
+          "number": "19",
+          "name": "Yu Dabao",
+          "position": ""
+        },
+        {
+          "number": "28",
+          "name": "Zhang Chengdong",
+          "position": ""
+        },
+        {
+          "number": "30",
+          "name": "Lei Tenglong",
+          "position": ""
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "1",
+          "name": "Hou Sen",
+          "position": ""
+        },
+        {
+          "number": "6",
+          "name": "Zhang Xiaobin",
+          "position": ""
+        },
+        {
+          "number": "7",
+          "name": "Zhang Chiming",
+          "position": ""
+        },
+        {
+          "number": "13",
+          "name": "Xu Yunlong",
+          "position": ""
+        },
+        {
+          "number": "16",
+          "name": "Du Mingyang",
+          "position": ""
+        },
+        {
+          "number": "21",
+          "name": "Renato Augusto",
+          "position": ""
+        },
+        {
+          "number": "23",
+          "name": "Yang Yun",
+          "position": ""
+        }
+      ],
+      "substitutions": []
+    }
+  },
+  "events": [
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhang Chiming",
+      "player2": "Yu Dabao",
+      "goal_type": "",
+      "player_out": "Yu Dabao",
+      "description": "\"46’ 0:0 Zhang Chiming for Yu Dabao — Substitute\""
+    },
+    {
+      "minute": 51,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "Elkeson",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "\"51’ 1:0 Hulk Assist: Elkeson — Goal 1:0\""
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Burak Yılmaz",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"65’ 1:0 Burak Yılmaz — Yellow Card\""
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Yan Junling",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"67’ 1:0 Yan Junling — Yellow Card\""
+    },
+    {
+      "minute": 68,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Burak Yılmaz",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"68’ 1:1 Burak Yılmaz Penalty Kick — Yellow Card\""
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Egor Krimets",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"69’ 1:1 Egor Krimets — Yellow Card\""
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zhang Chengdong",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"75’ 1:1 Zhang Chengdong — Yellow Card\""
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Renato Augusto",
+      "player2": "Igor Sergeev",
+      "goal_type": "",
+      "player_out": "Igor Sergeev",
+      "description": "\"79’ 1:1 Renato Augusto for Igor Sergeev — Substitute\""
+    },
+    {
+      "minute": 82,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Lei Tenglong",
+      "player2": "Zhang Chiming",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "\"82’ 1:2 Lei Tenglong Assist: Zhang Chiming — Goal 1:2\""
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "Cai Huikang",
+      "goal_type": "",
+      "player_out": "Cai Huikang",
+      "description": "\"83’ 1:2 Lü Wenjun for Cai Huikang — Substitute\""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"90’ 2:2 Hulk Penalty Kick — Substitute\""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Li Lei",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"90+4’ 2:2 Li Lei — Yellow Card\""
+    }
+  ],
+  "statistics": {
+    "\"Shanghai SIPG\"": {
+      "home": "",
+      "away": ""
+    },
+    "\"Possession\"": {
+      "home": "",
+      "away": ""
+    },
+    "\"Passing Accuracy\"": {
+      "home": "",
+      "away": ""
+    },
+    "\"Shots on Target\"": {
+      "home": "",
+      "away": ""
+    },
+    "\"Saves\"": {
+      "home": "",
+      "away": ""
+    },
+    "\"Cards\"": {
+      "home": "",
+      "away": ""
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/c64cf396/Shanghai-SIPG-Beijing-Guoan-LeEco-September-9-2016-Chinese-Super-League",
+    "scraped_at": "2026-05-04T20:21:33.114950",
+    "version": "3.0-LEGACY-FORMAT"
+  }
+}

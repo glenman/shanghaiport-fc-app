@@ -1,0 +1,465 @@
+{
+  "match_info": {
+    "match_id": "2c0eabaa",
+    "date": "2018-08-25",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 20"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 20461
+    },
+    "referee": {
+      "main": "林君(天津)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "维托尔·佩雷拉",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "埃尔克森",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "胡尔克",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "于海",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "雷文杰",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "孙乐",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "李圣龙",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "张一",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "傅欢",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Zhang Enge",
+          "country": "Unknown"
+        },
+        {
+          "number": "39",
+          "name": "孙峻岗",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 53,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Li Shenglong",
+          "player2": "",
+          "player_out": "Lei Wenjie"
+        },
+        {
+          "minute": 76,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhang Yi",
+          "player2": "",
+          "player_out": "Lü Wenjun"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 2,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhang Wei",
+          "player2": "",
+          "player_out": "Wang Shenchao"
+        }
+      ]
+    },
+    "away": {
+      "name": "河南建业",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "(3-5-2)",
+      "coach": "张外龙(韩国)",
+      "captain": "Gu Cao",
+      "lineup": [
+        {
+          "number": "17",
+          "name": "Wu Yan",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Gu Cao",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Ricardo Vaz Tê",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Christian Bassogog",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Yang Kuo",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "俞豪",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Wang Shangyuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "Ma Xingyu",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Olivio da Rosa",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Zhong Jinbao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "19",
+          "name": "Wang Guoming",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Han Xuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Feng Zhuoyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Shirmemet Ali",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "Liu Heng",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Lu Yao",
+          "country": "Unknown"
+        },
+        {
+          "number": "35",
+          "name": "Li Benjian",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Feng Zhuoyi",
+          "player2": "",
+          "player_out": "Ma Xingyu"
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Li Benjian",
+          "player2": "",
+          "player_out": "Zhong Jinbao"
+        },
+        {
+          "minute": 89,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Shirmemet Ali",
+          "player2": "",
+          "player_out": "Yang Kuo"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 19,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Elkeson",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 35,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Ma Xingyu",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 39,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Cai Huikang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 44,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Feng Zhuoyi",
+      "player2": "",
+      "player_out": "Ma Xingyu"
+    },
+    {
+      "minute": 52,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Chen Hao",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 53,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Shenglong",
+      "player2": "",
+      "player_out": "Lei Wenjie"
+    },
+    {
+      "minute": 62,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Ricardo Vaz Tê",
+      "player2": "Christian Bassogog",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 74,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Yu Hai",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Yi",
+      "player2": "",
+      "player_out": "Lü Wenjun"
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Li Benjian",
+      "player2": "",
+      "player_out": "Zhong Jinbao"
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Shirmemet Ali",
+      "player2": "",
+      "player_out": "Yang Kuo"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 2,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Wei",
+      "player2": "",
+      "player_out": "Wang Shenchao"
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "63%",
+      "away": "37%"
+    },
+    "shots_on_target": {
+      "home": "4",
+      "away": "2"
+    },
+    "shots": {
+      "home": "10",
+      "away": "8"
+    },
+    "shots_accuracy": {
+      "home": "40%",
+      "away": "25%"
+    },
+    "saves": {
+      "home": "1 of 2-50%",
+      "away": "2 of 4-50%"
+    },
+    "fouls": {
+      "home": "14",
+      "away": "16"
+    },
+    "corners": {
+      "home": "9",
+      "away": "3"
+    },
+    "crosses": {
+      "home": "18",
+      "away": "14"
+    },
+    "interceptions": {
+      "home": "7",
+      "away": "2"
+    },
+    "offsides": {
+      "home": "0",
+      "away": "1"
+    },
+    "yellow_cards": {
+      "home": 2,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/2c0eabaa/Shanghai-SIPG-Henan-Jianye-August-25-2018-Chinese-Super-League",
+    "scraped_at": "2026-05-05T18:46:36.446820",
+    "version": "11.0-2018"
+  }
+}

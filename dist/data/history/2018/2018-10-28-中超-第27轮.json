@@ -1,0 +1,484 @@
+{
+  "match_info": {
+    "match_id": "7a3f3975",
+    "date": "2018-10-28",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 27"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 23279
+    },
+    "referee": {
+      "main": "佐藤隆治(日本)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 4,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "菲利佩·阿尔梅达",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "埃尔克森",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "胡尔克",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "傅欢",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "孙乐",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "李圣龙",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "张华晨",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "张一",
+          "country": "Unknown"
+        },
+        {
+          "number": "36",
+          "name": "俞豪",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "陈彬彬",
+          "country": "Unknown"
+        },
+        {
+          "number": "39",
+          "name": "孙峻岗",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 90,
+          "minute_extra": 1,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhang Yi",
+          "player2": "",
+          "player_out": "Lü Wenjun"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 3,
+          "type": "substitution",
+          "team": "home",
+          "player": "Li Shenglong",
+          "player2": "",
+          "player_out": "Elkeson"
+        }
+      ]
+    },
+    "away": {
+      "name": "山东鲁能",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "(4-4-2)",
+      "coach": "李霄鹏",
+      "captain": "Hao Junmin",
+      "lineup": [
+        {
+          "number": "20",
+          "name": "Han Rongze",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Gil",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "周正",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Wang Tong",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Diego Tardelli",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Zhang Chi",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Wu Xinghan",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Graziano Pellè",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Hao Junmin",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Jin Jingdao",
+          "country": "Unknown"
+        },
+        {
+          "number": "35",
+          "name": "Dai Lin",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "1",
+          "name": "Liu Zhenli",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Liu Junshuai",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Liu Yang",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Zhou Haibin",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Song Long",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Cheng Yuan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 50,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Cheng Yuan",
+          "player2": "",
+          "player_out": "Wu Xinghan"
+        },
+        {
+          "minute": 67,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zhou Haibin",
+          "player2": "",
+          "player_out": "Zhang Chi"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 3,
+          "type": "substitution",
+          "team": "away",
+          "player": "Liu Junshuai",
+          "player2": "",
+          "player_out": "Diego Tardelli"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 16,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "Lü Wenjun",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 25,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Han Rongze",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 27,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 33,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Wu Xinghan",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 1,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 50,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Cheng Yuan",
+      "player2": "",
+      "player_out": "Wu Xinghan"
+    },
+    {
+      "minute": 53,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Diego Tardelli",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 57,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Graziano Pellè",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Dai Lin",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhou Haibin",
+      "player2": "",
+      "player_out": "Zhang Chi"
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Graziano Pellè",
+      "player2": "Jin Jingdao",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 87,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 1,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Yi",
+      "player2": "",
+      "player_out": "Lü Wenjun"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Shenglong",
+      "player2": "",
+      "player_out": "Elkeson"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "substitution",
+      "team": "away",
+      "player": "Liu Junshuai",
+      "player2": "",
+      "player_out": "Diego Tardelli"
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "51%",
+      "away": "49%"
+    },
+    "shots_on_target": {
+      "home": "6",
+      "away": "5"
+    },
+    "shots": {
+      "home": "14",
+      "away": "13"
+    },
+    "shots_accuracy": {
+      "home": "43%",
+      "away": "38%"
+    },
+    "saves": {
+      "home": "3 of 5-60%",
+      "away": "2 of 6-33%"
+    },
+    "fouls": {
+      "home": "11",
+      "away": "20"
+    },
+    "corners": {
+      "home": "6",
+      "away": "1"
+    },
+    "crosses": {
+      "home": "23",
+      "away": "16"
+    },
+    "interceptions": {
+      "home": "6",
+      "away": "8"
+    },
+    "offsides": {
+      "home": "2",
+      "away": "0"
+    },
+    "yellow_cards": {
+      "home": 4,
+      "away": 3
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/7a3f3975/Shanghai-SIPG-Shandong-Luneng-Taishan-October-28-2018-Chinese-Super-League",
+    "scraped_at": "2026-05-05T18:48:36.740010",
+    "version": "11.0-2018"
+  }
+}

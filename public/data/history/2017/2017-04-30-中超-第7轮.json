@@ -1,0 +1,370 @@
+{
+  "match_info": {
+    "match_id": "d947e84c",
+    "date": "2017-04-30",
+    "time": "19:35",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2017",
+      "round": "第7轮"
+    },
+    "venue": {
+      "name": "重庆奥体中心",
+      "city": "重庆市",
+      "attendance": 43680
+    },
+    "referee": {
+      "main": "艾堃(北体大)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "重庆力帆",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Chongqing Lifan (4-2-3-1)",
+      "coach": "张外龙(韩国)",
+      "captain": "Wu Qing",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Deng Xiaofei",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Ding Jie",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Liu Yu",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Peng Xinli",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Wu Qing",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Goran Milović",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "傅欢",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Alan Kardec",
+          "country": "Unknown"
+        },
+        {
+          "number": "32",
+          "name": "Fernandinho",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Nan Song",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "17",
+          "name": "Sui Weijie",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Zheng Tao",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Feng Jing",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Wang Weicheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Sui Donglu",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Cui Yongzhe",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Yuan Mincheng",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 45,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Wang Weicheng",
+          "player2": "",
+          "player_out": "Nan Song"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "安德烈·维拉斯·博阿斯",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "胡尔克",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "张华晨",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "艾哈迈多夫",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "孙乐",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "汪佳捷",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "李圣龙",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "张一",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "韦世豪",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 14,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lin Chuangyi",
+          "player2": "",
+          "player_out": "Zhang Huachen"
+        },
+        {
+          "minute": 20,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Cai Huikang",
+          "player2": "",
+          "player_out": "Shi Ke"
+        },
+        {
+          "minute": 87,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wei Shihao",
+          "player2": "",
+          "player_out": "Wu Lei"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 14,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lin Chuangyi",
+      "player2": "",
+      "player_out": "Zhang Huachen"
+    },
+    {
+      "minute": 20,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Cai Huikang",
+      "player2": "",
+      "player_out": "Shi Ke"
+    },
+    {
+      "minute": 22,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Wang Shenchao",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 45,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wang Weicheng",
+      "player2": "",
+      "player_out": "Nan Song"
+    },
+    {
+      "minute": 51,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Liu Yu",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 52,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "He Guan",
+      "player2": "Wu Lei",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 87,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wei Shihao",
+      "player2": "",
+      "player_out": "Wu Lei"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 1,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zhang Wei",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 4,
+      "type": "goal",
+      "team": "home",
+      "player": "Ding Jie",
+      "player2": "Liu Yu",
+      "player_out": "",
+      "goal_type": "goal"
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 2,
+      "away": 1
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/d947e84c/Chongqing-Dangdai-Lifan-Shanghai-SIPG-April-30-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T10:58:12.198916",
+    "version": "11.0-2017"
+  }
+}

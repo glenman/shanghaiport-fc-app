@@ -1,0 +1,495 @@
+{
+  "match_info": {
+    "match_id": "edd30634",
+    "date": "2015-06-03",
+    "time": "20:00",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2015",
+      "round": "第13轮"
+    },
+    "venue": {
+      "name": "石家庄裕彤体育中心",
+      "city": "河北省石家庄市",
+      "attendance": 26211
+    },
+    "referee": {
+      "main": "郭皓(天津)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "石家庄永昌",
+      "full_name": "石家庄永昌足球俱乐部",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "亚森·彼得罗夫(保加利亚)",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "33",
+          "name": "杨博宇",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "10",
+          "name": "达里奥·孔卡",
+          "position": "MF",
+          "country": "ARG"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "9",
+          "name": "托比亚斯·海森",
+          "position": "FW,MF",
+          "country": "SWE"
+        },
+        {
+          "number": "8",
+          "name": "达维·罗德里格斯",
+          "position": "MF",
+          "country": "BRA"
+        },
+        {
+          "number": "5",
+          "name": "汪佳捷",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "position": "DF,FW",
+          "country": "CHN"
+        },
+        {
+          "number": "32",
+          "name": "孙祥",
+          "position": "DF",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "17",
+          "name": "让·埃弗拉",
+          "position": "FW,MF",
+          "country": "CIV"
+        },
+        {
+          "number": "20",
+          "name": "王佳玉",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "20",
+          "name": "王佳玉",
+          "position": "MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 75,
+          "player_out": "Davi Rodrigues de Jesus",
+          "player_in": "Jean Evrard Kouassi"
+        },
+        {
+          "minute": 45,
+          "player_out": "Wu Lei",
+          "player_in": "Wang Jiayu"
+        },
+        {
+          "minute": 45,
+          "player_out": "Lü Wenjun",
+          "player_in": "Wang Jiayu"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海上港",
+      "full_name": "上海上港集团足球俱乐部",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "斯文·戈兰·埃里克森",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "4",
+          "name": "Li Chao",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "16",
+          "name": "Rodrigo Defendi",
+          "position": "DF",
+          "country": "BRA"
+        },
+        {
+          "number": "25",
+          "name": "Mi Haolun",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "7",
+          "name": "Mao Jianqing",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "20",
+          "name": "Jiang Jihong",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "3",
+          "name": "Liu Junpeng",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "19",
+          "name": "Jacob Mulenga",
+          "position": "FW",
+          "country": "ZAM"
+        },
+        {
+          "number": "9",
+          "name": "Mario Rondón",
+          "position": "FW",
+          "country": "VEN"
+        },
+        {
+          "number": "23",
+          "name": "张卫",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "21",
+          "name": "Gao Zengxiang",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "22",
+          "name": "Guan Zhen",
+          "position": "GK",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "11",
+          "name": "Huang Shibo",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "13",
+          "name": "Feng Shaoshun",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "5",
+          "name": "Bai He",
+          "position": "MF",
+          "country": "HKG"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 66,
+          "player_out": "Mao Jianqing",
+          "player_in": "Huang Shibo"
+        },
+        {
+          "minute": 89,
+          "player_out": "Mario Rondón",
+          "player_in": "Feng Shaoshun"
+        },
+        {
+          "minute": 70,
+          "player_out": "Gao Zengxiang",
+          "player_in": "Bai He"
+        }
+      ]
+    }
+  },
+  "statistics": {},
+  "events": [
+    {
+      "minute": 5,
+      "minute_extra": 0,
+      "type": "own_goal",
+      "team": "home",
+      "player": "Wang Jiajie",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 13,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Liu Junpeng",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 20,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Mao Jianqing",
+      "player2": "Mi Haolun",
+      "description": ""
+    },
+    {
+      "minute": 36,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Yang Boyu",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wang Jiayu",
+      "player2": "Wu Lei",
+      "description": ""
+    },
+    {
+      "minute": 51,
+      "minute_extra": 0,
+      "type": "penalty_goal",
+      "team": "away",
+      "player": "Davi Rodrigues de Jesus",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Huang Shibo",
+      "player2": "Mao Jianqing",
+      "description": ""
+    },
+    {
+      "minute": 68,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Wang Shenchao",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Li Chao",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Bai He",
+      "player2": "Gao Zengxiang",
+      "description": ""
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Jean Evrard Kouassi",
+      "player2": "Davi Rodrigues de Jesus",
+      "description": ""
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Wu Lei",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 0,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Feng Shaoshun",
+      "player2": "Mario Rondón",
+      "description": ""
+    }
+  ],
+  "player_stats": {
+    "home": [
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yang Boyu",
+        "position": "DF",
+        "shirtnumber": "33"
+      },
+      {
+        "minute": "90",
+        "nationality": "ar ARG",
+        "player": "Darío Conca",
+        "position": "MF",
+        "shirtnumber": "10"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Cai Huikang",
+        "position": "MF",
+        "shirtnumber": "6"
+      },
+      {
+        "minute": "90",
+        "nationality": "se SWE",
+        "player": "Tobias Hysén",
+        "position": "FW,MF",
+        "shirtnumber": "9"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Jiajie",
+        "position": "DF,MF",
+        "shirtnumber": "5"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yan Junling",
+        "position": "GK",
+        "shirtnumber": "1"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Shenchao",
+        "position": "DF,MF",
+        "shirtnumber": "4"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Sun Xiang",
+        "position": "DF",
+        "shirtnumber": "32"
+      }
+    ],
+    "away": [
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Li Chao",
+        "position": "DF",
+        "shirtnumber": "4"
+      },
+      {
+        "minute": "90",
+        "nationality": "br BRA",
+        "player": "Rodrigo Defendi",
+        "position": "DF",
+        "shirtnumber": "16"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Mi Haolun",
+        "position": "DF",
+        "shirtnumber": "25"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Jiang Jihong",
+        "position": "DF",
+        "shirtnumber": "20"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Liu Junpeng",
+        "position": "DF",
+        "shirtnumber": "3"
+      },
+      {
+        "minute": "90",
+        "nationality": "zm ZAM",
+        "player": "Jacob Mulenga",
+        "position": "FW",
+        "shirtnumber": "19"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Hu Wei",
+        "position": "DF",
+        "shirtnumber": "23"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Guan Zhen",
+        "position": "GK",
+        "shirtnumber": "22"
+      }
+    ]
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/edd30634/Shijiazhuang-Ever-Bright-Shanghai-SIPG-June-3-2015-Chinese-Super-League",
+    "scraped_at": "2026-05-05T14:58:08",
+    "version": "2015-season-v3"
+  }
+}

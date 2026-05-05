@@ -1,0 +1,447 @@
+{
+  "match_info": {
+    "match_id": "4cb3d88a",
+    "date": "2015-08-23",
+    "time": "20:00",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2015",
+      "round": "Matchweek 24"
+    },
+    "venue": {
+      "name": "上海虹口足球场",
+      "city": "上海市",
+      "attendance": 25032
+    },
+    "referee": {
+      "main": "王津(天津)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海申花",
+      "full_name": "上海绿地申花足球俱乐部",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "弗兰西斯·吉洛(法国)",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "17",
+          "name": "Tim Cahill",
+          "position": "FW,MF",
+          "country": "AUS"
+        },
+        {
+          "number": "2",
+          "name": "Xiong Fei",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "23",
+          "name": "Bai Jiajun",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "3",
+          "name": "Li Jianbin",
+          "position": "DF,GK",
+          "country": "CHN"
+        },
+        {
+          "number": "10",
+          "name": "Giovanni Moreno",
+          "position": "FW,MF",
+          "country": "COL"
+        },
+        {
+          "number": "4",
+          "name": "Avraam Papadopoulos",
+          "position": "DF,MF",
+          "country": "GRE"
+        },
+        {
+          "number": "5",
+          "name": "Wang Shouting",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "14",
+          "name": "Mohamed Sissoko",
+          "position": "MF",
+          "country": "MLI"
+        },
+        {
+          "number": "1",
+          "name": "Geng Xiaofeng",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "20",
+          "name": "Wang Yun",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "28",
+          "name": "Cao Yunding",
+          "position": "MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "11",
+          "name": "Lü Zheng",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "18",
+          "name": "Gao Di",
+          "position": "FW",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 73,
+          "player_out": "Wang Shouting",
+          "player_in": "Lü Zheng"
+        },
+        {
+          "minute": 77,
+          "player_out": "Mohamed Sissoko",
+          "player_in": "Gao Di"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海上港",
+      "full_name": "上海上港集团足球俱乐部",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "斯文·戈兰·埃里克森",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "33",
+          "name": "Yang Boyu",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "10",
+          "name": "Darío Conca",
+          "position": "MF",
+          "country": "ARG"
+        },
+        {
+          "number": "35",
+          "name": "Asamoah Gyan",
+          "position": "FW",
+          "country": "GHA"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "8",
+          "name": "Davi Rodrigues de Jesus",
+          "position": "MF",
+          "country": "BRA"
+        },
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "position": "DF,FW",
+          "country": "CHN"
+        },
+        {
+          "number": "32",
+          "name": "Sun Xiang",
+          "position": "DF",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "9",
+          "name": "Tobias Hysén",
+          "position": "FW,MF",
+          "country": "SWE"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 45,
+          "player_out": "Davi Rodrigues de Jesus",
+          "player_in": "Tobias Hysén"
+        }
+      ]
+    }
+  },
+  "statistics": {},
+  "events": [
+    {
+      "minute": 15,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Sun Xiang",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 19,
+      "minute_extra": 0,
+      "type": "penalty_goal",
+      "team": "home",
+      "player": "Tim Cahill",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 31,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Wang Shouting",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Tobias Hysén",
+      "player2": "Davi Rodrigues de Jesus",
+      "description": ""
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Asamoah Gyan",
+      "player2": "Darío Conca",
+      "description": ""
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "own_goal",
+      "team": "away",
+      "player": "Mohamed Sissoko",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 74,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lü Zheng",
+      "player2": "Wang Shouting",
+      "description": ""
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Gao Di",
+      "player2": "Mohamed Sissoko",
+      "description": ""
+    },
+    {
+      "minute": 0,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Avraam Papadopoulos",
+      "player2": "",
+      "description": ""
+    }
+  ],
+  "player_stats": {
+    "home": [
+      {
+        "minute": "90",
+        "nationality": "au AUS",
+        "player": "Tim Cahill",
+        "position": "FW,MF",
+        "shirtnumber": "17"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Xiong Fei",
+        "position": "DF,MF",
+        "shirtnumber": "2"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Bai Jiajun",
+        "position": "DF",
+        "shirtnumber": "23"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Li Jianbin",
+        "position": "DF,GK",
+        "shirtnumber": "3"
+      },
+      {
+        "minute": "90",
+        "nationality": "co COL",
+        "player": "Giovanni Moreno",
+        "position": "FW,MF",
+        "shirtnumber": "10"
+      },
+      {
+        "minute": "90",
+        "nationality": "gr GRE",
+        "player": "Avraam Papadopoulos",
+        "position": "DF,MF",
+        "shirtnumber": "4"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Geng Xiaofeng",
+        "position": "GK",
+        "shirtnumber": "1"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Yun",
+        "position": "MF",
+        "shirtnumber": "20"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Cao Yunding",
+        "position": "MF",
+        "shirtnumber": "28"
+      }
+    ],
+    "away": [
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yang Boyu",
+        "position": "DF",
+        "shirtnumber": "33"
+      },
+      {
+        "minute": "90",
+        "nationality": "ar ARG",
+        "player": "Darío Conca",
+        "position": "MF",
+        "shirtnumber": "10"
+      },
+      {
+        "minute": "90",
+        "nationality": "gh GHA",
+        "player": "Asamoah Gyan",
+        "position": "FW",
+        "shirtnumber": "35"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Cai Huikang",
+        "position": "MF",
+        "shirtnumber": "6"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yan Junling",
+        "position": "GK",
+        "shirtnumber": "1"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Shi Ke",
+        "position": "DF",
+        "shirtnumber": "27"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wu Lei",
+        "position": "FW,MF",
+        "shirtnumber": "7"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Shenchao",
+        "position": "DF,MF",
+        "shirtnumber": "4"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Lü Wenjun",
+        "position": "DF,FW",
+        "shirtnumber": "11"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Sun Xiang",
+        "position": "DF",
+        "shirtnumber": "32"
+      }
+    ]
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/4cb3d88a/Shanghai-Greenland-Shenhua-Shanghai-SIPG-August-23-2015-Chinese-Super-League",
+    "scraped_at": "2026-05-05T15:00:40",
+    "version": "2015-season-v3"
+  }
+}

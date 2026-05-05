@@ -1,0 +1,436 @@
+{
+  "match_info": {
+    "match_id": "4da126dd",
+    "date": "2017-07-09",
+    "time": "15:30",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2017",
+      "round": "第16轮"
+    },
+    "venue": {
+      "name": "长春经开体育场",
+      "city": "吉林省长春市",
+      "attendance": 17676
+    },
+    "referee": {
+      "main": "王哲(北京)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "长春亚泰",
+      "full_name": "",
+      "score": 4,
+      "score_ht": 0,
+      "formation": "Changchun Yatai (4-2-3-1)",
+      "coach": "陈金刚",
+      "captain": "Szabolcs Huszti",
+      "lineup": [
+        {
+          "number": "23",
+          "name": "Wu Yake",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Anzur Ismailov",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Odion Ighalo",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Szabolcs Huszti",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Sun Jie",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Jiang Zhe",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Fan Xiaodong",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Zhang Li",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Tan Long",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Zhang Xiaofei",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "Zhou Dadi",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "13",
+          "name": "Yi Fan",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Yu Rui",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Du Zhenyu",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Guo Liang",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "Yan Feng",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Zuo Yiteng",
+          "country": "Unknown"
+        },
+        {
+          "number": "32",
+          "name": "Li Guang",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 56,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Du Zhenyu",
+          "player2": "",
+          "player_out": "Zhou Dadi"
+        },
+        {
+          "minute": 73,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Guo Liang",
+          "player2": "",
+          "player_out": "Zhang Xiaofei"
+        },
+        {
+          "minute": 85,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Yu Rui",
+          "player2": "",
+          "player_out": "Zhang Li"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-2-3-1)",
+      "coach": "丹尼尔·苏泽",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "埃尔克森",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "里卡多·卡瓦略",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "艾哈迈多夫",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "韦世豪",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "孙乐",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "李圣龙",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "张华晨",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "张一",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "于海",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "陈彬彬",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 45,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Yu Hai",
+          "player2": "",
+          "player_out": "Zhang Wei"
+        },
+        {
+          "minute": 63,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Li Shenglong",
+          "player2": "",
+          "player_out": "Wei Shihao"
+        },
+        {
+          "minute": 78,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Chen Binbin",
+          "player2": "",
+          "player_out": "Cai Huikang"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 8,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Shi Ke",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 22,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Szabolcs Huszti",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 26,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Jiang Zhe",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 29,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Tan Long",
+      "player2": "Zhou Dadi",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Yu Hai",
+      "player2": "",
+      "player_out": "Zhang Wei"
+    },
+    {
+      "minute": 54,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Zhang Xiaofei",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "own_goal"
+    },
+    {
+      "minute": 56,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Du Zhenyu",
+      "player2": "",
+      "player_out": "Zhou Dadi"
+    },
+    {
+      "minute": 58,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Odion Ighalo",
+      "player2": "Szabolcs Huszti",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 63,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Li Shenglong",
+      "player2": "",
+      "player_out": "Wei Shihao"
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Li Shenglong",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 73,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Guo Liang",
+      "player2": "",
+      "player_out": "Zhang Xiaofei"
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Chen Binbin",
+      "player2": "",
+      "player_out": "Cai Huikang"
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Yu Rui",
+      "player2": "",
+      "player_out": "Zhang Li"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 4,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Li Shenglong",
+      "player2": "",
+      "player_out": ""
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 2,
+      "away": 1
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/4da126dd/Changchun-Yatai-Shanghai-SIPG-July-9-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T11:00:21.997470",
+    "version": "11.0-2017"
+  }
+}

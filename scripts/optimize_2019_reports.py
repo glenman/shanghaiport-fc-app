@@ -7,8 +7,10 @@ from pathlib import Path
 # 球队名称翻译表
 TEAM_NAME_TRANSLATIONS = {
     "Shanghai SIPG": "上海上港",
+    "Shanghai Port": "上海海港",
     "Shanghai Shenhua": "上海绿地",
-    "Shanghai Greenland": "上海绿地",
+    "Shanghai Greenland Shenhua": "上海绿地",
+    "Shanghai绿地绿地": "上海绿地",
     "Beijing Guoan": "北京国安",
     "Shandong Taishan": "山东泰山",
     "Zhejiang Professional": "浙江队",
@@ -26,6 +28,14 @@ TEAM_NAME_TRANSLATIONS = {
     "Qingdao West Coast": "青岛西海岸",
     "Sichuan Jiuniu": "四川九牛",
     "Chongqing Liangjiang": "重庆两江",
+    "Guangzhou": "广州",
+    "Hebei": "河北",
+    "Jiangsu": "江苏",
+    "Tianjin": "天津",
+    "Chongqing": "重庆",
+    "Henan": "河南",
+    "Dalian": "大连",
+    "Changchun": "长春",
 }
 
 # 场地名称翻译

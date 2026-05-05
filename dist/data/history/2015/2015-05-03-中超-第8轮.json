@@ -1,0 +1,442 @@
+{
+  "match_info": {
+    "match_id": "ecabe286",
+    "date": "2015-05-03",
+    "time": "20:00",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2015",
+      "round": "Matchweek 8"
+    },
+    "venue": {
+      "name": "杭州黄龙体育中心",
+      "city": "浙江省杭州市",
+      "attendance": 10113
+    },
+    "referee": {
+      "main": "石祯禄(长春)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "杭州绿城",
+      "full_name": "杭州绿城足球俱乐部",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "菲利普·特鲁西埃(法国)",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "10",
+          "name": "Darío Conca",
+          "position": "MF",
+          "country": "ARG"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "position": "DF,FW",
+          "country": "CHN"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "9",
+          "name": "Tobias Hysén",
+          "position": "FW,MF",
+          "country": "SWE"
+        },
+        {
+          "number": "8",
+          "name": "Davi Rodrigues de Jesus",
+          "position": "MF",
+          "country": "BRA"
+        },
+        {
+          "number": "5",
+          "name": "Wang Jiajie",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "position": "DF,FW",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "17",
+          "name": "Jean Evrard Kouassi",
+          "position": "FW,MF",
+          "country": "CIV"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "position": "FW,MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 80,
+          "player_out": "Davi Rodrigues de Jesus",
+          "player_in": "Jean Evrard Kouassi"
+        },
+        {
+          "minute": 84,
+          "player_out": "Lü Wenjun",
+          "player_in": "Lin Chuangyi"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海上港",
+      "full_name": "上海上港集团足球俱乐部",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "斯文·戈兰·埃里克森",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "20",
+          "name": "Roda Antar",
+          "position": "MF",
+          "country": "LIB"
+        },
+        {
+          "number": "26",
+          "name": "Bassem Boulaâbi",
+          "position": "DF",
+          "country": "TUN"
+        },
+        {
+          "number": "1",
+          "name": "Gu Chao",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "10",
+          "name": "Davy Claude Angan",
+          "position": "FW",
+          "country": "CIV"
+        },
+        {
+          "number": "12",
+          "name": "Luo Jing",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "22",
+          "name": "Wang Lin",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "17",
+          "name": "Chen Po-liang",
+          "position": "MF",
+          "country": "TPE"
+        },
+        {
+          "number": "16",
+          "name": "Fan Xiaodong",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "25",
+          "name": "Huang Xiyang",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "13",
+          "name": "Cao Xuan",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "33",
+          "name": "Chen Zhongliu",
+          "position": "MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "7",
+          "name": "Imed Louati",
+          "position": "FW,MF",
+          "country": "TUN"
+        },
+        {
+          "number": "14",
+          "name": "Feng Gang",
+          "position": "MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 57,
+          "player_out": "Luo Jing",
+          "player_in": "Imed Louati"
+        },
+        {
+          "minute": 52,
+          "player_out": "Chen Zhongliu",
+          "player_in": "Feng Gang"
+        }
+      ]
+    }
+  },
+  "statistics": {},
+  "events": [
+    {
+      "minute": 47,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Bassem Boulaâbi",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 53,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Feng Gang",
+      "player2": "Chen Zhongliu",
+      "description": ""
+    },
+    {
+      "minute": 58,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Imed Louati",
+      "player2": "Luo Jing",
+      "description": ""
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Imed Louati",
+      "player2": "Chen Po-liang",
+      "description": ""
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Imed Louati",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Jean Evrard Kouassi",
+      "player2": "Davi Rodrigues de Jesus",
+      "description": ""
+    },
+    {
+      "minute": 82,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Jean Evrard Kouassi",
+      "player2": "Tobias Hysén",
+      "description": ""
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lin Chuangyi",
+      "player2": "Lü Wenjun",
+      "description": ""
+    }
+  ],
+  "player_stats": {
+    "home": [
+      {
+        "minute": "90",
+        "nationality": "ar ARG",
+        "player": "Darío Conca",
+        "position": "MF",
+        "shirtnumber": "10"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yu Hai",
+        "position": "DF,FW",
+        "shirtnumber": "21"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Fu Huan",
+        "position": "DF",
+        "shirtnumber": "23"
+      },
+      {
+        "minute": "90",
+        "nationality": "se SWE",
+        "player": "Tobias Hysén",
+        "position": "FW,MF",
+        "shirtnumber": "9"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Jiajie",
+        "position": "DF,MF",
+        "shirtnumber": "5"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yan Junling",
+        "position": "GK",
+        "shirtnumber": "1"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wu Lei",
+        "position": "FW,MF",
+        "shirtnumber": "7"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Shenchao",
+        "position": "DF,MF",
+        "shirtnumber": "4"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Zhang Wei",
+        "position": "DF,MF",
+        "shirtnumber": "2"
+      }
+    ],
+    "away": [
+      {
+        "minute": "90",
+        "nationality": "lb LIB",
+        "player": "Roda Antar",
+        "position": "MF",
+        "shirtnumber": "20"
+      },
+      {
+        "minute": "90",
+        "nationality": "tn TUN",
+        "player": "Bassem Boulaâbi",
+        "position": "DF",
+        "shirtnumber": "26"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Gu Chao",
+        "position": "GK",
+        "shirtnumber": "1"
+      },
+      {
+        "minute": "90",
+        "nationality": "ci CIV",
+        "player": "Davy Claude Angan",
+        "position": "FW",
+        "shirtnumber": "10"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Lin",
+        "position": "DF",
+        "shirtnumber": "22"
+      },
+      {
+        "minute": "90",
+        "nationality": "tw TPE",
+        "player": "Chen Po-liang",
+        "position": "MF",
+        "shirtnumber": "17"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Fan Xiaodong",
+        "position": "MF",
+        "shirtnumber": "16"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Huang Xiyang",
+        "position": "MF",
+        "shirtnumber": "25"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Cao Xuan",
+        "position": "DF",
+        "shirtnumber": "13"
+      }
+    ]
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/ecabe286/Hangzhou-Greentown-Shanghai-SIPG-May-3-2015-Chinese-Super-League",
+    "scraped_at": "2026-05-05T14:56:56",
+    "version": "2015-season-v3"
+  }
+}

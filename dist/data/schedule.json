@@ -1,5 +1,29 @@
 [
   {
+    "id": 0,
+    "round": "超级杯",
+    "date": "2026-03-01",
+    "time": "15:30",
+    "homeTeam": "上海海港",
+    "awayTeam": "北京国安",
+    "venue": "南京奥体中心",
+    "city": "南京",
+    "result": "0-2",
+    "status": "已结束",
+    "type": "超级杯",
+    "referee": "李海新(广东)",
+    "home_coach": "凯文·文森特·穆斯卡特",
+    "away_coach": "尼克·蒙哥马利(苏格兰)",
+    "attendance": 40169,
+    "scorers": {
+      "home": [],
+      "away": [
+        "达万",
+        "曹永竞"
+      ]
+    }
+  },
+  {
     "id": 1,
     "round": "第1轮",
     "date": "2026-03-07",
@@ -10,7 +34,20 @@
     "city": "上海",
     "result": "1-2",
     "status": "已结束",
-    "type": "中超"
+    "type": "中超",
+    "referee": "唐顺齐",
+    "home_coach": "凯文·穆斯卡特",
+    "away_coach": "丹尼尔·拉莫斯",
+    "attendance": 22863,
+    "scorers": {
+      "home": [
+        "加布里埃尔"
+      ],
+      "away": [
+        "迈达纳",
+        "钟义浩"
+      ]
+    }
   },
   {
     "id": 2,
@@ -23,7 +60,22 @@
     "city": "上海",
     "result": "4-1",
     "status": "已结束",
-    "type": "中超"
+    "type": "中超",
+    "referee": "贺凯",
+    "home_coach": "凯文·穆斯卡特",
+    "away_coach": "郑智",
+    "attendance": 18533,
+    "scorers": {
+      "home": [
+        "克劳德",
+        "莱昂纳多",
+        "武磊",
+        "武磊"
+      ],
+      "away": [
+        "梅米舍维奇"
+      ]
+    }
   },
   {
     "id": 3,
@@ -36,7 +88,17 @@
     "city": "大连",
     "result": "1-0",
     "status": "已结束",
-    "type": "中超"
+    "type": "中超",
+    "referee": "王竞",
+    "home_coach": "李国旭",
+    "away_coach": "穆斯卡特",
+    "attendance": 58337,
+    "scorers": {
+      "home": [
+        "阿奇姆彭"
+      ],
+      "away": []
+    }
   },
   {
     "id": 4,
@@ -49,7 +111,20 @@
     "city": "上海",
     "result": "2-1",
     "status": "已结束",
-    "type": "中超"
+    "type": "中超",
+    "referee": "黄翼",
+    "home_coach": "凯文·穆斯卡特",
+    "away_coach": "乔迪",
+    "attendance": 23345,
+    "scorers": {
+      "home": [
+        "莱昂纳多",
+        "王燊超"
+      ],
+      "away": [
+        "布尔克"
+      ]
+    }
   },
   {
     "id": 5,
@@ -62,7 +137,17 @@
     "city": "上海",
     "result": "1-0",
     "status": "已结束",
-    "type": "中超"
+    "type": "中超",
+    "referee": "李海新",
+    "home_coach": "莱昂尼德·斯卢茨基",
+    "away_coach": "凯文·马斯卡特",
+    "attendance": 60141,
+    "scorers": {
+      "home": [
+        "拉斐尔·拉唐"
+      ],
+      "away": []
+    }
   },
   {
     "id": 6,
@@ -75,7 +160,19 @@
     "city": "济南",
     "result": "1-1",
     "status": "已结束",
-    "type": "中超"
+    "type": "中超",
+    "referee": "梁松尚",
+    "home_coach": "宿茂臻",
+    "away_coach": "凯文·穆斯卡特",
+    "attendance": 28725,
+    "scorers": {
+      "home": [
+        "克雷桑"
+      ],
+      "away": [
+        "杨希"
+      ]
+    }
   },
   {
     "id": 7,
@@ -88,7 +185,20 @@
     "city": "上海",
     "result": "1-2",
     "status": "已结束",
-    "type": "中超"
+    "type": "中超",
+    "referee": "张磊",
+    "home_coach": "凯文·穆斯卡特",
+    "away_coach": "刘建业",
+    "attendance": 16636,
+    "scorers": {
+      "home": [
+        "李新翔"
+      ],
+      "away": [
+        "迈克尔·恩加德乌-恩加朱伊",
+        "陈纯新"
+      ]
+    }
   },
   {
     "id": 8,
@@ -101,7 +211,20 @@
     "city": "上海",
     "result": "4-0",
     "status": "已结束",
-    "type": "中超"
+    "type": "中超",
+    "referee": "高常起",
+    "home_coach": "马尔科·迪米特里耶维奇",
+    "away_coach": "成耀东",
+    "attendance": 498,
+    "scorers": {
+      "home": [
+        "魏震",
+        "安佩姆",
+        "蒋光太",
+        "刘祝润"
+      ],
+      "away": []
+    }
   },
   {
     "id": 9,
@@ -114,7 +237,21 @@
     "city": "青岛",
     "result": "3-1",
     "status": "已结束",
-    "type": "中超"
+    "type": "中超",
+    "referee": "朱文彬",
+    "home_coach": "米兰·里斯蒂奇",
+    "away_coach": "凯文·穆斯卡特",
+    "attendance": 29330,
+    "scorers": {
+      "home": [
+        "罗森文",
+        "亚乌·耶博阿",
+        "金勇浩"
+      ],
+      "away": [
+        "杨希"
+      ]
+    }
   },
   {
     "id": 10,

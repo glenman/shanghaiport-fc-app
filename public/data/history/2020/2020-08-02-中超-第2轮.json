@@ -6,29 +6,26 @@
     "competition": {
       "name": "中国足球协会超级联赛",
       "season": "2020",
-      "round": "Regular season"
+      "round": "第2轮"
     },
     "venue": {
-      "name": "昆山体育中心体育场",
-      "attendance": null
+      "name": "昆山体育中心",
+      "city": "江苏省苏州市",
+      "attendance": 0
     },
     "referee": {
-      "main": "Li Haixin",
-      "ar1": "Zhong Yong",
-      "ar2": "Guo Jingtao",
-      "fourth": "Liu Lin",
-      "var": "Guo Baolong",
+      "main": "李海新(广东)",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "上海海港",
+      "name": "上海上港",
       "full_name": "上海海港",
       "score": 4,
       "score_ht": 1,
       "formation": "(4-3-3)",
-      "coach": "佩雷拉",
+      "coach": "维托尔·佩雷拉",
       "captain": "奥斯卡",
       "lineup": [
         {
@@ -204,12 +201,12 @@
       ]
     },
     "away": {
-      "name": "河北华夏幸福",
+      "name": "河北华夏",
       "full_name": "河北华夏幸福",
       "score": 0,
       "score_ht": 0,
       "formation": "(5-4-1)",
-      "coach": "Xie Feng",
+      "coach": "谢峰",
       "captain": "Zhang Chengdong",
       "lineup": [
         {
@@ -327,7 +324,7 @@
         },
         {
           "number": "26",
-          "name": "Jiang Wenjun",
+          "name": "吕文君",
           "country": "China"
         },
         {

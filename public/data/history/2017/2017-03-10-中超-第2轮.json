@@ -1,0 +1,361 @@
+{
+  "match_info": {
+    "match_id": "4f6e73b8",
+    "date": "2017-03-10",
+    "time": "19:35",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2017",
+      "round": "第2轮"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 27707
+    },
+    "referee": {
+      "main": "关星(北京)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "安德烈·维拉斯·博阿斯",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "胡尔克",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "张华晨",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "傅欢",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "艾哈迈多夫",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "孙乐",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "汪佳捷",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "于海",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "韦世豪",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 17,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Cai Huikang",
+          "player2": "",
+          "player_out": "Zhang Huachen"
+        },
+        {
+          "minute": 62,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Yu Hai",
+          "player2": "",
+          "player_out": "Lü Wenjun"
+        },
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lin Chuangyi",
+          "player2": "",
+          "player_out": "Wu Lei"
+        }
+      ]
+    },
+    "away": {
+      "name": "延边富德",
+      "full_name": "",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "Yanbian Funde (5-3-2)",
+      "coach": "朴泰夏(韩国)",
+      "captain": "Chi Wenyi",
+      "lineup": [
+        {
+          "number": "22",
+          "name": "Chi Wenyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Jiang Weipeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Tian Yinong",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Nikola Petković",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Chi Zhongguo",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Bubacarr Trawally",
+          "country": "Unknown"
+        },
+        {
+          "number": "12",
+          "name": "Jiang Hongquan",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Yoon Bit-garam",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Han Qingsong",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Wu Yongchun",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Jin Chengjun",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "31",
+          "name": "Dong Jialin",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Han Guanghui",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Cui Ren",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Jin Bo",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Li Hao",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Exmetjan Ekber",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Yin Changji",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 16,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Jin Bo",
+          "player2": "",
+          "player_out": "Jin Chengjun"
+        },
+        {
+          "minute": 81,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Li Hao",
+          "player2": "",
+          "player_out": "Yoon Bit-garam"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 16,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Jin Bo",
+      "player2": "",
+      "player_out": "Jin Chengjun"
+    },
+    {
+      "minute": 17,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Cai Huikang",
+      "player2": "",
+      "player_out": "Zhang Huachen"
+    },
+    {
+      "minute": 42,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "Hulk",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 57,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "Cai Huikang",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 62,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Yu Hai",
+      "player2": "",
+      "player_out": "Lü Wenjun"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lin Chuangyi",
+      "player2": "",
+      "player_out": "Wu Lei"
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Li Hao",
+      "player2": "",
+      "player_out": "Yoon Bit-garam"
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 0,
+      "away": 0
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/4f6e73b8/Shanghai-SIPG-Yanbian-Funde-March-10-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T10:56:59.907371",
+    "version": "11.0-2017"
+  }
+}

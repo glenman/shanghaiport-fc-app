@@ -1,0 +1,429 @@
+{
+  "match_info": {
+    "match_id": "5b61e1f6",
+    "date": "2018-05-05",
+    "time": "19:35",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2019",
+      "round": "第9轮"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 22503
+    },
+    "referee": {
+      "main": "波尔·范布克尔(荷兰)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-2-3-1)",
+      "coach": "维托尔·佩雷拉",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "埃尔克森",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "胡尔克",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "于海",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "陈彬彬",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "34",
+          "name": "陈威",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "胡靖航",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "高海生",
+          "country": "Unknown"
+        },
+        {
+          "number": "36",
+          "name": "俞豪",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 41,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lü Wenjun",
+          "player2": "",
+          "player_out": "Hulk"
+        },
+        {
+          "minute": 66,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Hu Jinghang",
+          "player2": "",
+          "player_out": "Chen Binbin"
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Gao Haisheng",
+          "player2": "",
+          "player_out": "Cai Huikang"
+        }
+      ]
+    },
+    "away": {
+      "name": "北京国安",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "(4-3-2-1)",
+      "coach": "罗杰·施密特(德国)",
+      "captain": "Renato Augusto",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Hou Sen",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Yu Yang",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Renato Augusto",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Chi Zhongguo",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wei Shihao",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Piao Cheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "傅欢",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Cédric Bakambu",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Ma Fuyu",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Jonathan Viera",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "Zhang Yu",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "25",
+          "name": "Guo Quanbo",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Hu Yanqiang",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Wang Ziming",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Lü Peng",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Ba Dun",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Lei Tenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "36",
+          "name": "Wang Xiaole",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 66,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lei Tenglong",
+          "player2": "",
+          "player_out": "Wei Shihao"
+        },
+        {
+          "minute": 74,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Ba Dun",
+          "player2": "",
+          "player_out": "Jonathan Viera"
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Wang Ziming",
+          "player2": "",
+          "player_out": "Cédric Bakambu"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 28,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Elkeson",
+      "player2": "Hulk",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 41,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "player_out": "Hulk"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Piao Cheng",
+      "player2": "Liu Huan",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 52,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Cédric Bakambu",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lei Tenglong",
+      "player2": "",
+      "player_out": "Wei Shihao"
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Hu Jinghang",
+      "player2": "",
+      "player_out": "Chen Binbin"
+    },
+    {
+      "minute": 74,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Ba Dun",
+      "player2": "",
+      "player_out": "Jonathan Viera"
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wang Ziming",
+      "player2": "",
+      "player_out": "Cédric Bakambu"
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Gao Haisheng",
+      "player2": "",
+      "player_out": "Cai Huikang"
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "53%",
+      "away": "47%"
+    },
+    "shots_on_target": {
+      "home": "6",
+      "away": "7"
+    },
+    "shots": {
+      "home": "18",
+      "away": "11"
+    },
+    "shots_accuracy": {
+      "home": "33%",
+      "away": "64%"
+    },
+    "saves": {
+      "home": "5 of 7-71%",
+      "away": "5 of 6-83%"
+    },
+    "fouls": {
+      "home": "15",
+      "away": "11"
+    },
+    "corners": {
+      "home": "8",
+      "away": "2"
+    },
+    "crosses": {
+      "home": "38",
+      "away": "8"
+    },
+    "interceptions": {
+      "home": "16",
+      "away": "6"
+    },
+    "offsides": {
+      "home": "3",
+      "away": "3"
+    },
+    "yellow_cards": {
+      "home": 0,
+      "away": 0
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/5b61e1f6/Shanghai-SIPG-Beijing-Sinobo-Guoan-May-5-2018-Chinese-Super-League",
+    "scraped_at": "2026-05-05T18:44:04.480333",
+    "version": "11.0-2018"
+  }
+}

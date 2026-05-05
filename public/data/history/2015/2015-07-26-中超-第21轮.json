@@ -1,0 +1,522 @@
+{
+  "match_info": {
+    "match_id": "912dd7b5",
+    "date": "2015-07-26",
+    "time": "20:00",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2015",
+      "round": "第21轮"
+    },
+    "venue": {
+      "name": "重庆奥体中心",
+      "city": "重庆市",
+      "attendance": 40850
+    },
+    "referee": {
+      "main": "李俊(江苏)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "重庆力帆",
+      "full_name": "重庆力帆足球俱乐部",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "王宝山",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "10",
+          "name": "达里奥·孔卡",
+          "position": "MF",
+          "country": "ARG"
+        },
+        {
+          "number": "35",
+          "name": "阿萨莫阿·吉安",
+          "position": "FW",
+          "country": "GHA"
+        },
+        {
+          "number": "21",
+          "name": "于海",
+          "position": "DF,FW",
+          "country": "CHN"
+        },
+        {
+          "number": "23",
+          "name": "傅欢",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "3",
+          "name": "金周荣",
+          "position": "DF",
+          "country": "KOR"
+        },
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "27",
+          "name": "石柯",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "position": "DF,FW",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "15",
+          "name": "林创益",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "5",
+          "name": "汪佳捷",
+          "position": "DF,MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 84,
+          "player_out": "Yu Hai",
+          "player_in": "Lin Chuangyi"
+        },
+        {
+          "minute": 45,
+          "player_out": "Fu Huan",
+          "player_in": "Zhang Wei"
+        },
+        {
+          "minute": 71,
+          "player_out": "Lü Wenjun",
+          "player_in": "Wang Jiajie"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海上港",
+      "full_name": "上海上港集团足球俱乐部",
+      "score": 4,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "斯文·戈兰·埃里克森",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "14",
+          "name": "Issam El Adoua",
+          "position": "DF",
+          "country": "MAR"
+        },
+        {
+          "number": "6",
+          "name": "Wang Dong",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "21",
+          "name": "Sui Donglu",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "32",
+          "name": "Fernandinho",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "33",
+          "name": "Emmanuel Gigliotti",
+          "position": "FW",
+          "country": "ARG"
+        },
+        {
+          "number": "15",
+          "name": "Sun Jihai",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "7",
+          "name": "Feng Jing",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "23",
+          "name": "武磊",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "17",
+          "name": "Sui Weijie",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "13",
+          "name": "Zhang Xiaobin",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "9",
+          "name": "Liu Yu",
+          "position": "DF",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "10",
+          "name": "Peng Xinli",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "11",
+          "name": "Wu Qing",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "22",
+          "name": "Cui Yongzhe",
+          "position": "MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 45,
+          "player_out": "Sui Donglu",
+          "player_in": "Peng Xinli"
+        },
+        {
+          "minute": 76,
+          "player_out": "Feng Jing",
+          "player_in": "Wu Qing"
+        },
+        {
+          "minute": 45,
+          "player_out": "Zhang Xiaobin",
+          "player_in": "Cui Yongzhe"
+        }
+      ]
+    }
+  },
+  "statistics": {},
+  "events": [
+    {
+      "minute": 11,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Wu Lei",
+      "player2": "Darío Conca",
+      "description": ""
+    },
+    {
+      "minute": 24,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Darío Conca",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 40,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Asamoah Gyan",
+      "player2": "Wu Lei",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhang Wei",
+      "player2": "Fu Huan",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Cui Yongzhe",
+      "player2": "Zhang Xiaobin",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Peng Xinli",
+      "player2": "Adrian Leijer",
+      "description": ""
+    },
+    {
+      "minute": 57,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Shi Ke",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 58,
+      "minute_extra": 0,
+      "type": "penalty_goal",
+      "team": "home",
+      "player": "Emmanuel Gigliotti",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 59,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Cui Yongzhe",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 61,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zhang Wei",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Wang Jiajie",
+      "player2": "Lü Wenjun",
+      "description": ""
+    },
+    {
+      "minute": 77,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wu Qing",
+      "player2": "Feng Jing",
+      "description": ""
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Wu Lei",
+      "player2": "Darío Conca",
+      "description": ""
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lin Chuangyi",
+      "player2": "Yu Hai",
+      "description": ""
+    },
+    {
+      "minute": 87,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Emmanuel Gigliotti",
+      "player2": "Wu Qing",
+      "description": ""
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Sun Jihai",
+      "player2": "",
+      "description": ""
+    }
+  ],
+  "player_stats": {
+    "home": [
+      {
+        "minute": "90",
+        "nationality": "ar ARG",
+        "player": "Darío Conca",
+        "position": "MF",
+        "shirtnumber": "10"
+      },
+      {
+        "minute": "90",
+        "nationality": "gh GHA",
+        "player": "Asamoah Gyan",
+        "position": "FW",
+        "shirtnumber": "35"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Cai Huikang",
+        "position": "MF",
+        "shirtnumber": "6"
+      },
+      {
+        "minute": "90",
+        "nationality": "kr KOR",
+        "player": "Kim Ju-young",
+        "position": "DF",
+        "shirtnumber": "3"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yan Junling",
+        "position": "GK",
+        "shirtnumber": "1"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Shi Ke",
+        "position": "DF",
+        "shirtnumber": "27"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wu Lei",
+        "position": "FW,MF",
+        "shirtnumber": "7"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Shenchao",
+        "position": "DF,MF",
+        "shirtnumber": "4"
+      }
+    ],
+    "away": [
+      {
+        "minute": "90",
+        "nationality": "ma MAR",
+        "player": "Issam El Adoua",
+        "position": "DF",
+        "shirtnumber": "14"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Dong",
+        "position": "MF",
+        "shirtnumber": "6"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Fernandinho",
+        "position": "FW,MF",
+        "shirtnumber": "32"
+      },
+      {
+        "minute": "90",
+        "nationality": "ar ARG",
+        "player": "Emmanuel Gigliotti",
+        "position": "FW",
+        "shirtnumber": "33"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Sun Jihai",
+        "position": "DF",
+        "shirtnumber": "15"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Chen Lei",
+        "position": "DF,MF",
+        "shirtnumber": "23"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Sui Weijie",
+        "position": "GK",
+        "shirtnumber": "17"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Liu Yu",
+        "position": "DF",
+        "shirtnumber": "9"
+      }
+    ]
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/912dd7b5/Chongqing-Lifan-Shanghai-SIPG-July-26-2015-Chinese-Super-League",
+    "scraped_at": "2026-05-05T14:59:59",
+    "version": "2015-season-v3"
+  }
+}

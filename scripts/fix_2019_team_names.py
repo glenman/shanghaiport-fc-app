@@ -1,167 +1,117 @@
 import csv
 import json
-import os
-import re
 from pathlib import Path
 
-def load_schedule_from_csv(csv_path):
-    """从CSV文件读取赛程数据"""
-    schedule = {}
+CSV_FILE = r"datafile\上海海港2019中超联赛比赛结果.csv"
+JSON_DIR = r"public\data\history\2019"
+
+def load_csv_data():
+    """从CSV加载比赛结果数据"""
+    matches = {}
     try:
-        with open(csv_path, 'r', encoding='utf-8-sig') as f:
-            lines = f.readlines()
+        with open(CSV_FILE, 'r', encoding='utf-8-sig') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                round_num = str(row.get('轮次', '')).strip()
+                date = row.get('比赛时间', '').strip().replace('.', '-')
+                home = row.get('主队', '').strip()
+                away = row.get('客队', '').strip()
 
-        # 跳过标题行，从第2行开始
-        for line in lines[1:]:
-            line = line.strip()
-            if not line:
-                continue
-            # 移除首尾引号
-            if line.startswith('"') and line.endswith('"'):
-                line = line[1:-1]
-
-            parts = line.split(',')
-            if len(parts) >= 6:
-                round_str = parts[0].strip()
-                date = parts[1].strip()
-                home_team = parts[4].strip()
-                away_team = parts[5].strip()
-
-                match = round_str.replace('Matchweek', '').strip()
-                if match.isdigit():
-                    round_num = int(match)
-                    schedule[round_num] = {
-                        'date': date,
-                        'home': home_team,
-                        'away': away_team
+                if round_num and date:
+                    matches[date] = {
+                        'round': round_num,
+                        'home': home,
+                        'away': away
                     }
-
-        return schedule
+                    print(f"第{round_num}轮 ({date}): {home} vs {away}")
+        return matches
     except Exception as e:
-        print(f"读取赛程失败: {str(e)}")
+        print(f"❌ 加载CSV失败: {e}")
         return {}
 
-def normalize_team_name(name):
-    """标准化球队名称"""
-    name = name.strip()
-    replacements = {
-        '上海绿地': '上海绿地',
-        '上海绿地绿地': '上海绿地',
-        '上海绿地绿地绿地': '上海绿地',
-        '江苏苏宁': '江苏苏宁',
-        '河北华夏幸福': '河北华夏幸福',
-        '重庆力帆': '重庆力帆',
-        '重庆当代': '重庆力帆',
-        '武汉卓尔': '武汉卓尔',
-        '天津天海': '天津天海',
-        '天津泰达': '天津泰达',
-        '广州恒大': '广州恒大',
-        '广州恒大淘宝': '广州恒大',
-        '山东鲁斯': '山东泰山',
-        '山东泰山': '山东泰山',
-        '河南建业': '河南建业',
-        '北京国安': '北京国安',
-        '北京中赫国安': '北京国安',
-        '大连一方': '大连人',
-        '大连人': '大连人',
-        '广州富力': '广州富力',
-        '深圳佳兆业': '深圳佳兆业',
-        '北京人和': '北京人和',
-        '上海上港': '上海海港',
-        '上海海港': '上海海港',
-    }
-    for old, new in replacements.items():
-        if old in name:
-            return new
-    return name
-
-def extract_round_from_filename(filename):
-    """从文件名提取轮次"""
-    # 文件名格式: 2019-03-01-中超-第1轮.json
-    match = re.search(r'第(\d+)轮', filename)
+def get_date_from_filename(filename):
+    """从文件名提取日期"""
+    import re
+    match = re.match(r'(\d{4}-\d{2}-\d{2})-中超-第\d+轮\.json', filename)
     if match:
-        return int(match.group(1))
+        return match.group(1)
     return None
 
-def fix_match_report(json_path, schedule):
-    """修复单个比赛报告的球队名称"""
-    try:
-        with open(json_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+def update_json_files(matches):
+    """更新JSON文件中的主客队名称"""
+    json_dir = Path(JSON_DIR)
+    json_files = sorted(list(json_dir.glob('*.json')))
 
-        teams = data.get('teams', {})
+    updated_count = 0
+    for json_path in json_files:
+        date = get_date_from_filename(json_path.name)
+        if not date or date not in matches:
+            print(f"⚠️ 找不到匹配: {json_path.name}")
+            continue
 
-        # 从文件名提取轮次
-        filename = os.path.basename(json_path)
-        round_num = extract_round_from_filename(filename)
+        match_info = matches[date]
 
-        if round_num is None:
-            print(f"  警告: 无法从文件名 {filename} 提取轮次")
-            return False
+        try:
+            with open(json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
 
-        if round_num not in schedule:
-            print(f"  警告: 无法找到轮次 {round_num} 的赛程数据")
-            return False
+            # 更新主队名称
+            if 'teams' in data and 'home' in data['teams']:
+                old_home = data['teams']['home'].get('name', '')
+                data['teams']['home']['name'] = match_info['home']
+                data['teams']['home']['full_name'] = match_info['home']
 
-        sched = schedule[round_num]
-        csv_home = normalize_team_name(sched['home'])
-        csv_away = normalize_team_name(sched['away'])
+                # 更新formation中的队名
+                if 'formation' in data['teams']['home']:
+                    formation = data['teams']['home']['formation']
+                    # 保留阵型，去除队名
+                    import re
+                    match = re.search(r'\((\d+[-–]?)*\d+\)', formation)
+                    if match:
+                        data['teams']['home']['formation'] = match.group(0)
 
-        # 判断上海上港在CSV中是home还是away
-        sipg_is_home = '上海海港' in csv_home or '上海上港' in csv_home
-        sipg_is_away = '上海海港' in csv_away or '上海上港' in csv_away
+            # 更新客队名称
+            if 'teams' in data and 'away' in data['teams']:
+                old_away = data['teams']['away'].get('name', '')
+                data['teams']['away']['name'] = match_info['away']
+                data['teams']['away']['full_name'] = match_info['away']
 
-        # 根据CSV赛程更新球队名称
-        if sipg_is_home:
-            # 上海上港在CSV中是主队，更新home
-            teams['home']['name'] = csv_home
-            teams['home']['full_name'] = csv_home
-            teams['away']['name'] = csv_away
-            teams['away']['full_name'] = csv_away
-        elif sipg_is_away:
-            # 上海上港在CSV中是客队，更新away
-            teams['home']['name'] = csv_home
-            teams['home']['full_name'] = csv_home
-            teams['away']['name'] = csv_away
-            teams['away']['full_name'] = csv_away
-        else:
-            print(f"  警告: 轮次 {round_num} 未找到上海上港")
-            return False
+                # 更新formation中的队名
+                if 'formation' in data['teams']['away']:
+                    formation = data['teams']['away']['formation']
+                    # 保留阵型，去除队名
+                    import re
+                    match = re.search(r'\((\d+[-–]?)*\d+\)', formation)
+                    if match:
+                        data['teams']['away']['formation'] = match.group(0)
 
-        data['teams'] = teams
+            # 保存文件
+            with open(json_path, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
 
-        with open(json_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
+            updated_count += 1
+            print(f"✅ {json_path.name}: {match_info['home']} vs {match_info['away']}")
 
-        print(f"  修复: {filename} - home={teams['home']['name']}, away={teams['away']['name']}")
-        return True
+        except Exception as e:
+            print(f"❌ 处理失败 {json_path.name}: {e}")
 
-    except Exception as e:
-        print(f"  错误: 处理 {json_path} 时出错: {str(e)}")
-        return False
+    return updated_count
 
 def main():
-    csv_path = r'd:\Workspace\shanghaiport-fc-app\datafile\上海海港2019一线队中超赛程.csv'
-    json_dir = r'd:\Workspace\shanghaiport-fc-app\public\data\history\2019'
+    print("=" * 60)
+    print("2019赛季 主客队名称更新")
+    print("=" * 60)
 
-    print("加载赛程数据...")
-    schedule = load_schedule_from_csv(csv_path)
-    print(f"已加载 {len(schedule)} 轮赛程")
+    print("\n📋 加载CSV数据...")
+    matches = load_csv_data()
+    print(f"✅ 加载了 {len(matches)} 场比赛数据\n")
 
-    # 打印前3轮验证
-    for i in range(1, 4):
-        if i in schedule:
-            print(f"  第{i}轮: {schedule[i]}")
+    print("📝 更新JSON文件...")
+    updated = update_json_files(matches)
 
-    print("\n开始修复球队名称...")
-    json_files = sorted(Path(json_dir).glob('*.json'))
+    print("\n" + "=" * 60)
+    print(f"✅ 更新完成! 共更新 {updated} 个文件")
+    print("=" * 60)
 
-    success_count = 0
-    for json_path in json_files:
-        if fix_match_report(json_path, schedule):
-            success_count += 1
-
-    print(f"\n完成: 成功修复 {success_count}/{len(json_files)} 个文件")
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

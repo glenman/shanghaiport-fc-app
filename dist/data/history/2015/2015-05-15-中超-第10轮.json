@@ -1,0 +1,482 @@
+{
+  "match_info": {
+    "match_id": "1315547f",
+    "date": "2015-05-15",
+    "time": "20:00",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2015",
+      "round": "Matchweek 10"
+    },
+    "venue": {
+      "name": "广州天河体育场",
+      "city": "广东省广州市",
+      "attendance": 48637
+    },
+    "referee": {
+      "main": "王哲(北京)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "广州恒大",
+      "full_name": "广州恒大淘宝足球俱乐部",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "法比奥·卡纳瓦罗(意大利)",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "33",
+          "name": "Yang Boyu",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "10",
+          "name": "Darío Conca",
+          "position": "MF",
+          "country": "ARG"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "position": "DF,FW",
+          "country": "CHN"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "9",
+          "name": "Tobias Hysén",
+          "position": "FW,MF",
+          "country": "SWE"
+        },
+        {
+          "number": "8",
+          "name": "Davi Rodrigues de Jesus",
+          "position": "MF",
+          "country": "BRA"
+        },
+        {
+          "number": "5",
+          "name": "Wang Jiajie",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "32",
+          "name": "Sun Xiang",
+          "position": "DF",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "17",
+          "name": "Jean Evrard Kouassi",
+          "position": "FW,MF",
+          "country": "CIV"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "position": "DF,MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 70,
+          "player_out": "Davi Rodrigues de Jesus",
+          "player_in": "Jean Evrard Kouassi"
+        },
+        {
+          "minute": 31,
+          "player_out": "Sun Xiang",
+          "player_in": "Zhang Wei"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海上港",
+      "full_name": "上海上港集团足球俱乐部",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "斯文·戈兰·埃里克森",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "16",
+          "name": "Huang Bowen",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "19",
+          "name": "Zeng Cheng",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "3",
+          "name": "Mei Fang",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "11",
+          "name": "Ricardo Goulart",
+          "position": "FW,MF",
+          "country": "BRA"
+        },
+        {
+          "number": "20",
+          "name": "Yu Hanchao",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "29",
+          "name": "Gao Lin",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "5",
+          "name": "Zhang Linpeng",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "12",
+          "name": "Wang Shangyuan",
+          "position": "DF,FW",
+          "country": "CHN"
+        },
+        {
+          "number": "6",
+          "name": "Feng Xiaoting",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "35",
+          "name": "Li Xuepeng",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "10",
+          "name": "Zheng Zhi",
+          "position": "DF,MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "21",
+          "name": "Zhao Xuri",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "27",
+          "name": "Zheng Long",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "17",
+          "name": "Liu Jian",
+          "position": "DF,MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 77,
+          "player_out": "Huang Bowen",
+          "player_in": "Zhao Xuri"
+        },
+        {
+          "minute": 85,
+          "player_out": "Yu Hanchao",
+          "player_in": "Zheng Long"
+        },
+        {
+          "minute": 64,
+          "player_out": "Wang Shangyuan",
+          "player_in": "Liu Jian"
+        }
+      ]
+    }
+  },
+  "statistics": {},
+  "events": [
+    {
+      "minute": 32,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zhang Linpeng",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 32,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhang Wei",
+      "player2": "Sun Xiang",
+      "description": ""
+    },
+    {
+      "minute": 37,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zheng Zhi",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 0,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Gao Lin",
+      "player2": "Li Xuepeng",
+      "description": ""
+    },
+    {
+      "minute": 61,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Huang Bowen",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Liu Jian",
+      "player2": "Wang Shangyuan",
+      "description": ""
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Jean Evrard Kouassi",
+      "player2": "Davi Rodrigues de Jesus",
+      "description": ""
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Cai Huikang",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhao Xuri",
+      "player2": "Huang Bowen",
+      "description": ""
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Tobias Hysén",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zheng Long",
+      "player2": "Yu Hanchao",
+      "description": ""
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Fu Huan",
+      "player2": "",
+      "description": ""
+    }
+  ],
+  "player_stats": {
+    "home": [
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yang Boyu",
+        "position": "DF",
+        "shirtnumber": "33"
+      },
+      {
+        "minute": "90",
+        "nationality": "ar ARG",
+        "player": "Darío Conca",
+        "position": "MF",
+        "shirtnumber": "10"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yu Hai",
+        "position": "DF,FW",
+        "shirtnumber": "21"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Fu Huan",
+        "position": "DF",
+        "shirtnumber": "23"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Cai Huikang",
+        "position": "MF",
+        "shirtnumber": "6"
+      },
+      {
+        "minute": "90",
+        "nationality": "se SWE",
+        "player": "Tobias Hysén",
+        "position": "FW,MF",
+        "shirtnumber": "9"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Jiajie",
+        "position": "DF,MF",
+        "shirtnumber": "5"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yan Junling",
+        "position": "GK",
+        "shirtnumber": "1"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wu Lei",
+        "position": "FW,MF",
+        "shirtnumber": "7"
+      }
+    ],
+    "away": [
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Zeng Cheng",
+        "position": "GK",
+        "shirtnumber": "19"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Mei Fang",
+        "position": "DF",
+        "shirtnumber": "3"
+      },
+      {
+        "minute": "90",
+        "nationality": "br BRA",
+        "player": "Ricardo Goulart",
+        "position": "FW,MF",
+        "shirtnumber": "11"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Gao Lin",
+        "position": "FW,MF",
+        "shirtnumber": "29"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Zhang Linpeng",
+        "position": "DF",
+        "shirtnumber": "5"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Feng Xiaoting",
+        "position": "DF",
+        "shirtnumber": "6"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Li Xuepeng",
+        "position": "DF",
+        "shirtnumber": "35"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Zheng Zhi",
+        "position": "DF,MF",
+        "shirtnumber": "10"
+      }
+    ]
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/1315547f/Guangzhou-Evergrande-Taobao-Shanghai-SIPG-May-15-2015-Chinese-Super-League",
+    "scraped_at": "2026-05-05T14:57:25",
+    "version": "2015-season-v3"
+  }
+}

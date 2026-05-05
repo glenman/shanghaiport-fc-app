@@ -1,0 +1,360 @@
+{
+  "match_info": {
+    "match_id": "Shanghai-SIPG-Hangzhou-Greentown-May-21-2016-Chinese-Super-League",
+    "date": "2016-05-21",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Super League",
+      "season": "2016",
+      "round": "Matchweek 10"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 26583
+    },
+    "referee": {
+      "main": "刘林(辽宁)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "Shanghai SIPG",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "4-4-2",
+      "coach": "斯文·戈兰·埃里克森",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "position": ""
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "position": ""
+        },
+        {
+          "number": "5",
+          "name": "Wang Jiajie",
+          "position": ""
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "position": ""
+        },
+        {
+          "number": "9",
+          "name": "Elkeson",
+          "position": ""
+        },
+        {
+          "number": "10",
+          "name": "Darío Conca",
+          "position": ""
+        },
+        {
+          "number": "17",
+          "name": "Jean Evrard Kouassi",
+          "position": ""
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "position": ""
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "position": ""
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "position": ""
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "position": ""
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "position": ""
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "position": ""
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "position": ""
+        },
+        {
+          "number": "13",
+          "name": "Zhu Zhengrong",
+          "position": ""
+        },
+        {
+          "number": "26",
+          "name": "Hu Jinghang",
+          "position": ""
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "position": ""
+        }
+      ],
+      "substitutions": []
+    },
+    "away": {
+      "name": "杭州绿城",
+      "full_name": "Hangzhou Greentown",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "4-4-2",
+      "coach": "洪明浦(韩国)",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Zhang Lei",
+          "position": ""
+        },
+        {
+          "number": "3",
+          "name": "Ge Zhen",
+          "position": ""
+        },
+        {
+          "number": "6",
+          "name": "Chen Xiao",
+          "position": ""
+        },
+        {
+          "number": "7",
+          "name": "Denilson",
+          "position": ""
+        },
+        {
+          "number": "14",
+          "name": "Feng Gang",
+          "position": ""
+        },
+        {
+          "number": "17",
+          "name": "Tim Cahill",
+          "position": ""
+        },
+        {
+          "number": "20",
+          "name": "Davy Claude Angan",
+          "position": ""
+        },
+        {
+          "number": "21",
+          "name": "Cao Haiqing",
+          "position": ""
+        },
+        {
+          "number": "25",
+          "name": "Huang Xiyang",
+          "position": ""
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "23",
+          "name": "Zou Dehai",
+          "position": ""
+        },
+        {
+          "number": "5",
+          "name": "Wu Wei",
+          "position": ""
+        },
+        {
+          "number": "8",
+          "name": "Zang Yifeng",
+          "position": ""
+        },
+        {
+          "number": "10",
+          "name": "Zhuang Jiajie",
+          "position": ""
+        },
+        {
+          "number": "12",
+          "name": "Luo Jing",
+          "position": ""
+        },
+        {
+          "number": "16",
+          "name": "Tong Lei",
+          "position": ""
+        },
+        {
+          "number": "28",
+          "name": "Cheng Mouyi",
+          "position": ""
+        }
+      ],
+      "substitutions": []
+    }
+  },
+  "events": [
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Jean Evrard Kouassi",
+      "player2": "Darío Conca",
+      "goal_type": "goal",
+      "player_out": "",
+      "description": "\"55’ 1:0 Jean Evrard Kouassi Assist: Darío Conca — Goal 1:0\""
+    },
+    {
+      "minute": 61,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Darío Conca",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"61’ 1:0 Darío Conca — Yellow Card\""
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wang Shenchao",
+      "player2": "Zhang Wei",
+      "goal_type": "",
+      "player_out": "Zhang Wei",
+      "description": "\"70’ 1:0 Wang Shenchao for Zhang Wei — Substitute\""
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "Jean Evrard Kouassi",
+      "goal_type": "",
+      "player_out": "Jean Evrard Kouassi",
+      "description": "\"70’ 1:0 Lü Wenjun for Jean Evrard Kouassi — Substitute\""
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Luo Jing",
+      "player2": "Denilson",
+      "goal_type": "",
+      "player_out": "Denilson",
+      "description": "\"75’ 1:0 Luo Jing for Denilson — Substitute\""
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zang Yifeng",
+      "player2": "Huang Xiyang",
+      "goal_type": "",
+      "player_out": "Huang Xiyang",
+      "description": "\"78’ 1:0 Zang Yifeng for Huang Xiyang — Substitute\""
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Cai Huikang",
+      "player2": "Wang Jiajie",
+      "goal_type": "",
+      "player_out": "Wang Jiajie",
+      "description": "\"85’ 1:0 Cai Huikang for Wang Jiajie — Substitute\""
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"86’ 1:0 Lü Wenjun — Yellow Card\""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Chen Po-liang",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"90+1’ 1:0 Chen Po-liang — Yellow Card\""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhuang Jiajie",
+      "player2": "Davy Claude Angan",
+      "goal_type": "",
+      "player_out": "Davy Claude Angan",
+      "description": "\"90+1’ 1:0 Zhuang Jiajie for Davy Claude Angan — Substitute\""
+    }
+  ],
+  "statistics": {
+    "\"Shanghai SIPG\"": {
+      "home": "",
+      "away": ""
+    },
+    "\"Possession\"": {
+      "home": "",
+      "away": ""
+    },
+    "\"Passing Accuracy\"": {
+      "home": "",
+      "away": ""
+    },
+    "\"Shots on Target\"": {
+      "home": "",
+      "away": ""
+    },
+    "\"Saves\"": {
+      "home": "",
+      "away": ""
+    },
+    "\"Cards\"": {
+      "home": "",
+      "away": ""
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/f592aa44/Shanghai-SIPG-Hangzhou-Greentown-May-21-2016-Chinese-Super-League",
+    "scraped_at": "2026-05-04T20:14:52.395090",
+    "version": "3.0-LEGACY-FORMAT"
+  }
+}

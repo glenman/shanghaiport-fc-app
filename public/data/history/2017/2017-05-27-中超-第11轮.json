@@ -1,0 +1,455 @@
+{
+  "match_info": {
+    "match_id": "2a711e4d",
+    "date": "2017-05-27",
+    "time": "19:35",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2017",
+      "round": "第11轮"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 30377
+    },
+    "referee": {
+      "main": "李海新(广东)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 5,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "安德烈·维拉斯·博阿斯",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "胡尔克",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "傅欢",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "艾哈迈多夫",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "韦世豪",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "孙乐",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "李圣龙",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "张一",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "郑致云",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 71,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lü Wenjun",
+          "player2": "",
+          "player_out": "Wei Shihao"
+        },
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Lin Chuangyi",
+          "player2": "",
+          "player_out": "Cai Huikang"
+        },
+        {
+          "minute": 86,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Li Shenglong",
+          "player2": "",
+          "player_out": "Hulk"
+        }
+      ]
+    },
+    "away": {
+      "name": "北京国安",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Beijing Guoan (4-2-3-1)",
+      "coach": "何塞·冈萨雷斯(西班牙)",
+      "captain": "Yang Zhi",
+      "lineup": [
+        {
+          "number": "22",
+          "name": "Yang Zhi",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Yu Yang",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Ralf",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Zhang Chiming",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Zhang Xizhe",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Burak Yılmaz",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Renato Augusto",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Tang Shi",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "Jiang Tao",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Lei Tenglong",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "1",
+          "name": "Hou Sen",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Piao Cheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Song Boxuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Jin Pengxiang",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Ma Fuyu",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Lü Peng",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Wu Guichao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 56,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Song Boxuan",
+          "player2": "",
+          "player_out": "Tang Shi"
+        },
+        {
+          "minute": 76,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Piao Cheng",
+          "player2": "",
+          "player_out": "Zhang Xizhe"
+        },
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lü Peng",
+          "player2": "",
+          "player_out": "Renato Augusto"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 26,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wei Shihao",
+      "player2": "Wu Lei",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 26,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Wei Shihao",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 50,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zhang Xizhe",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 52,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wei Shihao",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 56,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Song Boxuan",
+      "player2": "",
+      "player_out": "Tang Shi"
+    },
+    {
+      "minute": 57,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Lei Tenglong",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "player_out": "Wei Shihao"
+    },
+    {
+      "minute": 73,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Fu Huan",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "Hulk",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Piao Cheng",
+      "player2": "",
+      "player_out": "Zhang Xizhe"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lin Chuangyi",
+      "player2": "",
+      "player_out": "Cai Huikang"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lü Peng",
+      "player2": "",
+      "player_out": "Renato Augusto"
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Shenglong",
+      "player2": "",
+      "player_out": "Hulk"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Burak Yılmaz",
+      "player2": "Lü Peng",
+      "player_out": "",
+      "goal_type": "goal"
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 2,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/2a711e4d/Shanghai-SIPG-Beijing-Sinobo-Guoan-May-27-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T10:59:10.222752",
+    "version": "11.0-2017"
+  }
+}

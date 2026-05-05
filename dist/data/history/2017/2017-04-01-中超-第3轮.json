@@ -1,0 +1,453 @@
+{
+  "match_info": {
+    "match_id": "65728d0b",
+    "date": "2017-04-01",
+    "time": "19:35",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2017",
+      "round": "Matchweek 3"
+    },
+    "venue": {
+      "name": "广州天河体育场",
+      "city": "广东省广州市",
+      "attendance": 48851
+    },
+    "referee": {
+      "main": "傅明(北京)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "广州恒大",
+      "full_name": "",
+      "score": 3,
+      "score_ht": 0,
+      "formation": "Guangzhou Evg (4-2-3-1)",
+      "coach": "保罗·塞萨尔·图拉(巴西)代理",
+      "captain": "Feng Xiaoting",
+      "lineup": [
+        {
+          "number": "19",
+          "name": "Zeng Cheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Mei Fang",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Xu Xin",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Zhang Linpeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Feng Xiaoting",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Alan Carvalho",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Paulinho",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Ricardo Goulart",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Yu Hanchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Zheng Long",
+          "country": "Unknown"
+        },
+        {
+          "number": "35",
+          "name": "Li Xuepeng",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "32",
+          "name": "Liu Dianzuo",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Liao Lisheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "12",
+          "name": "Wang Shangyuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Huang Bowen",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Zhang Chenglin",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Gao Lin",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "Chen Zepeng",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 56,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Huang Bowen",
+          "player2": "",
+          "player_out": "Xu Xin"
+        },
+        {
+          "minute": 74,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Gao Lin",
+          "player2": "",
+          "player_out": "Alan Carvalho"
+        },
+        {
+          "minute": 77,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Liao Lisheng",
+          "player2": "",
+          "player_out": "Zheng Long"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-3-3)",
+      "coach": "安德烈·维拉斯·博阿斯",
+      "captain": "Wang Shenchao",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Elkeson",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Zhang Huachen",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Fu Huan",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Wei Shihao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 15,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Yu Hai",
+          "player2": "",
+          "player_out": "Zhang Huachen"
+        },
+        {
+          "minute": 45,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zhang Yi",
+          "player2": "",
+          "player_out": "Cai Huikang"
+        },
+        {
+          "minute": 62,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zhang Wei",
+          "player2": "",
+          "player_out": "Fu Huan"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 12,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Yu Hanchao",
+      "player2": "Ricardo Goulart",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 15,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Yu Hai",
+      "player2": "",
+      "player_out": "Zhang Huachen"
+    },
+    {
+      "minute": 18,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Mei Fang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 24,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Alan Carvalho",
+      "player2": "Yu Hanchao",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhang Yi",
+      "player2": "",
+      "player_out": "Cai Huikang"
+    },
+    {
+      "minute": 53,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Elkeson",
+      "player2": "Hulk",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Xu Xin",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 56,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Huang Bowen",
+      "player2": "",
+      "player_out": "Xu Xin"
+    },
+    {
+      "minute": 62,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhang Wei",
+      "player2": "",
+      "player_out": "Fu Huan"
+    },
+    {
+      "minute": 64,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Wang Shenchao",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Hulk",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 74,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Gao Lin",
+      "player2": "",
+      "player_out": "Alan Carvalho"
+    },
+    {
+      "minute": 77,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Liao Lisheng",
+      "player2": "",
+      "player_out": "Zheng Long"
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Shi Ke",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Ricardo Goulart",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Huang Bowen",
+      "player2": "",
+      "player_out": ""
+    }
+  ],
+  "statistics": {
+    "yellow_cards": {
+      "home": 2,
+      "away": 4
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/65728d0b/Guangzhou-Evergrande-Taobao-Shanghai-SIPG-April-1-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T10:57:13.557432",
+    "version": "11.0-2017"
+  }
+}

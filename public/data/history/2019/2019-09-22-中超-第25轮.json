@@ -1,281 +1,231 @@
 {
   "match_info": {
-    "match_id": "eaa598f4",
+    "match_id": "Shanghai-SIPG-Henan-Jianye-September-22-2019-Chinese-Super-League",
     "date": "2019-09-22",
     "time": "19:35",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2019",
       "round": "第25轮"
     },
     "venue": {
-      "name": "Shanghai Stadium",
-      "attendance": 19399
+      "name": "上海体育场",
+      "attendance": 19399,
+      "city": "上海市"
     },
     "referee": {
-      "main": "Jing Wang",
-      "ar1": "Jinyu Liu",
-      "ar2": "Huang Tao",
-      "fourth": "Yi Huang",
-      "var": "",
+      "main": "王竞(贵州)",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Shanghai SIPG",
-      "full_name": "",
+      "name": "上海上港",
+      "full_name": "上海上港",
       "score": 2,
       "score_ht": 0,
-      "formation": "Shanghai SIPG (3-5-2)",
-      "coach": "Vítor Pereira",
-      "captain": "Hulk",
+      "formation": "3-5-2",
+      "coach": "维托尔·佩雷拉",
+      "captain": "奥斯卡",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
-          "country": "Unknown"
+          "name": "颜骏凌",
+          "position": ""
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
-          "country": "Unknown"
+          "name": "王燊超",
+          "position": ""
         },
         {
           "number": "5",
-          "name": "Shi Ke",
-          "country": "Unknown"
+          "name": "石柯",
+          "position": ""
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
-          "country": "Unknown"
+          "name": "蔡慧康",
+          "position": ""
         },
         {
           "number": "7",
-          "name": "Marko Arnautović",
-          "country": "Unknown"
+          "name": "阿瑙托维奇",
+          "position": ""
         },
         {
           "number": "8",
-          "name": "Oscar",
-          "country": "Unknown"
+          "name": "奥斯卡",
+          "position": ""
         },
         {
           "number": "10",
-          "name": "Hulk",
-          "country": "Unknown"
+          "name": "胡尔克",
+          "position": ""
         },
         {
           "number": "15",
-          "name": "Lin Chuangyi",
-          "country": "Unknown"
+          "name": "林创益",
+          "position": ""
         },
         {
           "number": "21",
-          "name": "Yu Hai",
-          "country": "Unknown"
+          "name": "于海",
+          "position": ""
         },
         {
           "number": "28",
-          "name": "He Guan",
-          "country": "Unknown"
+          "name": "贺惯",
+          "position": ""
         },
         {
           "number": "37",
-          "name": "Chen Binbin",
-          "country": "Unknown"
+          "name": "陈彬彬",
+          "position": ""
         }
       ],
       "substitutes": [
         {
           "number": "34",
-          "name": "Chen Wei",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "2",
-          "name": "Zhang Wei",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
-          "country": "Unknown"
+          "name": "吕文君",
+          "position": ""
         },
         {
           "number": "13",
-          "name": "Wei Zhen",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
-          "country": "Unknown"
+          "name": "李圣龙",
+          "position": ""
         },
         {
           "number": "18",
-          "name": "Zhang Yi",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "19",
-          "name": "Hu Jinghang",
-          "country": "Unknown"
+          "name": "胡靖航",
+          "position": ""
         }
       ],
-      "substitutions": [
-        {
-          "minute": 73,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Lü Wenjun",
-          "player2": "",
-          "player_out": "Lin Chuangyi"
-        },
-        {
-          "minute": 79,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Li Shenglong",
-          "player2": "",
-          "player_out": "Yu Hai"
-        },
-        {
-          "minute": 90,
-          "minute_extra": 3,
-          "type": "substitution",
-          "team": "home",
-          "player": "Wei Zhen",
-          "player2": "",
-          "player_out": "Chen Binbin"
-        }
-      ]
+      "substitutions": []
     },
     "away": {
-      "name": "Opponent",
-      "full_name": "",
+      "name": "河南建业",
+      "full_name": "河南建业",
       "score": 1,
       "score_ht": 0,
-      "formation": "Henan Jianye (5-3-2)",
-      "coach": "Wang Baoshan",
-      "captain": "Olivio da Rosa",
+      "formation": "5-3-2",
+      "coach": "王宝山",
+      "captain": "Unknown",
       "lineup": [
         {
           "number": "17",
           "name": "Wu Yan",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "2",
           "name": "Hu Ruibao",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "5",
           "name": "Gu Cao",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "6",
           "name": "Feng Zhuoyi",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "8",
           "name": "Tim Chow",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "10",
           "name": "Christian Bassogog",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "25",
-          "name": "Chen Hao",
-          "country": "Unknown"
+          "name": "于浩",
+          "position": ""
         },
         {
           "number": "26",
           "name": "Wang Shangyuan",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "27",
           "name": "Lu Yao",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "29",
           "name": "Olivio da Rosa",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "37",
           "name": "Fernando Karanga",
-          "country": "Unknown"
+          "position": ""
         }
       ],
       "substitutes": [
         {
           "number": "19",
           "name": "Wang Guoming",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "3",
           "name": "Zhang Wentao",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "7",
           "name": "Du Changjie",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "13",
           "name": "Abduwali Ablet",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "21",
           "name": "Sui Donglu",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "28",
           "name": "Ma Xingyu",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "30",
           "name": "Zhong Jinbao",
-          "country": "Unknown"
+          "position": ""
         }
       ],
-      "substitutions": [
-        {
-          "minute": 52,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Du Changjie",
-          "player2": "",
-          "player_out": "Lu Yao"
-        },
-        {
-          "minute": 76,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Zhang Wentao",
-          "player2": "",
-          "player_out": "Fernando Karanga"
-        }
-      ]
+      "substitutions": []
     }
   },
   "events": [
@@ -284,10 +234,11 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": "",
+      "goal_type": "goal",
       "player_out": "",
-      "goal_type": "goal"
+      "description": "\"43’ 1:0 Oscar — Goal 1:0\""
     },
     {
       "minute": 48,
@@ -296,8 +247,9 @@
       "team": "away",
       "player": "Fernando Karanga",
       "player2": "Tim Chow",
+      "goal_type": "goal",
       "player_out": "",
-      "goal_type": "goal"
+      "description": "\"48’ 1:1 Fernando Karanga Assist: Tim Chow — Goal 1:1\""
     },
     {
       "minute": 52,
@@ -305,17 +257,21 @@
       "type": "substitution",
       "team": "away",
       "player": "Du Changjie",
-      "player2": "",
-      "player_out": "Lu Yao"
+      "player2": "Lu Yao",
+      "goal_type": "",
+      "player_out": "Lu Yao",
+      "description": "\"52’ 1:1 Du Changjie for Lu Yao — Substitute\""
     },
     {
       "minute": 73,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Lü Wenjun",
-      "player2": "",
-      "player_out": "Lin Chuangyi"
+      "player": "吕文君",
+      "player2": "林创益",
+      "goal_type": "",
+      "player_out": "Lin Chuangyi",
+      "description": "\"73’ 1:1 Lü Wenjun for Lin Chuangyi — Substitute\""
     },
     {
       "minute": 74,
@@ -324,7 +280,9 @@
       "team": "away",
       "player": "Tim Chow",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"74’ 1:1 Tim Chow — Yellow Card\""
     },
     {
       "minute": 76,
@@ -332,17 +290,21 @@
       "type": "substitution",
       "team": "away",
       "player": "Zhang Wentao",
-      "player2": "",
-      "player_out": "Fernando Karanga"
+      "player2": "Fernando Karanga",
+      "goal_type": "",
+      "player_out": "Fernando Karanga",
+      "description": "\"76’ 1:1 Zhang Wentao for Fernando Karanga — Substitute\""
     },
     {
       "minute": 79,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Li Shenglong",
-      "player2": "",
-      "player_out": "Yu Hai"
+      "player": "李圣龙",
+      "player2": "于海",
+      "goal_type": "",
+      "player_out": "Yu Hai",
+      "description": "\"79’ 1:1 Li Shenglong for Yu Hai — Substitute\""
     },
     {
       "minute": 85,
@@ -351,82 +313,63 @@
       "team": "away",
       "player": "Wang Shangyuan",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"85’ 1:1 Wang Shangyuan — Yellow Card\""
     },
     {
       "minute": 90,
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Li Shenglong",
+      "player": "李圣龙",
       "player2": "",
+      "goal_type": "goal",
       "player_out": "",
-      "goal_type": "goal"
+      "description": "\"90’ 2:1 Li Shenglong — Goal 2:1\""
     },
     {
       "minute": 90,
-      "minute_extra": 3,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Wei Zhen",
-      "player2": "",
-      "player_out": "Chen Binbin"
+      "player": "张卫",
+      "player2": "陈彬彬",
+      "goal_type": "",
+      "player_out": "Chen Binbin",
+      "description": "\"90+3’ 2:1 Wei Zhen for Chen Binbin — Substitute\""
     }
   ],
   "statistics": {
-    "possession": {
-      "home": "62%",
-      "away": "38%"
+    "\"Shanghai SIPG\"": {
+      "home": "",
+      "away": ""
     },
-    "shots_on_target": {
-      "home": "8",
-      "away": "1"
+    "\"Possession\"": {
+      "home": "",
+      "away": ""
     },
-    "shots": {
-      "home": "23",
-      "away": "8"
+    "\"Passing Accuracy\"": {
+      "home": "",
+      "away": ""
     },
-    "shots_accuracy": {
-      "home": "35%",
-      "away": "13%"
+    "\"Shots on Target\"": {
+      "home": "",
+      "away": ""
     },
-    "saves": {
-      "home": "0 of 1-0%",
-      "away": "6 of 8-75%"
+    "\"Saves\"": {
+      "home": "",
+      "away": ""
     },
-    "fouls": {
-      "home": "12",
-      "away": "19"
-    },
-    "corners": {
-      "home": "8",
-      "away": "5"
-    },
-    "crosses": {
-      "home": "28",
-      "away": "11"
-    },
-    "interceptions": {
-      "home": "13",
-      "away": "16"
-    },
-    "offsides": {
-      "home": "2",
-      "away": "1"
-    },
-    "yellow_cards": {
-      "home": 2,
-      "away": 0
-    },
-    "red_cards": {
-      "home": 0,
-      "away": 0
+    "\"Cards\"": {
+      "home": "",
+      "away": ""
     }
   },
   "metadata": {
     "source": "FBref",
     "url": "https://fbref.com/en/matches/eaa598f4/Shanghai-SIPG-Henan-Jianye-September-22-2019-Chinese-Super-League",
-    "scraped_at": "2026-05-02T11:06:56.160623",
-    "version": "11.0-2019"
+    "scraped_at": "2026-05-04T17:30:21.983833",
+    "version": "2.0-BLOCK-BY-BLOCK"
   }
 }

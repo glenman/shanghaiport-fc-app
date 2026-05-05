@@ -1,281 +1,231 @@
 {
   "match_info": {
-    "match_id": "f49d6494",
+    "match_id": "Dalian-Yifang-Shanghai-SIPG-June-2-2019-Chinese-Super-League",
     "date": "2019-06-02",
-    "time": "15:00",
+    "time": "19:35",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2019",
       "round": "第12轮"
     },
     "venue": {
-      "name": "Dalian Sports Center",
+      "name": "大连体育中心",
+      "city": "辽宁省大连市",
       "attendance": 26919
     },
     "referee": {
-      "main": "Ravshan Irmatov",
-      "ar1": "Shi Xiang",
-      "ar2": "Guo Jingtao",
-      "fourth": "Jingyuan",
-      "var": "",
+      "main": "拉夫尚·伊尔马托夫(乌兹别克斯坦)",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Shanghai SIPG",
-      "full_name": "",
+      "name": "大连一方",
+      "full_name": "大连一方",
       "score": 1,
       "score_ht": 0,
-      "formation": "Dalian Yifang (4-2-3-1)",
-      "coach": "Choi Kanghee",
-      "captain": "Qin Sheng",
+      "formation": "4-2-3-1",
+      "coach": "崔康熙(韩国)",
+      "captain": "Unknown",
       "lineup": [
         {
           "number": "1",
           "name": "Zhang Chong",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "25",
           "name": "Li Jianbin",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "3",
           "name": "Shan Pengfei",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "6",
           "name": "Zhu Xiaogang",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "8",
           "name": "Zhu Ting",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "13",
           "name": "Wang Yaopeng",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "16",
           "name": "Qin Sheng",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "17",
-          "name": "Marek Hamšík",
-          "country": "Unknown"
+          "name": "Marek Ham",
+          "position": ""
         },
         {
           "number": "20",
           "name": "Wang Jinxian",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "30",
           "name": "Nyasha Mushekwi",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "31",
           "name": "Zheng Long",
-          "country": "Unknown"
+          "position": ""
         }
       ],
       "substitutes": [
         {
           "number": "19",
           "name": "Yu Ziqian",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "5",
           "name": "Alex Tayo Akande",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "21",
           "name": "Emmanuel Boateng",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "26",
-          "name": "Cui Ming'an",
-          "country": "Unknown"
+          "name": "Cui Ming",
+          "position": ""
         },
         {
           "number": "28",
           "name": "Zhang Hui",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "33",
           "name": "Zhao Xuebin",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "38",
           "name": "Yang Fangzhi",
-          "country": "Unknown"
+          "position": ""
         }
       ],
-      "substitutions": [
-        {
-          "minute": 46,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Emmanuel Boateng",
-          "player2": "",
-          "player_out": "Li Jianbin"
-        },
-        {
-          "minute": 68,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Zhao Xuebin",
-          "player2": "",
-          "player_out": "Wang Jinxian"
-        },
-        {
-          "minute": 84,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Alex Tayo Akande",
-          "player2": "",
-          "player_out": "Zhu Ting"
-        }
-      ]
+      "substitutions": []
     },
     "away": {
-      "name": "Opponent",
-      "full_name": "",
+      "name": "上海上港",
+      "full_name": "上海上港",
       "score": 2,
       "score_ht": 0,
-      "formation": "Shanghai SIPG (3-4-3)",
-      "coach": "Vítor Pereira",
-      "captain": "Hulk",
+      "formation": "3-4-3",
+      "coach": "维托尔·佩雷拉",
+      "captain": "奥斯卡",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
-          "country": "Unknown"
+          "name": "颜骏凌",
+          "position": ""
         },
         {
           "number": "2",
-          "name": "Zhang Wei",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
-          "country": "Unknown"
+          "name": "王燊超",
+          "position": ""
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
-          "country": "Unknown"
+          "name": "蔡慧康",
+          "position": ""
         },
         {
           "number": "8",
-          "name": "Oscar",
-          "country": "Unknown"
+          "name": "奥斯卡",
+          "position": ""
         },
         {
           "number": "9",
-          "name": "Elkeson",
-          "country": "Unknown"
+          "name": "埃尔克森",
+          "position": ""
         },
         {
           "number": "10",
-          "name": "Hulk",
-          "country": "Unknown"
+          "name": "胡尔克",
+          "position": ""
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
-          "country": "Unknown"
+          "name": "李圣龙",
+          "position": ""
         },
         {
           "number": "20",
-          "name": "Yang Shiyuan",
-          "country": "Unknown"
+          "name": "杨世元",
+          "position": ""
         },
         {
           "number": "21",
-          "name": "Yu Hai",
-          "country": "Unknown"
+          "name": "于海",
+          "position": ""
         },
         {
           "number": "28",
-          "name": "He Guan",
-          "country": "Unknown"
+          "name": "贺惯",
+          "position": ""
         }
       ],
       "substitutes": [
         {
           "number": "22",
-          "name": "Sun Le",
-          "country": "Unknown"
+          "name": "孙乐",
+          "position": ""
         },
         {
           "number": "5",
-          "name": "Shi Ke",
-          "country": "Unknown"
+          "name": "石柯",
+          "position": ""
         },
         {
           "number": "12",
-          "name": "Li Haowen",
-          "country": "Unknown"
+          "name": "李浩文",
+          "position": ""
         },
         {
           "number": "15",
-          "name": "Lin Chuangyi",
-          "country": "Unknown"
+          "name": "林创益",
+          "position": ""
         },
         {
           "number": "17",
-          "name": "Zhang Huachen",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "18",
-          "name": "Zhang Yi",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "19",
-          "name": "Hu Jinghang",
-          "country": "Unknown"
+          "name": "胡靖航",
+          "position": ""
         }
       ],
-      "substitutions": [
-        {
-          "minute": 90,
-          "minute_extra": 1,
-          "type": "substitution",
-          "team": "away",
-          "player": "Shi Ke",
-          "player2": "",
-          "player_out": "Li Shenglong"
-        },
-        {
-          "minute": 90,
-          "minute_extra": 3,
-          "type": "substitution",
-          "team": "away",
-          "player": "Hu Jinghang",
-          "player2": "",
-          "player_out": "Hulk"
-        }
-      ]
+      "substitutions": []
     }
   },
   "events": [
@@ -286,17 +236,20 @@
       "team": "home",
       "player": "Qin Sheng",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"9’ 0:0 Qin Sheng — Yellow Card\""
     },
     {
       "minute": 31,
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Elkeson",
-      "player2": "Li Shenglong",
+      "player": "埃尔克森",
+      "player2": "李圣龙",
+      "goal_type": "goal",
       "player_out": "",
-      "goal_type": "goal"
+      "description": "\"31’ 0:1 Elkeson Assist: Li Shenglong — Goal 0:1\""
     },
     {
       "minute": 36,
@@ -305,17 +258,20 @@
       "team": "home",
       "player": "Wang Yaopeng",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"36’ 0:1 Wang Yaopeng — Yellow Card\""
     },
     {
       "minute": 43,
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Li Shenglong",
-      "player2": "Zhang Wei",
+      "player": "李圣龙",
+      "player2": "张卫",
+      "goal_type": "goal",
       "player_out": "",
-      "goal_type": "goal"
+      "description": "\"43’ 0:2 Li Shenglong Assist: Zhang Wei — Goal 0:2\""
     },
     {
       "minute": 46,
@@ -323,8 +279,10 @@
       "type": "substitution",
       "team": "home",
       "player": "Emmanuel Boateng",
-      "player2": "",
-      "player_out": "Li Jianbin"
+      "player2": "Li Jianbin",
+      "goal_type": "",
+      "player_out": "Li Jianbin",
+      "description": "\"46’ 0:2 Emmanuel Boateng for Li Jianbin — Substitute\""
     },
     {
       "minute": 61,
@@ -333,8 +291,9 @@
       "team": "home",
       "player": "Nyasha Mushekwi",
       "player2": "",
+      "goal_type": "goal",
       "player_out": "",
-      "goal_type": "goal"
+      "description": "\"61’ 1:2 Nyasha Mushekwi — Goal 1:2\""
     },
     {
       "minute": 68,
@@ -342,8 +301,10 @@
       "type": "substitution",
       "team": "home",
       "player": "Zhao Xuebin",
-      "player2": "",
-      "player_out": "Wang Jinxian"
+      "player2": "Wang Jinxian",
+      "goal_type": "",
+      "player_out": "Wang Jinxian",
+      "description": "\"68’ 1:2 Zhao Xuebin for Wang Jinxian — Substitute\""
     },
     {
       "minute": 70,
@@ -352,7 +313,9 @@
       "team": "home",
       "player": "Zhu Xiaogang",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"70’ 1:2 Zhu Xiaogang — Yellow Card\""
     },
     {
       "minute": 71,
@@ -361,7 +324,9 @@
       "team": "home",
       "player": "Zhu Ting",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"71’ 1:2 Zhu Ting — Yellow Card\""
     },
     {
       "minute": 84,
@@ -369,91 +334,75 @@
       "type": "substitution",
       "team": "home",
       "player": "Alex Tayo Akande",
-      "player2": "",
-      "player_out": "Zhu Ting"
+      "player2": "Zhu Ting",
+      "goal_type": "",
+      "player_out": "Zhu Ting",
+      "description": "\"84’ 1:2 Alex Tayo Akande for Zhu Ting — Substitute\""
     },
     {
       "minute": 87,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Yan Junling",
+      "player": "颜骏凌",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"87’ 1:2 Yan Junling — Yellow Card\""
     },
     {
       "minute": 90,
-      "minute_extra": 1,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Shi Ke",
-      "player2": "",
-      "player_out": "Li Shenglong"
+      "player": "石柯",
+      "player2": "李圣龙",
+      "goal_type": "",
+      "player_out": "Li Shenglong",
+      "description": "\"90+1’ 1:2 Shi Ke for Li Shenglong — Substitute\""
     },
     {
       "minute": 90,
-      "minute_extra": 3,
+      "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Hu Jinghang",
-      "player2": "",
-      "player_out": "Hulk"
+      "player": "胡靖航",
+      "player2": "胡尔克",
+      "goal_type": "",
+      "player_out": "Hulk",
+      "description": "\"90+3’ 1:2 Hu Jinghang for Hulk — Substitute\""
     }
   ],
   "statistics": {
-    "possession": {
-      "home": "50%",
-      "away": "50%"
+    "\"Dalian Yifang\"": {
+      "home": "",
+      "away": ""
     },
-    "shots_on_target": {
-      "home": "1",
-      "away": "6"
+    "\"Possession\"": {
+      "home": "",
+      "away": ""
     },
-    "shots": {
-      "home": "8",
-      "away": "11"
+    "\"Passing Accuracy\"": {
+      "home": "",
+      "away": ""
     },
-    "shots_accuracy": {
-      "home": "13%",
-      "away": "55%"
+    "\"Shots on Target\"": {
+      "home": "",
+      "away": ""
     },
-    "saves": {
-      "home": "4 of 6-66%",
-      "away": "0 of 1-0%"
+    "\"Saves\"": {
+      "home": "",
+      "away": ""
     },
-    "fouls": {
-      "home": "23",
-      "away": "16"
-    },
-    "corners": {
-      "home": "5",
-      "away": "6"
-    },
-    "crosses": {
-      "home": "22",
-      "away": "16"
-    },
-    "interceptions": {
-      "home": "7",
-      "away": "6"
-    },
-    "offsides": {
-      "home": "0",
-      "away": "3"
-    },
-    "yellow_cards": {
-      "home": 1,
-      "away": 4
-    },
-    "red_cards": {
-      "home": 0,
-      "away": 0
+    "\"Cards\"": {
+      "home": "",
+      "away": ""
     }
   },
   "metadata": {
     "source": "FBref",
     "url": "https://fbref.com/en/matches/f49d6494/Dalian-Yifang-Shanghai-SIPG-June-2-2019-Chinese-Super-League",
-    "scraped_at": "2026-05-02T11:03:47.410882",
-    "version": "11.0-2019"
+    "scraped_at": "2026-05-04T17:24:14.852919",
+    "version": "2.0-BLOCK-BY-BLOCK"
   }
 }

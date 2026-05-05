@@ -1,0 +1,483 @@
+{
+  "match_info": {
+    "match_id": "e7c44ff8",
+    "date": "2018-04-29",
+    "time": "15:30",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2019",
+      "round": "Matchweek 8"
+    },
+    "venue": {
+      "name": "长春体育中心",
+      "city": "吉林省长春市",
+      "attendance": 25966
+    },
+    "referee": {
+      "main": "林君(天津)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "长春亚泰",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Changchun Yatai (4-4-1-1)",
+      "coach": "陈金刚",
+      "captain": "Odion Ighalo",
+      "lineup": [
+        {
+          "number": "13",
+          "name": "Yi Fan",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Yu Rui",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Marinho",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Odion Ighalo",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Lasse Vibe",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Sun Jie",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Jiang Zhe",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "施晓东",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "He Chao",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Tan Long",
+          "country": "Unknown"
+        },
+        {
+          "number": "32",
+          "name": "Li Guang",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "23",
+          "name": "Wu Yake",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Xue Ya'nan",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Tan Tiancheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Li Shang",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Zhao Mingyu",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Zhang Xiaofei",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "Zhou Dadi",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 33,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhang Xiaofei",
+          "player2": "",
+          "player_out": "Jiang Zhe"
+        },
+        {
+          "minute": 62,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhou Dadi",
+          "player2": "",
+          "player_out": "Li Guang"
+        },
+        {
+          "minute": 89,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhao Mingyu",
+          "player2": "",
+          "player_out": "Zhou Dadi"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "(4-3-3)",
+      "coach": "维托尔·佩雷拉",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "胡尔克",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "于海",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "陈彬彬",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "孙乐",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "张华晨",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "胡靖航",
+          "country": "Unknown"
+        },
+        {
+          "number": "36",
+          "name": "俞豪",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 58,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lü Wenjun",
+          "player2": "",
+          "player_out": "Chen Binbin"
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zhang Huachen",
+          "player2": "",
+          "player_out": "Cai Huikang"
+        },
+        {
+          "minute": 88,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Hu Jinghang",
+          "player2": "",
+          "player_out": "Wang Shenchao"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 14,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Odion Ighalo",
+      "player2": "Jiang Zhe",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 29,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Li Guang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 33,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Xiaofei",
+      "player2": "",
+      "player_out": "Jiang Zhe"
+    },
+    {
+      "minute": 39,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Yu Hai",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 41,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Wu Lei",
+      "player2": "Hulk",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 58,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "player_out": "Chen Binbin"
+    },
+    {
+      "minute": 62,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhou Dadi",
+      "player2": "",
+      "player_out": "Li Guang"
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Sun Jie",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Odion Ighalo",
+      "player2": "Marinho",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 77,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 82,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Wu Lei",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhang Huachen",
+      "player2": "",
+      "player_out": "Cai Huikang"
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Hu Jinghang",
+      "player2": "",
+      "player_out": "Wang Shenchao"
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhao Mingyu",
+      "player2": "",
+      "player_out": "Zhou Dadi"
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "47%",
+      "away": "53%"
+    },
+    "shots_on_target": {
+      "home": "6",
+      "away": "5"
+    },
+    "shots": {
+      "home": "18",
+      "away": "16"
+    },
+    "shots_accuracy": {
+      "home": "33%",
+      "away": "31%"
+    },
+    "saves": {
+      "home": "4 of 5-80%",
+      "away": "4 of 6-66%"
+    },
+    "fouls": {
+      "home": "25",
+      "away": "15"
+    },
+    "corners": {
+      "home": "1",
+      "away": "5"
+    },
+    "crosses": {
+      "home": "15",
+      "away": "23"
+    },
+    "interceptions": {
+      "home": "2",
+      "away": "5"
+    },
+    "offsides": {
+      "home": "2",
+      "away": "1"
+    },
+    "yellow_cards": {
+      "home": 4,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/e7c44ff8/Changchun-Yatai-Shanghai-SIPG-April-29-2018-Chinese-Super-League",
+    "scraped_at": "2026-05-05T18:43:48.591538",
+    "version": "11.0-2018"
+  }
+}

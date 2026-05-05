@@ -1,0 +1,456 @@
+{
+  "match_info": {
+    "match_id": "affdaa62",
+    "date": "2017-11-04",
+    "time": "15:00",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2017",
+      "round": "Matchweek 30"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 26467
+    },
+    "referee": {
+      "main": "艾堃(北体大)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Dalian Yifang (4-2-3-1)",
+      "coach": "丹尼尔·苏泽",
+      "captain": "Qin Sheng",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Zhang Chong",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Li Jianbin",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Shan Pengfei",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Zhu Xiaogang",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Zhu Ting",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Wang Yaopeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Qin Sheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Marek Hamšík",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Wang Jinxian",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Nyasha Mushekwi",
+          "country": "Unknown"
+        },
+        {
+          "number": "31",
+          "name": "Zheng Long",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "19",
+          "name": "Yu Ziqian",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Alex Tayo Akande",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Emmanuel Boateng",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Cui Ming'an",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "Zhang Hui",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Zhao Xuebin",
+          "country": "Unknown"
+        },
+        {
+          "number": "38",
+          "name": "Yang Fangzhi",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Emmanuel Boateng",
+          "player2": "",
+          "player_out": "Li Jianbin"
+        },
+        {
+          "minute": 68,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhao Xuebin",
+          "player2": "",
+          "player_out": "Wang Jinxian"
+        },
+        {
+          "minute": 84,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Alex Tayo Akande",
+          "player2": "",
+          "player_out": "Zhu Ting"
+        }
+      ]
+    },
+    "away": {
+      "name": "江苏苏宁",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (3-4-3)",
+      "coach": "法比奥·卡佩罗(意大利)",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Zhang Wei",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Oscar",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Elkeson",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Hulk",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Yang Shiyuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "He Guan",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "Sun Le",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Shi Ke",
+          "country": "Unknown"
+        },
+        {
+          "number": "12",
+          "name": "Li Haowen",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Zhang Huachen",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Yi",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Hu Jinghang",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 90,
+          "minute_extra": 1,
+          "type": "substitution",
+          "team": "away",
+          "player": "Shi Ke",
+          "player2": "",
+          "player_out": "Li Shenglong"
+        },
+        {
+          "minute": 90,
+          "minute_extra": 3,
+          "type": "substitution",
+          "team": "away",
+          "player": "Hu Jinghang",
+          "player2": "",
+          "player_out": "Hulk"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 9,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Qin Sheng",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 31,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Elkeson",
+      "player2": "Li Shenglong",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 36,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Wang Yaopeng",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 43,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Li Shenglong",
+      "player2": "Zhang Wei",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Emmanuel Boateng",
+      "player2": "",
+      "player_out": "Li Jianbin"
+    },
+    {
+      "minute": 61,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Nyasha Mushekwi",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 68,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhao Xuebin",
+      "player2": "",
+      "player_out": "Wang Jinxian"
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zhu Xiaogang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Zhu Ting",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Alex Tayo Akande",
+      "player2": "",
+      "player_out": "Zhu Ting"
+    },
+    {
+      "minute": 87,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Yan Junling",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 1,
+      "type": "substitution",
+      "team": "away",
+      "player": "Shi Ke",
+      "player2": "",
+      "player_out": "Li Shenglong"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "substitution",
+      "team": "away",
+      "player": "Hu Jinghang",
+      "player2": "",
+      "player_out": "Hulk"
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "50%",
+      "away": "50%"
+    },
+    "shots_on_target": {
+      "home": "1",
+      "away": "6"
+    },
+    "shots": {
+      "home": "8",
+      "away": "11"
+    },
+    "shots_accuracy": {
+      "home": "13%",
+      "away": "55%"
+    },
+    "saves": {
+      "home": "4 of 6-66%",
+      "away": "0 of 1-0%"
+    },
+    "fouls": {
+      "home": "23",
+      "away": "16"
+    },
+    "corners": {
+      "home": "5",
+      "away": "6"
+    },
+    "crosses": {
+      "home": "22",
+      "away": "16"
+    },
+    "interceptions": {
+      "home": "7",
+      "away": "6"
+    },
+    "offsides": {
+      "home": "0",
+      "away": "3"
+    },
+    "yellow_cards": {
+      "home": 1,
+      "away": 4
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/affdaa62/Shanghai-SIPG-Jiangsu-Suning-November-4-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T11:03:41.824919",
+    "version": "11.0-2017"
+  }
+}

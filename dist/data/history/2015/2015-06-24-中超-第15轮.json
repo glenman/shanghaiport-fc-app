@@ -1,0 +1,473 @@
+{
+  "match_info": {
+    "match_id": "3a94608c",
+    "date": "2015-06-24",
+    "time": "20:00",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2015",
+      "round": "Matchweek 15"
+    },
+    "venue": {
+      "name": "盘锦红海滩锦绣体育场",
+      "city": "辽宁省盘锦市",
+      "attendance": 11120
+    },
+    "referee": {
+      "main": "王津(天津)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "辽宁宏运",
+      "full_name": "辽宁宏运足球俱乐部",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "陈洋",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "10",
+          "name": "Darío Conca",
+          "position": "MF",
+          "country": "ARG"
+        },
+        {
+          "number": "17",
+          "name": "Jean Evrard Kouassi",
+          "position": "FW,MF",
+          "country": "CIV"
+        },
+        {
+          "number": "6",
+          "name": "Cai Huikang",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "9",
+          "name": "Tobias Hysén",
+          "position": "FW,MF",
+          "country": "SWE"
+        },
+        {
+          "number": "5",
+          "name": "Wang Jiajie",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "3",
+          "name": "Kim Ju-young",
+          "position": "DF",
+          "country": "KOR"
+        },
+        {
+          "number": "1",
+          "name": "Yan Junling",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "27",
+          "name": "Shi Ke",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "7",
+          "name": "Wu Lei",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "4",
+          "name": "Wang Shenchao",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "32",
+          "name": "Sun Xiang",
+          "position": "DF",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "15",
+          "name": "Lin Chuangyi",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "11",
+          "name": "Lü Wenjun",
+          "position": "DF,FW",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 77,
+          "player_out": "Jean Evrard Kouassi",
+          "player_in": "Lin Chuangyi"
+        },
+        {
+          "minute": 64,
+          "player_out": "Wang Jiajie",
+          "player_in": "Lü Wenjun"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海上港",
+      "full_name": "上海上港集团足球俱乐部",
+      "score": 3,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "斯文·戈兰·埃里克森",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "27",
+          "name": "Wang Bo",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "16",
+          "name": "Yang Chaosheng",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "4",
+          "name": "Wang Hao",
+          "position": "FW",
+          "country": "CHN"
+        },
+        {
+          "number": "35",
+          "name": "Ding Jie",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "1",
+          "name": "Zhang Lu",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "4",
+          "name": "Sun Shilin",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "11",
+          "name": "Zheng Tao",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "11",
+          "name": "Hu Yanqiang",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "8",
+          "name": "Zhang Ye",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "30",
+          "name": "Kim Yoo-jin",
+          "position": "DF",
+          "country": "KOR"
+        },
+        {
+          "number": "6",
+          "name": "Yang Yu",
+          "position": "MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "10",
+          "name": "Franck Boli",
+          "position": "FW",
+          "country": "CIV"
+        },
+        {
+          "number": "34",
+          "name": "Derick Ogbu",
+          "position": "FW",
+          "country": "NGA"
+        },
+        {
+          "number": "26",
+          "name": "Qin Sheng",
+          "position": "DF,MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 65,
+          "player_out": "Yang Chaosheng",
+          "player_in": "Franck Boli"
+        },
+        {
+          "minute": 50,
+          "player_out": "Wang Hao",
+          "player_in": "Derick Ogbu"
+        },
+        {
+          "minute": 54,
+          "player_out": "Yang Yu",
+          "player_in": "Qin Sheng"
+        }
+      ]
+    }
+  },
+  "statistics": {},
+  "events": [
+    {
+      "minute": 17,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Yang Chaosheng",
+      "player2": "Hu Yanqiang",
+      "description": ""
+    },
+    {
+      "minute": 32,
+      "minute_extra": 0,
+      "type": "own_goal",
+      "team": "away",
+      "player": "Kim Yoo-jin",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 43,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Yang Chaosheng",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 51,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Derick Ogbu",
+      "player2": "Wang Hao",
+      "description": ""
+    },
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Qin Sheng",
+      "player2": "Yang Yu",
+      "description": ""
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lü Wenjun",
+      "player2": "Wang Jiajie",
+      "description": ""
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Franck Boli",
+      "player2": "Yang Chaosheng",
+      "description": ""
+    },
+    {
+      "minute": 68,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Tobias Hysén",
+      "player2": "Lü Wenjun",
+      "description": ""
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Darío Conca",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lin Chuangyi",
+      "player2": "Jean Evrard Kouassi",
+      "description": ""
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Sun Shilin",
+      "player2": "",
+      "description": ""
+    }
+  ],
+  "player_stats": {
+    "home": [
+      {
+        "minute": "90",
+        "nationality": "ar ARG",
+        "player": "Darío Conca",
+        "position": "MF",
+        "shirtnumber": "10"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Cai Huikang",
+        "position": "MF",
+        "shirtnumber": "6"
+      },
+      {
+        "minute": "90",
+        "nationality": "se SWE",
+        "player": "Tobias Hysén",
+        "position": "FW,MF",
+        "shirtnumber": "9"
+      },
+      {
+        "minute": "90",
+        "nationality": "kr KOR",
+        "player": "Kim Ju-young",
+        "position": "DF",
+        "shirtnumber": "3"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yan Junling",
+        "position": "GK",
+        "shirtnumber": "1"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Shi Ke",
+        "position": "DF",
+        "shirtnumber": "27"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wu Lei",
+        "position": "FW,MF",
+        "shirtnumber": "7"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Shenchao",
+        "position": "DF,MF",
+        "shirtnumber": "4"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Sun Xiang",
+        "position": "DF",
+        "shirtnumber": "32"
+      }
+    ],
+    "away": [
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Bo",
+        "position": "DF",
+        "shirtnumber": "27"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Ding Jie",
+        "position": "MF",
+        "shirtnumber": "35"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Zhang Lu",
+        "position": "GK",
+        "shirtnumber": "1"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Sun Shilin",
+        "position": "MF",
+        "shirtnumber": "4"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Zheng Tao",
+        "position": "DF",
+        "shirtnumber": "11"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Hu Yanqiang",
+        "position": "MF",
+        "shirtnumber": "11"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Zhang Ye",
+        "position": "MF",
+        "shirtnumber": "8"
+      },
+      {
+        "minute": "90",
+        "nationality": "kr KOR",
+        "player": "Kim Yoo-jin",
+        "position": "DF",
+        "shirtnumber": "30"
+      }
+    ]
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/3a94608c/Liaoning-Whowin-Shanghai-SIPG-June-24-2015-Chinese-Super-League",
+    "scraped_at": "2026-05-05T14:58:36",
+    "version": "2015-season-v3"
+  }
+}

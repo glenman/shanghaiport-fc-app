@@ -1,0 +1,476 @@
+{
+  "match_info": {
+    "match_id": "91cbf3b3",
+    "date": "2018-10-07",
+    "time": "19:35",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2019",
+      "round": "第25轮"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 23793
+    },
+    "referee": {
+      "main": "顾春含(武汉)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 5,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (4-2-3-1)",
+      "coach": "维托尔·佩雷拉",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "埃尔克森",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "胡尔克",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "于海",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "孙乐",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "李圣龙",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "张一",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "傅欢",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "雷文杰",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 67,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhang Yi",
+          "player2": "",
+          "player_out": "Cai Huikang"
+        },
+        {
+          "minute": 75,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Li Shenglong",
+          "player2": "",
+          "player_out": "Elkeson"
+        },
+        {
+          "minute": 83,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhang Wei",
+          "player2": "",
+          "player_out": "Yu Hai"
+        }
+      ]
+    },
+    "away": {
+      "name": "贵州恒丰",
+      "full_name": "",
+      "score": 0,
+      "score_ht": 0,
+      "formation": "(4-1-4-1)",
+      "coach": "王新欣(代理)",
+      "captain": "Fan Yunlong",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Su Boyang",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Tang Xin",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Fan Yunlong",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Bubacarr Trawally",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Min Junlin",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Zheng Kaimu",
+          "country": "Unknown"
+        },
+        {
+          "number": "26",
+          "name": "Mario Suárez",
+          "country": "Unknown"
+        },
+        {
+          "number": "27",
+          "name": "俞豪",
+          "country": "Unknown"
+        },
+        {
+          "number": "31",
+          "name": "Zhao Hejing",
+          "country": "Unknown"
+        },
+        {
+          "number": "35",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "39",
+          "name": "Kévin Boli",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "56",
+          "name": "Wang Zhuo",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Festus Baise",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Yang Ting",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Lin Longchang",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Zhang Yuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "Li Yingjian",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Chen Ji",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 62,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lin Longchang",
+          "player2": "",
+          "player_out": "Du Wei"
+        },
+        {
+          "minute": 81,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Zhang Yuan",
+          "player2": "",
+          "player_out": "Liu Hao"
+        },
+        {
+          "minute": 86,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Chen Ji",
+          "player2": "",
+          "player_out": "Mario Suárez"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 14,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "He Guan",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 23,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wang Shenchao",
+      "player2": "Lü Wenjun",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 40,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zheng Kaimu",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 47,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "Hulk",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 52,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Elkeson",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 54,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wu Lei",
+      "player2": "Lü Wenjun",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 62,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lin Longchang",
+      "player2": "",
+      "player_out": "Du Wei"
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Yi",
+      "player2": "",
+      "player_out": "Cai Huikang"
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Shenglong",
+      "player2": "",
+      "player_out": "Elkeson"
+    },
+    {
+      "minute": 76,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Zhang Yuan",
+      "player2": "",
+      "player_out": "Liu Hao"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Hulk",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Wei",
+      "player2": "",
+      "player_out": "Yu Hai"
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Chen Ji",
+      "player2": "",
+      "player_out": "Mario Suárez"
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "65%",
+      "away": "35%"
+    },
+    "shots_on_target": {
+      "home": "9",
+      "away": "2"
+    },
+    "shots": {
+      "home": "18",
+      "away": "9"
+    },
+    "shots_accuracy": {
+      "home": "50%",
+      "away": "22%"
+    },
+    "saves": {
+      "home": "2 of 2-100%",
+      "away": "4 of 9-44%"
+    },
+    "fouls": {
+      "home": "18",
+      "away": "16"
+    },
+    "corners": {
+      "home": "7",
+      "away": "3"
+    },
+    "crosses": {
+      "home": "17",
+      "away": "15"
+    },
+    "interceptions": {
+      "home": "12",
+      "away": "13"
+    },
+    "offsides": {
+      "home": "4",
+      "away": "8"
+    },
+    "yellow_cards": {
+      "home": 1,
+      "away": 2
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/91cbf3b3/Shanghai-SIPG-Guizhou-Hengfeng-October-7-2018-Chinese-Super-League",
+    "scraped_at": "2026-05-05T18:48:04.732730",
+    "version": "11.0-2018"
+  }
+}

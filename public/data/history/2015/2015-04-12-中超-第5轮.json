@@ -1,0 +1,482 @@
+{
+  "match_info": {
+    "match_id": "f001983f",
+    "date": "2015-04-12",
+    "time": "20:00",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2015",
+      "round": "第5轮"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 26025
+    },
+    "referee": {
+      "main": "李海河(北京)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "上海上港集团足球俱乐部",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "斯文·戈兰·埃里克森",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "15",
+          "name": "林创益",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "17",
+          "name": "让·埃弗拉",
+          "position": "FW,MF",
+          "country": "CIV"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "21",
+          "name": "于海",
+          "position": "DF,FW",
+          "country": "CHN"
+        },
+        {
+          "number": "9",
+          "name": "托比亚斯·海森",
+          "position": "FW,MF",
+          "country": "SWE"
+        },
+        {
+          "number": "5",
+          "name": "汪佳捷",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "3",
+          "name": "金周荣",
+          "position": "DF",
+          "country": "KOR"
+        },
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "32",
+          "name": "孙祥",
+          "position": "DF",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "19",
+          "name": "杨世元",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "12",
+          "name": "李浩文",
+          "position": "FW",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 72,
+          "player_out": "Lin Chuangyi",
+          "player_in": "Yang Shiyuan"
+        },
+        {
+          "minute": 88,
+          "player_out": "Tobias Hysén",
+          "player_in": "Li Haowen"
+        }
+      ]
+    },
+    "away": {
+      "name": "北京国安",
+      "full_name": "北京国安足球俱乐部",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "格雷戈里奥·曼萨诺(西班牙)",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "17",
+          "name": "Pablo Batalla",
+          "position": "MF",
+          "country": "ARG"
+        },
+        {
+          "number": "19",
+          "name": "Yu Dabao",
+          "position": "DF,FW",
+          "country": "CHN"
+        },
+        {
+          "number": "16",
+          "name": "Ha Dae-sung",
+          "position": "DF,MF",
+          "country": "KOR"
+        },
+        {
+          "number": "10",
+          "name": "Dejan Damjanović",
+          "position": "FW",
+          "country": "MNE"
+        },
+        {
+          "number": "31",
+          "name": "Zhao Hejing",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "5",
+          "name": "Darko Matić",
+          "position": "DF,MF",
+          "country": "CRO"
+        },
+        {
+          "number": "4",
+          "name": "Zhou Ting",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "13",
+          "name": "Xu Yunlong",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "18",
+          "name": "Lang Zheng",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "22",
+          "name": "Yang Zhi",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "23",
+          "name": "Chen Zhizhao",
+          "position": "FW,MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "11",
+          "name": "Song Boxuan",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "21",
+          "name": "Erton Fejzullahu",
+          "position": "FW",
+          "country": "KVX"
+        },
+        {
+          "number": "14",
+          "name": "Jin Pengxiang",
+          "position": "DF",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 66,
+          "player_out": "Yu Dabao",
+          "player_in": "Song Boxuan"
+        },
+        {
+          "minute": 66,
+          "player_out": "Darko Matić",
+          "player_in": "Erton Fejzullahu"
+        },
+        {
+          "minute": 15,
+          "player_out": "Xu Yunlong",
+          "player_in": "Jin Pengxiang"
+        }
+      ]
+    }
+  },
+  "statistics": {},
+  "events": [
+    {
+      "minute": 15,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Tobias Hysén",
+      "player2": "Wang Shenchao",
+      "description": ""
+    },
+    {
+      "minute": 16,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Jin Pengxiang",
+      "player2": "Xu Yunlong",
+      "description": ""
+    },
+    {
+      "minute": 29,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Pablo Batalla",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 32,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Ha Dae-sung",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 41,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Chen Zhizhao",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 50,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Dejan Damjanović",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Erton Fejzullahu",
+      "player2": "Darko Matić",
+      "description": ""
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Song Boxuan",
+      "player2": "Yu Dabao",
+      "description": ""
+    },
+    {
+      "minute": 68,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Song Boxuan",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 73,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Yang Shiyuan",
+      "player2": "Lin Chuangyi",
+      "description": ""
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Erton Fejzullahu",
+      "player2": "Pablo Batalla",
+      "description": ""
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Haowen",
+      "player2": "Tobias Hysén",
+      "description": ""
+    }
+  ],
+  "player_stats": {
+    "home": [
+      {
+        "minute": "90",
+        "nationality": "ci CIV",
+        "player": "Jean Evrard Kouassi",
+        "position": "FW,MF",
+        "shirtnumber": "17"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "He Guan",
+        "position": "DF",
+        "shirtnumber": "28"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yu Hai",
+        "position": "DF,FW",
+        "shirtnumber": "21"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Jiajie",
+        "position": "DF,MF",
+        "shirtnumber": "5"
+      },
+      {
+        "minute": "90",
+        "nationality": "kr KOR",
+        "player": "Kim Ju-young",
+        "position": "DF",
+        "shirtnumber": "3"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yan Junling",
+        "position": "GK",
+        "shirtnumber": "1"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wu Lei",
+        "position": "FW,MF",
+        "shirtnumber": "7"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Shenchao",
+        "position": "DF,MF",
+        "shirtnumber": "4"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Sun Xiang",
+        "position": "DF",
+        "shirtnumber": "32"
+      }
+    ],
+    "away": [
+      {
+        "minute": "90",
+        "nationality": "ar ARG",
+        "player": "Pablo Batalla",
+        "position": "MF",
+        "shirtnumber": "17"
+      },
+      {
+        "minute": "90",
+        "nationality": "kr KOR",
+        "player": "Ha Dae-sung",
+        "position": "DF,MF",
+        "shirtnumber": "16"
+      },
+      {
+        "minute": "90",
+        "nationality": "me MNE",
+        "player": "Dejan Damjanović",
+        "position": "FW",
+        "shirtnumber": "10"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Zhao Hejing",
+        "position": "DF",
+        "shirtnumber": "31"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Zhou Ting",
+        "position": "DF,MF",
+        "shirtnumber": "4"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Lang Zheng",
+        "position": "DF",
+        "shirtnumber": "18"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yang Zhi",
+        "position": "GK",
+        "shirtnumber": "22"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Chen Zhizhao",
+        "position": "FW,MF",
+        "shirtnumber": "23"
+      }
+    ]
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/f001983f/Shanghai-SIPG-Beijing-Guoan-April-12-2015-Chinese-Super-League",
+    "scraped_at": "2026-05-05T14:56:16",
+    "version": "2015-season-v3"
+  }
+}

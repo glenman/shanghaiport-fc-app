@@ -1,0 +1,446 @@
+{
+  "match_info": {
+    "match_id": "26a93860",
+    "date": "2018-07-17",
+    "time": "19:35",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2019",
+      "round": "第12轮"
+    },
+    "venue": {
+      "name": "济南奥体中心",
+      "city": "山东省济南市",
+      "attendance": 34980
+    },
+    "referee": {
+      "main": "科特·阿姆斯(澳大利亚)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "山东鲁能",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "Shandong Taishan (4-4-1-1)",
+      "coach": "李霄鹏",
+      "captain": "Hao Junmin",
+      "lineup": [
+        {
+          "number": "14",
+          "name": "Wang Dalei",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Liu Junshuai",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "Gil",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Wang Tong",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Diego Tardelli",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "Zhang Chi",
+          "country": "Unknown"
+        },
+        {
+          "number": "19",
+          "name": "Graziano Pellè",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Hao Junmin",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "Song Long",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "Yao Junsheng",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Jin Jingdao",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "20",
+          "name": "Han Rongze",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Li Songyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "Cui Peng",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Liu Yang",
+          "country": "Unknown"
+        },
+        {
+          "number": "17",
+          "name": "Wu Xinghan",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Chen Zhechao",
+          "country": "Unknown"
+        },
+        {
+          "number": "34",
+          "name": "Li Hailong",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 17,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Wu Xinghan",
+          "player2": "",
+          "player_out": "Yao Junsheng"
+        },
+        {
+          "minute": 58,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Cui Peng",
+          "player2": "",
+          "player_out": "Song Long"
+        },
+        {
+          "minute": 78,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Li Hailong",
+          "player2": "",
+          "player_out": "Liu Junshuai"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 1,
+      "score_ht": 0,
+      "formation": "(4-3-3)",
+      "coach": "维托尔·佩雷拉",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "石柯",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "胡尔克",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "于海",
+          "country": "Unknown"
+        },
+        {
+          "number": "25",
+          "name": "Odil Ahmedov",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "陈彬彬",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "34",
+          "name": "陈威",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "李圣龙",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "雷文杰",
+          "country": "Unknown"
+        },
+        {
+          "number": "36",
+          "name": "俞豪",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lü Wenjun",
+          "player2": "",
+          "player_out": "Chen Binbin"
+        },
+        {
+          "minute": 84,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Yu Hao",
+          "player2": "",
+          "player_out": "Odil Ahmedov"
+        },
+        {
+          "minute": 87,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Lei Wenjie",
+          "player2": "",
+          "player_out": "Wu Lei"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 17,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Wu Xinghan",
+      "player2": "",
+      "player_out": "Yao Junsheng"
+    },
+    {
+      "minute": 32,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Jin Jingdao",
+      "player2": "Graziano Pellè",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 1,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Graziano Pellè",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lü Wenjun",
+      "player2": "",
+      "player_out": "Chen Binbin"
+    },
+    {
+      "minute": 54,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Oscar",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 58,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Cui Peng",
+      "player2": "",
+      "player_out": "Song Long"
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Cai Huikang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Yu Hai",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Hailong",
+      "player2": "",
+      "player_out": "Liu Junshuai"
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Yu Hao",
+      "player2": "",
+      "player_out": "Odil Ahmedov"
+    },
+    {
+      "minute": 87,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Lei Wenjie",
+      "player2": "",
+      "player_out": "Wu Lei"
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "40%",
+      "away": "60%"
+    },
+    "shots_on_target": {
+      "home": "6",
+      "away": "6"
+    },
+    "shots": {
+      "home": "16",
+      "away": "15"
+    },
+    "shots_accuracy": {
+      "home": "38%",
+      "away": "40%"
+    },
+    "saves": {
+      "home": "5 of 6-83%",
+      "away": "5 of 6-83%"
+    },
+    "fouls": {
+      "home": "18",
+      "away": "8"
+    },
+    "corners": {
+      "home": "7",
+      "away": "9"
+    },
+    "crosses": {
+      "home": "13",
+      "away": "22"
+    },
+    "interceptions": {
+      "home": "9",
+      "away": "7"
+    },
+    "offsides": {
+      "home": "1",
+      "away": "3"
+    },
+    "yellow_cards": {
+      "home": 2,
+      "away": 1
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/26a93860/Shandong-Luneng-Taishan-Shanghai-SIPG-July-17-2018-Chinese-Super-League",
+    "scraped_at": "2026-05-05T18:44:53.225229",
+    "version": "11.0-2018"
+  }
+}

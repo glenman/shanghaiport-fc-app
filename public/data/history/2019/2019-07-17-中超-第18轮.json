@@ -1,290 +1,231 @@
 {
   "match_info": {
-    "match_id": "3846afb2",
+    "match_id": "Shanghai-SIPG-Hebei-China-Fortune-July-17-2019-Chinese-Super-League",
     "date": "2019-07-17",
     "time": "19:35",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2019",
       "round": "第18轮"
     },
     "venue": {
-      "name": "Shanghai Stadium",
-      "attendance": 21912
+      "name": "上海体育场",
+      "attendance": 25639,
+      "city": "上海市"
     },
     "referee": {
-      "main": "Gu Chunhan",
-      "ar1": "Ma Ji",
-      "ar2": "Yu Bo",
-      "fourth": "Hei Xiaohu",
-      "var": "",
+      "main": "顾春含(武汉)",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Shanghai SIPG",
-      "full_name": "",
+      "name": "上海上港",
+      "full_name": "上海上港",
       "score": 3,
       "score_ht": 0,
-      "formation": "Shanghai SIPG (3-4-1-2)",
-      "coach": "Vítor Pereira",
-      "captain": "Hulk",
+      "formation": "3-4-1-2",
+      "coach": "维托尔·佩雷拉",
+      "captain": "奥斯卡",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
-          "country": "Unknown"
+          "name": "颜骏凌",
+          "position": ""
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
-          "country": "Unknown"
+          "name": "王燊超",
+          "position": ""
         },
         {
           "number": "5",
-          "name": "Shi Ke",
-          "country": "Unknown"
+          "name": "石柯",
+          "position": ""
         },
         {
           "number": "8",
-          "name": "Oscar",
-          "country": "Unknown"
+          "name": "奥斯卡",
+          "position": ""
         },
         {
           "number": "10",
-          "name": "Hulk",
-          "country": "Unknown"
+          "name": "胡尔克",
+          "position": ""
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
-          "country": "Unknown"
+          "name": "李圣龙",
+          "position": ""
         },
         {
           "number": "20",
-          "name": "Yang Shiyuan",
-          "country": "Unknown"
+          "name": "杨世元",
+          "position": ""
         },
         {
           "number": "21",
-          "name": "Yu Hai",
-          "country": "Unknown"
+          "name": "于海",
+          "position": ""
         },
         {
           "number": "25",
-          "name": "Odil Ahmedov",
-          "country": "Unknown"
+          "name": "艾哈迈多夫",
+          "position": ""
         },
         {
           "number": "28",
-          "name": "He Guan",
-          "country": "Unknown"
+          "name": "贺惯",
+          "position": ""
         },
         {
           "number": "37",
-          "name": "Chen Binbin",
-          "country": "Unknown"
+          "name": "陈彬彬",
+          "position": ""
         }
       ],
       "substitutes": [
         {
           "number": "34",
-          "name": "Chen Wei",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "2",
-          "name": "Zhang Wei",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
-          "country": "Unknown"
+          "name": "蔡慧康",
+          "position": ""
         },
         {
           "number": "13",
-          "name": "Wei Zhen",
-          "country": "Unknown"
+          "name": "张卫",
+          "position": ""
         },
         {
           "number": "15",
-          "name": "Lin Chuangyi",
-          "country": "Unknown"
+          "name": "林创益",
+          "position": ""
         },
         {
           "number": "19",
-          "name": "Hu Jinghang",
-          "country": "Unknown"
+          "name": "胡靖航",
+          "position": ""
         },
         {
           "number": "23",
-          "name": "Fu Huan",
-          "country": "Unknown"
+          "name": "傅欢",
+          "position": ""
         }
       ],
-      "substitutions": [
-        {
-          "minute": 81,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Cai Huikang",
-          "player2": "",
-          "player_out": "Odil Ahmedov"
-        },
-        {
-          "minute": 81,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Wei Zhen",
-          "player2": "",
-          "player_out": "Chen Binbin"
-        },
-        {
-          "minute": 90,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Hu Jinghang",
-          "player2": "",
-          "player_out": "Wang Shenchao"
-        }
-      ]
+      "substitutions": []
     },
     "away": {
-      "name": "Opponent",
-      "full_name": "",
+      "name": "河北华夏",
+      "full_name": "河北华夏",
       "score": 0,
       "score_ht": 0,
-      "formation": "Hebei Fortune (3-1-4-2)",
-      "coach": "Xie Feng",
-      "captain": "Zhang Chengdong",
+      "formation": "3-1-4-2",
+      "coach": "谢峰",
+      "captain": "Unknown",
       "lineup": [
         {
           "number": "33",
           "name": "Chi Wenyi",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "2",
           "name": "Zhang Junzhe",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "6",
           "name": "Luo Senwen",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "10",
           "name": "Marcão",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "11",
           "name": "Jiang Zhipeng",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "14",
           "name": "Javier Mascherano",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "22",
           "name": "Ezequiel Lavezzi",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "26",
-          "name": "Jiang Wenjun",
-          "country": "Unknown"
+          "name": "吕文君",
+          "position": ""
         },
         {
           "number": "28",
           "name": "Zhang Chengdong",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "29",
           "name": "Tao Qianglong",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "37",
           "name": "Pan Ximing",
-          "country": "Unknown"
+          "position": ""
         }
       ],
       "substitutes": [
         {
           "number": "30",
           "name": "Bao Yaxiong",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "4",
           "name": "Jin Yangyang",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "9",
           "name": "Dong Xuesheng",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "13",
           "name": "Cui Lin",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "15",
           "name": "Wang Qiuming",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "16",
           "name": "Ayoub El Kaabi",
-          "country": "Unknown"
+          "position": ""
         },
         {
           "number": "31",
           "name": "Xu Tianyuan",
-          "country": "Unknown"
+          "position": ""
         }
       ],
-      "substitutions": [
-        {
-          "minute": 65,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Ayoub El Kaabi",
-          "player2": "",
-          "player_out": "Marcão"
-        },
-        {
-          "minute": 66,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Jin Yangyang",
-          "player2": "",
-          "player_out": "Zhang Junzhe"
-        },
-        {
-          "minute": 78,
-          "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Dong Xuesheng",
-          "player2": "",
-          "player_out": "Luo Senwen"
-        }
-      ]
+      "substitutions": []
     }
   },
   "events": [
@@ -293,10 +234,11 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Chen Binbin",
-      "player2": "Wang Shenchao",
+      "player": "陈彬彬",
+      "player2": "王燊超",
+      "goal_type": "goal",
       "player_out": "",
-      "goal_type": "goal"
+      "description": "\"40’ 1:0 Chen Binbin Assist: Wang Shenchao — Goal 1:0\""
     },
     {
       "minute": 65,
@@ -304,8 +246,10 @@
       "type": "substitution",
       "team": "away",
       "player": "Ayoub El Kaabi",
-      "player2": "",
-      "player_out": "Marcão"
+      "player2": "Marcão",
+      "goal_type": "",
+      "player_out": "Marcão",
+      "description": "\"65’ 1:0 Ayoub El Kaabi for Marcão — Substitute\""
     },
     {
       "minute": 66,
@@ -313,8 +257,10 @@
       "type": "substitution",
       "team": "away",
       "player": "Jin Yangyang",
-      "player2": "",
-      "player_out": "Zhang Junzhe"
+      "player2": "Zhang Junzhe",
+      "goal_type": "",
+      "player_out": "Zhang Junzhe",
+      "description": "\"66’ 1:0 Jin Yangyang for Zhang Junzhe — Substitute\""
     },
     {
       "minute": 78,
@@ -322,46 +268,54 @@
       "type": "substitution",
       "team": "away",
       "player": "Dong Xuesheng",
-      "player2": "",
-      "player_out": "Luo Senwen"
+      "player2": "Luo Senwen",
+      "goal_type": "",
+      "player_out": "Luo Senwen",
+      "description": "\"78’ 1:0 Dong Xuesheng for Luo Senwen — Substitute\""
     },
     {
       "minute": 81,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Cai Huikang",
-      "player2": "",
-      "player_out": "Odil Ahmedov"
+      "player": "蔡慧康",
+      "player2": "艾哈迈多夫",
+      "goal_type": "",
+      "player_out": "Odil Ahmedov",
+      "description": "\"81’ 1:0 Cai Huikang for Odil Ahmedov — Substitute\""
     },
     {
       "minute": 81,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Wei Zhen",
-      "player2": "",
-      "player_out": "Chen Binbin"
+      "player": "张卫",
+      "player2": "陈彬彬",
+      "goal_type": "",
+      "player_out": "Chen Binbin",
+      "description": "\"81’ 1:0 Wei Zhen for Chen Binbin — Substitute\""
     },
     {
       "minute": 84,
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Hulk",
+      "player": "胡尔克",
       "player2": "",
+      "goal_type": "goal",
       "player_out": "",
-      "goal_type": "goal"
+      "description": "\"84’ 2:0 Hulk — Goal 2:0\""
     },
     {
       "minute": 86,
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Oscar",
-      "player2": "Shi Ke",
+      "player": "奥斯卡",
+      "player2": "石柯",
+      "goal_type": "goal",
       "player_out": "",
-      "goal_type": "goal"
+      "description": "\"86’ 3:0 Oscar Assist: Shi Ke — Goal 3:0\""
     },
     {
       "minute": 87,
@@ -370,68 +324,52 @@
       "team": "away",
       "player": "Jiang Wenjun",
       "player2": "",
-      "player_out": ""
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"87’ 3:0 Jiang Wenjun — Yellow Card\""
     },
     {
       "minute": 90,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Hu Jinghang",
-      "player2": "",
-      "player_out": "Wang Shenchao"
+      "player": "胡靖航",
+      "player2": "王燊超",
+      "goal_type": "",
+      "player_out": "Wang Shenchao",
+      "description": "\"90’ 3:0 Hu Jinghang for Wang Shenchao — Substitute\""
     }
   ],
   "statistics": {
-    "possession": {
-      "home": "49%",
-      "away": "51%"
+    "\"Shanghai SIPG\"": {
+      "home": "",
+      "away": ""
     },
-    "shots_on_target": {
-      "home": "8",
-      "away": "0"
+    "\"Possession\"": {
+      "home": "",
+      "away": ""
     },
-    "shots": {
-      "home": "17",
-      "away": "4"
+    "\"Passing Accuracy\"": {
+      "home": "",
+      "away": ""
     },
-    "shots_accuracy": {
-      "home": "47%",
-      "away": "0%"
+    "\"Shots on Target\"": {
+      "home": "",
+      "away": ""
     },
-    "fouls": {
-      "home": "15",
-      "away": "9"
+    "\"Saves\"": {
+      "home": "",
+      "away": ""
     },
-    "corners": {
-      "home": "2",
-      "away": "2"
-    },
-    "crosses": {
-      "home": "19",
-      "away": "15"
-    },
-    "interceptions": {
-      "home": "6",
-      "away": "6"
-    },
-    "offsides": {
-      "home": "1",
-      "away": "3"
-    },
-    "yellow_cards": {
-      "home": 1,
-      "away": 0
-    },
-    "red_cards": {
-      "home": 0,
-      "away": 0
+    "\"Cards\"": {
+      "home": "",
+      "away": ""
     }
   },
   "metadata": {
     "source": "FBref",
     "url": "https://fbref.com/en/matches/3846afb2/Shanghai-SIPG-Hebei-China-Fortune-July-17-2019-Chinese-Super-League",
-    "scraped_at": "2026-05-02T11:05:13.995473",
-    "version": "11.0-2019"
+    "scraped_at": "2026-05-04T17:27:03.254110",
+    "version": "2.0-BLOCK-BY-BLOCK"
   }
 }

@@ -1,0 +1,509 @@
+{
+  "match_info": {
+    "match_id": "35d241df",
+    "date": "2015-05-29",
+    "time": "20:00",
+    "competition": {
+      "name": "Chinese Football Association Super League",
+      "season": "2015",
+      "round": "第12轮"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 23170
+    },
+    "referee": {
+      "main": "马宁(江苏)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "上海上港集团足球俱乐部",
+      "score": 3,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "斯文·戈兰·埃里克森",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "10",
+          "name": "达里奥·孔卡",
+          "position": "MF",
+          "country": "ARG"
+        },
+        {
+          "number": "28",
+          "name": "贺惯",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "9",
+          "name": "托比亚斯·海森",
+          "position": "FW,MF",
+          "country": "SWE"
+        },
+        {
+          "number": "8",
+          "name": "达维·罗德里格斯",
+          "position": "MF",
+          "country": "BRA"
+        },
+        {
+          "number": "5",
+          "name": "汪佳捷",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "7",
+          "name": "武磊",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "4",
+          "name": "王燊超",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "position": "DF,FW",
+          "country": "CHN"
+        },
+        {
+          "number": "32",
+          "name": "孙祥",
+          "position": "DF",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "17",
+          "name": "让·埃弗拉",
+          "position": "FW,MF",
+          "country": "CIV"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "position": "FW,MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 54,
+          "player_out": "Davi Rodrigues de Jesus",
+          "player_in": "Jean Evrard Kouassi"
+        },
+        {
+          "minute": 76,
+          "player_out": "Lü Wenjun",
+          "player_in": "Lin Chuangyi"
+        }
+      ]
+    },
+    "away": {
+      "name": "山东鲁能",
+      "full_name": "山东鲁能泰山足球俱乐部",
+      "score": 4,
+      "score_ht": 0,
+      "formation": "",
+      "coach": "阿雷克希·斯蒂瓦(巴西)",
+      "captain": "Unknown",
+      "lineup": [
+        {
+          "number": "13",
+          "name": "Zhang Chi",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "25",
+          "name": "Wang Dalei",
+          "position": "GK",
+          "country": "CHN"
+        },
+        {
+          "number": "21",
+          "name": "Aloísio dos Santos Gonçalves",
+          "position": "FW",
+          "country": "CHN"
+        },
+        {
+          "number": "22",
+          "name": "Hao Junmin",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "2",
+          "name": "Zhao Mingjian",
+          "position": "DF,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "2",
+          "name": "Li Songyi",
+          "position": "DF",
+          "country": "CHN"
+        },
+        {
+          "number": "9",
+          "name": "Diego Tardelli",
+          "position": "FW,MF",
+          "country": "BRA"
+        },
+        {
+          "number": "5",
+          "name": "Júnior Urso",
+          "position": "MF",
+          "country": "BRA"
+        },
+        {
+          "number": "19",
+          "name": "Yang Xu",
+          "position": "FW,MF",
+          "country": "CHN"
+        },
+        {
+          "number": "8",
+          "name": "Wang Yongpo",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "5",
+          "name": "Zheng Zheng",
+          "position": "DF",
+          "country": "CHN"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "18",
+          "name": "Han Peng",
+          "position": "FW",
+          "country": "CHN"
+        },
+        {
+          "number": "21",
+          "name": "Liu Binbin",
+          "position": "MF",
+          "country": "CHN"
+        },
+        {
+          "number": "15",
+          "name": "张卫",
+          "position": "MF",
+          "country": "CHN"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 85,
+          "player_out": "Diego Tardelli",
+          "player_in": "Han Peng"
+        },
+        {
+          "minute": 74,
+          "player_out": "Yang Xu",
+          "player_in": "Liu Binbin"
+        },
+        {
+          "minute": 45,
+          "player_out": "Zheng Zheng",
+          "player_in": "Li Wei"
+        }
+      ]
+    }
+  },
+  "statistics": {},
+  "events": [
+    {
+      "minute": 11,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Li Songyi",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 15,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Zheng Zheng",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 35,
+      "minute_extra": 0,
+      "type": "penalty_goal",
+      "team": "away",
+      "player": "Aloísio dos Santos Gonçalves",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 39,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Yang Xu",
+      "player2": "Wang Yongpo",
+      "description": ""
+    },
+    {
+      "minute": 42,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Davi Rodrigues de Jesus",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Li Wei",
+      "player2": "Zheng Zheng",
+      "description": ""
+    },
+    {
+      "minute": 47,
+      "minute_extra": 0,
+      "type": "penalty_goal",
+      "team": "away",
+      "player": "Aloísio dos Santos Gonçalves",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Jean Evrard Kouassi",
+      "player2": "Davi Rodrigues de Jesus",
+      "description": ""
+    },
+    {
+      "minute": 57,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Yang Xu",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Diego Tardelli",
+      "player2": "Aloísio dos Santos Gonçalves",
+      "description": ""
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Liu Binbin",
+      "player2": "Yang Xu",
+      "description": ""
+    },
+    {
+      "minute": 77,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Lin Chuangyi",
+      "player2": "Lü Wenjun",
+      "description": ""
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Han Peng",
+      "player2": "Diego Tardelli",
+      "description": ""
+    },
+    {
+      "minute": 0,
+      "minute_extra": 0,
+      "type": "penalty_goal",
+      "team": "home",
+      "player": "Darío Conca",
+      "player2": "",
+      "description": ""
+    },
+    {
+      "minute": 0,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Darío Conca",
+      "player2": "",
+      "description": ""
+    }
+  ],
+  "player_stats": {
+    "home": [
+      {
+        "minute": "90",
+        "nationality": "ar ARG",
+        "player": "Darío Conca",
+        "position": "MF",
+        "shirtnumber": "10"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "He Guan",
+        "position": "DF",
+        "shirtnumber": "28"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Cai Huikang",
+        "position": "MF",
+        "shirtnumber": "6"
+      },
+      {
+        "minute": "90",
+        "nationality": "se SWE",
+        "player": "Tobias Hysén",
+        "position": "FW,MF",
+        "shirtnumber": "9"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Jiajie",
+        "position": "DF,MF",
+        "shirtnumber": "5"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Yan Junling",
+        "position": "GK",
+        "shirtnumber": "1"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wu Lei",
+        "position": "FW,MF",
+        "shirtnumber": "7"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Shenchao",
+        "position": "DF,MF",
+        "shirtnumber": "4"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Sun Xiang",
+        "position": "DF",
+        "shirtnumber": "32"
+      }
+    ],
+    "away": [
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Zhang Chi",
+        "position": "DF,MF",
+        "shirtnumber": "13"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Dalei",
+        "position": "GK",
+        "shirtnumber": "25"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Aloísio dos Santos Gonçalves",
+        "position": "FW",
+        "shirtnumber": "21"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Hao Junmin",
+        "position": "FW,MF",
+        "shirtnumber": "22"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Zhao Mingjian",
+        "position": "DF,MF",
+        "shirtnumber": "2"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Li Songyi",
+        "position": "DF",
+        "shirtnumber": "2"
+      },
+      {
+        "minute": "90",
+        "nationality": "br BRA",
+        "player": "Júnior Urso",
+        "position": "MF",
+        "shirtnumber": "5"
+      },
+      {
+        "minute": "90",
+        "nationality": "cn CHN",
+        "player": "Wang Yongpo",
+        "position": "MF",
+        "shirtnumber": "8"
+      }
+    ]
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/35d241df/Shanghai-SIPG-Shandong-Luneng-Taishan-May-29-2015-Chinese-Super-League",
+    "scraped_at": "2026-05-05T14:57:53",
+    "version": "2015-season-v3"
+  }
+}

@@ -1,0 +1,449 @@
+{
+  "match_info": {
+    "match_id": "c2db4b4b",
+    "date": "2017-08-06",
+    "time": "19:35",
+    "competition": {
+      "name": "中国足球协会超级联赛",
+      "season": "2017",
+      "round": "第20轮"
+    },
+    "venue": {
+      "name": "上海体育场",
+      "city": "上海市",
+      "attendance": 29507
+    },
+    "referee": {
+      "main": "艾堃(北体大)",
+      "country": "China"
+    }
+  },
+  "teams": {
+    "home": {
+      "name": "上海上港",
+      "full_name": "",
+      "score": 3,
+      "score_ht": 0,
+      "formation": "Shanghai SIPG (5-3-2)",
+      "coach": "安德烈·维拉斯·博阿斯",
+      "captain": "Hulk",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "颜骏凌",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "张卫",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "蔡慧康",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "奥斯卡",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "埃尔克森",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "胡尔克",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "吕文君",
+          "country": "Unknown"
+        },
+        {
+          "number": "13",
+          "name": "魏震",
+          "country": "Unknown"
+        },
+        {
+          "number": "15",
+          "name": "林创益",
+          "country": "Unknown"
+        },
+        {
+          "number": "21",
+          "name": "于海",
+          "country": "Unknown"
+        },
+        {
+          "number": "23",
+          "name": "傅欢",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "22",
+          "name": "孙乐",
+          "country": "Unknown"
+        },
+        {
+          "number": "14",
+          "name": "李圣龙",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "张一",
+          "country": "Unknown"
+        },
+        {
+          "number": "20",
+          "name": "Yang Shiyuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "31",
+          "name": "Xiao Mingjie",
+          "country": "Unknown"
+        },
+        {
+          "number": "36",
+          "name": "Yu Hao",
+          "country": "Unknown"
+        },
+        {
+          "number": "37",
+          "name": "陈彬彬",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 78,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Li Shenglong",
+          "player2": "",
+          "player_out": "Elkeson"
+        },
+        {
+          "minute": 79,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Zhang Yi",
+          "player2": "",
+          "player_out": "Cai Huikang"
+        },
+        {
+          "minute": 89,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "home",
+          "player": "Yang Shiyuan",
+          "player2": "",
+          "player_out": "Lin Chuangyi"
+        }
+      ]
+    },
+    "away": {
+      "name": "天津权健",
+      "full_name": "",
+      "score": 2,
+      "score_ht": 0,
+      "formation": "Jiangsu Suning (4-3-3)",
+      "coach": "法比奥·卡纳瓦罗(意大利)",
+      "captain": "Wu Xi",
+      "lineup": [
+        {
+          "number": "1",
+          "name": "Gu Chao",
+          "country": "Unknown"
+        },
+        {
+          "number": "2",
+          "name": "Li Ang",
+          "country": "Unknown"
+        },
+        {
+          "number": "3",
+          "name": "Tian Yinong",
+          "country": "Unknown"
+        },
+        {
+          "number": "5",
+          "name": "Zhou Yun",
+          "country": "Unknown"
+        },
+        {
+          "number": "9",
+          "name": "Éder",
+          "country": "Unknown"
+        },
+        {
+          "number": "10",
+          "name": "Alex Teixeira",
+          "country": "Unknown"
+        },
+        {
+          "number": "22",
+          "name": "Wu Xi",
+          "country": "Unknown"
+        },
+        {
+          "number": "24",
+          "name": "Ji Xiang",
+          "country": "Unknown"
+        },
+        {
+          "number": "28",
+          "name": "Yang Xiaotian",
+          "country": "Unknown"
+        },
+        {
+          "number": "29",
+          "name": "Gabriel Paletta",
+          "country": "Unknown"
+        },
+        {
+          "number": "33",
+          "name": "Wang Song",
+          "country": "Unknown"
+        }
+      ],
+      "substitutes": [
+        {
+          "number": "19",
+          "name": "Zhang Yan",
+          "country": "Unknown"
+        },
+        {
+          "number": "6",
+          "name": "Yang Boyu",
+          "country": "Unknown"
+        },
+        {
+          "number": "8",
+          "name": "Feng Boyuan",
+          "country": "Unknown"
+        },
+        {
+          "number": "11",
+          "name": "Xie Pengfei",
+          "country": "Unknown"
+        },
+        {
+          "number": "16",
+          "name": "Gao Tianyi",
+          "country": "Unknown"
+        },
+        {
+          "number": "18",
+          "name": "Zhang Lingfeng",
+          "country": "Unknown"
+        },
+        {
+          "number": "30",
+          "name": "Ye Chongqiu",
+          "country": "Unknown"
+        }
+      ],
+      "substitutions": [
+        {
+          "minute": 46,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Xie Pengfei",
+          "player2": "",
+          "player_out": "Yang Xiaotian"
+        },
+        {
+          "minute": 80,
+          "minute_extra": 0,
+          "type": "substitution",
+          "team": "away",
+          "player": "Feng Boyuan",
+          "player2": "",
+          "player_out": "Tian Yinong"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "minute": 2,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Wang Song",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "own_goal"
+    },
+    {
+      "minute": 3,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Zhang Wei",
+      "player2": "Lin Chuangyi",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Xie Pengfei",
+      "player2": "",
+      "player_out": "Yang Xiaotian"
+    },
+    {
+      "minute": 47,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "Lü Wenjun",
+      "player2": "Oscar",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 63,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Ji Xiang",
+      "player2": "",
+      "player_out": ""
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Xie Pengfei",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Xie Pengfei",
+      "player2": "Alex Teixeira",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Li Shenglong",
+      "player2": "",
+      "player_out": "Elkeson"
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Zhang Yi",
+      "player2": "",
+      "player_out": "Cai Huikang"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Feng Boyuan",
+      "player2": "",
+      "player_out": "Tian Yinong"
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "player": "Yang Shiyuan",
+      "player2": "",
+      "player_out": "Lin Chuangyi"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 4,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "Fu Huan",
+      "player2": "",
+      "player_out": ""
+    }
+  ],
+  "statistics": {
+    "possession": {
+      "home": "48%",
+      "away": "52%"
+    },
+    "shots_on_target": {
+      "home": "3",
+      "away": "4"
+    },
+    "shots": {
+      "home": "8",
+      "away": "15"
+    },
+    "shots_accuracy": {
+      "home": "38%",
+      "away": "27%"
+    },
+    "saves": {
+      "home": "1 of 4-25%",
+      "away": "1 of 3-33%"
+    },
+    "fouls": {
+      "home": "12",
+      "away": "14"
+    },
+    "corners": {
+      "home": "3",
+      "away": "5"
+    },
+    "crosses": {
+      "home": "8",
+      "away": "24"
+    },
+    "interceptions": {
+      "home": "18",
+      "away": "13"
+    },
+    "offsides": {
+      "home": "0",
+      "away": "2"
+    },
+    "yellow_cards": {
+      "home": 1,
+      "away": 1
+    },
+    "red_cards": {
+      "home": 0,
+      "away": 0
+    }
+  },
+  "metadata": {
+    "source": "FBref",
+    "url": "https://fbref.com/en/matches/c2db4b4b/Shanghai-SIPG-Tianjin-Quangjiang-August-6-2017-Chinese-Super-League",
+    "scraped_at": "2026-05-02T11:01:16.454056",
+    "version": "11.0-2017"
+  }
+}
