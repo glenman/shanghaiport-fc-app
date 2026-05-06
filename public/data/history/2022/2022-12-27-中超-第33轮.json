@@ -4,47 +4,81 @@
     "date": "2022-12-27",
     "time": "15:00",
     "competition": {
-      "name": "中国足球协会超级联赛",
+      "name": "Chinese Football Association Super League",
       "season": "2022",
-      "round": "第33轮"
+      "round": "Matchweek 33"
     },
     "venue": {
-      "name": "日照国际足球中心",
-      "city": "山东省日照市",
-      "attendance": "—"
+      "name": "Rizhao International Football Centre Stadium",
+      "attendance": 0
     },
     "referee": {
-      "main": "—",
+      "main": "",
+      "ar1": "",
+      "ar2": "",
+      "fourth": "",
+      "var": "",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "北京国安",
-      "full_name": "北京国安",
+      "name": "Shanghai Port",
+      "full_name": "",
       "score": 0,
       "score_ht": 0,
       "formation": "",
-      "coach": "斯坦利·门佐(荷兰)",
+      "coach": "",
       "captain": "",
       "lineup": [],
       "substitutes": [],
       "substitutions": []
     },
     "away": {
-      "name": "上海海港",
-      "full_name": "​​上海海港​​",
+      "name": "Opponent",
+      "full_name": "",
       "score": 3,
       "score_ht": 0,
       "formation": "",
-      "coach": "奚志康",
+      "coach": "",
       "captain": "",
       "lineup": [],
       "substitutes": [],
       "substitutions": []
     }
   },
-  "events": [],
+  "events": [
+    {
+      "minute": 23,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Wang Ziming",
+      "player2": "Zhang Yuning",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 56,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Zhang Yuning",
+      "player2": "Gao Tianyi",
+      "player_out": "",
+      "goal_type": "goal"
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "Gao Tianyi",
+      "player2": "",
+      "player_out": "",
+      "goal_type": "goal"
+    }
+  ],
   "statistics": {
     "yellow_cards": {
       "home": 0,

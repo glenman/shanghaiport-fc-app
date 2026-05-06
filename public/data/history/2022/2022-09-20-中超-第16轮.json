@@ -4,167 +4,147 @@
     "date": "2022-09-20",
     "time": "19:30",
     "competition": {
-      "name": "中国足球协会超级联赛",
+      "name": "Chinese Football Association Super League",
       "season": "2022",
-      "round": "第16轮"
+      "round": "Matchweek 16"
     },
     "venue": {
-      "name": "郑州航海体育场",
-      "attendance": 0,
-      "city": "河南省郑州市"
+      "name": "Zhengzhou Hanghai Stadium",
+      "attendance": 0
     },
     "referee": {
-      "main": "金京元(重庆)",
+      "main": "Jingyuan",
+      "ar1": "Ma Ji",
+      "ar2": "Tang Rongdi",
+      "fourth": "Shengyu Sun",
+      "var": "Wei Liu",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "河南嵩山龙门",
-      "full_name": "河南嵩山龙门",
+      "name": "Henan",
+      "full_name": "",
       "score": 1,
       "score_ht": 0,
       "formation": "(4-3-3)",
-      "coach": "弗朗西斯科·哈维尔·佩雷拉·梅吉亚(西班牙)",
+      "coach": "Javier Pereira",
       "captain": "Wang Shangyuan",
       "lineup": [
         {
-          "position": "MF",
-          "number": 19,
+          "number": "19",
           "name": "Wang Guoming",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 3,
-          "name": "李帅",
+          "number": "3",
+          "name": "Yang Shuai",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 6,
+          "number": "6",
           "name": "Wang Shangyuan",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 8,
+          "number": "8",
           "name": "Huang Zichang",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 10,
+          "number": "10",
           "name": "Adrian Mierzejewski",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 17,
+          "number": "17",
           "name": "Tomás Pina Isla",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 18,
+          "number": "18",
           "name": "Zhao Yuhao",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 20,
+          "number": "20",
           "name": "Feng Boxuan",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 23,
+          "number": "23",
           "name": "Toni Šunjić",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 27,
+          "number": "27",
           "name": "Niu Ziyi",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 29,
+          "number": "29",
           "name": "Zhong Yihao",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
-          "position": "MF",
-          "number": 24,
+          "number": "24",
           "name": "Shi Xiaotian",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 2,
+          "number": "2",
           "name": "Yixin Liu",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 5,
+          "number": "5",
           "name": "Gu Cao",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 11,
+          "number": "11",
           "name": "Ke Zhao",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 16,
+          "number": "16",
           "name": "Kyum Palmanjan",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 21,
+          "number": "21",
           "name": "Chen Keqiang",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 22,
+          "number": "22",
           "name": "Wang Haoran",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 25,
+          "number": "25",
           "name": "Guido Carrillo",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 26,
+          "number": "26",
           "name": "Liu Jiahui",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 28,
+          "number": "28",
           "name": "Ma Xingyu",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 32,
+          "number": "32",
           "name": "Han Dong",
           "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 33,
+          "number": "33",
           "name": "Dilimulati Maolaniyazi",
           "country": "Unknown"
         }
@@ -173,203 +153,204 @@
         {
           "minute": 32,
           "minute_extra": 0,
-          "player_out": "Zhao Yuhao",
-          "player_in": "Han Dong"
+          "type": "substitution",
+          "team": "home",
+          "player": "Han Dong",
+          "player2": "",
+          "player_out": "Zhao Yuhao"
         },
         {
           "minute": 49,
           "minute_extra": 0,
-          "player_out": "Adrian Mierzejewski",
-          "player_in": "Wang Haoran"
+          "type": "substitution",
+          "team": "home",
+          "player": "Wang Haoran",
+          "player2": "",
+          "player_out": "Adrian Mierzejewski"
         },
         {
           "minute": 73,
           "minute_extra": 0,
-          "player_out": "Niu Ziyi",
-          "player_in": "Guido Carrillo"
+          "type": "substitution",
+          "team": "home",
+          "player": "Guido Carrillo",
+          "player2": "",
+          "player_out": "Niu Ziyi"
         },
         {
           "minute": 73,
           "minute_extra": 0,
-          "player_out": "Feng Boxuan",
-          "player_in": "Dilimulati Maolaniyazi"
+          "type": "substitution",
+          "team": "home",
+          "player": "Dilimulati Maolaniyazi",
+          "player2": "",
+          "player_out": "Feng Boxuan"
         }
       ]
     },
     "away": {
-      "name": "上海海港",
-      "full_name": "​​上海海港​​",
+      "name": "Shanghai Port",
+      "full_name": "",
       "score": 2,
       "score_ht": 0,
       "formation": "(4-2-3)",
-      "coach": "伊万·莱科",
-      "captain": "王燊超",
+      "coach": "Ivan Leko",
+      "captain": "Wang Shenchao",
       "lineup": [
         {
-          "position": "MF",
-          "number": 1,
-          "name": "颜骏凌",
-          "country": "中国"
+          "number": "1",
+          "name": "Yan Junling",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 2,
-          "name": "李昂",
-          "country": "中国"
+          "number": "2",
+          "name": "Li Ang",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 3,
-          "name": "吕文君",
-          "country": "中国"
+          "number": "3",
+          "name": "Tyias Browning",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 4,
-          "name": "王燊超",
-          "country": "中国"
+          "number": "4",
+          "name": "Wang Shenchao",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 5,
-          "name": "保利尼奥",
-          "country": "中国"
+          "number": "5",
+          "name": "Zhang Linpeng",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 6,
-          "name": "蔡慧康",
-          "country": "中国"
+          "number": "6",
+          "name": "Cai Huikang",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 9,
-          "name": "李昂",
-          "country": "中国"
+          "number": "9",
+          "name": "Paulinho",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 10,
-          "name": "马蒂亚斯·巴尔加斯",
-          "country": "中国"
+          "number": "10",
+          "name": "Cherif Ndiaye",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 11,
-          "name": "张琳芃",
-          "country": "中国"
+          "number": "11",
+          "name": "Lü Wenjun",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 29,
-          "name": "傅欢",
-          "country": "中国"
+          "number": "29",
+          "name": "Zhang Huachen",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 34,
-          "name": "赵申澳",
-          "country": "中国"
+          "number": "34",
+          "name": "Issa Kallon",
+          "country": "Unknown"
         }
       ],
       "substitutes": [
         {
-          "position": "MF",
-          "number": 12,
-          "name": "蒋光太",
-          "country": "中国"
+          "number": "12",
+          "name": "Chen Wei",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 22,
-          "name": "卡隆",
-          "country": "中国"
+          "number": "22",
+          "name": "Du Jia",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 7,
-          "name": "魏震",
-          "country": "中国"
+          "number": "7",
+          "name": "Wu Lei",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 13,
-          "name": "李申圆",
-          "country": "中国"
+          "number": "13",
+          "name": "Wei Zhen",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 14,
-          "name": "冯劲",
-          "country": "中国"
+          "number": "14",
+          "name": "Li Shenglong",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 21,
-          "name": "刘祝润",
-          "country": "中国"
+          "number": "21",
+          "name": "Yu Hai",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 24,
-          "name": "刘柏杨",
-          "country": "中国"
+          "number": "24",
+          "name": "Matías Vargas",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 25,
-          "name": "杨世元",
-          "country": "中国"
+          "number": "25",
+          "name": "Mirahmetjan Muzepper",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 26,
-          "name": "贺惯",
-          "country": "中国"
+          "number": "26",
+          "name": "Chen Chunxin",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 32,
-          "name": "陈旭黄",
-          "country": "中国"
+          "number": "32",
+          "name": "Li Shuai",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 37,
-          "name": "向荣峻",
-          "country": "中国"
+          "number": "37",
+          "name": "Chen Xuhuang",
+          "country": "Unknown"
         },
         {
-          "position": "MF",
-          "number": 39,
-          "name": "王淞",
-          "country": "中国"
+          "number": "39",
+          "name": "Liu Baiyang",
+          "country": "Unknown"
         }
       ],
       "substitutions": [
         {
           "minute": 65,
           "minute_extra": 0,
-          "player_out": "卡隆",
-          "player_in": "马蒂亚斯·巴尔加斯"
+          "type": "substitution",
+          "team": "away",
+          "player": "Matías Vargas",
+          "player2": "",
+          "player_out": "Issa Kallon"
         },
         {
           "minute": 65,
           "minute_extra": 0,
-          "player_out": "保利尼奥",
-          "player_in": "武磊"
+          "type": "substitution",
+          "team": "away",
+          "player": "Wu Lei",
+          "player2": "",
+          "player_out": "Paulinho"
         },
         {
           "minute": 78,
           "minute_extra": 0,
-          "player_out": "恩迪亚耶",
-          "player_in": "买提江"
+          "type": "substitution",
+          "team": "away",
+          "player": "Mirahmetjan Muzepper",
+          "player2": "",
+          "player_out": "Cherif Ndiaye"
         },
         {
           "minute": 84,
           "minute_extra": 0,
-          "player_out": "蔡慧康",
-          "player_in": "魏震"
+          "type": "substitution",
+          "team": "away",
+          "player": "Wei Zhen",
+          "player2": "",
+          "player_out": "Cai Huikang"
         }
       ]
     }
@@ -382,16 +363,17 @@
       "team": "home",
       "player": "Zhao Yuhao",
       "player2": "",
-      "description": ""
+      "player_out": ""
     },
     {
       "minute": 25,
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "蒋光太",
-      "player2": "吕文君",
-      "description": ""
+      "player": "Tyias Browning",
+      "player2": "Lü Wenjun",
+      "player_out": "",
+      "goal_type": "goal"
     },
     {
       "minute": 32,
@@ -399,26 +381,27 @@
       "type": "substitution",
       "team": "home",
       "player": "Han Dong",
-      "player2": "Zhao Yuhao",
-      "description": ""
+      "player2": "",
+      "player_out": "Zhao Yuhao"
     },
     {
       "minute": 41,
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "蔡慧康",
-      "player2": "保利尼奥",
-      "description": ""
+      "player": "Cai Huikang",
+      "player2": "Paulinho",
+      "player_out": "",
+      "goal_type": "goal"
     },
     {
       "minute": 43,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "张华晨",
+      "player": "Zhang Huachen",
       "player2": "",
-      "description": ""
+      "player_out": ""
     },
     {
       "minute": 49,
@@ -426,35 +409,35 @@
       "type": "substitution",
       "team": "home",
       "player": "Wang Haoran",
-      "player2": "Adrian Mierzejewski",
-      "description": ""
+      "player2": "",
+      "player_out": "Adrian Mierzejewski"
     },
     {
       "minute": 65,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "马蒂亚斯·巴尔加斯",
-      "player2": "卡隆",
-      "description": ""
+      "player": "Matías Vargas",
+      "player2": "",
+      "player_out": "Issa Kallon"
     },
     {
       "minute": 65,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "武磊",
-      "player2": "保利尼奥",
-      "description": ""
+      "player": "Wu Lei",
+      "player2": "",
+      "player_out": "Paulinho"
     },
     {
       "minute": 72,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "张华晨",
+      "player": "Zhang Huachen",
       "player2": "",
-      "description": ""
+      "player_out": ""
     },
     {
       "minute": 73,
@@ -462,8 +445,8 @@
       "type": "substitution",
       "team": "home",
       "player": "Guido Carrillo",
-      "player2": "Niu Ziyi",
-      "description": ""
+      "player2": "",
+      "player_out": "Niu Ziyi"
     },
     {
       "minute": 73,
@@ -471,17 +454,17 @@
       "type": "substitution",
       "team": "home",
       "player": "Dilimulati Maolaniyazi",
-      "player2": "Feng Boxuan",
-      "description": ""
+      "player2": "",
+      "player_out": "Feng Boxuan"
     },
     {
       "minute": 78,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "买提江",
-      "player2": "恩迪亚耶",
-      "description": ""
+      "player": "Mirahmetjan Muzepper",
+      "player2": "",
+      "player_out": "Cherif Ndiaye"
     },
     {
       "minute": 81,
@@ -489,17 +472,18 @@
       "type": "goal",
       "team": "home",
       "player": "Tomás Pina Isla",
-      "player2": "李帅",
-      "description": ""
+      "player2": "Yang Shuai",
+      "player_out": "",
+      "goal_type": "goal"
     },
     {
       "minute": 84,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "魏震",
-      "player2": "蔡慧康",
-      "description": ""
+      "player": "Wei Zhen",
+      "player2": "",
+      "player_out": "Cai Huikang"
     },
     {
       "minute": 90,
@@ -508,16 +492,16 @@
       "team": "home",
       "player": "Wang Shangyuan",
       "player2": "",
-      "description": ""
+      "player_out": ""
     },
     {
       "minute": 90,
       "minute_extra": 5,
       "type": "yellow_card",
       "team": "away",
-      "player": "张琳芃",
+      "player": "Zhang Linpeng",
       "player2": "",
-      "description": ""
+      "player_out": ""
     }
   ],
   "statistics": {
