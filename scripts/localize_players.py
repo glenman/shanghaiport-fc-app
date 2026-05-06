@@ -32,14 +32,16 @@ def update_player_names(data, roster):
     
     if isinstance(data, dict):
         for key, value in list(data.items()):
-            if key == 'name' and isinstance(value, str):
+            # 处理所有可能包含球员姓名的字段
+            player_fields = ['name', 'player', 'player_out', 'player2', 'captain', 'scorer']
+            if key in player_fields and isinstance(value, str) and value:
                 if value in roster:
                     data[key] = roster[value]
                     updated = True
                 elif value.replace(' ', '') in roster:
                     data[key] = roster[value.replace(' ', '')]
                     updated = True
-                elif value.split()[-1] in roster:
+                elif value.strip() and value.split()[-1] in roster:
                     data[key] = roster[value.split()[-1]]
                     updated = True
             
