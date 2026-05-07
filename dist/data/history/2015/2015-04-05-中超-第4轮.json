@@ -6,7 +6,7 @@
     "competition": {
       "name": "Chinese Football Association Super League",
       "season": "2015",
-      "round": "Matchweek 4"
+      "round": "第4轮"
     },
     "venue": {
       "name": "天津奥体中心",
@@ -14,7 +14,7 @@
       "attendance": 22720
     },
     "referee": {
-      "main": "郭宝龙(青岛)",
+      "main": "郭宝龙",
       "country": "China"
     }
   },
@@ -30,61 +30,61 @@
       "lineup": [
         {
           "number": "10",
-          "name": "Darío Conca",
+          "name": "达里奥·孔卡",
           "position": "MF",
           "country": "ARG"
         },
         {
           "number": "17",
-          "name": "Jean Evrard Kouassi",
+          "name": "让·埃弗拉",
           "position": "FW,MF",
           "country": "CIV"
         },
         {
           "number": "28",
-          "name": "He Guan",
+          "name": "贺惯",
           "position": "DF",
           "country": "CHN"
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "position": "DF,FW",
           "country": "CHN"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "position": "MF",
           "country": "CHN"
         },
         {
           "number": "5",
-          "name": "Wang Jiajie",
+          "name": "汪佳捷",
           "position": "DF,MF",
           "country": "CHN"
         },
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "position": "GK",
           "country": "CHN"
         },
         {
           "number": "7",
-          "name": "Wu Lei",
+          "name": "武磊",
           "position": "FW,MF",
           "country": "CHN"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "position": "DF,MF",
           "country": "CHN"
         },
         {
           "number": "32",
-          "name": "Sun Xiang",
+          "name": "孙祥",
           "position": "DF",
           "country": "CHN"
         }
@@ -92,25 +92,25 @@
       "substitutes": [
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "position": "DF,FW",
           "country": "CHN"
         },
         {
           "number": "15",
-          "name": "Lin Chuangyi",
+          "name": "林创益",
           "position": "FW,MF",
           "country": "CHN"
         },
         {
           "number": "9",
-          "name": "Tobias Hysén",
+          "name": "托比亚斯·海森",
           "position": "FW,MF",
           "country": "SWE"
         },
         {
           "number": "33",
-          "name": "Yang Boyu",
+          "name": "杨博宇",
           "position": "DF",
           "country": "CHN"
         }
@@ -118,22 +118,22 @@
       "substitutions": [
         {
           "minute": 6,
-          "player_out": "Darío Conca",
+          "player_out": "达里奥·孔卡",
           "player_in": "Lü Wenjun"
         },
         {
           "minute": 84,
-          "player_out": "Jean Evrard Kouassi",
+          "player_out": "让·埃弗拉",
           "player_in": "Lin Chuangyi"
         },
         {
           "minute": 71,
-          "player_out": "Cai Huikang",
+          "player_out": "蔡慧康",
           "player_in": "Tobias Hysén"
         },
         {
           "minute": 89,
-          "player_out": "Wu Lei",
+          "player_out": "武磊",
           "player_in": "Yang Boyu"
         }
       ]
@@ -258,8 +258,8 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Lü Wenjun",
-      "player2": "Darío Conca",
+      "player": "吕文君",
+      "player2": "达里奥·孔卡",
       "description": ""
     },
     {
@@ -276,7 +276,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Lü Wenjun",
+      "player": "吕文君",
       "player2": "",
       "description": ""
     },
@@ -285,7 +285,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Cai Huikang",
+      "player": "蔡慧康",
       "player2": "",
       "description": ""
     },
@@ -303,7 +303,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Cai Huikang",
+      "player": "蔡慧康",
       "player2": "",
       "description": ""
     },
@@ -330,8 +330,8 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Lin Chuangyi",
-      "player2": "Jean Evrard Kouassi",
+      "player": "林创益",
+      "player2": "让·埃弗拉",
       "description": ""
     },
     {
@@ -339,8 +339,8 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Yang Boyu",
-      "player2": "Wu Lei",
+      "player": "杨博宇",
+      "player2": "武磊",
       "description": ""
     }
   ],
@@ -349,42 +349,42 @@
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "He Guan",
+        "player": "贺惯",
         "position": "DF",
         "shirtnumber": "28"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Yu Hai",
+        "player": "于海",
         "position": "DF,FW",
         "shirtnumber": "21"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Wang Jiajie",
+        "player": "汪佳捷",
         "position": "DF,MF",
         "shirtnumber": "5"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Yan Junling",
+        "player": "颜骏凌",
         "position": "GK",
         "shirtnumber": "1"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Wang Shenchao",
+        "player": "王燊超",
         "position": "DF,MF",
         "shirtnumber": "4"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Sun Xiang",
+        "player": "孙祥",
         "position": "DF",
         "shirtnumber": "32"
       }

@@ -6,7 +6,7 @@
     "competition": {
       "name": "Chinese Football Association Super League",
       "season": "2015",
-      "round": "Matchweek 29"
+      "round": "第29轮"
     },
     "venue": {
       "name": "长春经开体育场",
@@ -14,7 +14,7 @@
       "attendance": 9621
     },
     "referee": {
-      "main": "王津(天津)",
+      "main": "王津",
       "country": "China"
     }
   },
@@ -30,67 +30,67 @@
       "lineup": [
         {
           "number": "10",
-          "name": "Darío Conca",
+          "name": "达里奥·孔卡",
           "position": "MF",
           "country": "ARG"
         },
         {
           "number": "35",
-          "name": "Asamoah Gyan",
+          "name": "阿萨莫阿·吉安",
           "position": "FW",
           "country": "GHA"
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "position": "DF,FW",
           "country": "CHN"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "position": "MF",
           "country": "CHN"
         },
         {
           "number": "8",
-          "name": "Davi Rodrigues de Jesus",
+          "name": "达维·罗德里格斯",
           "position": "MF",
           "country": "BRA"
         },
         {
           "number": "5",
-          "name": "Wang Jiajie",
+          "name": "汪佳捷",
           "position": "DF,MF",
           "country": "CHN"
         },
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "position": "GK",
           "country": "CHN"
         },
         {
           "number": "27",
-          "name": "Shi Ke",
+          "name": "石柯",
           "position": "DF",
           "country": "CHN"
         },
         {
           "number": "7",
-          "name": "Wu Lei",
+          "name": "武磊",
           "position": "FW,MF",
           "country": "CHN"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "position": "DF,MF",
           "country": "CHN"
         },
         {
           "number": "2",
-          "name": "Zhang Wei",
+          "name": "张卫",
           "position": "DF,MF",
           "country": "CHN"
         }
@@ -98,13 +98,13 @@
       "substitutes": [
         {
           "number": "9",
-          "name": "Tobias Hysén",
+          "name": "托比亚斯·海森",
           "position": "FW,MF",
           "country": "SWE"
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "position": "DF,FW",
           "country": "CHN"
         }
@@ -112,12 +112,12 @@
       "substitutions": [
         {
           "minute": 72,
-          "player_out": "Asamoah Gyan",
+          "player_out": "阿萨莫阿·吉安",
           "player_in": "Tobias Hysén"
         },
         {
           "minute": 89,
-          "player_out": "Wu Lei",
+          "player_out": "武磊",
           "player_in": "Lü Wenjun"
         }
       ]
@@ -259,7 +259,7 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Wu Lei",
+      "player": "武磊",
       "player2": "",
       "description": ""
     },
@@ -277,7 +277,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Wu Lei",
+      "player": "武磊",
       "player2": "",
       "description": ""
     },
@@ -286,8 +286,8 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Wu Lei",
-      "player2": "Yu Hai",
+      "player": "武磊",
+      "player2": "于海",
       "description": ""
     },
     {
@@ -295,8 +295,8 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Tobias Hysén",
-      "player2": "Asamoah Gyan",
+      "player": "托比亚斯·海森",
+      "player2": "阿萨莫阿·吉安",
       "description": ""
     },
     {
@@ -340,8 +340,8 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Lü Wenjun",
-      "player2": "Wu Lei",
+      "player": "吕文君",
+      "player2": "武磊",
       "description": ""
     }
   ],
@@ -350,63 +350,63 @@
       {
         "minute": "90",
         "nationality": "ar ARG",
-        "player": "Darío Conca",
+        "player": "达里奥·孔卡",
         "position": "MF",
         "shirtnumber": "10"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Yu Hai",
+        "player": "于海",
         "position": "DF,FW",
         "shirtnumber": "21"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Cai Huikang",
+        "player": "蔡慧康",
         "position": "MF",
         "shirtnumber": "6"
       },
       {
         "minute": "90",
         "nationality": "br BRA",
-        "player": "Davi Rodrigues de Jesus",
+        "player": "达维·罗德里格斯",
         "position": "MF",
         "shirtnumber": "8"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Wang Jiajie",
+        "player": "汪佳捷",
         "position": "DF,MF",
         "shirtnumber": "5"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Yan Junling",
+        "player": "颜骏凌",
         "position": "GK",
         "shirtnumber": "1"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Shi Ke",
+        "player": "石柯",
         "position": "DF",
         "shirtnumber": "27"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Wang Shenchao",
+        "player": "王燊超",
         "position": "DF,MF",
         "shirtnumber": "4"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Zhang Wei",
+        "player": "张卫",
         "position": "DF,MF",
         "shirtnumber": "2"
       }

@@ -4,9 +4,9 @@
     "date": "2017-10-22",
     "time": "18:00",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2017",
-      "round": "Matchweek 28"
+      "round": "第28轮"
     },
     "venue": {
       "name": "上海体育场",
@@ -14,7 +14,7 @@
       "attendance": 25567
     },
     "referee": {
-      "main": "帕维尔·克拉沃维茨(捷克)",
+      "main": "帕维尔·克拉沃维茨",
       "country": "China"
     }
   },
@@ -112,7 +112,7 @@
         },
         {
           "number": "22",
-          "name": "Long Wei",
+          "name": "陈威",
           "country": "Unknown"
         },
         {
@@ -158,36 +158,36 @@
       "score_ht": 0,
       "formation": "Shanghai SIPG (3-5-2)",
       "coach": "德拉甘·斯托伊科维奇(塞尔维亚)",
-      "captain": "Wang Shenchao",
+      "captain": "王燊超",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "country": "Unknown"
         },
         {
           "number": "2",
-          "name": "Zhang Wei",
+          "name": "张卫",
           "country": "Unknown"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "country": "Unknown"
         },
         {
           "number": "8",
-          "name": "Oscar",
+          "name": "奥斯卡",
           "country": "Unknown"
         },
         {
           "number": "9",
-          "name": "Elkeson",
+          "name": "埃尔克森",
           "country": "Unknown"
         },
         {
           "number": "15",
-          "name": "Lin Chuangyi",
+          "name": "林创益",
           "country": "Unknown"
         },
         {
@@ -197,44 +197,44 @@
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "country": "Unknown"
         },
         {
           "number": "23",
-          "name": "Fu Huan",
+          "name": "傅欢",
           "country": "Unknown"
         },
         {
           "number": "25",
-          "name": "Odil Ahmedov",
+          "name": "艾哈迈多夫",
           "country": "Unknown"
         },
         {
           "number": "28",
-          "name": "He Guan",
+          "name": "贺惯",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "34",
-          "name": "Chen Wei",
+          "name": "陈威",
           "country": "Unknown"
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
+          "name": "李圣龙",
           "country": "Unknown"
         },
         {
           "number": "17",
-          "name": "Zhang Huachen",
+          "name": "张华晨",
           "country": "Unknown"
         },
         {
           "number": "18",
-          "name": "Zhang Yi",
+          "name": "张一",
           "country": "Unknown"
         },
         {
@@ -249,7 +249,7 @@
         },
         {
           "number": "37",
-          "name": "Chen Binbin",
+          "name": "陈彬彬",
           "country": "Unknown"
         }
       ],
@@ -259,16 +259,16 @@
           "minute_extra": 0,
           "type": "substitution",
           "team": "away",
-          "player": "Chen Binbin",
+          "player": "陈彬彬",
           "player2": "",
-          "player_out": "Fu Huan"
+          "player_out": "傅欢"
         },
         {
           "minute": 60,
           "minute_extra": 0,
           "type": "substitution",
           "team": "away",
-          "player": "Li Shenglong",
+          "player": "李圣龙",
           "player2": "",
           "player_out": "Hu Jinghang"
         },
@@ -279,7 +279,7 @@
           "team": "away",
           "player": "Lei Wenjie",
           "player2": "",
-          "player_out": "Chen Binbin"
+          "player_out": "陈彬彬"
         }
       ]
     }
@@ -299,7 +299,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Fu Huan",
+      "player": "傅欢",
       "player2": "",
       "player_out": ""
     },
@@ -308,7 +308,7 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Elkeson",
+      "player": "埃尔克森",
       "player2": "Hu Jinghang",
       "player_out": "",
       "goal_type": "goal"
@@ -318,16 +318,16 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Chen Binbin",
+      "player": "陈彬彬",
       "player2": "",
-      "player_out": "Fu Huan"
+      "player_out": "傅欢"
     },
     {
       "minute": 50,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Oscar",
+      "player": "奥斯卡",
       "player2": "",
       "player_out": ""
     },
@@ -336,7 +336,7 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Li Shenglong",
+      "player": "李圣龙",
       "player2": "",
       "player_out": "Hu Jinghang"
     },
@@ -365,7 +365,7 @@
       "team": "away",
       "player": "Lei Wenjie",
       "player2": "",
-      "player_out": "Chen Binbin"
+      "player_out": "陈彬彬"
     },
     {
       "minute": 90,

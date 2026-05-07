@@ -4,9 +4,9 @@
     "date": "2017-06-18",
     "time": "19:35",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2017",
-      "round": "Matchweek 13"
+      "round": "第13轮"
     },
     "venue": {
       "name": "广州越秀山体育场",
@@ -14,7 +14,7 @@
       "attendance": 10113
     },
     "referee": {
-      "main": "周刚(湖北)",
+      "main": "周刚",
       "country": "China"
     }
   },
@@ -158,98 +158,98 @@
       "score_ht": 0,
       "formation": "Shanghai SIPG (4-2-3-1)",
       "coach": "安德烈·维拉斯·博阿斯",
-      "captain": "Wang Shenchao",
+      "captain": "王燊超",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "country": "Unknown"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "country": "Unknown"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "country": "Unknown"
         },
         {
           "number": "7",
-          "name": "Wu Lei",
+          "name": "武磊",
           "country": "Unknown"
         },
         {
           "number": "8",
-          "name": "Oscar",
+          "name": "奥斯卡",
           "country": "Unknown"
         },
         {
           "number": "9",
-          "name": "Elkeson",
+          "name": "埃尔克森",
           "country": "Unknown"
         },
         {
           "number": "10",
-          "name": "Hulk",
+          "name": "胡尔克",
           "country": "Unknown"
         },
         {
           "number": "23",
-          "name": "Fu Huan",
+          "name": "傅欢",
           "country": "Unknown"
         },
         {
           "number": "27",
-          "name": "Shi Ke",
+          "name": "石柯",
           "country": "Unknown"
         },
         {
           "number": "28",
-          "name": "He Guan",
+          "name": "贺惯",
           "country": "Unknown"
         },
         {
           "number": "29",
-          "name": "Zheng Zhiyun",
+          "name": "郑致云",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "22",
-          "name": "Sun Le",
+          "name": "孙乐",
           "country": "Unknown"
         },
         {
           "number": "2",
-          "name": "Zhang Wei",
+          "name": "张卫",
           "country": "Unknown"
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "country": "Unknown"
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
+          "name": "李圣龙",
           "country": "Unknown"
         },
         {
           "number": "15",
-          "name": "Lin Chuangyi",
+          "name": "林创益",
           "country": "Unknown"
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "country": "Unknown"
         },
         {
           "number": "33",
-          "name": "Wei Shihao",
+          "name": "韦世豪",
           "country": "Unknown"
         }
       ],
@@ -259,27 +259,27 @@
           "minute_extra": 0,
           "type": "substitution",
           "team": "away",
-          "player": "Lin Chuangyi",
+          "player": "林创益",
           "player2": "",
-          "player_out": "Zheng Zhiyun"
+          "player_out": "郑致云"
         },
         {
           "minute": 57,
           "minute_extra": 0,
           "type": "substitution",
           "team": "away",
-          "player": "Zhang Wei",
+          "player": "张卫",
           "player2": "",
-          "player_out": "Wu Lei"
+          "player_out": "武磊"
         },
         {
           "minute": 71,
           "minute_extra": 0,
           "type": "substitution",
           "team": "away",
-          "player": "Lü Wenjun",
+          "player": "吕文君",
           "player2": "",
-          "player_out": "Lin Chuangyi"
+          "player_out": "林创益"
         }
       ]
     }
@@ -290,16 +290,16 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Lin Chuangyi",
+      "player": "林创益",
       "player2": "",
-      "player_out": "Zheng Zhiyun"
+      "player_out": "郑致云"
     },
     {
       "minute": 18,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Wang Shenchao",
+      "player": "王燊超",
       "player2": "",
       "player_out": ""
     },
@@ -318,8 +318,8 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Hulk",
-      "player2": "Oscar",
+      "player": "胡尔克",
+      "player2": "奥斯卡",
       "player_out": "",
       "goal_type": "goal"
     },
@@ -364,7 +364,7 @@
       "minute_extra": 7,
       "type": "red_card",
       "team": "away",
-      "player": "Fu Huan",
+      "player": "傅欢",
       "player2": "",
       "player_out": ""
     },
@@ -373,18 +373,18 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Zhang Wei",
+      "player": "张卫",
       "player2": "",
-      "player_out": "Wu Lei"
+      "player_out": "武磊"
     },
     {
       "minute": 71,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Lü Wenjun",
+      "player": "吕文君",
       "player2": "",
-      "player_out": "Lin Chuangyi"
+      "player_out": "林创益"
     },
     {
       "minute": 80,

@@ -4,9 +4,9 @@
     "date": "2017-09-22",
     "time": "17:30",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2017",
-      "round": "Matchweek 26"
+      "round": "第26轮"
     },
     "venue": {
       "name": "北京工人体育场",
@@ -14,7 +14,7 @@
       "attendance": 37182
     },
     "referee": {
-      "main": "石祯禄(长春)",
+      "main": "石祯禄",
       "country": "China"
     }
   },
@@ -26,83 +26,83 @@
       "score_ht": 0,
       "formation": "Shanghai SIPG (3-4-3)",
       "coach": "罗杰·施密特(德国)",
-      "captain": "Hulk",
+      "captain": "胡尔克",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "country": "Unknown"
         },
         {
           "number": "2",
-          "name": "Zhang Wei",
+          "name": "张卫",
           "country": "Unknown"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "country": "Unknown"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "country": "Unknown"
         },
         {
           "number": "8",
-          "name": "Oscar",
+          "name": "奥斯卡",
           "country": "Unknown"
         },
         {
           "number": "9",
-          "name": "Elkeson",
+          "name": "埃尔克森",
           "country": "Unknown"
         },
         {
           "number": "10",
-          "name": "Hulk",
+          "name": "胡尔克",
           "country": "Unknown"
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "country": "Unknown"
         },
         {
           "number": "13",
-          "name": "Wei Zhen",
+          "name": "魏震",
           "country": "Unknown"
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "country": "Unknown"
         },
         {
           "number": "28",
-          "name": "He Guan",
+          "name": "贺惯",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "34",
-          "name": "Chen Wei",
+          "name": "陈威",
           "country": "Unknown"
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
+          "name": "李圣龙",
           "country": "Unknown"
         },
         {
           "number": "15",
-          "name": "Lin Chuangyi",
+          "name": "林创益",
           "country": "Unknown"
         },
         {
           "number": "17",
-          "name": "Zhang Huachen",
+          "name": "张华晨",
           "country": "Unknown"
         },
         {
@@ -112,12 +112,12 @@
         },
         {
           "number": "23",
-          "name": "Fu Huan",
+          "name": "傅欢",
           "country": "Unknown"
         },
         {
           "number": "37",
-          "name": "Chen Binbin",
+          "name": "陈彬彬",
           "country": "Unknown"
         }
       ],
@@ -127,9 +127,9 @@
           "minute_extra": 0,
           "type": "substitution",
           "team": "home",
-          "player": "Li Shenglong",
+          "player": "李圣龙",
           "player2": "",
-          "player_out": "Lü Wenjun"
+          "player_out": "吕文君"
         },
         {
           "minute": 89,
@@ -138,16 +138,16 @@
           "team": "home",
           "player": "Hu Jinghang",
           "player2": "",
-          "player_out": "Elkeson"
+          "player_out": "埃尔克森"
         },
         {
           "minute": 90,
           "minute_extra": 0,
           "type": "substitution",
           "team": "home",
-          "player": "Chen Binbin",
+          "player": "陈彬彬",
           "player2": "",
-          "player_out": "Zhang Wei"
+          "player_out": "张卫"
         }
       ]
     },
@@ -299,16 +299,16 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Li Shenglong",
+      "player": "李圣龙",
       "player2": "",
-      "player_out": "Lü Wenjun"
+      "player_out": "吕文君"
     },
     {
       "minute": 30,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "home",
-      "player": "Zhang Wei",
+      "player": "张卫",
       "player2": "",
       "player_out": ""
     },
@@ -335,7 +335,7 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Li Shenglong",
+      "player": "李圣龙",
       "player2": "",
       "player_out": "",
       "goal_type": "goal"
@@ -345,7 +345,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "home",
-      "player": "Wei Zhen",
+      "player": "魏震",
       "player2": "",
       "player_out": ""
     },
@@ -354,8 +354,8 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Hulk",
-      "player2": "Oscar",
+      "player": "胡尔克",
+      "player2": "奥斯卡",
       "player_out": "",
       "goal_type": "goal"
     },
@@ -384,16 +384,16 @@
       "team": "home",
       "player": "Hu Jinghang",
       "player2": "",
-      "player_out": "Elkeson"
+      "player_out": "埃尔克森"
     },
     {
       "minute": 90,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Chen Binbin",
+      "player": "陈彬彬",
       "player2": "",
-      "player_out": "Zhang Wei"
+      "player_out": "张卫"
     }
   ],
   "statistics": {

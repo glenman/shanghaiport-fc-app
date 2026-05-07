@@ -6,7 +6,7 @@
     "competition": {
       "name": "Chinese Football Association Super League",
       "season": "2015",
-      "round": "Matchweek 10"
+      "round": "第10轮"
     },
     "venue": {
       "name": "广州天河体育场",
@@ -14,7 +14,7 @@
       "attendance": 48637
     },
     "referee": {
-      "main": "王哲(北京)",
+      "main": "王哲",
       "country": "China"
     }
   },
@@ -30,67 +30,67 @@
       "lineup": [
         {
           "number": "33",
-          "name": "Yang Boyu",
+          "name": "杨博宇",
           "position": "DF",
           "country": "CHN"
         },
         {
           "number": "10",
-          "name": "Darío Conca",
+          "name": "达里奥·孔卡",
           "position": "MF",
           "country": "ARG"
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "position": "DF,FW",
           "country": "CHN"
         },
         {
           "number": "23",
-          "name": "Fu Huan",
+          "name": "傅欢",
           "position": "DF",
           "country": "CHN"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "position": "MF",
           "country": "CHN"
         },
         {
           "number": "9",
-          "name": "Tobias Hysén",
+          "name": "托比亚斯·海森",
           "position": "FW,MF",
           "country": "SWE"
         },
         {
           "number": "8",
-          "name": "Davi Rodrigues de Jesus",
+          "name": "达维·罗德里格斯",
           "position": "MF",
           "country": "BRA"
         },
         {
           "number": "5",
-          "name": "Wang Jiajie",
+          "name": "汪佳捷",
           "position": "DF,MF",
           "country": "CHN"
         },
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "position": "GK",
           "country": "CHN"
         },
         {
           "number": "7",
-          "name": "Wu Lei",
+          "name": "武磊",
           "position": "FW,MF",
           "country": "CHN"
         },
         {
           "number": "32",
-          "name": "Sun Xiang",
+          "name": "孙祥",
           "position": "DF",
           "country": "CHN"
         }
@@ -98,13 +98,13 @@
       "substitutes": [
         {
           "number": "17",
-          "name": "Jean Evrard Kouassi",
+          "name": "让·埃弗拉",
           "position": "FW,MF",
           "country": "CIV"
         },
         {
           "number": "2",
-          "name": "Zhang Wei",
+          "name": "张卫",
           "position": "DF,MF",
           "country": "CHN"
         }
@@ -112,12 +112,12 @@
       "substitutions": [
         {
           "minute": 70,
-          "player_out": "Davi Rodrigues de Jesus",
+          "player_out": "达维·罗德里格斯",
           "player_in": "Jean Evrard Kouassi"
         },
         {
           "minute": 31,
-          "player_out": "Sun Xiang",
+          "player_out": "孙祥",
           "player_in": "Zhang Wei"
         }
       ]
@@ -253,8 +253,8 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Zhang Wei",
-      "player2": "Sun Xiang",
+      "player": "张卫",
+      "player2": "孙祥",
       "description": ""
     },
     {
@@ -298,8 +298,8 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Jean Evrard Kouassi",
-      "player2": "Davi Rodrigues de Jesus",
+      "player": "让·埃弗拉",
+      "player2": "达维·罗德里格斯",
       "description": ""
     },
     {
@@ -307,7 +307,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Cai Huikang",
+      "player": "蔡慧康",
       "player2": "",
       "description": ""
     },
@@ -325,7 +325,7 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Tobias Hysén",
+      "player": "托比亚斯·海森",
       "player2": "",
       "description": ""
     },
@@ -343,7 +343,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Fu Huan",
+      "player": "傅欢",
       "player2": "",
       "description": ""
     }
@@ -353,63 +353,63 @@
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Yang Boyu",
+        "player": "杨博宇",
         "position": "DF",
         "shirtnumber": "33"
       },
       {
         "minute": "90",
         "nationality": "ar ARG",
-        "player": "Darío Conca",
+        "player": "达里奥·孔卡",
         "position": "MF",
         "shirtnumber": "10"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Yu Hai",
+        "player": "于海",
         "position": "DF,FW",
         "shirtnumber": "21"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Fu Huan",
+        "player": "傅欢",
         "position": "DF",
         "shirtnumber": "23"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Cai Huikang",
+        "player": "蔡慧康",
         "position": "MF",
         "shirtnumber": "6"
       },
       {
         "minute": "90",
         "nationality": "se SWE",
-        "player": "Tobias Hysén",
+        "player": "托比亚斯·海森",
         "position": "FW,MF",
         "shirtnumber": "9"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Wang Jiajie",
+        "player": "汪佳捷",
         "position": "DF,MF",
         "shirtnumber": "5"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Yan Junling",
+        "player": "颜骏凌",
         "position": "GK",
         "shirtnumber": "1"
       },
       {
         "minute": "90",
         "nationality": "cn CHN",
-        "player": "Wu Lei",
+        "player": "武磊",
         "position": "FW,MF",
         "shirtnumber": "7"
       }

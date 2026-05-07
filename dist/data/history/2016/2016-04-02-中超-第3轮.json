@@ -4,9 +4,9 @@
     "date": "2016-04-02",
     "time": "19:35",
     "competition": {
-      "name": "Chinese Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2016",
-      "round": "Matchweek 3"
+      "round": "第3轮"
     },
     "venue": {
       "name": "重庆奥体中心",
@@ -14,7 +14,7 @@
       "attendance": 44160
     },
     "referee": {
-      "main": "艾堃(北体大)",
+      "main": "艾堃",
       "country": "China"
     }
   },
@@ -124,89 +124,89 @@
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "position": ""
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "position": ""
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "position": ""
         },
         {
           "number": "7",
-          "name": "Wu Lei",
+          "name": "武磊",
           "position": ""
         },
         {
           "number": "9",
-          "name": "Elkeson",
+          "name": "埃尔克森",
           "position": ""
         },
         {
           "number": "10",
-          "name": "Darío Conca",
+          "name": "孔卡",
           "position": ""
         },
         {
           "number": "17",
-          "name": "Jean Evrard Kouassi",
+          "name": "埃弗拉",
           "position": ""
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "position": ""
         },
         {
           "number": "27",
-          "name": "Shi Ke",
+          "name": "石柯",
           "position": ""
         },
         {
           "number": "32",
-          "name": "Sun Xiang",
+          "name": "孙祥",
           "position": ""
         }
       ],
       "substitutes": [
         {
           "number": "22",
-          "name": "Sun Le",
+          "name": "孙乐",
           "position": ""
         },
         {
           "number": "5",
-          "name": "Wang Jiajie",
+          "name": "汪佳捷",
           "position": ""
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "position": ""
         },
         {
           "number": "15",
-          "name": "Lin Chuangyi",
+          "name": "林创益",
           "position": ""
         },
         {
           "number": "23",
-          "name": "Fu Huan",
+          "name": "傅欢",
           "position": ""
         },
         {
           "number": "26",
-          "name": "Hu Jinghang",
+          "name": "胡靖航",
           "position": ""
         },
         {
           "number": "28",
-          "name": "He Guan",
+          "name": "贺惯",
           "position": ""
         }
       ],
@@ -230,7 +230,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Darío Conca",
+      "player": "孔卡",
       "player2": "",
       "goal_type": "",
       "player_out": "",
@@ -241,8 +241,8 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Wu Lei",
-      "player2": "Yu Hai",
+      "player": "武磊",
+      "player2": "于海",
       "goal_type": "goal",
       "player_out": "",
       "description": "\"30’ 0:1 Wu Lei Assist: Yu Hai — Goal 0:1\""
@@ -252,7 +252,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Sun Xiang",
+      "player": "孙祥",
       "player2": "",
       "goal_type": "",
       "player_out": "",
@@ -263,7 +263,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Wang Shenchao",
+      "player": "王燊超",
       "player2": "",
       "goal_type": "",
       "player_out": "",
@@ -274,10 +274,10 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Lü Wenjun",
-      "player2": "Jean Evrard Kouassi",
+      "player": "吕文君",
+      "player2": "埃弗拉",
       "goal_type": "",
-      "player_out": "Jean Evrard Kouassi",
+      "player_out": "埃弗拉",
       "description": "\"76’ 0:1 Lü Wenjun for Jean Evrard Kouassi — Substitute\""
     },
     {
@@ -318,10 +318,10 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Fu Huan",
-      "player2": "Wang Shenchao",
+      "player": "傅欢",
+      "player2": "王燊超",
       "goal_type": "",
-      "player_out": "Wang Shenchao",
+      "player_out": "王燊超",
       "description": "\"90+3’ 1:1 Fu Huan for Wang Shenchao — Substitute\""
     }
   ],

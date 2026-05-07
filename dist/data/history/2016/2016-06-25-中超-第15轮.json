@@ -4,9 +4,9 @@
     "date": "2016-06-25",
     "time": "19:35",
     "competition": {
-      "name": "Chinese Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2016",
-      "round": "Matchweek 15"
+      "round": "第15轮"
     },
     "venue": {
       "name": "上海体育场",
@@ -14,7 +14,7 @@
       "attendance": 24737
     },
     "referee": {
-      "main": "黑晓虎(陕西)",
+      "main": "黑晓虎",
       "country": "China"
     }
   },
@@ -30,89 +30,89 @@
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "position": ""
         },
         {
           "number": "5",
-          "name": "Wang Jiajie",
+          "name": "汪佳捷",
           "position": ""
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "position": ""
         },
         {
           "number": "7",
-          "name": "Wu Lei",
+          "name": "武磊",
           "position": ""
         },
         {
           "number": "9",
-          "name": "Elkeson",
+          "name": "埃尔克森",
           "position": ""
         },
         {
           "number": "10",
-          "name": "Darío Conca",
+          "name": "孔卡",
           "position": ""
         },
         {
           "number": "17",
-          "name": "Jean Evrard Kouassi",
+          "name": "埃弗拉",
           "position": ""
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "position": ""
         },
         {
           "number": "23",
-          "name": "Fu Huan",
+          "name": "傅欢",
           "position": ""
         },
         {
           "number": "32",
-          "name": "Sun Xiang",
+          "name": "孙祥",
           "position": ""
         }
       ],
       "substitutes": [
         {
           "number": "22",
-          "name": "Sun Le",
+          "name": "孙乐",
           "position": ""
         },
         {
           "number": "2",
-          "name": "Zhang Wei",
+          "name": "张卫",
           "position": ""
         },
         {
           "number": "3",
-          "name": "Asamoah Gyan",
+          "name": "吉安",
           "position": ""
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "position": ""
         },
         {
           "number": "15",
-          "name": "Lin Chuangyi",
+          "name": "林创益",
           "position": ""
         },
         {
           "number": "26",
-          "name": "Hu Jinghang",
+          "name": "胡靖航",
           "position": ""
         },
         {
           "number": "28",
-          "name": "He Guan",
+          "name": "贺惯",
           "position": ""
         }
       ],
@@ -186,7 +186,7 @@
       "substitutes": [
         {
           "number": "1",
-          "name": "Zong Lei",
+          "name": "武磊",
           "position": ""
         },
         {
@@ -206,7 +206,7 @@
         },
         {
           "number": "30",
-          "name": "Lü Wei",
+          "name": "张卫",
           "position": ""
         },
         {
@@ -240,8 +240,8 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Jean Evrard Kouassi",
-      "player2": "Cai Huikang",
+      "player": "埃弗拉",
+      "player2": "蔡慧康",
       "goal_type": "goal",
       "player_out": "",
       "description": "\"39’ 1:0 Jean Evrard Kouassi Assist: Cai Huikang — Goal 1:0\""
@@ -262,7 +262,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "home",
-      "player": "Sun Xiang",
+      "player": "孙祥",
       "player2": "",
       "goal_type": "",
       "player_out": "",
@@ -273,10 +273,10 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Asamoah Gyan",
-      "player2": "Elkeson",
+      "player": "吉安",
+      "player2": "埃尔克森",
       "goal_type": "",
-      "player_out": "Elkeson",
+      "player_out": "埃尔克森",
       "description": "\"76’ 1:0 Asamoah Gyan for Elkeson — Substitute\""
     },
     {
@@ -295,10 +295,10 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Lü Wenjun",
-      "player2": "Jean Evrard Kouassi",
+      "player": "吕文君",
+      "player2": "埃弗拉",
       "goal_type": "",
-      "player_out": "Jean Evrard Kouassi",
+      "player_out": "埃弗拉",
       "description": "\"89’ 1:1 Lü Wenjun for Jean Evrard Kouassi — Substitute\""
     },
     {
@@ -306,7 +306,7 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Lü Wei",
+      "player": "张卫",
       "player2": "Guo Hao",
       "goal_type": "",
       "player_out": "Guo Hao",

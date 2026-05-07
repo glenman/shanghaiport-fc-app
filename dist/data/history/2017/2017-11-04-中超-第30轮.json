@@ -4,9 +4,9 @@
     "date": "2017-11-04",
     "time": "15:00",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2017",
-      "round": "Matchweek 30"
+      "round": "第30轮"
     },
     "venue": {
       "name": "上海体育场",
@@ -14,7 +14,7 @@
       "attendance": 26467
     },
     "referee": {
-      "main": "艾堃(北体大)",
+      "main": "艾堃",
       "country": "China"
     }
   },
@@ -158,46 +158,46 @@
       "score_ht": 0,
       "formation": "Shanghai SIPG (3-4-3)",
       "coach": "法比奥·卡佩罗(意大利)",
-      "captain": "Hulk",
+      "captain": "胡尔克",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "country": "Unknown"
         },
         {
           "number": "2",
-          "name": "Zhang Wei",
+          "name": "张卫",
           "country": "Unknown"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "country": "Unknown"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "country": "Unknown"
         },
         {
           "number": "8",
-          "name": "Oscar",
+          "name": "奥斯卡",
           "country": "Unknown"
         },
         {
           "number": "9",
-          "name": "Elkeson",
+          "name": "埃尔克森",
           "country": "Unknown"
         },
         {
           "number": "10",
-          "name": "Hulk",
+          "name": "胡尔克",
           "country": "Unknown"
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
+          "name": "李圣龙",
           "country": "Unknown"
         },
         {
@@ -207,24 +207,24 @@
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "country": "Unknown"
         },
         {
           "number": "28",
-          "name": "He Guan",
+          "name": "贺惯",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "22",
-          "name": "Sun Le",
+          "name": "孙乐",
           "country": "Unknown"
         },
         {
           "number": "5",
-          "name": "Shi Ke",
+          "name": "石柯",
           "country": "Unknown"
         },
         {
@@ -234,17 +234,17 @@
         },
         {
           "number": "15",
-          "name": "Lin Chuangyi",
+          "name": "林创益",
           "country": "Unknown"
         },
         {
           "number": "17",
-          "name": "Zhang Huachen",
+          "name": "张华晨",
           "country": "Unknown"
         },
         {
           "number": "18",
-          "name": "Zhang Yi",
+          "name": "张一",
           "country": "Unknown"
         },
         {
@@ -259,9 +259,9 @@
           "minute_extra": 1,
           "type": "substitution",
           "team": "away",
-          "player": "Shi Ke",
+          "player": "石柯",
           "player2": "",
-          "player_out": "Li Shenglong"
+          "player_out": "李圣龙"
         },
         {
           "minute": 90,
@@ -270,7 +270,7 @@
           "team": "away",
           "player": "Hu Jinghang",
           "player2": "",
-          "player_out": "Hulk"
+          "player_out": "胡尔克"
         }
       ]
     }
@@ -290,8 +290,8 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Elkeson",
-      "player2": "Li Shenglong",
+      "player": "埃尔克森",
+      "player2": "李圣龙",
       "player_out": "",
       "goal_type": "goal"
     },
@@ -309,8 +309,8 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Li Shenglong",
-      "player2": "Zhang Wei",
+      "player": "李圣龙",
+      "player2": "张卫",
       "player_out": "",
       "goal_type": "goal"
     },
@@ -374,7 +374,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Yan Junling",
+      "player": "颜骏凌",
       "player2": "",
       "player_out": ""
     },
@@ -383,9 +383,9 @@
       "minute_extra": 1,
       "type": "substitution",
       "team": "away",
-      "player": "Shi Ke",
+      "player": "石柯",
       "player2": "",
-      "player_out": "Li Shenglong"
+      "player_out": "李圣龙"
     },
     {
       "minute": 90,
@@ -394,7 +394,7 @@
       "team": "away",
       "player": "Hu Jinghang",
       "player2": "",
-      "player_out": "Hulk"
+      "player_out": "胡尔克"
     }
   ],
   "statistics": {

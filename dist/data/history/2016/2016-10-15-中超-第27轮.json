@@ -4,9 +4,9 @@
     "date": "2016-10-15",
     "time": "19:35",
     "competition": {
-      "name": "Chinese Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2016",
-      "round": "Matchweek 27"
+      "round": "第27轮"
     },
     "venue": {
       "name": "南京奥体中心",
@@ -14,7 +14,7 @@
       "attendance": 48693
     },
     "referee": {
-      "main": "王哲(北京)",
+      "main": "王哲",
       "country": "China"
     }
   },
@@ -70,7 +70,7 @@
         },
         {
           "number": "24",
-          "name": "Ji Xiang",
+          "name": "孙祥",
           "position": ""
         },
         {
@@ -112,7 +112,7 @@
         },
         {
           "number": "40",
-          "name": "Ge Wei",
+          "name": "张卫",
           "position": ""
         }
       ],
@@ -129,89 +129,89 @@
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "position": ""
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "position": ""
         },
         {
           "number": "7",
-          "name": "Wu Lei",
+          "name": "武磊",
           "position": ""
         },
         {
           "number": "9",
-          "name": "Elkeson",
+          "name": "埃尔克森",
           "position": ""
         },
         {
           "number": "10",
-          "name": "Hulk",
+          "name": "胡尔克",
           "position": ""
         },
         {
           "number": "17",
-          "name": "Jean Evrard Kouassi",
+          "name": "埃弗拉",
           "position": ""
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "position": ""
         },
         {
           "number": "23",
-          "name": "Fu Huan",
+          "name": "傅欢",
           "position": ""
         },
         {
           "number": "28",
-          "name": "He Guan",
+          "name": "贺惯",
           "position": ""
         },
         {
           "number": "32",
-          "name": "Sun Xiang",
+          "name": "孙祥",
           "position": ""
         }
       ],
       "substitutes": [
         {
           "number": "22",
-          "name": "Sun Le",
+          "name": "孙乐",
           "position": ""
         },
         {
           "number": "2",
-          "name": "Zhang Wei",
+          "name": "张卫",
           "position": ""
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "position": ""
         },
         {
           "number": "5",
-          "name": "Wang Jiajie",
+          "name": "汪佳捷",
           "position": ""
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "position": ""
         },
         {
           "number": "15",
-          "name": "Lin Chuangyi",
+          "name": "林创益",
           "position": ""
         },
         {
           "number": "19",
-          "name": "Yang Shiyuan",
+          "name": "杨世元",
           "position": ""
         }
       ],
@@ -224,10 +224,10 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Lü Wenjun",
-      "player2": "Elkeson",
+      "player": "吕文君",
+      "player2": "埃尔克森",
       "goal_type": "",
-      "player_out": "Elkeson",
+      "player_out": "埃尔克森",
       "description": "\"22’ 0:0 Lü Wenjun for Elkeson — Substitute\""
     },
     {
@@ -235,7 +235,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Yu Hai",
+      "player": "于海",
       "player2": "",
       "goal_type": "",
       "player_out": "",
@@ -246,7 +246,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Lü Wenjun",
+      "player": "吕文君",
       "player2": "",
       "goal_type": "",
       "player_out": "",
@@ -257,7 +257,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Sun Xiang",
+      "player": "孙祥",
       "player2": "",
       "goal_type": "",
       "player_out": "",
@@ -290,10 +290,10 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Wang Shenchao",
-      "player2": "Fu Huan",
+      "player": "王燊超",
+      "player2": "傅欢",
       "goal_type": "",
-      "player_out": "Fu Huan",
+      "player_out": "傅欢",
       "description": "\"54’ 2:0 Wang Shenchao for Fu Huan — Substitute\""
     },
     {
@@ -312,8 +312,8 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Hulk",
-      "player2": "Jean Evrard Kouassi",
+      "player": "胡尔克",
+      "player2": "埃弗拉",
       "goal_type": "goal",
       "player_out": "",
       "description": "\"64’ 2:1 Hulk Assist: Jean Evrard Kouassi — Goal 2:1\""
@@ -324,7 +324,7 @@
       "type": "goal",
       "team": "home",
       "player": "Roger Martínez",
-      "player2": "Yan Junling",
+      "player2": "颜骏凌",
       "goal_type": "penalty_goal",
       "player_out": "",
       "description": "\"72’ 2:1 Roger Martínez Penalty saved by Yan Junling — Goal\""
@@ -334,7 +334,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "home",
-      "player": "Ji Xiang",
+      "player": "孙祥",
       "player2": "",
       "goal_type": "",
       "player_out": "",
@@ -389,7 +389,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Cai Huikang",
+      "player": "蔡慧康",
       "player2": "",
       "goal_type": "",
       "player_out": "",
@@ -400,7 +400,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Hulk",
+      "player": "胡尔克",
       "player2": "",
       "goal_type": "",
       "player_out": "",
