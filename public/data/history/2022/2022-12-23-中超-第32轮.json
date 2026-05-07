@@ -4,148 +4,145 @@
     "date": "2022-12-23",
     "time": "20:00",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2022",
-      "round": "Matchweek 32"
+      "round": "第32轮"
     },
     "venue": {
-      "name": "Dalian Sports Center",
+      "name": "晋江足球训练中心体育场",
+      "city": "福建省晋江市",
       "attendance": 312
     },
     "referee": {
-      "main": "Zhang Lei",
-      "ar1": "Shi Xiang",
-      "ar2": "Yang Yang",
-      "fourth": "Shengyu Sun",
-      "var": "Qi Xing",
+      "main": "张雷(大连)",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
-      "full_name": "",
+      "name": "上海海港",
+      "full_name": "上海海港足球俱乐部",
       "score": 2,
       "score_ht": 0,
       "formation": "(4-2-3)",
-      "coach": "Sun Xiang",
+      "coach": "奚志康",
       "captain": "Wang Shenchao",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "country": "Unknown"
         },
         {
           "number": "3",
-          "name": "Tyias Browning",
+          "name": "蒋光太",
           "country": "Unknown"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "country": "Unknown"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "country": "Unknown"
         },
         {
           "number": "9",
-          "name": "Paulinho",
+          "name": "保利尼奥",
           "country": "Unknown"
         },
         {
           "number": "10",
-          "name": "Cherif Ndiaye",
+          "name": "恩迪亚耶",
           "country": "Unknown"
         },
         {
           "number": "13",
-          "name": "Wei Zhen",
+          "name": "魏震",
           "country": "Unknown"
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "country": "Unknown"
         },
         {
           "number": "24",
-          "name": "Matías Vargas",
+          "name": "马蒂亚斯·巴尔加斯",
           "country": "Unknown"
         },
         {
           "number": "34",
-          "name": "Issa Kallon",
+          "name": "卡隆",
           "country": "Unknown"
         },
         {
           "number": "36",
-          "name": "Ablahan Haliq",
+          "name": "阿布拉汗·哈力克",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "12",
-          "name": "Chen Wei",
+          "name": "陈威",
           "country": "Unknown"
         },
         {
           "number": "2",
-          "name": "Li Ang",
+          "name": "李昂",
           "country": "Unknown"
         },
         {
           "number": "5",
-          "name": "Zhang Linpeng",
+          "name": "张琳芃",
           "country": "Unknown"
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "country": "Unknown"
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
+          "name": "李圣龙",
           "country": "Unknown"
         },
         {
           "number": "15",
-          "name": "Li Shenyuan",
+          "name": "李申圆",
           "country": "Unknown"
         },
         {
           "number": "20",
-          "name": "Yang Shiyuan",
+          "name": "杨世元",
           "country": "Unknown"
         },
         {
           "number": "26",
-          "name": "Chen Chunxin",
+          "name": "陈纯新",
           "country": "Unknown"
         },
         {
           "number": "29",
-          "name": "Zhang Huachen",
+          "name": "张华晨",
           "country": "Unknown"
         },
         {
           "number": "32",
-          "name": "Li Shuai",
+          "name": "李帅",
           "country": "Unknown"
         },
         {
           "number": "33",
-          "name": "Liu Zhurun",
+          "name": "刘祝润",
           "country": "Unknown"
         },
         {
           "number": "39",
-          "name": "Liu Baiyang",
+          "name": "刘柏杨",
           "country": "Unknown"
         }
       ],
@@ -153,57 +150,42 @@
         {
           "minute": 46,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Li Shuai",
-          "player2": "",
-          "player_out": "Wang Shenchao"
+          "player_out": "王燊超",
+          "player_in": "李帅"
         },
         {
           "minute": 62,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Yang Shiyuan",
-          "player2": "",
-          "player_out": "Paulinho"
+          "player_out": "保利尼奥",
+          "player_in": "杨世元"
         },
         {
           "minute": 63,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Lü Wenjun",
-          "player2": "",
-          "player_out": "Cherif Ndiaye"
+          "player_out": "恩迪亚耶",
+          "player_in": "吕文君"
         },
         {
           "minute": 75,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Li Ang",
-          "player2": "",
-          "player_out": "Yu Hai"
+          "player_out": "于海",
+          "player_in": "李昂"
         },
         {
           "minute": 87,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Liu Zhurun",
-          "player2": "",
-          "player_out": "Matías Vargas"
+          "player_out": "马蒂亚斯·巴尔加斯",
+          "player_in": "刘祝润"
         }
       ]
     },
     "away": {
-      "name": "Shandong Taishan",
-      "full_name": "",
+      "name": "山东泰山",
+      "full_name": "山东泰山足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "(4-4-2)",
-      "coach": "Xu Haipeng",
+      "coach": "黑琦久志(日本)代理",
       "captain": "Wang Dalei",
       "lineup": [
         {
@@ -350,8 +332,8 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Cherif Ndiaye",
-      "player2": "Issa Kallon",
+      "player": "恩迪亚耶",
+      "player2": "卡隆",
       "player_out": "",
       "goal_type": "goal"
     },
@@ -378,16 +360,16 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Li Shuai",
+      "player": "李帅",
       "player2": "",
-      "player_out": "Wang Shenchao"
+      "player_out": "王燊超"
     },
     {
       "minute": 60,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "home",
-      "player": "Issa Kallon",
+      "player": "卡隆",
       "player2": "",
       "player_out": ""
     },
@@ -396,18 +378,18 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Yang Shiyuan",
+      "player": "杨世元",
       "player2": "",
-      "player_out": "Paulinho"
+      "player_out": "保利尼奥"
     },
     {
       "minute": 63,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Lü Wenjun",
+      "player": "吕文君",
       "player2": "",
-      "player_out": "Cherif Ndiaye"
+      "player_out": "恩迪亚耶"
     },
     {
       "minute": 72,
@@ -432,26 +414,26 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Li Ang",
+      "player": "李昂",
       "player2": "",
-      "player_out": "Yu Hai"
+      "player_out": "于海"
     },
     {
       "minute": 87,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Liu Zhurun",
+      "player": "刘祝润",
       "player2": "",
-      "player_out": "Matías Vargas"
+      "player_out": "马蒂亚斯·巴尔加斯"
     },
     {
       "minute": 89,
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Liu Zhurun",
-      "player2": "Lü Wenjun",
+      "player": "刘祝润",
+      "player2": "吕文君",
       "player_out": "",
       "goal_type": "goal"
     },
@@ -460,7 +442,7 @@
       "minute_extra": 5,
       "type": "yellow_card",
       "team": "home",
-      "player": "Li Ang",
+      "player": "李昂",
       "player2": "",
       "player_out": ""
     }

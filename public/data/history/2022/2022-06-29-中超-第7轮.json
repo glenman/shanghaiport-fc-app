@@ -4,148 +4,145 @@
     "date": "2022-06-29",
     "time": "15:30",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2022",
-      "round": "Matchweek 7"
+      "round": "第7轮"
     },
     "venue": {
-      "name": "Jinzhou Stadium",
+      "name": "大连金州体育场",
+      "city": "辽宁省大连市",
       "attendance": 0
     },
     "referee": {
-      "main": "Li Haixin",
-      "ar1": "Hu Chengjun",
-      "ar2": "Xing Liu",
-      "fourth": "Liying Wu",
-      "var": "",
+      "main": "李海新(广东)",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
-      "full_name": "",
+      "name": "上海海港",
+      "full_name": "上海海港足球俱乐部",
       "score": 1,
       "score_ht": 0,
       "formation": "(3-4-1)",
-      "coach": "Ivan Leko",
+      "coach": "伊万·莱科",
       "captain": "Wang Shenchao",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "country": "Unknown"
         },
         {
           "number": "2",
-          "name": "Li Ang",
+          "name": "李昂",
           "country": "Unknown"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "country": "Unknown"
         },
         {
           "number": "5",
-          "name": "Zhang Linpeng",
+          "name": "张琳芃",
           "country": "Unknown"
         },
         {
           "number": "9",
-          "name": "Paulinho",
+          "name": "保利尼奥",
           "country": "Unknown"
         },
         {
           "number": "10",
-          "name": "Cherif Ndiaye",
+          "name": "恩迪亚耶",
           "country": "Unknown"
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "country": "Unknown"
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "country": "Unknown"
         },
         {
           "number": "25",
-          "name": "Mirahmetjan Muzepper",
+          "name": "买提江",
           "country": "Unknown"
         },
         {
           "number": "27",
-          "name": "Feng Jing",
+          "name": "冯劲",
           "country": "Unknown"
         },
         {
           "number": "39",
-          "name": "Liu Baiyang",
+          "name": "刘柏杨",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "22",
-          "name": "Du Jia",
+          "name": "杜佳",
           "country": "Unknown"
         },
         {
           "number": "31",
-          "name": "Xi Anjie",
+          "name": "奚安杰",
           "country": "Unknown"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "country": "Unknown"
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
+          "name": "李圣龙",
           "country": "Unknown"
         },
         {
           "number": "15",
-          "name": "Li Shenyuan",
+          "name": "李申圆",
           "country": "Unknown"
         },
         {
           "number": "17",
-          "name": "Chen Binbin",
+          "name": "陈彬彬",
           "country": "Unknown"
         },
         {
           "number": "23",
-          "name": "Fu Huan",
+          "name": "傅欢",
           "country": "Unknown"
         },
         {
           "number": "26",
-          "name": "Chen Chunxin",
+          "name": "陈纯新",
           "country": "Unknown"
         },
         {
           "number": "28",
-          "name": "He Guan",
+          "name": "贺惯",
           "country": "Unknown"
         },
         {
           "number": "29",
-          "name": "Zhang Huachen",
+          "name": "张华晨",
           "country": "Unknown"
         },
         {
           "number": "33",
-          "name": "Liu Zhurun",
+          "name": "刘祝润",
           "country": "Unknown"
         },
         {
           "number": "37",
-          "name": "Chen Xuhuang",
+          "name": "陈旭黄",
           "country": "Unknown"
         }
       ],
@@ -153,48 +150,36 @@
         {
           "minute": 58,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Liu Zhurun",
-          "player2": "",
-          "player_out": "Liu Baiyang"
+          "player_out": "刘柏杨",
+          "player_in": "刘祝润"
         },
         {
           "minute": 58,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Li Shenyuan",
-          "player2": "",
-          "player_out": "Mirahmetjan Muzepper"
+          "player_out": "买提江",
+          "player_in": "李申圆"
         },
         {
           "minute": 76,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Zhang Huachen",
-          "player2": "",
-          "player_out": "Lü Wenjun"
+          "player_out": "吕文君",
+          "player_in": "张华晨"
         },
         {
           "minute": 86,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Li Shenglong",
-          "player2": "",
-          "player_out": "Paulinho"
+          "player_out": "保利尼奥",
+          "player_in": "李圣龙"
         }
       ]
     },
     "away": {
-      "name": "Shanghai Shen",
-      "full_name": "",
+      "name": "上海申花",
+      "full_name": "上海申花足球俱乐部",
       "score": 1,
       "score_ht": 0,
       "formation": "(4-3-3)",
-      "coach": "Wu Jingui",
+      "coach": "吴金贵",
       "captain": "Cao Yunding",
       "lineup": [
         {
@@ -398,18 +383,18 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Liu Zhurun",
+      "player": "刘祝润",
       "player2": "",
-      "player_out": "Liu Baiyang"
+      "player_out": "刘柏杨"
     },
     {
       "minute": 58,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Li Shenyuan",
+      "player": "李申圆",
       "player2": "",
-      "player_out": "Mirahmetjan Muzepper"
+      "player_out": "买提江"
     },
     {
       "minute": 62,
@@ -452,9 +437,9 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Zhang Huachen",
+      "player": "张华晨",
       "player2": "",
-      "player_out": "Lü Wenjun"
+      "player_out": "吕文君"
     },
     {
       "minute": 80,
@@ -479,16 +464,16 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Li Shenglong",
+      "player": "李圣龙",
       "player2": "",
-      "player_out": "Paulinho"
+      "player_out": "保利尼奥"
     },
     {
       "minute": 89,
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Cherif Ndiaye",
+      "player": "恩迪亚耶",
       "player2": "",
       "player_out": "",
       "goal_type": "penalty_goal"

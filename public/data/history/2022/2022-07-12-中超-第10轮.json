@@ -4,148 +4,145 @@
     "date": "2022-07-12",
     "time": "18:30",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2022",
-      "round": "Matchweek 10"
+      "round": "第10轮"
     },
     "venue": {
-      "name": "Puwan Stadium",
+      "name": "大连普湾体育场",
+      "city": "辽宁省大连市",
       "attendance": 0
     },
     "referee": {
-      "main": "Jingyuan",
-      "ar1": "Tang Chao",
-      "ar2": "Huang Tao",
-      "fourth": "Jianxun Kou",
-      "var": "Li Haixin",
+      "main": "金京元(重庆)",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
-      "full_name": "",
+      "name": "上海海港",
+      "full_name": "上海海港足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "(4-4-2)",
-      "coach": "Ivan Leko",
-      "captain": "Oscar",
+      "coach": "伊万·莱科",
+      "captain": "奥斯卡",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "country": "Unknown"
         },
         {
           "number": "2",
-          "name": "Li Ang",
+          "name": "李昂",
           "country": "Unknown"
         },
         {
           "number": "8",
-          "name": "Oscar",
+          "name": "奥斯卡",
           "country": "Unknown"
         },
         {
           "number": "9",
-          "name": "Paulinho",
+          "name": "保利尼奥",
           "country": "Unknown"
         },
         {
           "number": "10",
-          "name": "Cherif Ndiaye",
+          "name": "恩迪亚耶",
           "country": "Unknown"
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "country": "Unknown"
         },
         {
           "number": "13",
-          "name": "Wei Zhen",
+          "name": "魏震",
           "country": "Unknown"
         },
         {
           "number": "15",
-          "name": "Li Shenyuan",
+          "name": "李申圆",
           "country": "Unknown"
         },
         {
           "number": "16",
-          "name": "Xu Xin",
+          "name": "徐新",
           "country": "Unknown"
         },
         {
           "number": "28",
-          "name": "He Guan",
+          "name": "贺惯",
           "country": "Unknown"
         },
         {
           "number": "33",
-          "name": "Liu Zhurun",
+          "name": "刘祝润",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "22",
-          "name": "Du Jia",
+          "name": "杜佳",
           "country": "Unknown"
         },
         {
           "number": "31",
-          "name": "Xi Anjie",
+          "name": "奚安杰",
           "country": "Unknown"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "country": "Unknown"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "country": "Unknown"
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
+          "name": "李圣龙",
           "country": "Unknown"
         },
         {
           "number": "17",
-          "name": "Chen Binbin",
+          "name": "陈彬彬",
           "country": "Unknown"
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "country": "Unknown"
         },
         {
           "number": "25",
-          "name": "Mirahmetjan Muzepper",
+          "name": "买提江",
           "country": "Unknown"
         },
         {
           "number": "26",
-          "name": "Chen Chunxin",
+          "name": "陈纯新",
           "country": "Unknown"
         },
         {
           "number": "27",
-          "name": "Feng Jing",
+          "name": "冯劲",
           "country": "Unknown"
         },
         {
           "number": "29",
-          "name": "Zhang Huachen",
+          "name": "张华晨",
           "country": "Unknown"
         },
         {
           "number": "37",
-          "name": "Chen Xuhuang",
+          "name": "陈旭黄",
           "country": "Unknown"
         }
       ],
@@ -153,39 +150,30 @@
         {
           "minute": 63,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Zhang Huachen",
-          "player2": "",
-          "player_out": "Xu Xin"
+          "player_out": "徐新",
+          "player_in": "张华晨"
         },
         {
           "minute": 75,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Feng Jing",
-          "player2": "",
-          "player_out": "Lü Wenjun"
+          "player_out": "吕文君",
+          "player_in": "冯劲"
         },
         {
           "minute": 81,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Li Shenglong",
-          "player2": "",
-          "player_out": "Paulinho"
+          "player_out": "保利尼奥",
+          "player_in": "李圣龙"
         }
       ]
     },
     "away": {
-      "name": "Wuhan Three Towns",
-      "full_name": "",
+      "name": "武汉三镇",
+      "full_name": "武汉三镇足球俱乐部",
       "score": 1,
       "score_ht": 0,
       "formation": "(3-5-2)",
-      "coach": "Pedro Morilla Pineda",
+      "coach": "佩德罗·莫里亚·皮内达(西班牙)",
       "captain": "Ren Hang",
       "lineup": [
         {
@@ -353,7 +341,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "home",
-      "player": "Lü Wenjun",
+      "player": "吕文君",
       "player2": "",
       "player_out": ""
     },
@@ -362,7 +350,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "home",
-      "player": "Xu Xin",
+      "player": "徐新",
       "player2": "",
       "player_out": ""
     },
@@ -380,9 +368,9 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Zhang Huachen",
+      "player": "张华晨",
       "player2": "",
-      "player_out": "Xu Xin"
+      "player_out": "徐新"
     },
     {
       "minute": 64,
@@ -407,18 +395,18 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Feng Jing",
+      "player": "冯劲",
       "player2": "",
-      "player_out": "Lü Wenjun"
+      "player_out": "吕文君"
     },
     {
       "minute": 81,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Li Shenglong",
+      "player": "李圣龙",
       "player2": "",
-      "player_out": "Paulinho"
+      "player_out": "保利尼奥"
     },
     {
       "minute": 85,

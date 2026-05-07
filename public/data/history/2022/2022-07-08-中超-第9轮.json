@@ -4,31 +4,28 @@
     "date": "2022-07-08",
     "time": "19:30",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2022",
-      "round": "Matchweek 9"
+      "round": "第9轮"
     },
     "venue": {
-      "name": "Jinzhou Stadium",
+      "name": "大连金州体育场",
+      "city": "辽宁省大连市",
       "attendance": 0
     },
     "referee": {
-      "main": "Qi Xing",
-      "ar1": "Huang Tao",
-      "ar2": "Kexin Ma",
-      "fourth": "Liying Wu",
-      "var": "Yige Dai",
+      "main": "邢琦(浙江)",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Guangzhou Evg",
-      "full_name": "",
+      "name": "广州",
+      "full_name": "广州足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "(4-5-1)",
-      "coach": "Liu Zhiyu",
+      "coach": "刘智宇",
       "captain": "Yan Dinghao",
       "lineup": [
         {
@@ -198,129 +195,129 @@
       ]
     },
     "away": {
-      "name": "Shanghai Port",
-      "full_name": "",
+      "name": "上海海港",
+      "full_name": "上海海港足球俱乐部",
       "score": 1,
       "score_ht": 0,
       "formation": "(3-5-2)",
-      "coach": "Ivan Leko",
-      "captain": "Oscar",
+      "coach": "伊万·莱科",
+      "captain": "奥斯卡",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "country": "Unknown"
         },
         {
           "number": "2",
-          "name": "Li Ang",
+          "name": "李昂",
           "country": "Unknown"
         },
         {
           "number": "8",
-          "name": "Oscar",
+          "name": "奥斯卡",
           "country": "Unknown"
         },
         {
           "number": "9",
-          "name": "Paulinho",
+          "name": "保利尼奥",
           "country": "Unknown"
         },
         {
           "number": "10",
-          "name": "Cherif Ndiaye",
+          "name": "恩迪亚耶",
           "country": "Unknown"
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "country": "Unknown"
         },
         {
           "number": "13",
-          "name": "Wei Zhen",
+          "name": "魏震",
           "country": "Unknown"
         },
         {
           "number": "15",
-          "name": "Li Shenyuan",
+          "name": "李申圆",
           "country": "Unknown"
         },
         {
           "number": "27",
-          "name": "Feng Jing",
+          "name": "冯劲",
           "country": "Unknown"
         },
         {
           "number": "28",
-          "name": "He Guan",
+          "name": "贺惯",
           "country": "Unknown"
         },
         {
           "number": "37",
-          "name": "Chen Xuhuang",
+          "name": "陈旭黄",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "22",
-          "name": "Du Jia",
+          "name": "杜佳",
           "country": "Unknown"
         },
         {
           "number": "31",
-          "name": "Xi Anjie",
+          "name": "奚安杰",
           "country": "Unknown"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "country": "Unknown"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "country": "Unknown"
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
+          "name": "李圣龙",
           "country": "Unknown"
         },
         {
           "number": "16",
-          "name": "Xu Xin",
+          "name": "徐新",
           "country": "Unknown"
         },
         {
           "number": "17",
-          "name": "Chen Binbin",
+          "name": "陈彬彬",
           "country": "Unknown"
         },
         {
           "number": "20",
-          "name": "Yang Shiyuan",
+          "name": "杨世元",
           "country": "Unknown"
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "country": "Unknown"
         },
         {
           "number": "26",
-          "name": "Chen Chunxin",
+          "name": "陈纯新",
           "country": "Unknown"
         },
         {
           "number": "33",
-          "name": "Liu Zhurun",
+          "name": "刘祝润",
           "country": "Unknown"
         },
         {
           "number": "39",
-          "name": "Liu Baiyang",
+          "name": "刘柏杨",
           "country": "Unknown"
         }
       ],
@@ -328,38 +325,26 @@
         {
           "minute": 64,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Liu Zhurun",
-          "player2": "",
-          "player_out": "Chen Xuhuang"
+          "player_out": "陈旭黄",
+          "player_in": "刘祝润"
         },
         {
           "minute": 64,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Xu Xin",
-          "player2": "",
-          "player_out": "Paulinho"
+          "player_out": "保利尼奥",
+          "player_in": "徐新"
         },
         {
           "minute": 76,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Li Shenglong",
-          "player2": "",
-          "player_out": "Feng Jing"
+          "player_out": "冯劲",
+          "player_in": "李圣龙"
         },
         {
           "minute": 89,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Wang Shenchao",
-          "player2": "",
-          "player_out": "Lü Wenjun"
+          "player_out": "吕文君",
+          "player_in": "王燊超"
         }
       ]
     }
@@ -415,18 +400,18 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Liu Zhurun",
+      "player": "刘祝润",
       "player2": "",
-      "player_out": "Chen Xuhuang"
+      "player_out": "陈旭黄"
     },
     {
       "minute": 64,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Xu Xin",
+      "player": "徐新",
       "player2": "",
-      "player_out": "Paulinho"
+      "player_out": "保利尼奥"
     },
     {
       "minute": 68,
@@ -443,9 +428,9 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Li Shenglong",
+      "player": "李圣龙",
       "player2": "",
-      "player_out": "Feng Jing"
+      "player_out": "冯劲"
     },
     {
       "minute": 84,
@@ -479,7 +464,7 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Lü Wenjun",
+      "player": "吕文君",
       "player2": "",
       "player_out": ""
     },
@@ -488,9 +473,9 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Wang Shenchao",
+      "player": "王燊超",
       "player2": "",
-      "player_out": "Lü Wenjun"
+      "player_out": "吕文君"
     }
   ],
   "statistics": {

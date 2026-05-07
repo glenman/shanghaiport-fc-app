@@ -4,43 +4,40 @@
     "date": "2022-12-27",
     "time": "15:00",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2022",
-      "round": "Matchweek 33"
+      "round": "第33轮"
     },
     "venue": {
-      "name": "Rizhao International Football Centre Stadium",
-      "attendance": 0
+      "name": "日照国际足球中心",
+      "city": "山东省日照市",
+      "attendance": "—"
     },
     "referee": {
-      "main": "",
-      "ar1": "",
-      "ar2": "",
-      "fourth": "",
-      "var": "",
+      "main": "—",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
-      "full_name": "",
+      "name": "北京国安",
+      "full_name": "北京国安足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "",
-      "coach": "",
+      "coach": "斯坦利·门佐(荷兰)",
       "captain": "",
       "lineup": [],
       "substitutes": [],
       "substitutions": []
     },
     "away": {
-      "name": "Opponent",
-      "full_name": "",
+      "name": "上海海港",
+      "full_name": "上海海港足球俱乐部",
       "score": 3,
       "score_ht": 0,
       "formation": "",
-      "coach": "",
+      "coach": "奚志康",
       "captain": "",
       "lineup": [],
       "substitutes": [],

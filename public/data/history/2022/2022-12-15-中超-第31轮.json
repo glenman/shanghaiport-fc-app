@@ -4,31 +4,28 @@
     "date": "2022-12-15",
     "time": "19:30",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2022",
-      "round": "Matchweek 31"
+      "round": "第31轮"
     },
     "venue": {
-      "name": "Huitang Stadium",
+      "name": "梅州五华奥体中心惠堂体育场",
+      "city": "广东省梅州市",
       "attendance": 1680
     },
     "referee": {
-      "main": "Niu Minghui",
-      "ar1": "Tang Chao",
-      "ar2": "Bo Jiang",
-      "fourth": "Kai He",
-      "var": "Zhang Lei",
+      "main": "牛明辉(北京)",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Meizhou Hakka",
-      "full_name": "",
+      "name": "梅州客家",
+      "full_name": "梅州客家足球俱乐部",
       "score": 0,
       "score_ht": 0,
       "formation": "(3-4-3)",
-      "coach": "Milan Ristić",
+      "coach": "米兰·里斯蒂奇(塞尔维亚)",
       "captain": "Shi Liang",
       "lineup": [
         {
@@ -189,104 +186,104 @@
       ]
     },
     "away": {
-      "name": "Shanghai Port",
-      "full_name": "",
+      "name": "上海海港",
+      "full_name": "上海海港足球俱乐部",
       "score": 1,
       "score_ht": 0,
       "formation": "(5-4-1)",
-      "coach": "Sun Xiang",
+      "coach": "孙祥",
       "captain": "Zhang Linpeng",
       "lineup": [
         {
           "number": "12",
-          "name": "Chen Wei",
+          "name": "陈威",
           "country": "Unknown"
         },
         {
           "number": "3",
-          "name": "Tyias Browning",
+          "name": "蒋光太",
           "country": "Unknown"
         },
         {
           "number": "5",
-          "name": "Zhang Linpeng",
+          "name": "张琳芃",
           "country": "Unknown"
         },
         {
           "number": "10",
-          "name": "Cherif Ndiaye",
+          "name": "恩迪亚耶",
           "country": "Unknown"
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "country": "Unknown"
         },
         {
           "number": "24",
-          "name": "Matías Vargas",
+          "name": "马蒂亚斯·巴尔加斯",
           "country": "Unknown"
         },
         {
           "number": "34",
-          "name": "Issa Kallon",
+          "name": "卡隆",
           "country": "Unknown"
         },
         {
           "number": "36",
-          "name": "Ablahan Haliq",
+          "name": "阿布拉汗·哈力克",
           "country": "Unknown"
         },
         {
           "number": "43",
-          "name": "Wang Yiwei",
+          "name": "王逸伟",
           "country": "Unknown"
         },
         {
           "number": "47",
-          "name": "Zhao Shen'ao",
+          "name": "赵申澳",
           "country": "Unknown"
         },
         {
           "number": "68",
-          "name": "Yang Zihan",
+          "name": "杨子涵",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "31",
-          "name": "Xi Anjie",
+          "name": "奚安杰",
           "country": "Unknown"
         },
         {
           "number": "41",
-          "name": "Liang Kun",
+          "name": "梁锟",
           "country": "Unknown"
         },
         {
           "number": "42",
-          "name": "Xiang Rongjun",
+          "name": "向荣峻",
           "country": "Unknown"
         },
         {
           "number": "51",
-          "name": "Wang Yulong",
+          "name": "王玉龙",
           "country": "Unknown"
         },
         {
           "number": "52",
-          "name": "Tang Yuxuan",
+          "name": "汤宇璇",
           "country": "Unknown"
         },
         {
           "number": "55",
-          "name": "Wang Song",
+          "name": "王淞",
           "country": "Unknown"
         },
         {
           "number": "66",
-          "name": "Li Deming",
+          "name": "黎德明",
           "country": "Unknown"
         }
       ],
@@ -294,29 +291,20 @@
         {
           "minute": 51,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Xiang Rongjun",
-          "player2": "",
-          "player_out": "Wang Yiwei"
+          "player_out": "王逸伟",
+          "player_in": "向荣峻"
         },
         {
           "minute": 61,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Li Deming",
-          "player2": "",
-          "player_out": "Zhao Shen'ao"
+          "player_out": "赵申澳",
+          "player_in": "黎德明"
         },
         {
           "minute": 61,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "away",
-          "player": "Wang Song",
-          "player2": "",
-          "player_out": "Yang Zihan"
+          "player_out": "杨子涵",
+          "player_in": "王淞"
         }
       ]
     }
@@ -345,34 +333,34 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Xiang Rongjun",
+      "player": "向荣峻",
       "player2": "",
-      "player_out": "Wang Yiwei"
+      "player_out": "王逸伟"
     },
     {
       "minute": 61,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Li Deming",
+      "player": "黎德明",
       "player2": "",
-      "player_out": "Zhao Shen'ao"
+      "player_out": "赵申澳"
     },
     {
       "minute": 61,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "player": "Wang Song",
+      "player": "王淞",
       "player2": "",
-      "player_out": "Yang Zihan"
+      "player_out": "杨子涵"
     },
     {
       "minute": 62,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "Li Deming",
+      "player": "黎德明",
       "player2": "",
       "player_out": ""
     },
@@ -408,8 +396,8 @@
       "minute_extra": 2,
       "type": "goal",
       "team": "away",
-      "player": "Li Deming",
-      "player2": "Issa Kallon",
+      "player": "黎德明",
+      "player2": "卡隆",
       "player_out": "",
       "goal_type": "goal"
     }

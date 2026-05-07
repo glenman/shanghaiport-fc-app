@@ -4,148 +4,145 @@
     "date": "2022-11-04",
     "time": "17:30",
     "competition": {
-      "name": "Chinese Football Association Super League",
+      "name": "中国足球协会超级联赛",
       "season": "2022",
-      "round": "Matchweek 23"
+      "round": "第23轮"
     },
     "venue": {
-      "name": "Dalian Sports Center",
+      "name": "大连体育中心",
+      "city": "辽宁省大连市",
       "attendance": 0
     },
     "referee": {
-      "main": "Du Jianxin",
-      "ar1": "Guo Jingtao",
-      "ar2": "Tang Chao",
-      "fourth": "Zhen Wei",
-      "var": "Yi Huang",
+      "main": "杜健鑫(甘肃)",
       "country": "China"
     }
   },
   "teams": {
     "home": {
-      "name": "Shanghai Port",
-      "full_name": "",
+      "name": "上海海港",
+      "full_name": "上海海港足球俱乐部",
       "score": 2,
       "score_ht": 0,
       "formation": "(3-4-3)",
-      "coach": "Ivan Leko",
+      "coach": "伊万·莱科",
       "captain": "Lü Wenjun",
       "lineup": [
         {
           "number": "1",
-          "name": "Yan Junling",
+          "name": "颜骏凌",
           "country": "Unknown"
         },
         {
           "number": "2",
-          "name": "Li Ang",
+          "name": "李昂",
           "country": "Unknown"
         },
         {
           "number": "3",
-          "name": "Tyias Browning",
+          "name": "蒋光太",
           "country": "Unknown"
         },
         {
           "number": "6",
-          "name": "Cai Huikang",
+          "name": "蔡慧康",
           "country": "Unknown"
         },
         {
           "number": "7",
-          "name": "Wu Lei",
+          "name": "武磊",
           "country": "Unknown"
         },
         {
           "number": "9",
-          "name": "Paulinho",
+          "name": "保利尼奥",
           "country": "Unknown"
         },
         {
           "number": "11",
-          "name": "Lü Wenjun",
+          "name": "吕文君",
           "country": "Unknown"
         },
         {
           "number": "13",
-          "name": "Wei Zhen",
+          "name": "魏震",
           "country": "Unknown"
         },
         {
           "number": "24",
-          "name": "Matías Vargas",
+          "name": "马蒂亚斯·巴尔加斯",
           "country": "Unknown"
         },
         {
           "number": "26",
-          "name": "Chen Chunxin",
+          "name": "陈纯新",
           "country": "Unknown"
         },
         {
           "number": "34",
-          "name": "Issa Kallon",
+          "name": "卡隆",
           "country": "Unknown"
         }
       ],
       "substitutes": [
         {
           "number": "12",
-          "name": "Chen Wei",
+          "name": "陈威",
           "country": "Unknown"
         },
         {
           "number": "22",
-          "name": "Du Jia",
+          "name": "杜佳",
           "country": "Unknown"
         },
         {
           "number": "4",
-          "name": "Wang Shenchao",
+          "name": "王燊超",
           "country": "Unknown"
         },
         {
           "number": "10",
-          "name": "Cherif Ndiaye",
+          "name": "恩迪亚耶",
           "country": "Unknown"
         },
         {
           "number": "14",
-          "name": "Li Shenglong",
+          "name": "李圣龙",
           "country": "Unknown"
         },
         {
           "number": "15",
-          "name": "Li Shenyuan",
+          "name": "李申圆",
           "country": "Unknown"
         },
         {
           "number": "20",
-          "name": "Yang Shiyuan",
+          "name": "杨世元",
           "country": "Unknown"
         },
         {
           "number": "21",
-          "name": "Yu Hai",
+          "name": "于海",
           "country": "Unknown"
         },
         {
           "number": "25",
-          "name": "Mirahmetjan Muzepper",
+          "name": "买提江",
           "country": "Unknown"
         },
         {
           "number": "27",
-          "name": "Feng Jing",
+          "name": "冯劲",
           "country": "Unknown"
         },
         {
           "number": "29",
-          "name": "Zhang Huachen",
+          "name": "张华晨",
           "country": "Unknown"
         },
         {
           "number": "39",
-          "name": "Liu Baiyang",
+          "name": "刘柏杨",
           "country": "Unknown"
         }
       ],
@@ -153,57 +150,42 @@
         {
           "minute": 32,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Li Shenyuan",
-          "player2": "",
-          "player_out": "Wei Zhen"
+          "player_out": "魏震",
+          "player_in": "李申圆"
         },
         {
           "minute": 46,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Yu Hai",
-          "player2": "",
-          "player_out": "Li Ang"
+          "player_out": "李昂",
+          "player_in": "于海"
         },
         {
           "minute": 46,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Zhang Huachen",
-          "player2": "",
-          "player_out": "Chen Chunxin"
+          "player_out": "陈纯新",
+          "player_in": "张华晨"
         },
         {
           "minute": 65,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Wang Shenchao",
-          "player2": "",
-          "player_out": "Paulinho"
+          "player_out": "保利尼奥",
+          "player_in": "王燊超"
         },
         {
           "minute": 73,
           "minute_extra": 0,
-          "type": "substitution",
-          "team": "home",
-          "player": "Feng Jing",
-          "player2": "",
-          "player_out": "Issa Kallon"
+          "player_out": "卡隆",
+          "player_in": "冯劲"
         }
       ]
     },
     "away": {
-      "name": "Dalian Professional",
-      "full_name": "",
+      "name": "大连人",
+      "full_name": "大连人足球俱乐部",
       "score": 1,
       "score_ht": 0,
       "formation": "(4-3-3)",
-      "coach": "Xie Hui",
+      "coach": "谢晖",
       "captain": "Song Zhiwei",
       "lineup": [
         {
@@ -388,8 +370,8 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Wu Lei",
-      "player2": "Cai Huikang",
+      "player": "武磊",
+      "player2": "蔡慧康",
       "player_out": "",
       "goal_type": "goal"
     },
@@ -398,27 +380,27 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Li Shenyuan",
+      "player": "李申圆",
       "player2": "",
-      "player_out": "Wei Zhen"
+      "player_out": "魏震"
     },
     {
       "minute": 46,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Yu Hai",
+      "player": "于海",
       "player2": "",
-      "player_out": "Li Ang"
+      "player_out": "李昂"
     },
     {
       "minute": 46,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Zhang Huachen",
+      "player": "张华晨",
       "player2": "",
-      "player_out": "Chen Chunxin"
+      "player_out": "陈纯新"
     },
     {
       "minute": 49,
@@ -471,25 +453,25 @@
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Wang Shenchao",
+      "player": "王燊超",
       "player2": "",
-      "player_out": "Paulinho"
+      "player_out": "保利尼奥"
     },
     {
       "minute": 73,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
-      "player": "Feng Jing",
+      "player": "冯劲",
       "player2": "",
-      "player_out": "Issa Kallon"
+      "player_out": "卡隆"
     },
     {
       "minute": 79,
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "Feng Jing",
+      "player": "冯劲",
       "player2": "",
       "player_out": "",
       "goal_type": "goal"
