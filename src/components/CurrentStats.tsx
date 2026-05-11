@@ -119,7 +119,10 @@ const StatDetailModal: React.FC<ModalProps> = ({ isOpen, onClose, title, playerN
                   <span className="detail-round">{detail.match}</span>
                   <span className="detail-date">{detail.date}</span>
                   <span className="detail-opponent">vs {detail.opponent}</span>
-                  <span className="detail-time">{detail.time}</span>
+                  <span className="detail-time">
+                    {detail.time}
+                    {detail.type === '点球' && <span style={{ color: '#4ecdc4', fontWeight: 'bold', marginLeft: '4px' }}>(P)</span>}
+                  </span>
                 </div>
               ))}
             </div>

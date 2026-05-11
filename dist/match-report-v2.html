@@ -883,13 +883,16 @@
                 if (goal.goal_type === 'own_goal') {
                   ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
                   specialMark = ' <span style="color: #ff6b6b; font-weight: bold;">(OG)</span>';
-                } else if (goal.goal_type === 'penalty_goal') {
+                } else if (goal.goal_type === 'penalty_goal' || goal.goal_type === 'penalty') {
                   specialMark = ' <span style="color: #4ecdc4; font-weight: bold;">(P)</span>';
                 }
                 
                 // 兼容新格式和旧格式的字段名
                 const playerName = goal.player || goal.scorer;
                 const assistPlayer = goal.player2 || goal.assist;
+                
+                // 判断是助攻还是造点
+                const assistLabel = (goal.goal_type === 'penalty' || goal.goal_type === 'penalty_goal') ? '造点' : '助攻';
                 
                 html += `
                   <li style="padding: 0.3rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
@@ -900,7 +903,7 @@
                       </span>
                       <span style="color: rgba(255, 255, 255, 0.7); font-size: 0.8rem;">${timeDisplay}</span>
                     </div>
-                    ${assistPlayer ? `<div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); margin-left: 30px; margin-top: 0.2rem;">(助攻: ${assistPlayer})</div>` : ''}
+                    ${assistPlayer ? `<div style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); margin-left: 30px; margin-top: 0.2rem;">(${assistLabel}: ${assistPlayer})</div>` : ''}
                   </li>
                 `;
               });
@@ -990,18 +993,35 @@
               }).join('');
             }
 
-            function renderSubstitutes(subs) {
+            function renderSubstitutes(subs, matchTimeline) {
               if (!subs || subs.length === 0) return '';
+              
+              // 从 matchTimeline 中提取替补球员的黄牌信息
+              const getPlayerCards = (playerName) => {
+                let yellows = 0;
+                let reds = 0;
+                if (matchTimeline) {
+                  matchTimeline.forEach(event => {
+                    if (event.player === playerName) {
+                      if (event.type === 'yellow_card') yellows++;
+                      if (event.type === 'red_card') reds++;
+                    }
+                  });
+                }
+                return { yellows, reds };
+              };
+              
               return `
                 <div class="substitutes-section">
                   <h5>替补球员</h5>
                   <ul class="player-list">
                     ${subs.map(s => {
+                      const cards = getPlayerCards(s.name);
                       let stats = '';
                       if (s.goals > 0) stats += `<span class="goal">⚽${s.goals}</span>`;
                       if (s.assists > 0) stats += `<span class="assist">🅰️${s.assists}</span>`;
-                      if (s.yellowCards > 0) stats += `<span class="yellow">🟨${s.yellowCards}</span>`;
-                      if (s.redCards > 0) stats += `<span class="red">🟥${s.redCards}</span>`;
+                      if (s.yellowCards > 0 || cards.yellows > 0) stats += `<span class="yellow">🟨${s.yellowCards || cards.yellows}</span>`;
+                      if (s.redCards > 0 || cards.reds > 0) stats += `<span class="red">🟥${s.redCards || cards.reds}</span>`;
                       
                       return `
                         <li>
@@ -1059,7 +1079,7 @@
                     <ul class="player-list">
                       ${renderPlayerList(lineups.home.players)}
                     </ul>
-                    ${renderSubstitutes(lineups.home.substitutes)}
+                    ${renderSubstitutes(lineups.home.substitutes, data.matchTimeline)}
                     ${renderSubstitutionDetails(data.matchTimeline, 'home')}
                   </div>
                   <div class="lineup-team">
@@ -1071,7 +1091,7 @@
                     <ul class="player-list">
                       ${renderPlayerList(lineups.away.players)}
                     </ul>
-                    ${renderSubstitutes(lineups.away.substitutes)}
+                    ${renderSubstitutes(lineups.away.substitutes, data.matchTimeline)}
                     ${renderSubstitutionDetails(data.matchTimeline, 'away')}
                   </div>
                 </div>

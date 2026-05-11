@@ -1,0 +1,622 @@
+{
+  "match": {
+    "id": 11,
+    "round": "第11轮",
+    "date": "2026-05-10",
+    "time": "19:35",
+    "homeTeam": "北京国安",
+    "awayTeam": "上海海港",
+    "venue": "工人体育场",
+    "city": "北京",
+    "result": "2-2",
+    "status": "已结束",
+    "attendance": "43875",
+    "referee": "马宁",
+    "weather": "晴",
+    "competition": "中国足球协会超级联赛",
+    "matchweek": 11,
+    "season": "2026"
+  },
+  "matchDetails": {
+    "stadiumCapacity": "未知",
+    "pitchCondition": "未知",
+    "temperature": "未知",
+    "kickoffTime": "19:35",
+    "halftimeScore": "0-1",
+    "fulltimeScore": "2-2"
+  },
+  "officials": {
+    "referee": "马宁",
+    "assistantReferee1": "曹奕",
+    "assistantReferee2": "彭邓",
+    "fourthOfficial": "熊星",
+    "VAR": "黄翼"
+  },
+  "lineups": {
+    "home": {
+      "name": "北京国安",
+      "formation": "4-1-3-2",
+      "manager": "尼克·蒙哥马利",
+      "captain": "张稀哲",
+      "players": [
+        {
+          "number": 34,
+          "name": "侯森",
+          "position": "门将",
+          "nationality": "中国",
+          "age": "36-314",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 5,
+          "name": "吉列尔梅·拉莫斯",
+          "position": "后卫",
+          "nationality": "葡萄牙",
+          "age": "28-272",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 7,
+          "name": "塞尔吉尼奥",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "31-056",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 8,
+          "name": "布布·孔特",
+          "position": "中场",
+          "nationality": "马里",
+          "age": "25-069",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 9,
+          "name": "张玉宁",
+          "position": "前锋",
+          "nationality": "中国",
+          "age": "29-125",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "张稀哲",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "35-107",
+          "minutes": 89,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 21,
+          "name": "于子男",
+          "position": "后卫",
+          "nationality": "中国香港",
+          "age": "27-363",
+          "minutes": 62,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 23,
+          "name": "道汉",
+          "position": "中场",
+          "nationality": "巴西",
+          "age": "29-341",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 26,
+          "name": "白杨",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "28-065",
+          "minutes": 45,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 27,
+          "name": "王刚",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "37-082",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 29,
+          "name": "法比奥·阿布雷乌",
+          "position": "前锋",
+          "nationality": "安哥拉",
+          "age": "33-101",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 4,
+          "name": "李磊",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "33-345",
+          "substitutedAt": 46,
+          "substitutedFor": "白杨"
+        },
+        {
+          "number": 11,
+          "name": "林良铭",
+          "position": "前锋",
+          "nationality": "中国",
+          "age": "28-340",
+          "substitutedAt": 63,
+          "substitutedFor": "于子男"
+        },
+        {
+          "number": 6,
+          "name": "池忠国",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "36-196",
+          "substitutedAt": 90,
+          "substitutedFor": "张稀哲"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海海港",
+      "formation": "5-4-1",
+      "manager": "凯文·穆斯卡特",
+      "captain": "颜骏凌",
+      "players": [
+        {
+          "number": 1,
+          "name": "颜骏凌",
+          "position": "门将",
+          "nationality": "中国",
+          "age": "35-102",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 5,
+          "name": "张琳芃",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "37-001",
+          "minutes": 74,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 6,
+          "name": "张源",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "29-102",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "维塔尔",
+          "position": "中场",
+          "nationality": "巴西",
+          "age": "28-087",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 13,
+          "name": "魏震",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "29-087",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 22,
+          "name": "杨希",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "20-331",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 31,
+          "name": "鲍世蒙",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "22-312",
+          "minutes": 63,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 33,
+          "name": "刘祝润",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "24-216",
+          "minutes": 63,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 40,
+          "name": "吾米提江",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "22-071",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 45,
+          "name": "莱昂纳多",
+          "position": "前锋",
+          "nationality": "巴西",
+          "age": "28-347",
+          "minutes": 63,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 49,
+          "name": "李新翔",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "20-161",
+          "minutes": 80,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 3,
+          "name": "蒋光太",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "31-348",
+          "substitutedAt": 75,
+          "substitutedFor": "张琳芃"
+        },
+        {
+          "number": 7,
+          "name": "武磊",
+          "position": "前锋",
+          "nationality": "中国",
+          "age": "34-172",
+          "substitutedAt": 81,
+          "substitutedFor": "李新翔"
+        },
+        {
+          "number": 14,
+          "name": "让克劳德",
+          "position": "前锋",
+          "nationality": "中国香港",
+          "age": "29-129",
+          "substitutedAt": 64,
+          "substitutedFor": "莱奥"
+        },
+        {
+          "number": 19,
+          "name": "王振澳",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "26-273",
+          "substitutedAt": 64,
+          "substitutedFor": "鲍世蒙"
+        },
+        {
+          "number": 38,
+          "name": "卢永涛",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "26-118",
+          "substitutedAt": 64,
+          "substitutedFor": "刘祝润"
+        }
+      ]
+    }
+  },
+  "matchTimeline": [
+    {
+      "minute": 0,
+      "minute_extra": 0,
+      "type": "kick_off",
+      "team": "neutral",
+      "description": "比赛开始"
+    },
+    {
+      "minute": 32,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "莱昂纳多",
+      "description": "上海海港莱奥获得黄牌"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "维塔尔",
+      "player2": "李新翔",
+      "goal_type": "penalty",
+      "description": "上海海港1-0领先，马特乌斯·维塔尔点球破门"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 6,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "李新翔",
+      "description": "上海海港李新翔获得黄牌"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "李磊",
+      "playerOut": "白杨",
+      "description": "北京国安李磊替换白杨上场"
+    },
+    {
+      "minute": 49,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "法比奥·阿布雷乌",
+      "player2": "张玉宁",
+      "description": "北京国安1-1扳平比分，法比奥·阿布雷乌进球，张玉宁助攻"
+    },
+    {
+      "minute": 62,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "莱昂纳多",
+      "player2": "李新翔",
+      "description": "上海海港2-1领先，莱奥进球，李新翔助攻"
+    },
+    {
+      "minute": 63,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "林良铭",
+      "playerOut": "于子男",
+      "description": "北京国安林良铭替换于子男上场"
+    },
+    {
+      "minute": 64,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "王振澳",
+      "playerOut": "鲍世蒙",
+      "description": "上海海港王振澳替换鲍世蒙上场"
+    },
+    {
+      "minute": 64,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "卢永涛",
+      "playerOut": "刘祝润",
+      "description": "上海海港卢永涛替换刘祝润上场"
+    },
+    {
+      "minute": 64,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "让克劳德",
+      "playerOut": "莱昂纳多",
+      "description": "上海海港马修·奥尔替换莱奥上场"
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "张源",
+      "description": "上海海港张源获得黄牌"
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "蒋光太",
+      "playerOut": "张琳芃",
+      "description": "上海海港布朗宁替换张琳芃上场"
+    },
+    {
+      "minute": 77,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "王振澳",
+      "description": "上海海港王振澳获得黄牌"
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "武磊",
+      "playerOut": "李新翔",
+      "description": "上海海港武磊替换李新翔上场"
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "张稀哲",
+      "goal_type": "penalty",
+      "description": "北京国安2-2扳平比分，张稀哲点球破门"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 1,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "张稀哲",
+      "description": "北京国安张稀哲获得黄牌"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 14,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "池忠国",
+      "playerOut": "张稀哲",
+      "description": "北京国安池忠国替换张稀哲上场"
+    }
+  ],
+  "statistics": [
+    {
+      "name": "控球率",
+      "home": "64%",
+      "away": "36%"
+    },
+    {
+      "name": "射门",
+      "home": 15,
+      "away": 5
+    },
+    {
+      "name": "射正",
+      "home": 6,
+      "away": 2
+    },
+    {
+      "name": "角球",
+      "home": 8,
+      "away": 0
+    },
+    {
+      "name": "犯规",
+      "home": 9,
+      "away": 20
+    },
+    {
+      "name": "黄牌",
+      "home": 1,
+      "away": 4
+    },
+    {
+      "name": "红牌",
+      "home": 0,
+      "away": 0
+    }
+  ],
+  "summary": "2026赛季中超第11轮，北京国安在主场2-2战平上海海港。上海海港上半场由马特乌斯·维塔尔点球首开记录，下半场莱奥扩大比分，北京国安由法比奥·阿布雷乌和张稀哲的点球顽强扳平比分。",
+  "keyFactors": [
+    "北京国安控球率64%占据明显优势",
+    "上海海港进攻效率更高，5次射门2次射正打入2球",
+    "颜骏凌做出4次关键扑救力保球门",
+    "张稀哲点球破门帮助球队扳平比分",
+    "上海海港犯规次数多达20次，防守压力较大"
+  ],
+  "highlights": [
+    {
+      "minute": 45,
+      "description": "上海海港马特乌斯·维塔尔点球首开记录",
+      "type": "goal",
+      "team": "away"
+    },
+    {
+      "minute": 49,
+      "description": "北京国安法比奥·阿布雷乌扳平比分",
+      "type": "goal",
+      "team": "home"
+    },
+    {
+      "minute": 62,
+      "description": "上海海港莱奥再次领先",
+      "type": "goal",
+      "team": "away"
+    },
+    {
+      "minute": 86,
+      "description": "北京国安张稀哲点球再次扳平",
+      "type": "goal",
+      "team": "home"
+    }
+  ]
+}

@@ -37,14 +37,28 @@ def load_json_file(file_path):
 
 def is_first_team_match(home_team, away_team):
     """判断是否为一线队比赛"""
-    return TEAM_NAMES['first'] in [home_team, away_team]
+    # 先检查是否是B队，避免B队名称被误识别为一线队
+    b_team_names = [TEAM_NAMES['b_team'], '上海海港B队', '海港B队', 'Shanghai Port B']
+    for name in b_team_names:
+        if name in home_team or name in away_team:
+            return False
+    
+    first_team_names = [TEAM_NAMES['first'], '海港', 'Shanghai Port', '上海海港足球俱乐部']
+    teams = [home_team, away_team]
+    for team in teams:
+        for name in first_team_names:
+            if name in team or team in name:
+                return True
+    return False
 
 def is_b_team_match(home_team, away_team):
     """判断是否为B队比赛"""
-    b_team_names = [TEAM_NAMES['b_team'], '上海海港B队']
-    for name in b_team_names:
-        if name in [home_team, away_team]:
-            return True
+    b_team_names = [TEAM_NAMES['b_team'], '上海海港B队', '海港B队', 'Shanghai Port B']
+    teams = [home_team, away_team]
+    for team in teams:
+        for name in b_team_names:
+            if name in team or team in name:
+                return True
     return False
 
 def get_team_role(team_name, home_team, away_team):
@@ -96,7 +110,7 @@ def calculate_record(matches):
     points = wins * 3 + draws
     record = f"{wins}胜{draws}平{losses}负"
 
-    return record, points, goals_for, goals_against
+    return record, points, goals_for, goals_against, wins, draws, losses
 
 def process_matches(full_update=False, last_update_date=None):
     """处理比赛文件
@@ -113,12 +127,17 @@ def process_matches(full_update=False, last_update_date=None):
         if filename.endswith('.json') and not filename.startswith('current_stats') and not filename.startswith('players') and not filename.startswith('schedule'):
             file_path = os.path.join(data_dir, filename)
             
-            # 检查文件修改时间
+            # 检查文件名日期前缀（格式: YYYY-MM-DD-xxx.json）
             if not full_update and last_update_date:
-                file_mtime = os.path.getmtime(file_path)
-                file_modify_date = datetime.fromtimestamp(file_mtime).date()
-                if file_modify_date <= last_update_date:
-                    continue
+                # 从文件名提取日期
+                date_str = filename[:10]  # 提取前10个字符 (YYYY-MM-DD)
+                try:
+                    file_date = datetime.strptime(date_str, '%Y-%m-%d').date()
+                    if file_date <= last_update_date:
+                        continue
+                except ValueError:
+                    # 文件名格式不符合预期，跳过检查
+                    pass
             
             data = load_json_file(file_path)
 
@@ -180,7 +199,8 @@ def extract_statistics(matches, team_name, is_b_team=False):
     # 已统计的事件（用于去重）
     counted_events = {
         'yellowCards': set(),
-        'redCards': set()
+        'redCards': set(),
+        'goals': set()
     }
 
     for match in matches:
@@ -192,92 +212,100 @@ def extract_statistics(matches, team_name, is_b_team=False):
         match_date = match_info.get('date', '未知')
         match_time = match_info.get('time', '')
 
-        # 处理比赛亮点（进球和助攻）
-        if 'highlights' in data:
-            for highlight in data['highlights']:
-                if highlight.get('type') == 'goal' and highlight.get('team') == team_role:
-                    scorer = highlight.get('player', '')
-                    # B队使用assist字段，一线队使用player2字段
-                    if is_b_team:
-                        assist = highlight.get('assist', '')
-                    else:
-                        assist = highlight.get('player2', '')
-                    minute = highlight.get('minute', 0)
-                    minute_extra = highlight.get('minute_extra', 0)
-                    goal_type = highlight.get('goal_type', 'regular')
-
-                    # 处理名字简写
-                    name_mapping = {
-                        '克劳德': '让克劳德',
-                        '让·克劳德': '让克劳德',
-                        '维塔尔': '维塔尔'
-                    }
-                    if scorer in name_mapping:
-                        scorer = name_mapping[scorer]
-                    if assist in name_mapping:
-                        assist = name_mapping[assist]
-
-                    if scorer:
-                        if scorer not in player_stats:
-                            player_stats[scorer] = {
-                                'name': scorer,
-                                'number': 0,
-                                'position': '',
-                                'goals': 0,
-                                'assists': 0,
-                                'yellowCards': 0,
-                                'redCards': 0,
-                                'matches': 0,
-                                'minutes': 0
-                            }
-                        player_stats[scorer]['goals'] += 1
-                        if scorer not in details['goals']:
-                            details['goals'][scorer] = []
-                        details['goals'][scorer].append({
-                            'match': match_round,
-                            'date': match_date,
-                            'time': f"{minute}'" + (f"+{minute_extra}'" if minute_extra else ''),
-                            'opponent': opponent,
-                            'type': '乌龙球' if goal_type == 'own_goal' else '进球'
-                        })
-
-                    if assist:
-                        if assist not in player_stats:
-                            player_stats[assist] = {
-                                'name': assist,
-                                'number': 0,
-                                'position': '',
-                                'goals': 0,
-                                'assists': 0,
-                                'yellowCards': 0,
-                                'redCards': 0,
-                                'matches': 0,
-                                'minutes': 0
-                            }
-                        player_stats[assist]['assists'] += 1
-                        if assist not in details['assists']:
-                            details['assists'][assist] = []
-                        details['assists'][assist].append({
-                            'match': match_round,
-                            'date': match_date,
-                            'time': f"{minute}'",
-                            'opponent': opponent
-                        })
-
-        # 从 matchTimeline/highlights 中提取黄牌和红牌事件
-        events = data.get('matchTimeline', []) or data.get('highlights', [])
+        # 处理进球和助攻（只从 matchTimeline 中提取）
+        events = data.get('matchTimeline', [])
         for event in events:
-                event_type = event.get('type', '')
-                event_team = event.get('team', '')
+            event_type = event.get('type', '')
+            event_team = event.get('team', '')
 
-                # 判断是否是本方球队的事件
-                # team_role 表示上海海港在这场比赛中的角色（home或away）
-                # event_team 表示事件发生在哪一方（home或away）
-                # 如果两者相同，说明是上海海港的事件
-                if event_team != team_role:
+            # 判断是否是本方球队的事件
+            if event_team != team_role:
+                continue
+
+            if event_type == 'goal':
+                scorer = event.get('player', '')
+                # B队使用assist字段，一线队使用player2字段
+                if is_b_team:
+                    assist = event.get('assist', '')
+                else:
+                    assist = event.get('player2', '')
+                minute = event.get('minute', 0)
+                minute_extra = event.get('minute_extra', 0)
+                goal_type = event.get('goal_type', 'regular')
+
+                # 处理名字简写
+                name_mapping = {
+                    '克劳德': '让克劳德',
+                    '让·克劳德': '让克劳德',
+                    '维塔尔': '维塔尔'
+                }
+                if scorer in name_mapping:
+                    scorer = name_mapping[scorer]
+                if assist in name_mapping:
+                    assist = name_mapping[assist]
+
+                # 去重：创建唯一键
+                goal_key = f"{match_date}_{scorer}_{minute}_{minute_extra}"
+                if goal_key in counted_events['goals']:
                     continue
+                counted_events['goals'].add(goal_key)
 
-                if event_type == 'yellow_card':
+                if scorer:
+                    if scorer not in player_stats:
+                        player_stats[scorer] = {
+                            'name': scorer,
+                            'number': 0,
+                            'position': '',
+                            'goals': 0,
+                            'assists': 0,
+                            'yellowCards': 0,
+                            'redCards': 0,
+                            'matches': 0,
+                            'minutes': 0
+                        }
+                    player_stats[scorer]['goals'] += 1
+                    if scorer not in details['goals']:
+                        details['goals'][scorer] = []
+                    # 判断进球类型
+                    if goal_type == 'own_goal':
+                        goal_type_desc = '乌龙球'
+                    elif goal_type == 'penalty' or goal_type == 'penalty_goal':
+                        goal_type_desc = '点球'
+                    else:
+                        goal_type_desc = '进球'
+                    
+                    details['goals'][scorer].append({
+                        'match': match_round,
+                        'date': match_date,
+                        'time': f"{minute}'" + (f"+{minute_extra}'" if minute_extra else ''),
+                        'opponent': opponent,
+                        'type': goal_type_desc
+                    })
+
+                if assist:
+                    if assist not in player_stats:
+                        player_stats[assist] = {
+                            'name': assist,
+                            'number': 0,
+                            'position': '',
+                            'goals': 0,
+                            'assists': 0,
+                            'yellowCards': 0,
+                            'redCards': 0,
+                            'matches': 0,
+                            'minutes': 0
+                        }
+                    player_stats[assist]['assists'] += 1
+                    if assist not in details['assists']:
+                        details['assists'][assist] = []
+                    details['assists'][assist].append({
+                        'match': match_round,
+                        'date': match_date,
+                        'time': f"{minute}'",
+                        'opponent': opponent
+                    })
+
+            elif event_type == 'yellow_card':
                     player = event.get('player', '')
                     minute = event.get('minute', 0)
                     description = event.get('description', '')
@@ -320,7 +348,7 @@ def extract_statistics(matches, team_name, is_b_team=False):
                             'reason': description
                         })
 
-                elif event_type == 'red_card':
+            elif event_type == 'red_card':
                     player = event.get('player', '')
                     minute = event.get('minute', 0)
                     description = event.get('description', '')
@@ -489,6 +517,86 @@ def extract_statistics(matches, team_name, is_b_team=False):
 
     return top_scorers, top_assists, yellow_cards, red_cards
 
+def merge_player_stats(existing_stats, new_stats, detail_key):
+    """合并球员统计数据（去重）"""
+    merged = {}
+    
+    # 先加载已有的统计数据
+    for stat in existing_stats:
+        name = stat['name']
+        merged[name] = stat
+        # 为details创建一个集合用于去重
+        if 'details' in stat:
+            existing_details = stat.get('details', [])
+            detail_keys = set()
+            for detail in existing_details:
+                # 创建唯一键用于去重
+                key_parts = [str(detail.get('match', '')), str(detail.get('date', '')), 
+                            str(detail.get('time', '')), str(detail.get('opponent', ''))]
+                detail_keys.add('|'.join(key_parts))
+            stat['_detail_keys'] = detail_keys
+    
+    # 合并新数据
+    for stat in new_stats:
+        name = stat['name']
+        if name in merged:
+            # 累加数据
+            if 'goals' in stat:
+                merged[name]['goals'] = merged[name].get('goals', 0) + stat.get('goals', 0)
+            if 'assists' in stat:
+                merged[name]['assists'] = merged[name].get('assists', 0) + stat.get('assists', 0)
+            if 'yellowCards' in stat:
+                merged[name]['yellowCards'] = merged[name].get('yellowCards', 0) + stat.get('yellowCards', 0)
+            if 'redCards' in stat:
+                merged[name]['redCards'] = merged[name].get('redCards', 0) + stat.get('redCards', 0)
+            # 合并详细信息（去重）
+            if 'details' in stat:
+                existing_details = merged[name].get('details', [])
+                detail_keys = merged[name].get('_detail_keys', set())
+                
+                for new_detail in stat.get('details', []):
+                    key_parts = [str(new_detail.get('match', '')), str(new_detail.get('date', '')), 
+                                str(new_detail.get('time', '')), str(new_detail.get('opponent', ''))]
+                    new_key = '|'.join(key_parts)
+                    
+                    if new_key not in detail_keys:
+                        existing_details.append(new_detail)
+                        detail_keys.add(new_key)
+                
+                merged[name]['details'] = existing_details
+                # 更新统计数量为实际去重后的数量
+                if 'goals' in merged[name]:
+                    merged[name]['goals'] = len([d for d in existing_details if 'type' in d and d['type'] == '进球'])
+                elif 'assists' in merged[name]:
+                    merged[name]['assists'] = len(existing_details)
+                elif 'yellowCards' in merged[name]:
+                    merged[name]['yellowCards'] = len(existing_details)
+                elif 'redCards' in merged[name]:
+                    merged[name]['redCards'] = len(existing_details)
+        else:
+            merged[name] = stat
+    
+    # 移除临时的去重键
+    for name in merged:
+        merged[name].pop('_detail_keys', None)
+    
+    # 转换为列表并排序
+    result = list(merged.values())
+    if result and 'goals' in result[0]:
+        result.sort(key=lambda x: x.get('goals', 0), reverse=True)
+    elif result and 'assists' in result[0]:
+        result.sort(key=lambda x: x.get('assists', 0), reverse=True)
+    elif result and 'yellowCards' in result[0]:
+        result.sort(key=lambda x: x.get('yellowCards', 0), reverse=True)
+    elif result and 'redCards' in result[0]:
+        result.sort(key=lambda x: x.get('redCards', 0), reverse=True)
+    
+    # 更新排名
+    for i, item in enumerate(result, 1):
+        item['rank'] = i
+    
+    return result
+
 def main():
     """主函数"""
     # 解析命令行参数
@@ -499,8 +607,9 @@ def main():
     
     print("开始统计当季数据...")
     
-    # 检查是否存在current_stats.json文件，获取上次更新时间
+    # 检查是否存在current_stats.json文件，获取上次更新时间和原有数据
     last_update_date = None
+    existing_data = None
     if not args.full and os.path.exists(output_file):
         existing_data = load_json_file(output_file)
         if existing_data and 'lastUpdated' in existing_data:
@@ -511,6 +620,7 @@ def main():
             except ValueError:
                 print("无法解析上次更新时间，将进行全部重新抓取")
                 last_update_date = None
+                existing_data = None
     
     # 处理比赛文件
     first_team_matches, b_team_matches = process_matches(full_update=args.full or not args.incremental, last_update_date=last_update_date)
@@ -526,13 +636,94 @@ def main():
         return
 
     # 统计一线队数据
-    first_team_record, first_team_points, first_team_goals_for, first_team_goals_against = calculate_record(first_team_matches)
+    first_team_record, first_team_points, first_team_goals_for, first_team_goals_against, _, _, _ = calculate_record(first_team_matches)
     first_team_scorers, first_team_assists, first_team_yellow, first_team_red = extract_statistics(first_team_matches, TEAM_NAMES['first'], is_b_team=False)
 
     # 统计B队数据
-    b_team_record, b_team_points, b_team_goals_for, b_team_goals_against = calculate_record(b_team_matches)
+    b_team_record, b_team_points, b_team_goals_for, b_team_goals_against, _, _, _ = calculate_record(b_team_matches)
     b_team_scorers, b_team_assists, b_team_yellow, b_team_red = extract_statistics(b_team_matches, TEAM_NAMES['b_team'], is_b_team=True)
 
+    # 初始化比赛场数变量
+    first_team_played = 0
+    b_team_played = 0
+    
+    # 如果是增量更新且有原有数据，合并统计结果
+    if args.incremental and existing_data:
+        print("执行增量更新，合并原有数据...")
+        
+        # 合并一线队数据
+        first_team_scorers = merge_player_stats(existing_data['firstTeam'].get('topScorers', []), first_team_scorers, 'goals')
+        first_team_assists = merge_player_stats(existing_data['firstTeam'].get('topAssists', []), first_team_assists, 'assists')
+        first_team_yellow = merge_player_stats(existing_data['firstTeam'].get('yellowCards', []), first_team_yellow, 'yellowCards')
+        first_team_red = merge_player_stats(existing_data['firstTeam'].get('redCards', []), first_team_red, 'redCards')
+        
+        # 合并B队数据
+        b_team_scorers = merge_player_stats(existing_data['bTeam'].get('topScorers', []), b_team_scorers, 'goals')
+        b_team_assists = merge_player_stats(existing_data['bTeam'].get('topAssists', []), b_team_assists, 'assists')
+        b_team_yellow = merge_player_stats(existing_data['bTeam'].get('yellowCards', []), b_team_yellow, 'yellowCards')
+        b_team_red = merge_player_stats(existing_data['bTeam'].get('redCards', []), b_team_red, 'redCards')
+        
+        # 累加比赛统计 - 合并原有数据和新数据
+        # 一线队
+        existing_first_played = existing_data['firstTeam'].get('matchesPlayed', 0)
+        existing_first_goals_for = existing_data['firstTeam'].get('goalsFor', 0)
+        existing_first_goals_against = existing_data['firstTeam'].get('goalsAgainst', 0)
+        existing_first_points = existing_data['firstTeam'].get('points', 0)
+        
+        total_first_played = existing_first_played + len(first_team_matches)
+        total_first_goals_for = existing_first_goals_for + first_team_goals_for
+        total_first_goals_against = existing_first_goals_against + first_team_goals_against
+        total_first_points = existing_first_points + first_team_points
+        
+        # 从原有record解析胜负平
+        existing_record = existing_data['firstTeam'].get('record', '0胜0平0负')
+        parts = existing_record.replace('胜', ',').replace('平', ',').replace('负', ',').split(',')
+        existing_wins, existing_draws, existing_losses = int(parts[0]), int(parts[1]), int(parts[2])
+        
+        # 获取新比赛的胜负平
+        _, _, _, _, new_wins, new_draws, new_losses = calculate_record(first_team_matches)
+        
+        total_first_wins = existing_wins + new_wins
+        total_first_draws = existing_draws + new_draws
+        total_first_losses = existing_losses + new_losses
+        first_team_record = f"{total_first_wins}胜{total_first_draws}平{total_first_losses}负"
+        first_team_points = total_first_points
+        first_team_goals_for = total_first_goals_for
+        first_team_goals_against = total_first_goals_against
+        first_team_played = total_first_played
+        
+        # B队
+        existing_b_played = existing_data['bTeam'].get('matchesPlayed', 0)
+        existing_b_goals_for = existing_data['bTeam'].get('goalsFor', 0)
+        existing_b_goals_against = existing_data['bTeam'].get('goalsAgainst', 0)
+        existing_b_points = existing_data['bTeam'].get('points', 0)
+        
+        total_b_played = existing_b_played + len(b_team_matches)
+        total_b_goals_for = existing_b_goals_for + b_team_goals_for
+        total_b_goals_against = existing_b_goals_against + b_team_goals_against
+        total_b_points = existing_b_points + b_team_points
+        
+        # 从原有record解析胜负平
+        existing_b_record = existing_data['bTeam'].get('record', '0胜0平0负')
+        parts = existing_b_record.replace('胜', ',').replace('平', ',').replace('负', ',').split(',')
+        existing_b_wins, existing_b_draws, existing_b_losses = int(parts[0]), int(parts[1]), int(parts[2])
+        
+        # 获取新比赛的胜负平
+        _, _, _, _, new_b_wins, new_b_draws, new_b_losses = calculate_record(b_team_matches)
+        
+        total_b_wins = existing_b_wins + new_b_wins
+        total_b_draws = existing_b_draws + new_b_draws
+        total_b_losses = existing_b_losses + new_b_losses
+        b_team_record = f"{total_b_wins}胜{total_b_draws}平{total_b_losses}负"
+        b_team_points = total_b_points
+        b_team_goals_for = total_b_goals_for
+        b_team_goals_against = total_b_goals_against
+        b_team_played = total_b_played
+
+    # 确定比赛场数（增量更新时使用合并后的场数）
+    first_team_played_total = first_team_played if (args.incremental and existing_data) else len(first_team_matches)
+    b_team_played_total = b_team_played if (args.incremental and existing_data) else len(b_team_matches)
+    
     # 生成统计结果
     stats_data = {
         'lastUpdated': datetime.now().strftime('%Y-%m-%d'),
@@ -540,7 +731,7 @@ def main():
         'firstTeam': {
             'teamName': TEAM_NAMES['first'],
             'competition': COMPETITIONS['中超'],
-            'matchesPlayed': len(first_team_matches),
+            'matchesPlayed': first_team_played_total,
             'record': first_team_record,
             'goalsFor': first_team_goals_for,
             'goalsAgainst': first_team_goals_against,
@@ -553,7 +744,7 @@ def main():
         'bTeam': {
             'teamName': TEAM_NAMES['b_team'],
             'competition': COMPETITIONS['中乙'],
-            'matchesPlayed': len(b_team_matches),
+            'matchesPlayed': b_team_played_total,
             'record': b_team_record,
             'goalsFor': b_team_goals_for,
             'goalsAgainst': b_team_goals_against,
