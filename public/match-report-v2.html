@@ -799,7 +799,7 @@
           } else {
             const processedType = type.replace('联赛', '');
             const fileName = `${date}-${processedType}-${round}.json`;
-            const filePath = `data/${fileName}`;
+            const filePath = `data/team-a/${fileName}`;
 
             console.log('文件路径:', filePath);
 
@@ -1148,6 +1148,11 @@
                     `).join('')}
                   </tbody>
                 </table>
+                <div style="margin-top: 1rem; text-align: center;">
+                  <a href="match-overview-stats.html?date=${params.date}&type=${params.type}&round=${params.round}" class="back-link">
+                    📈 详细数据分析
+                  </a>
+                </div>
               </div>
             `;
           }

@@ -593,9 +593,9 @@
                 const fileName = `${date}-${processedType}-${round}.json`;
                 filePath = `data/history/${year}/${fileName}`;
               } else {
-                // 当前赛季，从data目录读取
+                // 当前赛季B队比赛，从team-b目录读取
                 const fileName = `${date}-${processedType}-${round}.json`;
-                filePath = `data/${fileName}`;
+                filePath = `data/team-b/${fileName}`;
               }
 
               console.log('文件路径:', filePath);

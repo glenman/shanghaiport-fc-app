@@ -12,6 +12,8 @@ from datetime import datetime
 
 # 数据文件路径
 data_dir = 'public/data'
+team_a_dir = 'public/data/team-a'
+team_b_dir = 'public/data/team-b'
 output_file = 'public/data/current_stats.json'
 
 # 球队名称映射
@@ -122,59 +124,66 @@ def process_matches(full_update=False, last_update_date=None):
     first_team_matches = []
     b_team_matches = []
 
-    # 遍历所有JSON文件
-    for filename in os.listdir(data_dir):
-        if filename.endswith('.json') and not filename.startswith('current_stats') and not filename.startswith('players') and not filename.startswith('schedule'):
-            file_path = os.path.join(data_dir, filename)
+    # 定义所有需要遍历的目录
+    data_dirs = [data_dir, team_a_dir, team_b_dir]
+
+    # 遍历所有目录中的JSON文件
+    for current_dir in data_dirs:
+        if not os.path.exists(current_dir):
+            continue
             
-            # 检查文件名日期前缀（格式: YYYY-MM-DD-xxx.json）
-            if not full_update and last_update_date:
-                # 从文件名提取日期
-                date_str = filename[:10]  # 提取前10个字符 (YYYY-MM-DD)
-                try:
-                    file_date = datetime.strptime(date_str, '%Y-%m-%d').date()
-                    if file_date <= last_update_date:
-                        continue
-                except ValueError:
-                    # 文件名格式不符合预期，跳过检查
-                    pass
-            
-            data = load_json_file(file_path)
+        for filename in os.listdir(current_dir):
+            if filename.endswith('.json') and not filename.startswith('current_stats') and not filename.startswith('players') and not filename.startswith('schedule') and not filename.startswith('history'):
+                file_path = os.path.join(current_dir, filename)
+                
+                # 检查文件名日期前缀（格式: YYYY-MM-DD-xxx.json）
+                if not full_update and last_update_date:
+                    # 从文件名提取日期
+                    date_str = filename[:10]  # 提取前10个字符 (YYYY-MM-DD)
+                    try:
+                        file_date = datetime.strptime(date_str, '%Y-%m-%d').date()
+                        if file_date <= last_update_date:
+                            continue
+                    except ValueError:
+                        # 文件名格式不符合预期，跳过检查
+                        pass
+                
+                data = load_json_file(file_path)
 
-            if data and 'match' in data:
-                match_info = data['match']
-                home_team = match_info.get('homeTeam', '')
-                away_team = match_info.get('awayTeam', '')
-                result = match_info.get('result', '')
-                status = match_info.get('status', '')
+                if data and 'match' in data:
+                    match_info = data['match']
+                    home_team = match_info.get('homeTeam', '')
+                    away_team = match_info.get('awayTeam', '')
+                    result = match_info.get('result', '')
+                    status = match_info.get('status', '')
 
-                # 只处理已结束的比赛
-                if status == '已结束' and result and '-' in result:
-                    # 检查是否为一线队比赛
-                    if is_first_team_match(home_team, away_team):
-                        team_role = get_team_role(TEAM_NAMES['first'], home_team, away_team)
-                        if team_role:
-                            first_team_matches.append({
-                                'file': filename,
-                                'home_team': home_team,
-                                'away_team': away_team,
-                                'result': result,
-                                'team_role': team_role,
-                                'data': data
-                            })
+                    # 只处理已结束的比赛
+                    if status == '已结束' and result and '-' in result:
+                        # 检查是否为一线队比赛
+                        if is_first_team_match(home_team, away_team):
+                            team_role = get_team_role(TEAM_NAMES['first'], home_team, away_team)
+                            if team_role:
+                                first_team_matches.append({
+                                    'file': filename,
+                                    'home_team': home_team,
+                                    'away_team': away_team,
+                                    'result': result,
+                                    'team_role': team_role,
+                                    'data': data
+                                })
 
-                    # 检查是否为B队比赛
-                    elif is_b_team_match(home_team, away_team):
-                        team_role = get_team_role(TEAM_NAMES['b_team'], home_team, away_team)
-                        if team_role:
-                            b_team_matches.append({
-                                'file': filename,
-                                'home_team': home_team,
-                                'away_team': away_team,
-                                'result': result,
-                                'team_role': team_role,
-                                'data': data
-                            })
+                        # 检查是否为B队比赛
+                        elif is_b_team_match(home_team, away_team):
+                            team_role = get_team_role(TEAM_NAMES['b_team'], home_team, away_team)
+                            if team_role:
+                                b_team_matches.append({
+                                    'file': filename,
+                                    'home_team': home_team,
+                                    'away_team': away_team,
+                                    'result': result,
+                                    'team_role': team_role,
+                                    'data': data
+                                })
 
     return first_team_matches, b_team_matches
 

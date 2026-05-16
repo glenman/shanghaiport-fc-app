@@ -107,8 +107,8 @@ This skill automates the process of updating match results for Shanghai Port FC 
 | 莱昂纳多·席尔瓦 | 莱昂纳多 |
 | 布朗宁 | 蒋光太 |
 | Tyias Browning | 蒋光太 |
-| 马修·奥尔 | 让克劳德 |
-| Matthew Orr | 让克劳德 |
+| 马修·奥尔 | 安永佳 |
+| Matthew Orr | 安永佳 |
 | 乌米提江·玉素甫 | 吾米提江 |
 | 乌米提江 | 吾米提江 |
 
