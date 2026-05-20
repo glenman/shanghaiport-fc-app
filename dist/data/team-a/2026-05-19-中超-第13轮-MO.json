@@ -1,0 +1,202 @@
+{
+  "match_overview": {
+    "competition": "中国足球协会超级联赛",
+    "round": "第13轮",
+    "matchweek": 13,
+    "date": "19/05/2026",
+    "time": "20:00",
+    "status": "Finished",
+    "home_team": "成都蓉城",
+    "away_team": "上海海港",
+    "score": "0 - 1"
+
+  },
+  "statistics": {
+    "possession": {
+      "home": "56%",
+      "away": "44%"
+    },
+    "expected_goals": {
+      "home": "0.95",
+      "away": "0.27"
+    },
+    "big_chances": {
+      "home": 2,
+      "away": 1
+    },
+    "shots": {
+      "total": {
+        "home": 18,
+        "away": 3
+      },
+      "on_target": {
+        "home": 6,
+        "away": 1
+      },
+      "off_target": {
+        "home": 6,
+        "away": 1
+      },
+      "blocked": {
+        "home": 6,
+        "away": 1
+      },
+      "woodwork": {
+        "home": 0,
+        "away": 0
+      },
+      "inside_box": {
+        "home": 9,
+        "away": 2
+      },
+      "outside_box": {
+        "home": 9,
+        "away": 1
+      }
+    },
+    "goalkeeping": {
+      "saves": {
+        "home": 0,
+        "away": 6
+      },
+      "high_claims": {
+        "home": 1,
+        "away": 3
+      },
+      "punches": {
+        "home": 0,
+        "away": 2
+      },
+      "goal_kicks": {
+        "home": 6,
+        "away": 10
+      }
+    },
+    "set_pieces": {
+      "corners": {
+        "home": 6,
+        "away": 2
+      },
+      "fouls": {
+        "home": 8,
+        "away": 21
+      },
+      "free_kicks": {
+        "home": 21,
+        "away": 8
+      },
+      "offsides": {
+        "home": 2,
+        "away": 2
+      },
+      "yellow_cards": {
+        "home": 3,
+        "away": 9
+      },
+      "red_cards": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    "passing": {
+      "total_passes": {
+        "home": 404,
+        "away": 331
+      },
+      "accurate_passes": {
+        "home": 316,
+        "away": 246
+      },
+      "pass_accuracy": {
+        "home": "78%",
+        "away": "74%"
+      },
+      "final_third_passes": {
+        "home": "78/127 (61%)",
+        "away": "68/104 (65%)"
+      },
+      "long_balls": {
+        "home": "33/66 (50%)",
+        "away": "19/53 (36%)"
+      },
+      "crosses": {
+        "home": "6/30 (20%)",
+        "away": "3/9 (33%)"
+      }
+    },
+    "defensive": {
+      "tackles": {
+        "home": 12,
+        "away": 22
+      },
+      "tackles_won": {
+        "home": "75%",
+        "away": "59%"
+      },
+      "interceptions": {
+        "home": 13,
+        "away": 7
+      },
+      "recoveries": {
+        "home": 42,
+        "away": 54
+      },
+      "clearances": {
+        "home": 13,
+        "away": 66
+      }
+    },
+    "attacking": {
+      "big_chances_scored": {
+        "home": 0,
+        "away": 1
+      },
+      "big_chances_missed": {
+        "home": 2,
+        "away": 0
+      },
+      "through_balls": {
+        "home": 2,
+        "away": 0
+      },
+      "touches_in_opposition_box": {
+        "home": 34,
+        "away": 15
+      },
+      "fouled_in_final_third": {
+        "home": 9,
+        "away": 0
+      },
+      "throw_ins": {
+        "home": 35,
+        "away": 16
+      },
+      "final_third_entries": {
+        "home": 53,
+        "away": 46
+      }
+    },
+    "duels": {
+      "total_duels": {
+        "home": "54%",
+        "away": "46%"
+      },
+      "ground_duels": {
+        "home": "40/70 (57%)",
+        "away": "30/70 (43%)"
+      },
+      "aerial_duels": {
+        "home": "19/39 (49%)",
+        "away": "20/39 (51%)"
+      },
+      "dribbles": {
+        "home": "7/18 (39%)",
+        "away": "1/9 (11%)"
+      },
+      "dispossessed": {
+        "home": 11,
+        "away": 4
+      }
+    }
+  }
+}

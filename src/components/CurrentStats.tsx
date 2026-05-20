@@ -237,43 +237,65 @@ const CurrentStats: React.FC = () => {
     stats: PlayerStat[],
     statKey: 'goals' | 'assists' | 'yellowCards' | 'redCards',
     icon: string
-  ) => (
-    <div className="stats-section">
-      <h3>{icon} {title}</h3>
-      <table className="stats-table">
-        <thead>
-          <tr>
-            <th>排名</th>
-            <th>球员</th>
-            <th>号码</th>
-            <th>{title.replace('榜', '')}</th>
-          </tr>
-        </thead>
-        <tbody>
-          {stats.length > 0 ? (
-            stats.map((stat) => (
-              <tr key={`${stat.name}-${stat.rank}`}>
-                <td>{stat.rank}</td>
-                <td>{stat.name}</td>
-                <td>{stat.number}</td>
-                <td
-                  className="stat-clickable"
-                  onClick={(e) => openModal(stat.name, stat.number, statKey, stat.details || [], title, e)}
-                  title="点击查看详细"
-                >
-                  {stat[statKey]}
-                </td>
-              </tr>
-            ))
-          ) : (
+  ) => {
+    const sortedStats = [...stats].sort((a, b) => {
+      const aValue = a[statKey] as number;
+      const bValue = b[statKey] as number;
+      if (bValue !== aValue) {
+        return bValue - aValue;
+      }
+      return a.name.localeCompare(b.name, 'zh-CN');
+    });
+
+    let currentRank = 0;
+    let currentValue = -1;
+    const statsWithRanks = sortedStats.map((stat, index) => {
+      const statValue = stat[statKey] as number;
+      if (statValue !== currentValue) {
+        currentRank = index + 1;
+        currentValue = statValue;
+      }
+      return { ...stat, calculatedRank: currentRank };
+    });
+
+    return (
+      <div className="stats-section">
+        <h3>{icon} {title}</h3>
+        <table className="stats-table">
+          <thead>
             <tr>
-              <td colSpan={4} style={{ textAlign: 'center', color: '#888' }}>暂无数据</td>
+              <th>排名</th>
+              <th>球员</th>
+              <th>号码</th>
+              <th>{title.replace('榜', '')}</th>
             </tr>
-          )}
-        </tbody>
-      </table>
-    </div>
-  );
+          </thead>
+          <tbody>
+            {statsWithRanks.length > 0 ? (
+              statsWithRanks.map((stat) => (
+                <tr key={`${stat.name}-${stat.calculatedRank}`}>
+                  <td>{stat.calculatedRank}</td>
+                  <td>{stat.name}</td>
+                  <td>{stat.number}</td>
+                  <td
+                    className="stat-clickable"
+                    onClick={(e) => openModal(stat.name, stat.number, statKey, stat.details || [], title, e)}
+                    title="点击查看详细"
+                  >
+                    {stat[statKey]}
+                  </td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan={4} style={{ textAlign: 'center', color: '#888' }}>暂无数据</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+    );
+  };
 
   return (
     <div className="card">
