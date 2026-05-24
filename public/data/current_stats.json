@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2026-05-19",
+  "lastUpdated": "2026-05-24",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
     "competition": "中国足球协会超级联赛",
-    "matchesPlayed": 13,
-    "record": "4胜4平5负",
-    "goalsFor": 20,
-    "goalsAgainst": 17,
-    "points": 16,
+    "matchesPlayed": 14,
+    "record": "4胜5平5负",
+    "goalsFor": 21,
+    "goalsAgainst": 18,
+    "points": 17,
     "topScorers": [
       {
         "rank": 1,
         "name": "莱昂纳多",
         "number": 45,
-        "goals": 3,
+        "goals": 4,
         "details": [
           {
             "match": "第2轮",
@@ -35,6 +35,13 @@
             "date": "2026-05-10",
             "time": "62'",
             "opponent": "北京国安",
+            "type": "进球"
+          },
+          {
+            "match": "第14轮",
+            "date": "2026-05-23",
+            "time": "52'",
+            "opponent": "天津津门虎",
             "type": "进球"
           }
         ]
@@ -62,103 +69,7 @@
         ]
       },
       {
-        "rank": 2,
-        "name": "刘祝润",
-        "number": 33,
-        "goals": 2,
-        "details": [
-          {
-            "match": "第8轮",
-            "date": "2026-04-25",
-            "time": "77'",
-            "opponent": "武汉三镇",
-            "type": "进球"
-          },
-          {
-            "match": "第10轮",
-            "date": "2026-05-06",
-            "time": "86'",
-            "opponent": "深圳鹏城",
-            "type": "进球"
-          }
-        ]
-      },
-      {
-        "rank": 2,
-        "name": "武磊",
-        "number": 7,
-        "goals": 2,
-        "details": [
-          {
-            "match": "第2轮",
-            "date": "2026-03-15",
-            "time": "70'",
-            "opponent": "青岛西海岸",
-            "type": "进球"
-          },
-          {
-            "match": "第2轮",
-            "date": "2026-03-15",
-            "time": "78'",
-            "opponent": "青岛西海岸",
-            "type": "进球"
-          }
-        ]
-      },
-      {
-        "rank": 2,
-        "name": "李新翔",
-        "number": 49,
-        "goals": 2,
-        "details": [
-          {
-            "match": "第7轮",
-            "date": "2026-04-21",
-            "time": "57'",
-            "opponent": "重庆铜梁龙",
-            "type": "进球"
-          },
-          {
-            "match": "第13轮",
-            "date": "2026-05-19",
-            "time": "70'",
-            "opponent": "成都蓉城",
-            "type": "进球"
-          }
-        ]
-      },
-      {
-        "rank": 6,
-        "name": "加布里埃尔",
-        "number": 11,
-        "goals": 1,
-        "details": [
-          {
-            "match": "第1轮",
-            "date": "2026-03-07",
-            "time": "45'+4'",
-            "opponent": "河南队",
-            "type": "进球"
-          }
-        ]
-      },
-      {
-        "rank": 6,
-        "name": "让克劳德",
-        "number": 14,
-        "goals": 1,
-        "details": [
-          {
-            "match": "第2轮",
-            "date": "2026-03-15",
-            "time": "47'",
-            "opponent": "青岛西海岸",
-            "type": "进球"
-          }
-        ]
-      },
-      {
-        "rank": 6,
+        "rank": 3,
         "name": "维塔尔",
         "number": 10,
         "goals": 2,
@@ -180,7 +91,103 @@
         ]
       },
       {
+        "rank": 4,
+        "name": "刘祝润",
+        "number": 33,
+        "goals": 2,
+        "details": [
+          {
+            "match": "第8轮",
+            "date": "2026-04-25",
+            "time": "77'",
+            "opponent": "武汉三镇",
+            "type": "进球"
+          },
+          {
+            "match": "第10轮",
+            "date": "2026-05-06",
+            "time": "86'",
+            "opponent": "深圳鹏城",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "name": "武磊",
+        "number": 7,
+        "goals": 2,
+        "details": [
+          {
+            "match": "第2轮",
+            "date": "2026-03-15",
+            "time": "70'",
+            "opponent": "青岛西海岸",
+            "type": "进球"
+          },
+          {
+            "match": "第2轮",
+            "date": "2026-03-15",
+            "time": "78'",
+            "opponent": "青岛西海岸",
+            "type": "进球"
+          }
+        ]
+      },
+      {
         "rank": 6,
+        "name": "李新翔",
+        "number": 49,
+        "goals": 2,
+        "details": [
+          {
+            "match": "第7轮",
+            "date": "2026-04-21",
+            "time": "57'",
+            "opponent": "重庆铜梁龙",
+            "type": "进球"
+          },
+          {
+            "match": "第13轮",
+            "date": "2026-05-19",
+            "time": "70'",
+            "opponent": "成都蓉城",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "name": "加布里埃尔",
+        "number": 11,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第1轮",
+            "date": "2026-03-07",
+            "time": "45'+4'",
+            "opponent": "河南队",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "name": "让克劳德",
+        "number": 14,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第2轮",
+            "date": "2026-03-15",
+            "time": "47'",
+            "opponent": "青岛西海岸",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 9,
         "name": "魏震",
         "number": 13,
         "goals": 1,
@@ -195,7 +202,7 @@
         ]
       },
       {
-        "rank": 6,
+        "rank": 10,
         "name": "安佩姆",
         "number": 17,
         "goals": 1,
@@ -210,7 +217,7 @@
         ]
       },
       {
-        "rank": 6,
+        "rank": 11,
         "name": "王燊超",
         "number": 4,
         "goals": 1,
@@ -225,22 +232,7 @@
         ]
       },
       {
-        "rank": 6,
-        "name": "蒋光太",
-        "number": 3,
-        "goals": 1,
-        "details": [
-          {
-            "match": "第8轮",
-            "date": "2026-04-25",
-            "time": "58'",
-            "opponent": "武汉三镇",
-            "type": "进球"
-          }
-        ]
-      },
-      {
-        "rank": 6,
+        "rank": 12,
         "name": "张源",
         "number": 6,
         "goals": 1,
@@ -250,6 +242,21 @@
             "date": "2026-05-15",
             "time": "81'",
             "opponent": "浙江队",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 13,
+        "name": "蒋光太",
+        "number": 3,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第8轮",
+            "date": "2026-04-25",
+            "time": "58'",
+            "opponent": "武汉三镇",
             "type": "进球"
           }
         ]
@@ -284,6 +291,32 @@
       },
       {
         "rank": 2,
+        "name": "李新翔",
+        "number": 49,
+        "assists": 3,
+        "details": [
+          {
+            "match": "第11轮",
+            "date": "2026-05-10",
+            "time": "45'",
+            "opponent": "北京国安"
+          },
+          {
+            "match": "第11轮",
+            "date": "2026-05-10",
+            "time": "62'",
+            "opponent": "北京国安"
+          },
+          {
+            "match": "第14轮",
+            "date": "2026-05-23",
+            "time": "52'",
+            "opponent": "天津津门虎"
+          }
+        ]
+      },
+      {
+        "rank": 3,
         "name": "加布里埃尔",
         "number": 11,
         "assists": 2,
@@ -303,7 +336,7 @@
         ]
       },
       {
-        "rank": 3,
+        "rank": 4,
         "name": "维塔尔",
         "number": 10,
         "assists": 2,
@@ -323,7 +356,7 @@
         ]
       },
       {
-        "rank": 4,
+        "rank": 5,
         "name": "李帅",
         "number": 32,
         "assists": 2,
@@ -343,7 +376,7 @@
         ]
       },
       {
-        "rank": 5,
+        "rank": 6,
         "name": "杨希",
         "number": 22,
         "assists": 1,
@@ -357,7 +390,7 @@
         ]
       },
       {
-        "rank": 6,
+        "rank": 7,
         "name": "蒯纪闻",
         "number": 47,
         "assists": 1,
@@ -371,7 +404,7 @@
         ]
       },
       {
-        "rank": 7,
+        "rank": 8,
         "name": "安佩姆",
         "number": 17,
         "assists": 1,
@@ -385,7 +418,7 @@
         ]
       },
       {
-        "rank": 8,
+        "rank": 9,
         "name": "王燊超",
         "number": 4,
         "assists": 1,
@@ -399,35 +432,7 @@
         ]
       },
       {
-        "rank": 9,
-        "name": "李新翔",
-        "number": 49,
-        "assists": 1,
-        "details": [
-          {
-            "match": "第11轮",
-            "date": "2026-05-10",
-            "time": "62'",
-            "opponent": "北京国安"
-          }
-        ]
-      },
-      {
         "rank": 10,
-        "name": "刘若钒",
-        "number": 26,
-        "assists": 1,
-        "details": [
-          {
-            "match": "第8轮",
-            "date": "2026-04-25",
-            "time": "77'",
-            "opponent": "武汉三镇"
-          }
-        ]
-      },
-      {
-        "rank": 11,
         "name": "莱昂纳多",
         "number": 45,
         "assists": 1,
@@ -439,40 +444,25 @@
             "opponent": "成都蓉城"
           }
         ]
+      },
+      {
+        "rank": 11,
+        "name": "刘若钒",
+        "number": 26,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第8轮",
+            "date": "2026-04-25",
+            "time": "77'",
+            "opponent": "武汉三镇"
+          }
+        ]
       }
     ],
     "yellowCards": [
       {
         "rank": 1,
-        "name": "吾米提江",
-        "number": 40,
-        "yellowCards": 3,
-        "details": [
-          {
-            "match": "第3轮",
-            "date": "2026-03-20",
-            "time": "22'",
-            "opponent": "大连英博海发",
-            "reason": "上海海港吾米提江获得黄牌"
-          },
-          {
-            "match": "第6轮",
-            "date": "2026-04-17",
-            "time": "54'",
-            "opponent": "山东泰山",
-            "reason": "上海海港吾米提江获得黄牌"
-          },
-          {
-            "match": "第7轮",
-            "date": "2026-04-21",
-            "time": "85'",
-            "opponent": "重庆铜梁龙",
-            "reason": "上海海港吾米提江获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 2,
         "name": "卢永涛",
         "number": 38,
         "yellowCards": 4,
@@ -508,36 +498,7 @@
         ]
       },
       {
-        "rank": 3,
-        "name": "王燊超",
-        "number": 4,
-        "yellowCards": 3,
-        "details": [
-          {
-            "match": "第4轮",
-            "date": "2026-04-04",
-            "time": "90'",
-            "opponent": "云南玉昆",
-            "reason": "上海海港王燊超获得黄牌"
-          },
-          {
-            "match": "第6轮",
-            "date": "2026-04-17",
-            "time": "87'",
-            "opponent": "山东泰山",
-            "reason": "上海海港王燊超获得黄牌"
-          },
-          {
-            "match": "第7轮",
-            "date": "2026-04-21",
-            "time": "53'",
-            "opponent": "重庆铜梁龙",
-            "reason": "上海海港王燊超获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 4,
+        "rank": 2,
         "name": "刘祝润",
         "number": 33,
         "yellowCards": 3,
@@ -566,10 +527,90 @@
         ]
       },
       {
+        "rank": 3,
+        "name": "吾米提江",
+        "number": 40,
+        "yellowCards": 3,
+        "details": [
+          {
+            "match": "第3轮",
+            "date": "2026-03-20",
+            "time": "22'",
+            "opponent": "大连英博海发",
+            "reason": "上海海港吾米提江获得黄牌"
+          },
+          {
+            "match": "第6轮",
+            "date": "2026-04-17",
+            "time": "54'",
+            "opponent": "山东泰山",
+            "reason": "上海海港吾米提江获得黄牌"
+          },
+          {
+            "match": "第7轮",
+            "date": "2026-04-21",
+            "time": "85'",
+            "opponent": "重庆铜梁龙",
+            "reason": "上海海港吾米提江获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "name": "王燊超",
+        "number": 4,
+        "yellowCards": 3,
+        "details": [
+          {
+            "match": "第4轮",
+            "date": "2026-04-04",
+            "time": "90'",
+            "opponent": "云南玉昆",
+            "reason": "上海海港王燊超获得黄牌"
+          },
+          {
+            "match": "第6轮",
+            "date": "2026-04-17",
+            "time": "87'",
+            "opponent": "山东泰山",
+            "reason": "上海海港王燊超获得黄牌"
+          },
+          {
+            "match": "第7轮",
+            "date": "2026-04-21",
+            "time": "53'",
+            "opponent": "重庆铜梁龙",
+            "reason": "上海海港王燊超获得黄牌"
+          }
+        ]
+      },
+      {
         "rank": 5,
+        "name": "杨希",
+        "number": 22,
+        "yellowCards": 2,
+        "details": [
+          {
+            "match": "第12轮",
+            "date": "2026-05-15",
+            "time": "25'",
+            "opponent": "浙江队",
+            "reason": "上海海港杨希获得黄牌"
+          },
+          {
+            "match": "第13轮",
+            "date": "2026-05-19",
+            "time": "74'",
+            "opponent": "成都蓉城",
+            "reason": "上海海港杨希获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 6,
         "name": "李帅",
         "number": 32,
-        "yellowCards": 3,
+        "yellowCards": 2,
         "details": [
           {
             "match": "第5轮",
@@ -584,62 +625,11 @@
             "time": "81'",
             "opponent": "山东泰山",
             "reason": "上海海港李帅获得黄牌"
-          },
-          {
-            "match": "第13轮",
-            "date": "2026-05-19",
-            "time": "99'",
-            "opponent": "成都蓉城",
-            "reason": "上海海港李帅获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 6,
-        "name": "武磊",
-        "number": 7,
-        "yellowCards": 2,
-        "details": [
-          {
-            "match": "第2轮",
-            "date": "2026-03-15",
-            "time": "90'",
-            "opponent": "青岛西海岸",
-            "reason": "上海海港武磊获得黄牌"
-          },
-          {
-            "match": "第6轮",
-            "date": "2026-04-17",
-            "time": "87'",
-            "opponent": "山东泰山",
-            "reason": "上海海港武磊获得黄牌"
           }
         ]
       },
       {
         "rank": 7,
-        "name": "王振澳",
-        "number": 19,
-        "yellowCards": 2,
-        "details": [
-          {
-            "match": "第11轮",
-            "date": "2026-05-10",
-            "time": "77'",
-            "opponent": "北京国安",
-            "reason": "上海海港王振澳获得黄牌"
-          },
-          {
-            "match": "第12轮",
-            "date": "2026-05-15",
-            "time": "13'",
-            "opponent": "浙江队",
-            "reason": "上海海港王振澳获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 8,
         "name": "张源",
         "number": 6,
         "yellowCards": 2,
@@ -661,24 +651,46 @@
         ]
       },
       {
-        "rank": 9,
-        "name": "杨希",
-        "number": 22,
+        "rank": 8,
+        "name": "武磊",
+        "number": 7,
         "yellowCards": 2,
         "details": [
           {
-            "match": "第12轮",
-            "date": "2026-05-15",
-            "time": "25'",
-            "opponent": "浙江队",
-            "reason": "上海海港杨希获得黄牌"
+            "match": "第2轮",
+            "date": "2026-03-15",
+            "time": "90'",
+            "opponent": "青岛西海岸",
+            "reason": "上海海港武磊获得黄牌"
+          },
+          {
+            "match": "第6轮",
+            "date": "2026-04-17",
+            "time": "87'",
+            "opponent": "山东泰山",
+            "reason": "上海海港武磊获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "name": "鲍世蒙",
+        "number": 31,
+        "yellowCards": 2,
+        "details": [
+          {
+            "match": "第9轮",
+            "date": "2026-05-02",
+            "time": "54'",
+            "opponent": "青岛海牛",
+            "reason": "上海海港鲍世蒙获得黄牌"
           },
           {
             "match": "第13轮",
             "date": "2026-05-19",
-            "time": "74'",
+            "time": "44'",
             "opponent": "成都蓉城",
-            "reason": "上海海港杨希获得黄牌"
+            "reason": "上海海港鲍世蒙获得黄牌"
           }
         ]
       },
@@ -706,23 +718,23 @@
       },
       {
         "rank": 11,
-        "name": "鲍世蒙",
-        "number": 31,
+        "name": "王振澳",
+        "number": 19,
         "yellowCards": 2,
         "details": [
           {
-            "match": "第9轮",
-            "date": "2026-05-02",
-            "time": "54'",
-            "opponent": "青岛海牛",
-            "reason": "上海海港鲍世蒙获得黄牌"
+            "match": "第11轮",
+            "date": "2026-05-10",
+            "time": "77'",
+            "opponent": "北京国安",
+            "reason": "上海海港王振澳获得黄牌"
           },
           {
-            "match": "第13轮",
-            "date": "2026-05-19",
-            "time": "44'",
-            "opponent": "成都蓉城",
-            "reason": "上海海港鲍世蒙获得黄牌"
+            "match": "第12轮",
+            "date": "2026-05-15",
+            "time": "13'",
+            "opponent": "浙江队",
+            "reason": "上海海港王振澳获得黄牌"
           }
         ]
       },
@@ -742,67 +754,7 @@
         ]
       },
       {
-        "rank": 12,
-        "name": "维塔尔",
-        "number": 10,
-        "yellowCards": 1,
-        "details": [
-          {
-            "match": "第6轮",
-            "date": "2026-04-17",
-            "time": "20'",
-            "opponent": "山东泰山",
-            "reason": "上海海港维塔尔获得黄牌"
-          }
-        ]
-      },
-      {
         "rank": 13,
-        "name": "傅欢",
-        "number": 23,
-        "yellowCards": 1,
-        "details": [
-          {
-            "match": "第7轮",
-            "date": "2026-04-21",
-            "time": "63'",
-            "opponent": "重庆铜梁龙",
-            "reason": "上海海港傅欢获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 14,
-        "name": "莱昂纳多",
-        "number": 45,
-        "yellowCards": 1,
-        "details": [
-          {
-            "match": "第11轮",
-            "date": "2026-05-10",
-            "time": "32'",
-            "opponent": "北京国安",
-            "reason": "上海海港莱昂纳多获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 15,
-        "name": "李新翔",
-        "number": 49,
-        "yellowCards": 1,
-        "details": [
-          {
-            "match": "第11轮",
-            "date": "2026-05-10",
-            "time": "45'",
-            "opponent": "北京国安",
-            "reason": "上海海港李新翔获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 16,
         "name": "颜骏凌",
         "number": 1,
         "yellowCards": 1,
@@ -817,7 +769,22 @@
         ]
       },
       {
-        "rank": 17,
+        "rank": 14,
+        "name": "维塔尔",
+        "number": 10,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第6轮",
+            "date": "2026-04-17",
+            "time": "20'",
+            "opponent": "山东泰山",
+            "reason": "上海海港维塔尔获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 15,
         "name": "魏震",
         "number": 13,
         "yellowCards": 1,
@@ -832,7 +799,22 @@
         ]
       },
       {
-        "rank": 18,
+        "rank": 16,
+        "name": "傅欢",
+        "number": 23,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第7轮",
+            "date": "2026-04-21",
+            "time": "63'",
+            "opponent": "重庆铜梁龙",
+            "reason": "上海海港傅欢获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 17,
         "name": "岳鑫",
         "number": 28,
         "yellowCards": 1,
@@ -843,6 +825,36 @@
             "time": "75'",
             "opponent": "成都蓉城",
             "reason": "上海海港岳鑫获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 18,
+        "name": "莱昂纳多",
+        "number": 45,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第11轮",
+            "date": "2026-05-10",
+            "time": "32'",
+            "opponent": "北京国安",
+            "reason": "上海海港莱奥获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 19,
+        "name": "李新翔",
+        "number": 49,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第11轮",
+            "date": "2026-05-10",
+            "time": "45'",
+            "opponent": "北京国安",
+            "reason": "上海海港李新翔获得黄牌"
           }
         ]
       }
@@ -859,7 +871,7 @@
             "date": "2026-05-02",
             "time": "63'",
             "opponent": "青岛海牛",
-            "reason": "上海海港吾米提江获得第二张黄牌被罚下"
+            "reason": "上海海港吾米提江·玉素甫获得第二张黄牌被罚下"
           }
         ]
       },
@@ -883,14 +895,464 @@
   "bTeam": {
     "teamName": "上海海港富盛经开",
     "competition": "中国足球协会乙级联赛",
-    "matchesPlayed": 8,
-    "record": "6胜2平0负",
-    "goalsFor": 16,
+    "matchesPlayed": 9,
+    "record": "7胜2平0负",
+    "goalsFor": 17,
     "goalsAgainst": 3,
-    "points": 20,
-    "topScorers": [],
-    "topAssists": [],
-    "yellowCards": [],
-    "redCards": []
+    "points": 23,
+    "topScorers": [
+      {
+        "rank": 1,
+        "name": "温钧翔",
+        "number": 35,
+        "goals": 4,
+        "details": [
+          {
+            "match": "第1轮",
+            "date": "2026-03-22",
+            "time": "4'",
+            "opponent": "上海賽更达",
+            "type": "进球"
+          },
+          {
+            "match": "第1轮",
+            "date": "2026-03-22",
+            "time": "20'",
+            "opponent": "上海賽更达",
+            "type": "进球"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-04-25",
+            "time": "34'",
+            "opponent": "山西崇德荣海",
+            "type": "进球"
+          },
+          {
+            "match": "第7轮",
+            "date": "2026-05-04",
+            "time": "25'",
+            "opponent": "泰安天贶",
+            "type": "点球"
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "name": "李圣龙",
+        "number": 14,
+        "goals": 3,
+        "details": [
+          {
+            "match": "第1轮",
+            "date": "2026-03-22",
+            "time": "452'",
+            "opponent": "上海賽更达",
+            "type": "进球"
+          },
+          {
+            "match": "第1轮",
+            "date": "2026-03-22",
+            "time": "47'",
+            "opponent": "上海賽更达",
+            "type": "进球"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-04-25",
+            "time": "30'",
+            "opponent": "山西崇德荣海",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "name": "崔峻诚",
+        "number": 46,
+        "goals": 2,
+        "details": [
+          {
+            "match": "第1轮",
+            "date": "2026-03-22",
+            "time": "22'",
+            "opponent": "上海賽更达",
+            "type": "进球"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-04-25",
+            "time": "41'",
+            "opponent": "山西崇德荣海",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "name": "张俊杰",
+        "number": 37,
+        "goals": 2,
+        "details": [
+          {
+            "match": "第2轮",
+            "date": "2026-04-05",
+            "time": "8'",
+            "opponent": "海门珂缔缘",
+            "type": "进球"
+          },
+          {
+            "match": "第9轮",
+            "date": "2026-05-22",
+            "time": "13'",
+            "opponent": "山东泰山B队",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "name": "杨黔东",
+        "number": 44,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第1轮",
+            "date": "2026-03-22",
+            "time": "90'",
+            "opponent": "上海賽更达",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "name": "谢鸿宇",
+        "number": 20,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第4轮",
+            "date": "2026-04-14",
+            "time": "40'",
+            "opponent": "北京理工",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "name": "王逸伟",
+        "number": 7,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第6轮",
+            "date": "2026-04-30",
+            "time": "9'",
+            "opponent": "长春喜都",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "name": "李瑞龙",
+        "number": 24,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第6轮",
+            "date": "2026-04-30",
+            "time": "46'",
+            "opponent": "长春喜都",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "name": "张慧宇",
+        "number": 10,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第2轮",
+            "date": "2026-04-05",
+            "time": "13'",
+            "opponent": "海门珂缔缘",
+            "type": "进球"
+          }
+        ]
+      }
+    ],
+    "topAssists": [
+      {
+        "rank": 1,
+        "name": "张俊杰",
+        "number": 37,
+        "assists": 2,
+        "details": [
+          {
+            "match": "第4轮",
+            "date": "2026-04-14",
+            "time": "40'",
+            "opponent": "北京理工"
+          },
+          {
+            "match": "第6轮",
+            "date": "2026-04-30",
+            "time": "9'",
+            "opponent": "长春喜都"
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "name": "温钧翔",
+        "number": 35,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第2轮",
+            "date": "2026-04-05",
+            "time": "13'",
+            "opponent": "海门珂缔缘"
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "name": "李瑞龙",
+        "number": 24,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第9轮",
+            "date": "2026-05-22",
+            "time": "13'",
+            "opponent": "山东泰山B队"
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "name": "曹哲哲",
+        "number": 58,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第6轮",
+            "date": "2026-04-30",
+            "time": "46'",
+            "opponent": "长春喜都"
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "name": "范阳阳",
+        "number": 8,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第2轮",
+            "date": "2026-04-05",
+            "time": "8'",
+            "opponent": "海门珂缔缘"
+          }
+        ]
+      }
+    ],
+    "yellowCards": [
+      {
+        "rank": 1,
+        "name": "谢鸿宇",
+        "number": 20,
+        "yellowCards": 2,
+        "details": [
+          {
+            "match": "第3轮",
+            "date": "2026-04-10",
+            "time": "451'",
+            "opponent": "大连可为",
+            "reason": "上海海港B队谢鸿宇抢球犯规被黄牌警告"
+          },
+          {
+            "match": "第9轮",
+            "date": "2026-05-22",
+            "time": "40'",
+            "opponent": "山东泰山B队",
+            "reason": "上海海港富盛经开谢鸿宇获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "name": "李瑞龙",
+        "number": 24,
+        "yellowCards": 2,
+        "details": [
+          {
+            "match": "第3轮",
+            "date": "2026-04-10",
+            "time": "56'",
+            "opponent": "大连可为",
+            "reason": "上海海港B队李瑞龙拼抢犯规被黄牌警告"
+          },
+          {
+            "match": "第9轮",
+            "date": "2026-05-22",
+            "time": "8'",
+            "opponent": "山东泰山B队",
+            "reason": "上海海港富盛经开李瑞龙获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "name": "刘铁诚",
+        "number": 51,
+        "yellowCards": 2,
+        "details": [
+          {
+            "match": "第4轮",
+            "date": "2026-04-14",
+            "time": "24'",
+            "opponent": "北京理工",
+            "reason": "客队刘铁诚被黄牌警告"
+          },
+          {
+            "match": "第8轮",
+            "date": "2026-05-11",
+            "time": "76'",
+            "opponent": "大连英博B队",
+            "reason": "上海海港富盛经开刘铁诚获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "name": "温钧翔",
+        "number": 35,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第7轮",
+            "date": "2026-05-04",
+            "time": "90'",
+            "opponent": "泰安天贶",
+            "reason": "上海海港富盛经开温钧翔获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "name": "崔峻诚",
+        "number": 46,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第7轮",
+            "date": "2026-05-04",
+            "time": "68'",
+            "opponent": "泰安天贶",
+            "reason": "上海海港富盛经开崔峻诚获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "name": "李圣龙",
+        "number": 14,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第6轮",
+            "date": "2026-04-30",
+            "time": "81'",
+            "opponent": "长春喜都",
+            "reason": "上海海港富盛经开李圣龙获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 7,
+        "name": "王晶磊",
+        "number": 59,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第9轮",
+            "date": "2026-05-22",
+            "time": "32'",
+            "opponent": "山东泰山B队",
+            "reason": "上海海港富盛经开王晶磊获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 8,
+        "name": "王逸伟",
+        "number": 7,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第6轮",
+            "date": "2026-04-30",
+            "time": "61'",
+            "opponent": "长春喜都",
+            "reason": "上海海港富盛经开王逸伟获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 9,
+        "name": "张俊杰",
+        "number": 37,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第4轮",
+            "date": "2026-04-14",
+            "time": "43'",
+            "opponent": "北京理工",
+            "reason": "客队张俊杰被黄牌警告"
+          }
+        ]
+      },
+      {
+        "rank": 10,
+        "name": "王丹",
+        "number": 60,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第7轮",
+            "date": "2026-05-04",
+            "time": "90'",
+            "opponent": "泰安天贶",
+            "reason": "上海海港富盛经开王丹获得黄牌"
+          }
+        ]
+      }
+    ],
+    "redCards": [
+      {
+        "rank": 1,
+        "name": "许瑞轩",
+        "number": 30,
+        "redCards": 1,
+        "details": [
+          {
+            "match": "第4轮",
+            "date": "2026-04-14",
+            "time": "90'",
+            "opponent": "北京理工",
+            "reason": "客队许瑞轩被红牌罚下"
+          }
+        ]
+      }
+    ]
   }
 }

@@ -221,11 +221,33 @@ def extract_statistics(matches, team_name, is_b_team=False):
         match_date = match_info.get('date', '未知')
         match_time = match_info.get('time', '')
 
-        # 处理进球和助攻（只从 matchTimeline 中提取）
+        # 处理进球和助攻（从 matchTimeline 或 highlights 中提取）
         events = data.get('matchTimeline', [])
+        if not events:
+            events = data.get('highlights', [])
+
+        # 预扫描：通过 lineup 数据识别本场比赛中两黄变一红的球员
+        two_yellow_to_red_players = set()
+        if 'lineups' in data and team_role in data['lineups']:
+            team_lineup = data['lineups'][team_role]
+            for player_list_name in ['players', 'substitutes']:
+                if player_list_name in team_lineup:
+                    for player in team_lineup[player_list_name]:
+                        if player.get('yellowCards', 0) >= 2 and player.get('redCards', 0) >= 1:
+                            two_yellow_to_red_players.add(player.get('name', ''))
+
         for event in events:
             event_type = event.get('type', '')
             event_team = event.get('team', '')
+
+            # 兼容 highlights 中的 time 字段（字符串 "13'"）和 matchTimeline 中的 minute 字段（整数）
+            if 'minute' not in event and 'time' in event:
+                time_str = event.get('time', '0')
+                try:
+                    event['minute'] = int(time_str.replace("'", '').replace('+', ''))
+                except ValueError:
+                    event['minute'] = 0
+                event['minute_extra'] = 0
 
             # 判断是否是本方球队的事件
             if event_team != team_role:
@@ -316,6 +338,9 @@ def extract_statistics(matches, team_name, is_b_team=False):
 
             elif event_type == 'yellow_card':
                     player = event.get('player', '')
+                    # 如果是两黄变一红的球员，跳过黄牌统计
+                    if player in two_yellow_to_red_players:
+                        continue
                     minute = event.get('minute', 0)
                     description = event.get('description', '')
 

@@ -10,7 +10,7 @@ def find_match_report(date, home_team, away_team):
     date_parts = date.split('-')
     pattern = f"{date_parts[0]}-{date_parts[1]}-{date_parts[2]}-*.json"
     
-    for file_path in Path(DATA_DIR).glob(pattern):
+    for file_path in Path(DATA_DIR).rglob(pattern):
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)

@@ -471,6 +471,7 @@
             <div class="stats-section-title">📊 控球与预期进球</div>
             ${renderPossessionStats('控球率', stats.possession)}
             ${renderValueStats('预期进球 (xG)', stats.expected_goals)}
+            ${renderValueStats('射正预期进球 (xGOT)', stats.expected_goals_on_target || { home: '数据缺失', away: '数据缺失' })}
             ${renderValueStats('绝佳机会', stats.big_chances)}
           </div>
 

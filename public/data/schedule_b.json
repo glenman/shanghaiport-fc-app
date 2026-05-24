@@ -190,7 +190,8 @@
     "scorers": {
       "home": [],
       "away": []
-    }
+    },
+    "attendance": 43875
   },
   {
     "id": 9,
@@ -201,9 +202,17 @@
     "awayTeam": "上海海港富盛经开",
     "venue": "临沂",
     "city": "临沂",
-    "result": "-",
-    "status": "未开始",
-    "type": "中乙"
+    "result": "0-1",
+    "status": "已结束",
+    "type": "中乙",
+    "home_coach": "张海涛",
+    "away_coach": "成耀东",
+    "scorers": {
+      "home": [],
+      "away": [
+        "张俊杰"
+      ]
+    }
   },
   {
     "id": 10,
