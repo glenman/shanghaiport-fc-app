@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-24",
+  "lastUpdated": "2026-05-27",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
@@ -895,11 +895,11 @@
   "bTeam": {
     "teamName": "上海海港富盛经开",
     "competition": "中国足球协会乙级联赛",
-    "matchesPlayed": 9,
-    "record": "7胜2平0负",
-    "goalsFor": 17,
+    "matchesPlayed": 10,
+    "record": "8胜2平0负",
+    "goalsFor": 18,
     "goalsAgainst": 3,
-    "points": 23,
+    "points": 26,
     "topScorers": [
       {
         "rank": 1,
@@ -990,6 +990,28 @@
       },
       {
         "rank": 4,
+        "name": "王逸伟",
+        "number": 7,
+        "goals": 2,
+        "details": [
+          {
+            "match": "第6轮",
+            "date": "2026-04-30",
+            "time": "9'",
+            "opponent": "长春喜都",
+            "type": "进球"
+          },
+          {
+            "match": "第10轮",
+            "date": "2026-05-26",
+            "time": "10'",
+            "opponent": "兰州陇原竞技",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 5,
         "name": "张俊杰",
         "number": 37,
         "goals": 2,
@@ -1011,7 +1033,7 @@
         ]
       },
       {
-        "rank": 5,
+        "rank": 6,
         "name": "杨黔东",
         "number": 44,
         "goals": 1,
@@ -1026,7 +1048,7 @@
         ]
       },
       {
-        "rank": 6,
+        "rank": 7,
         "name": "谢鸿宇",
         "number": 20,
         "goals": 1,
@@ -1036,21 +1058,6 @@
             "date": "2026-04-14",
             "time": "40'",
             "opponent": "北京理工",
-            "type": "进球"
-          }
-        ]
-      },
-      {
-        "rank": 7,
-        "name": "王逸伟",
-        "number": 7,
-        "goals": 1,
-        "details": [
-          {
-            "match": "第6轮",
-            "date": "2026-04-30",
-            "time": "9'",
-            "opponent": "长春喜都",
             "type": "进球"
           }
         ]
