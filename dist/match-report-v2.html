@@ -927,6 +927,7 @@
             const match = data.match;
             const details = data.matchDetails || {};
             const [homeGoals, awayGoals] = match.result.split('-').map(Number);
+            console.log('Weather debug:', match.weather, 'City:', match.city);
             
             let halftimeScore = details.halftimeScore || '0-0';
             
@@ -941,7 +942,7 @@
                   <div class="scoreboard-info-row">
                     <span>📍 ${match.city}</span>
                     <span>📅 ${match.date} ${match.time}</span>
-                    ${details.temperature ? `<span>🌡️ ${details.temperature}</span>` : ''}
+                    ${match.weather && match.weather !== '未知' ? `<span>🌡️ ${match.weather}</span>` : '<span>🌡️ 未知</span>'}
                   </div>
                   <div class="scoreboard-info-row">
                     <span>🏟️ ${match.venue}</span>

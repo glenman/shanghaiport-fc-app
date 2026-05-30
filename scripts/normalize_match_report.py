@@ -27,7 +27,8 @@ def load_players(filepath):
         '布朗宁': '蒋光太',
         'Tyias Browning': '蒋光太',
         '马修·奥尔': '让克劳德',
-        'Matthew Orr': '让克劳德'
+        'Matthew Orr': '让克劳德',
+        '吕永涛': '卢永涛'
     }
     for alias, correct_name in alias_map.items():
         if correct_name in player_map:
