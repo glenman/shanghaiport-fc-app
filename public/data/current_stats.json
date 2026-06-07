@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-30",
+  "lastUpdated": "2026-06-07",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
@@ -944,11 +944,11 @@
   "bTeam": {
     "teamName": "上海海港富盛经开",
     "competition": "中国足球协会乙级联赛",
-    "matchesPlayed": 10,
-    "record": "8胜2平0负",
-    "goalsFor": 18,
-    "goalsAgainst": 3,
-    "points": 26,
+    "matchesPlayed": 11,
+    "record": "8胜3平0负",
+    "goalsFor": 19,
+    "goalsAgainst": 4,
+    "points": 27,
     "topScorers": [
       {
         "rank": 1,
@@ -1140,6 +1140,21 @@
             "type": "进球"
           }
         ]
+      },
+      {
+        "rank": 10,
+        "name": "蒋志鑫",
+        "number": 0,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第12轮",
+            "date": "2026-06-06",
+            "time": "905'",
+            "opponent": "上海赛更达橘橙",
+            "type": "乌龙球"
+          }
+        ]
       }
     ],
     "topAssists": [
@@ -1223,6 +1238,28 @@
     "yellowCards": [
       {
         "rank": 1,
+        "name": "崔峻诚",
+        "number": 46,
+        "yellowCards": 2,
+        "details": [
+          {
+            "match": "第7轮",
+            "date": "2026-05-04",
+            "time": "68'",
+            "opponent": "泰安天贶",
+            "reason": "上海海港富盛经开崔峻诚获得黄牌"
+          },
+          {
+            "match": "第12轮",
+            "date": "2026-06-06",
+            "time": "45'",
+            "opponent": "上海赛更达橘橙",
+            "reason": "上海海港富盛经开崔峻诚获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 2,
         "name": "谢鸿宇",
         "number": 20,
         "yellowCards": 2,
@@ -1244,7 +1281,29 @@
         ]
       },
       {
-        "rank": 2,
+        "rank": 3,
+        "name": "王逸伟",
+        "number": 7,
+        "yellowCards": 2,
+        "details": [
+          {
+            "match": "第6轮",
+            "date": "2026-04-30",
+            "time": "61'",
+            "opponent": "长春喜都",
+            "reason": "上海海港富盛经开王逸伟获得黄牌"
+          },
+          {
+            "match": "第12轮",
+            "date": "2026-06-06",
+            "time": "87'",
+            "opponent": "上海赛更达橘橙",
+            "reason": "上海海港富盛经开王逸伟获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 4,
         "name": "李瑞龙",
         "number": 24,
         "yellowCards": 2,
@@ -1266,7 +1325,7 @@
         ]
       },
       {
-        "rank": 3,
+        "rank": 5,
         "name": "刘铁诚",
         "number": 51,
         "yellowCards": 2,
@@ -1288,7 +1347,7 @@
         ]
       },
       {
-        "rank": 4,
+        "rank": 6,
         "name": "温钧翔",
         "number": 35,
         "yellowCards": 1,
@@ -1303,22 +1362,7 @@
         ]
       },
       {
-        "rank": 5,
-        "name": "崔峻诚",
-        "number": 46,
-        "yellowCards": 1,
-        "details": [
-          {
-            "match": "第7轮",
-            "date": "2026-05-04",
-            "time": "68'",
-            "opponent": "泰安天贶",
-            "reason": "上海海港富盛经开崔峻诚获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 6,
+        "rank": 7,
         "name": "李圣龙",
         "number": 14,
         "yellowCards": 1,
@@ -1333,7 +1377,7 @@
         ]
       },
       {
-        "rank": 7,
+        "rank": 8,
         "name": "王晶磊",
         "number": 59,
         "yellowCards": 1,
@@ -1344,21 +1388,6 @@
             "time": "32'",
             "opponent": "山东泰山B队",
             "reason": "上海海港富盛经开王晶磊获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 8,
-        "name": "王逸伟",
-        "number": 7,
-        "yellowCards": 1,
-        "details": [
-          {
-            "match": "第6轮",
-            "date": "2026-04-30",
-            "time": "61'",
-            "opponent": "长春喜都",
-            "reason": "上海海港富盛经开王逸伟获得黄牌"
           }
         ]
       },

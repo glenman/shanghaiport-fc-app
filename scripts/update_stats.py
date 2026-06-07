@@ -263,6 +263,8 @@ def extract_statistics(matches, team_name, is_b_team=False):
                 minute = event.get('minute', 0)
                 minute_extra = event.get('minute_extra', 0)
                 goal_type = event.get('goal_type', 'regular')
+                # 兼容isOwnGoal字段
+                is_own_goal = goal_type == 'own_goal' or event.get('isOwnGoal', False)
 
                 # 处理名字简写
                 name_mapping = {
@@ -298,13 +300,13 @@ def extract_statistics(matches, team_name, is_b_team=False):
                     if scorer not in details['goals']:
                         details['goals'][scorer] = []
                     # 判断进球类型
-                    if goal_type == 'own_goal':
+                    if is_own_goal:
                         goal_type_desc = '乌龙球'
                     elif goal_type == 'penalty' or goal_type == 'penalty_goal':
                         goal_type_desc = '点球'
                     else:
                         goal_type_desc = '进球'
-                    
+
                     details['goals'][scorer].append({
                         'match': match_round,
                         'date': match_date,
@@ -313,7 +315,8 @@ def extract_statistics(matches, team_name, is_b_team=False):
                         'type': goal_type_desc
                     })
 
-                if assist:
+                # 乌龙球不算助攻
+                if assist and not is_own_goal:
                     if assist not in player_stats:
                         player_stats[assist] = {
                             'name': assist,

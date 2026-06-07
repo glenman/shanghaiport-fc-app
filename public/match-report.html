@@ -688,26 +688,28 @@
                       goals.forEach((goal, index) => {
                         let specialMark = '';
                         let ballIcon = '⚽';
-                        
-                        if (goal.type === 'own_goal' || goal.goal_type === 'own_goal') {
+                        const isOwnGoal = goal.type === 'own_goal' || goal.goal_type === 'own_goal' || goal.isOwnGoal;
+
+                        if (isOwnGoal) {
                           ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
-                          specialMark = '';
+                          specialMark = ' <span style="color: #ff6b6b; font-weight: bold;">(OG)</span>';
                         } else if (goal.type === 'penalty_goal' || goal.goal_type === 'penalty_goal') {
                           specialMark = ' <span style="color: #4ecdc4; font-weight: bold;">(PK)</span>';
                           if (goal.foul_player) {
                             specialMark += ` <span style="color: #ffd93d; font-size: 0.85rem;">(造:${goal.foul_player})</span>`;
                           }
                         }
-                        
+
                         const playerName = goal.player || goal.scorer;
                         const assistPlayer = goal.player2 || goal.assist;
-                        
+                        const assistLabel = isOwnGoal ? '造乌龙' : '助攻';
+
                         html += `
                           <li>
                             <span>
                               <span class="goal-number">${index + 1}.</span>
                               <span class="goal-player">${ballIcon} ${playerName}</span>${specialMark}
-                              ${assistPlayer ? `<span style="color: rgba(255, 255, 255, 0.6); font-size: 0.85rem;"> (助攻: ${assistPlayer})</span>` : ''}
+                              ${assistPlayer ? `<span style="color: rgba(255, 255, 255, 0.6); font-size: 0.85rem;"> (${assistLabel}: ${assistPlayer})</span>` : ''}
                             </span>
                             <span class="goal-time">${goal.time}</span>
                           </li>

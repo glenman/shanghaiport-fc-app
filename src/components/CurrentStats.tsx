@@ -258,6 +258,14 @@ const CurrentStats: React.FC = () => {
       return { ...stat, calculatedRank: currentRank };
     });
 
+    // 检查进球是否包含乌龙球
+    const hasOwnGoal = (stat: PlayerStat) => {
+      if (stat.details && Array.isArray(stat.details)) {
+        return stat.details.some((d: any) => d.type === '乌龙球');
+      }
+      return false;
+    };
+
     return (
       <div className="stats-section">
         <h3>{icon} {title}</h3>
@@ -275,7 +283,12 @@ const CurrentStats: React.FC = () => {
               statsWithRanks.map((stat) => (
                 <tr key={`${stat.name}-${stat.calculatedRank}`}>
                   <td>{stat.calculatedRank}</td>
-                  <td>{stat.name}</td>
+                  <td>
+                    {stat.name}
+                    {statKey === 'goals' && hasOwnGoal(stat) && (
+                      <span style={{ color: '#ff6b6b', marginLeft: '4px' }}>(OG)</span>
+                    )}
+                  </td>
                   <td>{stat.number}</td>
                   <td
                     className="stat-clickable"

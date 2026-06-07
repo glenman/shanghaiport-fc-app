@@ -875,24 +875,30 @@
                 const minute = goal.minute;
                 const minuteExtra = goal.minute_extra;
                 const timeDisplay = minuteExtra ? `${minute}+${minuteExtra}'` : `${minute}'`;
-                
+
                 let specialMark = '';
                 let ballIcon = '⚽';
-                
+                const isOwnGoal = goal.goal_type === 'own_goal' || goal.type === 'own_goal' || goal.isOwnGoal;
+
                 // 支持新的goal_type字段
-                if (goal.goal_type === 'own_goal') {
+                if (isOwnGoal) {
                   ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
                   specialMark = ' <span style="color: #ff6b6b; font-weight: bold;">(OG)</span>';
                 } else if (goal.goal_type === 'penalty_goal' || goal.goal_type === 'penalty') {
                   specialMark = ' <span style="color: #4ecdc4; font-weight: bold;">(P)</span>';
                 }
-                
+
                 // 兼容新格式和旧格式的字段名
                 const playerName = goal.player || goal.scorer;
                 const assistPlayer = goal.player2 || goal.assist;
-                
-                // 判断是助攻还是造点
-                const assistLabel = (goal.goal_type === 'penalty' || goal.goal_type === 'penalty_goal') ? '造点' : '助攻';
+
+                // 判断是助攻、造点还是造乌龙
+                let assistLabel = '助攻';
+                if (isOwnGoal) {
+                  assistLabel = '造乌龙';
+                } else if (goal.goal_type === 'penalty' || goal.goal_type === 'penalty_goal') {
+                  assistLabel = '造点';
+                }
                 
                 html += `
                   <li style="padding: 0.3rem 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
