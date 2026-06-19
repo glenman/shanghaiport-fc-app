@@ -247,7 +247,17 @@
     "city": "上海",
     "result": "1-1",
     "status": "已结束",
-    "type": "中乙"
+    "type": "中乙",
+    "referee": "王骁",
+    "home_coach": "成耀东",
+    "away_coach": "周亚君",
+    "attendance": 470,
+    "scorers": {
+      "home": [],
+      "away": [
+        "和韶麟"
+      ]
+    }
   },
   {
     "id": 11,
@@ -258,9 +268,21 @@
     "awayTeam": "上海海港富盛经开",
     "venue": "青岛",
     "city": "青岛",
-    "result": "-",
-    "status": "未开始",
-    "type": "中乙"
+    "result": "2-1",
+    "status": "已结束",
+    "type": "中乙",
+    "referee": "谢晓东",
+    "home_coach": "张洋",
+    "away_coach": "成耀东",
+    "attendance": 205,
+    "scorers": {
+      "home": [
+        "孙旭",
+        "姜凯华",
+        "陈世豪"
+      ],
+      "away": []
+    }
   },
   {
     "id": 13,
