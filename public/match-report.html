@@ -598,269 +598,273 @@
                 filePath = `data/team-b/${fileName}`;
               }
 
-              console.log('文件路径:', filePath);
+              // 加载赛事报告
+              loadMatchReport();
+              function loadMatchReport() {
+                console.log('文件路径:', filePath);
 
-              // 添加时间戳参数避免浏览器缓存
-              const timestamp = new Date().getTime();
-              const urlWithCacheBust = `${filePath}?t=${timestamp}`;
-              console.log('请求URL:', urlWithCacheBust);
-              
-              fetch(urlWithCacheBust)
-                .then(response => {
-                  console.log('响应状态:', response.status);
-                  if (!response.ok) {
-                    throw new Error('找不到对应的赛事报告');
-                  }
-                  return response.json();
-                })
-                .then(data => {
-                  console.log('成功加载数据:', data);
-                  // 填充比分板
-                  const matchScoreboard = document.getElementById('match-scoreboard');
-                  const details = data.matchDetails || {};
-                  
-                  // 动态计算半场比分
-                  function calculateHalftimeScore() {
-                    const goalHighlights = data.highlights.filter(h => h.type === 'goal');
-                    let homeHalftimeGoals = 0;
-                    let awayHalftimeGoals = 0;
-                    
-                    goalHighlights.forEach(goal => {
-                      // 解析进球时间，判断是否在上半场（≤45分钟）
-                      const timeStr = goal.time.replace("'", '');
-                      const minute = parseInt(timeStr.split('+')[0]);
-                      if (minute <= 45) {
-                        if (goal.team === 'home') {
-                          homeHalftimeGoals++;
-                        } else if (goal.team === 'away') {
-                          awayHalftimeGoals++;
-                        }
-                      }
-                    });
-                    
-                    return `${homeHalftimeGoals}-${awayHalftimeGoals}`;
-                  }
-                  
-                  const halftimeScore = calculateHalftimeScore();
-                  
-                  matchScoreboard.innerHTML = `
-                    <div class="scoreboard-teams">
-                      <div class="team-name home">${data.match.homeTeam}</div>
-                      <div class="score-display">${data.match.result}</div>
-                      <div class="team-name away">${data.match.awayTeam}</div>
-                    </div>
-                    <div class="scoreboard-info">
-                      <div class="scoreboard-info-row">
-                        <span>📍 ${data.match.city}</span>
-                        <span>📅 ${data.match.date} ${data.match.time}</span>
-                        ${details.temperature ? `<span>🌡️ ${details.temperature}</span>` : ''}
-                      </div>
-                      <div class="scoreboard-info-row">
-                        <span>🏟️ ${data.match.venue}</span>
-                        ${data.match.attendance && data.match.attendance !== '未知' ? `<span>👥 ${data.match.attendance}</span>` : ''}
-                      </div>
-                      <div class="scoreboard-info-row">
-                        <span>⏱️ 半场: ${halftimeScore}</span>
-                      </div>
-                    </div>
-                  `;
+                // 添加时间戳参数避免浏览器缓存
+                const timestamp = new Date().getTime();
+                const urlWithCacheBust = `${filePath}?t=${timestamp}`;
+                console.log('请求URL:', urlWithCacheBust);
 
+                fetch(urlWithCacheBust)
+                  .then(response => {
+                    console.log('响应状态:', response.status);
+                    if (!response.ok) {
+                      throw new Error('找不到对应的赛事报告');
+                    }
+                    return response.json();
+                  })
+                  .then(data => {
+                    console.log('成功加载数据:', data);
+                    // 填充比分板
+                    const matchScoreboard = document.getElementById('match-scoreboard');
+                    const details = data.matchDetails || {};
 
+                    // 动态计算半场比分
+                    function calculateHalftimeScore() {
+                      const goalHighlights = data.highlights.filter(h => h.type === 'goal');
+                      let homeHalftimeGoals = 0;
+                      let awayHalftimeGoals = 0;
 
-                  // 填充进球记录
-                  const matchGoals = document.getElementById('match-goals');
-                  
-                  // 从highlights中提取进球记录
-                  const goalHighlights = data.highlights.filter(h => h.type === 'goal' || h.type === 'own_goal');
-                  const homeGoals = goalHighlights.filter(h => h.team === 'home');
-                  const awayGoals = goalHighlights.filter(h => h.team === 'away');
-                  
-                  function renderGoalList(goals, teamName) {
-                    let html = `
-                      <div class="goals-team">
-                        <h4>${teamName}</h4>
-                        <ul class="goals-list">
-                    `;
-                    
-                    if (goals.length === 0) {
-                      html += '<li style="color: rgba(255, 255, 255, 0.6); font-style: italic;">无进球</li>';
-                    } else {
-                      goals.forEach((goal, index) => {
-                        let specialMark = '';
-                        let ballIcon = '⚽';
-                        const isOwnGoal = goal.type === 'own_goal' || goal.goal_type === 'own_goal' || goal.isOwnGoal;
-
-                        if (isOwnGoal) {
-                          ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
-                          specialMark = ' <span style="color: #ff6b6b; font-weight: bold;">(OG)</span>';
-                        } else if (goal.type === 'penalty_goal' || goal.goal_type === 'penalty_goal') {
-                          specialMark = ' <span style="color: #4ecdc4; font-weight: bold;">(PK)</span>';
-                          if (goal.foul_player) {
-                            specialMark += ` <span style="color: #ffd93d; font-size: 0.85rem;">(造:${goal.foul_player})</span>`;
+                      goalHighlights.forEach(goal => {
+                        // 解析进球时间，判断是否在上半场（≤45分钟）
+                        const timeStr = goal.time.replace("'", '');
+                        const minute = parseInt(timeStr.split('+')[0]);
+                        if (minute <= 45) {
+                          if (goal.team === 'home') {
+                            homeHalftimeGoals++;
+                          } else if (goal.team === 'away') {
+                            awayHalftimeGoals++;
                           }
                         }
-
-                        const playerName = goal.player || goal.scorer;
-                        const assistPlayer = goal.player2 || goal.assist;
-                        const assistLabel = isOwnGoal ? '造乌龙' : '助攻';
-
-                        html += `
-                          <li>
-                            <span>
-                              <span class="goal-number">${index + 1}.</span>
-                              <span class="goal-player">${ballIcon} ${playerName}</span>${specialMark}
-                              ${assistPlayer ? `<span style="color: rgba(255, 255, 255, 0.6); font-size: 0.85rem;"> (${assistLabel}: ${assistPlayer})</span>` : ''}
-                            </span>
-                            <span class="goal-time">${goal.time}</span>
-                          </li>
-                        `;
                       });
+
+                      return `${homeHalftimeGoals}-${awayHalftimeGoals}`;
                     }
-                    
-                    html += '</ul></div>';
-                    return html;
-                  }
-                  
-                  matchGoals.innerHTML = `
-                    <div class="goals-grid">
-                      ${renderGoalList(homeGoals, data.match.homeTeam)}
-                      ${renderGoalList(awayGoals, data.match.awayTeam)}
-                    </div>
-                  `;
 
-                  // 填充比赛摘要
-                  const matchSummary = document.getElementById('match-summary');
-                  // 将摘要文本按句号分割成段落
-                  const summaryParagraphs = data.summary.split('。').filter(p => p.trim() !== '');
-                  let summaryHTML = '';
-                  summaryParagraphs.forEach(paragraph => {
-                    summaryHTML += `<p>${paragraph}。</p>`;
-                  });
-                  matchSummary.innerHTML = summaryHTML;
+                    const halftimeScore = calculateHalftimeScore();
 
-                  // 填充比赛亮点
-                  const matchHighlights = document.getElementById('match-highlights');
-                  let highlightsHTML = '<ul>';
-                  data.highlights.forEach(highlight => {
-                    highlightsHTML += `<li><strong>${highlight.time}</strong> - ${highlight.description}</li>`;
-                  });
-                  highlightsHTML += '</ul>';
-                  matchHighlights.innerHTML = highlightsHTML;
-
-                  // 填充阵容
-                  const matchLineups = document.getElementById('match-lineups');
-                  let lineupsHTML = `
-                    <div class="lineup">
-                      <h4>${data.lineups.home.name} (${data.lineups.home.formation})</h4>
-                      <p><strong>主教练:</strong> ${data.lineups.home.manager}</p>
-                      <p><strong>队长:</strong> ${data.lineups.home.captain}</p>
-                      <ul>
-                        ${data.lineups.home.players.map(player => 
-                          `<li><strong>${player.number}.</strong> ${player.name} (${player.position}, ${player.nationality})</li>`
-                        ).join('')}
-                      </ul>
-                      <h5>替补:</h5>
-                      <ul>
-                        ${data.lineups.home.substitutes.map(sub => 
-                          sub.substitutedAt ? 
-                          `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>` : 
-                          `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position})</li>`
-                        ).join('')}
-                      </ul>
-                    </div>
-                    <div class="lineup">
-                      <h4>${data.lineups.away.name} (${data.lineups.away.formation})</h4>
-                      <p><strong>主教练:</strong> ${data.lineups.away.manager}</p>
-                      <p><strong>队长:</strong> ${data.lineups.away.captain}</p>
-                      <ul>
-                        ${data.lineups.away.players.map(player => 
-                          `<li><strong>${player.number}.</strong> ${player.name} (${player.position}, ${player.nationality})</li>`
-                        ).join('')}
-                      </ul>
-                      <h5>替补:</h5>
-                      <ul>
-                        ${data.lineups.away.substitutes.map(sub => 
-                          sub.substitutedAt ? 
-                          `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>` : 
-                          `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position})</li>`
-                        ).join('')}
-                      </ul>
-                    </div>
-                  `;
-                  matchLineups.innerHTML = lineupsHTML;
-
-                  // 填充比赛统计
-                  const matchStatistics = document.getElementById('match-statistics');
-                  
-                  // 提取控球率数据
-                  const possession = data.statistics.find(s => s.name === '控球率');
-                  let possessionHtml = '';
-                  
-                  if (possession) {
-                    const homeVal = parseInt(possession.home);
-                    const awayVal = parseInt(possession.away);
-                    possessionHtml = `
-                      <div style="margin-bottom: 1rem;">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
-                          <span>${possession.home}</span>
-                          <span>控球率</span>
-                          <span>${possession.away}</span>
+                    matchScoreboard.innerHTML = `
+                      <div class="scoreboard-teams">
+                        <div class="team-name home">${data.match.homeTeam}</div>
+                        <div class="score-display">${data.match.result}</div>
+                        <div class="team-name away">${data.match.awayTeam}</div>
+                      </div>
+                      <div class="scoreboard-info">
+                        <div class="scoreboard-info-row">
+                          <span>📍 ${data.match.city}</span>
+                          <span>📅 ${data.match.date} ${data.match.time}</span>
+                          ${details.temperature ? `<span>🌡️ ${details.temperature}</span>` : ''}
                         </div>
-                        <div class="possession-bar">
-                          <div class="possession-home" style="width: ${homeVal}%"></div>
-                          <div class="possession-away" style="width: ${awayVal}%"></div>
+                        <div class="scoreboard-info-row">
+                          <span>🏟️ ${data.match.venue}</span>
+                          ${data.match.attendance && data.match.attendance !== '未知' ? `<span>👥 ${data.match.attendance}</span>` : ''}
+                        </div>
+                        <div class="scoreboard-info-row">
+                          <span>⏱️ 半场: ${halftimeScore}</span>
                         </div>
                       </div>
                     `;
-                  }
-                  
-                  // 其他统计项
-                  const otherStats = data.statistics.filter(s => s.name !== '控球率');
-                  
-                  let statisticsHTML = possessionHtml + `
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>${data.match.homeTeam}</th>
-                          <th>统计项</th>
-                          <th>${data.match.awayTeam}</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        ${otherStats.map(stat => `
-                          <tr>
-                            <td>${stat.home}</td>
-                            <td>${stat.name}</td>
-                            <td>${stat.away}</td>
-                          </tr>
-                        `).join('')}
-                      </tbody>
-                    </table>
-                  `;
-                  matchStatistics.innerHTML = statisticsHTML;
 
-                  // 填充关键因素
-                  const keyFactors = document.getElementById('key-factors');
-                  if (data.keyFactors && data.keyFactors.length > 0) {
-                    let keyFactorsHTML = '<ul>';
-                    data.keyFactors.forEach(factor => {
-                      keyFactorsHTML += `<li>${factor}</li>`;
+
+
+                    // 填充进球记录
+                    const matchGoals = document.getElementById('match-goals');
+
+                    // 从highlights中提取进球记录
+                    const goalHighlights = data.highlights.filter(h => h.type === 'goal' || h.type === 'own_goal');
+                    const homeGoals = goalHighlights.filter(h => h.team === 'home');
+                    const awayGoals = goalHighlights.filter(h => h.team === 'away');
+
+                    function renderGoalList(goals, teamName) {
+                      let html = `
+                        <div class="goals-team">
+                          <h4>${teamName}</h4>
+                          <ul class="goals-list">
+                      `;
+
+                      if (goals.length === 0) {
+                        html += '<li style="color: rgba(255, 255, 255, 0.6); font-style: italic;">无进球</li>';
+                      } else {
+                        goals.forEach((goal, index) => {
+                          let specialMark = '';
+                          let ballIcon = '⚽';
+                          const isOwnGoal = goal.type === 'own_goal' || goal.goal_type === 'own_goal' || goal.isOwnGoal;
+
+                          if (isOwnGoal) {
+                            ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
+                            specialMark = ' <span style="color: #ff6b6b; font-weight: bold;">(OG)</span>';
+                          } else if (goal.type === 'penalty_goal' || goal.goal_type === 'penalty_goal') {
+                            specialMark = ' <span style="color: #4ecdc4; font-weight: bold;">(PK)</span>';
+                            if (goal.foul_player) {
+                              specialMark += ` <span style="color: #ffd93d; font-size: 0.85rem;">(造:${goal.foul_player})</span>`;
+                            }
+                          }
+
+                          const playerName = goal.player || goal.scorer;
+                          const assistPlayer = goal.player2 || goal.assist;
+                          const assistLabel = isOwnGoal ? '造乌龙' : '助攻';
+
+                          html += `
+                            <li>
+                              <span>
+                                <span class="goal-number">${index + 1}.</span>
+                                <span class="goal-player">${ballIcon} ${playerName}</span>${specialMark}
+                                ${assistPlayer ? `<span style="color: rgba(255, 255, 255, 0.6); font-size: 0.85rem;"> (${assistLabel}: ${assistPlayer})</span>` : ''}
+                              </span>
+                              <span class="goal-time">${goal.time}</span>
+                            </li>
+                          `;
+                        });
+                      }
+
+                      html += '</ul></div>';
+                      return html;
+                    }
+
+                    matchGoals.innerHTML = `
+                      <div class="goals-grid">
+                        ${renderGoalList(homeGoals, data.match.homeTeam)}
+                        ${renderGoalList(awayGoals, data.match.awayTeam)}
+                      </div>
+                    `;
+
+                    // 填充比赛摘要
+                    const matchSummary = document.getElementById('match-summary');
+                    // 将摘要文本按句号分割成段落
+                    const summaryParagraphs = data.summary.split('。').filter(p => p.trim() !== '');
+                    let summaryHTML = '';
+                    summaryParagraphs.forEach(paragraph => {
+                      summaryHTML += `<p>${paragraph}。</p>`;
                     });
-                    keyFactorsHTML += '</ul>';
-                    keyFactors.innerHTML = keyFactorsHTML;
-                  } else {
-                    keyFactors.innerHTML = '<p>暂无关键因素分析</p>';
-                  }
+                    matchSummary.innerHTML = summaryHTML;
 
-                  // 更新页面标题
-                  document.title = `${data.match.homeTeam} vs ${data.match.awayTeam} - 赛事报告`;
-                  document.querySelector('.app-header h1').textContent = `${data.match.homeTeam} vs ${data.match.awayTeam}`;
-                  document.querySelector('.app-header h2').textContent = `${date.substring(0, 4)}赛季${type}联赛 - ${round}`;
-                })
-                .catch(error => {
-                  console.error('加载赛事报告数据失败:', error);
-                  document.getElementById('match-info').innerHTML = `<p>加载赛事报告数据失败: ${error.message}</p>`;
-                });
+                    // 填充比赛亮点
+                    const matchHighlights = document.getElementById('match-highlights');
+                    let highlightsHTML = '<ul>';
+                    data.highlights.forEach(highlight => {
+                      highlightsHTML += `<li><strong>${highlight.time}</strong> - ${highlight.description}</li>`;
+                    });
+                    highlightsHTML += '</ul>';
+                    matchHighlights.innerHTML = highlightsHTML;
+
+                    // 填充阵容
+                    const matchLineups = document.getElementById('match-lineups');
+                    let lineupsHTML = `
+                      <div class="lineup">
+                        <h4>${data.lineups.home.name} (${data.lineups.home.formation})</h4>
+                        <p><strong>主教练:</strong> ${data.lineups.home.manager}</p>
+                        <p><strong>队长:</strong> ${data.lineups.home.captain}</p>
+                        <ul>
+                          ${data.lineups.home.players.map(player =>
+                            `<li><strong>${player.number}.</strong> ${player.name} (${player.position}, ${player.nationality})</li>`
+                          ).join('')}
+                        </ul>
+                        <h5>替补:</h5>
+                        <ul>
+                          ${data.lineups.home.substitutes.map(sub =>
+                            sub.substitutedAt ?
+                            `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>` :
+                            `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position})</li>`
+                          ).join('')}
+                        </ul>
+                      </div>
+                      <div class="lineup">
+                        <h4>${data.lineups.away.name} (${data.lineups.away.formation})</h4>
+                        <p><strong>主教练:</strong> ${data.lineups.away.manager}</p>
+                        <p><strong>队长:</strong> ${data.lineups.away.captain}</p>
+                        <ul>
+                          ${data.lineups.away.players.map(player =>
+                            `<li><strong>${player.number}.</strong> ${player.name} (${player.position}, ${player.nationality})</li>`
+                          ).join('')}
+                        </ul>
+                        <h5>替补:</h5>
+                        <ul>
+                          ${data.lineups.away.substitutes.map(sub =>
+                            sub.substitutedAt ?
+                            `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position}) - ${sub.substitutedAt}' 换下 ${sub.substitutedFor}</li>` :
+                            `<li><strong>${sub.number}.</strong> ${sub.name} (${sub.position})</li>`
+                          ).join('')}
+                        </ul>
+                      </div>
+                    `;
+                    matchLineups.innerHTML = lineupsHTML;
+
+                    // 填充比赛统计
+                    const matchStatistics = document.getElementById('match-statistics');
+
+                    // 提取控球率数据
+                    const possession = data.statistics.find(s => s.name === '控球率');
+                    let possessionHtml = '';
+
+                    if (possession) {
+                      const homeVal = parseInt(possession.home);
+                      const awayVal = parseInt(possession.away);
+                      possessionHtml = `
+                        <div style="margin-bottom: 1rem;">
+                          <div style="display: flex; justify-content: space-between; margin-bottom: 0.3rem;">
+                            <span>${possession.home}</span>
+                            <span>控球率</span>
+                            <span>${possession.away}</span>
+                          </div>
+                          <div class="possession-bar">
+                            <div class="possession-home" style="width: ${homeVal}%"></div>
+                            <div class="possession-away" style="width: ${awayVal}%"></div>
+                          </div>
+                        </div>
+                      `;
+                    }
+
+                    // 其他统计项
+                    const otherStats = data.statistics.filter(s => s.name !== '控球率');
+
+                    let statisticsHTML = possessionHtml + `
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>${data.match.homeTeam}</th>
+                            <th>统计项</th>
+                            <th>${data.match.awayTeam}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          ${otherStats.map(stat => `
+                            <tr>
+                              <td>${stat.home}</td>
+                              <td>${stat.name}</td>
+                              <td>${stat.away}</td>
+                            </tr>
+                          `).join('')}
+                        </tbody>
+                      </table>
+                    `;
+                    matchStatistics.innerHTML = statisticsHTML;
+
+                    // 填充关键因素
+                    const keyFactors = document.getElementById('key-factors');
+                    if (data.keyFactors && data.keyFactors.length > 0) {
+                      let keyFactorsHTML = '<ul>';
+                      data.keyFactors.forEach(factor => {
+                        keyFactorsHTML += `<li>${factor}</li>`;
+                      });
+                      keyFactorsHTML += '</ul>';
+                      keyFactors.innerHTML = keyFactorsHTML;
+                    } else {
+                      keyFactors.innerHTML = '<p>暂无关键因素分析</p>';
+                    }
+
+                    // 更新页面标题
+                    document.title = `${data.match.homeTeam} vs ${data.match.awayTeam} - 赛事报告`;
+                    document.querySelector('.app-header h1').textContent = `${data.match.homeTeam} vs ${data.match.awayTeam}`;
+                    document.querySelector('.app-header h2').textContent = `${date.substring(0, 4)}赛季${data.match.competition} - ${data.match.round}`;
+                  })
+                  .catch(error => {
+                    console.error('加载赛事报告数据失败:', error);
+                    document.getElementById('match-info').innerHTML = `<p>加载赛事报告数据失败: ${error.message}</p>`;
+                  });
+              }
             }
           </script>
 

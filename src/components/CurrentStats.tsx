@@ -24,9 +24,7 @@ interface PlayerStat {
   details?: StatDetail[];
 }
 
-interface TeamStats {
-  teamName: string;
-  competition: string;
+interface CompetitionStats {
   matchesPlayed: number;
   record: string;
   goalsFor: number;
@@ -36,6 +34,20 @@ interface TeamStats {
   topAssists: PlayerStat[];
   yellowCards: PlayerStat[];
   redCards: PlayerStat[];
+}
+
+interface TeamStats {
+  teamName: string;
+  matchesPlayed: number;
+  record: string;
+  goalsFor: number;
+  goalsAgainst: number;
+  points: number;
+  topScorers: PlayerStat[];
+  topAssists: PlayerStat[];
+  yellowCards: PlayerStat[];
+  redCards: PlayerStat[];
+  competitions?: Record<string, CompetitionStats>;
 }
 
 interface CurrentStatsData {
@@ -142,7 +154,8 @@ const CurrentStats: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [activeTeam, setActiveTeam] = useState<'firstTeam' | 'bTeam'>('firstTeam');
-  const [activeCompetition, setActiveCompetition] = useState<string>('中超');
+  const [activeCompetition, setActiveCompetition] = useState<string>('中国足球协会超级联赛');
+  const [competitionsMapping, setCompetitionsMapping] = useState<Record<string, { shortName: string; type: string }>>({});
   const [modalInfo, setModalInfo] = useState<{
     isOpen: boolean;
     title: string;
@@ -164,6 +177,14 @@ const CurrentStats: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        // 加载比赛类型映射
+        const competitionsResponse = await fetch('data/competitions.json');
+        if (competitionsResponse.ok) {
+          const competitionsData = await competitionsResponse.json();
+          setCompetitionsMapping(competitionsData.competitions || {});
+        }
+
+        // 加载统计数据
         const response = await fetch('data/current_stats.json');
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -231,6 +252,43 @@ const CurrentStats: React.FC = () => {
   }
 
   const currentTeam = activeTeam === 'firstTeam' ? data.firstTeam : data.bTeam;
+
+  // 获取当前比赛类型的统计数据
+  const getCurrentStats = () => {
+    if (currentTeam.competitions && currentTeam.competitions[activeCompetition]) {
+      return currentTeam.competitions[activeCompetition];
+    }
+    return {
+      matchesPlayed: currentTeam.matchesPlayed,
+      record: currentTeam.record,
+      goalsFor: currentTeam.goalsFor,
+      goalsAgainst: currentTeam.goalsAgainst,
+      points: currentTeam.points,
+      topScorers: currentTeam.topScorers,
+      topAssists: currentTeam.topAssists,
+      yellowCards: currentTeam.yellowCards,
+      redCards: currentTeam.redCards
+    };
+  };
+
+  const currentStats = getCurrentStats();
+
+  // 获取可用比赛类型列表
+  const getCompetitionList = () => {
+    if (currentTeam.competitions) {
+      return Object.keys(currentTeam.competitions);
+    }
+    // 如果没有competitions字段，根据球队类型返回默认值
+    return activeTeam === 'firstTeam' ? ['中国足球协会超级联赛'] : ['中国足球协会乙级联赛'];
+  };
+
+  // 获取比赛类型简称
+  const getCompetitionShortName = (comp: string) => {
+    if (competitionsMapping[comp]) {
+      return competitionsMapping[comp].shortName;
+    }
+    return comp; // 如果找不到映射，返回原名称
+  };
 
   const renderStatTable = (
     title: string,
@@ -337,6 +395,18 @@ const CurrentStats: React.FC = () => {
           </button>
         </div>
 
+        <div className="competition-tabs">
+          {getCompetitionList().map((comp) => (
+            <button
+              key={comp}
+              className={`competition-tab ${activeCompetition === comp ? 'active' : ''}`}
+              onClick={() => setActiveCompetition(comp)}
+            >
+              {getCompetitionShortName(comp)}
+            </button>
+          ))}
+        </div>
+
         <div className="team-overview">
           <div className="overview-item">
             <span className="overview-label">球队</span>
@@ -344,50 +414,31 @@ const CurrentStats: React.FC = () => {
           </div>
           <div className="overview-item">
             <span className="overview-label">比赛</span>
-            <span className="overview-value">{currentTeam.matchesPlayed}</span>
+            <span className="overview-value">{currentStats.matchesPlayed}</span>
           </div>
           <div className="overview-item">
             <span className="overview-label">战绩</span>
-            <span className="overview-value">{currentTeam.record}</span>
+            <span className="overview-value">{currentStats.record}</span>
           </div>
           <div className="overview-item">
             <span className="overview-label">积分</span>
-            <span className="overview-value">{currentTeam.points}</span>
+            <span className="overview-value">{currentStats.points}</span>
           </div>
           <div className="overview-item">
             <span className="overview-label">进球</span>
-            <span className="overview-value">{currentTeam.goalsFor}</span>
+            <span className="overview-value">{currentStats.goalsFor}</span>
           </div>
           <div className="overview-item">
             <span className="overview-label">失球</span>
-            <span className="overview-value">{currentTeam.goalsAgainst}</span>
+            <span className="overview-value">{currentStats.goalsAgainst}</span>
           </div>
         </div>
 
-        <div className="competition-tabs">
-          {activeTeam === 'firstTeam' && (
-            <button
-              className={`competition-tab ${activeCompetition === '中超' ? 'active' : ''}`}
-              onClick={() => setActiveCompetition('中超')}
-            >
-              中超
-            </button>
-          )}
-          {activeTeam === 'bTeam' && (
-            <button
-              className={`competition-tab ${activeCompetition === '中乙' ? 'active' : ''}`}
-              onClick={() => setActiveCompetition('中乙')}
-            >
-              中乙
-            </button>
-          )}
-        </div>
-
         <div className="stats-grid">
-          {renderStatTable('进球榜', currentTeam.topScorers, 'goals', '⚽')}
-          {renderStatTable('助攻榜', currentTeam.topAssists, 'assists', '🅰️')}
-          {renderStatTable('黄牌榜', currentTeam.yellowCards, 'yellowCards', '🟨')}
-          {renderStatTable('红牌榜', currentTeam.redCards, 'redCards', '🟥')}
+          {renderStatTable('进球榜', currentStats.topScorers, 'goals', '⚽')}
+          {renderStatTable('助攻榜', currentStats.topAssists, 'assists', '🅰️')}
+          {renderStatTable('黄牌榜', currentStats.yellowCards, 'yellowCards', '🟨')}
+          {renderStatTable('红牌榜', currentStats.redCards, 'redCards', '🟥')}
         </div>
 
         <div style={{ fontSize: '0.85rem', color: '#888', marginTop: '1rem', textAlign: 'center' }}>

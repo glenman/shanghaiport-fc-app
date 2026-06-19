@@ -15,6 +15,7 @@ data_dir = 'public/data'
 team_a_dir = 'public/data/team-a'
 team_b_dir = 'public/data/team-b'
 output_file = 'public/data/current_stats.json'
+competitions_file = 'public/data/competitions.json'
 
 # 球队名称映射
 TEAM_NAMES = {
@@ -22,11 +23,24 @@ TEAM_NAMES = {
     'b_team': '上海海港富盛经开'
 }
 
-# 比赛类型映射
-COMPETITIONS = {
-    '中超': '中国足球协会超级联赛',
-    '中乙': '中国足球协会乙级联赛'
-}
+# 加载比赛类型映射
+def load_competitions():
+    """加载比赛类型映射"""
+    try:
+        with open(competitions_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            return data.get('competitions', {})
+    except Exception as e:
+        print(f"加载比赛类型映射文件失败: {e}")
+        # 返回默认映射
+        return {
+            '中国足球协会超级联赛': {'shortName': '中超', 'type': 'CSL', 'teams': ['first-team']},
+            '中国足球协会杯': {'shortName': '足协杯', 'type': 'CFA', 'teams': ['first-team']},
+            '亚足联冠军精英联赛': {'shortName': '亚冠', 'type': 'ACLE', 'teams': ['first-team']},
+            '中国足球协会乙级联赛': {'shortName': '中乙', 'type': 'C2L', 'teams': ['team-b']}
+        }
+
+COMPETITIONS_MAPPING = load_competitions()
 
 def load_json_file(file_path):
     """加载JSON文件"""
@@ -116,7 +130,7 @@ def calculate_record(matches):
 
 def process_matches(full_update=False, last_update_date=None):
     """处理比赛文件
-    
+
     Args:
         full_update: 是否全部重新抓取
         last_update_date: 上次更新时间，用于增量抓取
@@ -131,11 +145,11 @@ def process_matches(full_update=False, last_update_date=None):
     for current_dir in data_dirs:
         if not os.path.exists(current_dir):
             continue
-            
+
         for filename in os.listdir(current_dir):
             if filename.endswith('.json') and not filename.startswith('current_stats') and not filename.startswith('players') and not filename.startswith('schedule') and not filename.startswith('history'):
                 file_path = os.path.join(current_dir, filename)
-                
+
                 # 检查文件名日期前缀（格式: YYYY-MM-DD-xxx.json）
                 if not full_update and last_update_date:
                     # 从文件名提取日期
@@ -147,7 +161,7 @@ def process_matches(full_update=False, last_update_date=None):
                     except ValueError:
                         # 文件名格式不符合预期，跳过检查
                         pass
-                
+
                 data = load_json_file(file_path)
 
                 if data and 'match' in data:
@@ -156,6 +170,7 @@ def process_matches(full_update=False, last_update_date=None):
                     away_team = match_info.get('awayTeam', '')
                     result = match_info.get('result', '')
                     status = match_info.get('status', '')
+                    competition = match_info.get('competition', '')  # 获取比赛类型
 
                     # 只处理已结束的比赛
                     if status == '已结束' and result and '-' in result:
@@ -163,12 +178,16 @@ def process_matches(full_update=False, last_update_date=None):
                         if is_first_team_match(home_team, away_team):
                             team_role = get_team_role(TEAM_NAMES['first'], home_team, away_team)
                             if team_role:
+                                # 如果没有competition字段，默认为中超
+                                if not competition:
+                                    competition = '中国足球协会超级联赛'
                                 first_team_matches.append({
                                     'file': filename,
                                     'home_team': home_team,
                                     'away_team': away_team,
                                     'result': result,
                                     'team_role': team_role,
+                                    'competition': competition,
                                     'data': data
                                 })
 
@@ -176,16 +195,45 @@ def process_matches(full_update=False, last_update_date=None):
                         elif is_b_team_match(home_team, away_team):
                             team_role = get_team_role(TEAM_NAMES['b_team'], home_team, away_team)
                             if team_role:
+                                # 如果没有competition字段，默认为中乙
+                                if not competition:
+                                    competition = '中国足球协会乙级联赛'
                                 b_team_matches.append({
                                     'file': filename,
                                     'home_team': home_team,
                                     'away_team': away_team,
                                     'result': result,
                                     'team_role': team_role,
+                                    'competition': competition,
                                     'data': data
                                 })
 
     return first_team_matches, b_team_matches
+
+def extract_statistics_by_competition(matches_list, team_name, is_b_team=False):
+    """按比赛类型提取统计数据
+
+    Args:
+        matches_list: 比赛列表（可能按类型分组）
+        team_name: 球队名称
+        is_b_team: 是否为B队
+    """
+    result = {}
+
+    # 按比赛类型分组
+    matches_by_competition = {}
+    for match in matches_list:
+        comp = match.get('competition', '中超')
+        if comp not in matches_by_competition:
+            matches_by_competition[comp] = []
+        matches_by_competition[comp].append(match)
+
+    # 为每个比赛类型提取统计
+    for comp, matches in matches_by_competition.items():
+        stats = _extract_statistics_internal(matches, team_name, is_b_team)
+        result[comp] = stats
+
+    return result
 
 def extract_statistics(matches, team_name, is_b_team=False):
     """提取统计数据
@@ -194,6 +242,10 @@ def extract_statistics(matches, team_name, is_b_team=False):
         team_name: 球队名称
         is_b_team: 是否为B队（True使用assist字段，False使用player2字段）
     """
+    return _extract_statistics_internal(matches, team_name, is_b_team)
+
+def _extract_statistics_internal(matches, team_name, is_b_team=False):
+    """内部函数：提取统计数据"""
     # 统计球员数据
     player_stats = {}
 
@@ -552,7 +604,12 @@ def extract_statistics(matches, team_name, is_b_team=False):
     for i, card in enumerate(red_cards, 1):
         card['rank'] = i
 
-    return top_scorers, top_assists, yellow_cards, red_cards
+    return {
+        'scorers': top_scorers,
+        'assists': top_assists,
+        'yellow': yellow_cards,
+        'red': red_cards
+    }
 
 def merge_player_stats(existing_stats, new_stats, detail_key):
     """合并球员统计数据（去重）"""
@@ -674,11 +731,19 @@ def main():
 
     # 统计一线队数据
     first_team_record, first_team_points, first_team_goals_for, first_team_goals_against, _, _, _ = calculate_record(first_team_matches)
-    first_team_scorers, first_team_assists, first_team_yellow, first_team_red = extract_statistics(first_team_matches, TEAM_NAMES['first'], is_b_team=False)
+    first_team_stats = extract_statistics(first_team_matches, TEAM_NAMES['first'], is_b_team=False)
+    first_team_scorers = first_team_stats['scorers']
+    first_team_assists = first_team_stats['assists']
+    first_team_yellow = first_team_stats['yellow']
+    first_team_red = first_team_stats['red']
 
     # 统计B队数据
     b_team_record, b_team_points, b_team_goals_for, b_team_goals_against, _, _, _ = calculate_record(b_team_matches)
-    b_team_scorers, b_team_assists, b_team_yellow, b_team_red = extract_statistics(b_team_matches, TEAM_NAMES['b_team'], is_b_team=True)
+    b_team_stats = extract_statistics(b_team_matches, TEAM_NAMES['b_team'], is_b_team=True)
+    b_team_scorers = b_team_stats['scorers']
+    b_team_assists = b_team_stats['assists']
+    b_team_yellow = b_team_stats['yellow']
+    b_team_red = b_team_stats['red']
 
     # 初始化比赛场数变量
     first_team_played = 0
@@ -760,14 +825,48 @@ def main():
     # 确定比赛场数（增量更新时使用合并后的场数）
     first_team_played_total = first_team_played if (args.incremental and existing_data) else len(first_team_matches)
     b_team_played_total = b_team_played if (args.incremental and existing_data) else len(b_team_matches)
-    
+
+    # 按比赛类型分组统计
+    first_team_competition_stats = extract_statistics_by_competition(first_team_matches, TEAM_NAMES['first'], is_b_team=False)
+    b_team_competition_stats = extract_statistics_by_competition(b_team_matches, TEAM_NAMES['b_team'], is_b_team=True)
+
+    # 构建比赛类型统计数据
+    first_team_competitions_data = {}
+    for comp, stats in first_team_competition_stats.items():
+        record, points, goals_for, goals_against, _, _, _ = calculate_record([m for m in first_team_matches if m.get('competition') == comp])
+        first_team_competitions_data[comp] = {
+            'matchesPlayed': len([m for m in first_team_matches if m.get('competition') == comp]),
+            'record': record,
+            'goalsFor': goals_for,
+            'goalsAgainst': goals_against,
+            'points': points,
+            'topScorers': stats['scorers'],
+            'topAssists': stats['assists'],
+            'yellowCards': stats['yellow'],
+            'redCards': stats['red']
+        }
+
+    b_team_competitions_data = {}
+    for comp, stats in b_team_competition_stats.items():
+        record, points, goals_for, goals_against, _, _, _ = calculate_record([m for m in b_team_matches if m.get('competition') == comp])
+        b_team_competitions_data[comp] = {
+            'matchesPlayed': len([m for m in b_team_matches if m.get('competition') == comp]),
+            'record': record,
+            'goalsFor': goals_for,
+            'goalsAgainst': goals_against,
+            'points': points,
+            'topScorers': stats['scorers'],
+            'topAssists': stats['assists'],
+            'yellowCards': stats['yellow'],
+            'redCards': stats['red']
+        }
+
     # 生成统计结果
     stats_data = {
         'lastUpdated': datetime.now().strftime('%Y-%m-%d'),
         'season': '2026',
         'firstTeam': {
             'teamName': TEAM_NAMES['first'],
-            'competition': COMPETITIONS['中超'],
             'matchesPlayed': first_team_played_total,
             'record': first_team_record,
             'goalsFor': first_team_goals_for,
@@ -776,11 +875,11 @@ def main():
             'topScorers': first_team_scorers,
             'topAssists': first_team_assists,
             'yellowCards': first_team_yellow,
-            'redCards': first_team_red
+            'redCards': first_team_red,
+            'competitions': first_team_competitions_data
         },
         'bTeam': {
             'teamName': TEAM_NAMES['b_team'],
-            'competition': COMPETITIONS['中乙'],
             'matchesPlayed': b_team_played_total,
             'record': b_team_record,
             'goalsFor': b_team_goals_for,
@@ -789,7 +888,8 @@ def main():
             'topScorers': b_team_scorers,
             'topAssists': b_team_assists,
             'yellowCards': b_team_yellow,
-            'redCards': b_team_red
+            'redCards': b_team_red,
+            'competitions': b_team_competitions_data
         }
     }
 
@@ -800,6 +900,8 @@ def main():
         print(f"统计数据已保存到 {output_file}")
         print(f"一线队: {first_team_record}, 积分: {first_team_points}")
         print(f"B队: {b_team_record}, 积分: {b_team_points}")
+        print(f"一线队比赛类型: {list(first_team_competition_stats.keys())}")
+        print(f"B队比赛类型: {list(b_team_competition_stats.keys())}")
     except Exception as e:
         print(f"保存文件失败: {e}")
 
