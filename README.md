@@ -152,9 +152,16 @@ python scripts/update_stats.py --full
 | public/data/current_stats.json | 当季数据统计（按比赛类型分组） |
 | public/data/competitions.json | 比赛类型映射配置 |
 | public/data/team-a/YYYY-MM-DD-赛事-第X轮.json | 一线队单场比赛报告 |
-| public/data/team-a/YYYY-MM-DD-赛事-第X轮-MO.json | 一线队赛事统计详情 |
+| public/data/team-a/YYYY-MM-DD-赛事-第X轮-MO.json | 一线队赛事统计详情（MO=Match Overview） |
 | public/data/team-b/YYYY-MM-DD-赛事-第X轮.json | B队单场比赛报告 |
 | public/match-overview-stats.html | 赛事统计详情页面 |
+
+### 数据来源说明
+
+| 文件类型 | 数据来源 |
+|---------|---------|
+| 标准赛事报告（*.json） | FBref (https://fbref.com/) |
+| 赛事统计详情（*-MO.json） | SofaScore (https://www.sofascore.com/) + Flashscore (https://www.flashscore.com/) |
 
 ### 统计数据字段说明
 
