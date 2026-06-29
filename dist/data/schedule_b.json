@@ -237,6 +237,29 @@
     }
   },
   {
+    "id": 12,
+    "round": "第12轮",
+    "date": "2026-06-06",
+    "time": "16:00",
+    "homeTeam": "上海海港富盛经开",
+    "awayTeam": "上海赛更达",
+    "venue": "上海",
+    "city": "上海",
+    "result": "1-1",
+    "status": "已结束",
+    "type": "中乙",
+    "referee": "王骁",
+    "home_coach": "成耀东",
+    "away_coach": "周亚君",
+    "attendance": 470,
+    "scorers": {
+      "home": [],
+      "away": [
+        "和韶麟"
+      ]
+    }
+  },
+  {
     "id": 11,
     "round": "第11轮",
     "date": "2026-06-14",
@@ -245,22 +268,21 @@
     "awayTeam": "上海海港富盛经开",
     "venue": "青岛",
     "city": "青岛",
-    "result": "-",
-    "status": "未开始",
-    "type": "中乙"
-  },
-  {
-    "id": 12,
-    "round": "第12轮",
-    "date": "2026-06-19",
-    "time": "16:00",
-    "homeTeam": "上海海港富盛经开",
-    "awayTeam": "上海赛更达",
-    "venue": "上海",
-    "city": "上海",
-    "result": "-",
-    "status": "未开始",
-    "type": "中乙"
+    "result": "2-1",
+    "status": "已结束",
+    "type": "中乙",
+    "referee": "谢晓东",
+    "home_coach": "张洋",
+    "away_coach": "成耀东",
+    "attendance": 205,
+    "scorers": {
+      "home": [
+        "孙旭",
+        "姜凯华",
+        "陈世豪"
+      ],
+      "away": []
+    }
   },
   {
     "id": 13,
@@ -271,8 +293,8 @@
     "awayTeam": "上海海港富盛经开",
     "venue": "南通",
     "city": "南通",
-    "result": "-",
-    "status": "未开始",
+    "result": "2-2",
+    "status": "已结束",
     "type": "中乙"
   },
   {
@@ -284,8 +306,8 @@
     "awayTeam": "上海海港富盛经开",
     "venue": "大连",
     "city": "大连",
-    "result": "-",
-    "status": "未开始",
+    "result": "1-0",
+    "status": "已结束",
     "type": "中乙"
   },
   {

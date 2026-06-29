@@ -1,0 +1,668 @@
+{
+  "match": {
+    "id": 15,
+    "round": "第15轮",
+    "date": "2026-05-29",
+    "time": "19:35",
+    "homeTeam": "辽宁铁人",
+    "awayTeam": "上海海港",
+    "venue": "铁西体育场",
+    "city": "沈阳",
+    "result": "3-2",
+    "status": "已结束",
+    "attendance": "31759",
+    "referee": "任通",
+    "weather": "晴",
+    "competition": "中国足球协会超级联赛",
+    "matchweek": 15,
+    "season": "2026"
+  },
+  "matchDetails": {
+    "stadiumCapacity": "未知",
+    "pitchCondition": "未知",
+    "temperature": "未知",
+    "kickoffTime": "19:35",
+    "halftimeScore": "1-1",
+    "fulltimeScore": "3-2"
+  },
+  "officials": {
+    "referee": "任通",
+    "assistantReferee1": "习飞",
+    "assistantReferee2": "张延斌",
+    "fourthOfficial": "马腾",
+    "VAR": "张雷"
+  },
+  "lineups": {
+    "home": {
+      "name": "辽宁铁人",
+      "formation": "4-1-4-1",
+      "manager": "徐正源",
+      "captain": "国本拓弥",
+      "players": [
+        {
+          "number": 29,
+          "name": "张岩",
+          "position": "门将",
+          "nationality": "中国",
+          "age": "29-060",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 7,
+          "name": "安格·塞缪尔",
+          "position": "右前卫",
+          "nationality": "中国台北",
+          "age": "29-158",
+          "minutes": 89,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 8,
+          "name": "严鼎皓",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "28-053",
+          "minutes": 79,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 9,
+          "name": "盖伊·姆本扎",
+          "position": "前锋",
+          "nationality": "刚果",
+          "age": "26-058",
+          "minutes": 88,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "国本拓弥",
+          "position": "中场",
+          "nationality": "日本",
+          "age": "28-233",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 11,
+          "name": "陈彬彬",
+          "position": "左后卫",
+          "nationality": "中国",
+          "age": "27-353",
+          "minutes": 45,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 14,
+          "name": "臧一锋",
+          "position": "右后卫",
+          "nationality": "中国",
+          "age": "32-226",
+          "minutes": 45,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 15,
+          "name": "费利佩",
+          "position": "中后卫",
+          "nationality": "巴西",
+          "age": "32-049",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 18,
+          "name": "李提香",
+          "position": "后腰",
+          "nationality": "中国",
+          "age": "36-270",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 26,
+          "name": "元敏诚",
+          "position": "中后卫",
+          "nationality": "中国",
+          "age": "30-294",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 47,
+          "name": "杰弗尼奥",
+          "position": "左前卫",
+          "nationality": "巴西",
+          "age": "26-150",
+          "minutes": 85,
+          "goals": 1,
+          "assists": 1,
+          "yellowCards": 2,
+          "redCards": 1
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 35,
+          "name": "李浩然",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "26-205",
+          "substitutedAt": 46,
+          "substitutedFor": "陈彬彬"
+        },
+        {
+          "number": 3,
+          "name": "潘喜明",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "33-138",
+          "substitutedAt": 46,
+          "substitutedFor": "臧一锋"
+        },
+        {
+          "number": 33,
+          "name": "田依浓",
+          "position": "后卫/中场",
+          "nationality": "中国",
+          "age": "35-100",
+          "substitutedAt": 80,
+          "substitutedFor": "严鼎皓"
+        },
+        {
+          "number": 5,
+          "name": "迪力木拉提·毛拉尼牙孜",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "36-327",
+          "substitutedAt": 89,
+          "substitutedFor": "盖伊·姆本扎"
+        },
+        {
+          "number": 17,
+          "name": "田玉达",
+          "position": "前锋",
+          "nationality": "中国",
+          "age": "24-184",
+          "substitutedAt": 93,
+          "substitutedFor": "安格·塞缪尔"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海海港",
+      "formation": "3-4-3",
+      "manager": "凯文·穆斯卡特",
+      "captain": "颜骏凌",
+      "players": [
+        {
+          "number": 1,
+          "name": "颜骏凌",
+          "position": "门将",
+          "nationality": "中国",
+          "age": "35-121",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 3,
+          "name": "蒋光太",
+          "position": "中后卫",
+          "nationality": "中国",
+          "age": "32-002",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 6,
+          "name": "张源",
+          "position": "后腰",
+          "nationality": "中国",
+          "age": "29-121",
+          "minutes": 59,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "维塔尔",
+          "position": "后腰",
+          "nationality": "巴西",
+          "age": "28-106",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 13,
+          "name": "魏震",
+          "position": "中后卫",
+          "nationality": "中国",
+          "age": "29-106",
+          "minutes": 82,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 22,
+          "name": "杨希",
+          "position": "后腰",
+          "nationality": "中国",
+          "age": "20-350",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 32,
+          "name": "李帅",
+          "position": "后腰",
+          "nationality": "中国",
+          "age": "30-345",
+          "minutes": 82,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 33,
+          "name": "刘祝润",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "24-235",
+          "minutes": 71,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 40,
+          "name": "吾米提江",
+          "position": "中后卫",
+          "nationality": "中国",
+          "age": "22-090",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 45,
+          "name": "莱昂纳多",
+          "position": "前锋",
+          "nationality": "巴西",
+          "age": "29-001",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 49,
+          "name": "李新翔",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "20-180",
+          "minutes": 59,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 17,
+          "name": "安佩姆",
+          "position": "中场",
+          "nationality": "加纳",
+          "age": "28-046",
+          "substitutedAt": 60,
+          "substitutedFor": "李新翔"
+        },
+        {
+          "number": 38,
+          "name": "卢永涛",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "26-137",
+          "substitutedAt": 60,
+          "substitutedFor": "张源"
+        },
+        {
+          "number": 7,
+          "name": "武磊",
+          "position": "前锋/中场",
+          "nationality": "中国",
+          "age": "34-191",
+          "substitutedAt": 72,
+          "substitutedFor": "刘祝润"
+        },
+        {
+          "number": 26,
+          "name": "刘若钒",
+          "position": "前锋/中场",
+          "nationality": "中国",
+          "age": "27-121",
+          "substitutedAt": 83,
+          "substitutedFor": "魏震"
+        },
+        {
+          "number": 19,
+          "name": "王振澳",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "26-292",
+          "substitutedAt": 83,
+          "substitutedFor": "李帅"
+        }
+      ]
+    }
+  },
+  "matchTimeline": [
+    {
+      "minute": 0,
+      "minute_extra": 0,
+      "type": "kick_off",
+      "team": "neutral",
+      "description": "比赛开始"
+    },
+    {
+      "minute": 9,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "杰弗尼奥",
+      "description": "辽宁铁人1-0领先，杰弗尼奥进球"
+    },
+    {
+      "minute": 20,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "李帅",
+      "player2": "维塔尔",
+      "description": "上海海港1-1扳平，李帅进球，马特乌斯·维塔尔助攻"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "李浩然",
+      "playerOut": "陈彬彬",
+      "description": "辽宁铁人李浩然替换陈彬彬上场"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "潘喜明",
+      "playerOut": "臧一锋",
+      "description": "辽宁铁人潘喜明替换臧一锋上场"
+    },
+    {
+      "minute": 51,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "魏震",
+      "description": "上海海港魏震获得黄牌"
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "张源",
+      "description": "上海海港张源获得黄牌"
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "安佩姆",
+      "playerOut": "李新翔",
+      "description": "上海海港普林斯·奥本·安佩姆替换李新翔上场"
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "卢永涛",
+      "playerOut": "张源",
+      "description": "上海海港卢永涛替换张源上场"
+    },
+    {
+      "minute": 61,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "卢永涛",
+      "description": "上海海港卢永涛获得黄牌"
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "盖伊·姆本扎",
+      "player2": "杰弗尼奥",
+      "description": "辽宁铁人2-1领先，盖伊·姆本扎进球，杰弗尼奥助攻"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "武磊",
+      "playerOut": "刘祝润",
+      "description": "上海海港武磊替换刘祝润上场"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "田依浓",
+      "playerOut": "严鼎皓",
+      "description": "辽宁铁人田依浓替换严鼎皓上场"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "刘若钒",
+      "playerOut": "魏震",
+      "description": "上海海港刘若钒替换魏震上场"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "王振澳",
+      "playerOut": "李帅",
+      "description": "上海海港王振澳替换李帅上场"
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "莱昂纳多",
+      "description": "上海海港2-2扳平，莱昂纳多进球"
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "杰弗尼奥",
+      "player2": "安格·塞缪尔",
+      "description": "辽宁铁人3-2领先，杰弗尼奥进球，安格·塞缪尔助攻"
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "red_card",
+      "team": "home",
+      "player": "杰弗尼奥",
+      "description": "辽宁铁人杰弗尼奥获得红牌"
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "迪力木拉提·毛拉尼牙孜",
+      "playerOut": "盖伊·姆本扎",
+      "description": "辽宁铁人迪力木拉提·毛拉尼牙孜替换盖伊·姆本扎上场"
+    },
+    {
+      "minute": 93,
+      "minute_extra": 3,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "田玉达",
+      "playerOut": "安格·塞缪尔",
+      "description": "辽宁铁人田玉达替换安格·塞缪尔上场"
+    }
+  ],
+  "statistics": [
+    {
+      "name": "控球率",
+      "home": "41%",
+      "away": "59%"
+    },
+    {
+      "name": "射门",
+      "home": 9,
+      "away": 12
+    },
+    {
+      "name": "射正",
+      "home": 4,
+      "away": 4
+    },
+    {
+      "name": "角球",
+      "home": 1,
+      "away": 12
+    },
+    {
+      "name": "犯规",
+      "home": 12,
+      "away": 9
+    },
+    {
+      "name": "黄牌",
+      "home": 2,
+      "away": 3
+    },
+    {
+      "name": "红牌",
+      "home": 1,
+      "away": 0
+    }
+  ],
+  "summary": "2026赛季中超第15轮，辽宁铁人在主场3-2战胜上海海港。杰弗尼奥梅开二度，盖伊·姆本扎打入制胜球，虽然杰弗尼奥在比赛末段被红牌罚下，但辽宁铁人成功守住胜果。",
+  "keyFactors": [
+    "辽宁铁人控球率41%处于劣势但进攻效率更高",
+    "辽宁铁人9次射门4次射正打入3球，上海海港12次射门4次射正打入2球",
+    "杰弗尼奥贡献2球1助攻但被红牌罚下",
+    "上海海港角球12-1占据绝对优势但未能转化为进球",
+    "辽宁铁人门将张岩完成2次扑救，成功率50%"
+  ],
+  "highlights": [
+    {
+      "minute": 9,
+      "description": "辽宁铁人杰弗尼奥首开纪录",
+      "type": "goal",
+      "team": "home"
+    },
+    {
+      "minute": 20,
+      "description": "上海海港李帅扳平比分",
+      "type": "goal",
+      "team": "away"
+    },
+    {
+      "minute": 70,
+      "description": "辽宁铁人盖伊·姆本扎再次领先",
+      "type": "goal",
+      "team": "home"
+    },
+    {
+      "minute": 84,
+      "description": "上海海港莱昂纳多再次扳平",
+      "type": "goal",
+      "team": "away"
+    },
+    {
+      "minute": 85,
+      "description": "辽宁铁人杰弗尼奥打入制胜球",
+      "type": "goal",
+      "team": "home"
+    },
+    {
+      "minute": 86,
+      "description": "辽宁铁人杰弗尼奥被红牌罚下",
+      "type": "red_card",
+      "team": "home"
+    }
+  ]
+}

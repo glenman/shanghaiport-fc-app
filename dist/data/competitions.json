@@ -1,0 +1,24 @@
+{
+  "competitions": {
+    "中国足球协会超级联赛": {
+      "shortName": "中超",
+      "type": "CSL",
+      "teams": ["first-team"]
+    },
+    "中国足球协会杯": {
+      "shortName": "足协杯",
+      "type": "CFA",
+      "teams": ["first-team"]
+    },
+    "亚足联冠军精英联赛": {
+      "shortName": "亚冠",
+      "type": "ACLE",
+      "teams": ["first-team"]
+    },
+    "中国足球协会乙级联赛": {
+      "shortName": "中乙",
+      "type": "C2L",
+      "teams": ["team-b"]
+    }
+  }
+}
