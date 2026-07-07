@@ -2192,16 +2192,16 @@
   "bTeam": {
     "teamName": "上海海港富盛经开",
     "matchesPlayed": 15,
-    "record": "8胜4平3负",
-    "goalsFor": 22,
+    "record": "9胜4平2负",
+    "goalsFor": 27,
     "goalsAgainst": 10,
-    "points": 28,
+    "points": 31,
     "topScorers": [
       {
         "rank": 1,
         "name": "温钧翔",
         "number": 35,
-        "goals": 4,
+        "goals": 6,
         "details": [
           {
             "match": "第1轮",
@@ -2230,11 +2230,61 @@
             "time": "25'",
             "opponent": "泰安天贶",
             "type": "点球"
+          },
+          {
+            "match": "第15轮",
+            "date": "2026-07-04",
+            "time": "10'",
+            "opponent": "北京理工",
+            "type": "进球"
+          },
+          {
+            "match": "第15轮",
+            "date": "2026-07-04",
+            "time": "71'",
+            "opponent": "北京理工",
+            "type": "进球"
           }
         ]
       },
       {
         "rank": 2,
+        "name": "杨黔东",
+        "number": 44,
+        "goals": 4,
+        "details": [
+          {
+            "match": "第1轮",
+            "date": "2026-03-22",
+            "time": "90'",
+            "opponent": "上海賽更达",
+            "type": "进球"
+          },
+          {
+            "match": "第13轮",
+            "date": "2026-06-23",
+            "time": "89'",
+            "opponent": "南通海门珂缔缘",
+            "type": "进球"
+          },
+          {
+            "match": "第15轮",
+            "date": "2026-07-04",
+            "time": "13'",
+            "opponent": "北京理工",
+            "type": "进球"
+          },
+          {
+            "match": "第15轮",
+            "date": "2026-07-04",
+            "time": "29'",
+            "opponent": "北京理工",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 3,
         "name": "崔峻诚",
         "number": 46,
         "goals": 3,
@@ -2263,7 +2313,7 @@
         ]
       },
       {
-        "rank": 3,
+        "rank": 4,
         "name": "李圣龙",
         "number": 14,
         "goals": 3,
@@ -2287,28 +2337,6 @@
             "date": "2026-04-25",
             "time": "30'",
             "opponent": "山西崇德荣海",
-            "type": "进球"
-          }
-        ]
-      },
-      {
-        "rank": 4,
-        "name": "杨黔东",
-        "number": 44,
-        "goals": 2,
-        "details": [
-          {
-            "match": "第1轮",
-            "date": "2026-03-22",
-            "time": "90'",
-            "opponent": "上海賽更达",
-            "type": "进球"
-          },
-          {
-            "match": "第13轮",
-            "date": "2026-06-23",
-            "time": "89'",
-            "opponent": "南通海门珂缔缘",
             "type": "进球"
           }
         ]
@@ -2359,6 +2387,21 @@
       },
       {
         "rank": 7,
+        "name": "许瑞轩",
+        "number": 30,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第15轮",
+            "date": "2026-07-04",
+            "time": "20'",
+            "opponent": "北京理工",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 8,
         "name": "谢鸿宇",
         "number": 20,
         "goals": 1,
@@ -2373,7 +2416,7 @@
         ]
       },
       {
-        "rank": 8,
+        "rank": 9,
         "name": "李瑞龙",
         "number": 24,
         "goals": 1,
@@ -2388,7 +2431,7 @@
         ]
       },
       {
-        "rank": 9,
+        "rank": 10,
         "name": "刘铁诚",
         "number": 51,
         "goals": 1,
@@ -2403,7 +2446,7 @@
         ]
       },
       {
-        "rank": 10,
+        "rank": 11,
         "name": "张慧宇",
         "number": 10,
         "goals": 1,
@@ -2418,7 +2461,7 @@
         ]
       },
       {
-        "rank": 11,
+        "rank": 12,
         "name": "蒋志鑫",
         "number": 0,
         "goals": 1,
@@ -2436,6 +2479,46 @@
     "topAssists": [
       {
         "rank": 1,
+        "name": "王逸伟",
+        "number": 7,
+        "assists": 2,
+        "details": [
+          {
+            "match": "第13轮",
+            "date": "2026-06-23",
+            "time": "82'",
+            "opponent": "南通海门珂缔缘"
+          },
+          {
+            "match": "第15轮",
+            "date": "2026-07-04",
+            "time": "20'",
+            "opponent": "北京理工"
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "name": "李佳奇",
+        "number": 16,
+        "assists": 2,
+        "details": [
+          {
+            "match": "第15轮",
+            "date": "2026-07-04",
+            "time": "13'",
+            "opponent": "北京理工"
+          },
+          {
+            "match": "第15轮",
+            "date": "2026-07-04",
+            "time": "29'",
+            "opponent": "北京理工"
+          }
+        ]
+      },
+      {
+        "rank": 3,
         "name": "张俊杰",
         "number": 37,
         "assists": 2,
@@ -2455,7 +2538,7 @@
         ]
       },
       {
-        "rank": 2,
+        "rank": 4,
         "name": "温钧翔",
         "number": 35,
         "assists": 1,
@@ -2469,7 +2552,21 @@
         ]
       },
       {
-        "rank": 3,
+        "rank": 5,
+        "name": "杨黔东",
+        "number": 44,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第15轮",
+            "date": "2026-07-04",
+            "time": "10'",
+            "opponent": "北京理工"
+          }
+        ]
+      },
+      {
+        "rank": 6,
         "name": "许瑞轩",
         "number": 30,
         "assists": 1,
@@ -2483,21 +2580,7 @@
         ]
       },
       {
-        "rank": 4,
-        "name": "王逸伟",
-        "number": 7,
-        "assists": 1,
-        "details": [
-          {
-            "match": "第13轮",
-            "date": "2026-06-23",
-            "time": "82'",
-            "opponent": "南通海门珂缔缘"
-          }
-        ]
-      },
-      {
-        "rank": 5,
+        "rank": 7,
         "name": "李瑞龙",
         "number": 24,
         "assists": 1,
@@ -2511,7 +2594,7 @@
         ]
       },
       {
-        "rank": 6,
+        "rank": 8,
         "name": "曹哲哲",
         "number": 58,
         "assists": 1,
@@ -2525,7 +2608,7 @@
         ]
       },
       {
-        "rank": 7,
+        "rank": 9,
         "name": "范阳阳",
         "number": 8,
         "assists": 1,
@@ -2775,16 +2858,16 @@
     "competitions": {
       "中国足球协会乙级联赛": {
         "matchesPlayed": 15,
-        "record": "8胜4平3负",
-        "goalsFor": 22,
+        "record": "9胜4平2负",
+        "goalsFor": 27,
         "goalsAgainst": 10,
-        "points": 28,
+        "points": 31,
         "topScorers": [
           {
             "rank": 1,
             "name": "温钧翔",
             "number": 35,
-            "goals": 4,
+            "goals": 6,
             "details": [
               {
                 "match": "第1轮",
@@ -2813,11 +2896,61 @@
                 "time": "25'",
                 "opponent": "泰安天贶",
                 "type": "点球"
+              },
+              {
+                "match": "第15轮",
+                "date": "2026-07-04",
+                "time": "10'",
+                "opponent": "北京理工",
+                "type": "进球"
+              },
+              {
+                "match": "第15轮",
+                "date": "2026-07-04",
+                "time": "71'",
+                "opponent": "北京理工",
+                "type": "进球"
               }
             ]
           },
           {
             "rank": 2,
+            "name": "杨黔东",
+            "number": 44,
+            "goals": 4,
+            "details": [
+              {
+                "match": "第1轮",
+                "date": "2026-03-22",
+                "time": "90'",
+                "opponent": "上海賽更达",
+                "type": "进球"
+              },
+              {
+                "match": "第13轮",
+                "date": "2026-06-23",
+                "time": "89'",
+                "opponent": "南通海门珂缔缘",
+                "type": "进球"
+              },
+              {
+                "match": "第15轮",
+                "date": "2026-07-04",
+                "time": "13'",
+                "opponent": "北京理工",
+                "type": "进球"
+              },
+              {
+                "match": "第15轮",
+                "date": "2026-07-04",
+                "time": "29'",
+                "opponent": "北京理工",
+                "type": "进球"
+              }
+            ]
+          },
+          {
+            "rank": 3,
             "name": "崔峻诚",
             "number": 46,
             "goals": 3,
@@ -2846,7 +2979,7 @@
             ]
           },
           {
-            "rank": 3,
+            "rank": 4,
             "name": "李圣龙",
             "number": 14,
             "goals": 3,
@@ -2870,28 +3003,6 @@
                 "date": "2026-04-25",
                 "time": "30'",
                 "opponent": "山西崇德荣海",
-                "type": "进球"
-              }
-            ]
-          },
-          {
-            "rank": 4,
-            "name": "杨黔东",
-            "number": 44,
-            "goals": 2,
-            "details": [
-              {
-                "match": "第1轮",
-                "date": "2026-03-22",
-                "time": "90'",
-                "opponent": "上海賽更达",
-                "type": "进球"
-              },
-              {
-                "match": "第13轮",
-                "date": "2026-06-23",
-                "time": "89'",
-                "opponent": "南通海门珂缔缘",
                 "type": "进球"
               }
             ]
@@ -2942,6 +3053,21 @@
           },
           {
             "rank": 7,
+            "name": "许瑞轩",
+            "number": 30,
+            "goals": 1,
+            "details": [
+              {
+                "match": "第15轮",
+                "date": "2026-07-04",
+                "time": "20'",
+                "opponent": "北京理工",
+                "type": "进球"
+              }
+            ]
+          },
+          {
+            "rank": 8,
             "name": "谢鸿宇",
             "number": 20,
             "goals": 1,
@@ -2956,7 +3082,7 @@
             ]
           },
           {
-            "rank": 8,
+            "rank": 9,
             "name": "李瑞龙",
             "number": 24,
             "goals": 1,
@@ -2971,7 +3097,7 @@
             ]
           },
           {
-            "rank": 9,
+            "rank": 10,
             "name": "刘铁诚",
             "number": 51,
             "goals": 1,
@@ -2986,7 +3112,7 @@
             ]
           },
           {
-            "rank": 10,
+            "rank": 11,
             "name": "张慧宇",
             "number": 10,
             "goals": 1,
@@ -3001,7 +3127,7 @@
             ]
           },
           {
-            "rank": 11,
+            "rank": 12,
             "name": "蒋志鑫",
             "number": 0,
             "goals": 1,
@@ -3019,6 +3145,46 @@
         "topAssists": [
           {
             "rank": 1,
+            "name": "王逸伟",
+            "number": 7,
+            "assists": 2,
+            "details": [
+              {
+                "match": "第13轮",
+                "date": "2026-06-23",
+                "time": "82'",
+                "opponent": "南通海门珂缔缘"
+              },
+              {
+                "match": "第15轮",
+                "date": "2026-07-04",
+                "time": "20'",
+                "opponent": "北京理工"
+              }
+            ]
+          },
+          {
+            "rank": 2,
+            "name": "李佳奇",
+            "number": 16,
+            "assists": 2,
+            "details": [
+              {
+                "match": "第15轮",
+                "date": "2026-07-04",
+                "time": "13'",
+                "opponent": "北京理工"
+              },
+              {
+                "match": "第15轮",
+                "date": "2026-07-04",
+                "time": "29'",
+                "opponent": "北京理工"
+              }
+            ]
+          },
+          {
+            "rank": 3,
             "name": "张俊杰",
             "number": 37,
             "assists": 2,
@@ -3038,7 +3204,7 @@
             ]
           },
           {
-            "rank": 2,
+            "rank": 4,
             "name": "温钧翔",
             "number": 35,
             "assists": 1,
@@ -3052,7 +3218,21 @@
             ]
           },
           {
-            "rank": 3,
+            "rank": 5,
+            "name": "杨黔东",
+            "number": 44,
+            "assists": 1,
+            "details": [
+              {
+                "match": "第15轮",
+                "date": "2026-07-04",
+                "time": "10'",
+                "opponent": "北京理工"
+              }
+            ]
+          },
+          {
+            "rank": 6,
             "name": "许瑞轩",
             "number": 30,
             "assists": 1,
@@ -3066,21 +3246,7 @@
             ]
           },
           {
-            "rank": 4,
-            "name": "王逸伟",
-            "number": 7,
-            "assists": 1,
-            "details": [
-              {
-                "match": "第13轮",
-                "date": "2026-06-23",
-                "time": "82'",
-                "opponent": "南通海门珂缔缘"
-              }
-            ]
-          },
-          {
-            "rank": 5,
+            "rank": 7,
             "name": "李瑞龙",
             "number": 24,
             "assists": 1,
@@ -3094,7 +3260,7 @@
             ]
           },
           {
-            "rank": 6,
+            "rank": 8,
             "name": "曹哲哲",
             "number": 58,
             "assists": 1,
@@ -3108,7 +3274,7 @@
             ]
           },
           {
-            "rank": 7,
+            "rank": 9,
             "name": "范阳阳",
             "number": 8,
             "assists": 1,

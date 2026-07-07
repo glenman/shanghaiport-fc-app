@@ -1,318 +1,175 @@
 {
   "match": {
-    "id": 14,
-    "round": "第14轮",
+    "id": 15,
+    "round": "第15轮",
     "competition": "中国足球协会乙级联赛",
-    "date": "2026-06-27",
-    "time": "16:00",
-    "homeTeam": "大连可为",
-    "awayTeam": "上海海港富盛经开",
-    "venue": "未提供",
-    "city": "大连",
-    "result": "1-0",
+    "date": "2026-07-04",
+    "time": "16:30",
+    "homeTeam": "上海海港富盛经开",
+    "awayTeam": "北京理工",
+    "venue": "乐动力临港足球综合运动中心",
+    "city": "上海",
+    "result": "5-1",
     "status": "已结束",
-    "attendance": null,
-    "referee": "未提供",
+    "attendance": 2300,
+    "referee": "薛翔升",
     "weather": "未提供"
   },
-  "summary": "中乙联赛第14轮，大连可为主场1-0战胜上海海港富盛经开。大连可为队陈永泽在第64分钟攻入全场唯一进球。",
+  "summary": "中乙联赛第15轮，上海海港富盛经开主场5-1大胜北京理工。上海海港富盛经开队温钧翔、杨黔东、李佳奇等球员多点开花，北京理工队张宇烨打入一球。",
   "highlights": [
     {
-      "time": "2'",
-      "description": "大连可为刘至郅获得黄牌",
-      "type": "yellow_card",
-      "team": "home",
-      "player": "刘至郅"
-    },
-    {
-      "time": "54'",
-      "description": "主队换人：刘泓辰换上，李扬换下",
-      "type": "substitution",
-      "team": "home",
-      "playerIn": "刘泓辰",
-      "playerOut": "李扬"
-    },
-    {
-      "time": "54'",
-      "description": "主队换人：葛宇翔换上，刘至郅换下",
-      "type": "substitution",
-      "team": "home",
-      "playerIn": "葛宇翔",
-      "playerOut": "刘至郅"
-    },
-    {
-      "time": "64'",
-      "description": "大连可为陈永泽进球",
+      "time": "10'",
+      "description": "上海海港富盛经开温钧翔进球，杨黔东助攻",
       "type": "goal",
       "team": "home",
-      "player": "陈永泽"
+      "player": "温钧翔",
+      "assist": "杨黔东"
     },
     {
-      "time": "64'",
-      "description": "主队换人：葛宇翔换上，迪力夏提·阿布力米提换下",
+      "time": "13'",
+      "description": "上海海港富盛经开杨黔东进球，李佳奇助攻",
+      "type": "goal",
+      "team": "home",
+      "player": "杨黔东",
+      "assist": "李佳奇"
+    },
+    {
+      "time": "20'",
+      "description": "上海海港富盛经开许瑞轩进球，王逸伟助攻",
+      "type": "goal",
+      "team": "home",
+      "player": "许瑞轩",
+      "assist": "王逸伟"
+    },
+    {
+      "time": "22'",
+      "description": "北京理工张宇烨进球，余坤熠助攻",
+      "type": "goal",
+      "team": "away",
+      "player": "张宇烨",
+      "assist": "余坤熠"
+    },
+    {
+      "time": "29'",
+      "description": "上海海港富盛经开杨黔东进球，李佳奇助攻",
+      "type": "goal",
+      "team": "home",
+      "player": "杨黔东",
+      "assist": "李佳奇"
+    },
+    {
+      "time": "46'",
+      "description": "客队换人：姜晓渔换上，王志远换下",
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "姜晓渔",
+      "playerOut": "王志远"
+    },
+    {
+      "time": "62'",
+      "description": "主队换人：张卫换上，李瑞龙换下",
       "type": "substitution",
       "team": "home",
-      "playerIn": "葛宇翔",
-      "playerOut": "迪力夏提·阿布力米提"
-    },
-    {
-      "time": "66'",
-      "description": "客队换人：王丹换上，梁锦鸿换下",
-      "type": "substitution",
-      "team": "away",
-      "playerIn": "王丹",
-      "playerOut": "梁锦鸿"
-    },
-    {
-      "time": "66'",
-      "description": "客队换人：汪照普换上，李瑞龙换下",
-      "type": "substitution",
-      "team": "away",
-      "playerIn": "汪照普",
+      "playerIn": "张卫",
       "playerOut": "李瑞龙"
     },
     {
-      "time": "73'",
-      "description": "客队换人：姜天乐换上，许瑞轩换下",
-      "type": "substitution",
-      "team": "away",
-      "playerIn": "姜天乐",
-      "playerOut": "许瑞轩"
-    },
-    {
-      "time": "73'",
-      "description": "客队换人：任晓航换上，杨黔东换下",
-      "type": "substitution",
-      "team": "away",
-      "playerIn": "任晓航",
-      "playerOut": "杨黔东"
-    },
-    {
-      "time": "79'",
-      "description": "主队换人：汤郡豪换上，于泽源换下",
+      "time": "62'",
+      "description": "主队换人：李泽生换上，崔峻诚换下",
       "type": "substitution",
       "team": "home",
-      "playerIn": "汤郡豪",
-      "playerOut": "于泽源"
+      "playerIn": "李泽生",
+      "playerOut": "崔峻诚"
     },
     {
-      "time": "79'",
-      "description": "主队换人：么旭辰换上，刘至郅换下",
+      "time": "68'",
+      "description": "客队换人：胡嘉祺换上，魏家傲换下",
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "胡嘉祺",
+      "playerOut": "魏家傲"
+    },
+    {
+      "time": "71'",
+      "description": "上海海港富盛经开温钧翔进球",
+      "type": "goal",
+      "team": "home",
+      "player": "温钧翔"
+    },
+    {
+      "time": "72'",
+      "description": "客队换人：任世哲换上，刘天阳换下",
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "任世哲",
+      "playerOut": "刘天阳"
+    },
+    {
+      "time": "73'",
+      "description": "主队换人：汪照普换上，王逸伟换下",
       "type": "substitution",
       "team": "home",
-      "playerIn": "么旭辰",
-      "playerOut": "刘至郅"
+      "playerIn": "汪照普",
+      "playerOut": "王逸伟"
+    },
+    {
+      "time": "74'",
+      "description": "主队换人：黄文政换上，张俊杰换下",
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "黄文政",
+      "playerOut": "张俊杰"
+    },
+    {
+      "time": "75'",
+      "description": "北京理工邓嘉俊黄牌",
+      "type": "yellow_card",
+      "team": "away",
+      "player": "邓嘉俊"
     },
     {
       "time": "80'",
-      "description": "客队换人：韩杨换上，李佳奇换下",
+      "description": "客队换人：王建换上，李其亚换下",
       "type": "substitution",
       "team": "away",
-      "playerIn": "韩杨",
+      "playerIn": "王建",
+      "playerOut": "李其亚"
+    },
+    {
+      "time": "80'",
+      "description": "客队换人：李龙坤换上，毛鹏换下",
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "李龙坤",
+      "playerOut": "毛鹏"
+    },
+    {
+      "time": "80'",
+      "description": "客队换人：陈博弈换上，贾翰林换下",
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "陈博弈",
+      "playerOut": "贾翰林"
+    },
+    {
+      "time": "83'",
+      "description": "主队换人：梁锦鸿换上，李佳奇换下",
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "梁锦鸿",
       "playerOut": "李佳奇"
+    },
+    {
+      "time": "83'",
+      "description": "主队换人：曹哲哲换上，温钧翔换下",
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "曹哲哲",
+      "playerOut": "温钧翔"
     }
   ],
   "lineups": {
     "home": {
-      "name": "大连可为",
-      "formation": "4-1-4-1",
-      "manager": "徐晖",
-      "captain": null,
-      "players": [
-        {
-          "number": 1,
-          "name": "张翀",
-          "position": "门将",
-          "nationality": "中国",
-          "minutes": 90,
-          "goals": 0,
-          "assists": 0,
-          "yellowCards": 0,
-          "redCards": 0
-        },
-        {
-          "number": 5,
-          "name": "傅韵程",
-          "position": "后卫",
-          "nationality": "中国",
-          "minutes": 90,
-          "goals": 0,
-          "assists": 0,
-          "yellowCards": 0,
-          "redCards": 0
-        },
-        {
-          "number": 35,
-          "name": "王鹏",
-          "position": "后卫",
-          "nationality": "中国",
-          "minutes": 90,
-          "goals": 0,
-          "assists": 0,
-          "yellowCards": 0,
-          "redCards": 0
-        },
-        {
-          "number": 14,
-          "name": "李振",
-          "position": "后卫",
-          "nationality": "中国",
-          "minutes": 90,
-          "goals": 0,
-          "assists": 0,
-          "yellowCards": 0,
-          "redCards": 0
-        },
-        {
-          "number": 31,
-          "name": "白合提亚尔·排孜拉",
-          "position": "后卫",
-          "nationality": "中国",
-          "minutes": 90,
-          "goals": 0,
-          "assists": 0,
-          "yellowCards": 0,
-          "redCards": 0
-        },
-        {
-          "number": 8,
-          "name": "迪力夏提·阿布力米提",
-          "position": "中场",
-          "nationality": "中国",
-          "minutes": 64,
-          "goals": 0,
-          "assists": 0,
-          "yellowCards": 0,
-          "redCards": 0
-        },
-        {
-          "number": 20,
-          "name": "张宪兵",
-          "position": "中场",
-          "nationality": "中国",
-          "minutes": 90,
-          "goals": 0,
-          "assists": 0,
-          "yellowCards": 0,
-          "redCards": 0
-        },
-        {
-          "number": 30,
-          "name": "于泽源",
-          "position": "中场",
-          "nationality": "中国",
-          "minutes": 79,
-          "goals": 0,
-          "assists": 0,
-          "yellowCards": 0,
-          "redCards": 0
-        },
-        {
-          "number": 27,
-          "name": "李扬",
-          "position": "中场",
-          "nationality": "中国",
-          "minutes": 54,
-          "goals": 0,
-          "assists": 0,
-          "yellowCards": 0,
-          "redCards": 0
-        },
-        {
-          "number": 9,
-          "name": "刘至郅",
-          "position": "中场",
-          "nationality": "中国",
-          "minutes": 54,
-          "goals": 0,
-          "assists": 0,
-          "yellowCards": 1,
-          "redCards": 0
-        },
-        {
-          "number": 29,
-          "name": "陈永泽",
-          "position": "前锋",
-          "nationality": "中国",
-          "minutes": 90,
-          "goals": 1,
-          "assists": 0,
-          "yellowCards": 0,
-          "redCards": 0
-        }
-      ],
-      "substitutes": [
-        {
-          "number": 33,
-          "name": "程长城",
-          "position": "前锋"
-        },
-        {
-          "number": 11,
-          "name": "葛宇翔",
-          "position": "中场",
-          "substitutedAt": 54,
-          "substitutedFor": null
-        },
-        {
-          "number": 37,
-          "name": "黄剑鸣",
-          "position": "中场"
-        },
-        {
-          "number": 12,
-          "name": "李武泽",
-          "position": "后卫"
-        },
-        {
-          "number": 6,
-          "name": "刘小龙",
-          "position": "中场"
-        },
-        {
-          "number": 23,
-          "name": "刘泓辰",
-          "position": "中场",
-          "substitutedAt": 54,
-          "substitutedFor": null
-        },
-        {
-          "number": 7,
-          "name": "汤郡豪",
-          "position": "中场",
-          "substitutedAt": 79,
-          "substitutedFor": null
-        },
-        {
-          "number": 13,
-          "name": "颜晓宇",
-          "position": "门将"
-        },
-        {
-          "number": 18,
-          "name": "么旭辰",
-          "position": "中场",
-          "substitutedAt": 79,
-          "substitutedFor": null
-        },
-        {
-          "number": 3,
-          "name": "于延豪",
-          "position": "后卫"
-        },
-        {
-          "number": 2,
-          "name": "张振",
-          "position": "后卫"
-        },
-        {
-          "number": 38,
-          "name": "张自超",
-          "position": "中场"
-        }
-      ]
-    },
-    "away": {
       "name": "上海海港富盛经开",
       "formation": "4-2-3-1",
       "manager": "成耀东",
@@ -334,20 +191,9 @@
           "name": "王逸伟",
           "position": "后卫",
           "nationality": "中国",
-          "minutes": 90,
-          "goals": 0,
-          "assists": 0,
-          "yellowCards": 0,
-          "redCards": 0
-        },
-        {
-          "number": 30,
-          "name": "许瑞轩",
-          "position": "后卫",
-          "nationality": "中国",
           "minutes": 73,
           "goals": 0,
-          "assists": 0,
+          "assists": 1,
           "yellowCards": 0,
           "redCards": 0
         },
@@ -363,22 +209,22 @@
           "redCards": 0
         },
         {
-          "number": 57,
-          "name": "梁锦鸿",
+          "number": 30,
+          "name": "许瑞轩",
           "position": "后卫",
           "nationality": "中国",
-          "minutes": 66,
-          "goals": 0,
+          "minutes": 90,
+          "goals": 1,
           "assists": 0,
           "yellowCards": 0,
           "redCards": 0
         },
         {
-          "number": 16,
-          "name": "李佳奇",
-          "position": "中场",
+          "number": 51,
+          "name": "刘铁诚",
+          "position": "后卫",
           "nationality": "中国",
-          "minutes": 80,
+          "minutes": 90,
           "goals": 0,
           "assists": 0,
           "yellowCards": 0,
@@ -389,20 +235,20 @@
           "name": "李瑞龙",
           "position": "中场",
           "nationality": "中国",
-          "minutes": 66,
+          "minutes": 62,
           "goals": 0,
           "assists": 0,
           "yellowCards": 0,
           "redCards": 0
         },
         {
-          "number": 37,
-          "name": "张俊杰",
+          "number": 16,
+          "name": "李佳奇",
           "position": "中场",
           "nationality": "中国",
-          "minutes": 90,
-          "goals": 0,
-          "assists": 0,
+          "minutes": 83,
+          "goals": 2,
+          "assists": 2,
           "yellowCards": 0,
           "redCards": 0
         },
@@ -411,29 +257,40 @@
           "name": "杨黔东",
           "position": "中场",
           "nationality": "中国",
-          "minutes": 73,
-          "goals": 0,
-          "assists": 0,
-          "yellowCards": 0,
-          "redCards": 0
-        },
-        {
-          "number": 59,
-          "name": "王晶磊",
-          "position": "中场",
-          "nationality": "中国",
           "minutes": 90,
-          "goals": 0,
-          "assists": 0,
+          "goals": 2,
+          "assists": 1,
           "yellowCards": 0,
           "redCards": 0
         },
         {
           "number": 35,
           "name": "温钧翔",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 83,
+          "goals": 2,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 46,
+          "name": "崔峻诚",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 62,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 37,
+          "name": "张俊杰",
           "position": "前锋",
           "nationality": "中国",
-          "minutes": 90,
+          "minutes": 74,
           "goals": 0,
           "assists": 0,
           "yellowCards": 0,
@@ -442,49 +299,23 @@
       ],
       "substitutes": [
         {
-          "number": 58,
-          "name": "曹哲哲",
-          "position": "中场"
-        },
-        {
-          "number": 9,
-          "name": "黎德明",
-          "position": "中场"
-        },
-        {
-          "number": 23,
-          "name": "李阳",
-          "position": "中场"
-        },
-        {
           "number": 27,
           "name": "任晓航",
-          "position": "中场",
-          "substitutedAt": 73,
-          "substitutedFor": null
-        },
-        {
-          "number": 8,
-          "name": "范阳阳",
           "position": "中场"
         },
         {
-          "number": 18,
-          "name": "韩杨",
-          "position": "前锋",
-          "substitutedAt": 80,
-          "substitutedFor": null
+          "number": 43,
+          "name": "汪照普",
+          "position": "中场"
         },
         {
-          "number": 13,
-          "name": "姜天乐",
-          "position": "后卫",
-          "substitutedAt": 73,
-          "substitutedFor": null
+          "number": 59,
+          "name": "王晶磊",
+          "position": "后卫"
         },
         {
-          "number": 56,
-          "name": "姜宇斐",
+          "number": 2,
+          "name": "张卫",
           "position": "后卫"
         },
         {
@@ -493,23 +324,200 @@
           "position": "门将"
         },
         {
-          "number": 60,
-          "name": "王丹",
-          "position": "前锋",
-          "substitutedAt": 66,
-          "substitutedFor": null
+          "number": 57,
+          "name": "梁锦鸿",
+          "position": "前锋"
         },
         {
-          "number": 43,
-          "name": "汪照普",
+          "number": 9,
+          "name": "黎德明",
+          "position": "中场"
+        },
+        {
+          "number": 11,
+          "name": "李泽生",
+          "position": "中场"
+        },
+        {
+          "number": 13,
+          "name": "姜天乐",
+          "position": "后卫"
+        },
+        {
+          "number": 39,
+          "name": "黄文政",
+          "position": "前锋"
+        },
+        {
+          "number": 8,
+          "name": "范阳阳",
+          "position": "中场"
+        },
+        {
+          "number": 58,
+          "name": "曹哲哲",
+          "position": "中场"
+        }
+      ]
+    },
+    "away": {
+      "name": "北京理工",
+      "formation": "4-4-2",
+      "manager": "于飞",
+      "captain": null,
+      "players": [
+        {
+          "number": 1,
+          "name": "王志远",
+          "position": "门将",
+          "nationality": "中国",
+          "minutes": 46,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 11,
+          "name": "张宇烨",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 5,
+          "name": "张腾",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 4,
+          "name": "贾翰林",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 80,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 2,
+          "name": "刘天阳",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 72,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 25,
+          "name": "余坤熠",
           "position": "中场",
-          "substitutedAt": 66,
-          "substitutedFor": null
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 18,
+          "name": "魏家傲",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 68,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 17,
+          "name": "毛鹏",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 80,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 15,
+          "name": "马龙健",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 45,
+          "name": "邓嘉俊",
+          "position": "前锋",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 37,
+          "name": "李其亚",
+          "position": "前锋",
+          "nationality": "中国",
+          "minutes": 80,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 26,
+          "name": "任世哲",
+          "position": "后卫"
         },
         {
           "number": 10,
-          "name": "张慧宇",
-          "position": "前锋"
+          "name": "王建",
+          "position": "中场"
+        },
+        {
+          "number": 6,
+          "name": "胡嘉祺",
+          "position": "中场"
+        },
+        {
+          "number": 13,
+          "name": "姜晓渔",
+          "position": "门将"
+        },
+        {
+          "number": 54,
+          "name": "李龙坤",
+          "position": "后卫"
+        },
+        {
+          "number": 19,
+          "name": "陈博弈",
+          "position": "中场"
         }
       ]
     }
@@ -517,50 +525,60 @@
   "statistics": [
     {
       "name": "进球",
-      "home": "1",
-      "away": "0"
+      "home": "5",
+      "away": "1"
     },
     {
       "name": "控球率",
-      "home": "60%",
-      "away": "40%"
+      "home": "55%",
+      "away": "45%"
+    },
+    {
+      "name": "进攻次数",
+      "home": "86",
+      "away": "90"
+    },
+    {
+      "name": "危险进攻",
+      "home": "40",
+      "away": "31"
     },
     {
       "name": "射正",
-      "home": "3",
-      "away": "3"
-    },
-    {
-      "name": "射偏",
-      "home": "10",
-      "away": "6"
-    },
-    {
-      "name": "角球",
-      "home": "6",
+      "home": "9",
       "away": "2"
     },
     {
-      "name": "黄牌",
+      "name": "射偏",
+      "home": "5",
+      "away": "3"
+    },
+    {
+      "name": "角球",
+      "home": "9",
+      "away": "3"
+    },
+    {
+      "name": "点球",
       "home": "1",
       "away": "0"
+    },
+    {
+      "name": "黄牌",
+      "home": "0",
+      "away": "1"
     },
     {
       "name": "红牌",
       "home": "0",
       "away": "0"
-    },
-    {
-      "name": "任意球",
-      "home": "2",
-      "away": "2"
     }
   ],
   "keyFactors": [
-    "大连可为主场1-0小胜上海海港富盛经开，陈永泽第64分钟攻入制胜球",
-    "大连可为控球率60%占据优势，射门次数16-12领先对手",
-    "上海海港富盛经开全场犯规15次，比主队多4次，但未得黄牌",
-    "大连可为刘至郅在第2分钟吃到全场唯一黄牌",
-    "比赛对抗激烈，大连可为在主场凭借一次关键进攻拿下胜利"
+    "上海海港富盛经开主场5-1大胜北京理工，展现强大进攻火力",
+    "上海海港富盛经开控球率55%占据优势，射门次数14-5大幅领先",
+    "李佳奇贡献2球2助攻，杨黔东2球1助攻，温钧翔2球1助攻，三人包办全部进球",
+    "北京理工虽然控球率45%，但射正次数仅2次，进攻效率较低",
+    "上海海港富盛经开获得9次角球和1个点球，完全掌控比赛节奏"
   ]
 }
