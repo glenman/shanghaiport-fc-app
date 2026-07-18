@@ -2259,17 +2259,17 @@
   },
   "bTeam": {
     "teamName": "上海海港富盛经开",
-    "matchesPlayed": 15,
-    "record": "9胜4平2负",
-    "goalsFor": 27,
+    "matchesPlayed": 16,
+    "record": "10胜4平2负",
+    "goalsFor": 29,
     "goalsAgainst": 10,
-    "points": 31,
+    "points": 34,
     "topScorers": [
       {
         "rank": 1,
         "name": "温钧翔",
         "number": 35,
-        "goals": 6,
+        "goals": 7,
         "details": [
           {
             "match": "第1轮",
@@ -2312,6 +2312,13 @@
             "time": "71'",
             "opponent": "北京理工",
             "type": "进球"
+          },
+          {
+            "match": "第17轮",
+            "date": "2026-07-18",
+            "time": "66'",
+            "opponent": "长春喜都",
+            "type": "进球"
           }
         ]
       },
@@ -2319,7 +2326,7 @@
         "rank": 2,
         "name": "杨黔东",
         "number": 44,
-        "goals": 4,
+        "goals": 5,
         "details": [
           {
             "match": "第1轮",
@@ -2347,6 +2354,13 @@
             "date": "2026-07-04",
             "time": "29'",
             "opponent": "北京理工",
+            "type": "进球"
+          },
+          {
+            "match": "第17轮",
+            "date": "2026-07-18",
+            "time": "26'",
+            "opponent": "长春喜都",
             "type": "进球"
           }
         ]
@@ -2547,6 +2561,32 @@
     "topAssists": [
       {
         "rank": 1,
+        "name": "李佳奇",
+        "number": 16,
+        "assists": 3,
+        "details": [
+          {
+            "match": "第15轮",
+            "date": "2026-07-04",
+            "time": "13'",
+            "opponent": "北京理工"
+          },
+          {
+            "match": "第15轮",
+            "date": "2026-07-04",
+            "time": "29'",
+            "opponent": "北京理工"
+          },
+          {
+            "match": "第17轮",
+            "date": "2026-07-18",
+            "time": "26'",
+            "opponent": "长春喜都"
+          }
+        ]
+      },
+      {
+        "rank": 2,
         "name": "王逸伟",
         "number": 7,
         "assists": 2,
@@ -2561,26 +2601,6 @@
             "match": "第15轮",
             "date": "2026-07-04",
             "time": "20'",
-            "opponent": "北京理工"
-          }
-        ]
-      },
-      {
-        "rank": 2,
-        "name": "李佳奇",
-        "number": 16,
-        "assists": 2,
-        "details": [
-          {
-            "match": "第15轮",
-            "date": "2026-07-04",
-            "time": "13'",
-            "opponent": "北京理工"
-          },
-          {
-            "match": "第15轮",
-            "date": "2026-07-04",
-            "time": "29'",
             "opponent": "北京理工"
           }
         ]
@@ -2693,6 +2713,42 @@
     "yellowCards": [
       {
         "rank": 1,
+        "name": "刘铁诚",
+        "number": 51,
+        "yellowCards": 4,
+        "details": [
+          {
+            "match": "第4轮",
+            "date": "2026-04-14",
+            "time": "24'",
+            "opponent": "北京理工",
+            "reason": "客队刘铁诚被黄牌警告"
+          },
+          {
+            "match": "第8轮",
+            "date": "2026-05-11",
+            "time": "76'",
+            "opponent": "大连英博B队",
+            "reason": "上海海港富盛经开刘铁诚获得黄牌"
+          },
+          {
+            "match": "第13轮",
+            "date": "2026-06-23",
+            "time": "67'",
+            "opponent": "南通海门珂缔缘",
+            "reason": "上海海港富盛经开刘铁诚获得黄牌"
+          },
+          {
+            "match": "第17轮",
+            "date": "2026-07-18",
+            "time": "90'",
+            "opponent": "长春喜都",
+            "reason": "上海海港富盛经开刘铁诚黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 2,
         "name": "崔峻诚",
         "number": 46,
         "yellowCards": 3,
@@ -2721,36 +2777,29 @@
         ]
       },
       {
-        "rank": 2,
-        "name": "刘铁诚",
-        "number": 51,
-        "yellowCards": 3,
+        "rank": 3,
+        "name": "杨黔东",
+        "number": 44,
+        "yellowCards": 2,
         "details": [
           {
-            "match": "第4轮",
-            "date": "2026-04-14",
-            "time": "24'",
-            "opponent": "北京理工",
-            "reason": "客队刘铁诚被黄牌警告"
+            "match": "第11轮",
+            "date": "2026-06-14",
+            "time": "58'",
+            "opponent": "青岛红狮",
+            "reason": "上海海港富盛经开杨黔东获得黄牌"
           },
           {
-            "match": "第8轮",
-            "date": "2026-05-11",
-            "time": "76'",
-            "opponent": "大连英博B队",
-            "reason": "上海海港富盛经开刘铁诚获得黄牌"
-          },
-          {
-            "match": "第13轮",
-            "date": "2026-06-23",
-            "time": "67'",
-            "opponent": "南通海门珂缔缘",
-            "reason": "上海海港富盛经开刘铁诚获得黄牌"
+            "match": "第17轮",
+            "date": "2026-07-18",
+            "time": "65'",
+            "opponent": "长春喜都",
+            "reason": "上海海港富盛经开杨黔东黄牌"
           }
         ]
       },
       {
-        "rank": 3,
+        "rank": 4,
         "name": "谢鸿宇",
         "number": 20,
         "yellowCards": 2,
@@ -2772,7 +2821,7 @@
         ]
       },
       {
-        "rank": 4,
+        "rank": 5,
         "name": "王逸伟",
         "number": 7,
         "yellowCards": 2,
@@ -2794,7 +2843,7 @@
         ]
       },
       {
-        "rank": 5,
+        "rank": 6,
         "name": "李瑞龙",
         "number": 24,
         "yellowCards": 2,
@@ -2816,7 +2865,7 @@
         ]
       },
       {
-        "rank": 6,
+        "rank": 7,
         "name": "温钧翔",
         "number": 35,
         "yellowCards": 1,
@@ -2831,7 +2880,7 @@
         ]
       },
       {
-        "rank": 7,
+        "rank": 8,
         "name": "李圣龙",
         "number": 14,
         "yellowCards": 1,
@@ -2842,21 +2891,6 @@
             "time": "81'",
             "opponent": "长春喜都",
             "reason": "上海海港富盛经开李圣龙获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 8,
-        "name": "杨黔东",
-        "number": 44,
-        "yellowCards": 1,
-        "details": [
-          {
-            "match": "第11轮",
-            "date": "2026-06-14",
-            "time": "58'",
-            "opponent": "青岛红狮",
-            "reason": "上海海港富盛经开杨黔东获得黄牌"
           }
         ]
       },
@@ -2904,6 +2938,21 @@
             "reason": "上海海港富盛经开王丹获得黄牌"
           }
         ]
+      },
+      {
+        "rank": 12,
+        "name": "黄文政",
+        "number": 39,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第17轮",
+            "date": "2026-07-18",
+            "time": "90'",
+            "opponent": "长春喜都",
+            "reason": "上海海港富盛经开黄文政黄牌"
+          }
+        ]
       }
     ],
     "redCards": [
@@ -2925,17 +2974,17 @@
     ],
     "competitions": {
       "中国足球协会乙级联赛": {
-        "matchesPlayed": 15,
-        "record": "9胜4平2负",
-        "goalsFor": 27,
+        "matchesPlayed": 16,
+        "record": "10胜4平2负",
+        "goalsFor": 29,
         "goalsAgainst": 10,
-        "points": 31,
+        "points": 34,
         "topScorers": [
           {
             "rank": 1,
             "name": "温钧翔",
             "number": 35,
-            "goals": 6,
+            "goals": 7,
             "details": [
               {
                 "match": "第1轮",
@@ -2978,6 +3027,13 @@
                 "time": "71'",
                 "opponent": "北京理工",
                 "type": "进球"
+              },
+              {
+                "match": "第17轮",
+                "date": "2026-07-18",
+                "time": "66'",
+                "opponent": "长春喜都",
+                "type": "进球"
               }
             ]
           },
@@ -2985,7 +3041,7 @@
             "rank": 2,
             "name": "杨黔东",
             "number": 44,
-            "goals": 4,
+            "goals": 5,
             "details": [
               {
                 "match": "第1轮",
@@ -3013,6 +3069,13 @@
                 "date": "2026-07-04",
                 "time": "29'",
                 "opponent": "北京理工",
+                "type": "进球"
+              },
+              {
+                "match": "第17轮",
+                "date": "2026-07-18",
+                "time": "26'",
+                "opponent": "长春喜都",
                 "type": "进球"
               }
             ]
@@ -3213,6 +3276,32 @@
         "topAssists": [
           {
             "rank": 1,
+            "name": "李佳奇",
+            "number": 16,
+            "assists": 3,
+            "details": [
+              {
+                "match": "第15轮",
+                "date": "2026-07-04",
+                "time": "13'",
+                "opponent": "北京理工"
+              },
+              {
+                "match": "第15轮",
+                "date": "2026-07-04",
+                "time": "29'",
+                "opponent": "北京理工"
+              },
+              {
+                "match": "第17轮",
+                "date": "2026-07-18",
+                "time": "26'",
+                "opponent": "长春喜都"
+              }
+            ]
+          },
+          {
+            "rank": 2,
             "name": "王逸伟",
             "number": 7,
             "assists": 2,
@@ -3227,26 +3316,6 @@
                 "match": "第15轮",
                 "date": "2026-07-04",
                 "time": "20'",
-                "opponent": "北京理工"
-              }
-            ]
-          },
-          {
-            "rank": 2,
-            "name": "李佳奇",
-            "number": 16,
-            "assists": 2,
-            "details": [
-              {
-                "match": "第15轮",
-                "date": "2026-07-04",
-                "time": "13'",
-                "opponent": "北京理工"
-              },
-              {
-                "match": "第15轮",
-                "date": "2026-07-04",
-                "time": "29'",
                 "opponent": "北京理工"
               }
             ]
@@ -3359,6 +3428,42 @@
         "yellowCards": [
           {
             "rank": 1,
+            "name": "刘铁诚",
+            "number": 51,
+            "yellowCards": 4,
+            "details": [
+              {
+                "match": "第4轮",
+                "date": "2026-04-14",
+                "time": "24'",
+                "opponent": "北京理工",
+                "reason": "客队刘铁诚被黄牌警告"
+              },
+              {
+                "match": "第8轮",
+                "date": "2026-05-11",
+                "time": "76'",
+                "opponent": "大连英博B队",
+                "reason": "上海海港富盛经开刘铁诚获得黄牌"
+              },
+              {
+                "match": "第13轮",
+                "date": "2026-06-23",
+                "time": "67'",
+                "opponent": "南通海门珂缔缘",
+                "reason": "上海海港富盛经开刘铁诚获得黄牌"
+              },
+              {
+                "match": "第17轮",
+                "date": "2026-07-18",
+                "time": "90'",
+                "opponent": "长春喜都",
+                "reason": "上海海港富盛经开刘铁诚黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 2,
             "name": "崔峻诚",
             "number": 46,
             "yellowCards": 3,
@@ -3387,36 +3492,29 @@
             ]
           },
           {
-            "rank": 2,
-            "name": "刘铁诚",
-            "number": 51,
-            "yellowCards": 3,
+            "rank": 3,
+            "name": "杨黔东",
+            "number": 44,
+            "yellowCards": 2,
             "details": [
               {
-                "match": "第4轮",
-                "date": "2026-04-14",
-                "time": "24'",
-                "opponent": "北京理工",
-                "reason": "客队刘铁诚被黄牌警告"
+                "match": "第11轮",
+                "date": "2026-06-14",
+                "time": "58'",
+                "opponent": "青岛红狮",
+                "reason": "上海海港富盛经开杨黔东获得黄牌"
               },
               {
-                "match": "第8轮",
-                "date": "2026-05-11",
-                "time": "76'",
-                "opponent": "大连英博B队",
-                "reason": "上海海港富盛经开刘铁诚获得黄牌"
-              },
-              {
-                "match": "第13轮",
-                "date": "2026-06-23",
-                "time": "67'",
-                "opponent": "南通海门珂缔缘",
-                "reason": "上海海港富盛经开刘铁诚获得黄牌"
+                "match": "第17轮",
+                "date": "2026-07-18",
+                "time": "65'",
+                "opponent": "长春喜都",
+                "reason": "上海海港富盛经开杨黔东黄牌"
               }
             ]
           },
           {
-            "rank": 3,
+            "rank": 4,
             "name": "谢鸿宇",
             "number": 20,
             "yellowCards": 2,
@@ -3438,7 +3536,7 @@
             ]
           },
           {
-            "rank": 4,
+            "rank": 5,
             "name": "王逸伟",
             "number": 7,
             "yellowCards": 2,
@@ -3460,7 +3558,7 @@
             ]
           },
           {
-            "rank": 5,
+            "rank": 6,
             "name": "李瑞龙",
             "number": 24,
             "yellowCards": 2,
@@ -3482,7 +3580,7 @@
             ]
           },
           {
-            "rank": 6,
+            "rank": 7,
             "name": "温钧翔",
             "number": 35,
             "yellowCards": 1,
@@ -3497,7 +3595,7 @@
             ]
           },
           {
-            "rank": 7,
+            "rank": 8,
             "name": "李圣龙",
             "number": 14,
             "yellowCards": 1,
@@ -3508,21 +3606,6 @@
                 "time": "81'",
                 "opponent": "长春喜都",
                 "reason": "上海海港富盛经开李圣龙获得黄牌"
-              }
-            ]
-          },
-          {
-            "rank": 8,
-            "name": "杨黔东",
-            "number": 44,
-            "yellowCards": 1,
-            "details": [
-              {
-                "match": "第11轮",
-                "date": "2026-06-14",
-                "time": "58'",
-                "opponent": "青岛红狮",
-                "reason": "上海海港富盛经开杨黔东获得黄牌"
               }
             ]
           },
@@ -3568,6 +3651,21 @@
                 "time": "90'",
                 "opponent": "泰安天贶",
                 "reason": "上海海港富盛经开王丹获得黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 12,
+            "name": "黄文政",
+            "number": 39,
+            "yellowCards": 1,
+            "details": [
+              {
+                "match": "第17轮",
+                "date": "2026-07-18",
+                "time": "90'",
+                "opponent": "长春喜都",
+                "reason": "上海海港富盛经开黄文政黄牌"
               }
             ]
           }
