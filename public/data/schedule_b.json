@@ -295,7 +295,17 @@
     "city": "南通",
     "result": "2-2",
     "status": "已结束",
-    "type": "中乙"
+    "type": "中乙",
+    "referee": "未提供",
+    "home_coach": "高万国",
+    "away_coach": "成耀东",
+    "scorers": {
+      "home": [
+        "王博文",
+        "戴源基"
+      ],
+      "away": []
+    }
   },
   {
     "id": 14,
@@ -308,7 +318,19 @@
     "city": "大连",
     "result": "1-0",
     "status": "已结束",
-    "type": "中乙"
+    "type": "中乙",
+    "referee": "孟祥坤",
+    "home_coach": "丹尼尔·拉莫斯",
+    "away_coach": "凯文·穆斯卡特",
+    "attendance": 19041,
+    "scorers": {
+      "home": [
+        "布鲁诺·纳扎里奥"
+      ],
+      "away": [
+        "李新翔"
+      ]
+    }
   },
   {
     "id": 15,
@@ -317,12 +339,11 @@
     "time": "16:30",
     "homeTeam": "上海海港富盛经开",
     "awayTeam": "北京理工",
-    "venue": "上海",
+    "venue": "乐动力临港足球综合运动中心",
     "city": "上海",
     "result": "5-1",
     "status": "已结束",
     "type": "中乙",
-    "venue": "乐动力临港足球综合运动中心",
     "attendance": 2300,
     "scorers": {
       "home": [
@@ -335,7 +356,10 @@
       "away": [
         "余坤熠"
       ]
-    }
+    },
+    "referee": "万涛",
+    "home_coach": "郑智",
+    "away_coach": "凯文·穆斯卡特"
   },
   {
     "id": 16,

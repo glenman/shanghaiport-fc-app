@@ -1,0 +1,641 @@
+{
+  "match": {
+    "id": 19,
+    "round": "第19轮",
+    "date": "2026-07-17",
+    "time": "20:00",
+    "homeTeam": "云南玉昆",
+    "awayTeam": "上海海港",
+    "venue": "玉溪高原体育中心体育场",
+    "city": "玉溪",
+    "result": "2-2",
+    "status": "已结束",
+    "attendance": "20132",
+    "referee": "金京元",
+    "weather": "未知",
+    "competition": "中国足球协会超级联赛",
+    "matchweek": 19,
+    "season": "2026"
+  },
+  "matchDetails": {
+    "stadiumCapacity": "未知",
+    "pitchCondition": "未知",
+    "temperature": "未知",
+    "kickoffTime": "20:00",
+    "halftimeScore": "0-2",
+    "fulltimeScore": "2-2"
+  },
+  "officials": {
+    "referee": "金京元",
+    "assistantReferee1": "汤朝迪",
+    "assistantReferee2": "吕品",
+    "fourthOfficial": "严立夫",
+    "VAR": "王巍"
+  },
+  "lineups": {
+    "home": {
+      "name": "云南玉昆",
+      "formation": "4-2-3-1",
+      "manager": "乔迪·温亚尔斯",
+      "captain": "亚历山德鲁·约尼察",
+      "players": [
+        {
+          "number": 1,
+          "name": "鲍亚雄",
+          "position": "门将",
+          "nationality": "中国",
+          "age": "29-055",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 3,
+          "name": "徐宏杰",
+          "position": "右后卫",
+          "nationality": "中国香港",
+          "age": "29-193",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 5,
+          "name": "石柯",
+          "position": "中后卫",
+          "nationality": "中国",
+          "age": "33-190",
+          "minutes": 82,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 9,
+          "name": "克莱伯",
+          "position": "前锋",
+          "nationality": "巴西",
+          "age": "29-268",
+          "minutes": 82,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "亚历山德鲁·约尼察",
+          "position": "后腰",
+          "nationality": "罗马尼亚",
+          "age": "31-215",
+          "minutes": 89,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 11,
+          "name": "奥斯卡·马里图",
+          "position": "攻击型中场",
+          "nationality": "刚果民主共和国",
+          "age": "26-334",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 18,
+          "name": "弋腾",
+          "position": "中后卫",
+          "nationality": "中国",
+          "age": "36-145",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 19,
+          "name": "黄紫昌",
+          "position": "攻击型中场",
+          "nationality": "中国",
+          "age": "29-104",
+          "minutes": 45,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 21,
+          "name": "杨梓豪",
+          "position": "左后卫",
+          "nationality": "中国",
+          "age": "25-191",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 30,
+          "name": "约翰·侯·永永",
+          "position": "攻击型中场",
+          "nationality": "挪威",
+          "age": "28-185",
+          "minutes": 71,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 34,
+          "name": "卡约·维尼修斯",
+          "position": "后腰",
+          "nationality": "巴西",
+          "age": "27-187",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 39,
+          "name": "布尼亚明·阿卜杜外力",
+          "position": "前锋",
+          "nationality": "中国",
+          "age": "18-099",
+          "substitutedAt": 46,
+          "substitutedFor": "黄紫昌"
+        },
+        {
+          "number": 7,
+          "name": "叶楚贵",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "31-312",
+          "substitutedAt": 72,
+          "substitutedFor": "约翰·侯·永永"
+        },
+        {
+          "number": 8,
+          "name": "徐新",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "32-089",
+          "substitutedAt": 83,
+          "substitutedFor": "石柯"
+        },
+        {
+          "number": 26,
+          "name": "张晨亮",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "28-021",
+          "substitutedAt": 83,
+          "substitutedFor": "克莱伯"
+        },
+        {
+          "number": 16,
+          "name": "张祥硕",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "25-025",
+          "substitutedAt": 90,
+          "substitutedFor": "亚历山德鲁·约尼察"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海海港",
+      "formation": "4-2-3-1",
+      "manager": "凯文·穆斯卡特",
+      "captain": "颜骏凌",
+      "players": [
+        {
+          "number": 1,
+          "name": "颜骏凌",
+          "position": "门将",
+          "nationality": "中国",
+          "age": "35-170",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "维塔尔",
+          "position": "后腰",
+          "nationality": "巴西",
+          "age": "28-155",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 13,
+          "name": "魏震",
+          "position": "中后卫",
+          "nationality": "中国",
+          "age": "29-155",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 17,
+          "name": "普林斯·奥本·阿姆彭",
+          "position": "攻击型中场",
+          "nationality": "加纳",
+          "age": "28-095",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 21,
+          "name": "奥斯卡·梅伦多",
+          "position": "攻击型中场",
+          "nationality": "西班牙",
+          "age": "28-328",
+          "minutes": 77,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 22,
+          "name": "杨艾力",
+          "position": "右后卫",
+          "nationality": "中国",
+          "age": "21-034",
+          "minutes": 77,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 28,
+          "name": "岳鑫",
+          "position": "左后卫",
+          "nationality": "中国",
+          "age": "30-249",
+          "minutes": 81,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 38,
+          "name": "鲁泳涛",
+          "position": "后腰",
+          "nationality": "中国",
+          "age": "26-186",
+          "minutes": 59,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 40,
+          "name": "吾米提江",
+          "position": "中后卫",
+          "nationality": "中国",
+          "age": "22-139",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 45,
+          "name": "莱昂纳多",
+          "position": "前锋",
+          "nationality": "巴西",
+          "age": "29-050",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 49,
+          "name": "李新翔",
+          "position": "攻击型中场",
+          "nationality": "中国",
+          "age": "20-229",
+          "minutes": 59,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 33,
+          "name": "刘祝润",
+          "position": "中场",
+          "nationality": "中国",
+          "age": "24-284",
+          "substitutedAt": 60,
+          "substitutedFor": "李新翔"
+        },
+        {
+          "number": 4,
+          "name": "王燊超",
+          "position": "后卫/中场",
+          "nationality": "中国",
+          "age": "37-159",
+          "substitutedAt": 60,
+          "substitutedFor": "鲁泳涛"
+        },
+        {
+          "number": 23,
+          "name": "傅欢",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "33-005",
+          "substitutedAt": 77,
+          "substitutedFor": "杨艾力"
+        },
+        {
+          "number": 26,
+          "name": "刘若钒",
+          "position": "前锋/中场",
+          "nationality": "中国",
+          "age": "27-170",
+          "substitutedAt": 77,
+          "substitutedFor": "奥斯卡·梅伦多"
+        },
+        {
+          "number": 19,
+          "name": "王振澳",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "26-341",
+          "substitutedAt": 81,
+          "substitutedFor": "岳鑫"
+        }
+      ]
+    }
+  },
+  "matchTimeline": [
+    {
+      "minute": 0,
+      "minute_extra": 0,
+      "type": "kick_off",
+      "team": "neutral",
+      "description": "比赛开始"
+    },
+    {
+      "minute": 11,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "黄紫昌",
+      "description": "云南玉昆黄紫昌获得黄牌"
+    },
+    {
+      "minute": 36,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "魏震",
+      "player2": "奥斯卡·梅伦多",
+      "description": "上海海港1-0领先，魏震进球，奥斯卡·梅伦多助攻"
+    },
+    {
+      "minute": 40,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "岳鑫",
+      "player2": "莱昂纳多",
+      "description": "上海海港2-0领先，岳鑫进球，莱昂纳多助攻"
+    },
+    {
+      "minute": 40,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "荣家徽",
+      "description": "云南玉昆荣家徽在替补席或场边获得黄牌"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "布尼亚明·阿卜杜外力",
+      "playerOut": "黄紫昌",
+      "description": "云南玉昆布尼亚明·阿卜杜外力替换黄紫昌上场"
+    },
+    {
+      "minute": 49,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "奥斯卡·马里图",
+      "player2": "克莱伯",
+      "description": "云南玉昆扳回一球1-2，奥斯卡·马里图进球，克莱伯助攻"
+    },
+    {
+      "minute": 53,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "布尼亚明·阿卜杜外力",
+      "player2": "亚历山德鲁·约尼察",
+      "description": "云南玉昆顽强扳平2-2，布尼亚明·阿卜杜外力进球，亚历山德鲁·约尼察助攻"
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "刘祝润",
+      "playerOut": "李新翔",
+      "description": "上海海港刘祝润替换李新翔上场"
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "王燊超",
+      "playerOut": "鲁泳涛",
+      "description": "上海海港王燊超替换鲁泳涛上场"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "叶楚贵",
+      "playerOut": "约翰·侯·永永",
+      "description": "云南玉昆叶楚贵替换约翰·侯·永永上场"
+    },
+    {
+      "minute": 77,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "傅欢",
+      "playerOut": "杨艾力",
+      "description": "上海海港傅欢替换杨艾力上场"
+    },
+    {
+      "minute": 77,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "刘若钒",
+      "playerOut": "奥斯卡·梅伦多",
+      "description": "上海海港刘若钒替换奥斯卡·梅伦多上场"
+    },
+    {
+      "minute": 81,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "王振澳",
+      "playerOut": "岳鑫",
+      "description": "上海海港王振澳替换岳鑫上场"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "徐新",
+      "playerOut": "石柯",
+      "description": "云南玉昆徐新替换石柯上场"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "张晨亮",
+      "playerOut": "克莱伯",
+      "description": "云南玉昆张晨亮替换克莱伯上场"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 2,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "张祥硕",
+      "playerOut": "亚历山德鲁·约尼察",
+      "description": "云南玉昆张祥硕替换亚历山德鲁·约尼察上场"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "徐宏杰",
+      "description": "云南玉昆徐宏杰获得黄牌"
+    }
+  ],
+  "statistics": [
+    {
+      "name": "控球率",
+      "home": "39%",
+      "away": "61%"
+    },
+    {
+      "name": "射门",
+      "home": 14,
+      "away": 13
+    },
+    {
+      "name": "射正",
+      "home": 3,
+      "away": 6
+    },
+    {
+      "name": "角球",
+      "home": 6,
+      "away": 6
+    },
+    {
+      "name": "犯规",
+      "home": 16,
+      "away": 9
+    },
+    {
+      "name": "黄牌",
+      "home": 3,
+      "away": 0
+    },
+    {
+      "name": "红牌",
+      "home": 0,
+      "away": 0
+    }
+  ],
+  "summary": "2026赛季中超第19轮，云南玉昆主场2-2顽强逼平上海海港。上半场上海海港凭借魏震和岳鑫的进球取得两球领先；下半场云南玉昆展开绝地反击，由奥斯卡·马里图和替补登场的18岁小将布尼亚明在4分钟内连追两球，最终双方握手言和。",
+  "keyFactors": [
+    "上海海港在上半场占据明显优势，控球率高达61%并攻入2球",
+    "云南玉昆中场休息时果断变阵，替补上场的布尼亚明成为奇兵，下半场开场不到10分钟便帮助球队扳平比分",
+    "两队在射门次数上平分秋色（14-13），但上海海港射正次数（6次）多于云南玉昆（3次）",
+    "云南玉昆门将鲍亚雄表现出色，全场贡献4次扑救，扑救率达66.7%",
+    "双方在定位球（角球6-6）上机会均等，战术对抗激烈"
+  ],
+  "highlights": [
+    {
+      "minute": 36,
+      "description": "上海海港魏震打破僵局",
+      "type": "goal",
+      "team": "away"
+    },
+    {
+      "minute": 40,
+      "description": "上海海港岳鑫扩大比分",
+      "type": "goal",
+      "team": "away"
+    },
+    {
+      "minute": 49,
+      "description": "云南玉昆奥斯卡·马里图扳回一城",
+      "type": "goal",
+      "team": "home"
+    },
+    {
+      "minute": 53,
+      "description": "云南玉昆小将布尼亚明闪电扳平比分",
+      "type": "goal",
+      "team": "home"
+    }
+  ]
+}
