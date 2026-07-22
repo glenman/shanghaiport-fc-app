@@ -290,6 +290,12 @@ const CurrentStats: React.FC = () => {
     return comp; // 如果找不到映射，返回原名称
   };
 
+  // 判断是否为杯赛（不显示积分）
+  const isCupType = (comp: string) => {
+    const info = competitionsMapping[comp];
+    return info && (info.type === 'CFA' || info.type === 'ACLE');
+  };
+
   const renderStatTable = (
     title: string,
     stats: PlayerStat[],
@@ -420,10 +426,12 @@ const CurrentStats: React.FC = () => {
             <span className="overview-label">战绩</span>
             <span className="overview-value">{currentStats.record}</span>
           </div>
-          <div className="overview-item">
-            <span className="overview-label">积分</span>
-            <span className="overview-value">{currentStats.points}</span>
-          </div>
+          {!isCupType(activeCompetition) && (
+            <div className="overview-item">
+              <span className="overview-label">积分</span>
+              <span className="overview-value">{currentStats.points}</span>
+            </div>
+          )}
           <div className="overview-item">
             <span className="overview-label">进球</span>
             <span className="overview-value">{currentStats.goalsFor}</span>

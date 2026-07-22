@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-07-18",
+  "lastUpdated": "2026-07-22",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
-    "matchesPlayed": 19,
-    "record": "6胜6平7负",
-    "goalsFor": 30,
-    "goalsAgainst": 27,
-    "points": 24,
+    "matchesPlayed": 20,
+    "record": "6胜7平7负",
+    "goalsFor": 31,
+    "goalsAgainst": 28,
+    "points": 25,
     "topScorers": [
       {
         "rank": 1,
@@ -354,6 +354,21 @@
             "type": "进球"
           }
         ]
+      },
+      {
+        "rank": 18,
+        "name": "让·克劳德·阿齐兹",
+        "number": 8,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第5轮",
+            "date": "2026-07-21",
+            "time": "45'+2'",
+            "opponent": "深圳新鹏城",
+            "type": "进球"
+          }
+        ]
       }
     ],
     "topAssists": [
@@ -666,7 +681,7 @@
         "rank": 2,
         "name": "吾米提江",
         "number": 40,
-        "yellowCards": 4,
+        "yellowCards": 5,
         "details": [
           {
             "match": "第3轮",
@@ -695,6 +710,13 @@
             "time": "35'",
             "opponent": "河南",
             "reason": "上海海港吾米提江·玉素甫获得黄牌"
+          },
+          {
+            "match": "第5轮",
+            "date": "2026-07-21",
+            "time": "83'",
+            "opponent": "深圳新鹏城",
+            "reason": "上海海港吾米提江获得黄牌"
           }
         ]
       },
@@ -1022,6 +1044,21 @@
       },
       {
         "rank": 17,
+        "name": "陈威",
+        "number": 12,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第5轮",
+            "date": "2026-07-21",
+            "time": "90'",
+            "opponent": "深圳新鹏城",
+            "reason": "上海海港陈威获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 18,
         "name": "傅欢",
         "number": 23,
         "yellowCards": 1,
@@ -1036,7 +1073,7 @@
         ]
       },
       {
-        "rank": 18,
+        "rank": 19,
         "name": "岳鑫",
         "number": 28,
         "yellowCards": 1,
@@ -1051,7 +1088,7 @@
         ]
       },
       {
-        "rank": 19,
+        "rank": 20,
         "name": "莱昂纳多",
         "number": 45,
         "yellowCards": 1,
@@ -2185,11 +2222,11 @@
         ]
       },
       "中国足球协会杯": {
-        "matchesPlayed": 1,
-        "record": "1胜0平0负",
-        "goalsFor": 2,
-        "goalsAgainst": 1,
-        "points": 3,
+        "matchesPlayed": 2,
+        "record": "1胜1平0负",
+        "goalsFor": 3,
+        "goalsAgainst": 2,
+        "points": 0,
         "topScorers": [
           {
             "rank": 1,
@@ -2217,6 +2254,21 @@
                 "date": "2026-06-19",
                 "time": "59'",
                 "opponent": "上海赛更达",
+                "type": "进球"
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "name": "让·克劳德·阿齐兹",
+            "number": 8,
+            "goals": 1,
+            "details": [
+              {
+                "match": "第5轮",
+                "date": "2026-07-21",
+                "time": "45'+2'",
+                "opponent": "深圳新鹏城",
                 "type": "进球"
               }
             ]
@@ -2252,7 +2304,38 @@
             ]
           }
         ],
-        "yellowCards": [],
+        "yellowCards": [
+          {
+            "rank": 1,
+            "name": "陈威",
+            "number": 12,
+            "yellowCards": 1,
+            "details": [
+              {
+                "match": "第5轮",
+                "date": "2026-07-21",
+                "time": "90'",
+                "opponent": "深圳新鹏城",
+                "reason": "上海海港陈威获得黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 2,
+            "name": "吾米提江",
+            "number": 40,
+            "yellowCards": 1,
+            "details": [
+              {
+                "match": "第5轮",
+                "date": "2026-07-21",
+                "time": "83'",
+                "opponent": "深圳新鹏城",
+                "reason": "上海海港吾米提江获得黄牌"
+              }
+            ]
+          }
+        ],
         "redCards": []
       }
     }

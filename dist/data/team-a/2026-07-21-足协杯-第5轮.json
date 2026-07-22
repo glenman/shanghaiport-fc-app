@@ -1,0 +1,719 @@
+{
+  "match": {
+    "id": 16411490,
+    "round": "第5轮",
+    "date": "2026-07-21",
+    "time": "19:00",
+    "homeTeam": "上海海港",
+    "awayTeam": "深圳新鹏城",
+    "venue": "上汽浦东足球场",
+    "city": "上海",
+    "result": "1-1 (点球 4-3)",
+    "status": "已结束",
+    "attendance": "13251",
+    "referee": "高鹏",
+    "weather": "雨",
+    "competition": "中国足球协会杯",
+    "matchweek": 5,
+    "season": "2026"
+  },
+  "matchDetails": {
+    "stadiumCapacity": "未知",
+    "pitchCondition": "未知",
+    "temperature": "未知",
+    "kickoffTime": "19:00",
+    "halftimeScore": "1-0",
+    "fulltimeScore": "1-1",
+    "extraTimeScore": "1-1",
+    "penaltyScore": "4-3"
+  },
+  "officials": {
+    "referee": "高鹏",
+    "assistantReferee1": "未知",
+    "assistantReferee2": "未知",
+    "fourthOfficial": "未知",
+    "VAR": "未知"
+  },
+  "lineups": {
+    "home": {
+      "name": "上海海港",
+      "formation": "4-2-3-1",
+      "manager": "凯文·穆斯卡特",
+      "captain": "王燊超",
+      "players": [
+        {
+          "number": 12,
+          "name": "陈威",
+          "position": "门将",
+          "nationality": "中国",
+          "minutes": 120,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 4,
+          "name": "王燊超",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 65,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 13,
+          "name": "魏震",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 120,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 40,
+          "name": "吾米提江",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 120,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 28,
+          "name": "岳鑫",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 70,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "维塔尔",
+          "position": "后腰",
+          "nationality": "巴西",
+          "minutes": 100,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 8,
+          "name": "让·克劳德·阿齐兹",
+          "position": "后腰",
+          "nationality": "多哥",
+          "minutes": 65,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 33,
+          "name": "刘祝润",
+          "position": "前腰/边锋",
+          "nationality": "中国",
+          "minutes": 120,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 21,
+          "name": "奇科·梅伦多",
+          "position": "前腰/边锋",
+          "nationality": "西班牙",
+          "minutes": 91,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 17,
+          "name": "安佩姆",
+          "position": "前腰/边锋",
+          "nationality": "加纳",
+          "minutes": 70,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 45,
+          "name": "莱昂纳多",
+          "position": "前锋",
+          "nationality": "巴西",
+          "minutes": 120,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 19,
+          "name": "王振澳",
+          "position": "后卫",
+          "substitutedAt": 65,
+          "substitutedFor": "王燊超"
+        },
+        {
+          "number": 38,
+          "name": "卢永涛",
+          "position": "中场",
+          "substitutedAt": 65,
+          "substitutedFor": "让·克劳德·阿齐兹"
+        },
+        {
+          "number": 22,
+          "name": "席杨/亚历斯",
+          "position": "后卫",
+          "substitutedAt": 70,
+          "substitutedFor": "岳鑫"
+        },
+        {
+          "number": 49,
+          "name": "李新翔",
+          "position": "中场",
+          "substitutedAt": 70,
+          "substitutedFor": "普林斯·安佩姆"
+        },
+        {
+          "number": 23,
+          "name": "傅欢",
+          "position": "后卫",
+          "substitutedAt": 91,
+          "substitutedFor": "奇科·梅伦多"
+        },
+        {
+          "number": 7,
+          "name": "武磊",
+          "position": "前锋",
+          "substitutedAt": 100,
+          "substitutedFor": "马蒂亚斯·维塔尔"
+        },
+        {
+          "number": 1,
+          "name": "颜骏凌",
+          "position": "门将"
+        },
+        {
+          "number": 20,
+          "name": "杨世元",
+          "position": "中场"
+        },
+        {
+          "number": 26,
+          "name": "刘若钒",
+          "position": "前锋"
+        },
+        {
+          "number": 37,
+          "name": "张俊杰",
+          "position": "中场"
+        },
+        {
+          "number": 54,
+          "name": "王东承",
+          "position": "后卫"
+        }
+      ]
+    },
+    "away": {
+      "name": "深圳新鹏城",
+      "formation": "4-2-3-1",
+      "manager": "罗比·尼尔森",
+      "captain": "韦斯利·莫赖斯",
+      "players": [
+        {
+          "number": 13,
+          "name": "彭鹏",
+          "position": "门将",
+          "nationality": "中国",
+          "minutes": 120,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 16,
+          "name": "唐淼",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 107,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 3,
+          "name": "加西亚/格拉西亚",
+          "position": "后卫",
+          "nationality": "西班牙",
+          "minutes": 120,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 46,
+          "name": "申桓铭",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 120,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 20,
+          "name": "张宣",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 71,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 19,
+          "name": "张宇峰",
+          "position": "后腰",
+          "nationality": "中国",
+          "minutes": 120,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 8,
+          "name": "周定洋",
+          "position": "后腰",
+          "nationality": "中国台北",
+          "minutes": 120,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 31,
+          "name": "德内尔·塞基雷",
+          "position": "前腰/边锋",
+          "nationality": "巴西",
+          "minutes": 84,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 6,
+          "name": "姚均晟",
+          "position": "前腰/边锋",
+          "nationality": "中国",
+          "minutes": 84,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 11,
+          "name": "阿尔门德·阿德米",
+          "position": "前腰/边锋",
+          "nationality": "北马其顿",
+          "minutes": 75,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 7,
+          "name": "韦斯利·莫赖斯",
+          "position": "前锋",
+          "nationality": "巴西",
+          "minutes": 120,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 4,
+          "name": "姜至鹏",
+          "position": "后卫",
+          "substitutedAt": 71,
+          "substitutedFor": "张宣"
+        },
+        {
+          "number": 17,
+          "name": "李宁",
+          "position": "中场",
+          "substitutedAt": 75,
+          "substitutedFor": "阿尔门德·阿德米"
+        },
+        {
+          "number": 25,
+          "name": "赵英杰",
+          "position": "中场",
+          "substitutedAt": 84,
+          "substitutedFor": "姚均晟"
+        },
+        {
+          "number": 29,
+          "name": "杜加利奇/夏达龙",
+          "position": "前锋/后卫",
+          "substitutedAt": 84,
+          "substitutedFor": "德内尔·塞基雷"
+        },
+        {
+          "number": 23,
+          "name": "杨一鸣",
+          "position": "后卫",
+          "substitutedAt": 107,
+          "substitutedFor": "唐淼"
+        },
+        {
+          "number": 1,
+          "name": "季家宝",
+          "position": "门将"
+        },
+        {
+          "number": 35,
+          "name": "魏溟哲",
+          "position": "门将"
+        },
+        {
+          "number": 2,
+          "name": "田依凡",
+          "position": "后卫"
+        },
+        {
+          "number": 14,
+          "name": "李龙",
+          "position": "中场"
+        },
+        {
+          "number": 39,
+          "name": "于濛辉",
+          "position": "中场"
+        },
+        {
+          "number": 49,
+          "name": "张浩楠",
+          "position": "后卫"
+        },
+        {
+          "number": 54,
+          "name": "姚均意",
+          "position": "中场"
+        },
+        {
+          "number": 56,
+          "name": "王宇恒",
+          "position": "前锋"
+        }
+      ]
+    }
+  },
+  "matchTimeline": [
+    {
+      "minute": 0,
+      "minute_extra": 0,
+      "type": "kick_off",
+      "team": "neutral",
+      "description": "比赛开始"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 2,
+      "type": "goal",
+      "team": "home",
+      "player": "让·克劳德·阿齐兹",
+      "description": "上海海港1-0领先，让·克劳德·阿齐兹打破僵局进球"
+    },
+    {
+      "minute": 57,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "韦斯利·莫赖斯",
+      "description": "深圳新鹏城1-1扳平比分，韦斯利·莫赖斯破门"
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "卢永涛",
+      "playerOut": "让·克劳德·阿齐兹",
+      "description": "上海海港卢永涛替换让·克劳德·阿齐兹上场"
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "王振澳",
+      "playerOut": "王燊超",
+      "description": "上海海港王振澳替换王燊超上场"
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "李新翔",
+      "playerOut": "安佩姆",
+      "description": "上海海港李新翔替换普林斯·安佩姆上场"
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "席杨/亚历斯",
+      "playerOut": "岳鑫",
+      "description": "上海海港席杨/亚历斯替换岳鑫上场"
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "姜至鹏",
+      "playerOut": "张宣",
+      "description": "深圳新鹏城姜至鹏替换张宣上场"
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "李宁",
+      "playerOut": "阿尔门德·阿德米",
+      "description": "深圳新鹏城李宁替换阿尔门德·阿德米上场"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "吾米提江",
+      "description": "上海海港吾米提江获得黄牌"
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "赵英杰",
+      "playerOut": "姚均晟",
+      "description": "深圳新鹏城赵英杰替换姚均晟上场"
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "杜加利奇/夏达龙",
+      "playerOut": "德内尔·塞基雷",
+      "description": "深圳新鹏城杜加利奇/夏达龙替换德内尔·塞基雷上场"
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "张宇峰",
+      "description": "深圳新鹏城张宇峰获得黄牌"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 1,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "陈威",
+      "description": "上海海港陈威获得黄牌"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 4,
+      "type": "red_card",
+      "team": "away",
+      "player": "姜至鹏",
+      "description": "深圳新鹏城姜至鹏领到红牌被罚下"
+    },
+    {
+      "minute": 91,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "傅欢",
+      "playerOut": "奇科·梅伦多",
+      "description": "上海海港傅欢替换奇科·梅伦多上场"
+    },
+    {
+      "minute": 100,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "武磊",
+      "playerOut": "维塔尔",
+      "description": "上海海港武磊替换马蒂亚斯·维塔尔上场"
+    },
+    {
+      "minute": 104,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "唐淼",
+      "description": "深圳新鹏城唐淼获得黄牌"
+    },
+    {
+      "minute": 107,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "杨一鸣",
+      "playerOut": "唐淼",
+      "description": "深圳新鹏城杨一鸣替换唐淼上场"
+    }
+  ],
+  "statistics": [
+    {
+      "name": "控球率",
+      "home": "60%",
+      "away": "40%"
+    },
+    {
+      "name": "进攻次数",
+      "home": 112,
+      "away": 89
+    },
+    {
+      "name": "危险进攻",
+      "home": 75,
+      "away": 39
+    },
+    {
+      "name": "射正",
+      "home": 4,
+      "away": 3
+    },
+    {
+      "name": "射偏",
+      "home": 6,
+      "away": 2
+    },
+    {
+      "name": "角球",
+      "home": 15,
+      "away": 2
+    },
+    {
+      "name": "黄牌",
+      "home": 2,
+      "away": 2
+    },
+    {
+      "name": "红牌",
+      "home": 0,
+      "away": 1
+    }
+  ],
+  "summary": "2026中国足协杯第5轮（单回合淘汰赛），上海海港主场迎战深圳新鹏城。上半场补时阶段，阿齐兹为海港打破僵局；下半场新鹏城由莫赖斯扳平比分。随后双方在常规时间和加时赛均未再破门，深圳新鹏城替补出场的姜至鹏在伤停补时阶段吃到红牌罚下。最终，比赛进入点球大战，上海海港点球4-3险胜深圳新鹏城，成功挺进足协杯下一轮。",
+  "keyFactors": [
+    "上海海港在控球率（60%）和角球（15-2）上占据统治级优势，创造了高达75次的危险进攻",
+    "深圳新鹏城替补上场的姜至鹏在补时阶段领到红牌被罚下，使客队只能以少打多进入加时赛",
+    "点球大战中，上海海港门将陈威与队友配合稳定，上海海港6轮点球罚中4球，淘汰深圳新鹏城"
+  ],
+  "highlights": [
+    {
+      "minute": 45,
+      "minute_extra": 2,
+      "description": "上海海港阿齐兹打破僵局",
+      "type": "goal",
+      "team": "home"
+    },
+    {
+      "minute": 57,
+      "description": "深圳新鹏城韦斯利·莫赖斯扳平比分",
+      "type": "goal",
+      "team": "away"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 4,
+      "description": "深圳新鹏城姜至鹏红牌被罚下",
+      "type": "red_card",
+      "team": "away"
+    },
+    {
+      "minute": 120,
+      "description": "点球大战上海海港4-3险胜晋级",
+      "type": "penalty_shootout",
+      "team": "home"
+    }
+  ],
+  "penaltyShootout": {
+    "score": "4-3",
+    "description": "点球大战上海海港4-3险胜深圳新鹏城",
+    "rounds": [
+      {
+        "round": 1,
+        "home": { "player": "武磊", "result": "scored" },
+        "away": { "player": "周定洋", "result": "missed" }
+      },
+      {
+        "round": 2,
+        "home": { "player": "莱昂纳多", "result": "missed" },
+        "away": { "player": "夏达龙", "result": "scored" }
+      },
+      {
+        "round": 3,
+        "home": { "player": "魏震", "result": "scored" },
+        "away": { "player": "李宁", "result": "scored" }
+      },
+      {
+        "round": 4,
+        "home": { "player": "李新翔", "result": "scored" },
+        "away": { "player": "张宇峰", "result": "missed" }
+      },
+      {
+        "round": 5,
+        "home": { "player": "陈威 (门将)", "result": "missed" },
+        "away": { "player": "韦斯利·莫赖斯", "result": "scored" }
+      },
+      {
+        "round": 6,
+        "home": { "player": "刘祝润", "result": "scored" },
+        "away": { "player": "加布里埃尔·哈维尔", "result": "missed" }
+      }
+    ]
+  }
+}

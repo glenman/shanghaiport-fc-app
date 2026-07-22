@@ -42,6 +42,14 @@ def load_competitions():
 
 COMPETITIONS_MAPPING = load_competitions()
 
+# 杯赛类型（淘汰制，不计算积分）
+CUP_TYPES = {'CFA', 'ACLE'}
+
+def is_cup_competition(competition_name):
+    """判断是否为杯赛（不计算积分）"""
+    comp_info = COMPETITIONS_MAPPING.get(competition_name, {})
+    return comp_info.get('type', '') in CUP_TYPES
+
 def load_json_file(file_path):
     """加载JSON文件"""
     try:
@@ -95,6 +103,8 @@ def get_team_role(team_name, home_team, away_team):
 
 def calculate_record(matches):
     """计算战绩"""
+    import re
+    
     wins = 0
     draws = 0
     losses = 0
@@ -102,21 +112,38 @@ def calculate_record(matches):
     goals_against = 0
 
     for match in matches:
-        home_score, away_score = map(int, match['result'].split('-'))
+        result_str = match['result']
+        score_part = result_str.split('(')[0].strip().rstrip('-')
+        home_score, away_score = map(int, score_part.split('-'))
+
+        # 检查是否有点球决胜
+        is_penalty_win = False
+        is_penalty_loss = False
+        if '点球' in result_str:
+            penalty_match = re.search(r'点球\s*(\d+)\s*[-–]\s*(\d+)', result_str)
+            if penalty_match:
+                pen_home = int(penalty_match.group(1))
+                pen_away = int(penalty_match.group(2))
+                if match['team_role'] == 'home':
+                    is_penalty_win = pen_home > pen_away
+                    is_penalty_loss = pen_home < pen_away
+                else:
+                    is_penalty_win = pen_away > pen_home
+                    is_penalty_loss = pen_away < pen_home
 
         if match['team_role'] == 'home':
-            if home_score > away_score:
+            if home_score > away_score or is_penalty_win:
                 wins += 1
-            elif home_score == away_score:
+            elif home_score == away_score and not is_penalty_win and not is_penalty_loss:
                 draws += 1
             else:
                 losses += 1
             goals_for += home_score
             goals_against += away_score
         else:  # away
-            if away_score > home_score:
+            if away_score > home_score or is_penalty_win:
                 wins += 1
-            elif away_score == home_score:
+            elif away_score == home_score and not is_penalty_win and not is_penalty_loss:
                 draws += 1
             else:
                 losses += 1
@@ -839,7 +866,7 @@ def main():
             'record': record,
             'goalsFor': goals_for,
             'goalsAgainst': goals_against,
-            'points': points,
+            'points': points if not is_cup_competition(comp) else 0,
             'topScorers': stats['scorers'],
             'topAssists': stats['assists'],
             'yellowCards': stats['yellow'],
@@ -854,7 +881,7 @@ def main():
             'record': record,
             'goalsFor': goals_for,
             'goalsAgainst': goals_against,
-            'points': points,
+            'points': points if not is_cup_competition(comp) else 0,
             'topScorers': stats['scorers'],
             'topAssists': stats['assists'],
             'yellowCards': stats['yellow'],

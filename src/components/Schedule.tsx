@@ -181,15 +181,27 @@ const Schedule: React.FC = () => {
                         
                         const getResultStatus = (match: Match) => {
                           if (match.status !== '已结束' || match.result === '-') return '-';
-                          const [homeGoals, awayGoals] = match.result.split('-').map(Number);
+                          // 提取常规比分（去掉括号内的点球比分）
+                          const scorePart = match.result.split('(')[0].trim().replace(/-$/, '');
+                          const [homeGoals, awayGoals] = scorePart.split('-').map(Number);
                           const isHome = match.homeTeam === '上海海港';
+                          // 检查点球决胜
+                          let isPenaltyWin = false, isPenaltyLoss = false;
+                          if (match.result.includes('点球')) {
+                            const pm = match.result.match(/点球\s*(\d+)\s*[-–]\s*(\d+)/);
+                            if (pm) {
+                              const [ph, pa] = [parseInt(pm[1]), parseInt(pm[2])];
+                              isPenaltyWin = isHome ? ph > pa : pa > ph;
+                              isPenaltyLoss = isHome ? ph < pa : pa < ph;
+                            }
+                          }
                           if (isHome) {
-                            if (homeGoals > awayGoals) return '胜';
-                            if (homeGoals < awayGoals) return '负';
+                            if (homeGoals > awayGoals || isPenaltyWin) return '胜';
+                            if (homeGoals < awayGoals || isPenaltyLoss) return '负';
                             return '平';
                           } else {
-                            if (awayGoals > homeGoals) return '胜';
-                            if (awayGoals < homeGoals) return '负';
+                            if (awayGoals > homeGoals || isPenaltyWin) return '胜';
+                            if (awayGoals < homeGoals || isPenaltyLoss) return '负';
                             return '平';
                           }
                         };
@@ -265,16 +277,28 @@ const Schedule: React.FC = () => {
                         
                         const getResultStatus = (match: Match) => {
                           if (match.status !== '已结束' || match.result === '-') return '-';
-                          const [homeGoals, awayGoals] = match.result.split('-').map(Number);
+                          // 提取常规比分（去掉括号内的点球比分）
+                          const scorePart = match.result.split('(')[0].trim().replace(/-$/, '');
+                          const [homeGoals, awayGoals] = scorePart.split('-').map(Number);
                           const bTeamNames = ['上海海港B队', '上海海港富盛经开'];
                           const isHome = bTeamNames.includes(match.homeTeam);
+                          // 检查点球决胜
+                          let isPenaltyWin = false, isPenaltyLoss = false;
+                          if (match.result.includes('点球')) {
+                            const pm = match.result.match(/点球\s*(\d+)\s*[-–]\s*(\d+)/);
+                            if (pm) {
+                              const [ph, pa] = [parseInt(pm[1]), parseInt(pm[2])];
+                              isPenaltyWin = isHome ? ph > pa : pa > ph;
+                              isPenaltyLoss = isHome ? ph < pa : pa < ph;
+                            }
+                          }
                           if (isHome) {
-                            if (homeGoals > awayGoals) return '胜';
-                            if (homeGoals < awayGoals) return '负';
+                            if (homeGoals > awayGoals || isPenaltyWin) return '胜';
+                            if (homeGoals < awayGoals || isPenaltyLoss) return '负';
                             return '平';
                           } else {
-                            if (awayGoals > homeGoals) return '胜';
-                            if (awayGoals < homeGoals) return '负';
+                            if (awayGoals > homeGoals || isPenaltyWin) return '胜';
+                            if (awayGoals < homeGoals || isPenaltyLoss) return '负';
                             return '平';
                           }
                         };

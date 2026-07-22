@@ -550,6 +550,52 @@
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
       }
 
+      .penalty-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+      }
+
+      .penalty-table th {
+        background: rgba(192, 0, 16, 0.3);
+        color: #fff;
+        padding: 0.6rem 0.8rem;
+        text-align: center;
+        font-weight: 600;
+        border-bottom: 2px solid #c00010;
+      }
+
+      .penalty-table td {
+        padding: 0.55rem 0.8rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .penalty-table tbody tr:hover {
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .penalty-visual {
+        background: rgba(30, 30, 30, 0.6);
+        border-radius: 8px;
+        padding: 1rem 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .penalty-visual-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.3rem 0;
+      }
+
+      .penalty-team-label {
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.9rem;
+      }
+
       .loading {
         text-align: center;
         padding: 2rem;
@@ -836,6 +882,7 @@
             html += renderScoreboard(data);
             html += renderSummary(data);
             html += renderGoalRecords(data);
+            html += renderPenaltyShootout(data);
             html += renderLineups(data);
             html += renderStatistics(data);
             html += renderTacticalAnalysis(data);
@@ -927,6 +974,84 @@
                 </div>
               </div>
             `;
+          }
+
+          function renderPenaltyShootout(data) {
+            const ps = data.penaltyShootout;
+            if (!ps || !ps.rounds || ps.rounds.length === 0) return '';
+
+            const homeTeam = data.match.homeTeam;
+            const awayTeam = data.match.awayTeam;
+
+            // 生成罚球可视化序列
+            const homeBalls = ps.rounds.map(r =>
+              r.home.result === 'scored'
+                ? '<span style="color: #2ed573; font-size: 1.5rem; margin: 0 2px;">⚽</span>'
+                : '<span style="color: #ff6b6b; font-size: 1.5rem; margin: 0 2px;">⚽</span>'
+            ).join('');
+            const awayBalls = ps.rounds.map(r =>
+              r.away.result === 'scored'
+                ? '<span style="color: #2ed573; font-size: 1.5rem; margin: 0 2px;">⚽</span>'
+                : '<span style="color: #ff6b6b; font-size: 1.5rem; margin: 0 2px;">⚽</span>'
+            ).join('');
+
+            let html = `
+              <div class="card">
+                <h2>🥅 点球大战</h2>
+                <div style="color: rgba(255, 255, 255, 0.9); font-size: 1rem; font-weight: bold; margin-bottom: 0.8rem;">
+                  点球大战
+                </div>
+                <div class="penalty-visual">
+                  <div class="penalty-visual-row">
+                    <span class="penalty-team-label">${homeTeam}</span>
+                    <span class="penalty-team-label">${awayTeam}</span>
+                  </div>
+                  <div class="penalty-visual-row" style="font-size: 1.4rem; font-weight: bold; color: #fff;">
+                    <span>${ps.score.split('-')[0]}</span>
+                    <span>${ps.score.split('-')[1]}</span>
+                  </div>
+                  <div class="penalty-visual-row">
+                    <span>${homeBalls}</span>
+                    <span>${awayBalls}</span>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 2rem; justify-content: center; margin-bottom: 1rem; font-size: 0.8rem; color: rgba(255,255,255,0.6);">
+                  <span><span style="color: #2ed573;">⚽</span> = 罚进</span>
+                  <span><span style="color: #ff6b6b;">⚽</span> = 罚失</span>
+                </div>
+                <table class="penalty-table">
+                  <thead>
+                    <tr>
+                      <th>轮次</th>
+                      <th>🔴 ${homeTeam}（先罚）</th>
+                      <th>结果</th>
+                      <th>🔵 ${awayTeam}（后罚）</th>
+                      <th>结果</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+            `;
+
+            ps.rounds.forEach(r => {
+              const homeResult = r.home.result === 'scored' ? '⚽ 罚进' : '❌ 罚失';
+              const awayResult = r.away.result === 'scored' ? '⚽ 罚进' : '❌ 罚失';
+              html += `
+                    <tr>
+                      <td>第 ${r.round} 轮</td>
+                      <td>${r.home.player}</td>
+                      <td style="${r.home.result === 'scored' ? 'color: #2ed573;' : 'color: #ff6b6b;'}">${homeResult}</td>
+                      <td>${r.away.player}</td>
+                      <td style="${r.away.result === 'scored' ? 'color: #2ed573;' : 'color: #ff6b6b;'}">${awayResult}</td>
+                    </tr>
+              `;
+            });
+
+            html += `
+                  </tbody>
+                </table>
+              </div>
+            `;
+            return html;
           }
 
           function renderScoreboard(data) {
