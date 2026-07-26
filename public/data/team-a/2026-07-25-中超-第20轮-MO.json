@@ -1,0 +1,229 @@
+{
+  "match_overview": {
+    "competition": "中国足球超级联赛",
+    "round": "第20轮",
+    "matchweek": 20,
+    "date": "2026-07-25",
+    "time": "19:35",
+    "status": "已结束",
+    "home_team": "上海海港",
+    "away_team": "上海申花",
+    "score": "2-0"
+  },
+  "statistics": {
+    "possession": {
+      "home": "50%",
+      "away": "50%"
+    },
+    "expected_goals": {
+      "home": "1.47",
+      "away": "1.23"
+    },
+    "expected_goals_on_target": {
+      "home": "0.62",
+      "away": "1.05"
+    },
+    "big_chances": {
+      "home": 2,
+      "away": 4
+    },
+    "shots": {
+      "total": {
+        "home": 12,
+        "away": 17
+      },
+      "on_target": {
+        "home": 3,
+        "away": 6
+      },
+      "off_target": {
+        "home": 5,
+        "away": 7
+      },
+      "blocked": {
+        "home": 4,
+        "away": 4
+      },
+      "woodwork": {
+        "home": 0,
+        "away": 0
+      },
+      "inside_box": {
+        "home": 6,
+        "away": 11
+      },
+      "outside_box": {
+        "home": 6,
+        "away": 6
+      },
+      "headed_goals": {
+        "home": "-",
+        "away": "-"
+      }
+    },
+    "goalkeeping": {
+      "saves": {
+        "home": 6,
+        "away": 1
+      },
+      "big_saves": {
+        "home": 2,
+        "away": 0
+      },
+      "high_claims": {
+        "home": 0,
+        "away": 1
+      },
+      "punches": {
+        "home": "-",
+        "away": "-"
+      },
+      "xgot_faced": {
+        "home": "-",
+        "away": "-"
+      },
+      "goals_prevented": {
+        "home": "-",
+        "away": "-"
+      },
+      "goal_kicks": {
+        "home": 9,
+        "away": 4
+      }
+    },
+    "set_pieces": {
+      "corners": {
+        "home": 5,
+        "away": 9
+      },
+      "fouls": {
+        "home": 10,
+        "away": 16
+      },
+      "free_kicks": {
+        "home": 16,
+        "away": 10
+      },
+      "offsides": {
+        "home": 1,
+        "away": 1
+      },
+      "yellow_cards": {
+        "home": 2,
+        "away": 1
+      },
+      "red_cards": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    "passing": {
+      "total_passes": {
+        "home": 387,
+        "away": 369
+      },
+      "accurate_passes": {
+        "home": 324,
+        "away": 299
+      },
+      "pass_accuracy": {
+        "home": "-",
+        "away": "-"
+      },
+      "final_third_passes": {
+        "home": "92/128 (72%)",
+        "away": "89/128 (70%)"
+      },
+      "long_balls": {
+        "home": "15/34 (44%)",
+        "away": "22/42 (52%)"
+      },
+      "crosses": {
+        "home": "4/14 (29%)",
+        "away": "8/25 (32%)"
+      },
+      "expected_assists": {
+        "home": "-",
+        "away": "-"
+      }
+    },
+    "defensive": {
+      "tackles": {
+        "home": 21,
+        "away": 20
+      },
+      "tackles_won": {
+        "home": "57%",
+        "away": "60%"
+      },
+      "interceptions": {
+        "home": 9,
+        "away": 8
+      },
+      "recoveries": {
+        "home": 44,
+        "away": 45
+      },
+      "clearances": {
+        "home": 36,
+        "away": 18
+      },
+      "errors_leading_to_goal": {
+        "home": "-",
+        "away": "-"
+      }
+    },
+    "attacking": {
+      "big_chances_scored": {
+        "home": 1,
+        "away": 0
+      },
+      "big_chances_missed": {
+        "home": 1,
+        "away": 4
+      },
+      "through_balls": {
+        "home": "-",
+        "away": "-"
+      },
+      "touches_in_opposition_box": {
+        "home": 16,
+        "away": 27
+      },
+      "fouled_in_final_third": {
+        "home": 2,
+        "away": 2
+      },
+      "throw_ins": {
+        "home": 14,
+        "away": 19
+      },
+      "final_third_entries": {
+        "home": 51,
+        "away": 61
+      }
+    },
+    "duels": {
+      "total_duels": {
+        "home": "58%",
+        "away": "42%"
+      },
+      "ground_duels": {
+        "home": "50/82 (61%)",
+        "away": "32/82 (39%)"
+      },
+      "aerial_duels": {
+        "home": "15/30 (50%)",
+        "away": "15/30 (50%)"
+      },
+      "dribbles": {
+        "home": "15/20 (75%)",
+        "away": "3/12 (25%)"
+      },
+      "dispossessed": {
+        "home": 15,
+        "away": 12
+      }
+    }
+  }
+}

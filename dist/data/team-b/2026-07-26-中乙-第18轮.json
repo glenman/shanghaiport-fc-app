@@ -1,0 +1,590 @@
+{
+  "match": {
+    "id": 18,
+    "round": "第18轮",
+    "competition": "中国足球协会乙级联赛",
+    "date": "2026-07-26",
+    "time": "16:30",
+    "homeTeam": "上海海港富盛经开",
+    "awayTeam": "泰安天贶",
+    "venue": "乐动力临港足球综合运动中心",
+    "city": "上海",
+    "result": "2-3",
+    "status": "已结束",
+    "attendance": null,
+    "referee": "王昕尧",
+    "weather": "晴"
+  },
+  "summary": "中乙预赛阶段A组第18轮，上海海港富盛经开主场2-3遭泰安天贶逆转。客队高翊轩11'内切兜射首开纪录，主队温钧翔44'世界波扳平、57'点射双响反超；泰安69'点球被任子豪扑出，73'佧米然乱战追平，90+3'王东承解围乌龙吊射绝杀。",
+  "highlights": [
+    {
+      "time": "11'",
+      "description": "泰安天贶高翊轩内切兜射破门，佧米然·哈力穆拉提助攻",
+      "type": "goal",
+      "team": "away",
+      "player": "高翊轩",
+      "assist": "佧米然·哈力穆拉提"
+    },
+    {
+      "time": "44'",
+      "description": "上海海港富盛经开温钧翔世界波破门，杨黔东助攻",
+      "type": "goal",
+      "team": "home",
+      "player": "温钧翔",
+      "assist": "杨黔东"
+    },
+    {
+      "time": "57'",
+      "description": "上海海港富盛经开温钧翔点球破门（崔峻诚造点）",
+      "type": "goal",
+      "team": "home",
+      "player": "温钧翔",
+      "assist": null
+    },
+    {
+      "time": "69'",
+      "description": "泰安天贶高翊轩主罚点球被任子豪扑出",
+      "type": "missed_penalty",
+      "team": "away",
+      "player": "高翊轩"
+    },
+    {
+      "time": "73'",
+      "description": "泰安天贶佧米然·哈力穆拉提乱战破门",
+      "type": "goal",
+      "team": "away",
+      "player": "佧米然·哈力穆拉提",
+      "assist": null
+    },
+    {
+      "time": "90+3'",
+      "description": "上海海港富盛经开王东承解围乌龙吊射自摆乌龙",
+      "type": "own_goal",
+      "team": "home",
+      "player": "王东承"
+    },
+    {
+      "time": "45'",
+      "description": "主队换人：汪照普换上，李瑞龙换下",
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "汪照普",
+      "playerOut": "李瑞龙"
+    },
+    {
+      "time": "59'",
+      "description": "主队换人：曹哲哲换上，李佳奇换下",
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "曹哲哲",
+      "playerOut": "李佳奇"
+    },
+    {
+      "time": "70'",
+      "description": "主队换人：张卫换上，许瑞轩换下",
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "张卫",
+      "playerOut": "许瑞轩"
+    },
+    {
+      "time": "70'",
+      "description": "主队换人：王东承换上，杨黔东换下",
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "王东承",
+      "playerOut": "杨黔东"
+    },
+    {
+      "time": "70'",
+      "description": "上海海港富盛经开汪照普黄牌",
+      "type": "yellow_card",
+      "team": "home",
+      "player": "汪照普"
+    },
+    {
+      "time": "77'",
+      "description": "主队换人：姜天乐换上，崔峻诚换下",
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "姜天乐",
+      "playerOut": "崔峻诚"
+    },
+    {
+      "time": "51'",
+      "description": "客队换人：安勇建换上，高健换下",
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "安勇建",
+      "playerOut": "高健"
+    },
+    {
+      "time": "65'",
+      "description": "客队换人：张羽桐换上，麦麦提热依木·麦麦提艾力换下",
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "张羽桐",
+      "playerOut": "麦麦提热依木·麦麦提艾力"
+    },
+    {
+      "time": "76'",
+      "description": "客队换人：巴特换上，乌拉尔·木合塔尔换下",
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "巴特",
+      "playerOut": "乌拉尔·木合塔尔"
+    },
+    {
+      "time": "76'",
+      "description": "客队换人：逄志泉换上，张羽桐换下",
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "逄志泉",
+      "playerOut": "张羽桐"
+    },
+    {
+      "time": "77'",
+      "description": "客队换人：海小锐换上，王博涵换下",
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "海小锐",
+      "playerOut": "王博涵"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "name": "上海海港富盛经开",
+      "formation": "4-2-3-1",
+      "manager": "成耀东",
+      "captain": null,
+      "players": [
+        {
+          "number": 1,
+          "name": "任子豪",
+          "position": "门将",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 20,
+          "name": "谢鸿宇",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 30,
+          "name": "许瑞轩",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 70,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 24,
+          "name": "李瑞龙",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 45,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 7,
+          "name": "王逸伟",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 59,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 16,
+          "name": "李佳奇",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 59,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 46,
+          "name": "崔峻诚",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 77,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 37,
+          "name": "张俊杰",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 70,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 44,
+          "name": "杨黔东",
+          "position": "前锋",
+          "nationality": "中国",
+          "minutes": 70,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 51,
+          "name": "刘铁诚",
+          "position": "前锋",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 35,
+          "name": "温钧翔",
+          "position": "前锋",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 2,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 9,
+          "name": "黎德明",
+          "position": "中场"
+        },
+        {
+          "number": 27,
+          "name": "任晓航",
+          "position": "中场"
+        },
+        {
+          "number": 43,
+          "name": "汪照普",
+          "position": "中场"
+        },
+        {
+          "number": 59,
+          "name": "王晶磊",
+          "position": "后卫"
+        },
+        {
+          "number": 54,
+          "name": "王东承",
+          "position": "后卫"
+        },
+        {
+          "number": 10,
+          "name": "张慧宇",
+          "position": "前锋"
+        },
+        {
+          "number": 55,
+          "name": "张宇航",
+          "position": "门将"
+        },
+        {
+          "number": 2,
+          "name": "张卫",
+          "position": "后卫"
+        },
+        {
+          "number": 11,
+          "name": "李泽生",
+          "position": "中场"
+        },
+        {
+          "number": 58,
+          "name": "曹哲哲",
+          "position": "中场"
+        },
+        {
+          "number": 13,
+          "name": "姜天乐",
+          "position": "后卫"
+        },
+        {
+          "number": 18,
+          "name": "韩杨",
+          "position": "前锋"
+        }
+      ]
+    },
+    "away": {
+      "name": "泰安天贶",
+      "formation": "4-4-2",
+      "manager": "曲文博",
+      "captain": null,
+      "players": [
+        {
+          "number": 1,
+          "name": "魏子超",
+          "position": "门将",
+          "nationality": "中国",
+          "minutes": 77,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 22,
+          "name": "王博涵",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 77,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 31,
+          "name": "童志程",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 3,
+          "name": "朱家祎",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 26,
+          "name": "陈宇",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 51,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 30,
+          "name": "高健",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 51,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 8,
+          "name": "苑修齐",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 20,
+          "name": "佧米然·哈力穆拉提",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 33,
+          "name": "高翊轩",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 65,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 18,
+          "name": "麦麦提热依木·麦麦提艾力",
+          "position": "前锋",
+          "nationality": "中国",
+          "minutes": 65,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 36,
+          "name": "乌拉尔·木合塔尔",
+          "position": "前锋",
+          "nationality": "中国",
+          "minutes": 76,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 34,
+          "name": "逄志泉",
+          "position": "前锋"
+        },
+        {
+          "number": 2,
+          "name": "姚道刚",
+          "position": "中场"
+        },
+        {
+          "number": 11,
+          "name": "张羽桐",
+          "position": "前锋"
+        },
+        {
+          "number": 28,
+          "name": "安勇建",
+          "position": "前锋"
+        },
+        {
+          "number": 21,
+          "name": "邓华艺",
+          "position": "中场"
+        },
+        {
+          "number": 14,
+          "name": "海小锐",
+          "position": "后卫"
+        },
+        {
+          "number": 39,
+          "name": "赖建成",
+          "position": "后卫"
+        },
+        {
+          "number": 38,
+          "name": "巴特",
+          "position": "前锋"
+        },
+        {
+          "number": 32,
+          "name": "毛梓育",
+          "position": "后卫"
+        },
+        {
+          "number": 24,
+          "name": "王凯龙",
+          "position": "门将"
+        }
+      ]
+    }
+  },
+  "statistics": [
+    {
+      "name": "进球",
+      "home": "2",
+      "away": "3"
+    },
+    {
+      "name": "控球率",
+      "home": "41%",
+      "away": "59%"
+    },
+    {
+      "name": "射门",
+      "home": "3",
+      "away": "10"
+    },
+    {
+      "name": "射正",
+      "home": "2",
+      "away": "7"
+    },
+    {
+      "name": "射偏",
+      "home": "1",
+      "away": "3"
+    },
+    {
+      "name": "角球",
+      "home": "3",
+      "away": "7"
+    },
+    {
+      "name": "点球（获判）",
+      "home": "1",
+      "away": "1"
+    },
+    {
+      "name": "点球（罚进）",
+      "home": "1",
+      "away": "0"
+    },
+    {
+      "name": "黄牌",
+      "home": "1",
+      "away": "0"
+    },
+    {
+      "name": "红牌",
+      "home": "0",
+      "away": "0"
+    },
+    {
+      "name": "换人次数",
+      "home": "5",
+      "away": "5"
+    }
+  ],
+  "keyFactors": [
+    "泰安天贶控球59%、射门10次占优，但点球不进+补时阶段王东承乌龙送礼，客场逆转取胜",
+    "上海海港富盛经开仅3次射门由温钧翔独进2球（世界波+点球），进攻效率极高但防线末段失误致命",
+    "全场唯一黄牌为主队汪照普70'犯规，比赛身体对抗尺度偏松"
+  ]
+}

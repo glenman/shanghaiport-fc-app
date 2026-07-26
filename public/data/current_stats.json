@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-07-22",
+  "lastUpdated": "2026-07-26",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
-    "matchesPlayed": 20,
-    "record": "7胜6平7负",
-    "goalsFor": 31,
+    "matchesPlayed": 21,
+    "record": "8胜6平7负",
+    "goalsFor": 33,
     "goalsAgainst": 28,
-    "points": 27,
+    "points": 30,
     "topScorers": [
       {
         "rank": 1,
         "name": "莱昂纳多",
         "number": 45,
-        "goals": 5,
+        "goals": 6,
         "details": [
           {
             "match": "第2轮",
@@ -49,11 +49,54 @@
             "time": "84'",
             "opponent": "辽宁铁人",
             "type": "进球"
+          },
+          {
+            "match": "第20轮",
+            "date": "2026-07-25",
+            "time": "28'",
+            "opponent": "上海申花",
+            "type": "进球"
           }
         ]
       },
       {
         "rank": 2,
+        "name": "李新翔",
+        "number": 49,
+        "goals": 4,
+        "details": [
+          {
+            "match": "第7轮",
+            "date": "2026-04-21",
+            "time": "57'",
+            "opponent": "重庆铜梁龙",
+            "type": "进球"
+          },
+          {
+            "match": "第13轮",
+            "date": "2026-05-19",
+            "time": "70'",
+            "opponent": "成都蓉城",
+            "type": "进球"
+          },
+          {
+            "match": "第16轮",
+            "date": "2026-06-27",
+            "time": "16'",
+            "opponent": "河南",
+            "type": "进球"
+          },
+          {
+            "match": "第20轮",
+            "date": "2026-07-25",
+            "time": "36'",
+            "opponent": "上海申花",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 3,
         "name": "刘祝润",
         "number": 33,
         "goals": 3,
@@ -77,35 +120,6 @@
             "date": "2026-06-19",
             "time": "59'",
             "opponent": "上海赛更达",
-            "type": "进球"
-          }
-        ]
-      },
-      {
-        "rank": 3,
-        "name": "李新翔",
-        "number": 49,
-        "goals": 3,
-        "details": [
-          {
-            "match": "第7轮",
-            "date": "2026-04-21",
-            "time": "57'",
-            "opponent": "重庆铜梁龙",
-            "type": "进球"
-          },
-          {
-            "match": "第13轮",
-            "date": "2026-05-19",
-            "time": "70'",
-            "opponent": "成都蓉城",
-            "type": "进球"
-          },
-          {
-            "match": "第16轮",
-            "date": "2026-06-27",
-            "time": "16'",
-            "opponent": "河南",
             "type": "进球"
           }
         ]
@@ -490,6 +504,32 @@
       },
       {
         "rank": 5,
+        "name": "奥斯卡·梅伦多",
+        "number": 21,
+        "assists": 3,
+        "details": [
+          {
+            "match": "第16轮",
+            "date": "2026-06-27",
+            "time": "16'",
+            "opponent": "河南"
+          },
+          {
+            "match": "第19轮",
+            "date": "2026-07-17",
+            "time": "36'",
+            "opponent": "云南玉昆"
+          },
+          {
+            "match": "第20轮",
+            "date": "2026-07-25",
+            "time": "36'",
+            "opponent": "上海申花"
+          }
+        ]
+      },
+      {
+        "rank": 6,
         "name": "加布里埃尔",
         "number": 11,
         "assists": 2,
@@ -509,7 +549,7 @@
         ]
       },
       {
-        "rank": 6,
+        "rank": 7,
         "name": "莱昂纳多",
         "number": 45,
         "assists": 2,
@@ -524,26 +564,6 @@
             "match": "第19轮",
             "date": "2026-07-17",
             "time": "40'",
-            "opponent": "云南玉昆"
-          }
-        ]
-      },
-      {
-        "rank": 7,
-        "name": "奥斯卡·梅伦多",
-        "number": 21,
-        "assists": 2,
-        "details": [
-          {
-            "match": "第16轮",
-            "date": "2026-06-27",
-            "time": "16'",
-            "opponent": "河南"
-          },
-          {
-            "match": "第19轮",
-            "date": "2026-07-17",
-            "time": "36'",
             "opponent": "云南玉昆"
           }
         ]
@@ -629,6 +649,20 @@
             "date": "2026-06-19",
             "time": "59'",
             "opponent": "上海赛更达"
+          }
+        ]
+      },
+      {
+        "rank": 14,
+        "name": "普林斯·奥本·阿姆彭",
+        "number": 17,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第20轮",
+            "date": "2026-07-25",
+            "time": "28'",
+            "opponent": "上海申花"
           }
         ]
       }
@@ -1152,17 +1186,17 @@
     ],
     "competitions": {
       "中国足球协会超级联赛": {
-        "matchesPlayed": 18,
-        "record": "5胜6平7负",
-        "goalsFor": 28,
+        "matchesPlayed": 19,
+        "record": "6胜6平7负",
+        "goalsFor": 30,
         "goalsAgainst": 26,
-        "points": 21,
+        "points": 24,
         "topScorers": [
           {
             "rank": 1,
             "name": "莱昂纳多",
             "number": 45,
-            "goals": 5,
+            "goals": 6,
             "details": [
               {
                 "match": "第2轮",
@@ -1198,6 +1232,13 @@
                 "time": "84'",
                 "opponent": "辽宁铁人",
                 "type": "进球"
+              },
+              {
+                "match": "第20轮",
+                "date": "2026-07-25",
+                "time": "28'",
+                "opponent": "上海申花",
+                "type": "进球"
               }
             ]
           },
@@ -1205,7 +1246,7 @@
             "rank": 2,
             "name": "李新翔",
             "number": 49,
-            "goals": 3,
+            "goals": 4,
             "details": [
               {
                 "match": "第7轮",
@@ -1226,6 +1267,13 @@
                 "date": "2026-06-27",
                 "time": "16'",
                 "opponent": "河南",
+                "type": "进球"
+              },
+              {
+                "match": "第20轮",
+                "date": "2026-07-25",
+                "time": "36'",
+                "opponent": "上海申花",
                 "type": "进球"
               }
             ]
@@ -1596,6 +1644,32 @@
           },
           {
             "rank": 5,
+            "name": "奥斯卡·梅伦多",
+            "number": 21,
+            "assists": 3,
+            "details": [
+              {
+                "match": "第16轮",
+                "date": "2026-06-27",
+                "time": "16'",
+                "opponent": "河南"
+              },
+              {
+                "match": "第19轮",
+                "date": "2026-07-17",
+                "time": "36'",
+                "opponent": "云南玉昆"
+              },
+              {
+                "match": "第20轮",
+                "date": "2026-07-25",
+                "time": "36'",
+                "opponent": "上海申花"
+              }
+            ]
+          },
+          {
+            "rank": 6,
             "name": "加布里埃尔",
             "number": 11,
             "assists": 2,
@@ -1615,7 +1689,7 @@
             ]
           },
           {
-            "rank": 6,
+            "rank": 7,
             "name": "莱昂纳多",
             "number": 45,
             "assists": 2,
@@ -1630,26 +1704,6 @@
                 "match": "第19轮",
                 "date": "2026-07-17",
                 "time": "40'",
-                "opponent": "云南玉昆"
-              }
-            ]
-          },
-          {
-            "rank": 7,
-            "name": "奥斯卡·梅伦多",
-            "number": 21,
-            "assists": 2,
-            "details": [
-              {
-                "match": "第16轮",
-                "date": "2026-06-27",
-                "time": "16'",
-                "opponent": "河南"
-              },
-              {
-                "match": "第19轮",
-                "date": "2026-07-17",
-                "time": "36'",
                 "opponent": "云南玉昆"
               }
             ]
@@ -1721,6 +1775,20 @@
                 "date": "2026-04-25",
                 "time": "77'",
                 "opponent": "武汉三镇"
+              }
+            ]
+          },
+          {
+            "rank": 13,
+            "name": "普林斯·奥本·阿姆彭",
+            "number": 17,
+            "assists": 1,
+            "details": [
+              {
+                "match": "第20轮",
+                "date": "2026-07-25",
+                "time": "28'",
+                "opponent": "上海申花"
               }
             ]
           }
@@ -2342,17 +2410,17 @@
   },
   "bTeam": {
     "teamName": "上海海港富盛经开",
-    "matchesPlayed": 16,
-    "record": "10胜4平2负",
-    "goalsFor": 29,
-    "goalsAgainst": 10,
+    "matchesPlayed": 17,
+    "record": "10胜4平3负",
+    "goalsFor": 31,
+    "goalsAgainst": 13,
     "points": 34,
     "topScorers": [
       {
         "rank": 1,
         "name": "温钧翔",
         "number": 35,
-        "goals": 7,
+        "goals": 9,
         "details": [
           {
             "match": "第1轮",
@@ -2401,6 +2469,20 @@
             "date": "2026-07-18",
             "time": "66'",
             "opponent": "长春喜都",
+            "type": "进球"
+          },
+          {
+            "match": "第18轮",
+            "date": "2026-07-26",
+            "time": "44'",
+            "opponent": "泰安天贶",
+            "type": "进球"
+          },
+          {
+            "match": "第18轮",
+            "date": "2026-07-26",
+            "time": "57'",
+            "opponent": "泰安天贶",
             "type": "进球"
           }
         ]
@@ -2670,6 +2752,26 @@
       },
       {
         "rank": 2,
+        "name": "杨黔东",
+        "number": 44,
+        "assists": 2,
+        "details": [
+          {
+            "match": "第15轮",
+            "date": "2026-07-04",
+            "time": "10'",
+            "opponent": "北京理工"
+          },
+          {
+            "match": "第18轮",
+            "date": "2026-07-26",
+            "time": "44'",
+            "opponent": "泰安天贶"
+          }
+        ]
+      },
+      {
+        "rank": 3,
         "name": "王逸伟",
         "number": 7,
         "assists": 2,
@@ -2689,7 +2791,7 @@
         ]
       },
       {
-        "rank": 3,
+        "rank": 4,
         "name": "张俊杰",
         "number": 37,
         "assists": 2,
@@ -2709,7 +2811,7 @@
         ]
       },
       {
-        "rank": 4,
+        "rank": 5,
         "name": "温钧翔",
         "number": 35,
         "assists": 1,
@@ -2719,20 +2821,6 @@
             "date": "2026-04-05",
             "time": "13'",
             "opponent": "海门珂缔缘"
-          }
-        ]
-      },
-      {
-        "rank": 5,
-        "name": "杨黔东",
-        "number": 44,
-        "assists": 1,
-        "details": [
-          {
-            "match": "第15轮",
-            "date": "2026-07-04",
-            "time": "10'",
-            "opponent": "北京理工"
           }
         ]
       },
@@ -3009,6 +3097,21 @@
       },
       {
         "rank": 11,
+        "name": "汪照普",
+        "number": 43,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第18轮",
+            "date": "2026-07-26",
+            "time": "70'",
+            "opponent": "泰安天贶",
+            "reason": "上海海港富盛经开汪照普黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 12,
         "name": "王丹",
         "number": 60,
         "yellowCards": 1,
@@ -3023,7 +3126,7 @@
         ]
       },
       {
-        "rank": 12,
+        "rank": 13,
         "name": "黄文政",
         "number": 39,
         "yellowCards": 1,
@@ -3057,17 +3160,17 @@
     ],
     "competitions": {
       "中国足球协会乙级联赛": {
-        "matchesPlayed": 16,
-        "record": "10胜4平2负",
-        "goalsFor": 29,
-        "goalsAgainst": 10,
+        "matchesPlayed": 17,
+        "record": "10胜4平3负",
+        "goalsFor": 31,
+        "goalsAgainst": 13,
         "points": 34,
         "topScorers": [
           {
             "rank": 1,
             "name": "温钧翔",
             "number": 35,
-            "goals": 7,
+            "goals": 9,
             "details": [
               {
                 "match": "第1轮",
@@ -3116,6 +3219,20 @@
                 "date": "2026-07-18",
                 "time": "66'",
                 "opponent": "长春喜都",
+                "type": "进球"
+              },
+              {
+                "match": "第18轮",
+                "date": "2026-07-26",
+                "time": "44'",
+                "opponent": "泰安天贶",
+                "type": "进球"
+              },
+              {
+                "match": "第18轮",
+                "date": "2026-07-26",
+                "time": "57'",
+                "opponent": "泰安天贶",
                 "type": "进球"
               }
             ]
@@ -3385,6 +3502,26 @@
           },
           {
             "rank": 2,
+            "name": "杨黔东",
+            "number": 44,
+            "assists": 2,
+            "details": [
+              {
+                "match": "第15轮",
+                "date": "2026-07-04",
+                "time": "10'",
+                "opponent": "北京理工"
+              },
+              {
+                "match": "第18轮",
+                "date": "2026-07-26",
+                "time": "44'",
+                "opponent": "泰安天贶"
+              }
+            ]
+          },
+          {
+            "rank": 3,
             "name": "王逸伟",
             "number": 7,
             "assists": 2,
@@ -3404,7 +3541,7 @@
             ]
           },
           {
-            "rank": 3,
+            "rank": 4,
             "name": "张俊杰",
             "number": 37,
             "assists": 2,
@@ -3424,7 +3561,7 @@
             ]
           },
           {
-            "rank": 4,
+            "rank": 5,
             "name": "温钧翔",
             "number": 35,
             "assists": 1,
@@ -3434,20 +3571,6 @@
                 "date": "2026-04-05",
                 "time": "13'",
                 "opponent": "海门珂缔缘"
-              }
-            ]
-          },
-          {
-            "rank": 5,
-            "name": "杨黔东",
-            "number": 44,
-            "assists": 1,
-            "details": [
-              {
-                "match": "第15轮",
-                "date": "2026-07-04",
-                "time": "10'",
-                "opponent": "北京理工"
               }
             ]
           },
@@ -3724,6 +3847,21 @@
           },
           {
             "rank": 11,
+            "name": "汪照普",
+            "number": 43,
+            "yellowCards": 1,
+            "details": [
+              {
+                "match": "第18轮",
+                "date": "2026-07-26",
+                "time": "70'",
+                "opponent": "泰安天贶",
+                "reason": "上海海港富盛经开汪照普黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 12,
             "name": "王丹",
             "number": 60,
             "yellowCards": 1,
@@ -3738,7 +3876,7 @@
             ]
           },
           {
-            "rank": 12,
+            "rank": 13,
             "name": "黄文政",
             "number": 39,
             "yellowCards": 1,
