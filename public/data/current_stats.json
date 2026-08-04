@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-26",
+  "lastUpdated": "2026-08-04",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
-    "matchesPlayed": 21,
-    "record": "8胜6平7负",
+    "matchesPlayed": 22,
+    "record": "8胜6平8负",
     "goalsFor": 33,
-    "goalsAgainst": 28,
+    "goalsAgainst": 29,
     "points": 30,
     "topScorers": [
       {
@@ -785,6 +785,35 @@
       },
       {
         "rank": 4,
+        "name": "魏震",
+        "number": 13,
+        "yellowCards": 3,
+        "details": [
+          {
+            "match": "第13轮",
+            "date": "2026-05-19",
+            "time": "72'",
+            "opponent": "成都蓉城",
+            "reason": "上海海港魏震获得黄牌"
+          },
+          {
+            "match": "第15轮",
+            "date": "2026-05-29",
+            "time": "51'",
+            "opponent": "辽宁铁人",
+            "reason": "上海海港魏震获得黄牌"
+          },
+          {
+            "match": "第21轮",
+            "date": "2026-08-01",
+            "time": "45'",
+            "opponent": "山东泰山",
+            "reason": "上海海港魏震获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 5,
         "name": "刘祝润",
         "number": 33,
         "yellowCards": 3,
@@ -813,7 +842,7 @@
         ]
       },
       {
-        "rank": 5,
+        "rank": 6,
         "name": "王燊超",
         "number": 4,
         "yellowCards": 3,
@@ -842,7 +871,7 @@
         ]
       },
       {
-        "rank": 6,
+        "rank": 7,
         "name": "张源",
         "number": 6,
         "yellowCards": 3,
@@ -871,7 +900,7 @@
         ]
       },
       {
-        "rank": 7,
+        "rank": 8,
         "name": "维塔尔",
         "number": 10,
         "yellowCards": 2,
@@ -889,28 +918,6 @@
             "time": "26'",
             "opponent": "河南",
             "reason": "上海海港马特乌斯·维塔尔获得黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 8,
-        "name": "魏震",
-        "number": 13,
-        "yellowCards": 2,
-        "details": [
-          {
-            "match": "第13轮",
-            "date": "2026-05-19",
-            "time": "72'",
-            "opponent": "成都蓉城",
-            "reason": "上海海港魏震获得黄牌"
-          },
-          {
-            "match": "第15轮",
-            "date": "2026-05-29",
-            "time": "51'",
-            "opponent": "辽宁铁人",
-            "reason": "上海海港魏震获得黄牌"
           }
         ]
       },
@@ -1135,6 +1142,21 @@
             "reason": "上海海港莱奥获得黄牌"
           }
         ]
+      },
+      {
+        "rank": 21,
+        "name": "柯乔·阿齐昂贝",
+        "number": 8,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第21轮",
+            "date": "2026-08-01",
+            "time": "19'",
+            "opponent": "山东泰山",
+            "reason": "上海海港柯乔·阿齐昂贝获得黄牌"
+          }
+        ]
       }
     ],
     "redCards": [
@@ -1186,10 +1208,10 @@
     ],
     "competitions": {
       "中国足球协会超级联赛": {
-        "matchesPlayed": 19,
-        "record": "6胜6平7负",
+        "matchesPlayed": 20,
+        "record": "6胜6平8负",
         "goalsFor": 30,
-        "goalsAgainst": 26,
+        "goalsAgainst": 27,
         "points": 24,
         "topScorers": [
           {
@@ -1904,6 +1926,35 @@
           },
           {
             "rank": 4,
+            "name": "魏震",
+            "number": 13,
+            "yellowCards": 3,
+            "details": [
+              {
+                "match": "第13轮",
+                "date": "2026-05-19",
+                "time": "72'",
+                "opponent": "成都蓉城",
+                "reason": "上海海港魏震获得黄牌"
+              },
+              {
+                "match": "第15轮",
+                "date": "2026-05-29",
+                "time": "51'",
+                "opponent": "辽宁铁人",
+                "reason": "上海海港魏震获得黄牌"
+              },
+              {
+                "match": "第21轮",
+                "date": "2026-08-01",
+                "time": "45'",
+                "opponent": "山东泰山",
+                "reason": "上海海港魏震获得黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 5,
             "name": "刘祝润",
             "number": 33,
             "yellowCards": 3,
@@ -1932,7 +1983,7 @@
             ]
           },
           {
-            "rank": 5,
+            "rank": 6,
             "name": "王燊超",
             "number": 4,
             "yellowCards": 3,
@@ -1961,7 +2012,7 @@
             ]
           },
           {
-            "rank": 6,
+            "rank": 7,
             "name": "张源",
             "number": 6,
             "yellowCards": 3,
@@ -1990,7 +2041,7 @@
             ]
           },
           {
-            "rank": 7,
+            "rank": 8,
             "name": "维塔尔",
             "number": 10,
             "yellowCards": 2,
@@ -2008,28 +2059,6 @@
                 "time": "26'",
                 "opponent": "河南",
                 "reason": "上海海港马特乌斯·维塔尔获得黄牌"
-              }
-            ]
-          },
-          {
-            "rank": 8,
-            "name": "魏震",
-            "number": 13,
-            "yellowCards": 2,
-            "details": [
-              {
-                "match": "第13轮",
-                "date": "2026-05-19",
-                "time": "72'",
-                "opponent": "成都蓉城",
-                "reason": "上海海港魏震获得黄牌"
-              },
-              {
-                "match": "第15轮",
-                "date": "2026-05-29",
-                "time": "51'",
-                "opponent": "辽宁铁人",
-                "reason": "上海海港魏震获得黄牌"
               }
             ]
           },
@@ -2237,6 +2266,21 @@
                 "time": "32'",
                 "opponent": "北京国安",
                 "reason": "上海海港莱奥获得黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 20,
+            "name": "柯乔·阿齐昂贝",
+            "number": 8,
+            "yellowCards": 1,
+            "details": [
+              {
+                "match": "第21轮",
+                "date": "2026-08-01",
+                "time": "19'",
+                "opponent": "山东泰山",
+                "reason": "上海海港柯乔·阿齐昂贝获得黄牌"
               }
             ]
           }
