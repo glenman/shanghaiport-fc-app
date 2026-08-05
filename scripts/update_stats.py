@@ -62,7 +62,7 @@ def load_json_file(file_path):
 def is_first_team_match(home_team, away_team):
     """判断是否为一线队比赛"""
     # 先检查是否是B队，避免B队名称被误识别为一线队
-    b_team_names = [TEAM_NAMES['b_team'], '上海海港B队', '海港B队', 'Shanghai Port B']
+    b_team_names = [TEAM_NAMES['b_team'], '上海海港B队', '上海海港富盛经开队', '海港B队', 'Shanghai Port B']
     for name in b_team_names:
         if name in home_team or name in away_team:
             return False
@@ -77,7 +77,7 @@ def is_first_team_match(home_team, away_team):
 
 def is_b_team_match(home_team, away_team):
     """判断是否为B队比赛"""
-    b_team_names = [TEAM_NAMES['b_team'], '上海海港B队', '海港B队', 'Shanghai Port B']
+    b_team_names = [TEAM_NAMES['b_team'], '上海海港B队', '上海海港富盛经开队', '海港B队', 'Shanghai Port B']
     teams = [home_team, away_team]
     for team in teams:
         for name in b_team_names:
@@ -89,7 +89,7 @@ def get_team_role(team_name, home_team, away_team):
     """获取球队角色（home或away）"""
     # 处理B队的不同名称
     if team_name == TEAM_NAMES['b_team']:
-        b_team_names = [TEAM_NAMES['b_team'], '上海海港B队']
+        b_team_names = [TEAM_NAMES['b_team'], '上海海港B队', '上海海港富盛经开队']
         for name in b_team_names:
             if name == home_team:
                 return 'home'

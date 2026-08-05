@@ -169,7 +169,7 @@
         },
         {
           "number": 40,
-          "name": "吾米提江·玉素甫",
+          "name": "吾米提江",
           "position": "后卫",
           "nationality": "中国",
           "age": "22-056",
@@ -229,7 +229,7 @@
         },
         {
           "number": 14,
-          "name": "马修·奥尔",
+          "name": "让克劳德",
           "position": "前锋",
           "nationality": "中国香港",
           "age": "未知"
@@ -842,7 +842,11 @@
     "trend": "未知"
   },
   "socialMedia": {
-    "hashtags": ["#上海海港vs武汉三镇", "#中超2026", "#沪汉对决"],
+    "hashtags": [
+      "#上海海港vs武汉三镇",
+      "#中超2026",
+      "#沪汉对决"
+    ],
     "fanSentiment": {
       "home": "满意",
       "away": "失望"
@@ -916,12 +920,24 @@
     ],
     "teamPerformance": {
       "home": {
-        "strengths": ["进攻效率高", "中场组织出色", "门将表现稳定"],
-        "weaknesses": ["未知"]
+        "strengths": [
+          "进攻效率高",
+          "中场组织出色",
+          "门将表现稳定"
+        ],
+        "weaknesses": [
+          "未知"
+        ]
       },
       "away": {
-        "strengths": ["未知"],
-        "weaknesses": ["防守漏洞多", "犯规过多", "进攻转化率低"]
+        "strengths": [
+          "未知"
+        ],
+        "weaknesses": [
+          "防守漏洞多",
+          "犯规过多",
+          "进攻转化率低"
+        ]
       }
     }
   },

@@ -621,25 +621,25 @@
         "redCards": 0
       },
       {
-          "player": "陈纯新",
-          "number": 15,
-          "position": "MF",
-          "age": "28-117",
-          "minutes": 55,
-          "shots": 1,
-          "shotsOnTarget": 1,
-          "goals": 1,
-          "assists": 0,
-          "keyPasses": 0,
-          "crosses": 0,
-          "tacklesWon": 0,
-          "interceptions": 0,
-          "foulsCommitted": 2,
-          "foulsWon": 1,
-          "offsides": 0,
-          "yellowCards": 0,
-          "redCards": 0
-        },
+        "player": "陈纯新",
+        "number": 15,
+        "position": "MF",
+        "age": "28-117",
+        "minutes": 55,
+        "shots": 1,
+        "shotsOnTarget": 1,
+        "goals": 1,
+        "assists": 0,
+        "keyPasses": 0,
+        "crosses": 0,
+        "tacklesWon": 0,
+        "interceptions": 0,
+        "foulsCommitted": 2,
+        "foulsWon": 1,
+        "offsides": 0,
+        "yellowCards": 0,
+        "redCards": 0
+      },
       {
         "player": "姚浩洋",
         "number": 1,
@@ -721,7 +721,7 @@
       "type": "substitution",
       "team": "home",
       "playerIn": "安佩姆",
-        "playerOut": "安永佳",
+      "playerOut": "安永佳",
       "description": "上海海港安佩姆替换安永佳上场"
     },
     {
@@ -997,7 +997,11 @@
     "trend": "未知"
   },
   "socialMedia": {
-    "hashtags": ["#上海海港vs重庆铜梁龙", "#中超2026", "#沪渝大战"],
+    "hashtags": [
+      "#上海海港vs重庆铜梁龙",
+      "#中超2026",
+      "#沪渝大战"
+    ],
     "fanSentiment": {
       "home": "失望",
       "away": "满意"
@@ -1074,12 +1078,26 @@
     ],
     "teamPerformance": {
       "home": {
-        "strengths": ["控球优势", "传中次数多", "进攻压制"],
-        "weaknesses": ["射门转化率低", "防守漏洞"]
+        "strengths": [
+          "控球优势",
+          "传中次数多",
+          "进攻压制"
+        ],
+        "weaknesses": [
+          "射门转化率低",
+          "防守漏洞"
+        ]
       },
       "away": {
-        "strengths": ["反击效率高", "门将表现出色", "防守组织严密"],
-        "weaknesses": ["控球率偏低", "犯规较多"]
+        "strengths": [
+          "反击效率高",
+          "门将表现出色",
+          "防守组织严密"
+        ],
+        "weaknesses": [
+          "控球率偏低",
+          "犯规较多"
+        ]
       }
     }
   },

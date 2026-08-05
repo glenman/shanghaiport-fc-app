@@ -951,7 +951,11 @@
     "trend": "未知"
   },
   "socialMedia": {
-    "hashtags": ["#上海德比", "#申花vs海港", "#中超2026"],
+    "hashtags": [
+      "#上海德比",
+      "#申花vs海港",
+      "#中超2026"
+    ],
     "fanSentiment": {
       "home": "兴奋",
       "away": "失望"
@@ -1026,12 +1030,25 @@
     ],
     "teamPerformance": {
       "home": {
-        "strengths": ["反击效率高", "门将表现出色", "防守组织严密"],
-        "weaknesses": ["控球率偏低", "犯规较多"]
+        "strengths": [
+          "反击效率高",
+          "门将表现出色",
+          "防守组织严密"
+        ],
+        "weaknesses": [
+          "控球率偏低",
+          "犯规较多"
+        ]
       },
       "away": {
-        "strengths": ["控球优势", "传中次数多"],
-        "weaknesses": ["射门转化率低", "进攻效率不足"]
+        "strengths": [
+          "控球优势",
+          "传中次数多"
+        ],
+        "weaknesses": [
+          "射门转化率低",
+          "进攻效率不足"
+        ]
       }
     }
   },
@@ -1047,7 +1064,7 @@
       "venue": "客场"
     },
     "away": {
-      "opponent": "未知", 
+      "opponent": "未知",
       "date": "2026-04-18",
       "venue": "主场"
     }

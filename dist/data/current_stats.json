@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-04",
+  "lastUpdated": "2026-08-05",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
@@ -550,6 +550,26 @@
       },
       {
         "rank": 7,
+        "name": "安佩姆",
+        "number": 17,
+        "assists": 2,
+        "details": [
+          {
+            "match": "第2轮",
+            "date": "2026-03-15",
+            "time": "78'",
+            "opponent": "青岛西海岸"
+          },
+          {
+            "match": "第20轮",
+            "date": "2026-07-25",
+            "time": "28'",
+            "opponent": "上海申花"
+          }
+        ]
+      },
+      {
+        "rank": 8,
         "name": "莱昂纳多",
         "number": 45,
         "assists": 2,
@@ -569,7 +589,7 @@
         ]
       },
       {
-        "rank": 8,
+        "rank": 9,
         "name": "杨希",
         "number": 22,
         "assists": 1,
@@ -583,7 +603,7 @@
         ]
       },
       {
-        "rank": 9,
+        "rank": 10,
         "name": "蒯纪闻",
         "number": 47,
         "assists": 1,
@@ -592,20 +612,6 @@
             "match": "第2轮",
             "date": "2026-03-15",
             "time": "61'",
-            "opponent": "青岛西海岸"
-          }
-        ]
-      },
-      {
-        "rank": 10,
-        "name": "安佩姆",
-        "number": 17,
-        "assists": 1,
-        "details": [
-          {
-            "match": "第2轮",
-            "date": "2026-03-15",
-            "time": "78'",
             "opponent": "青岛西海岸"
           }
         ]
@@ -649,20 +655,6 @@
             "date": "2026-06-19",
             "time": "59'",
             "opponent": "上海赛更达"
-          }
-        ]
-      },
-      {
-        "rank": 14,
-        "name": "普林斯·奥本·阿姆彭",
-        "number": 17,
-        "assists": 1,
-        "details": [
-          {
-            "match": "第20轮",
-            "date": "2026-07-25",
-            "time": "28'",
-            "opponent": "上海申花"
           }
         ]
       }
@@ -1085,6 +1077,21 @@
       },
       {
         "rank": 17,
+        "name": "让克劳德",
+        "number": 8,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第21轮",
+            "date": "2026-08-01",
+            "time": "19'",
+            "opponent": "山东泰山",
+            "reason": "上海海港柯乔·阿齐昂贝获得黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 18,
         "name": "陈威",
         "number": 12,
         "yellowCards": 1,
@@ -1099,7 +1106,7 @@
         ]
       },
       {
-        "rank": 18,
+        "rank": 19,
         "name": "傅欢",
         "number": 23,
         "yellowCards": 1,
@@ -1114,7 +1121,7 @@
         ]
       },
       {
-        "rank": 19,
+        "rank": 20,
         "name": "岳鑫",
         "number": 28,
         "yellowCards": 1,
@@ -1129,7 +1136,7 @@
         ]
       },
       {
-        "rank": 20,
+        "rank": 21,
         "name": "莱昂纳多",
         "number": 45,
         "yellowCards": 1,
@@ -1142,26 +1149,26 @@
             "reason": "上海海港莱奥获得黄牌"
           }
         ]
-      },
-      {
-        "rank": 21,
-        "name": "柯乔·阿齐昂贝",
-        "number": 8,
-        "yellowCards": 1,
-        "details": [
-          {
-            "match": "第21轮",
-            "date": "2026-08-01",
-            "time": "19'",
-            "opponent": "山东泰山",
-            "reason": "上海海港柯乔·阿齐昂贝获得黄牌"
-          }
-        ]
       }
     ],
     "redCards": [
       {
         "rank": 1,
+        "name": "安佩姆",
+        "number": 17,
+        "redCards": 1,
+        "details": [
+          {
+            "match": "第10轮",
+            "date": "2026-05-06",
+            "time": "98'",
+            "opponent": "深圳鹏城",
+            "reason": "上海海港安佩姆获得红牌"
+          }
+        ]
+      },
+      {
+        "rank": 2,
         "name": "吾米提江",
         "number": 40,
         "redCards": 1,
@@ -1176,7 +1183,7 @@
         ]
       },
       {
-        "rank": 2,
+        "rank": 3,
         "name": "张源",
         "number": 6,
         "redCards": 1,
@@ -1187,21 +1194,6 @@
             "time": "31'",
             "opponent": "青岛西海岸",
             "reason": "上海海港张源被红牌罚下"
-          }
-        ]
-      },
-      {
-        "rank": 3,
-        "name": "普林斯·奥本·安佩姆",
-        "number": 17,
-        "redCards": 1,
-        "details": [
-          {
-            "match": "第10轮",
-            "date": "2026-05-06",
-            "time": "98'",
-            "opponent": "深圳鹏城",
-            "reason": "上海海港普林斯·奥本·安佩姆获得红牌"
           }
         ]
       }
@@ -1712,6 +1704,26 @@
           },
           {
             "rank": 7,
+            "name": "安佩姆",
+            "number": 17,
+            "assists": 2,
+            "details": [
+              {
+                "match": "第2轮",
+                "date": "2026-03-15",
+                "time": "78'",
+                "opponent": "青岛西海岸"
+              },
+              {
+                "match": "第20轮",
+                "date": "2026-07-25",
+                "time": "28'",
+                "opponent": "上海申花"
+              }
+            ]
+          },
+          {
+            "rank": 8,
             "name": "莱昂纳多",
             "number": 45,
             "assists": 2,
@@ -1731,7 +1743,7 @@
             ]
           },
           {
-            "rank": 8,
+            "rank": 9,
             "name": "杨希",
             "number": 22,
             "assists": 1,
@@ -1745,7 +1757,7 @@
             ]
           },
           {
-            "rank": 9,
+            "rank": 10,
             "name": "蒯纪闻",
             "number": 47,
             "assists": 1,
@@ -1754,20 +1766,6 @@
                 "match": "第2轮",
                 "date": "2026-03-15",
                 "time": "61'",
-                "opponent": "青岛西海岸"
-              }
-            ]
-          },
-          {
-            "rank": 10,
-            "name": "安佩姆",
-            "number": 17,
-            "assists": 1,
-            "details": [
-              {
-                "match": "第2轮",
-                "date": "2026-03-15",
-                "time": "78'",
                 "opponent": "青岛西海岸"
               }
             ]
@@ -1797,20 +1795,6 @@
                 "date": "2026-04-25",
                 "time": "77'",
                 "opponent": "武汉三镇"
-              }
-            ]
-          },
-          {
-            "rank": 13,
-            "name": "普林斯·奥本·阿姆彭",
-            "number": 17,
-            "assists": 1,
-            "details": [
-              {
-                "match": "第20轮",
-                "date": "2026-07-25",
-                "time": "28'",
-                "opponent": "上海申花"
               }
             ]
           }
@@ -2226,6 +2210,21 @@
           },
           {
             "rank": 17,
+            "name": "让克劳德",
+            "number": 8,
+            "yellowCards": 1,
+            "details": [
+              {
+                "match": "第21轮",
+                "date": "2026-08-01",
+                "time": "19'",
+                "opponent": "山东泰山",
+                "reason": "上海海港柯乔·阿齐昂贝获得黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 18,
             "name": "傅欢",
             "number": 23,
             "yellowCards": 1,
@@ -2240,7 +2239,7 @@
             ]
           },
           {
-            "rank": 18,
+            "rank": 19,
             "name": "岳鑫",
             "number": 28,
             "yellowCards": 1,
@@ -2255,7 +2254,7 @@
             ]
           },
           {
-            "rank": 19,
+            "rank": 20,
             "name": "莱昂纳多",
             "number": 45,
             "yellowCards": 1,
@@ -2268,26 +2267,26 @@
                 "reason": "上海海港莱奥获得黄牌"
               }
             ]
-          },
-          {
-            "rank": 20,
-            "name": "柯乔·阿齐昂贝",
-            "number": 8,
-            "yellowCards": 1,
-            "details": [
-              {
-                "match": "第21轮",
-                "date": "2026-08-01",
-                "time": "19'",
-                "opponent": "山东泰山",
-                "reason": "上海海港柯乔·阿齐昂贝获得黄牌"
-              }
-            ]
           }
         ],
         "redCards": [
           {
             "rank": 1,
+            "name": "安佩姆",
+            "number": 17,
+            "redCards": 1,
+            "details": [
+              {
+                "match": "第10轮",
+                "date": "2026-05-06",
+                "time": "98'",
+                "opponent": "深圳鹏城",
+                "reason": "上海海港安佩姆获得红牌"
+              }
+            ]
+          },
+          {
+            "rank": 2,
             "name": "吾米提江",
             "number": 40,
             "redCards": 1,
@@ -2302,7 +2301,7 @@
             ]
           },
           {
-            "rank": 2,
+            "rank": 3,
             "name": "张源",
             "number": 6,
             "redCards": 1,
@@ -2313,21 +2312,6 @@
                 "time": "31'",
                 "opponent": "青岛西海岸",
                 "reason": "上海海港张源被红牌罚下"
-              }
-            ]
-          },
-          {
-            "rank": 3,
-            "name": "普林斯·奥本·安佩姆",
-            "number": 17,
-            "redCards": 1,
-            "details": [
-              {
-                "match": "第10轮",
-                "date": "2026-05-06",
-                "time": "98'",
-                "opponent": "深圳鹏城",
-                "reason": "上海海港普林斯·奥本·安佩姆获得红牌"
               }
             ]
           }
@@ -2454,11 +2438,11 @@
   },
   "bTeam": {
     "teamName": "上海海港富盛经开",
-    "matchesPlayed": 17,
-    "record": "10胜4平3负",
-    "goalsFor": 31,
-    "goalsAgainst": 13,
-    "points": 34,
+    "matchesPlayed": 18,
+    "record": "11胜4平3负",
+    "goalsFor": 33,
+    "goalsAgainst": 14,
+    "points": 37,
     "topScorers": [
       {
         "rank": 1,
@@ -2678,6 +2662,28 @@
       },
       {
         "rank": 7,
+        "name": "任晓航",
+        "number": 27,
+        "goals": 2,
+        "details": [
+          {
+            "match": "第19轮",
+            "date": "2026-08-01",
+            "time": "73'",
+            "opponent": "大连英博B队",
+            "type": "进球"
+          },
+          {
+            "match": "第19轮",
+            "date": "2026-08-01",
+            "time": "82'",
+            "opponent": "大连英博B队",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 8,
         "name": "许瑞轩",
         "number": 30,
         "goals": 1,
@@ -2692,7 +2698,7 @@
         ]
       },
       {
-        "rank": 8,
+        "rank": 9,
         "name": "谢鸿宇",
         "number": 20,
         "goals": 1,
@@ -2707,7 +2713,7 @@
         ]
       },
       {
-        "rank": 9,
+        "rank": 10,
         "name": "李瑞龙",
         "number": 24,
         "goals": 1,
@@ -2722,7 +2728,7 @@
         ]
       },
       {
-        "rank": 10,
+        "rank": 11,
         "name": "刘铁诚",
         "number": 51,
         "goals": 1,
@@ -2737,7 +2743,7 @@
         ]
       },
       {
-        "rank": 11,
+        "rank": 12,
         "name": "张慧宇",
         "number": 10,
         "goals": 1,
@@ -2752,7 +2758,7 @@
         ]
       },
       {
-        "rank": 12,
+        "rank": 13,
         "name": "蒋志鑫",
         "number": 0,
         "goals": 1,
@@ -2884,6 +2890,20 @@
       },
       {
         "rank": 7,
+        "name": "谢鸿宇",
+        "number": 20,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第19轮",
+            "date": "2026-08-01",
+            "time": "82'",
+            "opponent": "大连英博B队"
+          }
+        ]
+      },
+      {
+        "rank": 8,
         "name": "李瑞龙",
         "number": 24,
         "assists": 1,
@@ -2897,7 +2917,7 @@
         ]
       },
       {
-        "rank": 8,
+        "rank": 9,
         "name": "曹哲哲",
         "number": 58,
         "assists": 1,
@@ -2911,7 +2931,7 @@
         ]
       },
       {
-        "rank": 9,
+        "rank": 10,
         "name": "范阳阳",
         "number": 8,
         "assists": 1,
@@ -2921,6 +2941,20 @@
             "date": "2026-04-05",
             "time": "8'",
             "opponent": "海门珂缔缘"
+          }
+        ]
+      },
+      {
+        "rank": 11,
+        "name": "张慧宇",
+        "number": 10,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第19轮",
+            "date": "2026-08-01",
+            "time": "73'",
+            "opponent": "大连英博B队"
           }
         ]
       }
@@ -3204,11 +3238,11 @@
     ],
     "competitions": {
       "中国足球协会乙级联赛": {
-        "matchesPlayed": 17,
-        "record": "10胜4平3负",
-        "goalsFor": 31,
-        "goalsAgainst": 13,
-        "points": 34,
+        "matchesPlayed": 18,
+        "record": "11胜4平3负",
+        "goalsFor": 33,
+        "goalsAgainst": 14,
+        "points": 37,
         "topScorers": [
           {
             "rank": 1,
@@ -3428,6 +3462,28 @@
           },
           {
             "rank": 7,
+            "name": "任晓航",
+            "number": 27,
+            "goals": 2,
+            "details": [
+              {
+                "match": "第19轮",
+                "date": "2026-08-01",
+                "time": "73'",
+                "opponent": "大连英博B队",
+                "type": "进球"
+              },
+              {
+                "match": "第19轮",
+                "date": "2026-08-01",
+                "time": "82'",
+                "opponent": "大连英博B队",
+                "type": "进球"
+              }
+            ]
+          },
+          {
+            "rank": 8,
             "name": "许瑞轩",
             "number": 30,
             "goals": 1,
@@ -3442,7 +3498,7 @@
             ]
           },
           {
-            "rank": 8,
+            "rank": 9,
             "name": "谢鸿宇",
             "number": 20,
             "goals": 1,
@@ -3457,7 +3513,7 @@
             ]
           },
           {
-            "rank": 9,
+            "rank": 10,
             "name": "李瑞龙",
             "number": 24,
             "goals": 1,
@@ -3472,7 +3528,7 @@
             ]
           },
           {
-            "rank": 10,
+            "rank": 11,
             "name": "刘铁诚",
             "number": 51,
             "goals": 1,
@@ -3487,7 +3543,7 @@
             ]
           },
           {
-            "rank": 11,
+            "rank": 12,
             "name": "张慧宇",
             "number": 10,
             "goals": 1,
@@ -3502,7 +3558,7 @@
             ]
           },
           {
-            "rank": 12,
+            "rank": 13,
             "name": "蒋志鑫",
             "number": 0,
             "goals": 1,
@@ -3634,6 +3690,20 @@
           },
           {
             "rank": 7,
+            "name": "谢鸿宇",
+            "number": 20,
+            "assists": 1,
+            "details": [
+              {
+                "match": "第19轮",
+                "date": "2026-08-01",
+                "time": "82'",
+                "opponent": "大连英博B队"
+              }
+            ]
+          },
+          {
+            "rank": 8,
             "name": "李瑞龙",
             "number": 24,
             "assists": 1,
@@ -3647,7 +3717,7 @@
             ]
           },
           {
-            "rank": 8,
+            "rank": 9,
             "name": "曹哲哲",
             "number": 58,
             "assists": 1,
@@ -3661,7 +3731,7 @@
             ]
           },
           {
-            "rank": 9,
+            "rank": 10,
             "name": "范阳阳",
             "number": 8,
             "assists": 1,
@@ -3671,6 +3741,20 @@
                 "date": "2026-04-05",
                 "time": "8'",
                 "opponent": "海门珂缔缘"
+              }
+            ]
+          },
+          {
+            "rank": 11,
+            "name": "张慧宇",
+            "number": 10,
+            "assists": 1,
+            "details": [
+              {
+                "match": "第19轮",
+                "date": "2026-08-01",
+                "time": "73'",
+                "opponent": "大连英博B队"
               }
             ]
           }

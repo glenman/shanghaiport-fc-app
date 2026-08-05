@@ -190,7 +190,7 @@
           "name": "李新翔",
           "position": "中场",
           "substitutedAt": 70,
-          "substitutedFor": "普林斯·安佩姆"
+          "substitutedFor": "安佩姆"
         },
         {
           "number": 23,
@@ -489,7 +489,7 @@
       "team": "home",
       "playerIn": "李新翔",
       "playerOut": "安佩姆",
-      "description": "上海海港李新翔替换普林斯·安佩姆上场"
+      "description": "上海海港李新翔替换安佩姆上场"
     },
     {
       "minute": 70,
@@ -686,33 +686,69 @@
     "rounds": [
       {
         "round": 1,
-        "home": { "player": "武磊", "result": "scored" },
-        "away": { "player": "周定洋", "result": "missed" }
+        "home": {
+          "player": "武磊",
+          "result": "scored"
+        },
+        "away": {
+          "player": "周定洋",
+          "result": "missed"
+        }
       },
       {
         "round": 2,
-        "home": { "player": "莱昂纳多", "result": "missed" },
-        "away": { "player": "夏达龙", "result": "scored" }
+        "home": {
+          "player": "莱昂纳多",
+          "result": "missed"
+        },
+        "away": {
+          "player": "夏达龙",
+          "result": "scored"
+        }
       },
       {
         "round": 3,
-        "home": { "player": "魏震", "result": "scored" },
-        "away": { "player": "李宁", "result": "scored" }
+        "home": {
+          "player": "魏震",
+          "result": "scored"
+        },
+        "away": {
+          "player": "李宁",
+          "result": "scored"
+        }
       },
       {
         "round": 4,
-        "home": { "player": "李新翔", "result": "scored" },
-        "away": { "player": "张宇峰", "result": "missed" }
+        "home": {
+          "player": "李新翔",
+          "result": "scored"
+        },
+        "away": {
+          "player": "张宇峰",
+          "result": "missed"
+        }
       },
       {
         "round": 5,
-        "home": { "player": "陈威 (门将)", "result": "missed" },
-        "away": { "player": "韦斯利·莫赖斯", "result": "scored" }
+        "home": {
+          "player": "陈威 (门将)",
+          "result": "missed"
+        },
+        "away": {
+          "player": "韦斯利·莫赖斯",
+          "result": "scored"
+        }
       },
       {
         "round": 6,
-        "home": { "player": "刘祝润", "result": "scored" },
-        "away": { "player": "加布里埃尔·哈维尔", "result": "missed" }
+        "home": {
+          "player": "刘祝润",
+          "result": "scored"
+        },
+        "away": {
+          "player": "加布里埃尔·哈维尔",
+          "result": "missed"
+        }
       }
     ]
   }

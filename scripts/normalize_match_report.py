@@ -29,11 +29,20 @@ def load_players(filepath):
         '马修·奥尔': '让克劳德',
         'Matthew Orr': '让克劳德',
         '科乔·阿齐安贝': '让克劳德',
+        '柯乔·阿齐昂贝': '让克劳德',
         'Kodjo Aziangbe': '让克劳德',
+        '普林斯·奥本·阿姆彭': '安佩姆',
+        '普林斯·奥本·安佩姆': '安佩姆',
+        '普林斯·奥本·安彭': '安佩姆',
+        '普林斯·阿姆彭': '安佩姆',
+        '普林斯·安佩姆': '安佩姆',
+        '普林斯·安彭': '安佩姆',
+        'Prince Ampem': '安佩姆',
         '麦高恩': '安永佳',
         'McGowan': '安永佳',
         'Matt Orr': '安永佳',
-        '吕永涛': '卢永涛'
+        '吕永涛': '卢永涛',
+        '任瑞航': '任晓航'
     }
     for alias, correct_name in alias_map.items():
         if correct_name in player_map:

@@ -605,7 +605,7 @@
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "克劳德",
+      "player": "让克劳德",
       "player2": "李帅",
       "goal_type": "goal",
       "description": "上海海港1-0领先"
@@ -922,7 +922,7 @@
       "description": "上海海港克劳德首开纪录，助攻李帅",
       "type": "goal",
       "team": "home",
-      "player": "克劳德",
+      "player": "让克劳德",
       "player2": "李帅",
       "goal_type": "open_play"
     },
@@ -975,12 +975,25 @@
     ],
     "teamPerformance": {
       "home": {
-        "strengths": ["控球优势", "进攻效率高", "替补深度强"],
-        "weaknesses": ["犯规较多", "开场节奏较慢"]
+        "strengths": [
+          "控球优势",
+          "进攻效率高",
+          "替补深度强"
+        ],
+        "weaknesses": [
+          "犯规较多",
+          "开场节奏较慢"
+        ]
       },
       "away": {
-        "strengths": ["射门次数相当", "防守组织有一定韧性"],
-        "weaknesses": ["控球能力不足", "进攻转化率低"]
+        "strengths": [
+          "射门次数相当",
+          "防守组织有一定韧性"
+        ],
+        "weaknesses": [
+          "控球能力不足",
+          "进攻转化率低"
+        ]
       }
     },
     "turningPoint": "第70分钟武磊替补登场立即进球，彻底击溃对手防线，成为比赛转折点。"
@@ -991,7 +1004,11 @@
     "manOfTheMatchComment": "武磊：很高兴能为球队做出贡献，这是全队努力的结果。"
   },
   "socialMedia": {
-    "hashtags": ["#上海海港VS青岛西海岸", "#武磊梅开二度", "#中超2026"],
+    "hashtags": [
+      "#上海海港VS青岛西海岸",
+      "#武磊梅开二度",
+      "#中超2026"
+    ],
     "fanSentiment": {
       "home": "满意",
       "away": "理解"

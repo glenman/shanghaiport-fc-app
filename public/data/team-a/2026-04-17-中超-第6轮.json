@@ -768,7 +768,7 @@
       "type": "substitution",
       "team": "away",
       "playerIn": "武磊",
-      "playerOut": "马修·奥尔",
+      "playerOut": "让克劳德",
       "description": "上海海港武磊替换马修·奥尔上场"
     },
     {
@@ -973,7 +973,11 @@
     "trend": "未知"
   },
   "socialMedia": {
-    "hashtags": ["#山东泰山vs上海海港", "#中超2026", "#鲁沪大战"],
+    "hashtags": [
+      "#山东泰山vs上海海港",
+      "#中超2026",
+      "#鲁沪大战"
+    ],
     "fanSentiment": {
       "home": "满意",
       "away": "遗憾"
@@ -1048,12 +1052,26 @@
     ],
     "teamPerformance": {
       "home": {
-        "strengths": ["控球优势", "传中次数多", "进攻压制"],
-        "weaknesses": ["射门转化率低", "犯规较多"]
+        "strengths": [
+          "控球优势",
+          "传中次数多",
+          "进攻压制"
+        ],
+        "weaknesses": [
+          "射门转化率低",
+          "犯规较多"
+        ]
       },
       "away": {
-        "strengths": ["反击效率高", "门将表现出色", "防守组织严密"],
-        "weaknesses": ["控球率偏低", "黄牌较多"]
+        "strengths": [
+          "反击效率高",
+          "门将表现出色",
+          "防守组织严密"
+        ],
+        "weaknesses": [
+          "控球率偏低",
+          "黄牌较多"
+        ]
       }
     }
   },
