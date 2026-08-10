@@ -121,6 +121,8 @@ def process_team_data(team_data, is_port_team, player_map):
         for player in team_data['substitutes']:
             if update_player_name_in_dict(player, player_map, 'name'):
                 updated_count += 1
+            if update_player_name_in_dict(player, player_map, 'substitutedFor'):
+                updated_count += 1
     
     # 更新换人信息
     if 'substitutions' in team_data:

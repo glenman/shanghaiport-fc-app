@@ -1,19 +1,19 @@
 {
-  "lastUpdated": "2026-08-09",
+  "lastUpdated": "2026-08-10",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
-    "matchesPlayed": 22,
-    "record": "8胜6平8负",
-    "goalsFor": 33,
-    "goalsAgainst": 29,
-    "points": 30,
+    "matchesPlayed": 23,
+    "record": "9胜6平8负",
+    "goalsFor": 36,
+    "goalsAgainst": 31,
+    "points": 33,
     "topScorers": [
       {
         "rank": 1,
         "name": "莱昂纳多",
         "number": 45,
-        "goals": 6,
+        "goals": 8,
         "details": [
           {
             "match": "第2轮",
@@ -56,6 +56,20 @@
             "time": "28'",
             "opponent": "上海申花",
             "type": "进球"
+          },
+          {
+            "match": "第22轮",
+            "date": "2026-08-09",
+            "time": "29'",
+            "opponent": "重庆铜梁龙",
+            "type": "进球"
+          },
+          {
+            "match": "第22轮",
+            "date": "2026-08-09",
+            "time": "51'",
+            "opponent": "重庆铜梁龙",
+            "type": "进球"
           }
         ]
       },
@@ -97,6 +111,35 @@
       },
       {
         "rank": 3,
+        "name": "魏震",
+        "number": 13,
+        "goals": 3,
+        "details": [
+          {
+            "match": "第8轮",
+            "date": "2026-04-25",
+            "time": "15'",
+            "opponent": "武汉三镇",
+            "type": "进球"
+          },
+          {
+            "match": "第19轮",
+            "date": "2026-07-17",
+            "time": "36'",
+            "opponent": "云南玉昆",
+            "type": "进球"
+          },
+          {
+            "match": "第22轮",
+            "date": "2026-08-09",
+            "time": "39'",
+            "opponent": "重庆铜梁龙",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 4,
         "name": "刘祝润",
         "number": 33,
         "goals": 3,
@@ -125,7 +168,7 @@
         ]
       },
       {
-        "rank": 4,
+        "rank": 5,
         "name": "杨希",
         "number": 22,
         "goals": 2,
@@ -147,7 +190,7 @@
         ]
       },
       {
-        "rank": 5,
+        "rank": 6,
         "name": "让克劳德",
         "number": 8,
         "goals": 2,
@@ -169,7 +212,7 @@
         ]
       },
       {
-        "rank": 6,
+        "rank": 7,
         "name": "维塔尔",
         "number": 10,
         "goals": 2,
@@ -186,28 +229,6 @@
             "date": "2026-05-15",
             "time": "22'",
             "opponent": "浙江队",
-            "type": "进球"
-          }
-        ]
-      },
-      {
-        "rank": 7,
-        "name": "魏震",
-        "number": 13,
-        "goals": 2,
-        "details": [
-          {
-            "match": "第8轮",
-            "date": "2026-04-25",
-            "time": "15'",
-            "opponent": "武汉三镇",
-            "type": "进球"
-          },
-          {
-            "match": "第19轮",
-            "date": "2026-07-17",
-            "time": "36'",
-            "opponent": "云南玉昆",
             "type": "进球"
           }
         ]
@@ -550,6 +571,26 @@
       },
       {
         "rank": 7,
+        "name": "杨希",
+        "number": 22,
+        "assists": 2,
+        "details": [
+          {
+            "match": "第1轮",
+            "date": "2026-03-07",
+            "time": "45'",
+            "opponent": "河南队"
+          },
+          {
+            "match": "第22轮",
+            "date": "2026-08-09",
+            "time": "29'",
+            "opponent": "重庆铜梁龙"
+          }
+        ]
+      },
+      {
+        "rank": 8,
         "name": "安佩姆",
         "number": 17,
         "assists": 2,
@@ -569,7 +610,7 @@
         ]
       },
       {
-        "rank": 8,
+        "rank": 9,
         "name": "莱昂纳多",
         "number": 45,
         "assists": 2,
@@ -585,20 +626,6 @@
             "date": "2026-07-17",
             "time": "40'",
             "opponent": "云南玉昆"
-          }
-        ]
-      },
-      {
-        "rank": 9,
-        "name": "杨希",
-        "number": 22,
-        "assists": 1,
-        "details": [
-          {
-            "match": "第1轮",
-            "date": "2026-03-07",
-            "time": "45'",
-            "opponent": "河南队"
           }
         ]
       },
@@ -632,6 +659,20 @@
       },
       {
         "rank": 12,
+        "name": "岳鑫",
+        "number": 28,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第22轮",
+            "date": "2026-08-09",
+            "time": "51'",
+            "opponent": "重庆铜梁龙"
+          }
+        ]
+      },
+      {
+        "rank": 13,
         "name": "刘若钒",
         "number": 26,
         "assists": 1,
@@ -645,7 +686,7 @@
         ]
       },
       {
-        "rank": 13,
+        "rank": 14,
         "name": "王振澳",
         "number": 19,
         "assists": 1,
@@ -1200,17 +1241,17 @@
     ],
     "competitions": {
       "中国足球协会超级联赛": {
-        "matchesPlayed": 20,
-        "record": "6胜6平8负",
-        "goalsFor": 30,
-        "goalsAgainst": 27,
-        "points": 24,
+        "matchesPlayed": 21,
+        "record": "7胜6平8负",
+        "goalsFor": 33,
+        "goalsAgainst": 29,
+        "points": 27,
         "topScorers": [
           {
             "rank": 1,
             "name": "莱昂纳多",
             "number": 45,
-            "goals": 6,
+            "goals": 8,
             "details": [
               {
                 "match": "第2轮",
@@ -1253,6 +1294,20 @@
                 "time": "28'",
                 "opponent": "上海申花",
                 "type": "进球"
+              },
+              {
+                "match": "第22轮",
+                "date": "2026-08-09",
+                "time": "29'",
+                "opponent": "重庆铜梁龙",
+                "type": "进球"
+              },
+              {
+                "match": "第22轮",
+                "date": "2026-08-09",
+                "time": "51'",
+                "opponent": "重庆铜梁龙",
+                "type": "进球"
               }
             ]
           },
@@ -1294,6 +1349,35 @@
           },
           {
             "rank": 3,
+            "name": "魏震",
+            "number": 13,
+            "goals": 3,
+            "details": [
+              {
+                "match": "第8轮",
+                "date": "2026-04-25",
+                "time": "15'",
+                "opponent": "武汉三镇",
+                "type": "进球"
+              },
+              {
+                "match": "第19轮",
+                "date": "2026-07-17",
+                "time": "36'",
+                "opponent": "云南玉昆",
+                "type": "进球"
+              },
+              {
+                "match": "第22轮",
+                "date": "2026-08-09",
+                "time": "39'",
+                "opponent": "重庆铜梁龙",
+                "type": "进球"
+              }
+            ]
+          },
+          {
+            "rank": 4,
             "name": "杨希",
             "number": 22,
             "goals": 2,
@@ -1315,7 +1399,7 @@
             ]
           },
           {
-            "rank": 4,
+            "rank": 5,
             "name": "让克劳德",
             "number": 8,
             "goals": 2,
@@ -1337,7 +1421,7 @@
             ]
           },
           {
-            "rank": 5,
+            "rank": 6,
             "name": "维塔尔",
             "number": 10,
             "goals": 2,
@@ -1354,28 +1438,6 @@
                 "date": "2026-05-15",
                 "time": "22'",
                 "opponent": "浙江队",
-                "type": "进球"
-              }
-            ]
-          },
-          {
-            "rank": 6,
-            "name": "魏震",
-            "number": 13,
-            "goals": 2,
-            "details": [
-              {
-                "match": "第8轮",
-                "date": "2026-04-25",
-                "time": "15'",
-                "opponent": "武汉三镇",
-                "type": "进球"
-              },
-              {
-                "match": "第19轮",
-                "date": "2026-07-17",
-                "time": "36'",
-                "opponent": "云南玉昆",
                 "type": "进球"
               }
             ]
@@ -1704,6 +1766,26 @@
           },
           {
             "rank": 7,
+            "name": "杨希",
+            "number": 22,
+            "assists": 2,
+            "details": [
+              {
+                "match": "第1轮",
+                "date": "2026-03-07",
+                "time": "45'",
+                "opponent": "河南队"
+              },
+              {
+                "match": "第22轮",
+                "date": "2026-08-09",
+                "time": "29'",
+                "opponent": "重庆铜梁龙"
+              }
+            ]
+          },
+          {
+            "rank": 8,
             "name": "安佩姆",
             "number": 17,
             "assists": 2,
@@ -1723,7 +1805,7 @@
             ]
           },
           {
-            "rank": 8,
+            "rank": 9,
             "name": "莱昂纳多",
             "number": 45,
             "assists": 2,
@@ -1739,20 +1821,6 @@
                 "date": "2026-07-17",
                 "time": "40'",
                 "opponent": "云南玉昆"
-              }
-            ]
-          },
-          {
-            "rank": 9,
-            "name": "杨希",
-            "number": 22,
-            "assists": 1,
-            "details": [
-              {
-                "match": "第1轮",
-                "date": "2026-03-07",
-                "time": "45'",
-                "opponent": "河南队"
               }
             ]
           },
@@ -1786,6 +1854,20 @@
           },
           {
             "rank": 12,
+            "name": "岳鑫",
+            "number": 28,
+            "assists": 1,
+            "details": [
+              {
+                "match": "第22轮",
+                "date": "2026-08-09",
+                "time": "51'",
+                "opponent": "重庆铜梁龙"
+              }
+            ]
+          },
+          {
+            "rank": 13,
             "name": "刘若钒",
             "number": 26,
             "assists": 1,
