@@ -1,0 +1,696 @@
+{
+  "match": {
+    "id": "ab5df00d",
+    "round": "第23轮",
+    "date": "2026-08-14",
+    "time": "19:35",
+    "homeTeam": "武汉三镇",
+    "awayTeam": "上海海港",
+    "venue": "武汉体育中心体育场",
+    "city": "武汉",
+    "result": "2-3",
+    "status": "已结束",
+    "attendance": "30157",
+    "referee": "艾堃",
+    "weather": "未知",
+    "competition": "中国足球协会超级联赛",
+    "matchweek": 23,
+    "season": "2026"
+  },
+  "matchDetails": {
+    "stadiumCapacity": "未知",
+    "pitchCondition": "未知",
+    "temperature": "未知",
+    "kickoffTime": "19:35",
+    "halftimeScore": "1-1",
+    "fulltimeScore": "2-3"
+  },
+  "officials": {
+    "referee": "艾堃",
+    "assistantReferee1": "胡成军",
+    "assistantReferee2": "阿利木江·阿布都卡迪尔",
+    "fourthOfficial": "马云坤",
+    "VAR": "李海新"
+  },
+  "lineups": {
+    "home": {
+      "name": "武汉三镇",
+      "formation": "4-4-2",
+      "manager": "里卡多·苏亚雷斯",
+      "captain": "何冠",
+      "players": [
+        {
+          "number": 22,
+          "name": "方镜淇",
+          "position": "门将",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 2,
+          "name": "何冠",
+          "position": "后卫",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 4,
+          "name": "徐浩峰",
+          "position": "后卫",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 7,
+          "name": "古斯塔沃·绍尔",
+          "position": "中场",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "基利安·贝维斯",
+          "position": "中场",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 11,
+          "name": "李昂",
+          "position": "后卫",
+          "minutes": 66,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 18,
+          "name": "张晓彬",
+          "position": "中场",
+          "minutes": 66,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 20,
+          "name": "阿德里亚诺",
+          "position": "中场",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 23,
+          "name": "明天",
+          "position": "后卫",
+          "minutes": 67,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 29,
+          "name": "洪德尔·卡迪斯",
+          "position": "前锋",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 50,
+          "name": "莱昂纳多",
+          "position": "前锋",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 31,
+          "name": "郭嘉宇",
+          "position": "门将"
+        },
+        {
+          "number": 5,
+          "name": "李申圆",
+          "position": "后卫"
+        },
+        {
+          "number": 6,
+          "name": "龙威",
+          "position": "中场",
+          "substitutedAt": 75,
+          "substitutedFor": "古斯塔沃·绍尔",
+          "assists": 1
+        },
+        {
+          "number": 8,
+          "name": "王进贤",
+          "position": "中场",
+          "substitutedAt": 88,
+          "substitutedFor": "徐浩峰"
+        },
+        {
+          "number": 9,
+          "name": "郑浩乾",
+          "position": "前锋"
+        },
+        {
+          "number": 12,
+          "name": "廖承坚",
+          "position": "后卫"
+        },
+        {
+          "number": 13,
+          "name": "郑凯木",
+          "position": "中场"
+        },
+        {
+          "number": 15,
+          "name": "陈哲超",
+          "position": "后卫",
+          "substitutedAt": 67,
+          "substitutedFor": "明天"
+        },
+        {
+          "number": 16,
+          "name": "闵紫曦",
+          "position": "中场"
+        },
+        {
+          "number": 19,
+          "name": "刘轶铭",
+          "position": "后卫"
+        },
+        {
+          "number": 21,
+          "name": "熊继政",
+          "position": "前锋",
+          "substitutedAt": 66,
+          "substitutedFor": "张晓彬"
+        },
+        {
+          "number": 33,
+          "name": "刘彬彬",
+          "position": "中场"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海海港",
+      "formation": "4-2-3-1",
+      "manager": "凯文·穆斯卡特",
+      "captain": "武磊",
+      "players": [
+        {
+          "number": 1,
+          "name": "颜骏凌",
+          "position": "门将",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 7,
+          "name": "武磊",
+          "position": "前锋",
+          "minutes": 68,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "维塔尔",
+          "position": "中场",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 13,
+          "name": "魏震",
+          "position": "中后卫",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 17,
+          "name": "安佩姆",
+          "position": "攻击型中场",
+          "minutes": 71,
+          "goals": 2,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 21,
+          "name": "奥斯卡·梅伦多",
+          "position": "攻击型中场",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 22,
+          "name": "杨阿力",
+          "position": "后卫",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 23,
+          "name": "傅欢",
+          "position": "后卫",
+          "minutes": 84,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 28,
+          "name": "岳鑫",
+          "position": "后卫",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 40,
+          "name": "吾米提江",
+          "position": "中后卫",
+          "minutes": 63,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 45,
+          "name": "莱昂纳多",
+          "position": "前锋",
+          "minutes": 63,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 12,
+          "name": "陈威",
+          "position": "门将"
+        },
+        {
+          "number": 3,
+          "name": "蒋光太",
+          "position": "后卫",
+          "substitutedAt": 63,
+          "substitutedFor": "吾米提江"
+        },
+        {
+          "number": 4,
+          "name": "王燊超",
+          "position": "后卫",
+          "substitutedAt": 84,
+          "substitutedFor": "莱昂纳多"
+        },
+        {
+          "number": 5,
+          "name": "张琳芃",
+          "position": "后卫"
+        },
+        {
+          "number": 8,
+          "name": "让克劳德",
+          "position": "中场",
+          "substitutedAt": 64,
+          "substitutedFor": "傅欢"
+        },
+        {
+          "number": 14,
+          "name": "安永佳",
+          "position": "前锋"
+        },
+        {
+          "number": 19,
+          "name": "王振澳",
+          "position": "后卫"
+        },
+        {
+          "number": 32,
+          "name": "李帅",
+          "position": "后卫"
+        },
+        {
+          "number": 33,
+          "name": "刘祝润",
+          "position": "前锋",
+          "substitutedAt": 68,
+          "substitutedFor": "武磊"
+        },
+        {
+          "number": 38,
+          "name": "卢永涛",
+          "position": "中场"
+        },
+        {
+          "number": 47,
+          "name": "蒯纪闻",
+          "position": "中场"
+        },
+        {
+          "number": 49,
+          "name": "李新翔",
+          "position": "中场"
+        }
+      ]
+    }
+  },
+  "matchTimeline": [
+    {
+      "minute": 0,
+      "minute_extra": 0,
+      "type": "kick_off",
+      "team": "neutral",
+      "description": "比赛开始"
+    },
+    {
+      "minute": 3,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "洪德尔·卡迪斯",
+      "player2": "基利安·贝维斯",
+      "description": "武汉三镇1-0领先，洪德尔·卡迪斯破门，基利安·贝维斯助攻"
+    },
+    {
+      "minute": 12,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "吾米提江",
+      "description": "上海海港吾米提江获得黄牌"
+    },
+    {
+      "minute": 42,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "傅欢",
+      "description": "上海海港傅欢获得黄牌"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "李帅",
+      "playerOut": "岳鑫",
+      "description": "上海海港李帅替换岳鑫上场"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "张晓彬",
+      "description": "武汉三镇张晓彬获得黄牌"
+    },
+    {
+      "minute": 50,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "魏震",
+      "player2": "维塔尔",
+      "description": "上海海港1-1扳平，魏震破门，维塔尔助攻"
+    },
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "安佩姆",
+      "description": "上海海港2-1反超，安佩姆破门"
+    },
+    {
+      "minute": 59,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "安佩姆",
+      "player2": "奥斯卡·梅伦多",
+      "description": "上海海港3-1领先，安佩姆梅开二度，奥斯卡·梅伦多助攻"
+    },
+    {
+      "minute": 63,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "莱昂纳多",
+      "description": "上海海港莱昂纳多获得黄牌"
+    },
+    {
+      "minute": 63,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "蒋光太",
+      "playerOut": "吾米提江",
+      "description": "上海海港蒋光太替换吾米提江上场"
+    },
+    {
+      "minute": 64,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "让克劳德",
+      "playerOut": "傅欢",
+      "description": "上海海港让克劳德替换傅欢上场"
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "李昂",
+      "description": "武汉三镇李昂获得黄牌"
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "熊继政",
+      "playerOut": "张晓彬",
+      "description": "武汉三镇熊继政替换张晓彬上场"
+    },
+    {
+      "minute": 67,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "陈哲超",
+      "playerOut": "明天",
+      "description": "武汉三镇陈哲超替换明天上场"
+    },
+    {
+      "minute": 68,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "刘祝润",
+      "playerOut": "武磊",
+      "description": "上海海港刘祝润替换武磊上场"
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "安托万·莱奥泰",
+      "description": "武汉三镇发生比赛事件，具体事件类型未在提供内容中明确说明"
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "安托万·莱奥泰",
+      "player2": "龙威",
+      "description": "武汉三镇2-3追近比分，安托万·莱奥泰破门，龙威助攻"
+    },
+    {
+      "minute": 75,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "龙威",
+      "playerOut": "古斯塔沃·绍尔",
+      "description": "武汉三镇龙威替换古斯塔沃·绍尔上场"
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "张琳芃",
+      "playerOut": "莱昂纳多",
+      "description": "上海海港张琳芃替换莱昂纳多上场"
+    },
+    {
+      "minute": 88,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "王进贤",
+      "playerOut": "徐浩峰",
+      "description": "武汉三镇王进贤替换徐浩峰上场"
+    }
+  ],
+  "statistics": [
+    {
+      "name": "控球率",
+      "home": "42%",
+      "away": "58%"
+    },
+    {
+      "name": "射门",
+      "home": 12,
+      "away": 13
+    },
+    {
+      "name": "射正",
+      "home": 6,
+      "away": 5
+    },
+    {
+      "name": "射正率",
+      "home": "50%",
+      "away": "38%"
+    },
+    {
+      "name": "扑救",
+      "home": "2/5",
+      "away": "4/6"
+    },
+    {
+      "name": "犯规",
+      "home": 14,
+      "away": 13
+    },
+    {
+      "name": "角球",
+      "home": 0,
+      "away": 3
+    },
+    {
+      "name": "传中",
+      "home": 13,
+      "away": 24
+    },
+    {
+      "name": "拦截",
+      "home": 7,
+      "away": 5
+    },
+    {
+      "name": "越位",
+      "home": 4,
+      "away": 6
+    }
+  ],
+  "summary": "2026赛季中超第23轮，武汉三镇主场2-3不敌上海海港。第3分钟，武汉三镇由洪德尔·卡迪斯接基利安·贝维斯助攻首开纪录。下半场第50分钟，魏震接维塔尔助攻扳平比分；第55分钟和第59分钟，安佩姆连进两球，帮助上海海港3-1反超。第75分钟，安托万·莱奥泰接龙威助攻破门，武汉三镇将比分追至2-3，但上海海港最终客场取胜。",
+  "keyFactors": [
+    "上海海港在控球率58%的情况下掌握了更多比赛主动权，并以13次射门创造进攻优势",
+    "安佩姆在55分钟和59分钟连进两球，成为上海海港完成反超的关键球员",
+    "武汉三镇开场第3分钟取得领先，但下半场连续丢球导致比赛局势发生逆转",
+    "武汉三镇最终凭借安托万·莱奥泰在75分钟的进球将比分追近，但未能完成扳平"
+  ],
+  "highlights": [
+    {
+      "minute": 3,
+      "description": "基利安·贝维斯助攻洪德尔·卡迪斯破门，武汉三镇1-0领先",
+      "type": "goal",
+      "team": "home",
+      "player": "洪德尔·卡迪斯",
+      "assist": "基利安·贝维斯"
+    },
+    {
+      "minute": 50,
+      "description": "维塔尔助攻魏震破门，上海海港1-1扳平比分",
+      "type": "goal",
+      "team": "away",
+      "player": "魏震",
+      "assist": "维塔尔"
+    },
+    {
+      "minute": 55,
+      "description": "安佩姆破门，上海海港2-1反超",
+      "type": "goal",
+      "team": "away",
+      "player": "安佩姆"
+    },
+    {
+      "minute": 59,
+      "description": "奥斯卡·梅伦多助攻安佩姆完成梅开二度，上海海港3-1领先",
+      "type": "goal",
+      "team": "away",
+      "player": "安佩姆",
+      "assist": "奥斯卡·梅伦多"
+    },
+    {
+      "minute": 75,
+      "description": "龙威助攻安托万·莱奥泰破门，武汉三镇2-3追近比分",
+      "type": "goal",
+      "team": "home",
+      "player": "安托万·莱奥泰",
+      "assist": "龙威"
+    }
+  ]
+}
