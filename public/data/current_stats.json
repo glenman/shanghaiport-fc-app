@@ -2628,10 +2628,10 @@
   },
   "bTeam": {
     "teamName": "上海海港富盛经开",
-    "matchesPlayed": 19,
-    "record": "11胜4平4负",
+    "matchesPlayed": 20,
+    "record": "11胜4平5负",
     "goalsFor": 34,
-    "goalsAgainst": 17,
+    "goalsAgainst": 18,
     "points": 37,
     "topScorers": [
       {
@@ -3416,6 +3416,21 @@
       },
       {
         "rank": 13,
+        "name": "张卫",
+        "number": 2,
+        "yellowCards": 1,
+        "details": [
+          {
+            "match": "第21轮",
+            "date": "2026-08-15",
+            "time": "50'",
+            "opponent": "兰州陇原竞技",
+            "reason": "上海海港富盛经开张卫黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 14,
         "name": "黄文政",
         "number": 39,
         "yellowCards": 1,
@@ -3448,6 +3463,21 @@
       },
       {
         "rank": 2,
+        "name": "刘铁诚",
+        "number": 51,
+        "redCards": 1,
+        "details": [
+          {
+            "match": "第21轮",
+            "date": "2026-08-15",
+            "time": "907'",
+            "opponent": "兰州陇原竞技",
+            "reason": "上海海港富盛经开刘铁诚红牌（身后犯规，最后一名防守人）"
+          }
+        ]
+      },
+      {
+        "rank": 3,
         "name": "曹哲哲",
         "number": 58,
         "redCards": 1,
@@ -3464,10 +3494,10 @@
     ],
     "competitions": {
       "中国足球协会乙级联赛": {
-        "matchesPlayed": 19,
-        "record": "11胜4平4负",
+        "matchesPlayed": 20,
+        "record": "11胜4平5负",
         "goalsFor": 34,
-        "goalsAgainst": 17,
+        "goalsAgainst": 18,
         "points": 37,
         "topScorers": [
           {
@@ -4252,6 +4282,21 @@
           },
           {
             "rank": 13,
+            "name": "张卫",
+            "number": 2,
+            "yellowCards": 1,
+            "details": [
+              {
+                "match": "第21轮",
+                "date": "2026-08-15",
+                "time": "50'",
+                "opponent": "兰州陇原竞技",
+                "reason": "上海海港富盛经开张卫黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 14,
             "name": "黄文政",
             "number": 39,
             "yellowCards": 1,
@@ -4284,6 +4329,21 @@
           },
           {
             "rank": 2,
+            "name": "刘铁诚",
+            "number": 51,
+            "redCards": 1,
+            "details": [
+              {
+                "match": "第21轮",
+                "date": "2026-08-15",
+                "time": "907'",
+                "opponent": "兰州陇原竞技",
+                "reason": "上海海港富盛经开刘铁诚红牌（身后犯规，最后一名防守人）"
+              }
+            ]
+          },
+          {
+            "rank": 3,
             "name": "曹哲哲",
             "number": 58,
             "redCards": 1,
