@@ -42,8 +42,8 @@ def load_competitions():
 
 COMPETITIONS_MAPPING = load_competitions()
 
-# 杯赛类型（淘汰制，不计算积分）
-CUP_TYPES = {'CFA', 'ACLE'}
+# 杯赛类型（淘汰制，不计算积分；亚冠精英联赛为联赛阶段，计算积分）
+CUP_TYPES = {'CFA'}
 
 def is_cup_competition(competition_name):
     """判断是否为杯赛（不计算积分）"""

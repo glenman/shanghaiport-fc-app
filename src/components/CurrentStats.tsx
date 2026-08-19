@@ -290,10 +290,10 @@ const CurrentStats: React.FC = () => {
     return comp; // 如果找不到映射，返回原名称
   };
 
-  // 判断是否为杯赛（不显示积分）
+  // 判断是否为杯赛（不显示积分；亚冠精英联赛为联赛阶段，显示积分）
   const isCupType = (comp: string) => {
     const info = competitionsMapping[comp];
-    return info && (info.type === 'CFA' || info.type === 'ACLE');
+    return info && info.type === 'CFA';
   };
 
   const renderStatTable = (

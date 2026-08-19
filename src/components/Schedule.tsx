@@ -16,6 +16,21 @@ interface Match {
 
 type TeamTab = 'first' | 'b';
 
+// 渲染比分：点球大战时，常规比分在上、点球比分在下，避免撑宽列
+const renderScore = (result: string): React.ReactNode => {
+  const m = result.match(/^(.*?)\s*\((.*)\)$/);
+  if (m) {
+    return (
+      <>
+        {m[1]}
+        <br />
+        <span style={{ fontSize: '0.85em', fontWeight: 'normal' }}>({m[2]})</span>
+      </>
+    );
+  }
+  return result;
+};
+
 const Schedule: React.FC = () => {
   const [firstTeamSchedule, setFirstTeamSchedule] = useState<Match[]>([]);
   const [bTeamSchedule, setBTeamSchedule] = useState<Match[]>([]);
@@ -23,6 +38,7 @@ const Schedule: React.FC = () => {
   const [filter, setFilter] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
   const [matchType, setMatchType] = useState('all');
+  const [typeFilter, setTypeFilter] = useState('all');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -56,6 +72,8 @@ const Schedule: React.FC = () => {
 
   const currentSchedule = activeTab === 'first' ? firstTeamSchedule : bTeamSchedule;
 
+  const availableTypes = Array.from(new Set(currentSchedule.map(m => m.type).filter(Boolean)));
+
   const filteredSchedule = currentSchedule.filter(match => {
     const matchesStatus = filter === 'all' || match.status === filter;
     const matchesSearch = searchTerm === '' || 
@@ -69,7 +87,8 @@ const Schedule: React.FC = () => {
     const matchesType = matchType === 'all' || 
       (matchType === 'home' && teamNames.includes(match.homeTeam)) ||
       (matchType === 'away' && teamNames.includes(match.awayTeam));
-    return matchesStatus && matchesSearch && matchesType;
+    const matchesCompetitionType = typeFilter === 'all' || match.type === typeFilter;
+    return matchesStatus && matchesSearch && matchesType && matchesCompetitionType;
   });
 
   const handleTabChange = (tab: TeamTab) => {
@@ -77,6 +96,7 @@ const Schedule: React.FC = () => {
     setFilter('all');
     setSearchTerm('');
     setMatchType('all');
+    setTypeFilter('all');
   };
 
   return (
@@ -113,6 +133,16 @@ const Schedule: React.FC = () => {
             <option value="all">全部比赛</option>
             <option value="home">主场比赛</option>
             <option value="away">客场比赛</option>
+          </select>
+          <select
+            value={typeFilter}
+            onChange={(e) => setTypeFilter(e.target.value)}
+            className="position-filter"
+          >
+            <option value="all">全部类型</option>
+            {availableTypes.map(t => (
+              <option key={t} value={t}>{t}</option>
+            ))}
           </select>
           <div className="filter-buttons">
             <button 
@@ -225,7 +255,7 @@ const Schedule: React.FC = () => {
                             <td>
                               {match.status === '已结束' ? (
                                 <a href={`match-report-v2.html?date=${match.date}&type=${encodeURIComponent(match.type)}&round=${encodeURIComponent(match.round)}`} style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
-                                  {match.result}
+                                  {renderScore(match.result)}
                                 </a>
                               ) : (
                                 match.result
@@ -322,7 +352,7 @@ const Schedule: React.FC = () => {
                             <td>
                               {match.status === '已结束' ? (
                                 <a href={`match-report.html?date=${match.date}&type=${encodeURIComponent(match.type)}&round=${encodeURIComponent(match.round)}`} style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
-                                  {match.result}
+                                  {renderScore(match.result)}
                                 </a>
                               ) : (
                                 match.result
