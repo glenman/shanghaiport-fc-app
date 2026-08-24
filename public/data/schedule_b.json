@@ -442,11 +442,21 @@
     "time": "16:30",
     "homeTeam": "上海海港富盛经开",
     "awayTeam": "山西崇德荣海",
-    "venue": "上海",
+    "venue": "乐动力临港足球综合运动中心",
     "city": "上海",
-    "result": "-",
-    "status": "未开始",
-    "type": "中乙"
+    "result": "0-1",
+    "status": "已结束",
+    "type": "中乙",
+    "referee": "唐士智",
+    "home_coach": "成耀东",
+    "away_coach": "曹睿",
+    "attendance": null,
+    "scorers": {
+      "home": [],
+      "away": [
+        "陈祥煜"
+      ]
+    }
   },
   {
     "id": 20,
@@ -505,10 +515,21 @@
     "time": "16:00",
     "homeTeam": "上海海港富盛经开",
     "awayTeam": "青岛红狮",
-    "venue": "上海",
+    "venue": "乐动力临港足球综合运动中心",
     "city": "上海",
-    "result": "-",
-    "status": "未开始",
-    "type": "中乙"
+    "result": "2-0",
+    "status": "已结束",
+    "type": "中乙",
+    "referee": "未知",
+    "home_coach": "成耀东",
+    "away_coach": "张洋",
+    "attendance": null,
+    "scorers": {
+      "home": [
+        "杨黔东",
+        "李圣龙"
+      ],
+      "away": []
+    }
   }
 ]
