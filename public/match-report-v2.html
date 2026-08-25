@@ -902,7 +902,7 @@
             if (!events || events.length === 0) return '';
             
             const goalEvents = events.filter(event => 
-              event.type === 'goal' || event.type === 'own_goal'
+              event.type === 'goal' || event.type === 'own_goal' || event.type === 'penalty_goal'
             );
             if (goalEvents.length === 0) return '';
             
@@ -931,7 +931,7 @@
                 if (isOwnGoal) {
                   ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
                   specialMark = ' <span style="color: #ff6b6b; font-weight: bold;">(OG)</span>';
-                } else if (goal.goal_type === 'penalty_goal' || goal.goal_type === 'penalty') {
+                } else if (goal.goal_type === 'penalty_goal' || goal.goal_type === 'penalty' || goal.type === 'penalty_goal' || goal.type === 'penalty') {
                   specialMark = ' <span style="color: #4ecdc4; font-weight: bold;">(P)</span>';
                 }
 
@@ -943,7 +943,7 @@
                 let assistLabel = '助攻';
                 if (isOwnGoal) {
                   assistLabel = '造乌龙';
-                } else if (goal.goal_type === 'penalty' || goal.goal_type === 'penalty_goal') {
+                } else if (goal.goal_type === 'penalty' || goal.goal_type === 'penalty_goal' || goal.type === 'penalty_goal' || goal.type === 'penalty') {
                   assistLabel = '造点';
                 }
                 
