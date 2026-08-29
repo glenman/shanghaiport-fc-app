@@ -161,7 +161,7 @@
         },
         {
           "number": 50,
-          "name": "安托万·莱奥泰",
+          "name": "莱昂纳多",
           "position": "右前卫",
           "nationality": "法国",
           "age": "30-122",
@@ -243,7 +243,7 @@
         },
         {
           "number": 10,
-          "name": "马特乌斯·维塔乌",
+          "name": "维塔尔",
           "position": "后腰",
           "nationality": "巴西",
           "age": "28-183",
@@ -267,7 +267,7 @@
         },
         {
           "number": 17,
-          "name": "普林斯·奥本·安佩姆",
+          "name": "安佩姆",
           "position": "攻击型中场",
           "nationality": "加纳",
           "age": "28-123",
@@ -327,7 +327,7 @@
         },
         {
           "number": 40,
-          "name": "吾米提江·玉苏普",
+          "name": "吾米提江",
           "position": "中后卫",
           "nationality": "中国",
           "age": "22-167",
@@ -339,7 +339,7 @@
         },
         {
           "number": 45,
-          "name": "莱奥",
+          "name": "莱昂纳多",
           "position": "前锋",
           "nationality": "巴西",
           "age": "29-078",
@@ -367,11 +367,11 @@
           "nationality": "中国",
           "age": "32-079",
           "substitutedAt": 63,
-          "substitutedFor": "吾米提江·玉苏普"
+          "substitutedFor": "吾米提江"
         },
         {
           "number": 8,
-          "name": "科乔·阿齐昂贝",
+          "name": "让克劳德",
           "position": "中场",
           "nationality": "多哥",
           "age": "22-243",
@@ -394,7 +394,7 @@
           "nationality": "中国",
           "age": "37-097",
           "substitutedAt": 84,
-          "substitutedFor": "莱奥"
+          "substitutedFor": "莱昂纳多"
         }
       ]
     }
@@ -421,8 +421,8 @@
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "吾米提江·玉苏普",
-      "description": "上海海港吾米提江·玉苏普获得黄牌"
+      "player": "吾米提江",
+      "description": "上海海港吾米提江获得黄牌"
     },
     {
       "minute": 42,
@@ -455,33 +455,33 @@
       "type": "goal",
       "team": "away",
       "player": "魏震",
-      "player2": "马特乌斯·维塔乌",
-      "description": "上海海港1-1扳平，魏震破门，马特乌斯·维塔乌助攻"
+      "player2": "维塔尔",
+      "description": "上海海港1-1扳平，魏震破门，维塔尔助攻"
     },
     {
       "minute": 55,
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "普林斯·奥本·安佩姆",
-      "description": "上海海港2-1反超，普林斯·奥本·安佩姆破门"
+      "player": "安佩姆",
+      "description": "上海海港2-1反超，安佩姆破门"
     },
     {
       "minute": 59,
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "普林斯·奥本·安佩姆",
+      "player": "安佩姆",
       "player2": "奥斯卡·梅伦多",
-      "description": "上海海港3-1扩大领先，普林斯·奥本·安佩姆破门，奥斯卡·梅伦多助攻"
+      "description": "上海海港3-1扩大领先，安佩姆破门，奥斯卡·梅伦多助攻"
     },
     {
       "minute": 63,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "away",
-      "player": "莱奥",
-      "description": "上海海港莱奥获得黄牌"
+      "player": "莱昂纳多",
+      "description": "上海海港莱昂纳多获得黄牌"
     },
     {
       "minute": 63,
@@ -489,17 +489,17 @@
       "type": "substitution",
       "team": "away",
       "playerIn": "蒋光太",
-      "playerOut": "吾米提江·玉苏普",
-      "description": "上海海港蒋光太替换吾米提江·玉苏普上场"
+      "playerOut": "吾米提江",
+      "description": "上海海港蒋光太替换吾米提江上场"
     },
     {
       "minute": 64,
       "minute_extra": 0,
       "type": "substitution",
       "team": "away",
-      "playerIn": "科乔·阿齐昂贝",
+      "playerIn": "让克劳德",
       "playerOut": "傅欢",
-      "description": "上海海港科乔·阿齐昂贝替换傅欢上场"
+      "description": "上海海港让克劳德替换傅欢上场"
     },
     {
       "minute": 66,
@@ -542,7 +542,7 @@
       "type": "yellow_card",
       "team": "home",
       "player": "安托万·莱奥泰",
-      "description": "武汉三镇安托万·莱奥泰获得黄牌"
+      "description": "武汉三镇安托万·莱昂纳多泰获得黄牌"
     },
     {
       "minute": 75,
@@ -551,7 +551,7 @@
       "team": "home",
       "player": "安托万·莱奥泰",
       "player2": "龙威",
-      "description": "武汉三镇2-3扳回一城，安托万·莱奥泰破门，龙威助攻"
+      "description": "武汉三镇2-3扳回一城，安托万·莱昂纳多泰破门，龙威助攻"
     },
     {
       "minute": 75,
@@ -568,8 +568,8 @@
       "type": "substitution",
       "team": "away",
       "playerIn": "张琳芃",
-      "playerOut": "莱奥",
-      "description": "上海海港张琳芃替换莱奥上场"
+      "playerOut": "莱昂纳多",
+      "description": "上海海港张琳芃替换莱昂纳多上场"
     },
     {
       "minute": 88,
@@ -636,7 +636,7 @@
     },
     {
       "minute": 50,
-      "description": "马特乌斯·维塔乌助攻魏震得分，上海海港1-1扳平比分",
+      "description": "维塔尔助攻魏震得分，上海海港1-1扳平比分",
       "type": "goal",
       "team": "away",
       "player": "魏震",
@@ -644,23 +644,23 @@
     },
     {
       "minute": 55,
-      "description": "普林斯·奥本·安佩姆破门建功，上海海港2-1反超比分",
+      "description": "安佩姆破门建功，上海海港2-1反超比分",
       "type": "goal",
       "team": "away",
-      "player": "普林斯·奥本·安佩姆",
+      "player": "安佩姆",
       "assist": ""
     },
     {
       "minute": 59,
-      "description": "奥斯卡·梅伦多送出助攻，普林斯·奥本·安佩姆完成梅开二度，上海海港3-1扩大优势",
+      "description": "奥斯卡·梅伦多送出助攻，安佩姆完成梅开二度，上海海港3-1扩大优势",
       "type": "goal",
       "team": "away",
-      "player": "普林斯·奥本·安佩姆",
+      "player": "安佩姆",
       "assist": "奥斯卡·梅伦多"
     },
     {
       "minute": 75,
-      "description": "龙威助攻安托万·莱奥泰破门，武汉三镇将比分追近至2-3",
+      "description": "龙威助攻安托万·莱昂纳多泰破门，武汉三镇将比分追近至2-3",
       "type": "goal",
       "team": "home",
       "player": "安托万·莱奥泰",

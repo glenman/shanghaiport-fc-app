@@ -3,6 +3,54 @@ import os
 import re
 import sys
 
+# 常见别名映射（别名 → 官方名）
+ALIAS_MAP = {
+    '乌米提江·玉素甫': '吾米提江',
+    '乌米提江': '吾米提江',
+    '莱奥': '莱昂纳多',
+    '莱昂纳多·席尔瓦': '莱昂纳多',
+    '布朗宁': '蒋光太',
+    'Tyias Browning': '蒋光太',
+    '马修·奥尔': '安永佳',
+    'Matthew Orr': '安永佳',
+    '科乔·阿齐安贝': '让克劳德',
+    '科乔·阿齐昂贝': '让克劳德',
+    '柯乔·阿齐昂贝': '让克劳德',
+    '科特迪瓦·阿齐昂贝': '让克劳德',
+    'Kodjo Aziangbe': '让克劳德',
+    '马特乌斯·维塔乌': '维塔尔',
+    '奇科·梅伦多': '奥斯卡·梅伦多',
+    '普林斯·奥本·阿姆彭': '安佩姆',
+    '普林斯·奥本·安佩姆': '安佩姆',
+    '普林斯·奥本·安彭': '安佩姆',
+    '普林斯·阿姆彭': '安佩姆',
+    '普林斯·安佩姆': '安佩姆',
+    '普林斯·安彭': '安佩姆',
+    'Prince Ampem': '安佩姆',
+    '麦高恩': '安永佳',
+    'McGowan': '安永佳',
+    'Matt Orr': '安永佳',
+    '吕永涛': '卢永涛',
+    '鲁泳涛': '卢永涛',
+    '任瑞航': '任晓航',
+    '任小航': '任晓航',
+    '吾米提江·玉苏普': '吾米提江',
+    '让·克劳德': '让克劳德',
+    '让·克劳德·阿齐兹': '让克劳德',
+    '但王': '王丹',
+    '单王': '王丹',
+    '姜宇飞': '姜宇斐',
+    '李志亮': '李智良',
+    '王东成': '王东承',
+    '王静雷': '王晶磊',
+    '席杨/亚历斯': '杨希',
+    '杨亚历克斯': '杨希',
+    '杨艾力': '杨希',
+    '杨黯东': '杨黔东',
+    '汪照兽': '汪照普',
+    '王启珑': '王启戎'
+}
+
 def load_players(filepath):
     """加载球员名单"""
     player_map = {}
@@ -19,33 +67,7 @@ def load_players(filepath):
                     player_map[p['pinyin']] = name
     
     # 添加常见别名映射
-    alias_map = {
-        '乌米提江·玉素甫': '吾米提江',
-        '乌米提江': '吾米提江',
-        '莱奥': '莱昂纳多',
-        '莱昂纳多·席尔瓦': '莱昂纳多',
-        '布朗宁': '蒋光太',
-        'Tyias Browning': '蒋光太',
-        '马修·奥尔': '安永佳',
-        'Matthew Orr': '安永佳',
-        '科乔·阿齐安贝': '让克劳德',
-        '柯乔·阿齐昂贝': '让克劳德',
-        '科特迪瓦·阿齐昂贝': '让克劳德',
-        'Kodjo Aziangbe': '让克劳德',
-        '普林斯·奥本·阿姆彭': '安佩姆',
-        '普林斯·奥本·安佩姆': '安佩姆',
-        '普林斯·奥本·安彭': '安佩姆',
-        '普林斯·阿姆彭': '安佩姆',
-        '普林斯·安佩姆': '安佩姆',
-        '普林斯·安彭': '安佩姆',
-        'Prince Ampem': '安佩姆',
-        '麦高恩': '安永佳',
-        'McGowan': '安永佳',
-        'Matt Orr': '安永佳',
-        '吕永涛': '卢永涛',
-        '任瑞航': '任晓航'
-    }
-    for alias, correct_name in alias_map.items():
+    for alias, correct_name in ALIAS_MAP.items():
         if correct_name in player_map:
             player_map[alias] = correct_name
     
@@ -76,6 +98,16 @@ def find_player_name(name, player_map):
             return player_map[key]
     
     return name
+
+def normalize_description(description):
+    """标准化描述文本中的球员别名（按长度降序替换，避免短别名误替换）"""
+    if not description:
+        return description
+    result = description
+    for alias in sorted(ALIAS_MAP.keys(), key=len, reverse=True):
+        if alias in result:
+            result = result.replace(alias, ALIAS_MAP[alias])
+    return result
 
 def update_player_name_in_dict(data, player_map, key):
     """更新字典中指定key的球员名称"""
@@ -191,7 +223,8 @@ def process_match_report(filepath, first_team_players, b_team_players):
     home_name = lineups.get('home', {}).get('name', '')
     away_name = lineups.get('away', {}).get('name', '')
     
-    is_b_team = '富盛' in home_name or '富盛' in away_name
+    is_b_team = ('富盛' in home_name or '富盛' in away_name or
+                 'B队' in home_name or 'B队' in away_name)
     is_first_team = '上海海港' in home_name or '上海海港' in away_name
     
     home_is_port = '上海海港' in home_name or '海港富盛' in home_name
@@ -241,11 +274,15 @@ def process_match_report(filepath, first_team_players, b_team_players):
             total_updates += process_events(events, 'away', away_is_port, player_map)
     
     # 4. 时间线描述标准化
-    if 'matchTimeline' in data:
-        for event in data['matchTimeline']:
-            if 'description' in event:
-                # 这里可以添加描述标准化逻辑
-                pass
+    for events_key in ['matchTimeline', 'events', 'highlights']:
+        events = data.get(events_key, [])
+        for event in events:
+            if 'description' in event and isinstance(event['description'], str):
+                original = event['description']
+                updated = normalize_description(original)
+                if original != updated:
+                    event['description'] = updated
+                    total_updates += 1
     
     # 写回文件（保持原有格式）
     with open(filepath, 'w', encoding='utf-8') as f:
