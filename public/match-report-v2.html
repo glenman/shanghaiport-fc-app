@@ -910,7 +910,14 @@
             const awayGoals = goalEvents.filter(event => event.team === 'away');
             
             function renderGoalList(goals, teamName) {
-              if (goals.length === 0) return '';
+              if (goals.length === 0) {
+                return `
+                  <div style="margin-bottom: 1rem;">
+                    <h4 style="color: #c00010; font-size: 1.1rem; margin-bottom: 0.5rem;">${teamName}</h4>
+                    <p style="color: rgba(255, 255, 255, 0.5); font-size: 0.85rem;">无进球</p>
+                  </div>
+                `;
+              }
               
               let html = `
                 <div style="margin-bottom: 1rem;">

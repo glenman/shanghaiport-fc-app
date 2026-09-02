@@ -365,15 +365,23 @@
       }
 
       .back-link {
-        display: inline-block;
-        color: #c00010;
+        display: block;
+        width: fit-content;
+        margin: 1rem auto 1.5rem;
+        padding: 0.6rem 1.2rem;
+        background: linear-gradient(90deg, #c00010, #a0000e);
+        color: #fff;
         text-decoration: none;
-        margin-bottom: 1rem;
+        border-radius: 20px;
         font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        font-size: 0.9rem;
       }
 
       .back-link:hover {
-        text-decoration: underline;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
       }
 
       @media (max-width: 768px) {
@@ -542,6 +550,8 @@
             ${renderValueStats('黄牌', stats.set_pieces.yellow_cards)}
             ${renderValueStats('红牌', stats.set_pieces.red_cards)}
           </div>
+
+          <a href="javascript:window.history.back()" class="back-link">返回</a>
         `;
 
         content.innerHTML = html;

@@ -1,0 +1,622 @@
+{
+  "match": {
+    "id": 0,
+    "round": "第6轮",
+    "date": "2026-09-01",
+    "time": "19:35",
+    "homeTeam": "山东泰山",
+    "awayTeam": "上海海港",
+    "venue": "济南奥林匹克体育中心体育场",
+    "city": "济南",
+    "result": "0-3",
+    "status": "已结束",
+    "attendance": "26159",
+    "referee": "马宁",
+    "weather": "晴",
+    "competition": "中国足球协会杯",
+    "matchweek": 6,
+    "season": "2026"
+  },
+  "matchDetails": {
+    "stadiumCapacity": "56808",
+    "pitchCondition": "未知",
+    "temperature": "未知",
+    "kickoffTime": "未知",
+    "halftimeScore": "0-2",
+    "fulltimeScore": "0-3",
+    "extraTimeScore": "0-3",
+    "penaltyScore": "-"
+  },
+  "officials": {
+    "referee": "马宁",
+    "assistantReferee1": "未知",
+    "assistantReferee2": "未知",
+    "fourthOfficial": "未知",
+    "VAR": "未知"
+  },
+  "lineups": {
+    "home": {
+      "name": "山东泰山",
+      "formation": "5-3-2",
+      "manager": "唐田",
+      "captain": "克雷桑",
+      "players": [
+        {
+          "number": 1,
+          "name": "于金永",
+          "position": "门将",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 2,
+          "name": "杨瑞琦",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 46,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 7,
+          "name": "谢文能",
+          "position": "前锋",
+          "nationality": "中国",
+          "minutes": 58,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 8,
+          "name": "德尔加多",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 9,
+          "name": "克雷桑",
+          "position": "前锋",
+          "nationality": "巴西",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 11,
+          "name": "刘洋",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 19,
+          "name": "泽卡",
+          "position": "前锋",
+          "nationality": "巴西",
+          "minutes": 72,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 23,
+          "name": "阿尔瓦罗",
+          "position": "后卫",
+          "nationality": "西班牙",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 33,
+          "name": "高准翼",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 35,
+          "name": "黄政宇",
+          "position": "中场",
+          "nationality": "中国",
+          "minutes": 58,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 38,
+          "name": "买乌郎·米吉提",
+          "position": "前锋",
+          "nationality": "中国",
+          "minutes": 30,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 10,
+          "name": "卡扎伊什维利",
+          "position": "中场",
+          "substitutedAt": 30,
+          "substitutedFor": "买乌郎·米吉提"
+        },
+        {
+          "number": 22,
+          "name": "李源一",
+          "position": "中场",
+          "substitutedAt": 46,
+          "substitutedFor": "杨瑞琦"
+        },
+        {
+          "number": 17,
+          "name": "梅尔基斯",
+          "position": "中场",
+          "substitutedAt": 58,
+          "substitutedFor": "谢文能"
+        },
+        {
+          "number": 28,
+          "name": "买乌郎·米吉提",
+          "position": "前锋",
+          "substitutedAt": 58,
+          "substitutedFor": "黄政宇"
+        },
+        {
+          "number": 29,
+          "name": "陈蒲",
+          "position": "前锋",
+          "substitutedAt": 72,
+          "substitutedFor": "泽卡"
+        },
+        {
+          "number": 3,
+          "name": "彭啸",
+          "position": "后卫"
+        },
+        {
+          "number": 15,
+          "name": "史松宸",
+          "position": "后卫"
+        },
+        {
+          "number": 34,
+          "name": "尹嘉熙",
+          "position": "中场"
+        },
+        {
+          "number": 36,
+          "name": "刘琪玮",
+          "position": "门将"
+        },
+        {
+          "number": 37,
+          "name": "陈泽仕",
+          "position": "中场"
+        },
+        {
+          "number": 41,
+          "name": "路俊杰",
+          "position": "中场"
+        },
+        {
+          "number": 42,
+          "name": "彭依凡",
+          "position": "后卫"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海海港",
+      "formation": "3-4-3",
+      "manager": "穆斯卡特",
+      "captain": "颜骏凌",
+      "players": [
+        {
+          "number": 1,
+          "name": "颜骏凌",
+          "position": "门将",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 3,
+          "name": "蒋光太",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 8,
+          "name": "让克劳德",
+          "position": "中场",
+          "nationality": "多哥",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "维塔尔",
+          "position": "中场",
+          "nationality": "巴西",
+          "minutes": 86,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 13,
+          "name": "魏震",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 86,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 17,
+          "name": "安佩姆",
+          "position": "前锋",
+          "nationality": "加纳",
+          "minutes": 85,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 21,
+          "name": "奥斯卡·梅伦多",
+          "position": "中场",
+          "nationality": "西班牙",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 22,
+          "name": "杨希",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 32,
+          "name": "李帅",
+          "position": "后卫",
+          "nationality": "中国",
+          "minutes": 80,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 33,
+          "name": "刘祝润",
+          "position": "前锋",
+          "nationality": "中国",
+          "minutes": 70,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 45,
+          "name": "莱昂纳多",
+          "position": "前锋",
+          "nationality": "巴西",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 49,
+          "name": "李新翔",
+          "position": "中场",
+          "substitutedAt": 70,
+          "substitutedFor": "刘祝润"
+        },
+        {
+          "number": 28,
+          "name": "岳鑫",
+          "position": "后卫",
+          "substitutedAt": 80,
+          "substitutedFor": "李帅"
+        },
+        {
+          "number": 23,
+          "name": "傅欢",
+          "position": "后卫",
+          "substitutedAt": 85,
+          "substitutedFor": "安佩姆"
+        },
+        {
+          "number": 47,
+          "name": "蒯纪闻",
+          "position": "中场",
+          "substitutedAt": 86,
+          "substitutedFor": "维塔尔"
+        },
+        {
+          "number": 5,
+          "name": "张琳芃",
+          "position": "后卫",
+          "substitutedAt": 86,
+          "substitutedFor": "魏震"
+        },
+        {
+          "number": 4,
+          "name": "王燊超",
+          "position": "后卫"
+        },
+        {
+          "number": 7,
+          "name": "武磊",
+          "position": "前锋"
+        },
+        {
+          "number": 12,
+          "name": "陈威",
+          "position": "门将"
+        },
+        {
+          "number": 14,
+          "name": "安永佳",
+          "position": "后卫"
+        },
+        {
+          "number": 19,
+          "name": "王振澳",
+          "position": "后卫"
+        },
+        {
+          "number": 20,
+          "name": "杨世元",
+          "position": "中场"
+        },
+        {
+          "number": 38,
+          "name": "卢永涛",
+          "position": "中场"
+        }
+      ]
+    }
+  },
+  "matchTimeline": [
+    {
+      "minute": 18,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "刘祝润",
+      "player2": "杨希",
+      "description": "上海海港1-0领先，刘祝润破门（杨希助攻）"
+    },
+    {
+      "minute": 22,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "安佩姆",
+      "player2": "莱昂纳多",
+      "description": "上海海港2-0领先，安佩姆破门（莱昂纳多助攻）"
+    },
+    {
+      "minute": 30,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "卡扎伊什维利",
+      "playerOut": "买乌郎·米吉提",
+      "description": "山东泰山卡扎伊什维利替换买乌郎·米吉提上场"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "李源一",
+      "playerOut": "杨瑞琦",
+      "description": "山东泰山李源一替换杨瑞琦上场"
+    },
+    {
+      "minute": 58,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "梅尔基斯",
+      "playerOut": "谢文能",
+      "description": "山东泰山梅尔基斯替换谢文能上场"
+    },
+    {
+      "minute": 58,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "买乌郎·米吉提",
+      "playerOut": "黄政宇",
+      "description": "山东泰山买乌郎·米吉提替换黄政宇上场"
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "李新翔",
+      "playerOut": "刘祝润",
+      "description": "上海海港李新翔替换刘祝润上场"
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "克雷桑",
+      "description": "山东泰山克雷桑因非体育道德行为获得黄牌"
+    },
+    {
+      "minute": 72,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "陈蒲",
+      "playerOut": "泽卡",
+      "description": "山东泰山陈蒲替换受伤的泽卡上场"
+    },
+    {
+      "minute": 79,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "杨希",
+      "player2": "李新翔",
+      "description": "上海海港3-0领先，杨希破门（李新翔助攻）"
+    },
+    {
+      "minute": 80,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "岳鑫",
+      "playerOut": "李帅",
+      "description": "上海海港岳鑫替换李帅上场"
+    },
+    {
+      "minute": 85,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "傅欢",
+      "playerOut": "安佩姆",
+      "description": "上海海港傅欢替换安佩姆上场"
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "蒯纪闻",
+      "playerOut": "维塔尔",
+      "description": "上海海港蒯纪闻替换维塔尔上场"
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "张琳芃",
+      "playerOut": "魏震",
+      "description": "上海海港张琳芃替换魏震上场"
+    }
+  ],
+  "statistics": [
+    {
+      "name": "预期进球 (xG)",
+      "home": "0.92",
+      "away": "1.45"
+    },
+    {
+      "name": "控球率",
+      "home": "48%",
+      "away": "52%"
+    },
+    {
+      "name": "射门次数",
+      "home": 12,
+      "away": 17
+    },
+    {
+      "name": "绝佳机会",
+      "home": 0,
+      "away": 4
+    },
+    {
+      "name": "对手禁区内触球",
+      "home": 24,
+      "away": 27
+    }
+  ],
+  "summary": "山东泰山主场对阵上海海港。上半场刘祝润和安佩姆分别为客队建功，帮助上海海港取得2-0领先。下半场杨希破门锁住胜局。最终，上海海港客场3-0战胜山东泰山。",
+  "keyFactors": [
+    "上海海港进攻效率极高，全场创造4次绝佳机会并高效转化为3个进球",
+    "山东泰山进攻受阻，全场仅有0.92的预期进球且未获得绝佳机会",
+    "山东泰山主力前锋泽卡在下半场第72分钟因伤退场"
+  ],
+  "highlights": [
+    {
+      "minute": 18,
+      "description": "刘祝润打破僵局",
+      "type": "goal",
+      "team": "away"
+    },
+    {
+      "minute": 22,
+      "description": "安佩姆扩大领先优势",
+      "type": "goal",
+      "team": "away"
+    },
+    {
+      "minute": 79,
+      "description": "杨希锁定胜局",
+      "type": "goal",
+      "team": "away"
+    }
+  ],
+  "penaltyShootout": null
+}
