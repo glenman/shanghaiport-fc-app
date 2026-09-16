@@ -52,18 +52,28 @@ def extract_match_info(report_data):
         except:
             pass
     
-    # 进球者
+    # 进球者（从 matchTimeline 或 highlights 提取，每个进球对应一条记录，避免漏掉替补进球）
     info['scorers'] = {'home': [], 'away': []}
-    
-    home_players = report_data.get('lineups', {}).get('home', {}).get('players', [])
-    for player in home_players:
-        if player.get('goals', 0) > 0:
-            info['scorers']['home'].append(player.get('name', ''))
-    
-    away_players = report_data.get('lineups', {}).get('away', {}).get('players', [])
-    for player in away_players:
-        if player.get('goals', 0) > 0:
-            info['scorers']['away'].append(player.get('name', ''))
+    events = report_data.get('matchTimeline', [])
+    if not events:
+        events = report_data.get('highlights', [])
+
+    for event in events:
+        if event.get('type') != 'goal':
+            continue
+        team = event.get('team', '')
+        player = event.get('player', '')
+        if not player:
+            continue
+        goal_type = event.get('goal_type', '')
+        is_own_goal = goal_type == 'own_goal' or event.get('isOwnGoal', False)
+        is_penalty = goal_type in ('penalty', 'penalty_goal')
+        marker = '(OG)' if is_own_goal else ('(PK)' if is_penalty else '')
+
+        if team == 'home':
+            info['scorers']['home'].append(player + marker)
+        elif team == 'away':
+            info['scorers']['away'].append(player + marker)
     
     return info
 
