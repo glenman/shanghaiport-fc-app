@@ -18,7 +18,7 @@ const History: React.FC = () => {
   const [historyData, setHistoryData] = useState<HistoryMatch[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [expandedSeasons, setExpandedSeasons] = useState<Set<string>>(new Set(['2025']));
+  const [expandedSeasons, setExpandedSeasons] = useState<Set<string>>(new Set(['2026', '2026/27']));
   const [selectedOpponent, setSelectedOpponent] = useState<string>('');
   const [showHeadToHead, setShowHeadToHead] = useState(false);
   const [opponentInput, setOpponentInput] = useState('');
@@ -152,7 +152,7 @@ const History: React.FC = () => {
     return groups;
   }, {} as Record<string, HistoryMatch[]>);
 
-  const seasons = Object.keys(groupedBySeason).sort((a, b) => parseInt(b) - parseInt(a));
+  const seasons = Object.keys(groupedBySeason).sort((a, b) => b.localeCompare(a));
 
   const toggleSeason = (season: string) => {
     const newExpandedSeasons = new Set(expandedSeasons);

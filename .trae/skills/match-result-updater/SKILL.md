@@ -43,6 +43,16 @@ This skill automates the process of updating match results for Shanghai Port FC 
    - Supports full update when needed
    - Handles penalty goal marking in statistics
 
+7. **Sync History Data (留存)**
+   - Syncs `team-a` match reports into `goal_details.json` (per-goal records) and `history_schedule.json` (per-match records)
+   - Idempotent: dedupes by (date, home, away) for schedule and (date code, player, goal time) for goals
+   - Handles penalty shootout results (e.g., `1-1 (点球 4-3)`) correctly
+
+8. **Update Player History Stats (出场留存)**
+   - Updates `player_history_stats.json` appearances/starts/substitute from each match's lineup
+   - 首发 = `lineups.{role}.players[]`; 替补出场 = `lineups.{role}.substitutes[]` 中带 `substitutedAt` 的球员
+   - Idempotent via `scripts/player_history_sync_state.json` (dedupes by date|home|away)
+
 ## Usage
 
 ### Trigger Phrases
@@ -79,6 +89,8 @@ This skill automates the process of updating match results for Shanghai Port FC 
 7. **Add Special Markers** - Adds (PK) for penalty goals and (OG) for own goals based on `goal_type` field
 8. **Verify Scorers Count** - Ensures number of scorers matches the score
 9. **Update Statistics** - Runs incremental update by default
+10. **Sync History Data** - Runs `sync_history_data.py` to sync the match into `goal_details.json` and `history_schedule.json`
+11. **Update Player History Stats** - Runs `update_player_history_stats.py` to sync starting/substitute appearances into `player_history_stats.json`
 
 ## Files Modified
 
@@ -88,6 +100,9 @@ This skill automates the process of updating match results for Shanghai Port FC 
 | `public/data/schedule_b.json` | B team schedule |
 | `public/data/current_stats.json` | Season statistics |
 | `public/data/YYYY-MM-DD-赛事类型-第X轮.json` | Match report data |
+| `public/data/goal_details.json` | Per-goal history records (synced) |
+| `public/data/history_schedule.json` | Per-match history records (synced) |
+| `public/data/player_history_stats.json` | Career appearance stats (appearances/starts/substitute synced) |
 
 ## Supporting Scripts
 
@@ -96,6 +111,8 @@ This skill automates the process of updating match results for Shanghai Port FC 
 | `scripts/normalize_match_report.py` | Match report localization and player name standardization |
 | `scripts/update_schedule_details_v2.py` | Extracts match details from match reports |
 | `scripts/update_stats.py` | Updates season statistics (supports incremental and full update) |
+| `scripts/sync_history_data.py` | Syncs `team-a` reports into `goal_details.json` and `history_schedule.json` (idempotent) |
+| `scripts/update_player_history_stats.py` | Incrementally updates appearances/starts/substitute in `player_history_stats.json` (idempotent via state file) |
 
 ## Player Name Standardization
 
@@ -137,6 +154,7 @@ This skill automates the process of updating match results for Shanghai Port FC 
 - Automatically handles penalty goals and own goals with special markers
 - Supports both camelCase (`playerIn`, `playerOut`) and snake_case (`player_in`, `player_out`) field formats
 - Prompts for confirmation before changes
+- `update_player_history_stats.py` 首次运行会把现有比赛标记为已处理（仅面向未来），如需回填 2026 需先确认 Excel 基线
 
 ## Example Workflow
 
@@ -160,6 +178,8 @@ Skill Actions:
 7. Verify scorers count matches score (4 goals = 4 scorers)
 8. Update schedule.json with extracted details
 9. Run incremental stats update
+10. Run `sync_history_data.py` to sync the match into `goal_details.json` and `history_schedule.json`
+11. Run `update_player_history_stats.py` to sync starting/substitute appearances into `player_history_stats.json`
 
 ## Special Goal Markers
 

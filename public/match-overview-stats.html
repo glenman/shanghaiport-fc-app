@@ -654,10 +654,10 @@
       }
 
       function renderTextStats(label, values) {
-        const homeVal = values.home;
-        const awayVal = values.away;
-        const homePercent = parseInt(homeVal.match(/\((\d+)%\)/)?.[1] || 0);
-        const awayPercent = parseInt(awayVal.match(/\((\d+)%\)/)?.[1] || 0);
+        const homeVal = values?.home ?? '数据缺失';
+        const awayVal = values?.away ?? '数据缺失';
+        const homePercent = homeVal === '数据缺失' ? 0 : parseInt(homeVal.match(/\((\d+)%\)/)?.[1] || 0);
+        const awayPercent = awayVal === '数据缺失' ? 0 : parseInt(awayVal.match(/\((\d+)%\)/)?.[1] || 0);
         
         return `
           <div class="stats-item pie-chart-item-wrapper">
