@@ -79,6 +79,9 @@ NORMAL_FIELDS = [
 # 门将专属字段：仅门将累加，非门将保持 None
 GK_FIELDS = ['goalsConceded', 'cleanSheets', 'penaltySaves']
 
+# 基线 Excel 已包含以下比赛，team-a 中重复，跳过避免重复累计
+EXCLUDE_FILENAME_PATTERNS = ['超级杯', '中超-第1轮']
+
 
 def is_first_team(name):
     """判断是否为上海海港一线队（排除富盛经开 B 队）"""
@@ -354,6 +357,8 @@ def main():
     skipped_no_role = []
 
     for path in report_files:
+        if any(pat in path.name for pat in EXCLUDE_FILENAME_PATTERNS):
+            continue
         report = load_json(path)
         m = report.get('match', {})
         if m.get('status') != '已结束':
