@@ -332,7 +332,7 @@ def _extract_statistics_internal(matches, team_name, is_b_team=False):
             if event_team != team_role:
                 continue
 
-            if event_type == 'goal':
+            if event_type in ('goal', 'penalty_goal'):
                 scorer = event.get('player', '')
                 # B队使用assist字段，一线队使用player2字段
                 if is_b_team:
@@ -342,6 +342,8 @@ def _extract_statistics_internal(matches, team_name, is_b_team=False):
                 minute = event.get('minute', 0)
                 minute_extra = event.get('minute_extra', 0)
                 goal_type = event.get('goal_type', 'regular')
+                if event_type == 'penalty_goal':
+                    goal_type = 'penalty_goal'  # 独立点球进球事件
                 # 兼容isOwnGoal字段
                 is_own_goal = goal_type == 'own_goal' or event.get('isOwnGoal', False)
 

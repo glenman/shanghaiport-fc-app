@@ -48,10 +48,12 @@ This skill automates the process of updating match results for Shanghai Port FC 
    - Idempotent: dedupes by (date, home, away) for schedule and (date code, player, goal time) for goals
    - Handles penalty shootout results (e.g., `1-1 (点球 4-3)`) correctly
 
-8. **Update Player History Stats (出场留存)**
-   - Updates `player_history_stats.json` appearances/starts/substitute from each match's lineup
-   - 首发 = `lineups.{role}.players[]`; 替补出场 = `lineups.{role}.substitutes[]` 中带 `substitutedAt` 的球员
-   - Idempotent via `scripts/player_history_sync_state.json` (dedupes by date|home|away)
+8. **Update Player History Stats (球员历史统计全量重算)**
+   - 从 Excel 基线 + `team-a` 全部已结束比赛全量重算 `player_history_stats.json` 的 **12 个字段**：appearances/starts/substitute/minutes/goals/penalties/assists/yellowCards/redCards/goalsConceded/cleanSheets/penaltySaves
+   - 首发 = `lineups.{role}.players[]`；替补出场 = `lineups.{role}.substitutes[]` 中带 `substitutedAt`（或 `minutes>0`）的球员
+   - 进球 = `matchTimeline` 中 `type=goal`（非乌龙）与 `type=penalty_goal` 两种事件
+   - 门将字段（失球/零封/扑点）记到当场门将
+   - 全量重算，幂等，不再依赖 `player_history_sync_state.json`
 
 ## Usage
 
@@ -90,7 +92,7 @@ This skill automates the process of updating match results for Shanghai Port FC 
 8. **Verify Scorers Count** - Ensures number of scorers matches the score
 9. **Update Statistics** - Runs incremental update by default
 10. **Sync History Data** - Runs `sync_history_data.py` to sync the match into `goal_details.json` and `history_schedule.json`
-11. **Update Player History Stats** - Runs `update_player_history_stats.py` to sync starting/substitute appearances into `player_history_stats.json`
+11. **Update Player History Stats** - Runs `update_player_history_stats.py` to full-recalculate `player_history_stats.json` (all 12 fields from Excel baseline + team-a matches)
 
 ## Files Modified
 
@@ -102,7 +104,7 @@ This skill automates the process of updating match results for Shanghai Port FC 
 | `public/data/YYYY-MM-DD-赛事类型-第X轮.json` | Match report data |
 | `public/data/goal_details.json` | Per-goal history records (synced) |
 | `public/data/history_schedule.json` | Per-match history records (synced) |
-| `public/data/player_history_stats.json` | Career appearance stats (appearances/starts/substitute synced) |
+| `public/data/player_history_stats.json` | Career stats (12 fields full-recalculated from Excel baseline + team-a) |
 
 ## Supporting Scripts
 
@@ -112,7 +114,7 @@ This skill automates the process of updating match results for Shanghai Port FC 
 | `scripts/update_schedule_details_v2.py` | Extracts match details from match reports |
 | `scripts/update_stats.py` | Updates season statistics (supports incremental and full update) |
 | `scripts/sync_history_data.py` | Syncs `team-a` reports into `goal_details.json` and `history_schedule.json` (idempotent) |
-| `scripts/update_player_history_stats.py` | Incrementally updates appearances/starts/substitute in `player_history_stats.json` (idempotent via state file) |
+| `scripts/update_player_history_stats.py` | Full-recalculates `player_history_stats.json` (all 12 fields from Excel baseline + team-a, idempotent) |
 
 ## Player Name Standardization
 
@@ -154,7 +156,7 @@ This skill automates the process of updating match results for Shanghai Port FC 
 - Automatically handles penalty goals and own goals with special markers
 - Supports both camelCase (`playerIn`, `playerOut`) and snake_case (`player_in`, `player_out`) field formats
 - Prompts for confirmation before changes
-- `update_player_history_stats.py` 首次运行会把现有比赛标记为已处理（仅面向未来），如需回填 2026 需先确认 Excel 基线
+- `update_player_history_stats.py` 每次从 Excel 基线全量重算 team-a 增量，幂等，无需状态文件
 
 ## Example Workflow
 
@@ -179,7 +181,7 @@ Skill Actions:
 8. Update schedule.json with extracted details
 9. Run incremental stats update
 10. Run `sync_history_data.py` to sync the match into `goal_details.json` and `history_schedule.json`
-11. Run `update_player_history_stats.py` to sync starting/substitute appearances into `player_history_stats.json`
+11. Run `update_player_history_stats.py` to full-recalculate `player_history_stats.json` (all 12 fields)
 
 ## Special Goal Markers
 

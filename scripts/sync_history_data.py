@@ -82,17 +82,17 @@ def format_goal_time(minute, minute_extra):
     return f"{minute}{extra}'"
 
 
-def goal_marker(goal_type, is_own_goal):
+def goal_marker(goal_type, is_own_goal, etype=''):
     if is_own_goal or goal_type == 'own_goal':
         return '(OG)'
-    if goal_type in ('penalty', 'penalty_goal'):
+    if etype == 'penalty_goal' or goal_type in ('penalty', 'penalty_goal'):
         return '(PK)'
     return ''
 
 
 def extract_goal_events(report):
     events = report.get('matchTimeline') or report.get('highlights') or []
-    return [e for e in events if e.get('type') == 'goal']
+    return [e for e in events if e.get('type') in ('goal', 'penalty_goal')]
 
 
 def build_history_entry(report):
@@ -114,7 +114,7 @@ def build_history_entry(report):
         player = e.get('player', '')
         if not player:
             continue
-        marker = goal_marker(e.get('goal_type', ''), e.get('isOwnGoal', False))
+        marker = goal_marker(e.get('goal_type', ''), e.get('isOwnGoal', False), e.get('type', ''))
         if team == 'home':
             scorers['home'].append(player + marker)
         elif team == 'away':
@@ -172,7 +172,7 @@ def build_goal_entries(report):
         player = e.get('player', '')
         if not player:
             continue
-        marker = goal_marker(e.get('goal_type', ''), e.get('isOwnGoal', False))
+        marker = goal_marker(e.get('goal_type', ''), e.get('isOwnGoal', False), e.get('type', ''))
         assist = e.get('player2') or e.get('assist') or '—'
         if marker == '(OG)':
             assist = '—'  # 乌龙球不计助攻
