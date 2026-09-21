@@ -70,14 +70,14 @@ const App: React.FC = () => {
             onClick={() => setActiveTab('players')}
           >
             <span className="menu-icon">👥</span>
-            <span className="menu-text">球队信息</span>
+            <span className="menu-text">当前球员信息</span>
           </div>
           <div 
             className={`menu-item ${activeTab === 'schedule' ? 'active' : ''}`}
             onClick={() => setActiveTab('schedule')}
           >
             <span className="menu-icon">⚽</span>
-            <span className="menu-text">球队赛程</span>
+            <span className="menu-text">当前球队赛程</span>
           </div>
           <div 
             className={`menu-item ${activeTab === 'currentStats' ? 'active' : ''}`}
@@ -105,14 +105,14 @@ const App: React.FC = () => {
             onClick={() => setActiveTab('statistics')}
           >
             <span className="menu-icon">📊</span>
-            <span className="menu-text">进球助攻榜</span>
+            <span className="menu-text">进球助攻汇总</span>
           </div>
           <div 
             className={`menu-item ${activeTab === 'history' ? 'active' : ''}`}
             onClick={() => setActiveTab('history')}
           >
             <span className="menu-icon">📅</span>
-            <span className="menu-text">历史比赛</span>
+            <span className="menu-text">历史比赛统计</span>
           </div>
         </nav>
       </aside>
