@@ -91,7 +91,7 @@ const App: React.FC = () => {
             onClick={() => setActiveTab('playerStats')}
           >
             <span className="menu-icon">📋</span>
-            <span className="menu-text">球员数据统计</span>
+            <span className="menu-text">参赛统计查询</span>
           </div>
           <div 
             className={`menu-item ${activeTab === 'seasons' ? 'active' : ''}`}
