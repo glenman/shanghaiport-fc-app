@@ -15,6 +15,9 @@ interface Season {
   notes: string;
 }
 
+// 杯赛类赛事（seasons.json 中 league 字段为这些值的行进入杯赛汇总板块）
+const CUP_LEAGUES = ['足协杯', '亚冠联赛', '亚冠精英联赛', '超级杯'];
+
 const Seasons: React.FC = () => {
   const [seasonsData, setSeasonsData] = useState<Season[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -43,6 +46,10 @@ const Seasons: React.FC = () => {
 
     fetchSeasonsData();
   }, []);
+
+  // seasons.json 中同时包含联赛与杯赛记录，按赛事类型拆分
+  const leagueSeasons = seasonsData.filter((s) => !CUP_LEAGUES.includes(s.league));
+  const cupSeasons = seasonsData.filter((s) => CUP_LEAGUES.includes(s.league));
 
   useEffect(() => {
     const checkMobile = () => {
@@ -76,13 +83,24 @@ const Seasons: React.FC = () => {
     };
   }, [isMobile]);
 
-  const filteredSeasons = seasonsData.filter(season => {
+  const filteredSeasons = leagueSeasons.filter(season => {
     const matchesSearch = searchTerm === '' || 
       (season.season && season.season.includes(searchTerm)) ||
       (season.league && season.league.toLowerCase().includes(searchTerm.toLowerCase())) ||
       (season.rank && season.rank.toLowerCase().includes(searchTerm.toLowerCase())) ||
       (season.notes && season.notes.toLowerCase().includes(searchTerm.toLowerCase()));
     return matchesSearch;
+  });
+
+  // 杯赛汇总同步按赛季、赛事类型、最终成绩筛选
+  const filteredCupSeasons = cupSeasons.filter((cup) => {
+    if (searchTerm === '') return true;
+    return (
+      (cup.season && cup.season.includes(searchTerm)) ||
+      (cup.league && cup.league.includes(searchTerm)) ||
+      (cup.rank && cup.rank.includes(searchTerm)) ||
+      (cup.notes && cup.notes.includes(searchTerm))
+    );
   });
 
   const getRankIcon = (rank: string) => {
@@ -99,10 +117,17 @@ const Seasons: React.FC = () => {
     return '#c00010';
   };
 
+  const getCupResultStyle = (result: string): { icon: string; color: string } => {
+    if (result.includes('冠军')) return { icon: '🏆', color: '#ffd700' };
+    if (result.includes('亚军')) return { icon: '🥈', color: '#c0c0c0' };
+    if (result.includes('四强') || result.includes('八强')) return { icon: '', color: '#cd7f32' };
+    return { icon: '', color: '#fff' };
+  };
+
   const render = () => {
-    if (seasonsData.length === 0) return null;
+    if (leagueSeasons.length === 0) return null;
     
-    const sortedSeasons = [...seasonsData].sort((a, b) => parseInt(a.season) - parseInt(b.season));
+    const sortedSeasons = [...leagueSeasons].sort((a, b) => parseInt(a.season) - parseInt(b.season));
     
     // 将排名转换为数值
     const getRankValue = (rank: string): number => {
@@ -314,7 +339,7 @@ const Seasons: React.FC = () => {
         <div className="player-filters">
           <input
             type="text"
-            placeholder="搜索赛季、联赛、排名或备注..."
+            placeholder="搜索赛季、联赛/赛事、排名或成绩..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="search-input"
@@ -387,6 +412,52 @@ const Seasons: React.FC = () => {
                 })}
               </tbody>
             </table>
+          </div>
+        )}
+
+        {filteredCupSeasons.length > 0 && (
+          <div className="stats-section" style={{ marginTop: '1.5rem' }}>
+            <h3>杯赛成绩汇总（足协杯 / 亚冠 / 超级杯）</h3>
+            <div className="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>赛季</th>
+                    <th>赛事</th>
+                    <th>最终成绩</th>
+                    <th>场次</th>
+                    <th>胜</th>
+                    <th>平</th>
+                    <th>负</th>
+                    <th>进球</th>
+                    <th>失球</th>
+                    <th>备注</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {filteredCupSeasons.map((cup) => {
+                    const style = getCupResultStyle(cup.rank);
+                    return (
+                      <tr key={cup.id || `${cup.season}-${cup.league}`}>
+                        <td style={{ fontWeight: 'bold', color: '#c00010' }}>{cup.season}</td>
+                        <td>{cup.league}</td>
+                        <td style={{ fontWeight: 'bold', color: style.color }}>
+                          {style.icon && <span style={{ marginRight: '0.3rem' }}>{style.icon}</span>}
+                          {cup.rank}
+                        </td>
+                        <td>{cup.matches}</td>
+                        <td style={{ color: '#4caf50', fontWeight: 'bold' }}>{cup.wins}</td>
+                        <td style={{ color: '#ffc107', fontWeight: 'bold' }}>{cup.draws}</td>
+                        <td style={{ color: '#f44336', fontWeight: 'bold' }}>{cup.losses}</td>
+                        <td style={{ color: '#4caf50' }}>{cup.goalsFor}</td>
+                        <td style={{ color: '#f44336' }}>{cup.goalsAgainst}</td>
+                        <td style={{ fontSize: '0.85rem', color: '#888' }}>{cup.notes || '-'}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
           </div>
         )}
       </div>
