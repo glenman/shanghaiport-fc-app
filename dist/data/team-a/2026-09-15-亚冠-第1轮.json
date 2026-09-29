@@ -1,0 +1,655 @@
+{
+  "match": {
+    "id": 1,
+    "round": "第1轮",
+    "date": "2026-09-15",
+    "time": "18:00",
+    "homeTeam": "拉查武里",
+    "awayTeam": "上海海港",
+    "venue": "Dragon Solar Park",
+    "city": "拉查武里",
+    "result": "4-6",
+    "status": "已结束",
+    "attendance": "2974",
+    "referee": "Jong-Hyeok K.",
+    "weather": "雨",
+    "competition": "亚足联冠军精英联赛",
+    "matchweek": 1,
+    "season": "2026/27"
+  },
+  "matchDetails": {
+    "stadiumCapacity": "10000",
+    "pitchCondition": "未知",
+    "temperature": "未知",
+    "kickoffTime": "18:00",
+    "halftimeScore": "0-3",
+    "fulltimeScore": "4-6"
+  },
+  "officials": {
+    "referee": "金钟赫（韩国）",
+    "assistantReferee1": "尹载烈（韩国）",
+    "assistantReferee2": "朴均龙（韩国）",
+    "fourthOfficial": "未知",
+    "VAR": "高亨进（韩国）"
+  },
+  "lineups": {
+    "home": {
+      "name": "拉查武里",
+      "formation": "4-2-3-1",
+      "manager": "沃拉武",
+      "captain": "甘达",
+      "players": [
+        {
+          "number": 99,
+          "name": "甘达",
+          "position": "门将",
+          "nationality": "泰国",
+          "age": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 27,
+          "name": "杰西·柯伦",
+          "position": "后卫",
+          "nationality": "菲律宾/澳大利亚",
+          "age": "未知",
+          "minutes": 55,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 4,
+          "name": "乔纳坦·肯迪",
+          "position": "后卫",
+          "nationality": "泰国/丹麦",
+          "age": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 3,
+          "name": "塔里克·阿贡",
+          "position": "后卫",
+          "nationality": "阿尔及利亚/法国",
+          "age": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 31,
+          "name": "范韦梅斯凯尔肯·际",
+          "position": "后卫",
+          "nationality": "日本/荷兰",
+          "age": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 16,
+          "name": "罗克·梅萨",
+          "position": "中场",
+          "nationality": "西班牙",
+          "age": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 48,
+          "name": "阿勒代斯",
+          "position": "中场",
+          "nationality": "苏格兰",
+          "age": "未知",
+          "minutes": 45,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 6,
+          "name": "塔纳",
+          "position": "中场",
+          "nationality": "西班牙",
+          "age": "未知",
+          "minutes": 55,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "比埃拉",
+          "position": "中场",
+          "nationality": "西班牙",
+          "age": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 7,
+          "name": "拉斐尔·比卢",
+          "position": "前锋",
+          "nationality": "巴西",
+          "age": "未知",
+          "minutes": 55,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 9,
+          "name": "布鲁诺·门德斯",
+          "position": "前锋",
+          "nationality": "巴西",
+          "age": "未知",
+          "minutes": 66,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 28,
+          "name": "托沙瓦",
+          "position": "中场",
+          "nationality": "泰国",
+          "age": "未知",
+          "substitutedAt": 46,
+          "substitutedFor": "阿勒代斯"
+        },
+        {
+          "number": 21,
+          "name": "埃卡尼",
+          "position": "前锋",
+          "nationality": "泰国",
+          "age": "未知",
+          "substitutedAt": 55,
+          "substitutedFor": "塔纳"
+        },
+        {
+          "number": 5,
+          "name": "陈丹善",
+          "position": "后卫",
+          "nationality": "马来西亚/英格兰",
+          "age": "未知",
+          "substitutedAt": 55,
+          "substitutedFor": "杰西·柯伦"
+        },
+        {
+          "number": 88,
+          "name": "楚提巴",
+          "position": "前锋",
+          "nationality": "泰国",
+          "age": "未知",
+          "substitutedAt": 55,
+          "substitutedFor": "拉斐尔·比卢"
+        },
+        {
+          "number": 92,
+          "name": "拉科托哈里马拉拉",
+          "position": "前锋",
+          "nationality": "马达加斯加",
+          "age": "未知",
+          "substitutedAt": 66,
+          "substitutedFor": "布鲁诺·门德斯"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海海港",
+      "formation": "3-5-2",
+      "manager": "凯文·穆斯卡特",
+      "captain": "武磊",
+      "players": [
+        {
+          "number": 1,
+          "name": "颜骏凌",
+          "position": "门将",
+          "nationality": "中国",
+          "age": "35",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 44,
+          "name": "米格尔·坎波斯",
+          "position": "后卫",
+          "nationality": "葡萄牙",
+          "age": "未知",
+          "minutes": 70,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 3,
+          "name": "蒋光太",
+          "position": "后卫",
+          "nationality": "中国(入籍)",
+          "age": "32",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 13,
+          "name": "魏震",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "29",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 19,
+          "name": "王振澳",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "27",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 21,
+          "name": "奥斯卡·梅伦多",
+          "position": "中场",
+          "nationality": "西班牙",
+          "age": "29",
+          "minutes": 83,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 16,
+          "name": "豪梅·格劳",
+          "position": "中场",
+          "nationality": "西班牙",
+          "age": "未知",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "维塔尔",
+          "position": "中场",
+          "nationality": "巴西",
+          "age": "28",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 28,
+          "name": "岳鑫",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "31",
+          "minutes": 70,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 7,
+          "name": "武磊",
+          "position": "前锋",
+          "nationality": "中国",
+          "age": "35",
+          "minutes": 64,
+          "goals": 1,
+          "assists": 1,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 17,
+          "name": "安佩姆",
+          "position": "前锋",
+          "nationality": "加纳",
+          "age": "28",
+          "minutes": 64,
+          "goals": 3,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 45,
+          "name": "莱昂纳多",
+          "position": "前锋",
+          "nationality": "巴西",
+          "age": "29",
+          "substitutedAt": 64,
+          "substitutedFor": "武磊"
+        },
+        {
+          "number": 33,
+          "name": "刘祝润",
+          "position": "前锋",
+          "nationality": "中国",
+          "age": "25",
+          "substitutedAt": 64,
+          "substitutedFor": "安佩姆"
+        },
+        {
+          "number": 23,
+          "name": "傅欢",
+          "position": "后卫",
+          "nationality": "中国",
+          "age": "33",
+          "substitutedAt": 70,
+          "substitutedFor": "岳鑫"
+        },
+        {
+          "number": 8,
+          "name": "让克劳德",
+          "position": "中场",
+          "nationality": "多哥",
+          "age": "23",
+          "substitutedAt": 70,
+          "substitutedFor": "米格尔·坎波斯"
+        },
+        {
+          "number": 14,
+          "name": "安永佳",
+          "position": "前锋",
+          "nationality": "中国",
+          "age": "29",
+          "substitutedAt": 83,
+          "substitutedFor": "奥斯卡·梅伦多"
+        }
+      ]
+    }
+  },
+  "matchTimeline": [
+    {
+      "minute": 0,
+      "minute_extra": 0,
+      "type": "kick_off",
+      "team": "neutral",
+      "description": "比赛开始"
+    },
+    {
+      "minute": 31,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "安佩姆",
+      "description": "上海海港安佩姆进球"
+    },
+    {
+      "minute": 36,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "安佩姆",
+      "player2": "武磊",
+      "description": "上海海港安佩姆接武磊助攻破门"
+    },
+    {
+      "minute": 39,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "米格尔·坎波斯",
+      "description": "上海海港米格尔·坎波斯手球犯规获得黄牌"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 1,
+      "type": "goal",
+      "team": "away",
+      "player": "安佩姆",
+      "player2": "豪梅·格劳",
+      "description": "上海海港安佩姆接豪梅·格劳助攻破门上演帽子戏法"
+    },
+    {
+      "minute": 46,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "托沙瓦",
+      "playerOut": "阿勒代斯",
+      "description": "拉查武里托沙瓦替换阿勒代斯上场"
+    },
+    {
+      "minute": 51,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "武磊",
+      "player2": "岳鑫",
+      "description": "上海海港武磊接岳鑫助攻破门"
+    },
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "埃卡尼",
+      "playerOut": "塔纳",
+      "description": "拉查武里埃卡尼替换塔纳上场"
+    },
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "陈丹善",
+      "playerOut": "杰西·柯伦",
+      "description": "拉查武里陈丹善替换杰西·柯伦上场"
+    },
+    {
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "楚提巴",
+      "playerOut": "拉斐尔·比卢",
+      "description": "拉查武里楚提巴替换拉斐尔·比卢上场"
+    },
+    {
+      "minute": 64,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "莱昂纳多",
+      "playerOut": "武磊",
+      "description": "上海海港莱昂纳多替换武磊上场"
+    },
+    {
+      "minute": 64,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "刘祝润",
+      "playerOut": "安佩姆",
+      "description": "上海海港刘祝润替换安佩姆上场"
+    },
+    {
+      "minute": 66,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "拉科托哈里马拉拉",
+      "playerOut": "布鲁诺·门德斯",
+      "description": "拉查武里拉科托哈里马拉拉替换布鲁诺·门德斯上场"
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "傅欢",
+      "playerOut": "岳鑫",
+      "description": "上海海港傅欢替换岳鑫上场"
+    },
+    {
+      "minute": 70,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "让克劳德",
+      "playerOut": "米格尔·坎波斯",
+      "description": "上海海港让克劳德替换米格尔·坎波斯上场"
+    },
+    {
+      "minute": 71,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "拉科托哈里马拉拉",
+      "player2": "楚提巴",
+      "description": "拉查武里拉科托哈里马拉拉接楚提巴助攻破门"
+    },
+    {
+      "minute": 74,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "罗克·梅萨",
+      "description": "拉查武里罗克·梅萨犯规领到黄牌"
+    },
+    {
+      "minute": 77,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "托沙瓦",
+      "description": "拉查武里托沙瓦犯规领到黄牌"
+    },
+    {
+      "minute": 83,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "安永佳",
+      "playerOut": "奥斯卡·梅伦多",
+      "description": "上海海港安永佳替换受伤的奥斯卡·梅伦多上场"
+    },
+    {
+      "minute": 84,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "home",
+      "player": "拉科托哈里马拉拉",
+      "player2": "比埃拉",
+      "description": "拉查武里拉科托哈里马拉拉接比埃拉助攻梅开二度"
+    },
+    {
+      "minute": 86,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "豪梅·格劳",
+      "description": "上海海港豪梅·格劳进球"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 5,
+      "type": "goal",
+      "team": "home",
+      "player": "拉科托哈里马拉拉",
+      "player2": "塔里克·阿贡",
+      "description": "拉查武里拉科托哈里马拉拉接塔里克·阿贡助攻破门上演帽子戏法"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 6,
+      "type": "goal",
+      "team": "home",
+      "player": "埃卡尼",
+      "player2": "拉科托哈里马拉拉",
+      "description": "拉查武里埃卡尼接拉科托哈里马拉拉助攻进球"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 7,
+      "type": "goal",
+      "team": "away",
+      "player": "莱昂纳多",
+      "description": "上海海港莱昂纳多进球锁定胜局"
+    }
+  ],
+  "statistics": [
+    {
+      "name": "期望进球数 (xG)",
+      "home": "2.75",
+      "away": "2.42"
+    },
+    {
+      "name": "控球率",
+      "home": "53%",
+      "away": "47%"
+    },
+    {
+      "name": "射门",
+      "home": 21,
+      "away": 13
+    },
+    {
+      "name": "绝佳机会",
+      "home": 5,
+      "away": 5
+    },
+    {
+      "name": "对方禁区内触球次数",
+      "home": 35,
+      "away": 18
+    }
+  ],
+  "summary": "2026/27赛季亚冠精英联赛小组赛第1轮，拉查武里主场迎战上海海港。上半场海港由安佩姆完成帽子戏法建立3-0领先；下半场武磊扩大优势后，拉查武里发起狂猛反扑，替补出场的拉科托哈里马拉拉同样上演帽子戏法并送出1次助攻，一度在补时阶段将比分追至4-5。最终上海海港凭借莱昂纳多在补时最后一分钟的进球，以6-4力克拉查武里锁定胜局。",
+  "keyFactors": [
+    "上海海港进攻效率极高，安佩姆在上半场独中三元帮助球队打下胜利基础",
+    "拉查武里下半场调兵遣将收效显著，替补上场的拉科托哈里马拉拉个人独造4球上演惊天追分",
+    "双方防守端均暴露出较大漏洞，全场爆出10粒进球的进球大战"
+  ],
+  "highlights": []
+}

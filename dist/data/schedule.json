@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "round": "超级杯",
+    "round": "决赛",
     "date": "2026-03-01",
     "time": "15:30",
     "homeTeam": "上海海港",
@@ -483,19 +483,6 @@
     }
   },
   {
-    "id": 19,
-    "round": "第18轮",
-    "date": "2026-07-12",
-    "time": "19:35",
-    "homeTeam": "上海海港",
-    "awayTeam": "大连英博",
-    "venue": "上海体育场",
-    "city": "上海",
-    "result": "-",
-    "status": "未开始",
-    "type": "中超"
-  },
-  {
     "id": 20,
     "round": "第19轮",
     "date": "2026-07-17",
@@ -630,9 +617,49 @@
     "awayTeam": "上海海港",
     "venue": "武汉体育中心",
     "city": "武汉",
-    "result": "-",
-    "status": "未开始",
-    "type": "中超"
+    "result": "2-3",
+    "status": "已结束",
+    "type": "中超",
+    "referee": "艾堃",
+    "home_coach": "里卡多·苏亚雷斯",
+    "away_coach": "凯文·穆斯卡特",
+    "attendance": 30157,
+    "scorers": {
+      "home": [
+        "洪德尔·卡迪斯",
+        "安托万·莱奥泰"
+      ],
+      "away": [
+        "魏震",
+        "安佩姆",
+        "安佩姆"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "round": "第18轮",
+    "date": "2026-08-19",
+    "time": "19:35",
+    "homeTeam": "上海海港",
+    "awayTeam": "大连英博",
+    "venue": "上海体育场",
+    "city": "上海",
+    "result": "1-1",
+    "status": "已结束",
+    "type": "中超",
+    "referee": "Jansen Mehmetjan",
+    "home_coach": "凯文·穆斯卡特",
+    "away_coach": "李国旭",
+    "attendance": 19806,
+    "scorers": {
+      "home": [
+        "李新翔"
+      ],
+      "away": [
+        "斯坦丘(PK)"
+      ]
+    }
   },
   {
     "id": 25,
@@ -641,11 +668,24 @@
     "time": "19:35",
     "homeTeam": "上海海港",
     "awayTeam": "青岛海牛",
-    "venue": "上海体育场",
+    "venue": "上汽浦东足球场",
     "city": "上海",
-    "result": "-",
-    "status": "未开始",
-    "type": "中超"
+    "result": "2-1",
+    "status": "已结束",
+    "type": "中超",
+    "referee": "任通",
+    "home_coach": "凯文·穆斯卡特",
+    "away_coach": "米兰·里斯蒂奇",
+    "attendance": 18575,
+    "scorers": {
+      "home": [
+        "武磊",
+        "武磊(PK)"
+      ],
+      "away": [
+        "卡洛斯·斯特兰德贝里"
+      ]
+    }
   },
   {
     "id": 26,
@@ -656,9 +696,44 @@
     "awayTeam": "上海海港",
     "venue": "深圳大运中心",
     "city": "深圳",
-    "result": "-",
-    "status": "未开始",
-    "type": "中超"
+    "result": "0-1",
+    "status": "已结束",
+    "type": "中超",
+    "referee": "陶然",
+    "home_coach": "罗比·尼尔森",
+    "away_coach": "凯文·穆斯卡特",
+    "attendance": 18416,
+    "scorers": {
+      "home": [],
+      "away": [
+        "蒯纪闻"
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "round": "第6轮",
+    "date": "2026-09-01",
+    "time": "19:35",
+    "homeTeam": "山东泰山",
+    "awayTeam": "上海海港",
+    "venue": "济南奥体中心",
+    "city": "济南",
+    "result": "0-3",
+    "status": "已结束",
+    "type": "足协杯",
+    "referee": "马宁",
+    "home_coach": "唐田",
+    "away_coach": "穆斯卡特",
+    "attendance": 26159,
+    "scorers": {
+      "home": [],
+      "away": [
+        "刘祝润",
+        "安佩姆",
+        "杨希"
+      ]
+    }
   },
   {
     "id": 27,
@@ -667,11 +742,52 @@
     "time": "19:35",
     "homeTeam": "上海海港",
     "awayTeam": "北京国安",
-    "venue": "上海体育场",
+    "venue": "上汽浦东足球场",
     "city": "上海",
-    "result": "-",
-    "status": "未开始",
-    "type": "中超"
+    "result": "0-0",
+    "status": "已结束",
+    "type": "中超",
+    "referee": "牟宇晨",
+    "home_coach": "凯文·穆斯卡特",
+    "away_coach": "尼克·蒙哥马利",
+    "attendance": 25085,
+    "scorers": {
+      "home": [],
+      "away": []
+    }
+  },
+  {
+    "id": 40,
+    "round": "第1轮",
+    "date": "2026-09-15",
+    "time": "18:00",
+    "homeTeam": "拉查武里",
+    "awayTeam": "上海海港",
+    "venue": "叻丕体育场",
+    "city": "叻丕",
+    "result": "4-6",
+    "status": "已结束",
+    "type": "亚冠",
+    "referee": "金钟赫（韩国）",
+    "home_coach": "沃拉武",
+    "away_coach": "凯文·穆斯卡特",
+    "attendance": 2974,
+    "scorers": {
+      "home": [
+        "拉科托哈里马拉拉",
+        "拉科托哈里马拉拉",
+        "拉科托哈里马拉拉",
+        "埃卡尼"
+      ],
+      "away": [
+        "安佩姆",
+        "安佩姆",
+        "安佩姆",
+        "武磊",
+        "豪梅·格劳",
+        "莱昂纳多"
+      ]
+    }
   },
   {
     "id": 28,
@@ -685,6 +801,19 @@
     "result": "-",
     "status": "未开始",
     "type": "中超"
+  },
+  {
+    "id": 41,
+    "round": "第2轮",
+    "date": "2026-10-13",
+    "time": "18:00",
+    "homeTeam": "上海海港",
+    "awayTeam": "大田韩亚市民",
+    "venue": "浦东足球场",
+    "city": "上海",
+    "result": "-",
+    "status": "未开始",
+    "type": "亚冠"
   },
   {
     "id": 29,
@@ -713,6 +842,32 @@
     "type": "中超"
   },
   {
+    "id": 42,
+    "round": "第3轮",
+    "date": "2026-10-27",
+    "time": "18:00",
+    "homeTeam": "上海海港",
+    "awayTeam": "河内公安",
+    "venue": "浦东足球场",
+    "city": "上海",
+    "result": "-",
+    "status": "未开始",
+    "type": "亚冠"
+  },
+  {
+    "id": 43,
+    "round": "第4轮",
+    "date": "2026-11-03",
+    "time": "15:45",
+    "homeTeam": "纽卡斯尔喷气机",
+    "awayTeam": "上海海港",
+    "venue": "纽卡斯尔体育场",
+    "city": "纽卡斯尔",
+    "result": "-",
+    "status": "未开始",
+    "type": "亚冠"
+  },
+  {
     "id": 31,
     "round": "第30轮",
     "date": "2026-11-08",
@@ -724,5 +879,57 @@
     "result": "-",
     "status": "未开始",
     "type": "中超"
+  },
+  {
+    "id": 44,
+    "round": "第5轮",
+    "date": "2026-11-24",
+    "time": "20:15",
+    "homeTeam": "上海海港",
+    "awayTeam": "武里南联",
+    "venue": "浦东足球场",
+    "city": "上海",
+    "result": "-",
+    "status": "未开始",
+    "type": "亚冠"
+  },
+  {
+    "id": 45,
+    "round": "第6轮",
+    "date": "2026-12-01",
+    "time": "18:00",
+    "homeTeam": "浦项铁人",
+    "awayTeam": "上海海港",
+    "venue": "浦项钢园球场",
+    "city": "浦项",
+    "result": "-",
+    "status": "未开始",
+    "type": "亚冠"
+  },
+  {
+    "id": 46,
+    "round": "第7轮",
+    "date": "2027-02-09",
+    "time": "18:00",
+    "homeTeam": "上海海港",
+    "awayTeam": "泰港",
+    "venue": "浦东足球场",
+    "city": "上海",
+    "result": "-",
+    "status": "未开始",
+    "type": "亚冠"
+  },
+  {
+    "id": 47,
+    "round": "第8轮",
+    "date": "2027-02-16",
+    "time": "18:00",
+    "homeTeam": "全北现代汽车",
+    "awayTeam": "上海海港",
+    "venue": "全州世界杯竞技场",
+    "city": "全州",
+    "result": "-",
+    "status": "未开始",
+    "type": "亚冠"
   }
 ]

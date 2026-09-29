@@ -679,7 +679,7 @@
 
             // 统计上半场进球（minute <= 45的进球事件）
             const goalEvents = events.filter(event => 
-              (event.type === 'goal' || event.type === 'own_goal') && 
+              (event.type === 'goal' || event.type === 'own_goal' || event.type === 'penalty_goal') && 
               event.minute <= 45
             );
             
@@ -715,7 +715,7 @@
             if (!events || events.length === 0) return '';
             
             const goalEvents = events.filter(event => 
-              event.type === 'goal' || event.type === 'own_goal'
+              event.type === 'goal' || event.type === 'own_goal' || event.type === 'penalty_goal'
             );
             if (goalEvents.length === 0) return '';
             
@@ -742,7 +742,7 @@
                   if (goal.goal_type === 'own_goal') {
                     ballIcon = '<span style="color: #ff6b6b;">⚽</span>';
                     specialMark = ' <span style="color: #ff6b6b; font-weight: bold; font-size: 0.85rem;">(OG)</span>';
-                  } else if (goal.goal_type === 'penalty_goal') {
+                  } else if (goal.goal_type === 'penalty_goal' || goal.type === 'penalty_goal') {
                     specialMark = ' <span style="color: #4ecdc4; font-weight: bold; font-size: 0.85rem;">(PK)</span>';
                     if (goal.foul_player) {
                       specialMark += ` <span style="color: #ffd93d; font-size: 0.85rem;">(造:${goal.foul_player})</span>`;
