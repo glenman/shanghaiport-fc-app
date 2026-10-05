@@ -48,12 +48,16 @@ This skill automates the process of updating match results for Shanghai Port FC 
    - Idempotent: dedupes by (date, home, away) for schedule and (date code, player, goal time) for goals
    - Handles penalty shootout results (e.g., `1-1 (点球 4-3)`) correctly
 
-8. **Update Player History Stats (球员历史统计全量重算)**
-   - 从 Excel 基线 + `team-a` 全部已结束比赛全量重算 `player_history_stats.json` 的 **12 个字段**：appearances/starts/substitute/minutes/goals/penalties/assists/yellowCards/redCards/goalsConceded/cleanSheets/penaltySaves
+8. **Update Player History Stats (球员历史统计, 增量)**
+   - Runs `update_player_history_stats.py`（默认增量模式；`--full` 为全量重算，仅数据修复用）
+   - 增量：以当前 `player_history_stats.json` 为基线，只累加「基线日之后且未处理过」的新报告，绝不重算覆盖既有数据
    - 首发 = `lineups.{role}.players[]`；替补出场 = `lineups.{role}.substitutes[]` 中带 `substitutedAt`（或 `minutes>0`）的球员
-   - 进球 = `matchTimeline` 中 `type=goal`（非乌龙）与 `type=penalty_goal` 两种事件
-   - 门将字段（失球/零封/扑点）记到当场门将
-   - 全量重算，幂等，不再依赖 `player_history_sync_state.json`
+   - 进球 = `matchTimeline` 中 `type=goal`（非乌龙）与 `type=penalty_goal` 两种事件；门将字段（失球/零封/扑点）记到当场门将
+
+9. **Update Player Appearance Details (球员出场明细, 增量)**
+   - Runs `update_player_appearance_details.py`（默认增量模式；`--full` 为全量重建）to append new matches to `player_appearance_details.json` and `history/<年份>/<年份>-出场记录.json`
+   - 每条出场记录 `{matchId, status, minutes}`，matchId 关联 `history_schedule.json`（新赛程由 `sync_history_data.py` 自动分配 Mxxxx 编号）
+   - 口径与 `update_player_history_stats.py` 一致（ALIAS_MAP：让克劳德->克劳德、维塔尔->马特乌斯·维塔尔、吾米提江->吾米提江.玉苏普；替补分钟按 90-登场时间估算）
 
 ## Usage
 
@@ -92,7 +96,8 @@ This skill automates the process of updating match results for Shanghai Port FC 
 8. **Verify Scorers Count** - Ensures number of scorers matches the score
 9. **Update Statistics** - Runs incremental update by default
 10. **Sync History Data** - Runs `sync_history_data.py` to sync the match into `goal_details.json` and `history_schedule.json`
-11. **Update Player History Stats** - Runs `update_player_history_stats.py` to full-recalculate `player_history_stats.json` (all 12 fields from Excel baseline + team-a matches)
+11. **Update Player History Stats** - Runs `update_player_history_stats.py` (incremental by default; only new matches after baseline are accumulated)
+12. **Update Player Appearance Details** - Runs `update_player_appearance_details.py` (incremental; appends new matches to `player_appearance_details.json` + `history/<年份>/<年份>-出场记录.json`, matchId-linked)
 
 ## Files Modified
 
@@ -105,6 +110,8 @@ This skill automates the process of updating match results for Shanghai Port FC 
 | `public/data/goal_details.json` | Per-goal history records (synced) |
 | `public/data/history_schedule.json` | Per-match history records (synced) |
 | `public/data/player_history_stats.json` | Career stats (12 fields full-recalculated from Excel baseline + team-a) |
+| `public/data/player_appearance_details.json` | Player appearance details (per-match matchId/status/minutes, current season rebuilt from team-a) |
+| `public/data/history/<年份>/<年份>-出场记录.json` | Yearly appearance record file (lineup/substitutes/substitutions, with matchId) |
 
 ## Supporting Scripts
 
@@ -115,6 +122,7 @@ This skill automates the process of updating match results for Shanghai Port FC 
 | `scripts/update_stats.py` | Updates season statistics (supports incremental and full update) |
 | `scripts/sync_history_data.py` | Syncs `team-a` reports into `goal_details.json` and `history_schedule.json` (idempotent) |
 | `scripts/update_player_history_stats.py` | Full-recalculates `player_history_stats.json` (all 12 fields from Excel baseline + team-a, idempotent) |
+| `scripts/update_player_appearance_details.py` | Rebuilds current-season nodes in `player_appearance_details.json` + yearly `history/<年份>/<年份>-出场记录.json` from team-a reports (idempotent, matchId-linked) |
 
 ## Player Name Standardization
 
@@ -156,7 +164,8 @@ This skill automates the process of updating match results for Shanghai Port FC 
 - Automatically handles penalty goals and own goals with special markers
 - Supports both camelCase (`playerIn`, `playerOut`) and snake_case (`player_in`, `player_out`) field formats
 - Prompts for confirmation before changes
-- `update_player_history_stats.py` 每次从 Excel 基线全量重算 team-a 增量，幂等，无需状态文件
+- `update_player_history_stats.py` **默认增量模式**：以当前文件为基线只累加新比赛（基线留存于 `datafile/baseline-<日期>/`）；`--full` 全量重算仅数据修复用，且会自动恢复 BIRTH_FIX 生日修正与 short_name
+- **更新状态记录 `scripts/update_state.json`**：记录 `baselineDate`（基线日，基线日及之前的比赛已冻结不再重算）、`lastMatch`（最新已结束比赛）、各脚本最后运行时间与 `processed` 已处理报告清单（防止增量重复累计）。日常更新前先查看该文件即可判断是否已有新比赛需要处理
 
 ## Example Workflow
 
@@ -182,6 +191,7 @@ Skill Actions:
 9. Run incremental stats update
 10. Run `sync_history_data.py` to sync the match into `goal_details.json` and `history_schedule.json`
 11. Run `update_player_history_stats.py` to full-recalculate `player_history_stats.json` (all 12 fields)
+12. Run `update_player_appearance_details.py` to rebuild the current-season appearance details (`player_appearance_details.json` + yearly file, matchId-linked)
 
 ## Special Goal Markers
 
