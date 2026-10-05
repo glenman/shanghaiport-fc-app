@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 """
-全量重算 player_history_stats.json。
+更新 player_history_stats.json（默认增量模式，--full 为全量重算）。
 
-数据来源：
-1. 基线：datafile/上海海港球员历史出场汇总(2006-2026).xlsx（通过 convert_player_history.read_sheet 读取）
-2. 增量：public/data/team-a/*.json 中所有「已结束」的一线队比赛报告
+【增量模式（默认）】
+- 基线：当前 player_history_stats.json 文件本身（基线留存见 datafile/baseline-<日期>/）
+- 只处理「文件日期 > scripts/update_state.json 的 baselineDate 且已结束且未在 processed 清单」的
+  team-a 新报告，逐场累加，绝不重算/覆盖既有数据
+- 已处理文件记录于 update_state.json 的 processed 清单，防止重复累计
+
+【全量重算 --full（仅数据修复用，会覆盖文件）】
+- Excel 基线 + 全部 team-a 已结束报告重算；重算后自动恢复 BIRTH_FIX 生日修正与 short_name
 
 统计口径（覆盖全部 12 个字段）：
 - appearances/starts/substitute：首发 = lineups.{role}.players[]；替补出场 = substitutes[]/bench[] 中带 substitutedAt（或 minutes>0）的球员
@@ -17,7 +22,6 @@
 - cleanSheets：常规时间不失球，记到当场门将
 - penaltySaves：对手罚失点球（penalty_missed/penalty_miss 且 team!=role），记到当场门将
 
-幂等设计：每次从 Excel 基线全量重算，不依赖状态文件，重复运行结果一致。
 仅统计上海海港一线队（排除上海海港富盛经开 B 队）。
 """
 
@@ -65,6 +69,20 @@ ALIAS_MAP = {
     '让克劳德': '克劳德',
     '维塔尔': '马特乌斯·维塔尔',
     '吾米提江': '吾米提江.玉苏普',
+    # 历史名单错别字（2007 中乙名单“柏佳俊”，实名柏佳骏，生日相同）
+    '柏佳俊': '柏佳骏',
+    # 报告/名单简写 -> 全名
+    '阿布拉汗': '阿布拉汗·哈力克',
+}
+
+# 已人工确认的生日修正（覆盖 Excel 基线中的笔误）
+BIRTH_FIX = {
+    '张俊杰': '2006-10-15',
+    '米格尔·坎波斯': '1996-08-19',
+    '豪梅·格劳': '1997-05-05',
+    '曹赟定': '1989-11-22',
+    '明天': '1995-04-08',
+    '李小龙': '1989-09-20',
 }
 
 # 门将位置标识
@@ -346,19 +364,72 @@ def process_report(report, role, comp_key, player_map, players):
             add_gk_field(gk, comp_key, 'penaltySaves', saves)
 
 
-def main():
-    players = build_baseline()
-    player_map = {p['name']: p for p in players}
+def apply_known_fixes(players):
+    """重算后恢复人工确认的修正：
+    1) BIRTH_FIX 生日覆盖（Excel 基线笔误）
+    2) 保留现有 stats 文件中的 short_name（外援短名映射）
+    """
+    prev_short = {}
+    if STATS_PATH.exists():
+        try:
+            with open(STATS_PATH, 'r', encoding='utf-8') as f:
+                prev = json.load(f)
+            prev_short = {p['name']: p.get('short_name') for p in prev.get('players', [])
+                          if p.get('short_name')}
+        except Exception:
+            prev_short = {}
+    for p in players:
+        if p['name'] in BIRTH_FIX:
+            p['birthDate'] = BIRTH_FIX[p['name']]
+        if p['name'] in prev_short:
+            fixed = {'name': p['name'], 'short_name': prev_short[p['name']]}
+            fixed.update({k: v for k, v in p.items() if k != 'name'})
+            p.clear()
+            p.update(fixed)
 
-    report_files = sorted(p for p in TEAM_A_DIR.glob('*.json') if '-MO' not in p.stem)
+
+def main(full=False):
+    import update_state
+
+    baseline = update_state.init_baseline()
+    done = update_state.get_processed('update_player_history_stats.py')
+
+    if full:
+        # 全量重算（仅数据修复用）：Excel 基线 + 全部 team-a 报告（排除与基线重复的比赛）
+        players = build_baseline()
+        player_map = {p['name']: p for p in players}
+        todo = [p for p in sorted(TEAM_A_DIR.glob('*.json'), key=lambda x: x.name)
+                if '-MO' not in p.stem
+                and not any(pat in p.name for pat in EXCLUDE_FILENAME_PATTERNS)]
+        todo_names = set()
+    else:
+        # 增量模式（默认）：以现有 stats 文件为基线，只处理基线日之后且未处理过的新报告
+        if not STATS_PATH.exists():
+            print('缺少 player_history_stats.json，请先执行 --full 全量重算')
+            return
+        with open(STATS_PATH, 'r', encoding='utf-8') as f:
+            players = json.load(f)['players']
+        player_map = {p['name']: p for p in players}
+        todo = []
+        todo_names = set()
+        for p in sorted(TEAM_A_DIR.glob('*.json'), key=lambda x: x.name):
+            if '-MO' in p.stem or p.name in done:
+                continue
+            if p.stem[:10] <= baseline:
+                continue
+            todo.append(p)
+            todo_names.add(p.name)
+        if not todo:
+            print(f'增量模式：基线日 {baseline} 之后无新比赛，跳过（如需重建请加 --full）')
+            update_state.record_run('update_player_history_stats.py')
+            return
+        print(f'增量模式：基线日 {baseline}，待处理新报告 {len(todo)} 个')
 
     processed = 0
     skipped_competition = []
     skipped_no_role = []
 
-    for path in report_files:
-        if any(pat in path.name for pat in EXCLUDE_FILENAME_PATTERNS):
-            continue
+    for path in todo:
         report = load_json(path)
         m = report.get('match', {})
         if m.get('status') != '已结束':
@@ -378,6 +449,10 @@ def main():
 
         process_report(report, role, comp_key, player_map, players)
         processed += 1
+        if todo_names:
+            todo_names.discard(path.name)  # 未真正累计的（跳过）不入账
+    # 注：todo_names 在循环中移除成功处理的文件；跳过的文件不记入 processed 清单，
+    # 以便其状态修正（如报告更新为已结束）后可再次被处理。
 
     # 清理新球员中可能残留的 None 字段值（保持与 Excel 基线风格一致）
     for p in players:
@@ -389,8 +464,16 @@ def main():
                 if stats.get(field) is None:
                     stats[field] = 0
 
+    apply_known_fixes(players)
+
     with open(STATS_PATH, 'w', encoding='utf-8') as f:
         json.dump({'players': players}, f, ensure_ascii=False, indent=2)
+
+    handled = [p.name for p in todo if p.name not in todo_names]
+    lm = update_state.record_run('update_player_history_stats.py', processed_files=handled)
+    if lm:
+        print(f"状态已记录 (scripts/update_state.json): 更新至 {lm['date']} {lm['competition']} "
+              f"{lm['round']} ({lm.get('matchId')})")
 
     print(f"处理已结束一线队比赛: {processed} 场")
     print(f"球员总数: {len(players)}")
@@ -405,4 +488,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import sys
+    main(full='--full' in sys.argv)

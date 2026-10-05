@@ -206,6 +206,15 @@ def main():
     existing_goals = {(g.get('match_date_code'), g.get('goal_player'), g.get('goal_time')) for g in goal_details}
     max_goal_id = max((g.get('id', 0) for g in goal_details), default=0)
 
+    # 现有最大 match_id（新增记录顺序编号 M0694、M0695...）
+    def _mid_num(m):
+        v = m.get('match_id') or ''
+        try:
+            return int(v[1:]) if v.startswith('M') and v[1:].isdigit() else 0
+        except ValueError:
+            return 0
+    max_mid = max((_mid_num(m) for m in history_schedule), default=0)
+
     report_files = sorted(p for p in TEAM_A_DIR.glob('*.json') if '-MO' not in p.stem)
 
     new_sched = 0
@@ -219,6 +228,8 @@ def main():
         if entry:
             key = (entry['date'], entry['home_team'], entry['away_team'])
             if key not in existing_sched:
+                max_mid += 1
+                entry = {'match_id': f'M{max_mid:04d}', **entry}
                 history_schedule.append(entry)
                 existing_sched.add(key)
                 new_sched += 1
@@ -242,6 +253,12 @@ def main():
     print(f'新增比赛记录（history_schedule）: {new_sched}')
     print(f'新增进球记录（goal_details）: {new_goals}')
     print(f'goal_details 最新 ID: {max_goal_id}')
+
+    from update_state import record_run
+    lm = record_run('sync_history_data.py')
+    if lm:
+        print(f"状态已记录 (scripts/update_state.json): 更新至 {lm['date']} {lm['competition']} "
+              f"{lm['round']} ({lm.get('matchId')})")
 
 
 if __name__ == '__main__':
