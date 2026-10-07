@@ -1,0 +1,1028 @@
+{
+  "season": "2007",
+  "team": "上海东亚",
+  "competitions": [
+    "中乙联赛"
+  ],
+  "dataNote": "源表无比赛报告 sheet，且经网络检索未找到 2008 式逐场首发/换人记录；matches 无 lineup/substitutes/substitutions 明细，但含比分（东亚视角）、赛果与东亚进球明细（进球者/助攻/时间，源自源表进球详情）；appearances 仅含源表中的标记；源表未统计的汇总项为 null（2006 年无首发出场/替补出场/出场时间统计）",
+  "players": [
+    {
+      "number": "1",
+      "name": "颜骏凌",
+      "birthDate": "1991-01-28",
+      "position": "门将",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": 1,
+          "starts": 1,
+          "substitutes": 0,
+          "minutes": 90,
+          "goals": "0",
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      },
+      "appearances": [
+        {
+          "competition": "中乙联赛",
+          "round": "决赛",
+          "date": "2007-11-25",
+          "opponent": "四川",
+          "homeAway": "中立场",
+          "status": "出场",
+          "minutes": 90
+        }
+      ]
+    },
+    {
+      "number": "2",
+      "name": "李运秋",
+      "birthDate": "1990-10-03",
+      "position": "后卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": [
+        {
+          "competition": "中乙联赛",
+          "round": "北区预赛第十四轮",
+          "date": "2007-09-29",
+          "opponent": "镇江中安",
+          "homeAway": "主场",
+          "status": "停赛",
+          "minutes": 0
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "name": "张智",
+      "birthDate": "1989-02-18",
+      "position": "后卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "4",
+      "name": "王燊超",
+      "birthDate": "1989-02-08",
+      "position": "后卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "5",
+      "name": "王佳玉",
+      "birthDate": "1990-09-28",
+      "position": "前卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "4(2)",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "6",
+      "name": "蔡慧康",
+      "birthDate": "1989-10-10",
+      "position": "前卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "7",
+      "name": "王云龙",
+      "birthDate": "1990-02-22",
+      "position": "前锋",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "3",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "8",
+      "name": "曹赟定",
+      "birthDate": "1989-11-12",
+      "position": "前卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "8",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "9",
+      "name": "敖飞帆",
+      "birthDate": "1989-01-24",
+      "position": "前卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "10",
+      "name": "武磊",
+      "birthDate": "1991-11-19",
+      "position": "前锋",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "11",
+      "name": "姜至鹏",
+      "birthDate": "1989-03-06",
+      "position": "后卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "12",
+      "name": "吕文君",
+      "birthDate": "1989-03-11",
+      "position": "前锋",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": 17,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "8",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "13",
+      "name": "朱峥嵘",
+      "birthDate": "1988-10-11",
+      "position": "前锋",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": 17,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "11",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "14",
+      "name": "吴斌",
+      "birthDate": "1989-09-29",
+      "position": "后卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "15",
+      "name": "毛嘉康",
+      "birthDate": "1991-01-17",
+      "position": "前锋",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "16",
+      "name": "战怡麟",
+      "birthDate": "1989-09-20",
+      "position": "前锋",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "17",
+      "name": "李小龙",
+      "birthDate": "1989-09-20",
+      "position": "前卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "18",
+      "name": "孙凯",
+      "birthDate": "1991-03-26",
+      "position": "后卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "19",
+      "name": "刘畅",
+      "birthDate": "1991-03-11",
+      "position": "前卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "20",
+      "name": "张琳芃",
+      "birthDate": "1989-05-09",
+      "position": "前卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "21",
+      "name": "林创滨",
+      "birthDate": "1991-01-21",
+      "position": "前卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "22",
+      "name": "王俊",
+      "birthDate": "1989-10-28",
+      "position": "门将",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "23",
+      "name": "柏佳骏",
+      "birthDate": "1991-03-20",
+      "position": "后卫",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "1",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "24",
+      "name": "顾超",
+      "birthDate": "1989-08-20",
+      "position": "门将",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    },
+    {
+      "number": "25",
+      "name": "张云帆",
+      "birthDate": "1989-11-29",
+      "position": "",
+      "nationality": "中国",
+      "stats": {
+        "中乙联赛": {
+          "totalAppearances": null,
+          "starts": null,
+          "substitutes": null,
+          "minutes": null,
+          "goals": "0",
+          "assists": null,
+          "yellowCards": null,
+          "redCards": null
+        }
+      },
+      "appearances": []
+    }
+  ],
+  "matches": [
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第一轮",
+      "date": "2007-05-05",
+      "opponent": "青岛黎明",
+      "homeAway": "主场",
+      "score": {
+        "goalsFor": 5,
+        "goalsAgainst": 1
+      },
+      "result": "胜",
+      "goals": [
+        {
+          "minute": "11’",
+          "player": "曹赟定",
+          "assist": "王云龙",
+          "isPenalty": false
+        },
+        {
+          "minute": "13’",
+          "player": "吕文君",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": "65’",
+          "player": "朱峥嵘",
+          "assist": "姜至鹏",
+          "isPenalty": false
+        },
+        {
+          "minute": "85’",
+          "player": "王云龙",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": "90’",
+          "player": "朱峥嵘",
+          "assist": null,
+          "isPenalty": false
+        }
+      ],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第二轮",
+      "date": "2007-05-12",
+      "opponent": "天津东丽",
+      "homeAway": "客场",
+      "score": {
+        "goalsFor": 0,
+        "goalsAgainst": 0
+      },
+      "result": "平",
+      "goals": [],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第三轮",
+      "date": "2007-05-26",
+      "opponent": "杭州三超",
+      "homeAway": "主场",
+      "score": {
+        "goalsFor": 4,
+        "goalsAgainst": 1
+      },
+      "result": "胜",
+      "goals": [
+        {
+          "minute": "50’",
+          "player": "朱峥嵘",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": "59’",
+          "player": "曹赟定",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": "80’",
+          "player": "朱峥嵘",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": "84’",
+          "player": "吕文君",
+          "assist": null,
+          "isPenalty": false
+        }
+      ],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第四轮",
+      "date": "2007-06-02",
+      "opponent": "呼和浩特滨海",
+      "homeAway": "客场",
+      "score": {
+        "goalsFor": 4,
+        "goalsAgainst": 2
+      },
+      "result": "胜",
+      "goals": [
+        {
+          "minute": null,
+          "player": "曹赟定",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": null,
+          "player": "朱峥嵘",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": null,
+          "player": "朱峥嵘",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": null,
+          "player": "曹赟定",
+          "assist": null,
+          "isPenalty": false
+        }
+      ],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第五轮",
+      "date": "2007-06-09",
+      "opponent": "火车头泰丽达",
+      "homeAway": "主场",
+      "score": {
+        "goalsFor": 3,
+        "goalsAgainst": 1
+      },
+      "result": "胜",
+      "goals": [
+        {
+          "minute": "65’",
+          "player": "曹赟定",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": "76’",
+          "player": "吕文君",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": null,
+          "player": "曹赟定",
+          "assist": null,
+          "isPenalty": false
+        }
+      ],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第六轮",
+      "date": "2007-06-23",
+      "opponent": "新疆体彩",
+      "homeAway": "主场",
+      "score": {
+        "goalsFor": 2,
+        "goalsAgainst": 3
+      },
+      "result": "负",
+      "goals": [
+        {
+          "minute": "3’",
+          "player": "朱峥嵘",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": "40’",
+          "player": "王佳玉",
+          "assist": null,
+          "isPenalty": true
+        }
+      ],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第七轮",
+      "date": "2007-06-30",
+      "opponent": "镇江中安",
+      "homeAway": "客场",
+      "score": {
+        "goalsFor": 0,
+        "goalsAgainst": 0
+      },
+      "result": "平",
+      "goals": [],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第八轮",
+      "date": "2007-08-04",
+      "opponent": "青岛黎明",
+      "homeAway": "客场",
+      "score": {
+        "goalsFor": 4,
+        "goalsAgainst": 0
+      },
+      "result": "胜",
+      "goals": [
+        {
+          "minute": null,
+          "player": "王佳玉",
+          "assist": null,
+          "isPenalty": true
+        },
+        {
+          "minute": null,
+          "player": "王佳玉",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": null,
+          "player": "朱峥嵘",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": null,
+          "player": "朱峥嵘",
+          "assist": null,
+          "isPenalty": false
+        }
+      ],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第九轮",
+      "date": "2007-08-11",
+      "opponent": "天津东丽",
+      "homeAway": "主场",
+      "score": {
+        "goalsFor": 2,
+        "goalsAgainst": 1
+      },
+      "result": "胜",
+      "goals": [
+        {
+          "minute": "66’",
+          "player": "王云龙",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": "85’",
+          "player": "王云龙",
+          "assist": "曹赟定",
+          "isPenalty": false
+        }
+      ],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第十一轮",
+      "date": "2007-09-01",
+      "opponent": "呼和浩特滨海",
+      "homeAway": "主场",
+      "score": {
+        "goalsFor": 0,
+        "goalsAgainst": 0
+      },
+      "result": "平",
+      "goals": [],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第十二轮",
+      "date": "2007-09-08",
+      "opponent": "火车头泰丽达",
+      "homeAway": "客场",
+      "score": {
+        "goalsFor": 0,
+        "goalsAgainst": 2
+      },
+      "result": "负",
+      "goals": [],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第十轮",
+      "date": "2007-09-14",
+      "opponent": "杭州三超",
+      "homeAway": "客场",
+      "score": {
+        "goalsFor": 1,
+        "goalsAgainst": 0
+      },
+      "result": "胜",
+      "goals": [
+        {
+          "minute": null,
+          "player": "曹赟定",
+          "assist": null,
+          "isPenalty": false
+        }
+      ],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第十三轮",
+      "date": "2007-09-22",
+      "opponent": "新疆体彩",
+      "homeAway": "客场",
+      "score": {
+        "goalsFor": 2,
+        "goalsAgainst": 1
+      },
+      "result": "胜",
+      "goals": [
+        {
+          "minute": "32’",
+          "player": "吕文君",
+          "assist": "王佳玉",
+          "isPenalty": false
+        },
+        {
+          "minute": "45’",
+          "player": "朱峥嵘",
+          "assist": "曹赟定",
+          "isPenalty": false
+        }
+      ],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "北区预赛第十四轮",
+      "date": "2007-09-29",
+      "opponent": "镇江中安",
+      "homeAway": "主场",
+      "score": {
+        "goalsFor": 3,
+        "goalsAgainst": 1
+      },
+      "result": "胜",
+      "goals": [
+        {
+          "minute": "8’",
+          "player": "吕文君",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": "36’",
+          "player": "吕文君",
+          "assist": "战怡麟",
+          "isPenalty": false
+        },
+        {
+          "minute": "73’",
+          "player": "柏佳骏",
+          "assist": null,
+          "isPenalty": false
+        }
+      ],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "半决赛首回合",
+      "date": "2007-11-20",
+      "opponent": "安徽九华山",
+      "homeAway": "中立场",
+      "score": {
+        "goalsFor": 1,
+        "goalsAgainst": 1
+      },
+      "result": "平",
+      "goals": [
+        {
+          "minute": "24’",
+          "player": "曹赟定",
+          "assist": null,
+          "isPenalty": false
+        }
+      ],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "半决赛次回合",
+      "date": "2007-11-22",
+      "opponent": "安徽九华山",
+      "homeAway": "中立场",
+      "score": {
+        "goalsFor": 2,
+        "goalsAgainst": 1
+      },
+      "result": "胜",
+      "goals": [
+        {
+          "minute": "14’",
+          "player": "吕文君",
+          "assist": null,
+          "isPenalty": false
+        },
+        {
+          "minute": "85’",
+          "player": "朱峥嵘",
+          "assist": null,
+          "isPenalty": false
+        }
+      ],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": []
+    },
+    {
+      "competition": "中乙联赛",
+      "round": "决赛",
+      "date": "2007-11-25",
+      "opponent": "四川",
+      "homeAway": "中立场",
+      "score": {
+        "goalsFor": 2,
+        "goalsAgainst": 1
+      },
+      "result": "胜",
+      "goals": [
+        {
+          "minute": "72’",
+          "player": "吕文君",
+          "assist": "敖飞帆",
+          "isPenalty": false
+        },
+        {
+          "minute": "75’",
+          "player": "王佳玉",
+          "assist": null,
+          "isPenalty": false
+        }
+      ],
+      "lineup": [],
+      "substitutes": [],
+      "substitutions": [],
+      "note": "决赛于昆明举行：第70分钟曹赟定替补登场，四川队陈少钦先入一球；第72分钟吕文君扳平（敖飞帆助攻），第75分钟王佳玉任意球反超，敖飞帆第77分钟染黄；颜骏凌首发门将。来源：搜狐体育战报"
+    }
+  ]
+}

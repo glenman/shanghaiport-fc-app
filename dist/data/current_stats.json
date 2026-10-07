@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-20",
+  "lastUpdated": "2026-10-07",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
@@ -1538,10 +1538,10 @@
   },
   "bTeam": {
     "teamName": "上海海港富盛经开",
-    "matchesPlayed": 24,
-    "record": "14胜4平6负",
-    "goalsFor": 39,
-    "goalsAgainst": 19,
+    "matchesPlayed": 25,
+    "record": "14胜4平7负",
+    "goalsFor": 40,
+    "goalsAgainst": 21,
     "points": 46,
     "topScorers": [
       {
@@ -1676,7 +1676,7 @@
         "rank": 3,
         "name": "李圣龙",
         "number": 14,
-        "goals": 4,
+        "goals": 5,
         "details": [
           {
             "match": "第1轮",
@@ -1704,6 +1704,13 @@
             "date": "2026-08-22",
             "time": "82'",
             "opponent": "青岛红狮",
+            "type": "进球"
+          },
+          {
+            "match": "第25轮",
+            "date": "2026-10-06",
+            "time": "14'",
+            "opponent": "贵州贵阳竞技",
             "type": "进球"
           }
         ]
@@ -1928,7 +1935,7 @@
         "rank": 1,
         "name": "李佳奇",
         "number": 16,
-        "assists": 3,
+        "assists": 4,
         "details": [
           {
             "match": "第15轮",
@@ -1947,6 +1954,12 @@
             "date": "2026-07-18",
             "time": "26'",
             "opponent": "长春喜都"
+          },
+          {
+            "match": "第25轮",
+            "date": "2026-10-06",
+            "time": "14'",
+            "opponent": "贵州贵阳竞技"
           }
         ]
       },
@@ -2555,75 +2568,44 @@
     "competitions": {
       "中国足球协会乙级联赛": {
         "matchesPlayed": 1,
-        "record": "1胜0平0负",
-        "goalsFor": 2,
-        "goalsAgainst": 0,
-        "points": 3,
+        "record": "0胜0平1负",
+        "goalsFor": 1,
+        "goalsAgainst": 2,
+        "points": 0,
         "topScorers": [
-          {
-            "rank": 1,
-            "name": "汪照普",
-            "number": 43,
-            "goals": 1,
-            "details": [
-              {
-                "match": "第24轮",
-                "date": "2026-09-19",
-                "time": "62'",
-                "opponent": "杭州临平吴越",
-                "type": "进球"
-              }
-            ]
-          },
-          {
-            "rank": 2,
-            "name": "杨黔东",
-            "number": 44,
-            "goals": 1,
-            "details": [
-              {
-                "match": "第24轮",
-                "date": "2026-09-19",
-                "time": "90'",
-                "opponent": "杭州临平吴越",
-                "type": "进球"
-              }
-            ]
-          }
-        ],
-        "topAssists": [],
-        "yellowCards": [
           {
             "rank": 1,
             "name": "李圣龙",
             "number": 14,
-            "yellowCards": 1,
+            "goals": 1,
             "details": [
               {
-                "match": "第24轮",
-                "date": "2026-09-19",
-                "time": "56'",
-                "opponent": "杭州临平吴越",
-                "reason": "上海海港富盛经开李圣龙领到黄牌"
-              }
-            ]
-          },
-          {
-            "rank": 2,
-            "name": "杨黔东",
-            "number": 44,
-            "yellowCards": 1,
-            "details": [
-              {
-                "match": "第24轮",
-                "date": "2026-09-19",
-                "time": "86'",
-                "opponent": "杭州临平吴越",
-                "reason": "上海海港富盛经开杨黔东领到黄牌"
+                "match": "第25轮",
+                "date": "2026-10-06",
+                "time": "14'",
+                "opponent": "贵州贵阳竞技",
+                "type": "进球"
               }
             ]
           }
         ],
+        "topAssists": [
+          {
+            "rank": 1,
+            "name": "李佳奇",
+            "number": 16,
+            "assists": 1,
+            "details": [
+              {
+                "match": "第25轮",
+                "date": "2026-10-06",
+                "time": "14'",
+                "opponent": "贵州贵阳竞技"
+              }
+            ]
+          }
+        ],
+        "yellowCards": [],
         "redCards": []
       }
     }
