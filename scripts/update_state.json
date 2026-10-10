@@ -1,18 +1,26 @@
 {
   "lastMatch": {
-    "file": "2026-09-15-亚冠-第1轮.json",
-    "date": "2026-09-15",
-    "matchId": "M0693",
-    "competition": "亚足联冠军精英联赛",
-    "round": "第1轮",
-    "homeTeam": "拉查武里",
+    "file": "2026-10-09-中超-第27轮.json",
+    "date": "2026-10-09",
+    "matchId": "M0694",
+    "competition": "中国足球协会超级联赛",
+    "round": "第27轮",
+    "homeTeam": "浙江职业俱乐部",
     "awayTeam": "上海海港",
-    "result": "4-6"
+    "result": "2-4"
   },
   "scripts": {
-    "sync_history_data.py": "2026-10-05T12:49:11",
-    "update_player_history_stats.py": "2026-10-05T12:49:23",
-    "update_player_appearance_details.py": "2026-10-05T12:49:23"
+    "sync_history_data.py": "2026-10-10T11:57:22",
+    "update_player_history_stats.py": "2026-10-10T10:51:33",
+    "update_player_appearance_details.py": "2026-10-10T10:51:49"
   },
-  "baselineDate": "2026-10-05"
+  "baselineDate": "2026-10-05",
+  "processed": {
+    "update_player_history_stats.py": [
+      "2026-10-09-中超-第27轮.json"
+    ],
+    "update_player_appearance_details.py": [
+      "2026-10-09-中超-第27轮.json"
+    ]
+  }
 }
