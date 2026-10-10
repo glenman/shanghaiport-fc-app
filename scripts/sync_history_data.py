@@ -83,7 +83,7 @@ def format_goal_time(minute, minute_extra):
 
 
 def goal_marker(goal_type, is_own_goal, etype=''):
-    if is_own_goal or goal_type == 'own_goal':
+    if is_own_goal or goal_type == 'own_goal' or etype == 'own_goal':
         return '(OG)'
     if etype == 'penalty_goal' or goal_type in ('penalty', 'penalty_goal'):
         return '(PK)'
@@ -92,7 +92,7 @@ def goal_marker(goal_type, is_own_goal, etype=''):
 
 def extract_goal_events(report):
     events = report.get('matchTimeline') or report.get('highlights') or []
-    return [e for e in events if e.get('type') in ('goal', 'penalty_goal')]
+    return [e for e in events if e.get('type') in ('goal', 'penalty_goal', 'own_goal')]
 
 
 def build_history_entry(report):
@@ -115,6 +115,9 @@ def build_history_entry(report):
         if not player:
             continue
         marker = goal_marker(e.get('goal_type', ''), e.get('isOwnGoal', False), e.get('type', ''))
+        # 乌龙球记到对方一侧（team 为乌龙球员所属队）
+        if marker == '(OG)':
+            team = 'away' if team == 'home' else 'home'
         if team == 'home':
             scorers['home'].append(player + marker)
         elif team == 'away':
@@ -173,9 +176,9 @@ def build_goal_entries(report):
         if not player:
             continue
         marker = goal_marker(e.get('goal_type', ''), e.get('isOwnGoal', False), e.get('type', ''))
-        assist = e.get('player2') or e.get('assist') or '—'
         if marker == '(OG)':
-            assist = '—'  # 乌龙球不计助攻
+            continue  # 乌龙球不计入海港方进球明细（保持既有口径：goal_details 无 OG 记录）
+        assist = e.get('player2') or e.get('assist') or '—'
 
         goals.append({
             'season': m.get('season', ''),

@@ -906,8 +906,10 @@
             );
             if (goalEvents.length === 0) return '';
             
-            const homeGoals = goalEvents.filter(event => event.team === 'home');
-            const awayGoals = goalEvents.filter(event => event.team === 'away');
+            // 乌龙球的 team 为乌龙球员所属队，得分归属对方，归边需取反
+            const isOwnGoalEvent = (e) => e.goal_type === 'own_goal' || e.type === 'own_goal' || e.isOwnGoal;
+            const homeGoals = goalEvents.filter(event => isOwnGoalEvent(event) ? event.team === 'away' : event.team === 'home');
+            const awayGoals = goalEvents.filter(event => isOwnGoalEvent(event) ? event.team === 'home' : event.team === 'away');
             
             function renderGoalList(goals, teamName) {
               if (goals.length === 0) {

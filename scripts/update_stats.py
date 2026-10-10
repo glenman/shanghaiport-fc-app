@@ -23,6 +23,12 @@ TEAM_NAMES = {
     'b_team': '上海海港富盛经开'
 }
 
+# 赛季罚分（足协纪律处罚扣分，单位：分）
+# 2026-01-29 足协"假赌黑"罚单：海港因2014-2017年不正当交易被扣2026赛季中超积分5分
+POINTS_DEDUCTION = {
+    '2026': {'中国足球协会超级联赛': -5},
+}
+
 # 加载比赛类型映射
 def load_competitions():
     """加载比赛类型映射"""
@@ -687,9 +693,9 @@ def merge_player_stats(existing_stats, new_stats, detail_key):
                         detail_keys.add(new_key)
                 
                 merged[name]['details'] = existing_details
-                # 更新统计数量为实际去重后的数量
+                # 更新统计数量为实际去重后的数量（点球的 type 为'点球'，需一并计入进球）
                 if 'goals' in merged[name]:
-                    merged[name]['goals'] = len([d for d in existing_details if 'type' in d and d['type'] == '进球'])
+                    merged[name]['goals'] = len([d for d in existing_details if d.get('type') in ('进球', '点球')])
                 elif 'assists' in merged[name]:
                     merged[name]['assists'] = len(existing_details)
                 elif 'yellowCards' in merged[name]:
@@ -717,8 +723,39 @@ def merge_player_stats(existing_stats, new_stats, detail_key):
     # 更新排名
     for i, item in enumerate(result, 1):
         item['rank'] = i
-    
+
     return result
+
+def merge_competition_stats(existing_comps, new_comps):
+    """增量合并分赛事统计：榜单用 merge_player_stats 合并去重，战绩类字段累加，不影响历史数据
+
+    积分说明：existing 的积分已含赛季罚分（全量时写入），直接累加新比赛积分即可，不重复扣分；
+    杯赛积分在构建时已置 0，合并保持 0。
+    """
+    import re
+    merged = dict(existing_comps or {})
+    for comp, new in (new_comps or {}).items():
+        if comp not in merged:
+            # 全新赛事类型：直接采用本次数据
+            merged[comp] = new
+            continue
+        old = merged[comp]
+        om = re.match(r'(\d+)胜(\d+)平(\d+)负', old.get('record', '0胜0平0负'))
+        nm = re.match(r'(\d+)胜(\d+)平(\d+)负', new.get('record', '0胜0平0负'))
+        ow, od, ol = (int(x) for x in om.groups())
+        nw, nd, nl = (int(x) for x in nm.groups())
+        merged[comp] = {
+            'matchesPlayed': old.get('matchesPlayed', 0) + new.get('matchesPlayed', 0),
+            'record': f"{ow + nw}胜{od + nd}平{ol + nl}负",
+            'goalsFor': old.get('goalsFor', 0) + new.get('goalsFor', 0),
+            'goalsAgainst': old.get('goalsAgainst', 0) + new.get('goalsAgainst', 0),
+            'points': old.get('points', 0) + new.get('points', 0),
+            'topScorers': merge_player_stats(old.get('topScorers', []), new.get('topScorers', []), 'goals'),
+            'topAssists': merge_player_stats(old.get('topAssists', []), new.get('topAssists', []), 'assists'),
+            'yellowCards': merge_player_stats(old.get('yellowCards', []), new.get('yellowCards', []), 'yellowCards'),
+            'redCards': merge_player_stats(old.get('redCards', []), new.get('redCards', []), 'redCards')
+        }
+    return merged
 
 def main():
     """主函数"""
@@ -859,7 +896,8 @@ def main():
     first_team_competition_stats = extract_statistics_by_competition(first_team_matches, TEAM_NAMES['first'], is_b_team=False)
     b_team_competition_stats = extract_statistics_by_competition(b_team_matches, TEAM_NAMES['b_team'], is_b_team=True)
 
-    # 构建比赛类型统计数据
+    # 构建比赛类型统计数据（此处为裸积分，未应用罚分；罚分在出口处统一处理）
+    season_deduction = POINTS_DEDUCTION.get('2026', {})
     first_team_competitions_data = {}
     for comp, stats in first_team_competition_stats.items():
         record, points, goals_for, goals_against, _, _, _ = calculate_record([m for m in first_team_matches if m.get('competition') == comp])
@@ -889,6 +927,19 @@ def main():
             'yellowCards': stats['yellow'],
             'redCards': stats['red']
         }
+
+    # 出口：增量模式合并分赛事数据（保留历史，existing 积分已含罚分）；
+    # 全量模式应用赛季罚分（分赛事与顶层）
+    if args.incremental and existing_data:
+        first_team_competitions_data = merge_competition_stats(
+            existing_data['firstTeam'].get('competitions', {}), first_team_competitions_data)
+        b_team_competitions_data = merge_competition_stats(
+            existing_data['bTeam'].get('competitions', {}), b_team_competitions_data)
+    else:
+        for comp in first_team_competitions_data:
+            if not is_cup_competition(comp):
+                first_team_competitions_data[comp]['points'] += season_deduction.get(comp, 0)
+        first_team_points += sum(season_deduction.values())
 
     # 生成统计结果
     stats_data = {
