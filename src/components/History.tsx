@@ -14,6 +14,22 @@ interface HistoryMatch {
 
 const OUR_TEAM_NAMES = ['上海东亚', '上海上港', '上海海港'];
 
+// 同一俱乐部不同时期的历史名称分组：历史交锋查询时互相关联
+const OPPONENT_ALIAS_GROUPS: string[][] = [
+  ['浙江', '杭州绿城'], // 浙江足球俱乐部（2018年前名为杭州绿城）
+];
+
+// 名称 -> 关联名称集合（含自身）
+const OPPONENT_ALIASES: Record<string, string[]> = (() => {
+  const map: Record<string, string[]> = {};
+  for (const group of OPPONENT_ALIAS_GROUPS) {
+    for (const name of group) {
+      map[name] = [...group];
+    }
+  }
+  return map;
+})();
+
 const History: React.FC = () => {
   const [historyData, setHistoryData] = useState<HistoryMatch[]>([]);
   const [loading, setLoading] = useState(true);
@@ -96,9 +112,11 @@ const History: React.FC = () => {
 
   const headToHeadMatches = useMemo(() => {
     if (!selectedOpponent) return [];
+    // 关联同一俱乐部不同时期的名称（如浙江/杭州绿城）
+    const aliases = OPPONENT_ALIASES[selectedOpponent] || [selectedOpponent];
     return historyData
-      .filter(match => 
-        match.home_team === selectedOpponent || match.away_team === selectedOpponent
+      .filter(match =>
+        aliases.includes(match.home_team) || aliases.includes(match.away_team)
       )
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   }, [historyData, selectedOpponent]);
