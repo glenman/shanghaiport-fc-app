@@ -104,8 +104,9 @@ shanghaiport-fc-app/
 │   │   ├── current_stats.json          # 当季数据统计（进球/助攻/红黄牌）
 │   │   ├── seasons.json                # 历史赛季记录（联赛 + 杯赛成绩汇总）
 │   │   ├── history_schedule.json       # 历史逐场比赛记录（2015 至今，含主客场教练）
-│   │   ├── player_history_stats.json   # 球员历史参赛统计
-│   │   ├── goal_details.json           # 逐场进球/助攻明细
+│   │   ├── player_history_stats.json   # 球员历史参赛统计（专家库汇总③）
+│   │   ├── goal_details.json           # 逐场进球/助攻明细（专家库汇总②）
+│   │   ├── player_appearance_details.json # 球员逐场出场明细（专家库汇总④）
 │   │   ├── short_names.json            # 外籍教练/球员简称映射表
 │   │   └── competitions.json           # 比赛类型映射
 │   ├── match-overview-stats.html       # 赛事统计详情页面
@@ -147,6 +148,21 @@ python scripts/update_stats.py --incremental
 python scripts/update_stats.py --full
 ```
 
+### 专家库四大汇总统计文件
+
+以下 4 个文件为构建**专家库**所用，是一线队比赛更新流程的必达产物。**日常更新比赛结果时，必须在完成正常的 normalization（比赛报告规范化：球员姓名标准化、场地/赛事名本地化等）之后，才执行相关汇总更新**（B队比赛不进这 4 个文件）：
+
+| # | 文件 | 更新脚本 | 更新方式 |
+|---|------|---------|---------|
+| 1 | `public/data/history_schedule.json` | `scripts/sync_history_data.py` | 幂等追加新比赛，自动分配 Mxxxx 编号 |
+| 2 | `public/data/goal_details.json` | `scripts/sync_history_data.py` | 幂等追加海港方进球（乌龙不进；PK/OG 标记） |
+| 3 | `public/data/player_history_stats.json` | `scripts/update_player_history_stats.py` | 增量累加（`update_state.json` 防重复） |
+| 4 | `public/data/player_appearance_details.json` | `scripts/update_player_appearance_details.py` | 增量追加出场明细（matchId 关联，同步年度归档 `history/<年>/`） |
+
+**顺序依赖**：`sync_history_data.py` 先跑（分配 matchId），两个增量脚本随后。
+
+**更新后校验**：`python .trae/skills/football-data-audit/scripts/validate_data.py`（硬错误必须为 0）。
+
 ### 比赛类型说明
 
 比赛类型通过 `competitions.json` 统一管理：
@@ -180,9 +196,10 @@ python scripts/update_stats.py --full
 | public/data/players_b.json | B队球员名单 |
 | public/data/current_stats.json | 当季数据统计（按比赛类型分组） |
 | public/data/seasons.json | 历史赛季记录（联赛成绩 + 足协杯/亚冠/超级杯杯赛成绩汇总） |
-| public/data/history_schedule.json | 历史逐场比赛记录（含主客场教练，2015 至今） |
-| public/data/player_history_stats.json | 球员历史参赛统计（供参赛统计查询使用） |
-| public/data/goal_details.json | 逐场进球/助攻明细（供进球助攻汇总使用） |
+| public/data/history_schedule.json | 历史逐场比赛记录（含主客场教练，2015 至今；专家库汇总文件①） |
+| public/data/player_history_stats.json | 球员历史参赛统计（供参赛统计查询使用；专家库汇总文件③） |
+| public/data/goal_details.json | 逐场进球/助攻明细（供进球助攻汇总使用；专家库汇总文件②） |
+| public/data/player_appearance_details.json | 球员逐场出场明细 matchId/status/minutes（专家库汇总文件④，联动年度归档） |
 | public/data/short_names.json | 外籍教练/球员简称映射表 |
 | public/data/competitions.json | 比赛类型映射配置 |
 | public/data/team-a/YYYY-MM-DD-赛事-第X轮.json | 一线队单场比赛报告 |
@@ -280,9 +297,49 @@ python scripts/update_stats.py --full
 }
 ```
 
+## 日常维护指南
+
+### 每轮一线队比赛后（核心流程，顺序不可乱）
+
+```bash
+# ① 更新赛程 schedule.json（比分/状态/裁判/教练/观众/进球者）
+# ② 准备比赛报告 public/data/team-a/YYYY-MM-DD-赛事-第X轮.json
+
+# ③ 报告规范化（专家库汇总的前置条件）
+python scripts/normalize_match_report.py "public/data/team-a/YYYY-MM-DD-赛事-第X轮.json"
+
+# ④ 专家库四大汇总（sync 先跑分配 matchId）
+python scripts/sync_history_data.py
+python scripts/update_player_history_stats.py
+python scripts/update_player_appearance_details.py
+
+# ⑤ 当季统计（增量；含分赛事合并与赛季罚分）
+python scripts/update_stats.py --incremental
+
+# ⑥ 交叉校验（硬错误必须为 0）
+python .trae/skills/football-data-audit/scripts/validate_data.py
+```
+
+> 全流程推荐直接使用 **match-result-updater** 技能自动编排（`更新一线队比赛结果，XX vs XX X:X`）。
+
+### B队比赛后
+
+仅更新 `schedule_b.json` + 比赛报告 + `update_stats.py --incremental`（B队数据不进专家库四大汇总文件）。
+
+### 其他周期性维护
+
+| 周期 | 事项 |
+|------|------|
+| 每周 | 数据一致性检查、备份 `public/data/` 与 `datafile/` |
+| 每月/转会期 | 球员名单更新（players.json / players_b.json）、号码核对 |
+| 赛季末 | 数据归档至 `history/<年份>/`、seasons.json 赛季汇总、新赛季准备 |
+
+详细操作见 [docs/日常维护工作指南.md](docs/日常维护工作指南.md)。
+
 ## 文档
 
 - [docs/综合项目报告.md](docs/综合项目报告.md) - 完整的项目分析报告
+- [docs/日常维护工作指南.md](docs/日常维护工作指南.md) - 日常维护全流程（每轮/每周/每月/赛季末）
 - [docs/更新比赛结果操作指南.md](docs/更新比赛结果操作指南.md) - 比赛结果更新流程
 - [docs/当季数据统计更新操作指南.md](docs/当季数据统计更新操作指南.md) - 数据统计更新说明
 - [docs/match-result-updater-skill.md](docs/match-result-updater-skill.md) - 技能使用说明

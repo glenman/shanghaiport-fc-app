@@ -7,6 +7,21 @@ description: "Updates match results for Shanghai Port FC teams. Invoke when user
 
 This skill automates the process of updating match results for Shanghai Port FC teams (first team and B team), including match report localization and standardization.
 
+## 四大汇总统计文件（比赛更新必达产物）
+
+每次更新**一线队**比赛结果后，以下 4 个汇总统计文件必须全部同步更新（B队比赛不进这 4 个文件，仅更新 schedule_b/current_stats）：
+
+| # | 文件 | 更新脚本 | 更新方式 |
+|---|------|---------|---------|
+| 1 | `public/data/history_schedule.json` | `sync_history_data.py` | 幂等追加新比赛，自动分配 Mxxxx 编号 |
+| 2 | `public/data/goal_details.json` | `sync_history_data.py` | 幂等追加海港方进球（dedupe；乌龙不进；PK/OG 标记） |
+| 3 | `public/data/player_history_stats.json` | `update_player_history_stats.py` | 增量累加（update_state.json 记录 processed 防重复） |
+| 4 | `public/data/player_appearance_details.json` | `update_player_appearance_details.py` | 增量追加出场明细（matchId 关联；同步年度归档 `history/<年>/`） |
+
+**顺序依赖**：`sync_history_data.py` 必须先跑（分配 matchId），两个增量脚本随后。
+
+**更新后校验**：`python .trae/skills/football-data-audit/scripts/validate_data.py`（硬错误必须为 0；WARN 基线见 football-data-audit SKILL.md）。
+
 ## Features
 
 1. **Update Schedule Files**
