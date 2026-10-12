@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-10",
+  "lastUpdated": "2026-10-12",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
@@ -3406,17 +3406,17 @@
   },
   "bTeam": {
     "teamName": "上海海港富盛经开",
-    "matchesPlayed": 25,
-    "record": "14胜4平7负",
-    "goalsFor": 40,
-    "goalsAgainst": 21,
-    "points": 46,
+    "matchesPlayed": 26,
+    "record": "15胜4平7负",
+    "goalsFor": 42,
+    "goalsAgainst": 22,
+    "points": 49,
     "topScorers": [
       {
         "rank": 1,
         "name": "温钧翔",
         "number": 35,
-        "goals": 9,
+        "goals": 10,
         "details": [
           {
             "match": "第1轮",
@@ -3479,6 +3479,13 @@
             "date": "2026-07-26",
             "time": "57'",
             "opponent": "泰安天贶",
+            "type": "进球"
+          },
+          {
+            "match": "第26轮",
+            "date": "2026-10-11",
+            "time": "11'",
+            "opponent": "深圳二零二八",
             "type": "进球"
           }
         ]
@@ -3643,6 +3650,35 @@
       },
       {
         "rank": 6,
+        "name": "张慧宇",
+        "number": 10,
+        "goals": 3,
+        "details": [
+          {
+            "match": "第2轮",
+            "date": "2026-04-05",
+            "time": "13'",
+            "opponent": "海门珂缔缘",
+            "type": "进球"
+          },
+          {
+            "match": "第20轮",
+            "date": "2026-08-08",
+            "time": "72'",
+            "opponent": "山东泰山B队",
+            "type": "进球"
+          },
+          {
+            "match": "第26轮",
+            "date": "2026-10-11",
+            "time": "75'",
+            "opponent": "深圳二零二八",
+            "type": "进球"
+          }
+        ]
+      },
+      {
+        "rank": 7,
         "name": "张俊杰",
         "number": 37,
         "goals": 2,
@@ -3658,28 +3694,6 @@
             "match": "第9轮",
             "date": "2026-05-22",
             "time": "13'",
-            "opponent": "山东泰山B队",
-            "type": "进球"
-          }
-        ]
-      },
-      {
-        "rank": 7,
-        "name": "张慧宇",
-        "number": 10,
-        "goals": 2,
-        "details": [
-          {
-            "match": "第2轮",
-            "date": "2026-04-05",
-            "time": "13'",
-            "opponent": "海门珂缔缘",
-            "type": "进球"
-          },
-          {
-            "match": "第20轮",
-            "date": "2026-08-08",
-            "time": "72'",
             "opponent": "山东泰山B队",
             "type": "进球"
           }
@@ -3835,7 +3849,7 @@
         "rank": 2,
         "name": "张俊杰",
         "number": 37,
-        "assists": 3,
+        "assists": 4,
         "details": [
           {
             "match": "第4轮",
@@ -3854,6 +3868,12 @@
             "date": "2026-08-22",
             "time": "55'",
             "opponent": "青岛红狮"
+          },
+          {
+            "match": "第26轮",
+            "date": "2026-10-11",
+            "time": "11'",
+            "opponent": "深圳二零二八"
           }
         ]
       },
@@ -4012,6 +4032,20 @@
             "date": "2026-08-01",
             "time": "73'",
             "opponent": "大连英博B队"
+          }
+        ]
+      },
+      {
+        "rank": 13,
+        "name": "李圣龙",
+        "number": 14,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第26轮",
+            "date": "2026-10-11",
+            "time": "75'",
+            "opponent": "深圳二零二八"
           }
         ]
       }
@@ -4435,17 +4469,17 @@
     ],
     "competitions": {
       "中国足球协会乙级联赛": {
-        "matchesPlayed": 25,
-        "record": "14胜4平7负",
-        "goalsFor": 40,
-        "goalsAgainst": 21,
-        "points": 46,
+        "matchesPlayed": 26,
+        "record": "15胜4平7负",
+        "goalsFor": 42,
+        "goalsAgainst": 22,
+        "points": 49,
         "topScorers": [
           {
             "rank": 1,
             "name": "温钧翔",
             "number": 35,
-            "goals": 9,
+            "goals": 10,
             "details": [
               {
                 "match": "第1轮",
@@ -4508,6 +4542,13 @@
                 "date": "2026-07-26",
                 "time": "57'",
                 "opponent": "泰安天贶",
+                "type": "进球"
+              },
+              {
+                "match": "第26轮",
+                "date": "2026-10-11",
+                "time": "11'",
+                "opponent": "深圳二零二八",
                 "type": "进球"
               }
             ]
@@ -4672,6 +4713,35 @@
           },
           {
             "rank": 6,
+            "name": "张慧宇",
+            "number": 10,
+            "goals": 3,
+            "details": [
+              {
+                "match": "第2轮",
+                "date": "2026-04-05",
+                "time": "13'",
+                "opponent": "海门珂缔缘",
+                "type": "进球"
+              },
+              {
+                "match": "第20轮",
+                "date": "2026-08-08",
+                "time": "72'",
+                "opponent": "山东泰山B队",
+                "type": "进球"
+              },
+              {
+                "match": "第26轮",
+                "date": "2026-10-11",
+                "time": "75'",
+                "opponent": "深圳二零二八",
+                "type": "进球"
+              }
+            ]
+          },
+          {
+            "rank": 7,
             "name": "张俊杰",
             "number": 37,
             "goals": 2,
@@ -4687,28 +4757,6 @@
                 "match": "第9轮",
                 "date": "2026-05-22",
                 "time": "13'",
-                "opponent": "山东泰山B队",
-                "type": "进球"
-              }
-            ]
-          },
-          {
-            "rank": 7,
-            "name": "张慧宇",
-            "number": 10,
-            "goals": 2,
-            "details": [
-              {
-                "match": "第2轮",
-                "date": "2026-04-05",
-                "time": "13'",
-                "opponent": "海门珂缔缘",
-                "type": "进球"
-              },
-              {
-                "match": "第20轮",
-                "date": "2026-08-08",
-                "time": "72'",
                 "opponent": "山东泰山B队",
                 "type": "进球"
               }
@@ -4864,7 +4912,7 @@
             "rank": 2,
             "name": "张俊杰",
             "number": 37,
-            "assists": 3,
+            "assists": 4,
             "details": [
               {
                 "match": "第4轮",
@@ -4883,6 +4931,12 @@
                 "date": "2026-08-22",
                 "time": "55'",
                 "opponent": "青岛红狮"
+              },
+              {
+                "match": "第26轮",
+                "date": "2026-10-11",
+                "time": "11'",
+                "opponent": "深圳二零二八"
               }
             ]
           },
@@ -5041,6 +5095,20 @@
                 "date": "2026-08-01",
                 "time": "73'",
                 "opponent": "大连英博B队"
+              }
+            ]
+          },
+          {
+            "rank": 13,
+            "name": "李圣龙",
+            "number": 14,
+            "assists": 1,
+            "details": [
+              {
+                "match": "第26轮",
+                "date": "2026-10-11",
+                "time": "75'",
+                "opponent": "深圳二零二八"
               }
             ]
           }
