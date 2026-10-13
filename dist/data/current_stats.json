@@ -1,13 +1,12 @@
 {
-  "lastUpdated": "2026-10-12",
+  "lastUpdated": "2026-10-13",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
-    "matchesPlayed": 32,
-    "record": "15胜8平9负",
-    "goalsFor": 56,
-    "goalsAgainst": 43,
-    "points": 48,
+    "matchesPlayed": 33,
+    "record": "15胜9平9负",
+    "goalsFor": 57,
+    "goalsAgainst": 44,
     "topScorers": [
       {
         "rank": 1,
@@ -91,7 +90,7 @@
         "rank": 2,
         "name": "安佩姆",
         "number": 17,
-        "goals": 8,
+        "goals": 9,
         "details": [
           {
             "match": "第8轮",
@@ -147,6 +146,13 @@
             "date": "2026-10-09",
             "time": "18'",
             "opponent": "浙江",
+            "type": "进球"
+          },
+          {
+            "match": "第2轮",
+            "date": "2026-10-13",
+            "time": "49'",
+            "opponent": "大田韩亚市民",
             "type": "进球"
           }
         ]
@@ -3258,17 +3264,17 @@
         "redCards": []
       },
       "亚足联冠军精英联赛": {
-        "matchesPlayed": 1,
-        "record": "1胜0平0负",
-        "goalsFor": 6,
-        "goalsAgainst": 4,
-        "points": 3,
+        "matchesPlayed": 2,
+        "record": "1胜1平0负",
+        "goalsFor": 7,
+        "goalsAgainst": 5,
+        "points": 4,
         "topScorers": [
           {
             "rank": 1,
             "name": "安佩姆",
             "number": 17,
-            "goals": 3,
+            "goals": 4,
             "details": [
               {
                 "match": "第1轮",
@@ -3289,6 +3295,13 @@
                 "date": "2026-09-15",
                 "time": "45'+1'",
                 "opponent": "拉查武里",
+                "type": "进球"
+              },
+              {
+                "match": "第2轮",
+                "date": "2026-10-13",
+                "time": "49'",
+                "opponent": "大田韩亚市民",
                 "type": "进球"
               }
             ]
@@ -3398,6 +3411,21 @@
                 "reason": "上海海港米格尔·坎波斯手球犯规获得黄牌"
               }
             ]
+          },
+          {
+            "rank": 2,
+            "name": "魏震",
+            "number": 13,
+            "yellowCards": 1,
+            "details": [
+              {
+                "match": "第2轮",
+                "date": "2026-10-13",
+                "time": "45'",
+                "opponent": "大田韩亚市民",
+                "reason": "上海海港魏震因非体育行为领到黄牌"
+              }
+            ]
           }
         ],
         "redCards": []
@@ -3410,7 +3438,6 @@
     "record": "15胜4平7负",
     "goalsFor": 42,
     "goalsAgainst": 22,
-    "points": 49,
     "topScorers": [
       {
         "rank": 1,
@@ -3953,6 +3980,20 @@
       },
       {
         "rank": 7,
+        "name": "李圣龙",
+        "number": 14,
+        "assists": 1,
+        "details": [
+          {
+            "match": "第26轮",
+            "date": "2026-10-11",
+            "time": "75'",
+            "opponent": "深圳二零二八"
+          }
+        ]
+      },
+      {
+        "rank": 8,
         "name": "许瑞轩",
         "number": 30,
         "assists": 1,
@@ -3966,7 +4007,7 @@
         ]
       },
       {
-        "rank": 8,
+        "rank": 9,
         "name": "谢鸿宇",
         "number": 20,
         "assists": 1,
@@ -3980,7 +4021,7 @@
         ]
       },
       {
-        "rank": 9,
+        "rank": 10,
         "name": "李瑞龙",
         "number": 24,
         "assists": 1,
@@ -3994,7 +4035,7 @@
         ]
       },
       {
-        "rank": 10,
+        "rank": 11,
         "name": "曹哲哲",
         "number": 58,
         "assists": 1,
@@ -4008,7 +4049,7 @@
         ]
       },
       {
-        "rank": 11,
+        "rank": 12,
         "name": "范阳阳",
         "number": 8,
         "assists": 1,
@@ -4022,7 +4063,7 @@
         ]
       },
       {
-        "rank": 12,
+        "rank": 13,
         "name": "张慧宇",
         "number": 10,
         "assists": 1,
@@ -4032,20 +4073,6 @@
             "date": "2026-08-01",
             "time": "73'",
             "opponent": "大连英博B队"
-          }
-        ]
-      },
-      {
-        "rank": 13,
-        "name": "李圣龙",
-        "number": 14,
-        "assists": 1,
-        "details": [
-          {
-            "match": "第26轮",
-            "date": "2026-10-11",
-            "time": "75'",
-            "opponent": "深圳二零二八"
           }
         ]
       }
@@ -5016,6 +5043,20 @@
           },
           {
             "rank": 7,
+            "name": "李圣龙",
+            "number": 14,
+            "assists": 1,
+            "details": [
+              {
+                "match": "第26轮",
+                "date": "2026-10-11",
+                "time": "75'",
+                "opponent": "深圳二零二八"
+              }
+            ]
+          },
+          {
+            "rank": 8,
             "name": "许瑞轩",
             "number": 30,
             "assists": 1,
@@ -5029,7 +5070,7 @@
             ]
           },
           {
-            "rank": 8,
+            "rank": 9,
             "name": "谢鸿宇",
             "number": 20,
             "assists": 1,
@@ -5043,7 +5084,7 @@
             ]
           },
           {
-            "rank": 9,
+            "rank": 10,
             "name": "李瑞龙",
             "number": 24,
             "assists": 1,
@@ -5057,7 +5098,7 @@
             ]
           },
           {
-            "rank": 10,
+            "rank": 11,
             "name": "曹哲哲",
             "number": 58,
             "assists": 1,
@@ -5071,7 +5112,7 @@
             ]
           },
           {
-            "rank": 11,
+            "rank": 12,
             "name": "范阳阳",
             "number": 8,
             "assists": 1,
@@ -5085,7 +5126,7 @@
             ]
           },
           {
-            "rank": 12,
+            "rank": 13,
             "name": "张慧宇",
             "number": 10,
             "assists": 1,
@@ -5095,20 +5136,6 @@
                 "date": "2026-08-01",
                 "time": "73'",
                 "opponent": "大连英博B队"
-              }
-            ]
-          },
-          {
-            "rank": 13,
-            "name": "李圣龙",
-            "number": 14,
-            "assists": 1,
-            "details": [
-              {
-                "match": "第26轮",
-                "date": "2026-10-11",
-                "time": "75'",
-                "opponent": "深圳二零二八"
               }
             ]
           }

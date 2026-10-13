@@ -929,7 +929,7 @@ def main():
         }
 
     # 出口：增量模式合并分赛事数据（保留历史，existing 积分已含罚分）；
-    # 全量模式应用赛季罚分（分赛事与顶层）
+    # 全量模式应用赛季罚分（分赛事）
     if args.incremental and existing_data:
         first_team_competitions_data = merge_competition_stats(
             existing_data['firstTeam'].get('competitions', {}), first_team_competitions_data)
@@ -939,9 +939,9 @@ def main():
         for comp in first_team_competitions_data:
             if not is_cup_competition(comp):
                 first_team_competitions_data[comp]['points'] += season_deduction.get(comp, 0)
-        first_team_points += sum(season_deduction.values())
 
-    # 生成统计结果
+    # 生成统计结果（积分只按赛事分项输出，不设顶层汇总积分，
+    # 避免亚冠/杯赛与中超/中乙联赛积分混算）
     stats_data = {
         'lastUpdated': datetime.now().strftime('%Y-%m-%d'),
         'season': '2026',
@@ -951,7 +951,6 @@ def main():
             'record': first_team_record,
             'goalsFor': first_team_goals_for,
             'goalsAgainst': first_team_goals_against,
-            'points': first_team_points,
             'topScorers': first_team_scorers,
             'topAssists': first_team_assists,
             'yellowCards': first_team_yellow,
@@ -964,7 +963,6 @@ def main():
             'record': b_team_record,
             'goalsFor': b_team_goals_for,
             'goalsAgainst': b_team_goals_against,
-            'points': b_team_points,
             'topScorers': b_team_scorers,
             'topAssists': b_team_assists,
             'yellowCards': b_team_yellow,
@@ -978,10 +976,12 @@ def main():
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(stats_data, f, ensure_ascii=False, indent=2)
         print(f"统计数据已保存到 {output_file}")
-        print(f"一线队: {first_team_record}, 积分: {first_team_points}")
-        print(f"B队: {b_team_record}, 积分: {b_team_points}")
-        print(f"一线队比赛类型: {list(first_team_competition_stats.keys())}")
-        print(f"B队比赛类型: {list(b_team_competition_stats.keys())}")
+        print(f"一线队: {first_team_record}")
+        print(f"B队: {b_team_record}")
+        for comp, comp_stats in first_team_competitions_data.items():
+            print(f"  一线队[{comp}]: {comp_stats['matchesPlayed']}场 {comp_stats['record']}, 积分: {comp_stats['points']}")
+        for comp, comp_stats in b_team_competitions_data.items():
+            print(f"  B队[{comp}]: {comp_stats['matchesPlayed']}场 {comp_stats['record']}, 积分: {comp_stats['points']}")
     except Exception as e:
         print(f"保存文件失败: {e}")
 

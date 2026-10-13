@@ -42,7 +42,6 @@ interface TeamStats {
   record: string;
   goalsFor: number;
   goalsAgainst: number;
-  points: number;
   topScorers: PlayerStat[];
   topAssists: PlayerStat[];
   yellowCards: PlayerStat[];
@@ -253,33 +252,54 @@ const CurrentStats: React.FC = () => {
 
   const currentTeam = activeTeam === 'firstTeam' ? data.firstTeam : data.bTeam;
 
-  // 获取当前比赛类型的统计数据
-  const getCurrentStats = () => {
+  // 获取当前比赛类型的统计数据（积分等只按赛事分项展示，不做顶层混算）
+  const getCurrentStats = (): CompetitionStats => {
     if (currentTeam.competitions && currentTeam.competitions[activeCompetition]) {
       return currentTeam.competitions[activeCompetition];
     }
     return {
-      matchesPlayed: currentTeam.matchesPlayed,
-      record: currentTeam.record,
-      goalsFor: currentTeam.goalsFor,
-      goalsAgainst: currentTeam.goalsAgainst,
-      points: currentTeam.points,
-      topScorers: currentTeam.topScorers,
-      topAssists: currentTeam.topAssists,
-      yellowCards: currentTeam.yellowCards,
-      redCards: currentTeam.redCards
+      matchesPlayed: 0,
+      record: '0胜0平0负',
+      goalsFor: 0,
+      goalsAgainst: 0,
+      points: 0,
+      topScorers: [],
+      topAssists: [],
+      yellowCards: [],
+      redCards: []
     };
   };
 
   const currentStats = getCurrentStats();
 
+  // 赛事Tab展示顺序：中超 → 亚冠 → 足协杯 → 超级杯（B队仅有中乙）
+  const COMPETITION_ORDER = [
+    '中国足球协会超级联赛',
+    '亚足联冠军精英联赛',
+    '中国足球协会杯',
+    '中国足球协会超级杯',
+    '中国足球协会乙级联赛'
+  ];
+
   // 获取可用比赛类型列表
   const getCompetitionList = () => {
-    if (currentTeam.competitions) {
-      return Object.keys(currentTeam.competitions);
-    }
-    // 如果没有competitions字段，根据球队类型返回默认值
-    return activeTeam === 'firstTeam' ? ['中国足球协会超级联赛'] : ['中国足球协会乙级联赛'];
+    const comps = currentTeam.competitions
+      ? Object.keys(currentTeam.competitions)
+      : (activeTeam === 'firstTeam' ? ['中国足球协会超级联赛'] : ['中国足球协会乙级联赛']);
+    return comps.sort((a, b) => {
+      const ia = COMPETITION_ORDER.indexOf(a);
+      const ib = COMPETITION_ORDER.indexOf(b);
+      return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib) || a.localeCompare(b, 'zh-CN');
+    });
+  };
+
+  // 切换球队时重置到该队的联赛赛事Tab（一线队→中超，B队→中乙）
+  const switchTeam = (teamKey: 'firstTeam' | 'bTeam') => {
+    setActiveTeam(teamKey);
+    const league = teamKey === 'firstTeam' ? '中国足球协会超级联赛' : '中国足球协会乙级联赛';
+    const team = teamKey === 'firstTeam' ? data?.firstTeam : data?.bTeam;
+    const comps = team?.competitions ? Object.keys(team.competitions) : [];
+    setActiveCompetition(comps.length > 0 && comps.includes(league) ? league : (comps[0] || league));
   };
 
   // 获取比赛类型简称
@@ -387,14 +407,14 @@ const CurrentStats: React.FC = () => {
         <div className="team-tabs">
           <button
             className={`team-tab ${activeTeam === 'firstTeam' ? 'active' : ''}`}
-            onClick={() => setActiveTeam('firstTeam')}
+            onClick={() => switchTeam('firstTeam')}
           >
             <span className="tab-icon">🦁</span>
             <span className="tab-text">一线队</span>
           </button>
           <button
             className={`team-tab ${activeTeam === 'bTeam' ? 'active' : ''}`}
-            onClick={() => setActiveTeam('bTeam')}
+            onClick={() => switchTeam('bTeam')}
           >
             <span className="tab-icon">🌊</span>
             <span className="tab-text">B队</span>
