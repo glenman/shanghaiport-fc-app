@@ -442,8 +442,9 @@ def _extract_statistics_internal(matches, team_name, is_b_team=False):
                     if player in name_mapping:
                         player = name_mapping[player]
 
-                    # 去重检查 - 只根据球员和分钟去重
-                    event_key = (player, minute)
+                    # 去重检查 - 按「比赛日期+球员+分钟」去重
+                    # （同球员在不同比赛的同分钟染黄/染红是不同事件，必须带日期，否则会漏计）
+                    event_key = (match_date, player, minute)
                     if event_key in counted_events['yellowCards']:
                         continue
                     counted_events['yellowCards'].add(event_key)
@@ -485,8 +486,8 @@ def _extract_statistics_internal(matches, team_name, is_b_team=False):
                     if player in name_mapping:
                         player = name_mapping[player]
 
-                    # 去重检查 - 只根据球员和分钟去重
-                    event_key = (player, minute)
+                    # 去重检查 - 按「比赛日期+球员+分钟」去重
+                    event_key = (match_date, player, minute)
                     if event_key in counted_events['redCards']:
                         continue
                     counted_events['redCards'].add(event_key)

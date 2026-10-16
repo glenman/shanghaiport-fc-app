@@ -399,6 +399,14 @@
       "description": "比赛开始"
     },
     {
+      "minute": 18,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "让克劳德",
+      "description": "上海海港让克劳德在主裁判响哨后将球踢飞领到黄牌"
+    },
+    {
       "minute": 28,
       "minute_extra": 0,
       "type": "goal",
@@ -495,6 +503,14 @@
       "team": "away",
       "player": "杨泽翔",
       "description": "上海申花杨泽翔获得黄牌"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 2,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "王振澳",
+      "description": "上海海港王振澳上抢犯规铲倒拉唐领到黄牌"
     }
   ],
   "statistics": [

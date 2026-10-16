@@ -60,7 +60,7 @@
           "minutes": 90,
           "goals": 0,
           "assists": 0,
-          "yellowCards": 1,
+          "yellowCards": 0,
           "redCards": 0
         },
         {
@@ -461,12 +461,36 @@
       "description": "上海海港刘祝润进球，李帅助攻"
     },
     {
+      "minute": 50,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "杨希",
+      "description": "上海海港杨希犯规领到黄牌"
+    },
+    {
       "minute": 52,
       "minute_extra": 0,
       "type": "penalty_saved",
       "team": "home",
       "player": "马尔科·托利奇",
       "description": "马尔科·托利奇点球被颜骏凌扑出"
+    },
+    {
+      "minute": 53,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "吾米提江",
+      "description": "上海海港吾米提江犯规吃黄牌"
+    },
+    {
+      "minute": 54,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "米特里策",
+      "description": "浙江米特里策因对判罚表达异议领到黄牌"
     },
     {
       "minute": 56,
@@ -548,6 +572,14 @@
       "playerIn": "蒯纪闻",
       "playerOut": "安佩姆",
       "description": "上海海港蒯纪闻替换安佩姆上场"
+    },
+    {
+      "minute": 95,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "托利奇",
+      "description": "浙江托利奇领到黄牌"
     }
   ],
   "statistics": [
