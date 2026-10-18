@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-15",
+  "lastUpdated": "2026-10-18",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
@@ -3525,8 +3525,8 @@
   },
   "bTeam": {
     "teamName": "上海海港富盛经开",
-    "matchesPlayed": 26,
-    "record": "15胜4平7负",
+    "matchesPlayed": 27,
+    "record": "15胜5平7负",
     "goalsFor": 42,
     "goalsAgainst": 22,
     "topScorers": [
@@ -4294,6 +4294,64 @@
       },
       {
         "rank": 5,
+        "name": "李佳奇",
+        "number": 16,
+        "yellowCards": 3,
+        "details": [
+          {
+            "match": "第16轮",
+            "date": "2026-08-05",
+            "time": "65'",
+            "opponent": "山西崇德荣海",
+            "reason": "上海海港富盛经开李佳奇黄牌"
+          },
+          {
+            "match": "第22轮",
+            "date": "2026-08-22",
+            "time": "59'",
+            "opponent": "青岛红狮",
+            "reason": "上海海港富盛经开李佳奇黄牌"
+          },
+          {
+            "match": "第27轮",
+            "date": "2026-10-17",
+            "time": "60'",
+            "opponent": "江西庐山",
+            "reason": "上海海港富盛经开李佳奇领到黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "name": "张俊杰",
+        "number": 37,
+        "yellowCards": 3,
+        "details": [
+          {
+            "match": "第4轮",
+            "date": "2026-04-14",
+            "time": "43'",
+            "opponent": "北京理工",
+            "reason": "客队张俊杰被黄牌警告"
+          },
+          {
+            "match": "第23轮",
+            "date": "2026-09-12",
+            "time": "26'",
+            "opponent": "江西庐山",
+            "reason": "上海海港富盛经开张俊杰领到黄牌"
+          },
+          {
+            "match": "第27轮",
+            "date": "2026-10-17",
+            "time": "83'",
+            "opponent": "江西庐山",
+            "reason": "上海海港富盛经开张俊杰领到黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 7,
         "name": "李圣龙",
         "number": 14,
         "yellowCards": 2,
@@ -4315,7 +4373,7 @@
         ]
       },
       {
-        "rank": 6,
+        "rank": 8,
         "name": "谢鸿宇",
         "number": 20,
         "yellowCards": 2,
@@ -4337,7 +4395,7 @@
         ]
       },
       {
-        "rank": 7,
+        "rank": 9,
         "name": "王晶磊",
         "number": 59,
         "yellowCards": 2,
@@ -4359,7 +4417,7 @@
         ]
       },
       {
-        "rank": 8,
+        "rank": 10,
         "name": "王逸伟",
         "number": 7,
         "yellowCards": 2,
@@ -4381,51 +4439,29 @@
         ]
       },
       {
-        "rank": 9,
-        "name": "李佳奇",
-        "number": 16,
-        "yellowCards": 2,
-        "details": [
-          {
-            "match": "第16轮",
-            "date": "2026-08-05",
-            "time": "65'",
-            "opponent": "山西崇德荣海",
-            "reason": "上海海港富盛经开李佳奇黄牌"
-          },
-          {
-            "match": "第22轮",
-            "date": "2026-08-22",
-            "time": "59'",
-            "opponent": "青岛红狮",
-            "reason": "上海海港富盛经开李佳奇黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 10,
-        "name": "张俊杰",
-        "number": 37,
-        "yellowCards": 2,
-        "details": [
-          {
-            "match": "第4轮",
-            "date": "2026-04-14",
-            "time": "43'",
-            "opponent": "北京理工",
-            "reason": "客队张俊杰被黄牌警告"
-          },
-          {
-            "match": "第23轮",
-            "date": "2026-09-12",
-            "time": "26'",
-            "opponent": "江西庐山",
-            "reason": "上海海港富盛经开张俊杰领到黄牌"
-          }
-        ]
-      },
-      {
         "rank": 11,
+        "name": "汪照普",
+        "number": 43,
+        "yellowCards": 2,
+        "details": [
+          {
+            "match": "第18轮",
+            "date": "2026-07-26",
+            "time": "70'",
+            "opponent": "泰安天贶",
+            "reason": "上海海港富盛经开汪照普黄牌"
+          },
+          {
+            "match": "第27轮",
+            "date": "2026-10-17",
+            "time": "87'",
+            "opponent": "江西庐山",
+            "reason": "上海海港富盛经开汪照普领到黄牌"
+          }
+        ]
+      },
+      {
+        "rank": 12,
         "name": "温钧翔",
         "number": 35,
         "yellowCards": 1,
@@ -4440,7 +4476,7 @@
         ]
       },
       {
-        "rank": 12,
+        "rank": 13,
         "name": "许瑞轩",
         "number": 30,
         "yellowCards": 1,
@@ -4451,21 +4487,6 @@
             "time": "90'",
             "opponent": "青岛红狮",
             "reason": "上海海港富盛经开许瑞轩黄牌"
-          }
-        ]
-      },
-      {
-        "rank": 13,
-        "name": "汪照普",
-        "number": 43,
-        "yellowCards": 1,
-        "details": [
-          {
-            "match": "第18轮",
-            "date": "2026-07-26",
-            "time": "70'",
-            "opponent": "泰安天贶",
-            "reason": "上海海港富盛经开汪照普黄牌"
           }
         ]
       },
@@ -4594,11 +4615,11 @@
     ],
     "competitions": {
       "中国足球协会乙级联赛": {
-        "matchesPlayed": 26,
-        "record": "15胜4平7负",
+        "matchesPlayed": 27,
+        "record": "15胜5平7负",
         "goalsFor": 42,
         "goalsAgainst": 22,
-        "points": 49,
+        "points": 50,
         "topScorers": [
           {
             "rank": 1,
@@ -5364,6 +5385,64 @@
           },
           {
             "rank": 5,
+            "name": "李佳奇",
+            "number": 16,
+            "yellowCards": 3,
+            "details": [
+              {
+                "match": "第16轮",
+                "date": "2026-08-05",
+                "time": "65'",
+                "opponent": "山西崇德荣海",
+                "reason": "上海海港富盛经开李佳奇黄牌"
+              },
+              {
+                "match": "第22轮",
+                "date": "2026-08-22",
+                "time": "59'",
+                "opponent": "青岛红狮",
+                "reason": "上海海港富盛经开李佳奇黄牌"
+              },
+              {
+                "match": "第27轮",
+                "date": "2026-10-17",
+                "time": "60'",
+                "opponent": "江西庐山",
+                "reason": "上海海港富盛经开李佳奇领到黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "name": "张俊杰",
+            "number": 37,
+            "yellowCards": 3,
+            "details": [
+              {
+                "match": "第4轮",
+                "date": "2026-04-14",
+                "time": "43'",
+                "opponent": "北京理工",
+                "reason": "客队张俊杰被黄牌警告"
+              },
+              {
+                "match": "第23轮",
+                "date": "2026-09-12",
+                "time": "26'",
+                "opponent": "江西庐山",
+                "reason": "上海海港富盛经开张俊杰领到黄牌"
+              },
+              {
+                "match": "第27轮",
+                "date": "2026-10-17",
+                "time": "83'",
+                "opponent": "江西庐山",
+                "reason": "上海海港富盛经开张俊杰领到黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 7,
             "name": "李圣龙",
             "number": 14,
             "yellowCards": 2,
@@ -5385,7 +5464,7 @@
             ]
           },
           {
-            "rank": 6,
+            "rank": 8,
             "name": "谢鸿宇",
             "number": 20,
             "yellowCards": 2,
@@ -5407,7 +5486,7 @@
             ]
           },
           {
-            "rank": 7,
+            "rank": 9,
             "name": "王晶磊",
             "number": 59,
             "yellowCards": 2,
@@ -5429,7 +5508,7 @@
             ]
           },
           {
-            "rank": 8,
+            "rank": 10,
             "name": "王逸伟",
             "number": 7,
             "yellowCards": 2,
@@ -5451,51 +5530,29 @@
             ]
           },
           {
-            "rank": 9,
-            "name": "李佳奇",
-            "number": 16,
-            "yellowCards": 2,
-            "details": [
-              {
-                "match": "第16轮",
-                "date": "2026-08-05",
-                "time": "65'",
-                "opponent": "山西崇德荣海",
-                "reason": "上海海港富盛经开李佳奇黄牌"
-              },
-              {
-                "match": "第22轮",
-                "date": "2026-08-22",
-                "time": "59'",
-                "opponent": "青岛红狮",
-                "reason": "上海海港富盛经开李佳奇黄牌"
-              }
-            ]
-          },
-          {
-            "rank": 10,
-            "name": "张俊杰",
-            "number": 37,
-            "yellowCards": 2,
-            "details": [
-              {
-                "match": "第4轮",
-                "date": "2026-04-14",
-                "time": "43'",
-                "opponent": "北京理工",
-                "reason": "客队张俊杰被黄牌警告"
-              },
-              {
-                "match": "第23轮",
-                "date": "2026-09-12",
-                "time": "26'",
-                "opponent": "江西庐山",
-                "reason": "上海海港富盛经开张俊杰领到黄牌"
-              }
-            ]
-          },
-          {
             "rank": 11,
+            "name": "汪照普",
+            "number": 43,
+            "yellowCards": 2,
+            "details": [
+              {
+                "match": "第18轮",
+                "date": "2026-07-26",
+                "time": "70'",
+                "opponent": "泰安天贶",
+                "reason": "上海海港富盛经开汪照普黄牌"
+              },
+              {
+                "match": "第27轮",
+                "date": "2026-10-17",
+                "time": "87'",
+                "opponent": "江西庐山",
+                "reason": "上海海港富盛经开汪照普领到黄牌"
+              }
+            ]
+          },
+          {
+            "rank": 12,
             "name": "温钧翔",
             "number": 35,
             "yellowCards": 1,
@@ -5510,7 +5567,7 @@
             ]
           },
           {
-            "rank": 12,
+            "rank": 13,
             "name": "许瑞轩",
             "number": 30,
             "yellowCards": 1,
@@ -5521,21 +5578,6 @@
                 "time": "90'",
                 "opponent": "青岛红狮",
                 "reason": "上海海港富盛经开许瑞轩黄牌"
-              }
-            ]
-          },
-          {
-            "rank": 13,
-            "name": "汪照普",
-            "number": 43,
-            "yellowCards": 1,
-            "details": [
-              {
-                "match": "第18轮",
-                "date": "2026-07-26",
-                "time": "70'",
-                "opponent": "泰安天贶",
-                "reason": "上海海港富盛经开汪照普黄牌"
               }
             ]
           },
