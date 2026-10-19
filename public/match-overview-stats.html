@@ -578,11 +578,20 @@
         `;
       }
 
+      function parsePercentValue(v) {
+        if (v == null) return 0;
+        const s = String(v);
+        const bracket = s.match(/\((\d+(?:\.\d+)?)%\)/);
+        if (bracket) return Math.round(parseFloat(bracket[1]));
+        const firstNum = s.match(/[\d.]+/);
+        return firstNum == null ? 0 : Math.round(parseFloat(firstNum[0]));
+      }
+
       function renderPercentStats(label, values) {
         const homeVal = values.home;
         const awayVal = values.away;
-        const homePercent = parseInt(homeVal);
-        const awayPercent = parseInt(awayVal);
+        const homePercent = parsePercentValue(homeVal);
+        const awayPercent = parsePercentValue(awayVal);
         const homeBrightness = homePercent >= awayPercent ? 1 : 0.7;
         const awayBrightness = awayPercent >= homePercent ? 1 : 0.7;
         
