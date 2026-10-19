@@ -170,15 +170,38 @@ def build_goal_entries(report):
     sp_team = 'home' if is_home else 'away'
     goals = []
     for e in extract_goal_events(report):
-        if e.get('team') != sp_team:
-            continue
         player = e.get('player', '')
         if not player:
             continue
         marker = goal_marker(e.get('goal_type', ''), e.get('isOwnGoal', False), e.get('type', ''))
-        if marker == '(OG)':
-            continue  # 乌龙球不计入海港方进球明细（保持既有口径：goal_details 无 OG 记录）
         assist = e.get('player2') or e.get('assist') or '—'
+
+        # 对方乌龙球：计为海港方进球的明细之一（goal_player=乌龙球员 带 (OG) 后缀）
+        # 既有口径一致，例如 goal_player: "刘浩帆OG"。乌龙事件的 team 为乌龙球员所属队，
+        # 只有对方乌龙才计入海港明细；若海港方乌龙则不记。
+        if marker == '(OG)':
+            if e.get('team') == sp_team:
+                continue
+            goals.append({
+                'season': m.get('season', ''),
+                'match_type': match_type,
+                'goal_time': format_goal_time(e.get('minute', 0), e.get('minute_extra', 0)),
+                'goal_player': player + '(OG)',
+                'assist_player': '—',
+                'create_player': '—',
+                'match_date_code': match_date_code,
+                'match_name': f"{match_type}{round_}",
+                'home_team': home_team,
+                'home_score': home_score,
+                'away_score': away_score,
+                'away_team': away_team,
+                'match_result': match_result,
+                'remark': '—',
+            })
+            continue
+
+        if e.get('team') != sp_team:
+            continue
 
         goals.append({
             'season': m.get('season', ''),
