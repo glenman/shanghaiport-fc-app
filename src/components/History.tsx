@@ -35,7 +35,7 @@ const History: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [expandedSeasons, setExpandedSeasons] = useState<Set<string>>(new Set(['2026', '2026/27']));
-  const [selectedOpponent, setSelectedOpponent] = useState<string>('');
+  const [selectedOpponents, setSelectedOpponents] = useState<string[]>([]);
   const [showHeadToHead, setShowHeadToHead] = useState(false);
   const [opponentInput, setOpponentInput] = useState('');
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -80,7 +80,7 @@ const History: React.FC = () => {
     const input = opponentInput.toLowerCase();
     return opponents.filter(opponent => 
       opponent.toLowerCase().includes(input)
-    ).slice(0, 10);
+    ).slice(0, 20);
   }, [opponents, opponentInput]);
 
   useEffect(() => {
@@ -99,27 +99,37 @@ const History: React.FC = () => {
   }, []);
 
   const handleOpponentSelect = (opponent: string) => {
-    setSelectedOpponent(opponent);
-    setOpponentInput(opponent);
-    setShowSuggestions(false);
+    // 多选：点击切换选中状态；保留关键字以支持同一搜索结果下连续多选
+    setSelectedOpponents(prev =>
+      prev.includes(opponent)
+        ? prev.filter(o => o !== opponent)
+        : [...prev, opponent]
+    );
+    setShowSuggestions(true);
+  };
+
+  const handleRemoveOpponent = (opponent: string) => {
+    setSelectedOpponents(prev => prev.filter(o => o !== opponent));
   };
 
   const handleInputChange = (value: string) => {
     setOpponentInput(value);
-    setSelectedOpponent('');
     setShowSuggestions(true);
   };
 
   const headToHeadMatches = useMemo(() => {
-    if (!selectedOpponent) return [];
-    // 关联同一俱乐部不同时期的名称（如浙江/杭州绿城）
-    const aliases = OPPONENT_ALIASES[selectedOpponent] || [selectedOpponent];
+    if (selectedOpponents.length === 0) return [];
+    // 合并所有已选球队及其历史别名（如浙江/杭州绿城）
+    const nameSet = new Set<string>();
+    selectedOpponents.forEach(name => {
+      (OPPONENT_ALIASES[name] || [name]).forEach(n => nameSet.add(n));
+    });
     return historyData
       .filter(match =>
-        aliases.includes(match.home_team) || aliases.includes(match.away_team)
+        nameSet.has(match.home_team) || nameSet.has(match.away_team)
       )
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  }, [historyData, selectedOpponent]);
+  }, [historyData, selectedOpponents]);
 
   const headToHeadStats = useMemo(() => {
     if (headToHeadMatches.length === 0) return null;
@@ -159,7 +169,7 @@ const History: React.FC = () => {
     };
   }, [headToHeadMatches]);
 
-  const displayMatches = showHeadToHead && selectedOpponent ? headToHeadMatches : historyData;
+  const displayMatches = showHeadToHead && selectedOpponents.length > 0 ? headToHeadMatches : historyData;
 
   const groupedBySeason = displayMatches.reduce((groups, match) => {
     const season = match.season;
@@ -213,7 +223,7 @@ const History: React.FC = () => {
                 onChange={(e) => {
                   setShowHeadToHead(e.target.checked);
                   if (!e.target.checked) {
-                    setSelectedOpponent('');
+                    setSelectedOpponents([]);
                     setOpponentInput('');
                     setShowSuggestions(false);
                   }
@@ -224,14 +234,14 @@ const History: React.FC = () => {
             </label>
             
             {showHeadToHead && (
-              <div style={{ position: 'relative' }}>
+              <div style={{ position: 'relative', flex: 1, minWidth: '280px' }}>
                 <input
                   ref={inputRef}
                   type="text"
                   value={opponentInput}
                   onChange={(e) => handleInputChange(e.target.value)}
                   onFocus={() => setShowSuggestions(true)}
-                  placeholder="输入对手球队名称..."
+                  placeholder="输入关键字搜索球队，可多选..."
                   style={{
                     padding: '0.6rem 1rem',
                     borderRadius: '6px',
@@ -239,11 +249,51 @@ const History: React.FC = () => {
                     backgroundColor: '#222',
                     color: '#fff',
                     fontSize: '1rem',
-                    minWidth: '220px',
+                    width: '100%',
                     outline: 'none'
                   }}
                 />
-                
+
+                {selectedOpponents.length > 0 && (
+                  <div style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    gap: '0.4rem',
+                    marginTop: '0.5rem'
+                  }}>
+                    {selectedOpponents.map(opponent => (
+                      <span
+                        key={opponent}
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '0.35rem',
+                          padding: '0.25rem 0.6rem',
+                          backgroundColor: '#c00010',
+                          color: '#fff',
+                          borderRadius: '12px',
+                          fontSize: '0.85rem',
+                          fontWeight: 'bold'
+                        }}
+                      >
+                        {opponent}
+                        <span
+                          onClick={() => handleRemoveOpponent(opponent)}
+                          style={{
+                            cursor: 'pointer',
+                            fontWeight: 'bold',
+                            opacity: 0.8,
+                            lineHeight: 1
+                          }}
+                          title="移除"
+                        >
+                          ×
+                        </span>
+                      </span>
+                    ))}
+                  </div>
+                )}
+
                 {showSuggestions && filteredOpponents.length > 0 && (
                   <div
                     ref={suggestionsRef}
@@ -262,30 +312,39 @@ const History: React.FC = () => {
                       boxShadow: '0 4px 12px rgba(0,0,0,0.3)'
                     }}
                   >
-                    {filteredOpponents.map(opponent => (
-                      <div
-                        key={opponent}
-                        onClick={() => handleOpponentSelect(opponent)}
-                        style={{
-                          padding: '0.6rem 1rem',
-                          cursor: 'pointer',
-                          backgroundColor: selectedOpponent === opponent ? '#444' : 'transparent',
-                          borderBottom: '1px solid #333',
-                          transition: 'background-color 0.15s'
-                        }}
-                        onMouseEnter={(e) => {
-                          (e.target as HTMLDivElement).style.backgroundColor = '#444';
-                        }}
-                        onMouseLeave={(e) => {
-                          (e.target as HTMLDivElement).style.backgroundColor = selectedOpponent === opponent ? '#444' : 'transparent';
-                        }}
-                      >
-                        {opponent}
-                      </div>
-                    ))}
+                    {filteredOpponents.map(opponent => {
+                      const isSelected = selectedOpponents.includes(opponent);
+                      return (
+                        <div
+                          key={opponent}
+                          onClick={() => handleOpponentSelect(opponent)}
+                          style={{
+                            padding: '0.6rem 1rem',
+                            cursor: 'pointer',
+                            backgroundColor: isSelected ? '#4a1518' : 'transparent',
+                            borderBottom: '1px solid #333',
+                            transition: 'background-color 0.15s',
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center'
+                          }}
+                          onMouseEnter={(e) => {
+                            (e.currentTarget as HTMLDivElement).style.backgroundColor = '#444';
+                          }}
+                          onMouseLeave={(e) => {
+                            (e.currentTarget as HTMLDivElement).style.backgroundColor = isSelected ? '#4a1518' : 'transparent';
+                          }}
+                        >
+                          <span>{opponent}</span>
+                          {isSelected && (
+                            <span style={{ color: '#c00010', fontWeight: 'bold' }}>✓</span>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
                 )}
-                
+
                 {showSuggestions && opponentInput && filteredOpponents.length === 0 && (
                   <div
                     style={{
@@ -310,7 +369,7 @@ const History: React.FC = () => {
           </div>
         </div>
 
-        {showHeadToHead && selectedOpponent && headToHeadStats && (
+        {showHeadToHead && selectedOpponents.length > 0 && headToHeadStats && (
           <div style={{ 
             marginBottom: '1rem', 
             padding: '0.75rem', 
@@ -320,12 +379,12 @@ const History: React.FC = () => {
           }}>
             <div style={{ 
               display: 'flex', 
-              alignItems: 'center', 
+              alignItems: 'center',
               justifyContent: 'space-between',
               marginBottom: '0.5rem'
             }}>
               <span style={{ color: '#c00010', fontWeight: 'bold', fontSize: '0.95rem' }}>
-                vs {selectedOpponent}
+                vs {selectedOpponents.join('、')}
               </span>
               <span style={{ color: '#888', fontSize: '0.85rem' }}>
                 {headToHeadStats.total}场
@@ -467,11 +526,11 @@ const History: React.FC = () => {
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '300px' }}>
             <div style={{ fontSize: '1.2rem', color: '#ff4444' }}>{error}</div>
           </div>
-        ) : showHeadToHead && selectedOpponent && headToHeadMatches.length === 0 ? (
+        ) : showHeadToHead && selectedOpponents.length > 0 && headToHeadMatches.length === 0 ? (
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px' }}>
-            <div style={{ fontSize: '1.2rem', color: '#888' }}>暂无与 {selectedOpponent} 的交锋记录</div>
+            <div style={{ fontSize: '1.2rem', color: '#888' }}>暂无与 {selectedOpponents.join('、')} 的交锋记录</div>
           </div>
-        ) : showHeadToHead && selectedOpponent && headToHeadMatches.length > 0 ? (
+        ) : showHeadToHead && selectedOpponents.length > 0 && headToHeadMatches.length > 0 ? (
           <div className="table-container">
             <table>
               <thead>

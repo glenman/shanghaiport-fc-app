@@ -325,14 +325,26 @@ def _extract_statistics_internal(matches, team_name, is_b_team=False):
             event_type = event.get('type', '')
             event_team = event.get('team', '')
 
-            # 兼容 highlights 中的 time 字段（字符串 "13'"）和 matchTimeline 中的 minute 字段（整数）
+            # 兼容 highlights 中的 time 字段（字符串 "13'" / "45+2'"）和 matchTimeline 中的 minute 字段（整数）
             if 'minute' not in event and 'time' in event:
-                time_str = event.get('time', '0')
-                try:
-                    event['minute'] = int(time_str.replace("'", '').replace('+', ''))
-                except ValueError:
-                    event['minute'] = 0
-                event['minute_extra'] = 0
+                time_str = str(event.get('time', '0'))
+                cleaned = time_str.replace("'", '')
+                if '+' in cleaned:
+                    base, extra = cleaned.split('+', 1)
+                    try:
+                        event['minute'] = int(base)
+                    except ValueError:
+                        event['minute'] = 0
+                    try:
+                        event['minute_extra'] = int(extra)
+                    except ValueError:
+                        event['minute_extra'] = 0
+                else:
+                    try:
+                        event['minute'] = int(cleaned)
+                    except ValueError:
+                        event['minute'] = 0
+                    event['minute_extra'] = 0
 
             # 判断是否是本方球队的事件
             if event_team != team_role:

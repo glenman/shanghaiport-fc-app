@@ -59,7 +59,8 @@ def extract_match_info(report_data):
         events = report_data.get('highlights', [])
 
     for event in events:
-        if event.get('type') != 'goal':
+        event_type = event.get('type', '')
+        if event_type not in ('goal', 'penalty_goal'):
             continue
         team = event.get('team', '')
         player = event.get('player', '')
@@ -67,7 +68,7 @@ def extract_match_info(report_data):
             continue
         goal_type = event.get('goal_type', '')
         is_own_goal = goal_type == 'own_goal' or event.get('isOwnGoal', False)
-        is_penalty = goal_type in ('penalty', 'penalty_goal')
+        is_penalty = goal_type in ('penalty', 'penalty_goal') or event_type == 'penalty_goal'
         marker = '(OG)' if is_own_goal else ('(PK)' if is_penalty else '')
 
         if team == 'home':
