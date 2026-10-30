@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-10-25",
+  "lastUpdated": "2026-10-30",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
-    "matchesPlayed": 35,
-    "record": "17胜9平9负",
-    "goalsFor": 63,
-    "goalsAgainst": 45,
+    "matchesPlayed": 36,
+    "record": "17胜9平10负",
+    "goalsFor": 65,
+    "goalsAgainst": 48,
     "topScorers": [
       {
         "rank": 1,
@@ -111,7 +111,7 @@
         "rank": 2,
         "name": "安佩姆",
         "number": 17,
-        "goals": 10,
+        "goals": 11,
         "details": [
           {
             "match": "第8轮",
@@ -181,6 +181,13 @@
             "date": "2026-10-24",
             "time": "45'",
             "opponent": "天津津门虎",
+            "type": "进球"
+          },
+          {
+            "match": "第3轮",
+            "date": "2026-10-27",
+            "time": "44'",
+            "opponent": "河内公安",
             "type": "进球"
           }
         ]
@@ -601,6 +608,21 @@
             "type": "进球"
           }
         ]
+      },
+      {
+        "rank": 21,
+        "name": "米格尔·坎波斯",
+        "number": 44,
+        "goals": 1,
+        "details": [
+          {
+            "match": "第3轮",
+            "date": "2026-10-27",
+            "time": "60'",
+            "opponent": "河内公安",
+            "type": "进球"
+          }
+        ]
       }
     ],
     "topAssists": [
@@ -966,6 +988,26 @@
       },
       {
         "rank": 13,
+        "name": "豪梅·格劳",
+        "number": 16,
+        "assists": 2,
+        "details": [
+          {
+            "match": "第1轮",
+            "date": "2026-09-15",
+            "time": "45'",
+            "opponent": "拉查武里"
+          },
+          {
+            "match": "第3轮",
+            "date": "2026-10-27",
+            "time": "44'",
+            "opponent": "河内公安"
+          }
+        ]
+      },
+      {
+        "rank": 14,
         "name": "让克劳德",
         "number": 8,
         "assists": 1,
@@ -979,7 +1021,7 @@
         ]
       },
       {
-        "rank": 14,
+        "rank": 15,
         "name": "王燊超",
         "number": 4,
         "assists": 1,
@@ -993,7 +1035,7 @@
         ]
       },
       {
-        "rank": 15,
+        "rank": 16,
         "name": "刘若钒",
         "number": 26,
         "assists": 1,
@@ -1007,7 +1049,7 @@
         ]
       },
       {
-        "rank": 16,
+        "rank": 17,
         "name": "王振澳",
         "number": 19,
         "assists": 1,
@@ -1017,20 +1059,6 @@
             "date": "2026-06-19",
             "time": "59'",
             "opponent": "上海赛更达"
-          }
-        ]
-      },
-      {
-        "rank": 17,
-        "name": "豪梅·格劳",
-        "number": 16,
-        "assists": 1,
-        "details": [
-          {
-            "match": "第1轮",
-            "date": "2026-09-15",
-            "time": "45'",
-            "opponent": "拉查武里"
           }
         ]
       }
@@ -3661,17 +3689,17 @@
         "redCards": []
       },
       "亚足联冠军精英联赛": {
-        "matchesPlayed": 2,
-        "record": "1胜1平0负",
-        "goalsFor": 7,
-        "goalsAgainst": 5,
+        "matchesPlayed": 3,
+        "record": "1胜1平1负",
+        "goalsFor": 9,
+        "goalsAgainst": 8,
         "points": 4,
         "topScorers": [
           {
             "rank": 1,
             "name": "安佩姆",
             "number": 17,
-            "goals": 4,
+            "goals": 5,
             "details": [
               {
                 "match": "第1轮",
@@ -3699,6 +3727,13 @@
                 "date": "2026-10-13",
                 "time": "49'",
                 "opponent": "大田韩亚市民",
+                "type": "进球"
+              },
+              {
+                "match": "第3轮",
+                "date": "2026-10-27",
+                "time": "44'",
+                "opponent": "河内公安",
                 "type": "进球"
               }
             ]
@@ -3747,11 +3782,46 @@
                 "type": "进球"
               }
             ]
+          },
+          {
+            "rank": 5,
+            "name": "米格尔·坎波斯",
+            "number": 44,
+            "goals": 1,
+            "details": [
+              {
+                "match": "第3轮",
+                "date": "2026-10-27",
+                "time": "60'",
+                "opponent": "河内公安",
+                "type": "进球"
+              }
+            ]
           }
         ],
         "topAssists": [
           {
             "rank": 1,
+            "name": "豪梅·格劳",
+            "number": 16,
+            "assists": 2,
+            "details": [
+              {
+                "match": "第1轮",
+                "date": "2026-09-15",
+                "time": "45'",
+                "opponent": "拉查武里"
+              },
+              {
+                "match": "第3轮",
+                "date": "2026-10-27",
+                "time": "44'",
+                "opponent": "河内公安"
+              }
+            ]
+          },
+          {
+            "rank": 2,
             "name": "武磊",
             "number": 7,
             "assists": 1,
@@ -3760,20 +3830,6 @@
                 "match": "第1轮",
                 "date": "2026-09-15",
                 "time": "36'",
-                "opponent": "拉查武里"
-              }
-            ]
-          },
-          {
-            "rank": 2,
-            "name": "豪梅·格劳",
-            "number": 16,
-            "assists": 1,
-            "details": [
-              {
-                "match": "第1轮",
-                "date": "2026-09-15",
-                "time": "45'",
                 "opponent": "拉查武里"
               }
             ]
