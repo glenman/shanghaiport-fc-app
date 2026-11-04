@@ -1,18 +1,18 @@
 {
   "lastMatch": {
-    "file": "2026-10-27-亚冠-第3轮.json",
-    "date": "2026-10-27",
-    "matchId": "M0698",
+    "file": "2026-11-03-亚冠-第4轮.json",
+    "date": "2026-11-03",
+    "matchId": "M0699",
     "competition": "亚足联冠军精英联赛",
-    "round": "第3轮",
-    "homeTeam": "上海海港",
-    "awayTeam": "河内公安",
-    "result": "2-3"
+    "round": "第4轮",
+    "homeTeam": "纽卡斯尔喷气机",
+    "awayTeam": "上海海港",
+    "result": "2-4"
   },
   "scripts": {
-    "sync_history_data.py": "2026-10-30T09:07:37",
-    "update_player_history_stats.py": "2026-10-30T09:08:14",
-    "update_player_appearance_details.py": "2026-10-30T09:08:23"
+    "sync_history_data.py": "2026-11-04T11:16:26",
+    "update_player_history_stats.py": "2026-11-04T11:19:51",
+    "update_player_appearance_details.py": "2026-11-04T11:20:02"
   },
   "baselineDate": "2026-10-05",
   "processed": {
@@ -50,14 +50,16 @@
       "2026-10-13-亚冠-第2轮.json",
       "2026-10-18-中超-第28轮.json",
       "2026-10-24-中超-第29轮.json",
-      "2026-10-27-亚冠-第3轮.json"
+      "2026-10-27-亚冠-第3轮.json",
+      "2026-11-03-亚冠-第4轮.json"
     ],
     "update_player_appearance_details.py": [
       "2026-10-09-中超-第27轮.json",
       "2026-10-13-亚冠-第2轮.json",
       "2026-10-18-中超-第28轮.json",
       "2026-10-24-中超-第29轮.json",
-      "2026-10-27-亚冠-第3轮.json"
+      "2026-10-27-亚冠-第3轮.json",
+      "2026-11-03-亚冠-第4轮.json"
     ]
   }
 }
