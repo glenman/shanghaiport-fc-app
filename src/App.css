@@ -28,7 +28,7 @@
 
 @media (min-width: 769px) {
   .sidebar-header {
-    min-height: 130px;
+    min-height: 160px;
   }
 }
 
@@ -122,6 +122,16 @@
   text-align: center;
   border-bottom: 1px solid #333;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  min-height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .app-header {
+    min-height: 160px;
+  }
 }
 
 .app-header h1 {

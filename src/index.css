@@ -414,6 +414,13 @@ tr:hover {
     width: 60px;
   }
   
+  .sidebar.collapsed {
+    width: 0;
+    left: 0;
+    overflow: hidden;
+    border-right: none;
+  }
+  
   .sidebar-title {
     opacity: 0;
     width: 0;
@@ -428,6 +435,11 @@ tr:hover {
   
   .app-header {
     padding: 1rem;
+  }
+  
+  .sidebar-header,
+  .app-header {
+    min-height: 110px;
   }
   
   .app-header h1 {
