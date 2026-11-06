@@ -640,12 +640,15 @@ tr:hover {
 
 .modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overscroll-behavior: contain;
 }
 
 .modal-content {
@@ -653,9 +656,12 @@ tr:hover {
   border-radius: 12px;
   width: 90%;
   max-width: 600px;
-  max-height: 80vh;
+  max-height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  outline: none;
 }
 
 .modal-header {
@@ -665,6 +671,7 @@ tr:hover {
   padding: 1rem 1.5rem;
   background-color: #1a1a1a;
   border-bottom: 1px solid #444;
+  flex-shrink: 0;
 }
 
 .modal-header h3 {
@@ -698,6 +705,38 @@ tr:hover {
   padding: 1rem;
   max-height: 60vh;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #c00010 #333;
+  outline: none;
+}
+
+.modal-body:focus,
+.modal-body:focus-visible {
+  outline: none;
+}
+
+.modal-body::-webkit-scrollbar,
+.modal-body-compact::-webkit-scrollbar {
+  width: 12px;
+}
+
+.modal-body::-webkit-scrollbar-track,
+.modal-body-compact::-webkit-scrollbar-track {
+  background: #333;
+  border-radius: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb,
+.modal-body-compact::-webkit-scrollbar-thumb {
+  background: #c00010;
+  border-radius: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover,
+.modal-body-compact::-webkit-scrollbar-thumb:hover {
+  background: #a0000e;
 }
 
 .modal-table {
@@ -740,6 +779,9 @@ tr:hover {
 
 .modal-body-compact {
   padding: 0.75rem;
+  /* 明细弹窗固定最高约 5 行，超出在内部出现滚动条 */
+  max-height: 280px;
+  overflow-y: auto;
 }
 
 .detail-list-compact {

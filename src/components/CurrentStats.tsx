@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 
 interface StatDetail {
@@ -67,7 +67,63 @@ interface ModalProps {
   clickY: number;
 }
 
-const StatDetailModal: React.FC<ModalProps> = ({ isOpen, onClose, title, playerName, playerNumber, statType, details, clickY }) => {
+const StatDetailModal: React.FC<ModalProps> = ({ isOpen, onClose, playerName, playerNumber, statType, details }) => {
+  const bodyRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    // 记录打开前的焦点元素，关闭时还原
+    const previouslyFocused = document.activeElement as HTMLElement | null;
+    // 将焦点移到可滚动的明细列表容器，使方向键/滚轮作用在弹窗内部而非背后页面
+    bodyRef.current?.focus();
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+        return;
+      }
+
+      const body = bodyRef.current;
+      if (!body) return;
+
+      // 方向键/翻页键改为滚动弹窗内明细列表，避免冒泡滚动背后页面
+      const step = 40;
+      switch (e.key) {
+        case 'ArrowDown':
+          e.preventDefault();
+          body.scrollBy({ top: step });
+          break;
+        case 'ArrowUp':
+          e.preventDefault();
+          body.scrollBy({ top: -step });
+          break;
+        case 'PageDown':
+          e.preventDefault();
+          body.scrollBy({ top: body.clientHeight });
+          break;
+        case 'PageUp':
+          e.preventDefault();
+          body.scrollBy({ top: -body.clientHeight });
+          break;
+        case 'Home':
+          e.preventDefault();
+          body.scrollTop = 0;
+          break;
+        case 'End':
+          e.preventDefault();
+          body.scrollTop = body.scrollHeight;
+          break;
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      previouslyFocused?.focus?.();
+    };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   const statLabel = {
@@ -84,45 +140,17 @@ const StatDetailModal: React.FC<ModalProps> = ({ isOpen, onClose, title, playerN
     'redCards': '🟥'
   }[statType];
 
-  const viewportHeight = window.innerHeight;
-  let top = clickY + 10;
-  if (top + 200 > viewportHeight) {
-    top = clickY - 210;
-  }
-  if (top < 10) {
-    top = 10;
-  }
-
-  // 计算main区域（.app-content）的中心位置
-  const getMainCenterX = () => {
-    const mainElement = document.querySelector('.app-content');
-    if (mainElement) {
-      const rect = mainElement.getBoundingClientRect();
-      return rect.left + rect.width / 2;
-    }
-    return window.innerWidth / 2;
-  };
-
-  const mainCenterX = getMainCenterX();
-
   const modalContent = (
     <div className="modal-overlay" onClick={onClose}>
       <div
         className="modal-content modal-content-compact"
         onClick={(e) => e.stopPropagation()}
-        style={{
-          position: 'fixed',
-          left: `${mainCenterX}px`,
-          top: `${top}px`,
-          transform: 'translateX(-50%)',
-          zIndex: 1001
-        }}
       >
         <div className="modal-header">
           <h3>{statIcon} {playerName} 的{statLabel}记录</h3>
           <button className="modal-close" onClick={onClose}>×</button>
         </div>
-        <div className="modal-body modal-body-compact">
+        <div className="modal-body modal-body-compact" ref={bodyRef} tabIndex={-1}>
           {details.length > 0 ? (
             <div className="detail-list-compact">
               {details.map((detail, index) => (
