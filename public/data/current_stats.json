@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-11-04",
+  "lastUpdated": "2026-11-08",
   "season": "2026",
   "firstTeam": {
     "teamName": "上海海港",
-    "matchesPlayed": 37,
-    "record": "18胜9平10负",
-    "goalsFor": 69,
-    "goalsAgainst": 50,
+    "matchesPlayed": 38,
+    "record": "19胜9平10负",
+    "goalsFor": 75,
+    "goalsAgainst": 51,
     "topScorers": [
       {
         "rank": 1,
         "name": "莱昂纳多",
         "number": 45,
-        "goals": 14,
+        "goals": 16,
         "details": [
           {
             "match": "第2轮",
@@ -111,6 +111,20 @@
             "time": "23'",
             "opponent": "纽卡斯尔喷气机",
             "type": "进球"
+          },
+          {
+            "match": "第30轮",
+            "date": "2026-11-08",
+            "time": "44'",
+            "opponent": "辽宁铁人",
+            "type": "进球"
+          },
+          {
+            "match": "第30轮",
+            "date": "2026-11-08",
+            "time": "45'+1'",
+            "opponent": "辽宁铁人",
+            "type": "进球"
           }
         ]
       },
@@ -118,7 +132,7 @@
         "rank": 2,
         "name": "安佩姆",
         "number": 17,
-        "goals": 12,
+        "goals": 14,
         "details": [
           {
             "match": "第8轮",
@@ -203,6 +217,20 @@
             "time": "51'",
             "opponent": "纽卡斯尔喷气机",
             "type": "进球"
+          },
+          {
+            "match": "第30轮",
+            "date": "2026-11-08",
+            "time": "30'",
+            "opponent": "辽宁铁人",
+            "type": "进球"
+          },
+          {
+            "match": "第30轮",
+            "date": "2026-11-08",
+            "time": "87'",
+            "opponent": "辽宁铁人",
+            "type": "进球"
           }
         ]
       },
@@ -210,7 +238,7 @@
         "rank": 3,
         "name": "武磊",
         "number": 7,
-        "goals": 6,
+        "goals": 8,
         "details": [
           {
             "match": "第2轮",
@@ -252,6 +280,20 @@
             "date": "2026-10-18",
             "time": "94'",
             "opponent": "成都蓉城",
+            "type": "进球"
+          },
+          {
+            "match": "第30轮",
+            "date": "2026-11-08",
+            "time": "60'",
+            "opponent": "辽宁铁人",
+            "type": "点球"
+          },
+          {
+            "match": "第30轮",
+            "date": "2026-11-08",
+            "time": "66'",
+            "opponent": "辽宁铁人",
             "type": "进球"
           }
         ]
@@ -699,6 +741,100 @@
       },
       {
         "rank": 2,
+        "name": "莱昂纳多",
+        "number": 45,
+        "assists": 7,
+        "details": [
+          {
+            "match": "第13轮",
+            "date": "2026-05-19",
+            "time": "70'",
+            "opponent": "成都蓉城"
+          },
+          {
+            "match": "第19轮",
+            "date": "2026-07-17",
+            "time": "40'",
+            "opponent": "云南玉昆"
+          },
+          {
+            "match": "第6轮",
+            "date": "2026-09-01",
+            "time": "22'",
+            "opponent": "山东泰山"
+          },
+          {
+            "match": "第29轮",
+            "date": "2026-10-24",
+            "time": "45'",
+            "opponent": "天津津门虎"
+          },
+          {
+            "match": "第4轮",
+            "date": "2026-11-03",
+            "time": "51'",
+            "opponent": "纽卡斯尔喷气机"
+          },
+          {
+            "match": "第30轮",
+            "date": "2026-11-08",
+            "time": "30'",
+            "opponent": "辽宁铁人"
+          },
+          {
+            "match": "第30轮",
+            "date": "2026-11-08",
+            "time": "87'",
+            "opponent": "辽宁铁人"
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "name": "安佩姆",
+        "number": 17,
+        "assists": 6,
+        "details": [
+          {
+            "match": "第2轮",
+            "date": "2026-03-15",
+            "time": "78'",
+            "opponent": "青岛西海岸"
+          },
+          {
+            "match": "第20轮",
+            "date": "2026-07-25",
+            "time": "28'",
+            "opponent": "上海申花"
+          },
+          {
+            "match": "第28轮",
+            "date": "2026-10-18",
+            "time": "94'",
+            "opponent": "成都蓉城"
+          },
+          {
+            "match": "第4轮",
+            "date": "2026-11-03",
+            "time": "23'",
+            "opponent": "纽卡斯尔喷气机"
+          },
+          {
+            "match": "第30轮",
+            "date": "2026-11-08",
+            "time": "44'",
+            "opponent": "辽宁铁人"
+          },
+          {
+            "match": "第30轮",
+            "date": "2026-11-08",
+            "time": "66'",
+            "opponent": "辽宁铁人"
+          }
+        ]
+      },
+      {
+        "rank": 4,
         "name": "李帅",
         "number": 32,
         "assists": 5,
@@ -736,7 +872,7 @@
         ]
       },
       {
-        "rank": 3,
+        "rank": 5,
         "name": "奥斯卡·梅伦多",
         "number": 21,
         "assists": 5,
@@ -774,7 +910,7 @@
         ]
       },
       {
-        "rank": 4,
+        "rank": 6,
         "name": "杨希",
         "number": 22,
         "assists": 5,
@@ -812,45 +948,7 @@
         ]
       },
       {
-        "rank": 5,
-        "name": "莱昂纳多",
-        "number": 45,
-        "assists": 5,
-        "details": [
-          {
-            "match": "第13轮",
-            "date": "2026-05-19",
-            "time": "70'",
-            "opponent": "成都蓉城"
-          },
-          {
-            "match": "第19轮",
-            "date": "2026-07-17",
-            "time": "40'",
-            "opponent": "云南玉昆"
-          },
-          {
-            "match": "第6轮",
-            "date": "2026-09-01",
-            "time": "22'",
-            "opponent": "山东泰山"
-          },
-          {
-            "match": "第29轮",
-            "date": "2026-10-24",
-            "time": "45'",
-            "opponent": "天津津门虎"
-          },
-          {
-            "match": "第4轮",
-            "date": "2026-11-03",
-            "time": "51'",
-            "opponent": "纽卡斯尔喷气机"
-          }
-        ]
-      },
-      {
-        "rank": 6,
+        "rank": 7,
         "name": "刘祝润",
         "number": 33,
         "assists": 4,
@@ -882,7 +980,7 @@
         ]
       },
       {
-        "rank": 7,
+        "rank": 8,
         "name": "李新翔",
         "number": 49,
         "assists": 4,
@@ -914,39 +1012,33 @@
         ]
       },
       {
-        "rank": 8,
-        "name": "安佩姆",
-        "number": 17,
-        "assists": 4,
+        "rank": 9,
+        "name": "武磊",
+        "number": 7,
+        "assists": 3,
         "details": [
           {
-            "match": "第2轮",
-            "date": "2026-03-15",
-            "time": "78'",
-            "opponent": "青岛西海岸"
+            "match": "第25轮",
+            "date": "2026-08-28",
+            "time": "81'",
+            "opponent": "深圳新鹏城"
           },
           {
-            "match": "第20轮",
-            "date": "2026-07-25",
-            "time": "28'",
-            "opponent": "上海申花"
+            "match": "第1轮",
+            "date": "2026-09-15",
+            "time": "36'",
+            "opponent": "拉查武里"
           },
           {
-            "match": "第28轮",
-            "date": "2026-10-18",
-            "time": "94'",
-            "opponent": "成都蓉城"
-          },
-          {
-            "match": "第4轮",
-            "date": "2026-11-03",
-            "time": "23'",
-            "opponent": "纽卡斯尔喷气机"
+            "match": "第30轮",
+            "date": "2026-11-08",
+            "time": "45'",
+            "opponent": "辽宁铁人"
           }
         ]
       },
       {
-        "rank": 9,
+        "rank": 10,
         "name": "加布里埃尔",
         "number": 11,
         "assists": 2,
@@ -962,26 +1054,6 @@
             "date": "2026-04-04",
             "time": "90'",
             "opponent": "云南玉昆"
-          }
-        ]
-      },
-      {
-        "rank": 10,
-        "name": "武磊",
-        "number": 7,
-        "assists": 2,
-        "details": [
-          {
-            "match": "第25轮",
-            "date": "2026-08-28",
-            "time": "81'",
-            "opponent": "深圳新鹏城"
-          },
-          {
-            "match": "第1轮",
-            "date": "2026-09-15",
-            "time": "36'",
-            "opponent": "拉查武里"
           }
         ]
       },
@@ -1965,17 +2037,17 @@
         "redCards": []
       },
       "中国足球协会超级联赛": {
-        "matchesPlayed": 29,
-        "record": "13胜8平8负",
-        "goalsFor": 50,
-        "goalsAgainst": 36,
-        "points": 42,
+        "matchesPlayed": 30,
+        "record": "14胜8平8负",
+        "goalsFor": 56,
+        "goalsAgainst": 37,
+        "points": 45,
         "topScorers": [
           {
             "rank": 1,
             "name": "莱昂纳多",
             "number": 45,
-            "goals": 12,
+            "goals": 14,
             "details": [
               {
                 "match": "第2轮",
@@ -2060,6 +2132,20 @@
                 "time": "87'",
                 "opponent": "天津津门虎",
                 "type": "进球"
+              },
+              {
+                "match": "第30轮",
+                "date": "2026-11-08",
+                "time": "44'",
+                "opponent": "辽宁铁人",
+                "type": "进球"
+              },
+              {
+                "match": "第30轮",
+                "date": "2026-11-08",
+                "time": "45'+1'",
+                "opponent": "辽宁铁人",
+                "type": "进球"
               }
             ]
           },
@@ -2067,7 +2153,7 @@
             "rank": 2,
             "name": "安佩姆",
             "number": 17,
-            "goals": 5,
+            "goals": 7,
             "details": [
               {
                 "match": "第8轮",
@@ -2103,6 +2189,20 @@
                 "time": "45'",
                 "opponent": "天津津门虎",
                 "type": "进球"
+              },
+              {
+                "match": "第30轮",
+                "date": "2026-11-08",
+                "time": "30'",
+                "opponent": "辽宁铁人",
+                "type": "进球"
+              },
+              {
+                "match": "第30轮",
+                "date": "2026-11-08",
+                "time": "87'",
+                "opponent": "辽宁铁人",
+                "type": "进球"
               }
             ]
           },
@@ -2110,7 +2210,7 @@
             "rank": 3,
             "name": "武磊",
             "number": 7,
-            "goals": 5,
+            "goals": 7,
             "details": [
               {
                 "match": "第2轮",
@@ -2145,6 +2245,20 @@
                 "date": "2026-10-18",
                 "time": "94'",
                 "opponent": "成都蓉城",
+                "type": "进球"
+              },
+              {
+                "match": "第30轮",
+                "date": "2026-11-08",
+                "time": "60'",
+                "opponent": "辽宁铁人",
+                "type": "点球"
+              },
+              {
+                "match": "第30轮",
+                "date": "2026-11-08",
+                "time": "66'",
+                "opponent": "辽宁铁人",
                 "type": "进球"
               }
             ]
@@ -2544,6 +2658,82 @@
           },
           {
             "rank": 3,
+            "name": "安佩姆",
+            "number": 17,
+            "assists": 5,
+            "details": [
+              {
+                "match": "第2轮",
+                "date": "2026-03-15",
+                "time": "78'",
+                "opponent": "青岛西海岸"
+              },
+              {
+                "match": "第20轮",
+                "date": "2026-07-25",
+                "time": "28'",
+                "opponent": "上海申花"
+              },
+              {
+                "match": "第28轮",
+                "date": "2026-10-18",
+                "time": "94'",
+                "opponent": "成都蓉城"
+              },
+              {
+                "match": "第30轮",
+                "date": "2026-11-08",
+                "time": "44'",
+                "opponent": "辽宁铁人"
+              },
+              {
+                "match": "第30轮",
+                "date": "2026-11-08",
+                "time": "66'",
+                "opponent": "辽宁铁人"
+              }
+            ]
+          },
+          {
+            "rank": 4,
+            "name": "莱昂纳多",
+            "number": 45,
+            "assists": 5,
+            "details": [
+              {
+                "match": "第13轮",
+                "date": "2026-05-19",
+                "time": "70'",
+                "opponent": "成都蓉城"
+              },
+              {
+                "match": "第19轮",
+                "date": "2026-07-17",
+                "time": "40'",
+                "opponent": "云南玉昆"
+              },
+              {
+                "match": "第29轮",
+                "date": "2026-10-24",
+                "time": "45'",
+                "opponent": "天津津门虎"
+              },
+              {
+                "match": "第30轮",
+                "date": "2026-11-08",
+                "time": "30'",
+                "opponent": "辽宁铁人"
+              },
+              {
+                "match": "第30轮",
+                "date": "2026-11-08",
+                "time": "87'",
+                "opponent": "辽宁铁人"
+              }
+            ]
+          },
+          {
+            "rank": 5,
             "name": "李帅",
             "number": 32,
             "assists": 4,
@@ -2575,7 +2765,7 @@
             ]
           },
           {
-            "rank": 4,
+            "rank": 6,
             "name": "刘祝润",
             "number": 33,
             "assists": 4,
@@ -2607,7 +2797,7 @@
             ]
           },
           {
-            "rank": 5,
+            "rank": 7,
             "name": "杨希",
             "number": 22,
             "assists": 3,
@@ -2629,58 +2819,6 @@
                 "date": "2026-08-23",
                 "time": "44'",
                 "opponent": "青岛海牛"
-              }
-            ]
-          },
-          {
-            "rank": 6,
-            "name": "安佩姆",
-            "number": 17,
-            "assists": 3,
-            "details": [
-              {
-                "match": "第2轮",
-                "date": "2026-03-15",
-                "time": "78'",
-                "opponent": "青岛西海岸"
-              },
-              {
-                "match": "第20轮",
-                "date": "2026-07-25",
-                "time": "28'",
-                "opponent": "上海申花"
-              },
-              {
-                "match": "第28轮",
-                "date": "2026-10-18",
-                "time": "94'",
-                "opponent": "成都蓉城"
-              }
-            ]
-          },
-          {
-            "rank": 7,
-            "name": "莱昂纳多",
-            "number": 45,
-            "assists": 3,
-            "details": [
-              {
-                "match": "第13轮",
-                "date": "2026-05-19",
-                "time": "70'",
-                "opponent": "成都蓉城"
-              },
-              {
-                "match": "第19轮",
-                "date": "2026-07-17",
-                "time": "40'",
-                "opponent": "云南玉昆"
-              },
-              {
-                "match": "第29轮",
-                "date": "2026-10-24",
-                "time": "45'",
-                "opponent": "天津津门虎"
               }
             ]
           },
@@ -2752,6 +2890,26 @@
           },
           {
             "rank": 11,
+            "name": "武磊",
+            "number": 7,
+            "assists": 2,
+            "details": [
+              {
+                "match": "第25轮",
+                "date": "2026-08-28",
+                "time": "81'",
+                "opponent": "深圳新鹏城"
+              },
+              {
+                "match": "第30轮",
+                "date": "2026-11-08",
+                "time": "45'",
+                "opponent": "辽宁铁人"
+              }
+            ]
+          },
+          {
+            "rank": 12,
             "name": "让克劳德",
             "number": 8,
             "assists": 1,
@@ -2765,7 +2923,7 @@
             ]
           },
           {
-            "rank": 12,
+            "rank": 13,
             "name": "王燊超",
             "number": 4,
             "assists": 1,
@@ -2775,20 +2933,6 @@
                 "date": "2026-04-21",
                 "time": "57'",
                 "opponent": "重庆铜梁龙"
-              }
-            ]
-          },
-          {
-            "rank": 13,
-            "name": "武磊",
-            "number": 7,
-            "assists": 1,
-            "details": [
-              {
-                "match": "第25轮",
-                "date": "2026-08-28",
-                "time": "81'",
-                "opponent": "深圳新鹏城"
               }
             ]
           },
