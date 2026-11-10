@@ -60,6 +60,7 @@ if errors:
 stats = loaded["player_history_stats.json"]["players"]
 details = loaded["player_appearance_details.json"]
 schedule = loaded["history_schedule.json"]
+schedule = schedule.get("matches") if isinstance(schedule, dict) else schedule
 goals = loaded["goal_details.json"]
 goals = goals if isinstance(goals, list) else goals.get("goals") or goals.get("details")
 

@@ -154,7 +154,7 @@ const PlayerStats: React.FC = () => {
         const playerJson = await playerRes.json();
         const scheduleJson: ScheduleMatch[] = await scheduleRes.json();
         setData(playerJson);
-        setScheduleData(scheduleJson);
+        setScheduleData(Array.isArray(scheduleJson) ? scheduleJson : scheduleJson.matches);
         setLoading(false);
       } catch (err) {
         console.error('Error loading stats data:', err);

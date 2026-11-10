@@ -29,6 +29,39 @@ COMPETITION_MAP = {
 }
 
 
+SUMMARY_TYPES = ['中乙联赛', '中甲联赛', '中超联赛', '亚冠联赛', '亚冠精英联赛', '足协杯', '超级杯']
+
+
+def _season_year(m):
+    """比赛归属赛季年份：跨年赛季取起始年；年初(1月)足协杯归前一年。"""
+    s = m.get('season', '')
+    if '/' in s:
+        return s.split('/')[0]
+    if m.get('match_type') == '足协杯' and (m.get('date') or '')[5:7] == '01':
+        return str(int(s) - 1)
+    return s
+
+
+def build_summary(matches):
+    from collections import defaultdict
+    by = defaultdict(lambda: defaultdict(int))
+    for m in matches:
+        by[_season_year(m)][m.get('match_type', '')] += 1
+    by_season = []
+    for y in sorted((k for k in by if k.isdigit()), key=int):
+        row = {'season': y}
+        for t in SUMMARY_TYPES:
+            row[t] = by[y].get(t, 0)
+        row['total'] = sum(by[y].values())
+        by_season.append(row)
+    return {
+        'totalMatches': len(matches),
+        'walkovers': sum(1 for m in matches if m.get('walkover')),
+        'note': '跨年赛季按起始年归集（如2024/25归2024）；年初(1月)进行的足协杯按所属赛季归前一年；walkovers为对手弃赛判胜场次',
+        'bySeason': by_season,
+    }
+
+
 def is_shanghai_port_team(name):
     """判断是否为上海海港一线队（排除富盛经开 B 队）"""
     return name == SHANGHAI_PORT or (name.startswith(SHANGHAI_PORT) and '富盛' not in name)
@@ -226,7 +259,8 @@ def main():
     with open(GOAL_DETAILS_PATH, 'r', encoding='utf-8') as f:
         goal_details = json.load(f)
     with open(HISTORY_SCHEDULE_PATH, 'r', encoding='utf-8') as f:
-        history_schedule = json.load(f)
+        _sched = json.load(f)
+    history_schedule = _sched['matches'] if isinstance(_sched, dict) else _sched
 
     existing_sched = {(m.get('date'), m.get('home_team'), m.get('away_team')) for m in history_schedule}
     existing_goals = {(g.get('match_date_code'), g.get('goal_player'), g.get('goal_time')) for g in goal_details}
@@ -272,7 +306,8 @@ def main():
     history_schedule.sort(key=lambda m: (m.get('date', ''), m.get('match_name', ''), m.get('home_team', '')))
 
     with open(HISTORY_SCHEDULE_PATH, 'w', encoding='utf-8') as f:
-        json.dump(history_schedule, f, ensure_ascii=False, indent=2)
+        json.dump({'summary': build_summary(history_schedule), 'matches': history_schedule},
+                  f, ensure_ascii=False, indent=2)
     with open(GOAL_DETAILS_PATH, 'w', encoding='utf-8') as f:
         json.dump(goal_details, f, ensure_ascii=False, indent=2)
 

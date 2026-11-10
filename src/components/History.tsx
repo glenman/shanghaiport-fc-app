@@ -10,6 +10,7 @@ interface HistoryMatch {
   away_team: string;
   result: string;
   win_loss: string;
+  walkover?: boolean;
 }
 
 const OUR_TEAM_NAMES = ['上海东亚', '上海上港', '上海海港'];
@@ -50,7 +51,7 @@ const History: React.FC = () => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        setHistoryData(data);
+        setHistoryData(Array.isArray(data) ? data : data.matches);
         setLoading(false);
       } catch (error) {
         console.error('Error loading history data:', error);
@@ -126,7 +127,8 @@ const History: React.FC = () => {
     });
     return historyData
       .filter(match =>
-        nameSet.has(match.home_team) || nameSet.has(match.away_team)
+        !match.walkover &&
+        (nameSet.has(match.home_team) || nameSet.has(match.away_team))
       )
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   }, [historyData, selectedOpponents]);

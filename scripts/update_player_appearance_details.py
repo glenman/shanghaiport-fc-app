@@ -274,6 +274,8 @@ def main(full=False):
     baseline = update_state.init_baseline()
     done = update_state.get_processed("update_player_appearance_details.py")
     schedule = load_json(SCHED_PATH)
+    if isinstance(schedule, dict):
+        schedule = schedule.get('matches', [])
 
     if full:
         seasons = parse_team_a_reports()
