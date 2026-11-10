@@ -54,10 +54,12 @@ def build_summary(matches):
             row[t] = by[y].get(t, 0)
         row['total'] = sum(by[y].values())
         by_season.append(row)
+    walkover_wins = sum(1 for m in matches if m.get('walkover'))
     return {
         'totalMatches': len(matches),
-        'walkovers': sum(1 for m in matches if m.get('walkover')),
-        'note': '跨年赛季按起始年归集（如2024/25归2024）；年初(1月)进行的足协杯按所属赛季归前一年；walkovers为对手弃赛判胜场次',
+        'matchesPlayed': len(matches) - walkover_wins,
+        'walkoverWins': walkover_wins,
+        'note': '跨年赛季按起始年归集（如2024/25归2024）；年初(1月)进行的足协杯按所属赛季归前一年；matchesPlayed为实际进行场次，walkoverWins为对手弃赛判胜场次（不计入战绩）',
         'bySeason': by_season,
     }
 
