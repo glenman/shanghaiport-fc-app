@@ -1,7 +1,7 @@
 {
   "description": "球员出场明细（球员为基准，逐场记录 match_id 与出场时间）；match_id 对应 public/data/history_schedule.json 中的记录；status: 出场/替补/停赛；2006/2007 年源表仅存零散标记，明细不完整；M0536/M0538 为对手疫情退赛判胜场次，无出场明细属正常；2006-2007中乙联赛出场数为汇总值（无逐场首发/替补/时间明细），已标注于各球员2006/2007赛季note字段",
   "matchIdSource": "public/data/history_schedule.json",
-  "totalPlayers": 219,
+  "totalPlayers": 218,
   "totalAppearanceEntries": 13169,
   "players": [
     {
@@ -59501,150 +59501,6 @@
       ]
     },
     {
-      "name": "克劳德",
-      "birthDate": "2003-12-14",
-      "position": "前锋",
-      "nationality": "多哥",
-      "records": {
-        "knownAppearances": 23,
-        "knownMinutes": 1532
-      },
-      "seasons": [
-        {
-          "season": "2025",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0661",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0662",
-              "status": "出场",
-              "minutes": 82
-            }
-          ]
-        },
-        {
-          "season": "2026",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0663",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0664",
-              "status": "出场",
-              "minutes": 69
-            },
-            {
-              "matchId": "M0665",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0666",
-              "status": "出场",
-              "minutes": 80
-            },
-            {
-              "matchId": "M0668",
-              "status": "出场",
-              "minutes": 68
-            },
-            {
-              "matchId": "M0680",
-              "status": "出场",
-              "minutes": 44
-            },
-            {
-              "matchId": "M0681",
-              "status": "出场",
-              "minutes": 88
-            },
-            {
-              "matchId": "M0683",
-              "status": "出场",
-              "minutes": 65
-            },
-            {
-              "matchId": "M0684",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0685",
-              "status": "出场",
-              "minutes": 37
-            },
-            {
-              "matchId": "M0687",
-              "status": "出场",
-              "minutes": 26
-            },
-            {
-              "matchId": "M0688",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0689",
-              "status": "出场",
-              "minutes": 45
-            },
-            {
-              "matchId": "M0690",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0691",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0692",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0693",
-              "status": "出场",
-              "minutes": 20
-            },
-            {
-              "matchId": "M0694",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0695",
-              "status": "出场",
-              "minutes": 6
-            },
-            {
-              "matchId": "M0696",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0699",
-              "status": "出场",
-              "minutes": 2
-            },
-            {
-              "matchId": "M0700",
-              "status": "替补",
-              "minutes": 0
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "阿布拉汗·哈力克",
       "birthDate": "2001-04-26",
       "position": "前卫",
@@ -69601,34 +69457,6 @@
       ]
     },
     {
-      "name": "让·克劳德",
-      "birthDate": "",
-      "position": "后卫",
-      "nationality": "",
-      "records": {
-        "knownAppearances": 1,
-        "knownMinutes": 90
-      },
-      "seasons": [
-        {
-          "season": "2026",
-          "team": "上海海港",
-          "appearances": [
-            {
-              "matchId": "M0697",
-              "status": "出场",
-              "minutes": 90
-            },
-            {
-              "matchId": "M0698",
-              "status": "替补",
-              "minutes": 0
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "郭通",
       "birthDate": "2002-02-19",
       "position": "门将",
@@ -72857,6 +72685,153 @@
               "minutes": 34
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "让·克劳德",
+      "short_name": "克劳德",
+      "birthDate": "2003-12-14",
+      "position": "前锋",
+      "nationality": "多哥",
+      "records": {
+        "knownAppearances": 24,
+        "knownMinutes": 1627
+      },
+      "seasons": [
+        {
+          "season": "2025",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0661",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0662",
+              "status": "首发",
+              "minutes": 82
+            }
+          ],
+          "note": null
+        },
+        {
+          "season": "2026",
+          "team": "上海海港",
+          "appearances": [
+            {
+              "matchId": "M0663",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0664",
+              "status": "替补",
+              "minutes": 70
+            },
+            {
+              "matchId": "M0665",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0666",
+              "status": "首发",
+              "minutes": 80
+            },
+            {
+              "matchId": "M0668",
+              "status": "首发",
+              "minutes": 69
+            },
+            {
+              "matchId": "M0680",
+              "status": "首发",
+              "minutes": 45
+            },
+            {
+              "matchId": "M0681",
+              "status": "首发",
+              "minutes": 89
+            },
+            {
+              "matchId": "M0683",
+              "status": "替补",
+              "minutes": 65
+            },
+            {
+              "matchId": "M0684",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0685",
+              "status": "首发",
+              "minutes": 38
+            },
+            {
+              "matchId": "M0687",
+              "status": "替补",
+              "minutes": 26
+            },
+            {
+              "matchId": "M0688",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0689",
+              "status": "首发",
+              "minutes": 45
+            },
+            {
+              "matchId": "M0690",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0691",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0692",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0693",
+              "status": "替补",
+              "minutes": 20
+            },
+            {
+              "matchId": "M0694",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0695",
+              "status": "替补",
+              "minutes": 7
+            },
+            {
+              "matchId": "M0696",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0697",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0699",
+              "status": "替补",
+              "minutes": 1
+            }
+          ],
+          "note": null
         }
       ]
     }
