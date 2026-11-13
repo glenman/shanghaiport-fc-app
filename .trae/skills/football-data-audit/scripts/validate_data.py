@@ -8,8 +8,11 @@
   E3 stats summary != 6 赛事块之和
 警告（exit 0，需人工判定）：
   W1 stats vs details 出场/分钟不一致
+      （details 2026-11 起为新格式：status=首发/替补，替补未登场不写入；
+        2006-07 中乙部分条目无 status="出场不详"，默认不计入 knownAppearances，
+        例外 6 名东亚一期主力见 COUNT_NO_STATUS，与 update_player_appearance_details.py 一致）
   W2 stats 有出场但 details 无此人
-  W3 赛程比分/进球者条数 vs goal_details 进球条数不一致
+  W3 赛程比分/进球者条数 vs goal_details 进球条数不一致（2013 年前 goal_details 缺失属已知基线）
 用法： python validate_data.py [--strict]   # --strict 时 WARN 也算失败
 """
 import json
@@ -88,10 +91,15 @@ for p in stats:
             errors.append(f"E3 {p['name']} {f}: summary={s} 分赛事合计={t}")
 
 # ---------- W1/W2 stats vs details ----------
+# details 新格式：status = 首发/替补（2006-07 中乙部分条目无 status，按 records 口径
+# 默认不计入出场数；6 名东亚一期主力例外，与 update_player_appearance_details.py 一致）
+COUNT_NO_STATUS = {"王燊超", "张琳芃", "蔡慧康", "吕文君", "朱峥嵘", "武磊"}
 det_by_name = {}
 for q in details["players"]:
-    apps = sum(1 for s in q["seasons"] for a in s["appearances"] if a["status"] == "出场")
-    mins = sum(a["minutes"] for s in q["seasons"] for a in s["appearances"] if a["status"] == "出场")
+    count_no_status = q["name"] in COUNT_NO_STATUS
+    apps = sum(1 for s in q["seasons"] for a in s["appearances"]
+               if a.get("status") or count_no_status)
+    mins = sum(a.get("minutes", 0) for s in q["seasons"] for a in s["appearances"])
     det_by_name[q["name"]] = (apps, mins)
 
 w1, w2 = [], []

@@ -72,7 +72,12 @@ def latest_finished_report(after_date=None):
     sched_index = []
     try:
         with open(SCHED_PATH, encoding="utf-8") as f:
-            for r in json.load(f):
+            sched = json.load(f)
+        # 兼容顶层为 dict（含 matches 键）或纯数组的结构
+        if isinstance(sched, dict):
+            sched = sched.get("matches", [])
+        for r in sched:
+            if isinstance(r, dict):
                 sched_index.append(r)
     except Exception:
         pass

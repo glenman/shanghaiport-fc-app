@@ -12,7 +12,7 @@ description: 上海海港数据应用的多源数据交叉对账与校验。用�
 | 文件 | 角色 |
 |---|---|
 | `public/data/player_history_stats.json` | 球员生涯/分赛事汇总（前端展示） |
-| `public/data/player_appearance_details.json` | 逐场明细（出场/分钟真值来源） |
+| `public/data/player_appearance_details.json` | 逐场明细（出场/分钟真值来源；条目 `{matchId, status: 首发\|替补, minutes}` + 事件字段 `goals/penaltyGoals/assists/yellowCards/redCards` 仅 >0 时写入；替补未登场不收录；赛季节点保留跨年标签如 `2026/27`） |
 | `public/data/history/<year>/<year>-出场记录.json` | 年度归档（逐场 + 该年分赛事 stats，首发/替补拆分真值） |
 | `public/data/history_schedule.json` | 赛程（M0001…，比分/胜负/进球者清单） |
 | `public/data/goal_details.json` | 逐球记录（进球者/助攻者/日期码） |
@@ -47,8 +47,8 @@ description: 上海海港数据应用的多源数据交叉对账与校验。用�
 
 **WARN（需人工判断，含已知历史局限）**
 - stats vs details 出场/分钟不一致（贾天子缺明细、8 条"出场但分钟=0"等）
-- 2006/07 中乙老球员（王燊超/武磊/蔡慧康/吕文君/张琳芃/朱峥嵘）首发+替补≠出场属正常（当年无拆分）
-- 赛程进球者清单 vs goal_details 进球条数不一致
+- 2006/07 中乙老球员（王燊超/武磊/蔡慧康/吕文君/张琳芃/朱峥嵘）首发+替补≠出场属正常（当年无拆分）；details 中其 2006-07 无 status 条目计入 knownAppearances（人工确认出场），其余 26 人不计
+- 赛程进球者清单 vs goal_details 进球条数不一致（2013 年前 goal_details 缺失属已知基线）
 - stats 有、details 无的 0 出场球员（万桂文/梁锦鸿等属正常）
 
 ## 推荐工作流

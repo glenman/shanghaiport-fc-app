@@ -6,6 +6,17 @@
 1. public/data/player_appearance_details.json —— 当季赛季节点（matchId 关联 history_schedule.json）
 2. public/data/history/<年份>/<年份>-出场记录.json —— 年度文件（与其他年份同构，附 matchId）
 
+【details 文件口径（与 2026-11 重写后的格式一致）】
+- 节点标签保留报告原值：单年赛事（中超/足协杯）= "2026"，跨年赛事（亚冠）= "2026/27"
+- 条目 {"matchId", status: "首发"/"替补", minutes}；替补未登场不写入
+- 事件字段 goals/penaltyGoals/assists/yellowCards/redCards 仅在 >0 时写入；
+  goals 含点球（penaltyGoals 为其子集）；数据源 = matchTimeline（与 stats 脚本同源）
+- records.knownAppearances = 该球员全部条目数
+
+【年度文件口径（沿用旧约定）】
+- appearances.status = "出场"（首发+替补登场）/"替补"（未登场）；替补未登场保留（minutes=0）
+- stats 块事件字段（goals/assists/黄红牌）保持 0（历史年份文件均如此，不单独填充）
+
 【增量模式（默认）】
 - 基线：当前两份输出文件本身（基线留存见 datafile/baseline-<日期>/）
 - 只处理「文件日期 > scripts/update_state.json 的 baselineDate 且已结束且未在 processed 清单」的新报告
@@ -13,12 +24,14 @@
 - 已处理文件记录于 update_state.json 的 processed 清单，防止重复累计
 
 【全量重建 --full（仅数据修复用，会覆盖当季节点与年度文件）】
-- 解析全部已结束报告重建当季数据
+- 解析全部已结束报告重建当季数据（注：依赖 Excel 基线的 --full 已废弃，
+  历史赛季节点不受影响，仅当季 season_label 节点与年度文件被重建）
 
 口径与 update_player_history_stats.py 保持一致：
 - 首发 = lineups.{role}.players[]；替补登场 = substitutes[]/bench[] 中带 substitutedAt（或 minutes>0）
 - 替补分钟按 90 - substitutedAt 估算；首发分钟取报告值
-- 别名映射 ALIAS_MAP 同步（让克劳德->克劳德 / 维塔尔->马特乌斯·维塔尔 / 吾米提江->吾米提江.玉苏普）
+- 别名映射 ALIAS_MAP 同步（让克劳德/让·克劳德->让·克劳德 / 奥斯卡·梅伦多->梅伦多 /
+  维塔尔->马特乌斯·维塔尔 / 吾米提江->吾米提江.玉苏普）
 """
 import json
 from collections import defaultdict
@@ -33,7 +46,9 @@ HIST_DIR = DATA_DIR / "history"
 
 SHANGHAI_PORT = "上海海港"
 ALIAS_MAP = {
-    "让克劳德": "克劳德",
+    "让克劳德": "让·克劳德",
+    "让·克劳德": "让·克劳德",
+    "奥斯卡·梅伦多": "梅伦多",
     "维塔尔": "马特乌斯·维塔尔",
     "吾米提江": "吾米提江.玉苏普",
     # 历史名单错别字（2007 中乙名单"柏佳俊"，实名柏佳骏，生日相同）
@@ -99,15 +114,49 @@ def parse_team_a_reports(files=None):
         else:
             continue
         team = lu.get(role, {}) or {}
-        season = str(m.get("season") or path.stem[:4]).split("-")[0].split("/")[0]
+        # 赛季标签保留报告原值：单年赛事（中超）= "2026"，跨年赛事（亚冠）= "2026/27"
+        # （details 文件跨年节点沿用跨年标签；年度文件按 season 前缀年份归档，见 main()）
+        season = str(m.get("season") or path.stem[:4])
+
+        # 事件统计（口径与 update_player_history_stats.py 一致，以 matchTimeline 为源）
+        ev = defaultdict(lambda: {"goals": 0, "penaltyGoals": 0, "assists": 0,
+                                  "yellowCards": 0, "redCards": 0})
+        for e in report.get("matchTimeline", []) or []:
+            if e.get("team") != role:
+                continue
+            etype = e.get("type")
+            if etype == "goal":
+                if e.get("goal_type") == "own_goal" or e.get("isOwnGoal"):
+                    continue
+                p = std_name(e.get("player") or "")
+                if p:
+                    ev[p]["goals"] += 1
+                    if e.get("goal_type") in ("penalty", "penalty_goal"):
+                        ev[p]["penaltyGoals"] += 1
+                a2 = std_name(e.get("player2") or e.get("assist") or "")
+                if a2:
+                    ev[a2]["assists"] += 1
+            elif etype == "penalty_goal":
+                p = std_name(e.get("player") or "")
+                if p:
+                    ev[p]["goals"] += 1
+                    ev[p]["penaltyGoals"] += 1
+            elif etype == "yellow_card":
+                p = std_name(e.get("player") or "")
+                if p:
+                    ev[p]["yellowCards"] += 1
+            elif etype == "red_card":
+                p = std_name(e.get("player") or "")
+                if p:
+                    ev[p]["redCards"] += 1
 
         subs = []
-        for ev in report.get("matchTimeline", []) or []:
-            if ev.get("type") == "substitution" and ev.get("team") == role:
-                minute = to_int(ev.get("minute")) + to_int(ev.get("minute_extra") or 0)
+        for evx in report.get("matchTimeline", []) or []:
+            if evx.get("type") == "substitution" and evx.get("team") == role:
+                minute = to_int(evx.get("minute")) + to_int(evx.get("minute_extra") or 0)
                 subs.append({"minute": minute,
-                             "playerOut": std_name(ev.get("playerOut") or ""),
-                             "playerIn": std_name(ev.get("playerIn") or "")})
+                             "playerOut": std_name(evx.get("playerOut") or ""),
+                             "playerIn": std_name(evx.get("playerIn") or "")})
         off_at = {s["playerOut"]: s["minute"] for s in subs if s["playerOut"]}
         on_at = {s["playerIn"]: s["minute"] for s in subs if s["playerIn"]}
 
@@ -120,9 +169,11 @@ def parse_team_a_reports(files=None):
                 "yellowCards": to_int(p.get("yellowCards")),
                 "redCards": to_int(p.get("redCards")),
             })
-            apps.append({"name": nm, "status": "出场", "minutes": to_int(p.get("minutes")),
+            # status: 年度文件口径（出场/替补）；detail_status: details 文件口径（首发/替补）
+            apps.append({"name": nm, "status": "出场", "detail_status": "首发",
+                         "minutes": to_int(p.get("minutes")),
                          "position": p.get("position"), "nationality": p.get("nationality"),
-                         "number": to_int(p.get("number"))})
+                         "number": to_int(p.get("number")), "events": dict(ev.get(nm) or {})})
         for p in bench_of(team):
             nm = std_name(p.get("name", ""))
             on_min = on_at.get(nm)
@@ -135,10 +186,13 @@ def parse_team_a_reports(files=None):
                 "yellowCards": to_int(p.get("yellowCards")),
                 "redCards": to_int(p.get("redCards")),
             })
+            # 年度文件保留替补未登场（status=替补, minutes=0）；
+            # details 文件仅收实际出场（detail_status=None 表示不写入）
             apps.append({"name": nm, "status": "出场" if played else "替补",
+                         "detail_status": "替补" if played else None,
                          "minutes": minutes if played else 0,
                          "position": p.get("position"), "nationality": p.get("nationality"),
-                         "number": to_int(p.get("number"))})
+                         "number": to_int(p.get("number")), "events": dict(ev.get(nm) or {})})
 
         seasons[season].append({
             "file": path.name, "date": m.get("date"), "round": m.get("round"),
@@ -192,10 +246,11 @@ def link_match_ids(seasons, schedule):
         idx_d[(r["match_type"], r.get("date"))].append(r)
     n_ok = n_miss = 0
     for season, blocks in seasons.items():
+        year = season.split("/")[0]
         for b in blocks:
             found = None
-            for mt in candidate_match_types(b, schedule, season):
-                pool = idx_sd.get((season, mt, b["date"])) or idx_d.get((mt, b["date"])) or []
+            for mt in candidate_match_types(b, schedule, year):
+                pool = idx_sd.get((year, mt, b["date"])) or idx_d.get((mt, b["date"])) or []
                 pool = [r for r in pool if opponent_close(b["opponent"], r)]
                 if pool:
                     found = pool[0]
@@ -304,16 +359,24 @@ def main(full=False):
     stats_meta = {p["name"]: p for p in stats["players"]}
     handled_files = []
 
-    for season in sorted(seasons):
-        blocks = sorted(seasons[season], key=lambda b: (b["date"] or "", b["file"]))
-        year_path = HIST_DIR / season / f"{season}-出场记录.json"
+    # 按年度年份聚合（"2026" 中超与 "2026/27" 亚冠同归 history/2026 年度文件）；
+    # details 节点保留报告原 season 标签（跨年赛事单独成节点）
+    year_groups = defaultdict(list)   # year -> [(season, block), ...]
+    for season, blocks in seasons.items():
+        for b in blocks:
+            year_groups[season.split("/")[0]].append((season, b))
+
+    for year in sorted(year_groups):
+        pairs = sorted(year_groups[year], key=lambda t: (t[1]["date"] or "", t[1]["file"]))
+        blocks = [b for _, b in pairs]
+        year_path = HIST_DIR / year / f"{year}-出场记录.json"
 
         # ---- 1) 年度文件 ----
         if not full and year_path.exists():
             year_file = load_json(year_path)
             handled_files += increment_year_file(year_file, blocks, stats_meta)
             dump_json(year_file, year_path)
-            print(f"[{season}] 年度文件增量追加: {len(handled_files)} 场")
+            print(f"[{year}] 年度文件增量追加: {len(handled_files)} 场")
         else:
             agg = {}
             comp_set = []
@@ -367,7 +430,7 @@ def main(full=False):
             year_players.sort(key=lambda p: (-sum(s["minutes"] for s in p["stats"].values()),
                                              p["name"]))
             year_file = {
-                "season": season, "team": SHANGHAI_PORT, "competitions": comp_set,
+                "season": year, "team": SHANGHAI_PORT, "competitions": comp_set,
                 "dataNote": "由 public/data/team-a 比赛报告生成；替补登场分钟按 90-登场时间估算；"
                             "matchId 对应 history_schedule.json",
                 "players": year_players,
@@ -376,37 +439,47 @@ def main(full=False):
             year_path.parent.mkdir(parents=True, exist_ok=True)
             dump_json(year_file, year_path)
             handled_files += [b["file"] for b in blocks]
-            print(f"[{season}] 年度文件重建: {len(blocks)} 场 / {len(year_players)} 名球员")
+            print(f"[{year}] 年度文件重建: {len(blocks)} 场 / {len(year_players)} 名球员")
 
-        # ---- 2) player_appearance_details.json ----
+        # ---- 2) player_appearance_details.json（节点用报告原 season 标签） ----
         by_name = defaultdict(list)
         for p in detail["players"]:
             by_name[p["name"]].append(p)
-        if full:
-            for yp_name in {a["name"] for b in blocks for a in b["appearances"]}:
-                apps = [{"matchId": b["matchId"], "status": a["status"], "minutes": a["minutes"]}
-                        for b in blocks for a in b["appearances"] if a["name"] == yp_name]
-                _upsert_player_season(detail, by_name, yp_name, season, apps, stats_meta)
-        else:
-            for b in blocks:
-                if not b["matchId"]:
-                    continue
+        for sn_label, b in pairs:
+            if not b["matchId"]:
+                continue
+            if full:
+                for yp_name in {a["name"] for a in b["appearances"]}:
+                    apps = [detail_entry_of({**a, "_matchId": b["matchId"]})
+                            for a in b["appearances"]
+                            if a["name"] == yp_name and a.get("detail_status")]
+                    _upsert_player_season(detail, by_name, yp_name, sn_label, apps, stats_meta)
+            else:
                 for a in b["appearances"]:
-                    _append_detail_appearance(detail, by_name, a["name"], season,
+                    if not a.get("detail_status"):
+                        continue  # 替补未登场不写入 details
+                    _append_detail_appearance(detail, by_name, a["name"], sn_label,
                                               b["matchId"], a, stats_meta)
 
-    # 重算汇总
+    # 重算汇总（knownAppearances 口径与 2026-11 重写后的文件一致：
+    # 2006-07 中乙"出场不详"（无 status）条目默认不计入；
+    # 例外：下列 6 名东亚一期主力经人工确认出场，139 场计入）
+    COUNT_NO_STATUS = {"王燊超", "张琳芃", "蔡慧康", "吕文君", "朱峥嵘", "武磊"}
     for p in detail["players"]:
-        played = sum(1 for sn in p["seasons"] for a in sn["appearances"] if a["status"] == "出场")
-        minutes = sum(a["minutes"] for sn in p["seasons"] for a in sn["appearances"])
+        count_no_status = p["name"] in COUNT_NO_STATUS
+        played = sum(1 for sn in p["seasons"] for a in sn["appearances"]
+                     if a.get("status") or count_no_status)
+        minutes = sum(to_int(a.get("minutes", 0)) for sn in p["seasons"] for a in sn["appearances"])
         p["records"] = {"knownAppearances": played, "knownMinutes": minutes}
         p["seasons"].sort(key=lambda s: s["season"])
-    detail["players"].sort(key=lambda x: (-x["records"]["knownMinutes"], x["name"]))
+    # 球员顺序保持既有排列（按位置分组），不按分钟重排；新球员已 append 在尾部
     detail["totalPlayers"] = len(detail["players"])
     detail["totalAppearanceEntries"] = sum(len(sn["appearances"]) for p in detail["players"]
                                            for sn in p["seasons"])
+    # seasonRange 用赛季前缀年份（跨年标签 "2026/27" 取 2026，保持 "2006-2026" 形态）
     all_seasons_seen = {sn["season"] for p in detail["players"] for sn in p["seasons"]}
-    detail["seasonRange"] = min(all_seasons_seen) + "-" + max(all_seasons_seen)
+    detail["seasonRange"] = (min(s.split("/")[0] for s in all_seasons_seen) + "-"
+                             + max(s.split("/")[0] for s in all_seasons_seen))
     dump_json(detail, DETAIL_PATH)
     print(f"player_appearance_details.json 已更新: {detail['totalPlayers']} 球员 / "
           f"{detail['totalAppearanceEntries']} 条出场记录")
@@ -431,6 +504,18 @@ def _ensure_detail_player(detail, by_name, name, stats_meta):
     return target
 
 
+def detail_entry_of(a):
+    """构造 details 文件出场条目：status 用首发/替补；事件字段仅 >0 时写入。"""
+    ent = {"matchId": a.get("_matchId") or a["matchId"], "status": a["detail_status"],
+           "minutes": a["minutes"]}
+    ev = a.get("events") or {}
+    for k in ("goals", "penaltyGoals", "assists", "yellowCards", "redCards"):
+        v = to_int(ev.get(k))
+        if v > 0:
+            ent[k] = v
+    return ent
+
+
 def _append_detail_appearance(detail, by_name, name, season, match_id, app, stats_meta):
     target = _ensure_detail_player(detail, by_name, name, stats_meta)
     sn = next((s for s in target["seasons"] if s["season"] == season), None)
@@ -439,8 +524,7 @@ def _append_detail_appearance(detail, by_name, name, season, match_id, app, stat
         target["seasons"].append(sn)
     if any(x["matchId"] == match_id for x in sn["appearances"]):
         return  # 该场已入账，防重复
-    sn["appearances"].append({"matchId": match_id, "status": app["status"],
-                              "minutes": app["minutes"]})
+    sn["appearances"].append(detail_entry_of({**app, "_matchId": match_id, "matchId": match_id}))
 
 
 def _upsert_player_season(detail, by_name, name, season, apps, stats_meta):

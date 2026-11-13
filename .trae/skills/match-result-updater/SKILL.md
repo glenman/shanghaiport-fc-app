@@ -71,8 +71,11 @@ This skill automates the process of updating match results for Shanghai Port FC 
 
 9. **Update Player Appearance Details (球员出场明细, 增量)**
    - Runs `update_player_appearance_details.py`（默认增量模式；`--full` 为全量重建）to append new matches to `player_appearance_details.json` and `history/<年份>/<年份>-出场记录.json`
-   - 每条出场记录 `{matchId, status, minutes}`，matchId 关联 `history_schedule.json`（新赛程由 `sync_history_data.py` 自动分配 Mxxxx 编号）
-   - 口径与 `update_player_history_stats.py` 一致（ALIAS_MAP：让克劳德->克劳德、维塔尔->马特乌斯·维塔尔、吾米提江->吾米提江.玉苏普；替补分钟按 90-登场时间估算）
+   - details 条目 `{matchId, status: "首发"|"替补", minutes}`，matchId 关联 `history_schedule.json`（新赛程由 `sync_history_data.py` 自动分配 Mxxxx 编号）；替补未登场不写入 details（年度文件仍保留，status="替补"、minutes=0）
+   - 事件字段 `goals/penaltyGoals/assists/yellowCards/redCards` 仅在 >0 时写入（goals 含点球，penaltyGoals 为其子集；数据源 = matchTimeline，与 stats 脚本同源）
+   - 赛季节点保留报告原值：单年赛事（中超/足协杯）= "2026"，跨年赛事（亚冠）= "2026/27"；年度文件按前缀年份归档
+   - `records.knownAppearances` = 确认出场条目数（有 status 者；2006-07 中乙"出场不详"不计，6 名东亚一期主力例外）
+   - 口径与 `update_player_history_stats.py` 一致（ALIAS_MAP：让克劳德/让·克劳德->让·克劳德、奥斯卡·梅伦多->梅伦多、维塔尔->马特乌斯·维塔尔、吾米提江->吾米提江.玉苏普；替补分钟按 90-登场时间估算）
 
 ## Usage
 
@@ -125,7 +128,7 @@ This skill automates the process of updating match results for Shanghai Port FC 
 | `public/data/goal_details.json` | Per-goal history records (synced) |
 | `public/data/history_schedule.json` | Per-match history records (synced) |
 | `public/data/player_history_stats.json` | Career stats (12 fields full-recalculated from Excel baseline + team-a) |
-| `public/data/player_appearance_details.json` | Player appearance details (per-match matchId/status/minutes, current season rebuilt from team-a) |
+| `public/data/player_appearance_details.json` | Player appearance details (per-match matchId/status/minutes + goal/card event fields, current season rebuilt from team-a) |
 | `public/data/history/<年份>/<年份>-出场记录.json` | Yearly appearance record file (lineup/substitutes/substitutions, with matchId) |
 
 ## Supporting Scripts
@@ -137,7 +140,7 @@ This skill automates the process of updating match results for Shanghai Port FC 
 | `scripts/update_stats.py` | Updates season statistics (supports incremental and full update) |
 | `scripts/sync_history_data.py` | Syncs `team-a` reports into `goal_details.json` and `history_schedule.json` (idempotent) |
 | `scripts/update_player_history_stats.py` | Full-recalculates `player_history_stats.json` (all 12 fields from Excel baseline + team-a, idempotent) |
-| `scripts/update_player_appearance_details.py` | Rebuilds current-season nodes in `player_appearance_details.json` + yearly `history/<年份>/<年份>-出场记录.json` from team-a reports (idempotent, matchId-linked) |
+| `scripts/update_player_appearance_details.py` | Rebuilds/appends current-season nodes in `player_appearance_details.json` (entries: matchId/status 首发-替补/minutes + event fields, no bench-unused) + yearly `history/<年份>/<年份>-出场记录.json` from team-a reports (incremental by default, idempotent, matchId-linked) |
 
 ## Player Name Standardization
 
@@ -153,6 +156,17 @@ This skill automates the process of updating match results for Shanghai Port FC 
 | Matthew Orr | 安永佳 |
 | 乌米提江·玉素甫 | 吾米提江 |
 | 乌米提江 | 吾米提江 |
+
+增量更新脚本（`update_player_history_stats.py` / `update_player_appearance_details.py`）另有独立 ALIAS_MAP，映射到 stats/details 档案名（历史数据载体）：
+
+| Alias | 档案名（stats/details） |
+|-------|------------------------|
+| 让克劳德 / 让·克劳德 | 让·克劳德 |
+| 奥斯卡·梅伦多 | 梅伦多 |
+| 维塔尔 | 马特乌斯·维塔尔 |
+| 吾米提江 | 吾米提江.玉苏普 |
+| 柏佳俊 | 柏佳骏 |
+| 阿布拉汗 | 阿布拉汗·哈力克 |
 
 ### Processing Fields
 
