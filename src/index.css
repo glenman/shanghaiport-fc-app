@@ -304,6 +304,7 @@ tr:hover {
 
 .search-input {
   padding: 1rem;
+  height: 48px;
   border-radius: 25px;
   border: 1px solid #444;
   background-color: rgba(30, 30, 30, 0.8);
@@ -323,6 +324,7 @@ tr:hover {
 
 .position-filter {
   padding: 1rem;
+  height: 48px;
   border-radius: 25px;
   border: 1px solid #444;
   background-color: rgba(30, 30, 30, 0.8);
@@ -358,10 +360,14 @@ tr:hover {
   display: flex;
   gap: 0.8rem;
   flex-wrap: wrap;
+  /* 覆盖 App.css 的 margin-bottom: 1.5rem —— 该 margin 在 flex 垂直居中时会把按钮组顶高 12px，
+     与同排 select 错位；行间距由父级 .player-filters/.schedule-filters 的 margin-bottom 提供 */
+  margin-bottom: 0;
 }
 
 .filter-buttons button {
   padding: 0.8rem 1.2rem;
+  height: 48px;
   font-size: 0.9rem;
   background-color: rgba(40, 40, 40, 0.8);
   color: #fff;

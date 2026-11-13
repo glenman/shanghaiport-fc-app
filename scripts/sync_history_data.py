@@ -9,6 +9,7 @@
 """
 import json
 import re
+from datetime import datetime
 from pathlib import Path
 
 BASE_DIR = Path(r'd:\Workspace\shanghaiport-fc-app\public\data')
@@ -59,6 +60,7 @@ def build_summary(matches):
         'totalMatches': len(matches),
         'matchesPlayed': len(matches) - walkover_wins,
         'walkoverWins': walkover_wins,
+        'lastUpdated': datetime.now().strftime('%Y-%m-%d %H:%M'),
         'note': '跨年赛季按起始年归集（如2024/25归2024）；年初(1月)进行的足协杯按所属赛季归前一年；matchesPlayed为实际进行场次，walkoverWins为对手弃赛判胜场次（不计入战绩）',
         'bySeason': by_season,
     }

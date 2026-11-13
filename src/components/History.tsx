@@ -33,6 +33,7 @@ const OPPONENT_ALIASES: Record<string, string[]> = (() => {
 
 const History: React.FC = () => {
   const [historyData, setHistoryData] = useState<HistoryMatch[]>([]);
+  const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [expandedSeasons, setExpandedSeasons] = useState<Set<string>>(new Set(['2026', '2026/27']));
@@ -52,6 +53,9 @@ const History: React.FC = () => {
         }
         const data = await response.json();
         setHistoryData(Array.isArray(data) ? data : data.matches);
+        if (data && !Array.isArray(data) && data.summary && data.summary.lastUpdated) {
+          setLastUpdated(data.summary.lastUpdated);
+        }
         setLoading(false);
       } catch (error) {
         console.error('Error loading history data:', error);
@@ -173,6 +177,12 @@ const History: React.FC = () => {
 
   const displayMatches = showHeadToHead && selectedOpponents.length > 0 ? headToHeadMatches : historyData;
 
+  // 实际比赛场次：排除对方弃赛判胜的场次（walkover 不计入比赛场次统计）
+  const playedTotal = useMemo(
+    () => historyData.filter(match => !match.walkover).length,
+    [historyData]
+  );
+
   const groupedBySeason = displayMatches.reduce((groups, match) => {
     const season = match.season;
     if (!groups[season]) {
@@ -196,8 +206,20 @@ const History: React.FC = () => {
 
   return (
     <div className="card">
-      <div className="card-header">
-        <h2>历史比赛</h2>
+      <div className="card-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
+        <h2 style={{ margin: 0 }}>
+          历史比赛
+          {!loading && !error && historyData.length > 0 && (
+            <span style={{ fontSize: '0.75em', color: '#aaa', fontWeight: 'normal', marginLeft: '0.5rem' }}>
+              （全部{playedTotal}场）
+            </span>
+          )}
+        </h2>
+        {lastUpdated && (
+          <span style={{ fontSize: '0.85rem', color: '#888' }}>
+            更新时间：{lastUpdated}
+          </span>
+        )}
       </div>
       <div className="card-content">
         <div style={{ 
@@ -615,7 +637,17 @@ const History: React.FC = () => {
                     }}
                     onClick={() => toggleSeason(season)}
                   >
-                    <h3 style={{ margin: 0, color: '#c00010' }}>{season}赛季</h3>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                      <h3 style={{ margin: 0, color: '#c00010' }}>{season}赛季</h3>
+                      <span style={{ fontSize: '0.85rem', color: '#aaa' }}>
+                        {matches.filter(match => !match.walkover).length}场
+                        {matches.some(match => match.walkover) && (
+                          <span style={{ fontSize: '0.8em', color: '#777' }}>
+                            （另有弃赛判胜{matches.filter(match => match.walkover).length}场）
+                          </span>
+                        )}
+                      </span>
+                    </div>
                     <span style={{ fontSize: '1.2rem' }}>{isExpanded ? '▼' : '▶'}</span>
                   </div>
                   
