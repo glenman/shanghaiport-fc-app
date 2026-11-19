@@ -20,6 +20,8 @@ interface PlayerStat {
   faCup: number;
   superCup: number;
   afc: number;
+  c1l: number;
+  c2l: number;
   total: number;
 }
 
@@ -85,10 +87,12 @@ const Statistics: React.FC = () => {
           faCup: 0,
           superCup: 0,
           afc: 0,
+          c1l: 0,
+          c2l: 0,
           total: 0
         };
       }
-      
+
       // 根据比赛类型统计
       if (matchType.includes('中超')) {
         goalStats[player][season].league += 1;
@@ -98,6 +102,10 @@ const Statistics: React.FC = () => {
         goalStats[player][season].superCup += 1;
       } else if (matchType.includes('亚冠')) {
         goalStats[player][season].afc += 1;
+      } else if (matchType.includes('中甲')) {
+        goalStats[player][season].c1l += 1;
+      } else if (matchType.includes('中乙')) {
+        goalStats[player][season].c2l += 1;
       }
       goalStats[player][season].total += 1;
     });
@@ -121,10 +129,12 @@ const Statistics: React.FC = () => {
           faCup: 0,
           superCup: 0,
           afc: 0,
+          c1l: 0,
+          c2l: 0,
           total: 0
         };
       }
-      
+
       // 根据比赛类型统计
       if (matchType.includes('中超')) {
         assistStats[player][season].league += 1;
@@ -134,6 +144,10 @@ const Statistics: React.FC = () => {
         assistStats[player][season].superCup += 1;
       } else if (matchType.includes('亚冠')) {
         assistStats[player][season].afc += 1;
+      } else if (matchType.includes('中甲')) {
+        assistStats[player][season].c1l += 1;
+      } else if (matchType.includes('中乙')) {
+        assistStats[player][season].c2l += 1;
       }
       assistStats[player][season].total += 1;
     });
@@ -225,6 +239,8 @@ const Statistics: React.FC = () => {
                   <th>足协杯</th>
                   <th>超级杯</th>
                   <th>亚冠联赛</th>
+                  <th>中甲联赛</th>
+                  <th>中乙联赛</th>
                   <th>合计</th>
                 </tr>
               </thead>
@@ -237,6 +253,8 @@ const Statistics: React.FC = () => {
                     <td>{player.faCup}</td>
                     <td>{player.superCup}</td>
                     <td>{player.afc}</td>
+                    <td>{player.c1l}</td>
+                    <td>{player.c2l}</td>
                     <td>{player.total}</td>
                   </tr>
                 ))}
