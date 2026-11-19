@@ -186,7 +186,9 @@ const PlayerStats: React.FC = () => {
       if (!rawCoach || rawCoach === 'Unknown') return;
 
       const coach = normalizeCoachName(rawCoach);
-      const parts = (m.result || '').split('-');
+      // 先取常规时间比分（去掉括号内点球大战等附加信息），否则含点球的比分 split('-') 长度>2 会被判为无比分
+      const regScore = (m.result || '').split('(')[0].trim();
+      const parts = regScore.split('-');
       const ourGoals = Number(isHome ? parts[0] : parts[1]);
       const theirGoals = Number(isHome ? parts[1] : parts[0]);
       const hasScore = parts.length === 2 && !Number.isNaN(ourGoals) && !Number.isNaN(theirGoals);
@@ -211,8 +213,9 @@ const PlayerStats: React.FC = () => {
         const wins = valid.filter((x) => x.result === '胜').length;
         const draws = valid.filter((x) => x.result === '平').length;
         const losses = valid.filter((x) => x.result === '负').length;
-        const goalsFor = matches.reduce((s, x) => s + Number(x.score.split('-')[0]) || 0, 0);
-        const goalsAgainst = matches.reduce((s, x) => s + Number(x.score.split('-')[1]) || 0, 0);
+        // Number(...)||0 逐场兜底（score='-' 时记 0），避免 NaN 污染整个累加器
+        const goalsFor = matches.reduce((s, x) => s + (Number(x.score.split('-')[0]) || 0), 0);
+        const goalsAgainst = matches.reduce((s, x) => s + (Number(x.score.split('-')[1]) || 0), 0);
         const seasons = Array.from(new Set(matches.map((x) => x.season))).sort();
         // 执教赛季用首尾年份表示，如 2024、2024/25、2026/27 -> "2024-2026"；单赛季 -> "2024"
         const yr = (v: string) => v.slice(0, 4);
