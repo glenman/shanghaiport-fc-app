@@ -152,7 +152,7 @@ const PlayerStats: React.FC = () => {
           throw new Error('Network response was not ok');
         }
         const playerJson = await playerRes.json();
-        const scheduleJson: ScheduleMatch[] = await scheduleRes.json();
+        const scheduleJson: any = await scheduleRes.json();
         setData(playerJson);
         setScheduleData(Array.isArray(scheduleJson) ? scheduleJson : scheduleJson.matches);
         setLoading(false);
@@ -170,7 +170,7 @@ const PlayerStats: React.FC = () => {
   useEffect(() => {
     fetch('data/short_names.json')
       .then((r) => (r.ok ? r.json() : {}))
-      .then((j) => setCoachShortNames(j.coaches || {}))
+      .then((j: any) => setCoachShortNames(j.coaches || {}))
       .catch(() => setCoachShortNames({}));
   }, []);
 
@@ -192,7 +192,7 @@ const PlayerStats: React.FC = () => {
       const hasScore = parts.length === 2 && !Number.isNaN(ourGoals) && !Number.isNaN(theirGoals);
 
       if (!map.has(coach)) map.set(coach, []);
-      map.get(coach).push({
+      map.get(coach)!.push({
         season: m.season || m.date.slice(0, 4),
         date: m.date,
         competition: m.match_type || '其他',
