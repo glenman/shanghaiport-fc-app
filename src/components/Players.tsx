@@ -53,7 +53,10 @@ const Players: React.FC = () => {
   const currentPlayers = activeTab === 'first' ? firstTeamData : bTeamData;
 
   const filteredPlayers = currentPlayers.filter(player => {
-    const matchesSearch = player.name && player.name.toLowerCase().includes(searchTerm.toLowerCase());
+    const term = searchTerm.toLowerCase();
+    const matchesSearch = !term ||
+      (player.name && player.name.toLowerCase().includes(term)) ||
+      String(player.number ?? '').includes(searchTerm);
     const matchesPosition = positionFilter === 'all' || player.position === positionFilter;
     return matchesSearch && matchesPosition;
   });
