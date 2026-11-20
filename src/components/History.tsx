@@ -267,7 +267,9 @@ const History: React.FC = () => {
                   onFocus={() => setShowSuggestions(true)}
                   placeholder="输入关键字搜索球队，可多选..."
                   style={{
-                    padding: '0.6rem 1rem',
+                    padding: '0 1rem',
+                    height: '48px',
+                    boxSizing: 'border-box',
                     borderRadius: '6px',
                     border: '1px solid #555',
                     backgroundColor: '#222',
