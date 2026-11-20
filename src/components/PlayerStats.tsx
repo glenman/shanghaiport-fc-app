@@ -460,7 +460,7 @@ const PlayerStats: React.FC = () => {
             />
           )}
           {(selected || selectedCoach) && (
-            <button className="team-tab" onClick={resetSearch} style={{ flex: 'none', padding: '0.6rem 1.2rem' }}>
+            <button className="team-tab" onClick={resetSearch} style={{ flex: 'none', padding: '0 1.2rem', height: '48px', boxSizing: 'border-box', justifyContent: 'center' }}>
               清除查询
             </button>
           )}
