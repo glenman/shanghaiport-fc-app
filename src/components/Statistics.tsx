@@ -26,7 +26,7 @@ interface PlayerStat {
 }
 
 const Statistics: React.FC = () => {
-  const [selectedSeason, setSelectedSeason] = useState('2025');
+  const [selectedSeason, setSelectedSeason] = useState<string | null>(null);
   const [statisticsType, setStatisticsType] = useState('goals'); // goals or assists
   const [data, setData] = useState<GoalDetail[]>([]);
   const [loading, setLoading] = useState(true);
@@ -179,13 +179,17 @@ const Statistics: React.FC = () => {
       statsBySeason[season].assists = seasonAssistStats;
     });
 
+    // 未手动选择时默认最新赛季
+    const effectiveSeason = selectedSeason ?? seasons[0];
+
     return {
       seasons,
-      currentData: statisticsType === 'goals' ? statsBySeason[selectedSeason]?.goals || [] : statsBySeason[selectedSeason]?.assists || []
+      currentData: statisticsType === 'goals' ? statsBySeason[effectiveSeason]?.goals || [] : statsBySeason[effectiveSeason]?.assists || []
     };
   };
 
   const { seasons, currentData } = processStatistics();
+  const effectiveSeason = selectedSeason ?? seasons[0];
 
   return (
     <div className="card">
@@ -193,7 +197,7 @@ const Statistics: React.FC = () => {
         <h2>进球助攻榜</h2>
         <div className="player-filters" style={{ marginTop: '1rem' }}>
           <select
-            value={selectedSeason}
+            value={effectiveSeason ?? ''}
             onChange={(e) => setSelectedSeason(e.target.value)}
             className="position-filter"
           >
