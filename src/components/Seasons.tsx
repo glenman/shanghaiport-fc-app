@@ -70,7 +70,6 @@ const Seasons: React.FC = () => {
       if (chartContainerRef.current) {
         const containerWidth = chartContainerRef.current.clientWidth;
         const newWidth = Math.max(600, Math.min(containerWidth - 40, 1200));
-        console.log('容器宽度:', containerWidth, '图表宽度:', newWidth, '是否移动端:', isMobile);
         setChartWidth(newWidth);
       }
     };
@@ -131,21 +130,12 @@ const Seasons: React.FC = () => {
     
     // 将排名转换为数值
     const getRankValue = (rank: string): number => {
-      // 调试：检查2006年的排名转换
-      if (rank === '南区第 7') {
-        console.log('2006年排名:', rank);
-        console.log('替换后:', rank.replace('南区第', ''));
-        console.log('trim后:', rank.replace('南区第', '').trim());
-        console.log('转换数值:', parseInt(rank.replace('南区第', '').trim()));
-      }
-      
       if (rank === '冠军') return 1;
       if (rank === '亚军') return 2;
       if (rank === '季军') return 3;
       // 处理"南区第 X"格式
       if (rank.includes('南区第')) {
         const num = parseInt(rank.replace('南区第', '').trim());
-        console.log('南区排名转换:', rank, '->', num);
         return isNaN(num) ? 16 : num;
       }
       // 处理"第 X"格式（带空格）
@@ -163,7 +153,6 @@ const Seasons: React.FC = () => {
         const num = parseInt(rank.split(' ')[0]);
         return isNaN(num) ? 16 : num;
       }
-      console.log('未处理的排名:', rank);
       return 16; // 默认值
     };
     
