@@ -69,7 +69,7 @@ const Seasons: React.FC = () => {
     const handleResize = () => {
       if (chartContainerRef.current) {
         const containerWidth = chartContainerRef.current.clientWidth;
-        const newWidth = Math.max(600, Math.min(containerWidth - 40, 1200));
+        const newWidth = Math.max(320, Math.min(containerWidth - 40, 1200));
         setChartWidth(newWidth);
       }
     };
@@ -80,7 +80,7 @@ const Seasons: React.FC = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [isMobile]);
+  }, [isMobile, loading]);
 
   const filteredSeasons = leagueSeasons.filter(season => {
     const matchesSearch = searchTerm === '' || 
@@ -246,8 +246,10 @@ const Seasons: React.FC = () => {
             strokeDasharray="10,5"
           />
           
-          {/* Y轴刻度标签（1-16） */}
-          {Array.from({ length: maxRank - minRank + 1 }, (_, i) => minRank + i).map(rank => (
+          {/* Y轴刻度标签（抽稀：1/4/7/10/13/16，保留冠军线、亚冠区、保级线参考刻度） */}
+          {Array.from({ length: maxRank - minRank + 1 }, (_, i) => minRank + i)
+            .filter(rank => rank === minRank || rank === maxRank || (rank - minRank) % 3 === 0)
+            .map(rank => (
             <text
               key={rank}
               x={padding - 10}
