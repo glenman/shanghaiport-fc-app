@@ -603,8 +603,10 @@ const History: React.FC = () => {
                         {match.win_loss || '-'}
                       </td>
                       <td>
-                        <a 
+                        <a
                           href={`history-match-report.html?date=${match.date}&type=${encodeURIComponent(match.match_type)}&round=${encodeURIComponent(match.round)}`}
+                          target="_blank"
+                          rel="noopener"
                           style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold', fontSize: '0.85rem' }}
                         >
                           查看
@@ -699,8 +701,10 @@ const History: React.FC = () => {
                                 </td>
                                 <td>
                                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                    <a 
+                                    <a
                                       href={`history-match-report.html?date=${match.date}&type=${encodeURIComponent(match.match_type)}&round=${encodeURIComponent(match.round)}`}
+                                      target="_blank"
+                                      rel="noopener"
                                       style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold', fontSize: '0.9rem' }}
                                     >
                                       查看

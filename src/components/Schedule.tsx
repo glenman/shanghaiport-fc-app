@@ -254,7 +254,7 @@ const Schedule: React.FC = () => {
                             <td>{match.homeTeam || '-'}</td>
                             <td>
                               {match.status === '已结束' ? (
-                                <a href={`match-report-v2.html?date=${match.date}&type=${encodeURIComponent(match.type)}&round=${encodeURIComponent(match.round)}`} style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
+                                <a href={`match-report-v2.html?date=${match.date}&type=${encodeURIComponent(match.type)}&round=${encodeURIComponent(match.round)}`} target="_blank" rel="noopener" style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
                                   {renderScore(match.result)}
                                 </a>
                               ) : (
@@ -351,7 +351,7 @@ const Schedule: React.FC = () => {
                             <td>{match.homeTeam || '-'}</td>
                             <td>
                               {match.status === '已结束' ? (
-                                <a href={`match-report.html?date=${match.date}&type=${encodeURIComponent(match.type)}&round=${encodeURIComponent(match.round)}`} style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
+                                <a href={`match-report.html?date=${match.date}&type=${encodeURIComponent(match.type)}&round=${encodeURIComponent(match.round)}`} target="_blank" rel="noopener" style={{ textDecoration: 'none', color: '#c00010', fontWeight: 'bold' }}>
                                   {renderScore(match.result)}
                                 </a>
                               ) : (
