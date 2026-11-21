@@ -1,20 +1,20 @@
 {
   "match_info": {
-    "match_id": "Shanghai-SIPG-Changchun-Yatai-June-15-2016-Chinese-Super-League",
-    "date": "2016-06-15",
+    "match_id": "Shanghai-SIPG-Tianjin-TEDA-June-25-2016-Chinese-Super-League",
+    "date": "2016-06-25",
     "time": "19:35",
     "competition": {
       "name": "中国足球协会超级联赛",
       "season": "2016",
-      "round": "第13轮"
+      "round": "第14轮"
     },
     "venue": {
       "name": "上海体育场",
       "city": "上海市",
-      "attendance": 23727
+      "attendance": 24737
     },
     "referee": {
-      "main": "李海新",
+      "main": "黑晓虎",
       "country": "China"
     }
   },
@@ -34,8 +34,8 @@
           "position": ""
         },
         {
-          "number": "4",
-          "name": "王燊超",
+          "number": "5",
+          "name": "汪佳捷",
           "position": ""
         },
         {
@@ -69,8 +69,8 @@
           "position": ""
         },
         {
-          "number": "27",
-          "name": "石柯",
+          "number": "23",
+          "name": "傅欢",
           "position": ""
         },
         {
@@ -86,18 +86,18 @@
           "position": ""
         },
         {
+          "number": "2",
+          "name": "张卫",
+          "position": ""
+        },
+        {
           "number": "3",
           "name": "吉安",
           "position": ""
         },
         {
-          "number": "5",
-          "name": "汪佳捷",
-          "position": ""
-        },
-        {
-          "number": "13",
-          "name": "朱峥嵘",
+          "number": "11",
+          "name": "吕文君",
           "position": ""
         },
         {
@@ -106,8 +106,8 @@
           "position": ""
         },
         {
-          "number": "23",
-          "name": "傅欢",
+          "number": "26",
+          "name": "胡靖航",
           "position": ""
         },
         {
@@ -119,94 +119,104 @@
       "substitutions": []
     },
     "away": {
-      "name": "长春亚泰",
-      "full_name": "Changchun Yatai",
+      "name": "天津泰达",
+      "full_name": "Tianjin TEDA",
       "score": 1,
       "score_ht": 0,
       "formation": "4-4-2",
-      "coach": "李章洙(韩国)",
+      "coach": "德拉甘·奥库卡(塞尔维亚)",
       "captain": "Unknown",
       "lineup": [
         {
-          "number": "23",
-          "name": "Wu Yake",
+          "number": "29",
+          "name": "Yang Qipeng",
           "position": ""
         },
         {
-          "number": "2",
-          "name": "Yaki Yen",
+          "number": "4",
+          "name": "Pan Ximing",
           "position": ""
         },
         {
           "number": "6",
-          "name": "Julien Gorius",
+          "name": "Zhou Haibin",
           "position": ""
         },
         {
           "number": "8",
-          "name": "Du Zhenyu",
+          "name": "Hu Rentian",
+          "position": ""
+        },
+        {
+          "number": "9",
+          "name": "Mbaye Diagne",
           "position": ""
         },
         {
           "number": "10",
-          "name": "Marcelo Martins Moreno",
-          "position": ""
-        },
-        {
-          "number": "15",
-          "name": "Sun Jie",
-          "position": ""
-        },
-        {
-          "number": "16",
-          "name": "Jiang Zhe",
+          "name": "Fredy Montero",
           "position": ""
         },
         {
           "number": "17",
-          "name": "Fan Xiaodong",
+          "name": "Hui Jiakang",
           "position": ""
         },
         {
-          "number": "31",
-          "name": "Cheng Changcheng",
+          "number": "19",
+          "name": "Bai Yuefeng",
           "position": ""
         },
         {
-          "number": "32",
-          "name": "Li Guang",
+          "number": "22",
+          "name": "Guo Hao",
+          "position": ""
+        },
+        {
+          "number": "25",
+          "name": "Yuan Weiwei",
+          "position": ""
+        },
+        {
+          "number": "26",
+          "name": "Cao Yang",
           "position": ""
         }
       ],
       "substitutes": [
         {
-          "number": "29",
-          "name": "Song Zhenyu",
+          "number": "1",
+          "name": "武磊",
           "position": ""
         },
         {
-          "number": "6",
-          "name": "Pei Shuai",
+          "number": "15",
+          "name": "Liao Bochao",
           "position": ""
         },
         {
-          "number": "20",
-          "name": "Han Deming",
+          "number": "23",
+          "name": "Nie Tao",
           "position": ""
         },
         {
-          "number": "21",
-          "name": "He Chao",
+          "number": "28",
+          "name": "Fan Baiqun",
           "position": ""
         },
         {
-          "number": "22",
-          "name": "Li Shang",
+          "number": "30",
+          "name": "张卫",
           "position": ""
         },
         {
-          "number": "26",
-          "name": "Zuo Yiteng",
+          "number": "33",
+          "name": "Zhou Tong",
+          "position": ""
+        },
+        {
+          "number": "36",
+          "name": "Wang Xinxin",
           "position": ""
         }
       ],
@@ -215,114 +225,92 @@
   },
   "events": [
     {
-      "minute": 45,
+      "minute": 28,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Fredy Montero",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"28’ 0:0 Fredy Montero — Yellow Card\""
+    },
+    {
+      "minute": 39,
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "武磊",
-      "player2": "埃尔克森",
+      "player": "埃弗拉",
+      "player2": "蔡慧康",
       "goal_type": "goal",
       "player_out": "",
-      "description": "\"45’ 1:0 Wu Lei Assist: Elkeson — Goal 1:0\""
+      "description": "\"39’ 1:0 Jean Evrard Kouassi Assist: Cai Huikang — Goal 1:0\""
     },
     {
-      "minute": 58,
+      "minute": 55,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Fan Baiqun",
+      "player2": "Zhou Haibin",
+      "goal_type": "",
+      "player_out": "Zhou Haibin",
+      "description": "\"55’ 1:0 Fan Baiqun for Zhou Haibin — Substitute\""
+    },
+    {
+      "minute": 61,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "home",
-      "player": "埃尔克森",
+      "player": "孙祥",
       "player2": "",
       "goal_type": "",
       "player_out": "",
-      "description": "\"58’ 1:0 Elkeson — Yellow Card\""
+      "description": "\"61’ 1:0 Sun Xiang — Yellow Card\""
     },
     {
-      "minute": 59,
-      "minute_extra": 0,
-      "type": "substitution",
-      "team": "away",
-      "player": "Pei Shuai",
-      "player2": "Cheng Changcheng",
-      "goal_type": "",
-      "player_out": "Cheng Changcheng",
-      "description": "\"59’ 1:0 Pei Shuai for Cheng Changcheng — Substitute\""
-    },
-    {
-      "minute": 60,
-      "minute_extra": 0,
-      "type": "substitution",
-      "team": "away",
-      "player": "Han Deming",
-      "player2": "Jiang Zhe",
-      "goal_type": "",
-      "player_out": "Jiang Zhe",
-      "description": "\"60’ 1:0 Han Deming for Jiang Zhe — Substitute\""
-    },
-    {
-      "minute": 65,
-      "minute_extra": 0,
-      "type": "yellow_card",
-      "team": "away",
-      "player": "Marcelo Martins Moreno",
-      "player2": "",
-      "goal_type": "",
-      "player_out": "",
-      "description": "\"65’ 1:0 Marcelo Martins Moreno — Yellow Card\""
-    },
-    {
-      "minute": 68,
+      "minute": 76,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
       "player": "吉安",
-      "player2": "埃弗拉",
+      "player2": "埃尔克森",
       "goal_type": "",
-      "player_out": "埃弗拉",
-      "description": "\"68’ 1:0 Asamoah Gyan for Jean Evrard Kouassi — Substitute\""
+      "player_out": "埃尔克森",
+      "description": "\"76’ 1:0 Asamoah Gyan for Elkeson — Substitute\""
     },
     {
-      "minute": 71,
+      "minute": 79,
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "颜骏凌",
-      "player2": "",
-      "goal_type": "own_goal",
+      "player": "Hui Jiakang",
+      "player2": "Fan Baiqun",
+      "goal_type": "goal",
       "player_out": "",
-      "description": "\"71’ 1:1 Yan Junling Own Goal — Substitute\""
-    },
-    {
-      "minute": 78,
-      "minute_extra": 0,
-      "type": "yellow_card",
-      "team": "away",
-      "player": "Wu Yake",
-      "player2": "",
-      "goal_type": "",
-      "player_out": "",
-      "description": "\"78’ 1:1 Wu Yake — Yellow Card\""
-    },
-    {
-      "minute": 78,
-      "minute_extra": 0,
-      "type": "yellow_card",
-      "team": "away",
-      "player": "Yaki Yen",
-      "player2": "",
-      "goal_type": "",
-      "player_out": "",
-      "description": "\"78’ 1:1 Yaki Yen — Yellow Card\""
+      "description": "\"79’ 1:1 Hui Jiakang Assist: Fan Baiqun — Goal 1:1\""
     },
     {
       "minute": 89,
       "minute_extra": 0,
       "type": "substitution",
-      "team": "away",
-      "player": "Zuo Yiteng",
-      "player2": "Du Zhenyu",
+      "team": "home",
+      "player": "吕文君",
+      "player2": "埃弗拉",
       "goal_type": "",
-      "player_out": "Du Zhenyu",
-      "description": "\"89’ 1:1 Zuo Yiteng for Du Zhenyu — Substitute\""
+      "player_out": "埃弗拉",
+      "description": "\"89’ 1:1 Lü Wenjun for Jean Evrard Kouassi — Substitute\""
+    },
+    {
+      "minute": 90,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "张卫",
+      "player2": "Guo Hao",
+      "goal_type": "",
+      "player_out": "Guo Hao",
+      "description": "\"90+3’ 1:1 Lü Wei for Guo Hao — Substitute\""
     }
   ],
   "statistics": {
@@ -353,8 +341,8 @@
   },
   "metadata": {
     "source": "FBref",
-    "url": "https://fbref.com/en/matches/57deb8a4/Shanghai-SIPG-Changchun-Yatai-June-15-2016-Chinese-Super-League",
-    "scraped_at": "2026-05-04T20:16:15.266849",
+    "url": "https://fbref.com/en/matches/f6c7d9e3/Shanghai-SIPG-Tianjin-TEDA-June-25-2016-Chinese-Super-League",
+    "scraped_at": "2026-05-04T20:17:02.844626",
     "version": "3.0-LEGACY-FORMAT"
   }
 }

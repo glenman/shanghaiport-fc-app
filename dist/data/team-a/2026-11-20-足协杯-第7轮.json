@@ -1,0 +1,631 @@
+{
+  "match": {
+    "id": 0,
+    "round": "半决赛",
+    "date": "2026-11-20",
+    "time": "19:35",
+    "homeTeam": "北京国安",
+    "awayTeam": "上海海港",
+    "venue": "北京工人体育场",
+    "city": "北京",
+    "result": "0-2",
+    "status": "已结束",
+    "attendance": "45277",
+    "referee": "马吉德·沙姆拉尼",
+    "weather": "未知",
+    "competition": "中国足球协会杯",
+    "matchweek": 0,
+    "season": "2026"
+  },
+  "matchDetails": {
+    "stadiumCapacity": "60000",
+    "pitchCondition": "未知",
+    "temperature": "未知",
+    "kickoffTime": "19:35",
+    "halftimeScore": "0-1",
+    "fulltimeScore": "0-2",
+    "extraTimeScore": "-",
+    "penaltyScore": "-"
+  },
+  "officials": {
+    "referee": "马吉德·沙姆拉尼",
+    "assistantReferee1": "国景涛",
+    "assistantReferee2": "吴明峰",
+    "fourthOfficial": "张雷",
+    "VAR": "黄翼",
+    "AVAR": "关长亮"
+  },
+  "lineups": {
+    "home": {
+      "name": "北京国安",
+      "formation": "3-4-2-1",
+      "manager": "蒙哥马利",
+      "captain": "张稀哲",
+      "players": [
+        {
+          "number": 34,
+          "name": "侯森",
+          "position": "门将",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 27,
+          "name": "王刚",
+          "position": "后卫",
+          "nationality": "未知",
+          "minutes": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 1
+        },
+        {
+          "number": 8,
+          "name": "孔特",
+          "position": "后卫",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 5,
+          "name": "拉莫斯",
+          "position": "后卫",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 21,
+          "name": "茹子楠",
+          "position": "中场",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 36,
+          "name": "贾非凡",
+          "position": "中场",
+          "nationality": "未知",
+          "minutes": 60,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 18,
+          "name": "王禹",
+          "position": "中场",
+          "nationality": "未知",
+          "minutes": 60,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 26,
+          "name": "白杨",
+          "position": "中场",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 37,
+          "name": "曹永竞",
+          "position": "前锋",
+          "nationality": "未知",
+          "minutes": 69,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "张稀哲",
+          "position": "中场",
+          "nationality": "未知",
+          "minutes": 69,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 9,
+          "name": "张玉宁",
+          "position": "前锋",
+          "nationality": "未知",
+          "minutes": 69,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 4,
+          "name": "李磊",
+          "position": "未知",
+          "substitutedAt": 60,
+          "substitutedFor": "王禹"
+        },
+        {
+          "number": 41,
+          "name": "程熙",
+          "position": "未知",
+          "substitutedAt": 60,
+          "substitutedFor": "贾非凡"
+        },
+        {
+          "number": 43,
+          "name": "夏晓雨",
+          "position": "未知",
+          "substitutedAt": 69,
+          "substitutedFor": "张玉宁"
+        },
+        {
+          "number": 58,
+          "name": "蒋子承",
+          "position": "未知",
+          "substitutedAt": 69,
+          "substitutedFor": "张稀哲"
+        },
+        {
+          "number": 11,
+          "name": "林良铭",
+          "position": "未知",
+          "substitutedAt": 69,
+          "substitutedFor": "曹永竞"
+        },
+        {
+          "number": 33,
+          "name": "阿巴斯·努尔艾力",
+          "position": "门将"
+        },
+        {
+          "number": 24,
+          "name": "阿卜杜海米提",
+          "position": "未知"
+        },
+        {
+          "number": 6,
+          "name": "池忠国",
+          "position": "未知"
+        },
+        {
+          "number": 47,
+          "name": "邓捷夫",
+          "position": "未知"
+        },
+        {
+          "number": 30,
+          "name": "范双杰",
+          "position": "未知"
+        },
+        {
+          "number": 22,
+          "name": "韩佳奇",
+          "position": "门将"
+        },
+        {
+          "number": 50,
+          "name": "张皓然",
+          "position": "未知"
+        }
+      ]
+    },
+    "away": {
+      "name": "上海海港",
+      "formation": "3-4-3",
+      "manager": "穆斯卡特",
+      "captain": "武磊",
+      "players": [
+        {
+          "number": 1,
+          "name": "颜骏凌",
+          "position": "门将",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 13,
+          "name": "魏震",
+          "position": "后卫",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 3,
+          "name": "蒋光太",
+          "position": "后卫",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 40,
+          "name": "吾米提江",
+          "position": "后卫",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 22,
+          "name": "杨希",
+          "position": "中场",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 1,
+          "yellowCards": 1,
+          "redCards": 0
+        },
+        {
+          "number": 21,
+          "name": "奥斯卡·梅伦多",
+          "position": "中场",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 10,
+          "name": "维塔尔",
+          "position": "中场",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 32,
+          "name": "李帅",
+          "position": "中场",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 7,
+          "name": "武磊",
+          "position": "前锋",
+          "nationality": "未知",
+          "minutes": 77,
+          "goals": 1,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 45,
+          "name": "莱昂纳多",
+          "position": "前锋",
+          "nationality": "未知",
+          "minutes": 90,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        },
+        {
+          "number": 17,
+          "name": "安佩姆",
+          "position": "前锋",
+          "nationality": "未知",
+          "minutes": 89,
+          "goals": 0,
+          "assists": 0,
+          "yellowCards": 0,
+          "redCards": 0
+        }
+      ],
+      "substitutes": [
+        {
+          "number": 33,
+          "name": "刘祝润",
+          "position": "未知",
+          "substitutedAt": 77,
+          "substitutedFor": "武磊"
+        },
+        {
+          "number": 49,
+          "name": "李新翔",
+          "position": "未知",
+          "substitutedAt": 89,
+          "substitutedFor": "安佩姆"
+        },
+        {
+          "number": 8,
+          "name": "让克劳德",
+          "position": "未知",
+          "substitutedAt": 90,
+          "substitutedFor": "奥斯卡·梅伦多"
+        },
+        {
+          "number": 19,
+          "name": "王振澳",
+          "position": "未知",
+          "substitutedAt": 90,
+          "substitutedFor": "杨希"
+        },
+        {
+          "number": 5,
+          "name": "张琳芃",
+          "position": "未知",
+          "substitutedAt": 90,
+          "substitutedFor": "吾米提江"
+        },
+        {
+          "number": 12,
+          "name": "陈威",
+          "position": "门将"
+        },
+        {
+          "number": 23,
+          "name": "傅欢",
+          "position": "未知"
+        },
+        {
+          "number": 47,
+          "name": "蒯纪闻",
+          "position": "未知"
+        },
+        {
+          "number": 14,
+          "name": "安永佳",
+          "position": "未知"
+        },
+        {
+          "number": 4,
+          "name": "王燊超",
+          "position": "未知"
+        },
+        {
+          "number": 20,
+          "name": "杨世元",
+          "position": "未知"
+        },
+        {
+          "number": 28,
+          "name": "岳鑫",
+          "position": "未知"
+        }
+      ]
+    }
+  },
+  "matchTimeline": [
+    {
+      "minute": 19,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "杨希",
+      "description": "上海海港杨希犯规（页面截图显示黄牌）"
+    },
+    {
+      "minute": 27,
+      "minute_extra": 0,
+      "type": "red_card",
+      "team": "home",
+      "player": "王刚",
+      "description": "北京国安王刚手球判罚（页面截图显示红牌）"
+    },
+    {
+      "minute": 30,
+      "minute_extra": 0,
+      "type": "penalty_goal",
+      "team": "away",
+      "player": "武磊",
+      "description": "上海海港武磊点球破门，上海海港0-1领先"
+    },
+    {
+      "minute": 33,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "home",
+      "player": "张玉宁",
+      "description": "北京国安张玉宁犯规（页面截图显示黄牌）"
+    },
+    {
+      "minute": 45,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "吾米提江",
+      "description": "上海海港吾米提江犯规（页面截图显示黄牌）"
+    },
+    {
+      "minute": 59,
+      "minute_extra": 0,
+      "type": "goal",
+      "team": "away",
+      "player": "维塔尔",
+      "player2": "杨希",
+      "description": "上海海港维塔尔进球，杨希助攻，上海海港0-2领先"
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "李磊",
+      "playerOut": "王禹",
+      "description": "北京国安李磊替换王禹上场"
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "程熙",
+      "playerOut": "贾非凡",
+      "description": "北京国安程熙替换贾非凡上场"
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "夏晓雨",
+      "playerOut": "张玉宁",
+      "description": "北京国安夏晓雨替换张玉宁上场"
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "蒋子承",
+      "playerOut": "张稀哲",
+      "description": "北京国安蒋子承替换张稀哲上场"
+    },
+    {
+      "minute": 69,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "home",
+      "playerIn": "林良铭",
+      "playerOut": "曹永竞",
+      "description": "北京国安林良铭替换曹永竞上场"
+    },
+    {
+      "minute": 77,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "刘祝润",
+      "playerOut": "武磊",
+      "description": "上海海港刘祝润替换武磊上场"
+    },
+    {
+      "minute": 89,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "李新翔",
+      "playerOut": "安佩姆",
+      "description": "上海海港李新翔替换安佩姆上场"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "让克劳德",
+      "playerOut": "奥斯卡·梅伦多",
+      "description": "上海海港让克劳德替换梅伦多上场"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 3,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "王振澳",
+      "playerOut": "杨希",
+      "description": "上海海港王振澳替换杨希上场"
+    },
+    {
+      "minute": 90,
+      "minute_extra": 4,
+      "type": "substitution",
+      "team": "away",
+      "playerIn": "张琳芃",
+      "playerOut": "吾米提江",
+      "description": "上海海港张琳芃替换吾米提江上场"
+    }
+  ],
+  "statistics": [
+    {
+      "name": "预期进球 (xG)",
+      "home": "0.70",
+      "away": "4.21"
+    },
+    {
+      "name": "控球率",
+      "home": "41%",
+      "away": "59%"
+    },
+    {
+      "name": "射门总数",
+      "home": "14",
+      "away": "18"
+    },
+    {
+      "name": "绝佳机会",
+      "home": "2",
+      "away": "9"
+    },
+    {
+      "name": "对方禁区内触球数",
+      "home": "16",
+      "away": "42"
+    }
+  ],
+  "summary": "2026赛季中国足协杯半决赛，北京国安主场0-2不敌上海海港。第27分钟北京国安王刚染红离场，第30分钟武磊点射破门打破僵局，第59分钟维塔尔接杨希助攻再下一城，最终上海海港客场2-0取胜。",
+  "keyFactors": [
+    "第27分钟北京国安王刚染红少打一人，随后第30分钟武磊点射破门打破僵局",
+    "第59分钟杨希助攻维塔尔扩大比分，上海海港全场预期进球达4.21",
+    "上海海港控球率59%且禁区内触球42次，全面占据场上主动"
+  ],
+  "highlights": [
+    {
+      "minute": 30,
+      "description": "武磊点球破门，上海海港0-1领先",
+      "type": "penalty_goal",
+      "team": "away"
+    },
+    {
+      "minute": 59,
+      "description": "维塔尔破门（杨希助攻），上海海港0-2领先",
+      "type": "goal",
+      "team": "away"
+    }
+  ],
+  "penaltyShootout": null
+}

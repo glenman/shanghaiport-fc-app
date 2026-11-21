@@ -1,20 +1,20 @@
 {
   "match_info": {
-    "match_id": "Shanghai-SIPG-Tianjin-TEDA-June-25-2016-Chinese-Super-League",
-    "date": "2016-06-25",
+    "match_id": "Shanghai-SIPG-Changchun-Yatai-June-15-2016-Chinese-Super-League",
+    "date": "2016-06-15",
     "time": "19:35",
     "competition": {
       "name": "中国足球协会超级联赛",
       "season": "2016",
-      "round": "第15轮"
+      "round": "第21轮"
     },
     "venue": {
       "name": "上海体育场",
       "city": "上海市",
-      "attendance": 24737
+      "attendance": 23727
     },
     "referee": {
-      "main": "黑晓虎",
+      "main": "李海新",
       "country": "China"
     }
   },
@@ -34,8 +34,8 @@
           "position": ""
         },
         {
-          "number": "5",
-          "name": "汪佳捷",
+          "number": "4",
+          "name": "王燊超",
           "position": ""
         },
         {
@@ -69,8 +69,8 @@
           "position": ""
         },
         {
-          "number": "23",
-          "name": "傅欢",
+          "number": "27",
+          "name": "石柯",
           "position": ""
         },
         {
@@ -86,18 +86,18 @@
           "position": ""
         },
         {
-          "number": "2",
-          "name": "张卫",
-          "position": ""
-        },
-        {
           "number": "3",
           "name": "吉安",
           "position": ""
         },
         {
-          "number": "11",
-          "name": "吕文君",
+          "number": "5",
+          "name": "汪佳捷",
+          "position": ""
+        },
+        {
+          "number": "13",
+          "name": "朱峥嵘",
           "position": ""
         },
         {
@@ -106,8 +106,8 @@
           "position": ""
         },
         {
-          "number": "26",
-          "name": "胡靖航",
+          "number": "23",
+          "name": "傅欢",
           "position": ""
         },
         {
@@ -119,104 +119,94 @@
       "substitutions": []
     },
     "away": {
-      "name": "天津泰达",
-      "full_name": "Tianjin TEDA",
+      "name": "长春亚泰",
+      "full_name": "Changchun Yatai",
       "score": 1,
       "score_ht": 0,
       "formation": "4-4-2",
-      "coach": "德拉甘·奥库卡(塞尔维亚)",
+      "coach": "李章洙(韩国)",
       "captain": "Unknown",
       "lineup": [
         {
-          "number": "29",
-          "name": "Yang Qipeng",
+          "number": "23",
+          "name": "Wu Yake",
           "position": ""
         },
         {
-          "number": "4",
-          "name": "Pan Ximing",
+          "number": "2",
+          "name": "Yaki Yen",
           "position": ""
         },
         {
           "number": "6",
-          "name": "Zhou Haibin",
+          "name": "Julien Gorius",
           "position": ""
         },
         {
           "number": "8",
-          "name": "Hu Rentian",
-          "position": ""
-        },
-        {
-          "number": "9",
-          "name": "Mbaye Diagne",
+          "name": "Du Zhenyu",
           "position": ""
         },
         {
           "number": "10",
-          "name": "Fredy Montero",
+          "name": "Marcelo Martins Moreno",
+          "position": ""
+        },
+        {
+          "number": "15",
+          "name": "Sun Jie",
+          "position": ""
+        },
+        {
+          "number": "16",
+          "name": "Jiang Zhe",
           "position": ""
         },
         {
           "number": "17",
-          "name": "Hui Jiakang",
+          "name": "Fan Xiaodong",
           "position": ""
         },
         {
-          "number": "19",
-          "name": "Bai Yuefeng",
+          "number": "31",
+          "name": "Cheng Changcheng",
           "position": ""
         },
         {
-          "number": "22",
-          "name": "Guo Hao",
-          "position": ""
-        },
-        {
-          "number": "25",
-          "name": "Yuan Weiwei",
-          "position": ""
-        },
-        {
-          "number": "26",
-          "name": "Cao Yang",
+          "number": "32",
+          "name": "Li Guang",
           "position": ""
         }
       ],
       "substitutes": [
         {
-          "number": "1",
-          "name": "武磊",
+          "number": "29",
+          "name": "Song Zhenyu",
           "position": ""
         },
         {
-          "number": "15",
-          "name": "Liao Bochao",
+          "number": "6",
+          "name": "Pei Shuai",
           "position": ""
         },
         {
-          "number": "23",
-          "name": "Nie Tao",
+          "number": "20",
+          "name": "Han Deming",
           "position": ""
         },
         {
-          "number": "28",
-          "name": "Fan Baiqun",
+          "number": "21",
+          "name": "He Chao",
           "position": ""
         },
         {
-          "number": "30",
-          "name": "张卫",
+          "number": "22",
+          "name": "Li Shang",
           "position": ""
         },
         {
-          "number": "33",
-          "name": "Zhou Tong",
-          "position": ""
-        },
-        {
-          "number": "36",
-          "name": "Wang Xinxin",
+          "number": "26",
+          "name": "Zuo Yiteng",
           "position": ""
         }
       ],
@@ -225,92 +215,114 @@
   },
   "events": [
     {
-      "minute": 28,
-      "minute_extra": 0,
-      "type": "yellow_card",
-      "team": "away",
-      "player": "Fredy Montero",
-      "player2": "",
-      "goal_type": "",
-      "player_out": "",
-      "description": "\"28’ 0:0 Fredy Montero — Yellow Card\""
-    },
-    {
-      "minute": 39,
+      "minute": 45,
       "minute_extra": 0,
       "type": "goal",
       "team": "home",
-      "player": "埃弗拉",
-      "player2": "蔡慧康",
+      "player": "武磊",
+      "player2": "埃尔克森",
       "goal_type": "goal",
       "player_out": "",
-      "description": "\"39’ 1:0 Jean Evrard Kouassi Assist: Cai Huikang — Goal 1:0\""
+      "description": "\"45’ 1:0 Wu Lei Assist: Elkeson — Goal 1:0\""
     },
     {
-      "minute": 55,
-      "minute_extra": 0,
-      "type": "substitution",
-      "team": "away",
-      "player": "Fan Baiqun",
-      "player2": "Zhou Haibin",
-      "goal_type": "",
-      "player_out": "Zhou Haibin",
-      "description": "\"55’ 1:0 Fan Baiqun for Zhou Haibin — Substitute\""
-    },
-    {
-      "minute": 61,
+      "minute": 58,
       "minute_extra": 0,
       "type": "yellow_card",
       "team": "home",
-      "player": "孙祥",
+      "player": "埃尔克森",
       "player2": "",
       "goal_type": "",
       "player_out": "",
-      "description": "\"61’ 1:0 Sun Xiang — Yellow Card\""
+      "description": "\"58’ 1:0 Elkeson — Yellow Card\""
     },
     {
-      "minute": 76,
+      "minute": 59,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Pei Shuai",
+      "player2": "Cheng Changcheng",
+      "goal_type": "",
+      "player_out": "Cheng Changcheng",
+      "description": "\"59’ 1:0 Pei Shuai for Cheng Changcheng — Substitute\""
+    },
+    {
+      "minute": 60,
+      "minute_extra": 0,
+      "type": "substitution",
+      "team": "away",
+      "player": "Han Deming",
+      "player2": "Jiang Zhe",
+      "goal_type": "",
+      "player_out": "Jiang Zhe",
+      "description": "\"60’ 1:0 Han Deming for Jiang Zhe — Substitute\""
+    },
+    {
+      "minute": 65,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Marcelo Martins Moreno",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"65’ 1:0 Marcelo Martins Moreno — Yellow Card\""
+    },
+    {
+      "minute": 68,
       "minute_extra": 0,
       "type": "substitution",
       "team": "home",
       "player": "吉安",
-      "player2": "埃尔克森",
+      "player2": "埃弗拉",
       "goal_type": "",
-      "player_out": "埃尔克森",
-      "description": "\"76’ 1:0 Asamoah Gyan for Elkeson — Substitute\""
+      "player_out": "埃弗拉",
+      "description": "\"68’ 1:0 Asamoah Gyan for Jean Evrard Kouassi — Substitute\""
     },
     {
-      "minute": 79,
+      "minute": 71,
       "minute_extra": 0,
       "type": "goal",
       "team": "away",
-      "player": "Hui Jiakang",
-      "player2": "Fan Baiqun",
-      "goal_type": "goal",
+      "player": "颜骏凌",
+      "player2": "",
+      "goal_type": "own_goal",
       "player_out": "",
-      "description": "\"79’ 1:1 Hui Jiakang Assist: Fan Baiqun — Goal 1:1\""
+      "description": "\"71’ 1:1 Yan Junling Own Goal — Substitute\""
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Wu Yake",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"78’ 1:1 Wu Yake — Yellow Card\""
+    },
+    {
+      "minute": 78,
+      "minute_extra": 0,
+      "type": "yellow_card",
+      "team": "away",
+      "player": "Yaki Yen",
+      "player2": "",
+      "goal_type": "",
+      "player_out": "",
+      "description": "\"78’ 1:1 Yaki Yen — Yellow Card\""
     },
     {
       "minute": 89,
       "minute_extra": 0,
       "type": "substitution",
-      "team": "home",
-      "player": "吕文君",
-      "player2": "埃弗拉",
-      "goal_type": "",
-      "player_out": "埃弗拉",
-      "description": "\"89’ 1:1 Lü Wenjun for Jean Evrard Kouassi — Substitute\""
-    },
-    {
-      "minute": 90,
-      "minute_extra": 0,
-      "type": "substitution",
       "team": "away",
-      "player": "张卫",
-      "player2": "Guo Hao",
+      "player": "Zuo Yiteng",
+      "player2": "Du Zhenyu",
       "goal_type": "",
-      "player_out": "Guo Hao",
-      "description": "\"90+3’ 1:1 Lü Wei for Guo Hao — Substitute\""
+      "player_out": "Du Zhenyu",
+      "description": "\"89’ 1:1 Zuo Yiteng for Du Zhenyu — Substitute\""
     }
   ],
   "statistics": {
@@ -341,8 +353,8 @@
   },
   "metadata": {
     "source": "FBref",
-    "url": "https://fbref.com/en/matches/f6c7d9e3/Shanghai-SIPG-Tianjin-TEDA-June-25-2016-Chinese-Super-League",
-    "scraped_at": "2026-05-04T20:17:02.844626",
+    "url": "https://fbref.com/en/matches/57deb8a4/Shanghai-SIPG-Changchun-Yatai-June-15-2016-Chinese-Super-League",
+    "scraped_at": "2026-05-04T20:16:15.266849",
     "version": "3.0-LEGACY-FORMAT"
   }
 }

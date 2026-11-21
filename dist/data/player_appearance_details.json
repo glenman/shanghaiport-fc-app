@@ -2,8 +2,8 @@
   "description": "球员出场明细（球员为基准，逐场记录 match_id、首发/替补及出场时间；进球/点球/助攻/黄牌/红牌仅在大于0时标注）；match_id 对应 public/data/history_schedule.json 中的记录；仅收录实际出场记录（替补未登场/停赛不列入）；2006-2007中乙部分场次源表无逐场明细，以各球员2006赛季note标注汇总出场数；数据源：上海海港(含前身)历史出场汇总表(2006-2026).xlsx 明细页（经audit-20261108校准）",
   "matchIdSource": "public/data/history_schedule.json",
   "totalPlayers": 183,
-  "totalAppearanceEntries": 10337,
-  "seasonRange": "2006-2026/27",
+  "totalAppearanceEntries": 10353,
+  "seasonRange": "2006-2026",
   "players": [
     {
       "name": "颜骏凌",
@@ -11,8 +11,8 @@
       "position": "门将",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 540,
-        "knownMinutes": 48472
+        "knownAppearances": 541,
+        "knownMinutes": 48562
       },
       "seasons": [
         {
@@ -2852,6 +2852,11 @@
             },
             {
               "matchId": "M0700",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0701",
               "status": "首发",
               "minutes": 90
             }
@@ -6133,8 +6138,8 @@
       "position": "前锋",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 469,
-        "knownMinutes": 36869
+        "knownAppearances": 470,
+        "knownMinutes": 36946
       },
       "seasons": [
         {
@@ -8879,6 +8884,13 @@
               "goals": 2,
               "penaltyGoals": 1,
               "assists": 1
+            },
+            {
+              "matchId": "M0701",
+              "status": "首发",
+              "minutes": 77,
+              "goals": 1,
+              "penaltyGoals": 1
             }
           ]
         },
@@ -16978,8 +16990,8 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 228,
-        "knownMinutes": 16987
+        "knownAppearances": 229,
+        "knownMinutes": 17077
       },
       "seasons": [
         {
@@ -18219,6 +18231,11 @@
             },
             {
               "matchId": "M0700",
+              "status": "首发",
+              "minutes": 90
+            },
+            {
+              "matchId": "M0701",
               "status": "首发",
               "minutes": 90
             }
@@ -22772,7 +22789,7 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 190,
+        "knownAppearances": 191,
         "knownMinutes": 11990
       },
       "seasons": [
@@ -23784,6 +23801,11 @@
               "matchId": "M0700",
               "status": "替补",
               "minutes": 15
+            },
+            {
+              "matchId": "M0701",
+              "status": "替补",
+              "minutes": 0
             }
           ]
         },
@@ -23806,8 +23828,8 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 128,
-        "knownMinutes": 10765
+        "knownAppearances": 129,
+        "knownMinutes": 10855
       },
       "seasons": [
         {
@@ -24497,6 +24519,11 @@
               "matchId": "M0700",
               "status": "首发",
               "minutes": 75
+            },
+            {
+              "matchId": "M0701",
+              "status": "首发",
+              "minutes": 90
             }
           ]
         },
@@ -26851,8 +26878,8 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 137,
-        "knownMinutes": 9495
+        "knownAppearances": 138,
+        "knownMinutes": 9585
       },
       "seasons": [
         {
@@ -27601,6 +27628,11 @@
               "matchId": "M0700",
               "status": "首发",
               "minutes": 75
+            },
+            {
+              "matchId": "M0701",
+              "status": "首发",
+              "minutes": 90
             }
           ]
         },
@@ -30914,8 +30946,8 @@
       "position": "前卫",
       "nationality": "巴西",
       "records": {
-        "knownAppearances": 81,
-        "knownMinutes": 6802
+        "knownAppearances": 82,
+        "knownMinutes": 6892
       },
       "seasons": [
         {
@@ -31355,6 +31387,12 @@
               "matchId": "M0700",
               "status": "首发",
               "minutes": 90
+            },
+            {
+              "matchId": "M0701",
+              "status": "首发",
+              "minutes": 90,
+              "goals": 1
             }
           ]
         },
@@ -36136,8 +36174,8 @@
       "position": "前锋",
       "nationality": "巴西",
       "records": {
-        "knownAppearances": 70,
-        "knownMinutes": 5408
+        "knownAppearances": 71,
+        "knownMinutes": 5498
       },
       "seasons": [
         {
@@ -36539,6 +36577,11 @@
               "minutes": 90,
               "goals": 2,
               "assists": 2
+            },
+            {
+              "matchId": "M0701",
+              "status": "首发",
+              "minutes": 90
             }
           ]
         },
@@ -37802,8 +37845,8 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 60,
-        "knownMinutes": 4965
+        "knownAppearances": 61,
+        "knownMinutes": 5055
       },
       "seasons": [
         {
@@ -38120,6 +38163,12 @@
               "matchId": "M0700",
               "status": "首发",
               "minutes": 90
+            },
+            {
+              "matchId": "M0701",
+              "status": "首发",
+              "minutes": 90,
+              "yellowCards": 1
             }
           ]
         },
@@ -42212,8 +42261,8 @@
       "position": "前锋",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 86,
-        "knownMinutes": 3868
+        "knownAppearances": 87,
+        "knownMinutes": 3881
       },
       "seasons": [
         {
@@ -42694,6 +42743,11 @@
               "status": "首发",
               "minutes": 74,
               "yellowCards": 1
+            },
+            {
+              "matchId": "M0701",
+              "status": "替补",
+              "minutes": 13
             }
           ]
         },
@@ -46334,8 +46388,8 @@
       "position": "中场",
       "nationality": "西班牙",
       "records": {
-        "knownAppearances": 41,
-        "knownMinutes": 3298
+        "knownAppearances": 42,
+        "knownMinutes": 3388
       },
       "seasons": [
         {
@@ -46550,6 +46604,11 @@
               "matchId": "M0700",
               "status": "首发",
               "minutes": 70
+            },
+            {
+              "matchId": "M0701",
+              "status": "首发",
+              "minutes": 90
             }
           ]
         },
@@ -46861,8 +46920,8 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 36,
-        "knownMinutes": 2928
+        "knownAppearances": 37,
+        "knownMinutes": 3018
       },
       "seasons": [
         {
@@ -47053,6 +47112,13 @@
               "matchId": "M0700",
               "status": "首发",
               "minutes": 70
+            },
+            {
+              "matchId": "M0701",
+              "status": "首发",
+              "minutes": 90,
+              "assists": 1,
+              "yellowCards": 1
             }
           ]
         },
@@ -47945,8 +48011,8 @@
       "position": "前锋",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 62,
-        "knownMinutes": 2525
+        "knownAppearances": 63,
+        "knownMinutes": 2526
       },
       "seasons": [
         {
@@ -48292,6 +48358,11 @@
               "matchId": "M0700",
               "status": "替补",
               "minutes": 12
+            },
+            {
+              "matchId": "M0701",
+              "status": "替补",
+              "minutes": 1
             }
           ]
         },
@@ -48533,7 +48604,7 @@
       "position": "后卫",
       "nationality": "中国",
       "records": {
-        "knownAppearances": 44,
+        "knownAppearances": 45,
         "knownMinutes": 2462
       },
       "seasons": [
@@ -48783,6 +48854,11 @@
               "matchId": "M0700",
               "status": "替补",
               "minutes": 20
+            },
+            {
+              "matchId": "M0701",
+              "status": "替补",
+              "minutes": 0
             }
           ]
         },
@@ -49596,8 +49672,8 @@
       "position": "前锋",
       "nationality": "加纳",
       "records": {
-        "knownAppearances": 31,
-        "knownMinutes": 2367
+        "knownAppearances": 32,
+        "knownMinutes": 2456
       },
       "seasons": [
         {
@@ -49749,6 +49825,11 @@
               "minutes": 90,
               "goals": 2,
               "assists": 2
+            },
+            {
+              "matchId": "M0701",
+              "status": "首发",
+              "minutes": 89
             }
           ]
         },
@@ -51338,7 +51419,7 @@
       "position": "前锋",
       "nationality": "多哥",
       "records": {
-        "knownAppearances": 24,
+        "knownAppearances": 25,
         "knownMinutes": 1627
       },
       "seasons": [
@@ -51462,6 +51543,11 @@
               "matchId": "M0697",
               "status": "首发",
               "minutes": 90
+            },
+            {
+              "matchId": "M0701",
+              "status": "替补",
+              "minutes": 0
             }
           ]
         },
