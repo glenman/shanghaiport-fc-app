@@ -41,8 +41,15 @@ const History: React.FC = () => {
   const [showHeadToHead, setShowHeadToHead] = useState(false);
   const [opponentInput, setOpponentInput] = useState('');
   const [showSuggestions, setShowSuggestions] = useState(false);
+  // 交锋筛选：主客场 + 年份区间（值为主队起始年，空 = 不限）
+  const [h2hVenue, setH2hVenue] = useState<'all' | 'home' | 'away'>('all');
+  const [h2hYearFrom, setH2hYearFrom] = useState('');
+  const [h2hYearTo, setH2hYearTo] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
   const suggestionsRef = useRef<HTMLDivElement>(null);
+
+  // 赛季起始年（"2026" -> 2026，"2026/27" -> 2026）
+  const seasonStartYear = (season: string) => parseInt(season.slice(0, 4), 10) || 0;
 
   useEffect(() => {
     const fetchHistoryData = async () => {
@@ -122,6 +129,16 @@ const History: React.FC = () => {
     setShowSuggestions(true);
   };
 
+  // 交锋筛选可用的年份选项（赛季起始年去重升序）
+  const h2hYears = useMemo(() => {
+    const years = new Set<number>();
+    historyData.forEach(match => {
+      const y = seasonStartYear(match.season);
+      if (y) years.add(y);
+    });
+    return Array.from(years).sort((a, b) => a - b);
+  }, [historyData]);
+
   const headToHeadMatches = useMemo(() => {
     if (selectedOpponents.length === 0) return [];
     // 合并所有已选球队及其历史别名（如浙江/杭州绿城）
@@ -129,13 +146,23 @@ const History: React.FC = () => {
     selectedOpponents.forEach(name => {
       (OPPONENT_ALIASES[name] || [name]).forEach(n => nameSet.add(n));
     });
+    const from = h2hYearFrom ? Number(h2hYearFrom) : null;
+    const to = h2hYearTo ? Number(h2hYearTo) : null;
     return historyData
-      .filter(match =>
-        !match.walkover &&
-        (nameSet.has(match.home_team) || nameSet.has(match.away_team))
-      )
+      .filter(match => {
+        if (match.walkover) return false;
+        if (!nameSet.has(match.home_team) && !nameSet.has(match.away_team)) return false;
+        // 主客场筛选（以我方主客场为准）
+        if (h2hVenue === 'home' && !OUR_TEAM_NAMES.includes(match.home_team)) return false;
+        if (h2hVenue === 'away' && !OUR_TEAM_NAMES.includes(match.away_team)) return false;
+        // 年份区间筛选（按赛季起始年）
+        const startYear = seasonStartYear(match.season);
+        if (from !== null && startYear < from) return false;
+        if (to !== null && startYear > to) return false;
+        return true;
+      })
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  }, [historyData, selectedOpponents]);
+  }, [historyData, selectedOpponents, h2hVenue, h2hYearFrom, h2hYearTo]);
 
   const headToHeadStats = useMemo(() => {
     if (headToHeadMatches.length === 0) return null;
@@ -250,6 +277,9 @@ const History: React.FC = () => {
                     setSelectedOpponents([]);
                     setOpponentInput('');
                     setShowSuggestions(false);
+                    setH2hVenue('all');
+                    setH2hYearFrom('');
+                    setH2hYearTo('');
                   }
                 }}
                 style={{ width: '18px', height: '18px', accentColor: '#c00010' }}
@@ -259,66 +289,75 @@ const History: React.FC = () => {
             
             {showHeadToHead && (
               <div style={{ position: 'relative', flex: 1, minWidth: '280px' }}>
-                <input
-                  ref={inputRef}
-                  type="text"
-                  value={opponentInput}
-                  onChange={(e) => handleInputChange(e.target.value)}
-                  onFocus={() => setShowSuggestions(true)}
-                  placeholder="输入关键字搜索球队，可多选..."
+                <div
+                  onClick={(e) => {
+                    if (e.target === e.currentTarget) inputRef.current?.focus();
+                  }}
                   style={{
-                    padding: '0 1rem',
-                    height: '48px',
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    alignItems: 'center',
+                    gap: '0.35rem',
+                    minHeight: '48px',
                     boxSizing: 'border-box',
+                    padding: '0.35rem 0.75rem',
                     borderRadius: '6px',
                     border: '1px solid #555',
                     backgroundColor: '#222',
                     color: '#fff',
-                    fontSize: '1rem',
-                    width: '100%',
-                    outline: 'none'
+                    cursor: 'text'
                   }}
-                />
-
-                {selectedOpponents.length > 0 && (
-                  <div style={{
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    gap: '0.4rem',
-                    marginTop: '0.5rem'
-                  }}>
-                    {selectedOpponents.map(opponent => (
+                >
+                  {selectedOpponents.map(opponent => (
+                    <span
+                      key={opponent}
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.3rem',
+                        padding: '0.15rem 0.55rem',
+                        backgroundColor: '#c00010',
+                        color: '#fff',
+                        borderRadius: '10px',
+                        fontSize: '0.82rem',
+                        fontWeight: 'bold'
+                      }}
+                    >
+                      {opponent}
                       <span
-                        key={opponent}
+                        onClick={() => handleRemoveOpponent(opponent)}
                         style={{
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          gap: '0.35rem',
-                          padding: '0.25rem 0.6rem',
-                          backgroundColor: '#c00010',
-                          color: '#fff',
-                          borderRadius: '12px',
-                          fontSize: '0.85rem',
-                          fontWeight: 'bold'
+                          cursor: 'pointer',
+                          fontWeight: 'bold',
+                          opacity: 0.8,
+                          lineHeight: 1
                         }}
+                        title="移除"
                       >
-                        {opponent}
-                        <span
-                          onClick={() => handleRemoveOpponent(opponent)}
-                          style={{
-                            cursor: 'pointer',
-                            fontWeight: 'bold',
-                            opacity: 0.8,
-                            lineHeight: 1
-                          }}
-                          title="移除"
-                        >
-                          ×
-                        </span>
+                        ×
                       </span>
-                    ))}
-                  </div>
-                )}
+                    </span>
+                  ))}
+                  <input
+                    ref={inputRef}
+                    type="text"
+                    value={opponentInput}
+                    onChange={(e) => handleInputChange(e.target.value)}
+                    onFocus={() => setShowSuggestions(true)}
+                    placeholder={selectedOpponents.length === 0 ? '输入关键字搜索球队，可多选...' : ''}
+                    style={{
+                      flex: 1,
+                      minWidth: '100px',
+                      height: '28px',
+                      border: 'none',
+                      backgroundColor: 'transparent',
+                      color: '#fff',
+                      fontSize: '1rem',
+                      outline: 'none',
+                      padding: 0
+                    }}
+                  />
+                </div>
 
                 {showSuggestions && filteredOpponents.length > 0 && (
                   <div
@@ -390,6 +429,82 @@ const History: React.FC = () => {
                     未找到匹配的球队
                   </div>
                 )}
+              </div>
+            )}
+
+            {showHeadToHead && (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                <label style={{ fontWeight: 'bold', color: '#fff' }}>主客场</label>
+                <select
+                  value={h2hVenue}
+                  onChange={(e) => setH2hVenue(e.target.value as 'all' | 'home' | 'away')}
+                  style={{
+                    height: '48px',
+                    boxSizing: 'border-box',
+                    padding: '0 0.75rem',
+                    borderRadius: '6px',
+                    border: '1px solid #555',
+                    backgroundColor: '#222',
+                    color: '#fff',
+                    fontSize: '0.95rem',
+                    outline: 'none'
+                  }}
+                >
+                  <option value="all">全部</option>
+                  <option value="home">主场</option>
+                  <option value="away">客场</option>
+                </select>
+
+                <label style={{ fontWeight: 'bold', color: '#fff', marginLeft: '0.5rem' }}>年份</label>
+                <select
+                  value={h2hYearFrom}
+                  onChange={(e) => {
+                    const v = e.target.value;
+                    setH2hYearFrom(v);
+                    if (v && h2hYearTo && Number(v) > Number(h2hYearTo)) setH2hYearTo(v);
+                  }}
+                  style={{
+                    height: '48px',
+                    boxSizing: 'border-box',
+                    padding: '0 0.75rem',
+                    borderRadius: '6px',
+                    border: '1px solid #555',
+                    backgroundColor: '#222',
+                    color: '#fff',
+                    fontSize: '0.95rem',
+                    outline: 'none'
+                  }}
+                >
+                  <option value="">不限</option>
+                  {h2hYears.filter(y => !h2hYearTo || y <= Number(h2hYearTo)).map(y => (
+                    <option key={y} value={String(y)}>{y}</option>
+                  ))}
+                </select>
+                <span style={{ color: '#888' }}>至</span>
+                <select
+                  value={h2hYearTo}
+                  onChange={(e) => {
+                    const v = e.target.value;
+                    setH2hYearTo(v);
+                    if (v && h2hYearFrom && Number(v) < Number(h2hYearFrom)) setH2hYearFrom(v);
+                  }}
+                  style={{
+                    height: '48px',
+                    boxSizing: 'border-box',
+                    padding: '0 0.75rem',
+                    borderRadius: '6px',
+                    border: '1px solid #555',
+                    backgroundColor: '#222',
+                    color: '#fff',
+                    fontSize: '0.95rem',
+                    outline: 'none'
+                  }}
+                >
+                  <option value="">不限</option>
+                  {h2hYears.filter(y => !h2hYearFrom || y >= Number(h2hYearFrom)).map(y => (
+                    <option key={y} value={String(y)}>{y}</option>
+                  ))}
+                </select>
               </div>
             )}
           </div>
