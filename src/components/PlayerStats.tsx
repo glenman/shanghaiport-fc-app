@@ -116,7 +116,7 @@ const FIELD_DEFS: { key: keyof StatBlock; label: string }[] = [
 // 门将专属字段（对非门将为 null）
 const GK_KEYS: (keyof StatBlock)[] = ['goalsConceded', 'cleanSheets', 'penaltySaves'];
 
-// 分类赛事定义
+// 分类赛事定义（顺序即展示顺序）；国家队/西班牙人为武磊等球员的非俱乐部生涯分项（仅有个别球员有值，无值显示 -）
 const COMPETITION_DEFS: { key: string; label: string }[] = [
   { key: 'c2l', label: '中乙联赛' },
   { key: 'c1l', label: '中甲联赛' },
@@ -124,6 +124,8 @@ const COMPETITION_DEFS: { key: string; label: string }[] = [
   { key: 'cfa', label: '足协杯' },
   { key: 'acle', label: '亚冠联赛' },
   { key: 'supercup', label: '超级杯' },
+  { key: 'nationalTeam', label: '国家队' },
+  { key: 'espanyol', label: '西班牙人' },
 ];
 
 const formatStat = (value: number | null | undefined): string => {
@@ -131,6 +133,19 @@ const formatStat = (value: number | null | undefined): string => {
     return '-';
   }
   return String(value);
+};
+
+// 数值字段相加合并两个统计块（null 字段保持 null，如门将专属字段）
+const addStatBlocks = (a: StatBlock, b: StatBlock): StatBlock => {
+  const out = { ...a };
+  (Object.keys(out) as (keyof StatBlock)[]).forEach((k) => {
+    const va = a[k];
+    const vb = b[k];
+    if (typeof va === 'number' && typeof vb === 'number') {
+      out[k] = va + vb;
+    }
+  });
+  return out;
 };
 
 const PlayerStats: React.FC = () => {
@@ -602,7 +617,18 @@ const PlayerStats: React.FC = () => {
 
             <div className="stats-section" style={{ marginBottom: '1.5rem' }}>
               <h3>汇总统计</h3>
-              {renderStatTable([{ label: '总计', block: selected.summary }])}
+              {(() => {
+                // 含国家队/留洋数据的球员（目前仅武磊）分列俱乐部总计与职业生涯总计
+                const extraBlocks = [selected.nationalTeam, selected.espanyol].filter(Boolean) as StatBlock[];
+                if (extraBlocks.length === 0) {
+                  return renderStatTable([{ label: '总计', block: selected.summary }]);
+                }
+                const careerTotal = extraBlocks.reduce((acc, b) => addStatBlocks(acc, b), selected.summary);
+                return renderStatTable([
+                  { label: '俱乐部总计', block: selected.summary },
+                  { label: '职业生涯总计', block: careerTotal },
+                ]);
+              })()}
             </div>
 
             <div className="stats-section">

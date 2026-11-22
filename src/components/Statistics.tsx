@@ -39,7 +39,11 @@ const Statistics: React.FC = () => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
-        const goalData = await response.json();
+        // 仅统计俱乐部赛事进球/助攻（国家队、留洋等非俱乐部记录不进队内榜）
+        const CLUB_TYPES = ['中超', '中甲', '中乙', '足协杯', '亚冠', '超级杯'];
+        const goalData: GoalDetail[] = (await response.json()).filter(
+          (item: GoalDetail) => item.match_type && CLUB_TYPES.some((t) => item.match_type.includes(t))
+        );
         setData(goalData);
         setLoading(false);
       } catch (error) {
