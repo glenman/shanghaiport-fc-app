@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 
 interface StatBlock {
   appearances: number | null;
@@ -62,6 +62,7 @@ interface CoachHistory {
 
 // 历史赛程记录（history_schedule.json）
 interface ScheduleMatch {
+  match_id?: string;
   season: string;
   match_type: string;
   match_name: string;
@@ -75,6 +76,52 @@ interface ScheduleMatch {
   away_coach?: string;
   /** 代理教练名：存在时表示该场为正牌主帅停赛、由其代理临场指挥（coach 字段为正牌主帅） */
   standin_coach?: string;
+}
+
+// 进球明细（goal_details.json，仅提取所需字段）
+interface GoalDetail {
+  season: string;
+  match_type: string;
+  goal_time: string;
+  goal_player: string;
+  assist_player: string;
+  match_date_code: number;
+  match_name: string;
+  home_team: string;
+  home_score: number;
+  away_score: number;
+  away_team: string;
+  match_result: string;
+}
+
+// 出场明细（player_appearance_details.json，仅提取所需字段）
+interface AppAppearance {
+  matchId?: string;
+  date?: string;
+  competition?: string;
+  opponent?: string;
+  score?: string;
+  status?: string;
+  goals?: number;
+  assists?: number;
+  yellowCards?: number;
+  redCards?: number;
+}
+
+interface AppPlayer {
+  name: string;
+  seasons: { appearances: AppAppearance[] }[];
+  otherCareer?: {
+    nationalTeam?: { appearances: AppAppearance[] };
+    espanyol?: { appearances: AppAppearance[] };
+  };
+}
+
+// 统计单元格明细视图（进球/助攻/黄牌/红牌）
+interface StatDetail {
+  kind: 'goals' | 'assists' | 'yellowCards' | 'redCards';
+  scope: string; // summary | career | 赛事key
+  label: string; // 行标签（总计/中超联赛/国家队...）
 }
 
 // 我方球队历史名称（含 2012 年冠名"上海特莱士"）
@@ -148,6 +195,54 @@ const addStatBlocks = (a: StatBlock, b: StatBlock): StatBlock => {
   return out;
 };
 
+// 统计范围 -> match_type 关键词（includes 匹配）；summary=俱乐部总计, career=职业生涯总计
+const CLUB_SCOPE_TYPES = ['中超', '中甲', '中乙', '足协杯', '亚冠', '超级杯'];
+const SCOPE_MATCH_KEYWORDS: Record<string, string[]> = {
+  summary: CLUB_SCOPE_TYPES,
+  career: ['中超', '中甲', '中乙', '足协杯', '亚冠', '超级杯', '国家队', '西甲', '国王杯', '欧联', '西乙'],
+  c2l: ['中乙'],
+  c1l: ['中甲'],
+  csl: ['中超'],
+  cfa: ['足协杯'],
+  acle: ['亚冠'],
+  supercup: ['超级杯'],
+  nationalTeam: ['国家队'],
+  espanyol: ['西甲', '国王杯', '欧联', '西乙'],
+};
+
+const STAT_KIND_LABELS: Record<StatDetail['kind'], string> = {
+  goals: '进球',
+  assists: '助攻',
+  yellowCards: '黄牌',
+  redCards: '红牌',
+};
+
+interface StatDetailRow {
+  date: string;
+  type: string;
+  round: string;
+  home: string;
+  away: string;
+  score: string;
+  result: string;
+  time: string;
+}
+
+// 明细条数与汇总统计期望值比对（不一致时显示口径说明）；未知期望返回 -1
+const statDetailCountHint = (d: StatDetail, p: PlayerHistory): number => {
+  let block: StatBlock | undefined;
+  if (d.scope === 'career') {
+    const extras = [p.nationalTeam, p.espanyol].filter(Boolean) as StatBlock[];
+    block = extras.length ? extras.reduce((acc, b) => addStatBlocks(acc, b), p.summary) : p.summary;
+  } else if (d.scope === 'summary') {
+    block = p.summary;
+  } else {
+    block = p[d.scope] as StatBlock | undefined;
+  }
+  const v = block ? block[d.kind] : null;
+  return typeof v === 'number' ? v : -1;
+};
+
 const PlayerStats: React.FC = () => {
   const [data, setData] = useState<PlayerHistoryData | null>(null);
   const [scheduleData, setScheduleData] = useState<ScheduleMatch[] | null>(null);
@@ -159,6 +254,11 @@ const PlayerStats: React.FC = () => {
   const [coachSearchTerm, setCoachSearchTerm] = useState('');
   const [selectedCoach, setSelectedCoach] = useState<CoachHistory | null>(null);
   const [coachShortNames, setCoachShortNames] = useState<Record<string, string>>({});
+  // 明细数据（懒加载）：goal_details（进球/助攻明细）、player_appearance_details（黄红牌明细）
+  const [goalDetails, setGoalDetails] = useState<GoalDetail[] | null>(null);
+  const [appearanceData, setAppearanceData] = useState<{ players: AppPlayer[] } | null>(null);
+  const [statDetail, setStatDetail] = useState<StatDetail | null>(null);
+  const statDetailRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -192,6 +292,23 @@ const PlayerStats: React.FC = () => {
       .then((j: any) => setCoachShortNames(j.coaches || {}))
       .catch(() => setCoachShortNames({}));
   }, []);
+
+  // 点击统计单元格打开明细视图（进球/助攻走 goal_details，黄红牌走出场明细），数据按需懒加载
+  const openStatDetail = (kind: StatDetail['kind'], scope: string, label: string) => {
+    setStatDetail({ kind, scope, label });
+    if ((kind === 'goals' || kind === 'assists') && goalDetails === null) {
+      fetch('data/goal_details.json')
+        .then((r) => (r.ok ? r.json() : Promise.reject(new Error('fail'))))
+        .then((j: GoalDetail[]) => setGoalDetails(j))
+        .catch(() => setGoalDetails([]));
+    }
+    if ((kind === 'yellowCards' || kind === 'redCards') && appearanceData === null) {
+      fetch('data/player_appearance_details.json')
+        .then((r) => (r.ok ? r.json() : Promise.reject(new Error('fail'))))
+        .then((j: any) => setAppearanceData({ players: j.players || [] }))
+        .catch(() => setAppearanceData({ players: [] }));
+    }
+  };
 
   // 从历史赛程聚合主教练执教信息
   const coaches = useMemo<CoachHistory[]>(() => {
@@ -263,6 +380,106 @@ const PlayerStats: React.FC = () => {
       .sort((a, b) => b.summary.total - a.summary.total);
   }, [scheduleData, coachShortNames]);
 
+  // matchId -> 赛程记录索引（黄红牌明细关联比赛信息）
+  const scheduleById = useMemo(() => {
+    const m = new Map<string, ScheduleMatch>();
+    (scheduleData || []).forEach((s) => {
+      if (s.match_id) m.set(s.match_id, s);
+    });
+    return m;
+  }, [scheduleData]);
+
+  // 统计单元格明细行（进球/助攻来自 goal_details；黄红牌来自出场明细，海港场经 matchId 关联赛程）
+  const statDetailRows = useMemo<StatDetailRow[] | null>(() => {
+    if (!statDetail || !selected) return null;
+    const name = selected.name;
+    const keywords = SCOPE_MATCH_KEYWORDS[statDetail.scope] || [];
+    const inScope = (t: string) => keywords.some((k) => t.includes(k));
+
+    if (statDetail.kind === 'goals' || statDetail.kind === 'assists') {
+      if (!goalDetails) return null; // 数据加载中
+      return goalDetails
+        .filter((g) => {
+          if (!inScope(g.match_type)) return false;
+          if (statDetail!.kind === 'goals') {
+            return (g.goal_player || '').split('(')[0] === name;
+          }
+          return g.assist_player === name;
+        })
+        .sort((a, b) => a.match_date_code - b.match_date_code)
+        .map((g) => ({
+          date: `${String(g.match_date_code).slice(0, 4)}-${String(g.match_date_code).slice(4, 6)}-${String(g.match_date_code).slice(6, 8)}`,
+          type: g.match_type,
+          round: g.match_name || '',
+          home: g.home_team,
+          away: g.away_team,
+          score: `${g.home_score}-${g.away_score}`,
+          result: g.match_result,
+          time: g.goal_time,
+        }));
+    }
+
+    // 黄红牌
+    if (!appearanceData) return null;
+    const mine = appearanceData.players.find((p) => p.name === name);
+    if (!mine) return [];
+    const rows: StatDetailRow[] = [];
+    const kind = statDetail.kind;
+    // 海港俱乐部场次（summary/career/六大赛事 scope）
+    (mine.seasons || []).forEach((s) =>
+      (s.appearances || []).forEach((a) => {
+        const n = (a[kind] as number) || 0;
+        if (n <= 0 || !a.matchId) return;
+        const m = scheduleById.get(a.matchId);
+        if (!m || !inScope(m.match_type)) return;
+        rows.push({
+          date: m.date,
+          type: m.match_type,
+          round: m.round || m.match_name || '',
+          home: m.home_team,
+          away: m.away_team,
+          score: (m.result || '').split('(')[0],
+          result: m.win_loss,
+          time: '-',
+        });
+      })
+    );
+    // 国家队/西班牙人场次
+    const oc = mine.otherCareer || {};
+    const extBlocks =
+      statDetail.scope === 'career'
+        ? [oc.nationalTeam, oc.espanyol]
+        : statDetail.scope === 'nationalTeam'
+          ? [oc.nationalTeam]
+          : statDetail.scope === 'espanyol'
+            ? [oc.espanyol]
+            : [];
+    extBlocks.filter(Boolean).forEach((b) =>
+      (b!.appearances || []).forEach((a) => {
+        const n = (a[kind] as number) || 0;
+        if (n <= 0) return;
+        rows.push({
+          date: a.date || '',
+          type: a.competition || '',
+          round: '-',
+          home: b === oc.nationalTeam ? '中国' : '西班牙人',
+          away: a.opponent || '',
+          score: a.score || '-',
+          result: '-',
+          time: '-',
+        });
+      })
+    );
+    return rows.sort((x, y) => x.date.localeCompare(y.date));
+  }, [statDetail, selected, goalDetails, appearanceData, scheduleById]);
+
+  // 点击统计单元格后滚动定位到明细面板（数据懒加载完成后补滚一次，保证首开也落位）
+  useEffect(() => {
+    if (statDetail && statDetailRef.current) {
+      statDetailRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [statDetail, statDetailRows]);
+
   const switchQueryMode = (mode: 'player' | 'coach') => {
     setQueryMode(mode);
     setSelectedCoach(null);
@@ -299,6 +516,7 @@ const PlayerStats: React.FC = () => {
   const selectPlayer = (player: PlayerHistory) => {
     setSelected(player);
     setSearchTerm('');
+    setStatDetail(null);
   };
 
   const selectCoach = (coach: CoachHistory) => {
@@ -311,6 +529,7 @@ const PlayerStats: React.FC = () => {
     setSearchTerm('');
     setSelectedCoach(null);
     setCoachSearchTerm('');
+    setStatDetail(null);
   };
 
   if (loading) {
@@ -343,7 +562,7 @@ const PlayerStats: React.FC = () => {
     );
   }
 
-  const renderStatTable = (rows: { label: string; block: StatBlock | undefined }[]) => {
+  const renderStatTable = (rows: { label: string; block: StatBlock | undefined; scope?: string }[]) => {
     const showGK = selected ? hasGoalkeeperData(selected) : false;
     const fields = FIELD_DEFS.filter((f) => !GK_KEYS.includes(f.key) || showGK);
 
@@ -362,9 +581,32 @@ const PlayerStats: React.FC = () => {
             {rows.map((row) => (
               <tr key={row.label}>
                 <td style={{ fontWeight: 'bold', color: '#c00010' }}>{row.label}</td>
-                {fields.map((f) => (
-                  <td key={f.key}>{formatStat(row.block ? row.block[f.key] : null)}</td>
-                ))}
+                {fields.map((f) => {
+                  const val = row.block ? row.block[f.key] : null;
+                  // 进球/助攻/黄红牌数值可点击查看明细（>0 且该行有统计范围）；
+                  // 国家队/西班牙人的助攻除外——goal_details 仅收录武磊本人进球，其助攻队友的球无逐球记录
+                  const clickable =
+                    row.scope !== undefined &&
+                    (f.key === 'goals' || f.key === 'assists' || f.key === 'yellowCards' || f.key === 'redCards') &&
+                    typeof val === 'number' &&
+                    val > 0 &&
+                    !(f.key === 'assists' && (row.scope === 'nationalTeam' || row.scope === 'espanyol'));
+                  return (
+                    <td key={f.key}>
+                      {clickable ? (
+                        <a
+                          onClick={() => openStatDetail(f.key as StatDetail['kind'], row.scope!, row.label)}
+                          style={{ color: '#c00010', fontWeight: 'bold', cursor: 'pointer', textDecoration: 'underline' }}
+                          title={`查看${STAT_KIND_LABELS[f.key as StatDetail['kind']]}明细`}
+                        >
+                          {val}
+                        </a>
+                      ) : (
+                        formatStat(val)
+                      )}
+                    </td>
+                  );
+                })}
               </tr>
             ))}
           </tbody>
@@ -621,12 +863,12 @@ const PlayerStats: React.FC = () => {
                 // 含国家队/留洋数据的球员（目前仅武磊）分列俱乐部总计与职业生涯总计
                 const extraBlocks = [selected.nationalTeam, selected.espanyol].filter(Boolean) as StatBlock[];
                 if (extraBlocks.length === 0) {
-                  return renderStatTable([{ label: '总计', block: selected.summary }]);
+                  return renderStatTable([{ label: '总计', block: selected.summary, scope: 'summary' }]);
                 }
                 const careerTotal = extraBlocks.reduce((acc, b) => addStatBlocks(acc, b), selected.summary);
                 return renderStatTable([
-                  { label: '俱乐部总计', block: selected.summary },
-                  { label: '职业生涯总计', block: careerTotal },
+                  { label: '俱乐部总计', block: selected.summary, scope: 'summary' },
+                  { label: '职业生涯总计', block: careerTotal, scope: 'career' },
                 ]);
               })()}
             </div>
@@ -637,9 +879,74 @@ const PlayerStats: React.FC = () => {
                 COMPETITION_DEFS.map((comp) => ({
                   label: comp.label,
                   block: selected[comp.key] as StatBlock | undefined,
+                  scope: comp.key,
                 }))
               )}
             </div>
+
+            {statDetail && (
+              <div className="stats-section" ref={statDetailRef}>
+                <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  {selected.name} · {statDetail.label} · {STAT_KIND_LABELS[statDetail.kind]}明细
+                  {statDetailRows ? `（${statDetailRows.length} 条）` : ''}
+                  <span
+                    onClick={() => setStatDetail(null)}
+                    style={{ cursor: 'pointer', color: '#888', fontWeight: 'normal', fontSize: '0.9rem', padding: '0 0.4rem' }}
+                    title="关闭明细"
+                  >
+                    ×
+                  </span>
+                </h3>
+                {statDetailRows === null ? (
+                  <div style={{ textAlign: 'center', color: '#888', padding: '1.5rem 0' }}>明细数据加载中...</div>
+                ) : statDetailRows.length === 0 ? (
+                  <div style={{ textAlign: 'center', color: '#888', padding: '1.5rem 0' }}>无明细记录</div>
+                ) : (
+                  <div>
+                    {(() => {
+                      const hint = statDetailCountHint(statDetail, selected);
+                      return hint >= 0 && statDetailRows.length !== hint;
+                    })() && (
+                      <div style={{ fontSize: '0.8rem', color: '#888', marginBottom: '0.5rem' }}>
+                        注：明细来自逐球/逐场收录，早期历史个别记录未收录明细，条数可能与汇总统计略有差异
+                      </div>
+                    )}
+                    <div className="table-container" style={{ maxHeight: 420, overflowY: 'auto' }}>
+                    <table className="stats-table" style={{ minWidth: 800 }}>
+                      <thead>
+                        <tr>
+                          <th>序号</th>
+                          <th>比赛日期</th>
+                          <th>比赛类型</th>
+                          <th>轮次</th>
+                          <th>主队</th>
+                          <th>客队</th>
+                          <th>比分</th>
+                          <th>赛果</th>
+                          <th>进球时间</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {statDetailRows.map((r, idx) => (
+                          <tr key={`${r.date}-${idx}`}>
+                            <td>{idx + 1}</td>
+                            <td>{r.date}</td>
+                            <td style={{ fontWeight: 'bold', color: '#c00010' }}>{r.type}</td>
+                            <td>{r.round || '-'}</td>
+                            <td>{r.home}</td>
+                            <td>{r.away}</td>
+                            <td>{r.score}</td>
+                            <td style={{ fontWeight: 'bold', color: r.result === '胜' ? '#c00010' : r.result === '负' ? '#4caf50' : '#fff' }}>{r.result}</td>
+                            <td>{r.time}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         )}
         </div>
