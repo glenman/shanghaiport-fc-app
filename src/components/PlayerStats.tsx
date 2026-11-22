@@ -226,6 +226,8 @@ interface StatDetailRow {
   score: string;
   result: string;
   time: string;
+  /** 进球球员（助攻明细用） */
+  scorer?: string;
 }
 
 // 明细条数与汇总统计期望值比对（不一致时显示口径说明）；未知期望返回 -1
@@ -416,6 +418,7 @@ const PlayerStats: React.FC = () => {
           score: `${g.home_score}-${g.away_score}`,
           result: g.match_result,
           time: g.goal_time,
+          scorer: g.goal_player,
         }));
     }
 
@@ -920,10 +923,11 @@ const PlayerStats: React.FC = () => {
                           <th>比赛类型</th>
                           <th>轮次</th>
                           <th>主队</th>
-                          <th>客队</th>
                           <th>比分</th>
+                          <th>客队</th>
                           <th>赛果</th>
-                          <th>进球时间</th>
+                          {statDetail.kind === 'assists' && <th>进球球员</th>}
+                          {(statDetail.kind === 'goals' || statDetail.kind === 'assists') && <th>进球时间</th>}
                         </tr>
                       </thead>
                       <tbody>
@@ -934,10 +938,11 @@ const PlayerStats: React.FC = () => {
                             <td style={{ fontWeight: 'bold', color: '#c00010' }}>{r.type}</td>
                             <td>{r.round || '-'}</td>
                             <td>{r.home}</td>
-                            <td>{r.away}</td>
                             <td>{r.score}</td>
+                            <td>{r.away}</td>
                             <td style={{ fontWeight: 'bold', color: r.result === '胜' ? '#c00010' : r.result === '负' ? '#4caf50' : '#fff' }}>{r.result}</td>
-                            <td>{r.time}</td>
+                            {statDetail.kind === 'assists' && <td style={{ fontWeight: 'bold', color: '#fff' }}>{r.scorer || '-'}</td>}
+                            {(statDetail.kind === 'goals' || statDetail.kind === 'assists') && <td>{r.time}</td>}
                           </tr>
                         ))}
                       </tbody>
