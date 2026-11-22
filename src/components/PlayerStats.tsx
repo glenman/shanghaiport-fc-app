@@ -37,6 +37,8 @@ interface CoachMatch {
   opponent: string;
   score: string;
   result: string;
+  /** 该场为代理教练临场指挥（正牌主帅停赛），记录代理教练名 */
+  standin?: string;
 }
 
 interface CoachSummary {
@@ -71,6 +73,8 @@ interface ScheduleMatch {
   win_loss: string;
   home_coach?: string;
   away_coach?: string;
+  /** 代理教练名：存在时表示该场为正牌主帅停赛、由其代理临场指挥（coach 字段为正牌主帅） */
+  standin_coach?: string;
 }
 
 // 我方球队历史名称（含 2012 年冠名"上海特莱士"）
@@ -185,7 +189,9 @@ const PlayerStats: React.FC = () => {
       const rawCoach = ((isHome ? m.home_coach : m.away_coach) || '').trim();
       if (!rawCoach || rawCoach === 'Unknown') return;
 
+      // coach 字段始终为正牌主帅（停赛场次已归位），standin_coach 记录代理教练供展示
       const coach = normalizeCoachName(rawCoach);
+      const standin = m.standin_coach;
       // 先取常规时间比分（去掉括号内点球大战等附加信息），否则含点球的比分 split('-') 长度>2 会被判为无比分
       const regScore = (m.result || '').split('(')[0].trim();
       const parts = regScore.split('-');
@@ -203,6 +209,7 @@ const PlayerStats: React.FC = () => {
         opponent: isHome ? m.away_team : m.home_team,
         score: hasScore ? `${ourGoals}-${theirGoals}` : '-',
         result: m.win_loss || (hasScore ? (ourGoals > theirGoals ? '胜' : ourGoals === theirGoals ? '平' : '负') : '-'),
+        standin,
       });
     });
 
@@ -406,7 +413,14 @@ const PlayerStats: React.FC = () => {
                     <td>{m.date}</td>
                     <td>{m.season}</td>
                     <td style={{ fontWeight: 'bold', color: '#c00010' }}>{m.competition}</td>
-                    <td>{m.round || '-'}</td>
+                    <td>
+                      {m.round || '-'}
+                      {m.standin && (
+                        <div style={{ fontSize: '0.75rem', color: '#888', fontWeight: 'normal' }} title="正牌主帅停赛，代理临场指挥">
+                          {m.standin} 代理
+                        </div>
+                      )}
+                    </td>
                     <td>{m.homeAway}</td>
                     <td style={{ fontWeight: 'bold', color: '#fff' }}>{m.opponent}</td>
                     <td>{m.score}</td>
