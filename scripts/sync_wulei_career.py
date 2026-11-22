@@ -58,9 +58,25 @@ def num(v):
 
 # ---------- 1) 进球明细 -> goal_details ----------
 ws = wb['进球明细']
+# 展开合并单元格: 同一场比赛多个进球时，比赛信息列纵向合并，openpyxl 仅左上角有值
+fill = {}
+for mr in ws.merged_cells.ranges:
+    v = ws.cell(mr.min_row, mr.min_col).value
+    for r in range(mr.min_row, mr.max_row + 1):
+        for c in range(mr.min_col, mr.max_col + 1):
+            fill[(r, c)] = v
+
+sheet_rows = []
+for r_idx, row in enumerate(ws.iter_rows(min_row=2, values_only=True), start=2):
+    vals = list(row)
+    for c_idx in range(len(vals)):
+        if vals[c_idx] is None and (r_idx, c_idx + 1) in fill:
+            vals[c_idx] = fill[(r_idx, c_idx + 1)]
+    sheet_rows.append(vals)
+
 new_goals = []
 skipped = []
-for row in ws.iter_rows(min_row=2, values_only=True):
+for row in sheet_rows:
     if not row[0]:
         continue
     cat = str(row[1]).strip()
@@ -69,7 +85,7 @@ for row in ws.iter_rows(min_row=2, values_only=True):
     if not is_nt and not is_abroad:
         continue
     if row[6] is None:
-        # 明细行缺比赛信息（日期/比分等），跳过 goal_details 收录
+        # 展开合并后仍缺比赛信息（日期/比分等），跳过 goal_details 收录
         skipped.append((row[0], cat, row[2]))
         continue
     date = xldate(row[6])
