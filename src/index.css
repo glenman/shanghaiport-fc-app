@@ -415,6 +415,22 @@ tr:hover {
   transform: scale(1.05);
 }
 
+/* 统计明细表内层滚动容器：桌面限高内滚；小屏取消内滚改为随页面整页滚动，
+   避免移动端内外层滚动嵌套导致的手势冲突（滚动"飘忽"） */
+.stat-detail-scroll {
+  max-height: 420px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+  .stat-detail-scroll {
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+
 @media (max-width: 768px) {
   .sidebar {
     width: 60px;

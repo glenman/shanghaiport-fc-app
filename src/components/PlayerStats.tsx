@@ -245,6 +245,58 @@ const statDetailCountHint = (d: StatDetail, p: PlayerHistory): number => {
   return typeof v === 'number' ? v : -1;
 };
 
+// ===== 明细显示转换器（仅渲染层，数据文件保留原始信息）=====
+
+// 比赛类型 -> 简称（中甲联赛->中甲、亚冠联赛->亚冠、西班牙国王杯->国王杯 等）
+const shortMatchType = (t: string): string =>
+  (t || '')
+    .replace('亚冠精英联赛', '亚冠精英')
+    .replace('亚冠联赛', '亚冠')
+    .replace('西甲联赛', '西甲')
+    .replace('西乙联赛', '西乙')
+    .replace('西班牙国王杯', '国王杯')
+    .replace('中超联赛', '中超')
+    .replace('中甲联赛', '中甲')
+    .replace('中乙联赛', '中乙');
+
+// 中文数字 -> 阿拉伯数字（一~九十九）
+const cn2num = (cn: string): number => {
+  if (/^\d+$/.test(cn)) return Number(cn);
+  const d: Record<string, number> = { 一: 1, 二: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9 };
+  const m = cn.match(/^([一二三四五六七八九])?十([一二三四五六七八九])?$/);
+  if (m) return (m[1] ? d[m[1]] : 1) * 10 + (m[2] ? d[m[2]] : 0);
+  return cn in d ? d[cn] : NaN;
+};
+
+// 轮次 -> 简洁显示（数据原始值为 match_name/round，如"中甲联赛15轮"、"第十六届亚洲杯预选赛"）
+const shortRound = (r: string): string => {
+  if (!r || r === '-') return r || '-';
+  let s = r;
+  // 届数中文化数字并去掉"第"：第十六届 -> 16届
+  s = s.replace(/第([一二三四五六七八九十]+)届/g, (_, cn) => `${cn2num(cn)}届`);
+  // 预选赛简称：亚洲杯预选赛->亚预赛、世界杯预选赛->世预赛
+  s = s.replace('亚洲杯预选赛', '亚预赛').replace('世界杯预选赛', '世预赛');
+  // 杯赛阶段简称
+  s = s.replace('十六分之一决赛', '1/16决赛')
+    .replace('八分之一决赛', '1/8决赛')
+    .replace('四分之一决赛', '1/4决赛')
+    .replace('二分之一决赛', '半决赛');
+  // 去掉赛事名前缀（match_name 形如"中超联赛第30轮"）
+  s = s.replace(/^(中超联赛|中甲联赛|中乙联赛|亚冠精英联赛|亚冠联赛|足协杯|超级杯|西班牙国王杯|西甲联赛|西乙联赛|欧联杯)/, '');
+  // 轮次规整为"第X轮"：15轮 / 第十五轮 -> 第15轮
+  s = s.replace(/第?([一二三四五六七八九十]+|\d+)轮/g, (full, n) => `第${cn2num(n)}轮`);
+  // 去掉 sync 生成的"次回合轮/首回合轮"尾部多余"轮"
+  s = s.replace(/(首回合|次回合)轮/g, '$1');
+  return s || '-';
+};
+
+// 进球时间 -> 统一分号格式：45+2 -> 45+2'
+const fmtGoalTime = (t: string): string => {
+  if (!t || t === '-') return t;
+  const s = t.replace('’', "'");
+  return s.endsWith("'") ? s : s + "'";
+};
+
 const PlayerStats: React.FC = () => {
   const [data, setData] = useState<PlayerHistoryData | null>(null);
   const [scheduleData, setScheduleData] = useState<ScheduleMatch[] | null>(null);
@@ -914,7 +966,7 @@ const PlayerStats: React.FC = () => {
                         注：明细来自逐球/逐场收录，早期历史个别记录未收录明细，条数可能与汇总统计略有差异
                       </div>
                     )}
-                    <div className="table-container" style={{ maxHeight: 420, overflowY: 'auto' }}>
+                    <div className="table-container stat-detail-scroll">
                     <table className="stats-table" style={{ minWidth: 800 }}>
                       <thead>
                         <tr>
@@ -935,14 +987,14 @@ const PlayerStats: React.FC = () => {
                           <tr key={`${r.date}-${idx}`}>
                             <td>{idx + 1}</td>
                             <td>{r.date}</td>
-                            <td style={{ fontWeight: 'bold', color: '#c00010' }}>{r.type}</td>
-                            <td>{r.round || '-'}</td>
+                            <td style={{ fontWeight: 'bold', color: '#c00010' }}>{shortMatchType(r.type)}</td>
+                            <td>{shortRound(r.round)}</td>
                             <td>{r.home}</td>
                             <td>{r.score}</td>
                             <td>{r.away}</td>
                             <td style={{ fontWeight: 'bold', color: r.result === '胜' ? '#c00010' : r.result === '负' ? '#4caf50' : '#fff' }}>{r.result}</td>
                             {statDetail.kind === 'assists' && <td style={{ fontWeight: 'bold', color: '#fff' }}>{r.scorer || '-'}</td>}
-                            {(statDetail.kind === 'goals' || statDetail.kind === 'assists') && <td>{r.time}</td>}
+                            {(statDetail.kind === 'goals' || statDetail.kind === 'assists') && <td>{fmtGoalTime(r.time)}</td>}
                           </tr>
                         ))}
                       </tbody>
