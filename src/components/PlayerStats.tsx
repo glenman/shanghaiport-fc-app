@@ -163,7 +163,7 @@ const FIELD_DEFS: { key: keyof StatBlock; label: string }[] = [
 // 门将专属字段（对非门将为 null）
 const GK_KEYS: (keyof StatBlock)[] = ['goalsConceded', 'cleanSheets', 'penaltySaves'];
 
-// 分类赛事定义（顺序即展示顺序）；国家队/西班牙人为武磊等球员的非俱乐部生涯分项（仅有个别球员有值，无值显示 -）
+// 分类赛事定义（顺序即展示顺序）；国家队/西班牙人为武磊等球员的非俱乐部生涯分项（仅有数据的球员显示该行，无值不显示）
 const COMPETITION_DEFS: { key: string; label: string }[] = [
   { key: 'c2l', label: '中乙联赛' },
   { key: 'c1l', label: '中甲联赛' },
@@ -931,7 +931,12 @@ const PlayerStats: React.FC = () => {
             <div className="stats-section">
               <h3>分类统计</h3>
               {renderStatTable(
-                COMPETITION_DEFS.map((comp) => ({
+                COMPETITION_DEFS.filter((comp) => {
+                  // 国家队/留洋分项目前仅武磊有数据；无数据球员不显示这两行
+                  if (comp.key === 'nationalTeam') return Boolean(selected.nationalTeam);
+                  if (comp.key === 'espanyol') return Boolean(selected.espanyol);
+                  return true;
+                }).map((comp) => ({
                   label: comp.label,
                   block: selected[comp.key] as StatBlock | undefined,
                   scope: comp.key,
