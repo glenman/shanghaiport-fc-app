@@ -15,7 +15,6 @@ XLSX = 'datafile/武磊职业生涯三百球.xlsx'
 GOAL_PATH = 'public/data/goal_details.json'
 STATS_PATH = 'public/data/player_history_stats.json'
 APP_PATH = 'public/data/player_appearance_details.json'
-GH_PATH = 'public/data/goal_history.json'
 
 NT_TYPES = ('世界杯预选赛', '友谊赛', '东亚杯', '亚洲杯', '亚洲杯预选赛', '国家队')
 ABROAD_KEEP = ('西甲联赛', '西班牙国王杯', '欧联杯', '西乙联赛')
@@ -232,14 +231,3 @@ with open(APP_PATH, 'w', encoding='utf-8', newline='\n') as f:
     json.dump(app, f, ensure_ascii=False, indent=2)
     f.write('\n')
 print('player_appearance_details: 武磊 +otherCareer(国家队/西班牙人)')
-
-# ---------- 5) goal_history ----------
-with open(GH_PATH, encoding='utf-8') as f:
-    gh = json.load(f)
-wu_gh = next(x for x in gh if x['球员'] == '武磊')
-wu_gh['国家队进球'] = nt_agg['goals']
-wu_gh['留洋进球(西班牙人)'] = ab_agg['goals']
-with open(GH_PATH, 'w', encoding='utf-8', newline='\n') as f:
-    json.dump(gh, f, ensure_ascii=False, indent=2)
-    f.write('\n')
-print('goal_history: 武磊行 +国家队进球/+留洋进球')
