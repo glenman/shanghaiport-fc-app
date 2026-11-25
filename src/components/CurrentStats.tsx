@@ -181,7 +181,7 @@ const CurrentStats: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [activeTeam, setActiveTeam] = useState<'firstTeam' | 'bTeam'>('firstTeam');
-  const [activeCompetition, setActiveCompetition] = useState<string>('中国足球协会超级联赛');
+  const [activeCompetition, setActiveCompetition] = useState<string>('全部');
   const [competitionsMapping, setCompetitionsMapping] = useState<Record<string, { shortName: string; type: string }>>({});
   const [modalInfo, setModalInfo] = useState<{
     isOpen: boolean;
@@ -280,8 +280,24 @@ const CurrentStats: React.FC = () => {
 
   const currentTeam = activeTeam === 'firstTeam' ? data.firstTeam : data.bTeam;
 
+  // "全部"Tab：当季总计（各赛事分项合计，不累计积分）
+  const ALL_TAB = '全部';
+
   // 获取当前比赛类型的统计数据（积分等只按赛事分项展示，不做顶层混算）
   const getCurrentStats = (): CompetitionStats => {
+    if (activeCompetition === ALL_TAB) {
+      return {
+        matchesPlayed: currentTeam.matchesPlayed,
+        record: currentTeam.record,
+        goalsFor: currentTeam.goalsFor,
+        goalsAgainst: currentTeam.goalsAgainst,
+        points: 0,
+        topScorers: currentTeam.topScorers,
+        topAssists: currentTeam.topAssists,
+        yellowCards: currentTeam.yellowCards,
+        redCards: currentTeam.redCards
+      };
+    }
     if (currentTeam.competitions && currentTeam.competitions[activeCompetition]) {
       return currentTeam.competitions[activeCompetition];
     }
@@ -309,25 +325,23 @@ const CurrentStats: React.FC = () => {
     '中国足球协会乙级联赛'
   ];
 
-  // 获取可用比赛类型列表
+  // 获取可用比赛类型列表（"全部"总计置顶）
   const getCompetitionList = () => {
     const comps = currentTeam.competitions
       ? Object.keys(currentTeam.competitions)
       : (activeTeam === 'firstTeam' ? ['中国足球协会超级联赛'] : ['中国足球协会乙级联赛']);
-    return comps.sort((a, b) => {
+    const sorted = comps.sort((a, b) => {
       const ia = COMPETITION_ORDER.indexOf(a);
       const ib = COMPETITION_ORDER.indexOf(b);
       return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib) || a.localeCompare(b, 'zh-CN');
     });
+    return [ALL_TAB, ...sorted];
   };
 
-  // 切换球队时重置到该队的联赛赛事Tab（一线队→中超，B队→中乙）
+  // 切换球队时重置到"全部"总计Tab
   const switchTeam = (teamKey: 'firstTeam' | 'bTeam') => {
     setActiveTeam(teamKey);
-    const league = teamKey === 'firstTeam' ? '中国足球协会超级联赛' : '中国足球协会乙级联赛';
-    const team = teamKey === 'firstTeam' ? data?.firstTeam : data?.bTeam;
-    const comps = team?.competitions ? Object.keys(team.competitions) : [];
-    setActiveCompetition(comps.length > 0 && comps.includes(league) ? league : (comps[0] || league));
+    setActiveCompetition(ALL_TAB);
   };
 
   // 获取比赛类型简称
@@ -474,7 +488,7 @@ const CurrentStats: React.FC = () => {
             <span className="overview-label">战绩</span>
             <span className="overview-value">{currentStats.record}</span>
           </div>
-          {!isCupType(activeCompetition) && (
+          {activeCompetition !== ALL_TAB && !isCupType(activeCompetition) && (
             <div className="overview-item">
               <span className="overview-label">积分</span>
               <span className="overview-value">{currentStats.points}</span>
