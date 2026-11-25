@@ -1,18 +1,18 @@
 {
   "lastMatch": {
-    "file": "2026-11-20-足协杯-第7轮.json",
-    "date": "2026-11-20",
-    "matchId": "M0701",
-    "competition": "中国足球协会杯",
-    "round": "半决赛",
-    "homeTeam": "北京国安",
-    "awayTeam": "上海海港",
-    "result": "0-2"
+    "file": "2026-11-24-亚冠-第5轮.json",
+    "date": "2026-11-24",
+    "matchId": "M0702",
+    "competition": "亚足联冠军精英联赛",
+    "round": "第5轮",
+    "homeTeam": "上海海港",
+    "awayTeam": "武里南联",
+    "result": "3-1"
   },
   "scripts": {
-    "sync_history_data.py": "2026-11-21T11:23:11",
-    "update_player_history_stats.py": "2026-11-21T11:23:35",
-    "update_player_appearance_details.py": "2026-11-21T11:23:42"
+    "sync_history_data.py": "2026-11-25T10:51:21",
+    "update_player_history_stats.py": "2026-11-25T10:51:33",
+    "update_player_appearance_details.py": "2026-11-25T10:51:40"
   },
   "baselineDate": "2026-10-05",
   "processed": {
@@ -53,7 +53,8 @@
       "2026-10-27-亚冠-第3轮.json",
       "2026-11-03-亚冠-第4轮.json",
       "2026-11-08-中超-第30轮.json",
-      "2026-11-20-足协杯-第7轮.json"
+      "2026-11-20-足协杯-第7轮.json",
+      "2026-11-24-亚冠-第5轮.json"
     ],
     "update_player_appearance_details.py": [
       "2026-10-09-中超-第27轮.json",
@@ -63,7 +64,8 @@
       "2026-10-27-亚冠-第3轮.json",
       "2026-11-03-亚冠-第4轮.json",
       "2026-11-08-中超-第30轮.json",
-      "2026-11-20-足协杯-第7轮.json"
+      "2026-11-20-足协杯-第7轮.json",
+      "2026-11-24-亚冠-第5轮.json"
     ]
   }
 }
