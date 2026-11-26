@@ -410,7 +410,7 @@ const PlayerStats: React.FC = () => {
         const goalsFor = matches.reduce((s, x) => s + (Number(x.score.split('-')[0]) || 0), 0);
         const goalsAgainst = matches.reduce((s, x) => s + (Number(x.score.split('-')[1]) || 0), 0);
         const seasons = Array.from(new Set(matches.map((x) => x.season))).sort();
-        // 执教赛季用首尾年份表示，如 2024、2024/25、2026/27 -> "2024-2026"；单赛季 -> "2024"
+        // 执教赛季用首尾年份表示，如 2024、2026 -> "2024-2026"；单赛季 -> "2024"
         const yr = (v: string) => v.slice(0, 4);
         const seasonRange =
           seasons.length > 1 ? `${yr(seasons[0])}-${yr(seasons[seasons.length - 1])}` : yr(seasons[0] || '');

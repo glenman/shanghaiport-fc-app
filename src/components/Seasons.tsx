@@ -174,6 +174,10 @@ const Seasons: React.FC = () => {
       return { x, y, season };
     });
 
+    // 首末赛季年份（用于底部联赛级别区段线的横坐标换算）
+    const firstSeason = parseInt(sortedSeasons[0].season);
+    const lastSeason = parseInt(sortedSeasons[sortedSeasons.length - 1].season);
+
     const pathD = points.map((p, i) => 
       `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`
     ).join(' ');
@@ -183,7 +187,6 @@ const Seasons: React.FC = () => {
     const iconSize = Math.max(12, Math.min(16, 16 * scale));
     const circleRadius = Math.max(4, Math.min(6, 6 * scale));
     const textOffset = Math.max(10, Math.min(15, 15 * scale));
-    const seasonOffset = Math.max(18, Math.min(25, 25 * scale));
     const iconOffset = Math.max(25, Math.min(35, 35 * scale));
 
     return (
@@ -296,15 +299,6 @@ const Seasons: React.FC = () => {
                 >
                   {rankValue}
                 </text>
-                <text
-                  x={p.x}
-                  y={chartHeight - padding + seasonOffset}
-                  textAnchor="middle"
-                  fill="#888"
-                  fontSize={Math.max(9, 10 * scale)}
-                >
-                  {seasonData.season}
-                </text>
                 {icon && (
                   <text
                     x={p.x}
@@ -318,6 +312,82 @@ const Seasons: React.FC = () => {
               </g>
             );
           })}
+
+          {/* 底部联赛级别区段线：按连续同级赛季合并为区间（如 2006-2007 中乙、2008-2012 中甲、2013-2026 中超） */}
+          {(() => {
+            const segLabel = (league: string): string => {
+              if (league.includes('中超')) return '中超';
+              if (league.includes('中甲')) return '中甲';
+              if (league.includes('中乙')) return '中乙';
+              return league;
+            };
+            // 按相邻同级赛季聚合区段
+            const segments: { start: number; end: number; label: string }[] = [];
+            sortedSeasons.forEach((s) => {
+              const label = segLabel(s.league);
+              const year = parseInt(s.season);
+              const last = segments[segments.length - 1];
+              if (last && last.label === label && year === last.end + 1) {
+                last.end = year;
+              } else {
+                segments.push({ start: year, end: year, label });
+              }
+            });
+            const xForYear = (year: number) =>
+              padding + ((year - firstSeason) / (lastSeason - firstSeason)) * effectiveWidth;
+            const segY = chartHeight - padding + Math.max(10, 12 * scale);
+            return segments.map((seg, i) => {
+              // 线段覆盖相邻年份中点，使相邻区段无缝衔接不断裂
+              const prev = segments[i - 1];
+              const next = segments[i + 1];
+              const x1 = i === 0
+                ? xForYear(seg.start)
+                : (xForYear(seg.start) + xForYear(prev.end)) / 2;
+              const x2 = i === segments.length - 1
+                ? xForYear(seg.end)
+                : (xForYear(seg.end) + xForYear(next.start)) / 2;
+              const mid = (x1 + x2) / 2;
+              const segColor = seg.label === '中超' ? '#c00010' : seg.label === '中甲' ? '#f39c12' : '#3498db';
+              // 年份取后两位（如 06-07）；单年份只显示两位年份
+              const yy = (year: number) => String(year).slice(2);
+              const yearText = seg.start === seg.end
+                ? yy(seg.start)
+                : `${yy(seg.start)}-${yy(seg.end)}`;
+              return (
+                <g key={`seg-${i}`}>
+                  <line
+                    x1={x1}
+                    y1={segY}
+                    x2={x2}
+                    y2={segY}
+                    stroke={segColor}
+                    strokeWidth={Math.max(2, 3 * scale)}
+                  />
+                  {/* 级别文字在线上方 */}
+                  <text
+                    x={mid}
+                    y={segY - Math.max(5, 6 * scale)}
+                    textAnchor="middle"
+                    fill={segColor}
+                    fontSize={Math.max(9, 10 * scale)}
+                    fontWeight="bold"
+                  >
+                    {seg.label}
+                  </text>
+                  {/* 年份区间在线下方 */}
+                  <text
+                    x={mid}
+                    y={segY + Math.max(12, 13 * scale)}
+                    textAnchor="middle"
+                    fill="#888"
+                    fontSize={Math.max(8, 9 * scale)}
+                  >
+                    {yearText}
+                  </text>
+                </g>
+              );
+            });
+          })()}
         </svg>
       </div>
     );

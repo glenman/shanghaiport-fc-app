@@ -323,15 +323,23 @@ tr:hover {
 }
 
 .position-filter {
-  padding: 1rem;
+  /* Windows Chrome 下 select 的垂直 padding 会导致显示文字被裁切，改用固定高度 + 仅水平 padding；
+     保留大胶囊圆角，字号调小使文字离上下边缘更宽裕 */
   height: 48px;
+  padding: 0 1.2rem;
   border-radius: 25px;
   border: 1px solid #444;
   background-color: rgba(30, 30, 30, 0.8);
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.9rem;
   transition: all 0.3s ease;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 全局 * { padding: 0 } 会清掉 option 默认内边距，导致下拉列表条目文字被裁切 */
+.position-filter option {
+  padding: 0.5rem 0.6rem;
+  line-height: 1.4;
 }
 
 .position-filter:focus {
@@ -563,7 +571,8 @@ tr:hover {
   .position-filter {
     width: 100%;
     font-size: 0.9rem;
-    padding: 0.8rem;
+    height: 44px;
+    padding: 0 0.8rem;
   }
   
   .filter-buttons {
@@ -630,7 +639,8 @@ tr:hover {
   
   .position-filter {
     font-size: 0.85rem;
-    padding: 0.7rem;
+    height: 40px;
+    padding: 0 0.7rem;
   }
   
   .filter-buttons button {
@@ -672,7 +682,8 @@ tr:hover {
   
   .position-filter {
     font-size: 0.8rem;
-    padding: 0.6rem;
+    height: 36px;
+    padding: 0 0.6rem;
   }
   
   .filter-buttons button {

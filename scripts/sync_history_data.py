@@ -33,13 +33,17 @@ COMPETITION_MAP = {
 SUMMARY_TYPES = ['中乙联赛', '中甲联赛', '中超联赛', '亚冠联赛', '亚冠精英联赛', '足协杯', '超级杯']
 
 
+def normalize_season(s):
+    """赛季标签归一：跨年标签（如 "2026/27"）统一取起始年（"2026"），与中超/足协杯等单年赛事一致。"""
+    s = str(s or '')
+    return s.split('/')[0] if '/' in s else s
+
+
 def _season_year(m):
-    """比赛归属赛季年份：跨年赛季取起始年；年初(1月)足协杯归前一年。"""
-    s = m.get('season', '')
-    if '/' in s:
-        return s.split('/')[0]
+    """比赛归属赛季年份：年初(1月)足协杯归前一年。"""
+    s = normalize_season(m.get('season'))
     if m.get('match_type') == '足协杯' and (m.get('date') or '')[5:7] == '01':
-        return str(int(s) - 1)
+        return str(int(s) - 1) if s.isdigit() else s
     return s
 
 
@@ -61,7 +65,7 @@ def build_summary(matches):
         'matchesPlayed': len(matches) - walkover_wins,
         'walkoverWins': walkover_wins,
         'lastUpdated': datetime.now().strftime('%Y-%m-%d %H:%M'),
-        'note': '跨年赛季按起始年归集（如2024/25归2024）；年初(1月)进行的足协杯按所属赛季归前一年；matchesPlayed为实际进行场次，walkoverWins为对手弃赛判胜场次（不计入战绩）',
+        'note': '跨年赛事（亚冠）统一按起始年归入单一赛季（如2026/27归2026）；年初(1月)进行的足协杯按所属赛季归前一年；matchesPlayed为实际进行场次，walkoverWins为对手弃赛判胜场次（不计入战绩）',
         'bySeason': by_season,
     }
 
@@ -168,7 +172,7 @@ def build_history_entry(report):
             pass
 
     entry = {
-        'season': m.get('season', ''),
+        'season': normalize_season(m.get('season', '')),
         'match_type': match_type,
         'match_name': f"{match_type}{round_}",
         'round': round_,
@@ -220,7 +224,7 @@ def build_goal_entries(report):
             if e.get('team') == sp_team:
                 continue
             goals.append({
-                'season': m.get('season', ''),
+                'season': normalize_season(m.get('season', '')),
                 'match_type': match_type,
                 'goal_time': format_goal_time(e.get('minute', 0), e.get('minute_extra', 0)),
                 'goal_player': player + '(OG)',
@@ -241,7 +245,7 @@ def build_goal_entries(report):
             continue
 
         goals.append({
-            'season': m.get('season', ''),
+            'season': normalize_season(m.get('season', '')),
             'match_type': match_type,
             'goal_time': format_goal_time(e.get('minute', 0), e.get('minute_extra', 0)),
             'goal_player': player + marker,

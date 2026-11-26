@@ -7,7 +7,7 @@
 2. public/data/history/<年份>/<年份>-出场记录.json —— 年度文件（与其他年份同构，附 matchId）
 
 【details 文件口径（与 2026-11 重写后的格式一致）】
-- 节点标签保留报告原值：单年赛事（中超/足协杯）= "2026"，跨年赛事（亚冠）= "2026/27"
+- 节点标签统一为起始年：跨年赛事（亚冠 "2026/27"）归并为 "2026"，与单年赛事共用同一赛季节点
 - 条目 {"matchId", status: "首发"/"替补", minutes}；替补未登场不写入
 - 事件字段 goals/penaltyGoals/assists/yellowCards/redCards 仅在 >0 时写入；
   goals 含点球（penaltyGoals 为其子集）；数据源 = matchTimeline（与 stats 脚本同源）
@@ -114,9 +114,10 @@ def parse_team_a_reports(files=None):
         else:
             continue
         team = lu.get(role, {}) or {}
-        # 赛季标签保留报告原值：单年赛事（中超）= "2026"，跨年赛事（亚冠）= "2026/27"
-        # （details 文件跨年节点沿用跨年标签；年度文件按 season 前缀年份归档，见 main()）
+        # 赛季标签统一为起始年：跨年赛事（亚冠 "2026/27"）归并为 "2026"，
+        # 与中超/足协杯等单年赛事一致（新增亚冠比赛自动落入同一年度节点）
         season = str(m.get("season") or path.stem[:4])
+        season = season.split("/")[0]
 
         # 事件统计（口径与 update_player_history_stats.py 一致，以 matchTimeline 为源）
         ev = defaultdict(lambda: {"goals": 0, "penaltyGoals": 0, "assists": 0,
@@ -359,8 +360,8 @@ def main(full=False):
     stats_meta = {p["name"]: p for p in stats["players"]}
     handled_files = []
 
-    # 按年度年份聚合（"2026" 中超与 "2026/27" 亚冠同归 history/2026 年度文件）；
-    # details 节点保留报告原 season 标签（跨年赛事单独成节点）
+    # 按年度年份聚合；details 节点 season 统一为起始年（跨年亚冠 2026/27 -> 2026，
+    # 与中超/足协杯共用单一赛季节点，不再单独成节点）
     year_groups = defaultdict(list)   # year -> [(season, block), ...]
     for season, blocks in seasons.items():
         for b in blocks:
@@ -476,7 +477,7 @@ def main(full=False):
     detail["totalPlayers"] = len(detail["players"])
     detail["totalAppearanceEntries"] = sum(len(sn["appearances"]) for p in detail["players"]
                                            for sn in p["seasons"])
-    # seasonRange 用赛季前缀年份（跨年标签 "2026/27" 取 2026，保持 "2006-2026" 形态）
+    # seasonRange 用赛季起始年（跨年标签已归一为起始年，保持 "2006-2026" 形态）
     all_seasons_seen = {sn["season"] for p in detail["players"] for sn in p["seasons"]}
     detail["seasonRange"] = (min(s.split("/")[0] for s in all_seasons_seen) + "-"
                              + max(s.split("/")[0] for s in all_seasons_seen))

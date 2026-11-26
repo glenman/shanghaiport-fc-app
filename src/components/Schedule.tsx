@@ -179,7 +179,7 @@ const Schedule: React.FC = () => {
           <>
             {activeTab === 'first' && (
               <div className="team-section">
-                <h3 className="team-title">2026-2027赛季</h3>
+                <h3 className="team-title">2026赛季</h3>
                 <div style={{ marginBottom: '15px', fontSize: '0.95rem', color: '#666' }}>
                   <span style={{ marginRight: '30px' }}>主教练：凯文·穆斯卡特</span>
                   <span>助理教练：托尼·维德马</span>

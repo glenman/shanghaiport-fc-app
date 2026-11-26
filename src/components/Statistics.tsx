@@ -75,9 +75,11 @@ const Statistics: React.FC = () => {
     });
 
     // 统计进球
+    // goal_player 可能带类型后缀（如 "莱昂纳多(PK)" 表示点球），聚合时剥离后缀归并到球员名
+    const stripSuffix = (name: string) => name.replace(/\((PK|OG)\)$/g, '');
     const goalStats: Record<string, Record<string, PlayerStat>> = {};
     data.forEach(item => {
-      const player = item.goal_player;
+      const player = stripSuffix(item.goal_player);
       const season = item.season;
       const matchType = item.match_type;
       

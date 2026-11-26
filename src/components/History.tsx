@@ -36,7 +36,7 @@ const History: React.FC = () => {
   const [lastUpdated, setLastUpdated] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [expandedSeasons, setExpandedSeasons] = useState<Set<string>>(new Set(['2026', '2026/27']));
+  const [expandedSeasons, setExpandedSeasons] = useState<Set<string>>(new Set(['2026']));
   const [selectedOpponents, setSelectedOpponents] = useState<string[]>([]);
   const [showHeadToHead, setShowHeadToHead] = useState(false);
   const [opponentInput, setOpponentInput] = useState('');
@@ -48,7 +48,7 @@ const History: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const suggestionsRef = useRef<HTMLDivElement>(null);
 
-  // 赛季起始年（"2026" -> 2026，"2026/27" -> 2026）
+  // 赛季起始年（数据已统一为起始年标签，如 "2026"；保留解析逻辑兼容历史数据）
   const seasonStartYear = (season: string) => parseInt(season.slice(0, 4), 10) || 0;
 
   useEffect(() => {
